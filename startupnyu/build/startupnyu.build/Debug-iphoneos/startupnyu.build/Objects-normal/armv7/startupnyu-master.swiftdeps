@@ -1,0 +1,22 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "c0e869b5ac361f17163de73cf540056f"
+build_time: [507163188, 717230000]
+inputs:
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/MessagesListViewController.swift": [506369966, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/MessageListViewCell.swift": [506298113, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/LoginViewController.swift": [507085447, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/messagesViewController.swift": [506288059, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/ProjectTableViewController.swift": [507086182, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/NavVC.swift": [507085162, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/ProjectCell.swift": [507005166, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/AppDelegate.swift": [507003614, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/MessageStruct.swift": [506286838, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/messageListStruct.swift": [506285916, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/SettingsNavigationController.swift": [506372243, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/ProfileViewController.swift": [506372292, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/SettingsViewContoller.swift": [507085091, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/LoginVC.swift": [507084337, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/ExploreStruct.swift": [507005743, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/MessageViewCell.swift": [506286877, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/ExploreVC.swift": [507086563, 0]
+  "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/startupnyu/CustomTabbar.swift": [507003614, 0]

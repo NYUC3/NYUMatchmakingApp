@@ -1,0 +1,269 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SettingsViewContoller"
+provides-nominal:
+- "C10startupnyu21SettingsViewContoller"
+provides-member:
+- ["C10startupnyu21SettingsViewContoller", ""]
+provides-dynamic-lookup:
+- "logoutButton"
+depends-top-level:
+- "SettingsViewContoller"
+- !private "PFUser"
+- !private "StringLiteralType"
+- "UIButton"
+- "UITableViewController"
+- !private "LoginViewController"
+- !private "UIStoryboard"
+- !private "BooleanLiteralType"
+depends-member:
+- !private ["PSs9AnyObject", "PFUser"]
+- !private ["PSs9AnyObject", "UIStoryboard"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "instantiateViewControllerWithIdentifier"]
+- !private ["PSs9AnyObject", "logOut"]
+- ["PSs9AnyObject", "logoutButton"]
+- !private ["PSs9AnyObject", "presentViewController"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "PFUser"]
+- !private ["PSs11CVarArgType", "UIStoryboard"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "instantiateViewControllerWithIdentifier"]
+- !private ["PSs11CVarArgType", "logOut"]
+- ["PSs11CVarArgType", "logoutButton"]
+- !private ["PSs11CVarArgType", "presentViewController"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "PFUser"]
+- !private ["PSs23CustomStringConvertible", "UIStoryboard"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
+- !private ["PSs23CustomStringConvertible", "logOut"]
+- ["PSs23CustomStringConvertible", "logoutButton"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "PFUser"]
+- !private ["PSs9Equatable", "UIStoryboard"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "instantiateViewControllerWithIdentifier"]
+- !private ["PSs9Equatable", "logOut"]
+- ["PSs9Equatable", "logoutButton"]
+- !private ["PSs9Equatable", "presentViewController"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "PFUser"]
+- !private ["PSs8Hashable", "UIStoryboard"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "instantiateViewControllerWithIdentifier"]
+- !private ["PSs8Hashable", "logOut"]
+- ["PSs8Hashable", "logoutButton"]
+- !private ["PSs8Hashable", "presentViewController"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "PFUser"]
+- !private ["PSo8NSCoding", "UIStoryboard"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "logoutButton"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "PFUser"]
+- !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "logoutButton"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "LoginViewController"]
+- !private ["CSo8NSObject", "PFUser"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIStoryboard"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
+- !private ["CSo8NSObject", "logOut"]
+- ["CSo8NSObject", "logoutButton"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "PFUser"]
+- !private ["PSo16NSObjectProtocol", "UIStoryboard"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "logOut"]
+- ["PSo16NSObjectProtocol", "logoutButton"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo8PFObject", "logOut"]
+- !private ["PSo13PFSubclassing", "logOut"]
+- !private ["CSo6PFUser", "logOut"]
+- !private ["C10startupnyu21SettingsViewContoller", "LoginViewController"]
+- !private ["C10startupnyu21SettingsViewContoller", "PFUser"]
+- ["C10startupnyu21SettingsViewContoller", "UIButton"]
+- !private ["C10startupnyu21SettingsViewContoller", "UIStoryboard"]
+- ["C10startupnyu21SettingsViewContoller", "deinit"]
+- ["C10startupnyu21SettingsViewContoller", "init"]
+- ["C10startupnyu21SettingsViewContoller", "logoutButton"]
+- !private ["C10startupnyu21SettingsViewContoller", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "PFUser"]
+- !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "logoutButton"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "PFUser"]
+- !private ["PSo18UIContentContainer", "UIStoryboard"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "logoutButton"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "PFUser"]
+- !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "logoutButton"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "LoginViewController"]
+- !private ["CSo11UIResponder", "PFUser"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIStoryboard"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "logoutButton"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["PSo20UIScrollViewDelegate", "PFUser"]
+- !private ["PSo20UIScrollViewDelegate", "UIStoryboard"]
+- ["PSo20UIScrollViewDelegate", "init"]
+- ["PSo20UIScrollViewDelegate", "logoutButton"]
+- !private ["PSo20UIScrollViewDelegate", "presentViewController"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "PFUser"]
+- !private ["PSo16UIStateRestoring", "UIStoryboard"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "logoutButton"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo12UIStoryboard", "init"]
+- !private ["CSo12UIStoryboard", "instantiateViewControllerWithIdentifier"]
+- !private ["CSo21UITableViewController", "LoginViewController"]
+- !private ["CSo21UITableViewController", "PFUser"]
+- ["CSo21UITableViewController", "UIButton"]
+- !private ["CSo21UITableViewController", "UIStoryboard"]
+- ["CSo21UITableViewController", "init"]
+- ["CSo21UITableViewController", "logoutButton"]
+- !private ["CSo21UITableViewController", "presentViewController"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "PFUser"]
+- !private ["PSo21UITableViewDataSource", "UIStoryboard"]
+- ["PSo21UITableViewDataSource", "init"]
+- ["PSo21UITableViewDataSource", "logoutButton"]
+- !private ["PSo21UITableViewDataSource", "presentViewController"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "PFUser"]
+- !private ["PSo19UITableViewDelegate", "UIStoryboard"]
+- ["PSo19UITableViewDelegate", "init"]
+- ["PSo19UITableViewDelegate", "logoutButton"]
+- !private ["PSo19UITableViewDelegate", "presentViewController"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "PFUser"]
+- !private ["PSo18UITraitEnvironment", "UIStoryboard"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "logoutButton"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "LoginViewController"]
+- !private ["CSo16UIViewController", "PFUser"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIStoryboard"]
+- !private ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "logoutButton"]
+- !private ["CSo16UIViewController", "presentViewController"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo8PFObject"
+- !private "PSo13PFSubclassing"
+- !private "CSo6PFUser"
+- "C10startupnyu21SettingsViewContoller"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo12UIStoryboard"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "./Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "./Bolts.framework/Headers/BFURL.h"
+- "./Bolts.framework/Headers/BFMeasurementEvent.h"
+- "./Bolts.framework/Headers/BFAppLinkTarget.h"
+- "./Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "./Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "./Bolts.framework/Headers/BFAppLinkResolving.h"
+- "./Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "./Bolts.framework/Headers/BFAppLink.h"
+- "./Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "./Bolts.framework/Headers/BFTask.h"
+- "./Bolts.framework/Headers/BFExecutor.h"
+- "./Bolts.framework/Headers/BFDefines.h"
+- "./Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "./Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "./Bolts.framework/Headers/BFCancellationToken.h"
+- "./Bolts.framework/Headers/BoltsVersion.h"
+- "./Bolts.framework/Headers/Bolts.h"
+- "./Bolts.framework/Modules/module.modulemap"
+- "./Parse.framework/Headers/PFPurchase.h"
+- "./Parse.framework/Headers/PFProduct.h"
+- "./Parse.framework/Headers/PFPush+Deprecated.h"
+- "./Parse.framework/Headers/PFPush+Synchronous.h"
+- "./Parse.framework/Headers/PFPush.h"
+- "./Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "./Parse.framework/Headers/PFInstallation.h"
+- "./Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "./Parse.framework/Headers/PFUser+Deprecated.h"
+- "./Parse.framework/Headers/PFUser+Synchronous.h"
+- "./Parse.framework/Headers/PFSession.h"
+- "./Parse.framework/Headers/PFRole.h"
+- "./Parse.framework/Headers/PFRelation.h"
+- "./Parse.framework/Headers/PFQuery+Deprecated.h"
+- "./Parse.framework/Headers/PFQuery+Synchronous.h"
+- "./Parse.framework/Headers/PFQuery.h"
+- "./Parse.framework/Headers/PFObject+Deprecated.h"
+- "./Parse.framework/Headers/PFObject+Synchronous.h"
+- "./Parse.framework/Headers/PFObject+Subclass.h"
+- "./Parse.framework/Headers/PFGeoPoint.h"
+- "./Parse.framework/Headers/PFFile+Synchronous.h"
+- "./Parse.framework/Headers/PFFile+Deprecated.h"
+- "./Parse.framework/Headers/PFFile.h"
+- "./Parse.framework/Headers/PFConfig+Synchronous.h"
+- "./Parse.framework/Headers/PFConfig.h"
+- "./Parse.framework/Headers/PFCloud+Synchronous.h"
+- "./Parse.framework/Headers/PFCloud+Deprecated.h"
+- "./Parse.framework/Headers/PFCloud.h"
+- "./Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
+- "./Parse.framework/Headers/PFSubclassing.h"
+- "./Parse.framework/Headers/PFObject.h"
+- "./Parse.framework/Headers/PFUser.h"
+- "./Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "./Parse.framework/Headers/PFAnalytics.h"
+- "./Parse.framework/Headers/PFACL.h"
+- "./Parse.framework/Headers/PFConstants.h"
+- "./Parse.framework/Headers/ParseClientConfiguration.h"
+- "./Parse.framework/Headers/Parse.h"
+- "./Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "97c71586fb859c6e52682a3a6c098bad"

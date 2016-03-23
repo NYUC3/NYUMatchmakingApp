@@ -1,0 +1,702 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ProjectTableViewController"
+provides-nominal:
+- "C10startupnyu26ProjectTableViewController"
+provides-member:
+- ["C10startupnyu26ProjectTableViewController", ""]
+provides-dynamic-lookup:
+- "projectName"
+- "segmentControl"
+- "projectDescriptionLabel"
+- "viewDidLoad"
+- "segmentControlTapped"
+- "projectImage"
+- "handleSwipes"
+depends-top-level:
+- "ProjectTableViewController"
+- "StringLiteralType"
+- "UISegmentedControl"
+- "UISwipeGestureRecognizer"
+- !private "~="
+- !private "=="
+- "String"
+- !private "BooleanLiteralType"
+- "UITableViewController"
+- "UILabel"
+- !private "Selector"
+- "UIImageView"
+depends-member:
+- !private ["PSs9AnyObject", "Selector"]
+- !private ["PSs9AnyObject", "UISwipeGestureRecognizer"]
+- !private ["PSs9AnyObject", "addGestureRecognizer"]
+- !private ["PSs9AnyObject", "direction"]
+- ["PSs9AnyObject", "handleSwipes"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "lineBreakMode"]
+- !private ["PSs9AnyObject", "navigationController"]
+- !private ["PSs9AnyObject", "numberOfLines"]
+- !private ["PSs9AnyObject", "popToRootViewControllerAnimated"]
+- ["PSs9AnyObject", "projectDescriptionLabel"]
+- ["PSs9AnyObject", "projectImage"]
+- ["PSs9AnyObject", "projectName"]
+- ["PSs9AnyObject", "segmentControl"]
+- ["PSs9AnyObject", "segmentControlTapped"]
+- !private ["PSs9AnyObject", "selectedSegmentIndex"]
+- !private ["PSs9AnyObject", "text"]
+- !private ["PSs9AnyObject", "title"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs23ArrayLiteralConvertible", "RawValue"]
+- !private ["PSs23ArrayLiteralConvertible", "Right"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "Selector"]
+- !private ["PSs11CVarArgType", "UISwipeGestureRecognizer"]
+- !private ["PSs11CVarArgType", "addGestureRecognizer"]
+- !private ["PSs11CVarArgType", "direction"]
+- ["PSs11CVarArgType", "handleSwipes"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "lineBreakMode"]
+- !private ["PSs11CVarArgType", "navigationController"]
+- !private ["PSs11CVarArgType", "numberOfLines"]
+- !private ["PSs11CVarArgType", "popToRootViewControllerAnimated"]
+- ["PSs11CVarArgType", "projectDescriptionLabel"]
+- ["PSs11CVarArgType", "projectImage"]
+- ["PSs11CVarArgType", "projectName"]
+- ["PSs11CVarArgType", "segmentControl"]
+- ["PSs11CVarArgType", "segmentControlTapped"]
+- !private ["PSs11CVarArgType", "selectedSegmentIndex"]
+- !private ["PSs11CVarArgType", "text"]
+- !private ["PSs11CVarArgType", "title"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "Selector"]
+- !private ["PSs23CustomStringConvertible", "UISwipeGestureRecognizer"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addGestureRecognizer"]
+- !private ["PSs23CustomStringConvertible", "direction"]
+- ["PSs23CustomStringConvertible", "handleSwipes"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "lineBreakMode"]
+- !private ["PSs23CustomStringConvertible", "navigationController"]
+- !private ["PSs23CustomStringConvertible", "numberOfLines"]
+- !private ["PSs23CustomStringConvertible", "popToRootViewControllerAnimated"]
+- ["PSs23CustomStringConvertible", "projectDescriptionLabel"]
+- ["PSs23CustomStringConvertible", "projectImage"]
+- ["PSs23CustomStringConvertible", "projectName"]
+- ["PSs23CustomStringConvertible", "segmentControl"]
+- ["PSs23CustomStringConvertible", "segmentControlTapped"]
+- !private ["PSs23CustomStringConvertible", "selectedSegmentIndex"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- !private ["PSs23CustomStringConvertible", "title"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "ByWordWrapping"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "RawValue"]
+- !private ["PSs9Equatable", "Right"]
+- !private ["PSs9Equatable", "Selector"]
+- !private ["PSs9Equatable", "UISwipeGestureRecognizer"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addGestureRecognizer"]
+- !private ["PSs9Equatable", "direction"]
+- ["PSs9Equatable", "handleSwipes"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "lineBreakMode"]
+- !private ["PSs9Equatable", "navigationController"]
+- !private ["PSs9Equatable", "numberOfLines"]
+- !private ["PSs9Equatable", "popToRootViewControllerAnimated"]
+- ["PSs9Equatable", "projectDescriptionLabel"]
+- ["PSs9Equatable", "projectImage"]
+- ["PSs9Equatable", "projectName"]
+- ["PSs9Equatable", "segmentControl"]
+- ["PSs9Equatable", "segmentControlTapped"]
+- !private ["PSs9Equatable", "selectedSegmentIndex"]
+- !private ["PSs9Equatable", "text"]
+- !private ["PSs9Equatable", "title"]
+- !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "ByWordWrapping"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "Selector"]
+- !private ["PSs8Hashable", "UISwipeGestureRecognizer"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addGestureRecognizer"]
+- !private ["PSs8Hashable", "direction"]
+- ["PSs8Hashable", "handleSwipes"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "lineBreakMode"]
+- !private ["PSs8Hashable", "navigationController"]
+- !private ["PSs8Hashable", "numberOfLines"]
+- !private ["PSs8Hashable", "popToRootViewControllerAnimated"]
+- ["PSs8Hashable", "projectDescriptionLabel"]
+- ["PSs8Hashable", "projectImage"]
+- ["PSs8Hashable", "projectName"]
+- ["PSs8Hashable", "segmentControl"]
+- ["PSs8Hashable", "segmentControlTapped"]
+- !private ["PSs8Hashable", "selectedSegmentIndex"]
+- !private ["PSs8Hashable", "text"]
+- !private ["PSs8Hashable", "title"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSo8NSCoding", "Selector"]
+- !private ["PSo8NSCoding", "UISwipeGestureRecognizer"]
+- !private ["PSo8NSCoding", "addGestureRecognizer"]
+- ["PSo8NSCoding", "handleSwipes"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "lineBreakMode"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "numberOfLines"]
+- !private ["PSo8NSCoding", "popToRootViewControllerAnimated"]
+- ["PSo8NSCoding", "projectDescriptionLabel"]
+- ["PSo8NSCoding", "projectImage"]
+- ["PSo8NSCoding", "projectName"]
+- ["PSo8NSCoding", "segmentControl"]
+- ["PSo8NSCoding", "segmentControlTapped"]
+- !private ["PSo8NSCoding", "selectedSegmentIndex"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "Selector"]
+- !private ["PSo26NSExtensionRequestHandling", "UISwipeGestureRecognizer"]
+- ["PSo26NSExtensionRequestHandling", "handleSwipes"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "popToRootViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "projectDescriptionLabel"]
+- ["PSo26NSExtensionRequestHandling", "projectImage"]
+- ["PSo26NSExtensionRequestHandling", "projectName"]
+- ["PSo26NSExtensionRequestHandling", "segmentControl"]
+- ["PSo26NSExtensionRequestHandling", "segmentControlTapped"]
+- !private ["PSo26NSExtensionRequestHandling", "title"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["OSC15NSLineBreakMode", "ByWordWrapping"]
+- !private ["CSo8NSNumber", "deinit"]
+- !private ["CSo8NSObject", "Selector"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UISegmentedControl"]
+- ["CSo8NSObject", "UISwipeGestureRecognizer"]
+- !private ["CSo8NSObject", "addGestureRecognizer"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "direction"]
+- ["CSo8NSObject", "handleSwipes"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "lineBreakMode"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "numberOfLines"]
+- !private ["CSo8NSObject", "popToRootViewControllerAnimated"]
+- ["CSo8NSObject", "projectDescriptionLabel"]
+- ["CSo8NSObject", "projectImage"]
+- ["CSo8NSObject", "projectName"]
+- ["CSo8NSObject", "segmentControl"]
+- ["CSo8NSObject", "segmentControlTapped"]
+- !private ["CSo8NSObject", "selectedSegmentIndex"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Selector"]
+- !private ["PSo16NSObjectProtocol", "UISwipeGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "direction"]
+- ["PSo16NSObjectProtocol", "handleSwipes"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "lineBreakMode"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "numberOfLines"]
+- !private ["PSo16NSObjectProtocol", "popToRootViewControllerAnimated"]
+- ["PSo16NSObjectProtocol", "projectDescriptionLabel"]
+- ["PSo16NSObjectProtocol", "projectImage"]
+- ["PSo16NSObjectProtocol", "projectName"]
+- ["PSo16NSObjectProtocol", "segmentControl"]
+- ["PSo16NSObjectProtocol", "segmentControlTapped"]
+- !private ["PSo16NSObjectProtocol", "selectedSegmentIndex"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo7NSValue", "deinit"]
+- !private ["PSs21NilLiteralConvertible", "init"]
+- !private ["PSs13OptionSetType", "RawValue"]
+- !private ["PSs13OptionSetType", "Right"]
+- !private ["Sq", "deinit"]
+- !private ["C10startupnyu26ProjectTableViewController", "Selector"]
+- ["C10startupnyu26ProjectTableViewController", "String"]
+- ["C10startupnyu26ProjectTableViewController", "UIImageView"]
+- ["C10startupnyu26ProjectTableViewController", "UILabel"]
+- ["C10startupnyu26ProjectTableViewController", "UISegmentedControl"]
+- ["C10startupnyu26ProjectTableViewController", "UISwipeGestureRecognizer"]
+- ["C10startupnyu26ProjectTableViewController", "deinit"]
+- ["C10startupnyu26ProjectTableViewController", "handleSwipes"]
+- ["C10startupnyu26ProjectTableViewController", "init"]
+- !private ["C10startupnyu26ProjectTableViewController", "navigationController"]
+- ["C10startupnyu26ProjectTableViewController", "projectDescriptionLabel"]
+- ["C10startupnyu26ProjectTableViewController", "projectImage"]
+- ["C10startupnyu26ProjectTableViewController", "projectName"]
+- ["C10startupnyu26ProjectTableViewController", "segmentControl"]
+- ["C10startupnyu26ProjectTableViewController", "segmentControlTapped"]
+- !private ["C10startupnyu26ProjectTableViewController", "title"]
+- !private ["C10startupnyu26ProjectTableViewController", "view"]
+- ["C10startupnyu26ProjectTableViewController", "viewDidLoad"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["VSs5Range", "deinit"]
+- !private ["PSs16RawRepresentable", "ByWordWrapping"]
+- !private ["PSs16RawRepresentable", "RawValue"]
+- !private ["PSs16RawRepresentable", "Right"]
+- !private ["V10ObjectiveC8Selector", "init"]
+- !private ["PSs14SetAlgebraType", "RawValue"]
+- !private ["PSs14SetAlgebraType", "Right"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
+- !private ["PSo29UIAccessibilityIdentification", "lineBreakMode"]
+- !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
+- !private ["PSo29UIAccessibilityIdentification", "selectedSegmentIndex"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "addGestureRecognizer"]
+- !private ["PSo12UIAppearance", "lineBreakMode"]
+- !private ["PSo12UIAppearance", "numberOfLines"]
+- !private ["PSo12UIAppearance", "selectedSegmentIndex"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "Selector"]
+- !private ["PSo21UIAppearanceContainer", "UISwipeGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
+- ["PSo21UIAppearanceContainer", "handleSwipes"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "lineBreakMode"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "numberOfLines"]
+- !private ["PSo21UIAppearanceContainer", "popToRootViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "projectDescriptionLabel"]
+- ["PSo21UIAppearanceContainer", "projectImage"]
+- ["PSo21UIAppearanceContainer", "projectName"]
+- ["PSo21UIAppearanceContainer", "segmentControl"]
+- ["PSo21UIAppearanceContainer", "segmentControlTapped"]
+- !private ["PSo21UIAppearanceContainer", "selectedSegmentIndex"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "title"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "Selector"]
+- !private ["PSo18UIContentContainer", "UISwipeGestureRecognizer"]
+- ["PSo18UIContentContainer", "handleSwipes"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "popToRootViewControllerAnimated"]
+- ["PSo18UIContentContainer", "projectDescriptionLabel"]
+- ["PSo18UIContentContainer", "projectImage"]
+- ["PSo18UIContentContainer", "projectName"]
+- ["PSo18UIContentContainer", "segmentControl"]
+- ["PSo18UIContentContainer", "segmentControlTapped"]
+- !private ["PSo18UIContentContainer", "title"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "selectedSegmentIndex"]
+- !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
+- !private ["PSo17UICoordinateSpace", "lineBreakMode"]
+- !private ["PSo17UICoordinateSpace", "numberOfLines"]
+- !private ["PSo17UICoordinateSpace", "selectedSegmentIndex"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "lineBreakMode"]
+- !private ["PSo13UIDynamicItem", "numberOfLines"]
+- !private ["PSo13UIDynamicItem", "selectedSegmentIndex"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "Selector"]
+- !private ["PSo18UIFocusEnvironment", "UISwipeGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
+- ["PSo18UIFocusEnvironment", "handleSwipes"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "lineBreakMode"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "numberOfLines"]
+- !private ["PSo18UIFocusEnvironment", "popToRootViewControllerAnimated"]
+- ["PSo18UIFocusEnvironment", "projectDescriptionLabel"]
+- ["PSo18UIFocusEnvironment", "projectImage"]
+- ["PSo18UIFocusEnvironment", "projectName"]
+- ["PSo18UIFocusEnvironment", "segmentControl"]
+- ["PSo18UIFocusEnvironment", "segmentControlTapped"]
+- !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "title"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo19UIGestureRecognizer", "direction"]
+- !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["CSo7UILabel", "lineBreakMode"]
+- !private ["CSo7UILabel", "numberOfLines"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo22UINavigationController", "popToRootViewControllerAnimated"]
+- !private ["CSo11UIResponder", "Selector"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UISegmentedControl"]
+- ["CSo11UIResponder", "UISwipeGestureRecognizer"]
+- !private ["CSo11UIResponder", "addGestureRecognizer"]
+- ["CSo11UIResponder", "handleSwipes"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "lineBreakMode"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "numberOfLines"]
+- !private ["CSo11UIResponder", "popToRootViewControllerAnimated"]
+- ["CSo11UIResponder", "projectDescriptionLabel"]
+- ["CSo11UIResponder", "projectImage"]
+- ["CSo11UIResponder", "projectName"]
+- ["CSo11UIResponder", "segmentControl"]
+- ["CSo11UIResponder", "segmentControlTapped"]
+- !private ["CSo11UIResponder", "selectedSegmentIndex"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "title"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo20UIScrollViewDelegate", "Selector"]
+- !private ["PSo20UIScrollViewDelegate", "UISwipeGestureRecognizer"]
+- ["PSo20UIScrollViewDelegate", "handleSwipes"]
+- ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
+- ["PSo20UIScrollViewDelegate", "projectDescriptionLabel"]
+- ["PSo20UIScrollViewDelegate", "projectImage"]
+- ["PSo20UIScrollViewDelegate", "projectName"]
+- ["PSo20UIScrollViewDelegate", "segmentControl"]
+- ["PSo20UIScrollViewDelegate", "segmentControlTapped"]
+- !private ["PSo20UIScrollViewDelegate", "title"]
+- !private ["PSo20UIScrollViewDelegate", "view"]
+- ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["CSo18UISegmentedControl", "selectedSegmentIndex"]
+- !private ["PSo16UIStateRestoring", "Selector"]
+- !private ["PSo16UIStateRestoring", "UISwipeGestureRecognizer"]
+- ["PSo16UIStateRestoring", "handleSwipes"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "popToRootViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "projectDescriptionLabel"]
+- ["PSo16UIStateRestoring", "projectImage"]
+- ["PSo16UIStateRestoring", "projectName"]
+- ["PSo16UIStateRestoring", "segmentControl"]
+- ["PSo16UIStateRestoring", "segmentControlTapped"]
+- !private ["PSo16UIStateRestoring", "title"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo24UISwipeGestureRecognizer", "direction"]
+- !private ["CSo24UISwipeGestureRecognizer", "init"]
+- !private ["VSC33UISwipeGestureRecognizerDirection", "RawValue"]
+- !private ["VSC33UISwipeGestureRecognizerDirection", "Right"]
+- !private ["VSC33UISwipeGestureRecognizerDirection", "deinit"]
+- !private ["CSo21UITableViewController", "Selector"]
+- ["CSo21UITableViewController", "String"]
+- ["CSo21UITableViewController", "UIImageView"]
+- ["CSo21UITableViewController", "UILabel"]
+- ["CSo21UITableViewController", "UISegmentedControl"]
+- ["CSo21UITableViewController", "UISwipeGestureRecognizer"]
+- ["CSo21UITableViewController", "handleSwipes"]
+- ["CSo21UITableViewController", "init"]
+- !private ["CSo21UITableViewController", "navigationController"]
+- ["CSo21UITableViewController", "projectDescriptionLabel"]
+- ["CSo21UITableViewController", "projectImage"]
+- ["CSo21UITableViewController", "projectName"]
+- ["CSo21UITableViewController", "segmentControl"]
+- ["CSo21UITableViewController", "segmentControlTapped"]
+- !private ["CSo21UITableViewController", "title"]
+- !private ["CSo21UITableViewController", "view"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "Selector"]
+- !private ["PSo21UITableViewDataSource", "UISwipeGestureRecognizer"]
+- ["PSo21UITableViewDataSource", "handleSwipes"]
+- ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
+- ["PSo21UITableViewDataSource", "projectDescriptionLabel"]
+- ["PSo21UITableViewDataSource", "projectImage"]
+- ["PSo21UITableViewDataSource", "projectName"]
+- ["PSo21UITableViewDataSource", "segmentControl"]
+- ["PSo21UITableViewDataSource", "segmentControlTapped"]
+- !private ["PSo21UITableViewDataSource", "title"]
+- !private ["PSo21UITableViewDataSource", "view"]
+- ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "Selector"]
+- !private ["PSo19UITableViewDelegate", "UISwipeGestureRecognizer"]
+- ["PSo19UITableViewDelegate", "handleSwipes"]
+- ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
+- ["PSo19UITableViewDelegate", "projectDescriptionLabel"]
+- ["PSo19UITableViewDelegate", "projectImage"]
+- ["PSo19UITableViewDelegate", "projectName"]
+- ["PSo19UITableViewDelegate", "segmentControl"]
+- ["PSo19UITableViewDelegate", "segmentControlTapped"]
+- !private ["PSo19UITableViewDelegate", "title"]
+- !private ["PSo19UITableViewDelegate", "view"]
+- ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "Selector"]
+- !private ["PSo18UITraitEnvironment", "UISwipeGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
+- ["PSo18UITraitEnvironment", "handleSwipes"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "lineBreakMode"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "numberOfLines"]
+- !private ["PSo18UITraitEnvironment", "popToRootViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "projectDescriptionLabel"]
+- ["PSo18UITraitEnvironment", "projectImage"]
+- ["PSo18UITraitEnvironment", "projectName"]
+- ["PSo18UITraitEnvironment", "segmentControl"]
+- ["PSo18UITraitEnvironment", "segmentControlTapped"]
+- !private ["PSo18UITraitEnvironment", "selectedSegmentIndex"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "title"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addGestureRecognizer"]
+- !private ["CSo6UIView", "lineBreakMode"]
+- !private ["CSo6UIView", "numberOfLines"]
+- !private ["CSo6UIView", "selectedSegmentIndex"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "Selector"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UISegmentedControl"]
+- ["CSo16UIViewController", "UISwipeGestureRecognizer"]
+- ["CSo16UIViewController", "handleSwipes"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "popToRootViewControllerAnimated"]
+- ["CSo16UIViewController", "projectDescriptionLabel"]
+- ["CSo16UIViewController", "projectImage"]
+- ["CSo16UIViewController", "projectName"]
+- ["CSo16UIViewController", "segmentControl"]
+- ["CSo16UIViewController", "segmentControlTapped"]
+- !private ["CSo16UIViewController", "title"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "addGestureRecognizer"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "lineBreakMode"]
+- !private ["PSs12_Reflectable", "numberOfLines"]
+- !private ["PSs12_Reflectable", "selectedSegmentIndex"]
+- !private ["PSs12_Reflectable", "text"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs16ForwardIndexType"
+- "PSs8Hashable"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- !private "OSC15NSLineBreakMode"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo7NSValue"
+- !private "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
+- !private "Sq"
+- "C10startupnyu26ProjectTableViewController"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- !private "PSs16RawRepresentable"
+- !private "V10ObjectiveC8Selector"
+- !private "PSs14SetAlgebraType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo19UIGestureRecognizer"
+- !private "CSo7UILabel"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo20UIScrollViewDelegate"
+- !private "CSo18UISegmentedControl"
+- "PSo16UIStateRestoring"
+- !private "CSo24UISwipeGestureRecognizer"
+- !private "VSC33UISwipeGestureRecognizerDirection"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "./Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "./Bolts.framework/Headers/BFURL.h"
+- "./Bolts.framework/Headers/BFMeasurementEvent.h"
+- "./Bolts.framework/Headers/BFAppLinkTarget.h"
+- "./Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "./Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "./Bolts.framework/Headers/BFAppLinkResolving.h"
+- "./Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "./Bolts.framework/Headers/BFAppLink.h"
+- "./Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "./Bolts.framework/Headers/BFTask.h"
+- "./Bolts.framework/Headers/BFExecutor.h"
+- "./Bolts.framework/Headers/BFDefines.h"
+- "./Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "./Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "./Bolts.framework/Headers/BFCancellationToken.h"
+- "./Bolts.framework/Headers/BoltsVersion.h"
+- "./Bolts.framework/Headers/Bolts.h"
+- "./Bolts.framework/Modules/module.modulemap"
+- "./Parse.framework/Headers/PFPurchase.h"
+- "./Parse.framework/Headers/PFProduct.h"
+- "./Parse.framework/Headers/PFPush+Deprecated.h"
+- "./Parse.framework/Headers/PFPush+Synchronous.h"
+- "./Parse.framework/Headers/PFPush.h"
+- "./Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "./Parse.framework/Headers/PFInstallation.h"
+- "./Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "./Parse.framework/Headers/PFUser+Deprecated.h"
+- "./Parse.framework/Headers/PFUser+Synchronous.h"
+- "./Parse.framework/Headers/PFSession.h"
+- "./Parse.framework/Headers/PFRole.h"
+- "./Parse.framework/Headers/PFRelation.h"
+- "./Parse.framework/Headers/PFQuery+Deprecated.h"
+- "./Parse.framework/Headers/PFQuery+Synchronous.h"
+- "./Parse.framework/Headers/PFQuery.h"
+- "./Parse.framework/Headers/PFObject+Deprecated.h"
+- "./Parse.framework/Headers/PFObject+Synchronous.h"
+- "./Parse.framework/Headers/PFObject+Subclass.h"
+- "./Parse.framework/Headers/PFGeoPoint.h"
+- "./Parse.framework/Headers/PFFile+Synchronous.h"
+- "./Parse.framework/Headers/PFFile+Deprecated.h"
+- "./Parse.framework/Headers/PFFile.h"
+- "./Parse.framework/Headers/PFConfig+Synchronous.h"
+- "./Parse.framework/Headers/PFConfig.h"
+- "./Parse.framework/Headers/PFCloud+Synchronous.h"
+- "./Parse.framework/Headers/PFCloud+Deprecated.h"
+- "./Parse.framework/Headers/PFCloud.h"
+- "./Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
+- "./Parse.framework/Headers/PFSubclassing.h"
+- "./Parse.framework/Headers/PFObject.h"
+- "./Parse.framework/Headers/PFUser.h"
+- "./Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "./Parse.framework/Headers/PFAnalytics.h"
+- "./Parse.framework/Headers/PFACL.h"
+- "./Parse.framework/Headers/PFConstants.h"
+- "./Parse.framework/Headers/ParseClientConfiguration.h"
+- "./Parse.framework/Headers/Parse.h"
+- "./Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "26506e27db4284f1197e1bed9e8bda9b"
