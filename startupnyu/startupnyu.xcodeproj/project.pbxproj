@@ -19,7 +19,6 @@
 		00032E251C4DC83D0009B002 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00032E241C4DC83D0009B002 /* LaunchScreen.xib */; };
 		00D648B31C543959001ACD0C /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D648B21C543959001ACD0C /* ProjectCell.swift */; };
 		C21037D01C4AB4480039E748 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037CF1C4AB4480039E748 /* ProfileViewController.swift */; };
-		C21037D31C4ABB870039E748 /* ProjectViewBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21037D21C4ABB870039E748 /* ProjectViewBoard.storyboard */; };
 		C21037D71C4AC81A0039E748 /* MessagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037D61C4AC81A0039E748 /* MessagesListViewController.swift */; };
 		C21037D91C4AC89F0039E748 /* MessageListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037D81C4AC89F0039E748 /* MessageListViewCell.swift */; };
 		C21037DB1C4ACA1C0039E748 /* messageListStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037DA1C4ACA1C0039E748 /* messageListStruct.swift */; };
@@ -32,6 +31,9 @@
 		C24D0AB01C56F77E00EA1053 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D0AAF1C56F77E00EA1053 /* LoginVC.swift */; };
 		C24D0AB41C56F8C900EA1053 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D0AB31C56F8C900EA1053 /* LoginViewController.swift */; };
 		C24D0AB61C56FC6B00EA1053 /* NavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D0AB51C56FC6B00EA1053 /* NavVC.swift */; };
+		C287A3041CB7580700613D26 /* ProjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A3031CB7580700613D26 /* ProjectsListViewController.swift */; };
+		C287A30C1CB75A9100613D26 /* MyProjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A30B1CB75A9100613D26 /* MyProjectsTableViewCell.swift */; };
+		C287A30E1CB75B1C00613D26 /* AddButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287A30D1CB75B1C00613D26 /* AddButtonTableViewCell.swift */; };
 		C2A0633D1C4C0844002DFF79 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A0633C1C4C0844002DFF79 /* Parse.framework */; };
 		C2A0633F1C4C084B002DFF79 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A0633E1C4C084B002DFF79 /* Bolts.framework */; };
 		C2A063441C4C0855002DFF79 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A063401C4C0855002DFF79 /* ParseFacebookUtils.framework */; };
@@ -94,7 +96,6 @@
 		00032E241C4DC83D0009B002 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		00D648B21C543959001ACD0C /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		C21037CF1C4AB4480039E748 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		C21037D21C4ABB870039E748 /* ProjectViewBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProjectViewBoard.storyboard; sourceTree = "<group>"; };
 		C21037D61C4AC81A0039E748 /* MessagesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesListViewController.swift; sourceTree = "<group>"; };
 		C21037D81C4AC89F0039E748 /* MessageListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListViewCell.swift; sourceTree = "<group>"; };
 		C21037DA1C4ACA1C0039E748 /* messageListStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageListStruct.swift; sourceTree = "<group>"; };
@@ -107,6 +108,9 @@
 		C24D0AAF1C56F77E00EA1053 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C24D0AB31C56F8C900EA1053 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C24D0AB51C56FC6B00EA1053 /* NavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavVC.swift; sourceTree = "<group>"; };
+		C287A3031CB7580700613D26 /* ProjectsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListViewController.swift; sourceTree = "<group>"; };
+		C287A30B1CB75A9100613D26 /* MyProjectsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyProjectsTableViewCell.swift; path = startupnyu/startupnyu/MyProjectsTableViewCell.swift; sourceTree = "<group>"; };
+		C287A30D1CB75B1C00613D26 /* AddButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButtonTableViewCell.swift; sourceTree = "<group>"; };
 		C2A0633C1C4C0844002DFF79 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C2A0633E1C4C084B002DFF79 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		C2A063401C4C0855002DFF79 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -195,7 +199,6 @@
 		C21037D11C4ABB6F0039E748 /* ProjectView */ = {
 			isa = PBXGroup;
 			children = (
-				C21037D21C4ABB870039E748 /* ProjectViewBoard.storyboard */,
 				00032E191C4DBC3C0009B002 /* ProjectTableViewController.swift */,
 			);
 			name = ProjectView;
@@ -341,7 +344,10 @@
 			isa = PBXGroup;
 			children = (
 				C2F098501C9E06750014E2B9 /* CreateProject.storyboard */,
+				C287A3031CB7580700613D26 /* ProjectsListViewController.swift */,
+				C287A30D1CB75B1C00613D26 /* AddButtonTableViewCell.swift */,
 				C2F098531C9E06DA0014E2B9 /* CreateProjectViewController.swift */,
+				C287A30B1CB75A9100613D26 /* MyProjectsTableViewCell.swift */,
 			);
 			name = "Create Project";
 			sourceTree = "<group>";
@@ -469,7 +475,6 @@
 				C2E3F0BB1C444261007DDBB7 /* Assets.xcassets in Resources */,
 				C2E3F0B91C444261007DDBB7 /* Main.storyboard in Resources */,
 				00032E251C4DC83D0009B002 /* LaunchScreen.xib in Resources */,
-				C21037D31C4ABB870039E748 /* ProjectViewBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,12 +512,15 @@
 				C21037D91C4AC89F0039E748 /* MessageListViewCell.swift in Sources */,
 				C21037D71C4AC81A0039E748 /* MessagesListViewController.swift in Sources */,
 				C21037E31C4AD7B60039E748 /* CustomTabbar.swift in Sources */,
+				C287A30C1CB75A9100613D26 /* MyProjectsTableViewCell.swift in Sources */,
+				C287A30E1CB75B1C00613D26 /* AddButtonTableViewCell.swift in Sources */,
 				C22329371C55C1FE001CC13C /* ExploreVC.swift in Sources */,
 				C2F098591C9E0C550014E2B9 /* EditProfileTableTableViewController.swift in Sources */,
 				C24D0AB01C56F77E00EA1053 /* LoginVC.swift in Sources */,
 				C2F098541C9E06DA0014E2B9 /* CreateProjectViewController.swift in Sources */,
 				C21037D01C4AB4480039E748 /* ProfileViewController.swift in Sources */,
 				C21037DB1C4ACA1C0039E748 /* messageListStruct.swift in Sources */,
+				C287A3041CB7580700613D26 /* ProjectsListViewController.swift in Sources */,
 				C2E3F0B41C444261007DDBB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

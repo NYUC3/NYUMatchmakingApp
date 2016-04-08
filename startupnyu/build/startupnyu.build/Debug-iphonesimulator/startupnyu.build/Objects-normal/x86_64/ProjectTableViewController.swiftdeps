@@ -6,173 +6,194 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu26ProjectTableViewController", ""]
 provides-dynamic-lookup:
-- "projectName"
-- "segmentControl"
-- "projectDescriptionLabel"
-- "viewDidLoad"
-- "segmentControlTapped"
 - "projectImage"
 - "handleSwipes"
+- "viewDidLoad"
+- "projectDescriptionLabel"
+- "projectName"
+- "segmentControl"
+- "segmentControlTapped"
 depends-top-level:
-- "ProjectTableViewController"
-- "StringLiteralType"
 - "UISegmentedControl"
-- "UISwipeGestureRecognizer"
 - !private "~="
+- "UISwipeGestureRecognizer"
 - !private "=="
-- "String"
-- !private "BooleanLiteralType"
-- "UITableViewController"
-- "UILabel"
-- !private "Selector"
 - "UIImageView"
+- "StringLiteralType"
+- "UILabel"
+- "String"
+- !private "Selector"
+- "UITableViewController"
+- "ProjectTableViewController"
+- !private "BooleanLiteralType"
 depends-member:
-- !private ["PSs9AnyObject", "Selector"]
-- !private ["PSs9AnyObject", "UISwipeGestureRecognizer"]
-- !private ["PSs9AnyObject", "addGestureRecognizer"]
-- !private ["PSs9AnyObject", "direction"]
-- ["PSs9AnyObject", "handleSwipes"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "lineBreakMode"]
-- !private ["PSs9AnyObject", "navigationController"]
-- !private ["PSs9AnyObject", "numberOfLines"]
-- !private ["PSs9AnyObject", "popToRootViewControllerAnimated"]
-- ["PSs9AnyObject", "projectDescriptionLabel"]
-- ["PSs9AnyObject", "projectImage"]
-- ["PSs9AnyObject", "projectName"]
-- ["PSs9AnyObject", "segmentControl"]
-- ["PSs9AnyObject", "segmentControlTapped"]
-- !private ["PSs9AnyObject", "selectedSegmentIndex"]
-- !private ["PSs9AnyObject", "text"]
-- !private ["PSs9AnyObject", "title"]
-- !private ["PSs9AnyObject", "view"]
-- ["PSs9AnyObject", "viewDidLoad"]
-- ["PSs9AnyObject", ""]
-- !private ["PSs23ArrayLiteralConvertible", "RawValue"]
-- !private ["PSs23ArrayLiteralConvertible", "Right"]
-- !private ["PSs22BidirectionalIndexType", "Distance"]
-- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
-- !private ["PSs21BitwiseOperationsType", "Distance"]
-- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps9AnyObject", "Selector"]
+- !private ["Ps9AnyObject", "UISwipeGestureRecognizer"]
+- !private ["Ps9AnyObject", "addGestureRecognizer"]
+- !private ["Ps9AnyObject", "direction"]
+- ["Ps9AnyObject", "handleSwipes"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "lineBreakMode"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "numberOfLines"]
+- !private ["Ps9AnyObject", "popToRootViewControllerAnimated"]
+- ["Ps9AnyObject", "projectDescriptionLabel"]
+- ["Ps9AnyObject", "projectImage"]
+- ["Ps9AnyObject", "projectName"]
+- ["Ps9AnyObject", "segmentControl"]
+- ["Ps9AnyObject", "segmentControlTapped"]
+- !private ["Ps9AnyObject", "selectedSegmentIndex"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "title"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps23ArrayLiteralConvertible", "RawValue"]
+- !private ["Ps23ArrayLiteralConvertible", "Right"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["PSs11CVarArgType", "Distance"]
-- !private ["PSs11CVarArgType", "IntegerLiteralType"]
-- !private ["PSs11CVarArgType", "Selector"]
-- !private ["PSs11CVarArgType", "UISwipeGestureRecognizer"]
-- !private ["PSs11CVarArgType", "addGestureRecognizer"]
-- !private ["PSs11CVarArgType", "direction"]
-- ["PSs11CVarArgType", "handleSwipes"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "lineBreakMode"]
-- !private ["PSs11CVarArgType", "navigationController"]
-- !private ["PSs11CVarArgType", "numberOfLines"]
-- !private ["PSs11CVarArgType", "popToRootViewControllerAnimated"]
-- ["PSs11CVarArgType", "projectDescriptionLabel"]
-- ["PSs11CVarArgType", "projectImage"]
-- ["PSs11CVarArgType", "projectName"]
-- ["PSs11CVarArgType", "segmentControl"]
-- ["PSs11CVarArgType", "segmentControlTapped"]
-- !private ["PSs11CVarArgType", "selectedSegmentIndex"]
-- !private ["PSs11CVarArgType", "text"]
-- !private ["PSs11CVarArgType", "title"]
-- !private ["PSs11CVarArgType", "view"]
-- ["PSs11CVarArgType", "viewDidLoad"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs10Comparable", "Distance"]
-- !private ["PSs10Comparable", "IntegerLiteralType"]
-- !private ["PSs23CustomStringConvertible", "Distance"]
-- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["PSs23CustomStringConvertible", "Selector"]
-- !private ["PSs23CustomStringConvertible", "UISwipeGestureRecognizer"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs23CustomStringConvertible", "addGestureRecognizer"]
-- !private ["PSs23CustomStringConvertible", "direction"]
-- ["PSs23CustomStringConvertible", "handleSwipes"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "lineBreakMode"]
-- !private ["PSs23CustomStringConvertible", "navigationController"]
-- !private ["PSs23CustomStringConvertible", "numberOfLines"]
-- !private ["PSs23CustomStringConvertible", "popToRootViewControllerAnimated"]
-- ["PSs23CustomStringConvertible", "projectDescriptionLabel"]
-- ["PSs23CustomStringConvertible", "projectImage"]
-- ["PSs23CustomStringConvertible", "projectName"]
-- ["PSs23CustomStringConvertible", "segmentControl"]
-- ["PSs23CustomStringConvertible", "segmentControlTapped"]
-- !private ["PSs23CustomStringConvertible", "selectedSegmentIndex"]
-- !private ["PSs23CustomStringConvertible", "text"]
-- !private ["PSs23CustomStringConvertible", "title"]
-- !private ["PSs23CustomStringConvertible", "view"]
-- ["PSs23CustomStringConvertible", "viewDidLoad"]
-- ["PSs23CustomStringConvertible", ""]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "Selector"]
+- !private ["Ps11CVarArgType", "UISwipeGestureRecognizer"]
+- !private ["Ps11CVarArgType", "addGestureRecognizer"]
+- !private ["Ps11CVarArgType", "direction"]
+- ["Ps11CVarArgType", "handleSwipes"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "lineBreakMode"]
+- !private ["Ps11CVarArgType", "navigationController"]
+- !private ["Ps11CVarArgType", "numberOfLines"]
+- !private ["Ps11CVarArgType", "popToRootViewControllerAnimated"]
+- ["Ps11CVarArgType", "projectDescriptionLabel"]
+- ["Ps11CVarArgType", "projectImage"]
+- ["Ps11CVarArgType", "projectName"]
+- ["Ps11CVarArgType", "segmentControl"]
+- ["Ps11CVarArgType", "segmentControlTapped"]
+- !private ["Ps11CVarArgType", "selectedSegmentIndex"]
+- !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "title"]
+- !private ["Ps11CVarArgType", "view"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps28CustomDebugStringConvertible", "Selector"]
+- !private ["Ps28CustomDebugStringConvertible", "UISwipeGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "direction"]
+- ["Ps28CustomDebugStringConvertible", "handleSwipes"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "lineBreakMode"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
+- !private ["Ps28CustomDebugStringConvertible", "popToRootViewControllerAnimated"]
+- ["Ps28CustomDebugStringConvertible", "projectDescriptionLabel"]
+- ["Ps28CustomDebugStringConvertible", "projectImage"]
+- ["Ps28CustomDebugStringConvertible", "projectName"]
+- ["Ps28CustomDebugStringConvertible", "segmentControl"]
+- ["Ps28CustomDebugStringConvertible", "segmentControlTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "selectedSegmentIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "title"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Selector"]
+- !private ["Ps23CustomStringConvertible", "UISwipeGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "direction"]
+- ["Ps23CustomStringConvertible", "handleSwipes"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "lineBreakMode"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "numberOfLines"]
+- !private ["Ps23CustomStringConvertible", "popToRootViewControllerAnimated"]
+- ["Ps23CustomStringConvertible", "projectDescriptionLabel"]
+- ["Ps23CustomStringConvertible", "projectImage"]
+- ["Ps23CustomStringConvertible", "projectName"]
+- ["Ps23CustomStringConvertible", "segmentControl"]
+- ["Ps23CustomStringConvertible", "segmentControlTapped"]
+- !private ["Ps23CustomStringConvertible", "selectedSegmentIndex"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "title"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
-- !private ["PSs9Equatable", "ByWordWrapping"]
-- !private ["PSs9Equatable", "Distance"]
-- !private ["PSs9Equatable", "IntegerLiteralType"]
-- !private ["PSs9Equatable", "RawValue"]
-- !private ["PSs9Equatable", "Right"]
-- !private ["PSs9Equatable", "Selector"]
-- !private ["PSs9Equatable", "UISwipeGestureRecognizer"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- !private ["PSs9Equatable", "addGestureRecognizer"]
-- !private ["PSs9Equatable", "direction"]
-- ["PSs9Equatable", "handleSwipes"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "lineBreakMode"]
-- !private ["PSs9Equatable", "navigationController"]
-- !private ["PSs9Equatable", "numberOfLines"]
-- !private ["PSs9Equatable", "popToRootViewControllerAnimated"]
-- ["PSs9Equatable", "projectDescriptionLabel"]
-- ["PSs9Equatable", "projectImage"]
-- ["PSs9Equatable", "projectName"]
-- ["PSs9Equatable", "segmentControl"]
-- ["PSs9Equatable", "segmentControlTapped"]
-- !private ["PSs9Equatable", "selectedSegmentIndex"]
-- !private ["PSs9Equatable", "text"]
-- !private ["PSs9Equatable", "title"]
-- !private ["PSs9Equatable", "view"]
-- ["PSs9Equatable", "viewDidLoad"]
-- ["PSs9Equatable", ""]
-- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["PSs16ForwardIndexType", "Distance"]
-- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
-- !private ["PSs8Hashable", "ByWordWrapping"]
-- !private ["PSs8Hashable", "Distance"]
-- !private ["PSs8Hashable", "IntegerLiteralType"]
-- !private ["PSs8Hashable", "Selector"]
-- !private ["PSs8Hashable", "UISwipeGestureRecognizer"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- !private ["PSs8Hashable", "addGestureRecognizer"]
-- !private ["PSs8Hashable", "direction"]
-- ["PSs8Hashable", "handleSwipes"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "lineBreakMode"]
-- !private ["PSs8Hashable", "navigationController"]
-- !private ["PSs8Hashable", "numberOfLines"]
-- !private ["PSs8Hashable", "popToRootViewControllerAnimated"]
-- ["PSs8Hashable", "projectDescriptionLabel"]
-- ["PSs8Hashable", "projectImage"]
-- ["PSs8Hashable", "projectName"]
-- ["PSs8Hashable", "segmentControl"]
-- ["PSs8Hashable", "segmentControlTapped"]
-- !private ["PSs8Hashable", "selectedSegmentIndex"]
-- !private ["PSs8Hashable", "text"]
-- !private ["PSs8Hashable", "title"]
-- !private ["PSs8Hashable", "view"]
-- ["PSs8Hashable", "viewDidLoad"]
-- ["PSs8Hashable", ""]
+- !private ["Ps9Equatable", "ByWordWrapping"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "Right"]
+- !private ["Ps9Equatable", "Selector"]
+- !private ["Ps9Equatable", "UISwipeGestureRecognizer"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addGestureRecognizer"]
+- !private ["Ps9Equatable", "direction"]
+- ["Ps9Equatable", "handleSwipes"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "lineBreakMode"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "numberOfLines"]
+- !private ["Ps9Equatable", "popToRootViewControllerAnimated"]
+- ["Ps9Equatable", "projectDescriptionLabel"]
+- ["Ps9Equatable", "projectImage"]
+- ["Ps9Equatable", "projectName"]
+- ["Ps9Equatable", "segmentControl"]
+- ["Ps9Equatable", "segmentControlTapped"]
+- !private ["Ps9Equatable", "selectedSegmentIndex"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "ByWordWrapping"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "Selector"]
+- !private ["Ps8Hashable", "UISwipeGestureRecognizer"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addGestureRecognizer"]
+- !private ["Ps8Hashable", "direction"]
+- ["Ps8Hashable", "handleSwipes"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "lineBreakMode"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "numberOfLines"]
+- !private ["Ps8Hashable", "popToRootViewControllerAnimated"]
+- ["Ps8Hashable", "projectDescriptionLabel"]
+- ["Ps8Hashable", "projectImage"]
+- ["Ps8Hashable", "projectName"]
+- ["Ps8Hashable", "segmentControl"]
+- ["Ps8Hashable", "segmentControlTapped"]
+- !private ["Ps8Hashable", "selectedSegmentIndex"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "title"]
+- !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
-- !private ["PSs21IntegerArithmeticType", "Distance"]
-- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs25IntegerLiteralConvertible", "Distance"]
-- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs11IntegerType", "Distance"]
-- !private ["PSs11IntegerType", "IntegerLiteralType"]
-- !private ["PSs14MirrorPathType", "Distance"]
-- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSo8NSCoding", "Selector"]
 - !private ["PSo8NSCoding", "UISwipeGestureRecognizer"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
@@ -257,9 +278,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo7NSValue", "deinit"]
-- !private ["PSs21NilLiteralConvertible", "init"]
-- !private ["PSs13OptionSetType", "RawValue"]
-- !private ["PSs13OptionSetType", "Right"]
+- !private ["Ps21NilLiteralConvertible", "init"]
+- !private ["Ps13OptionSetType", "RawValue"]
+- !private ["Ps13OptionSetType", "Right"]
 - !private ["Sq", "deinit"]
 - !private ["C10startupnyu26ProjectTableViewController", "Selector"]
 - ["C10startupnyu26ProjectTableViewController", "String"]
@@ -279,22 +300,22 @@ depends-member:
 - !private ["C10startupnyu26ProjectTableViewController", "title"]
 - !private ["C10startupnyu26ProjectTableViewController", "view"]
 - ["C10startupnyu26ProjectTableViewController", "viewDidLoad"]
-- !private ["PSs21RandomAccessIndexType", "Distance"]
-- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
-- !private ["VSs5Range", "deinit"]
-- !private ["PSs16RawRepresentable", "ByWordWrapping"]
-- !private ["PSs16RawRepresentable", "RawValue"]
-- !private ["PSs16RawRepresentable", "Right"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps16RawRepresentable", "ByWordWrapping"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "Right"]
 - !private ["V10ObjectiveC8Selector", "init"]
-- !private ["PSs14SetAlgebraType", "RawValue"]
-- !private ["PSs14SetAlgebraType", "Right"]
-- !private ["PSs17SignedIntegerType", "Distance"]
-- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs16SignedNumberType", "Distance"]
-- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
-- !private ["PSs10Strideable", "Distance"]
-- !private ["PSs10Strideable", "IntegerLiteralType"]
-- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["Ps14SetAlgebraType", "RawValue"]
+- !private ["Ps14SetAlgebraType", "Right"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
 - !private ["PSo29UIAccessibilityIdentification", "lineBreakMode"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
@@ -524,56 +545,55 @@ depends-member:
 - !private ["CSo16UIViewController", "title"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
-- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
-- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs14_Incrementable", "Distance"]
-- !private ["PSs14_Incrementable", "IntegerLiteralType"]
-- !private ["PSs22_IntegerArithmeticType", "Distance"]
-- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs12_IntegerType", "Distance"]
-- !private ["PSs12_IntegerType", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
-- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
-- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
-- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "Distance"]
-- !private ["PSs12_Reflectable", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "addGestureRecognizer"]
-- !private ["PSs12_Reflectable", "init"]
-- !private ["PSs12_Reflectable", "lineBreakMode"]
-- !private ["PSs12_Reflectable", "numberOfLines"]
-- !private ["PSs12_Reflectable", "selectedSegmentIndex"]
-- !private ["PSs12_Reflectable", "text"]
-- !private ["PSs18_SignedIntegerType", "Distance"]
-- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs11_Strideable", "Distance"]
-- !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "addGestureRecognizer"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "lineBreakMode"]
+- !private ["Ps12_Reflectable", "numberOfLines"]
+- !private ["Ps12_Reflectable", "selectedSegmentIndex"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
-- "PSs9AnyObject"
-- !private "PSs23ArrayLiteralConvertible"
-- !private "PSs22BidirectionalIndexType"
-- !private "PSs21BitwiseOperationsType"
+- "Ps9AnyObject"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
-- "PSs11CVarArgType"
-- !private "PSs10Comparable"
-- "PSs23CustomStringConvertible"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
 - !private "Sd"
-- "PSs9Equatable"
-- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
-- !private "PSs16ForwardIndexType"
-- "PSs8Hashable"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps16ForwardIndexType"
+- "Ps8Hashable"
 - !private "Si"
-- !private "PSs21IntegerArithmeticType"
-- !private "PSs25IntegerLiteralConvertible"
-- !private "PSs11IntegerType"
-- !private "PSs14MirrorPathType"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - !private "OSC15NSLineBreakMode"
@@ -581,19 +601,19 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "CSo7NSValue"
-- !private "PSs21NilLiteralConvertible"
-- !private "PSs13OptionSetType"
+- !private "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
 - !private "Sq"
 - "C10startupnyu26ProjectTableViewController"
-- !private "PSs21RandomAccessIndexType"
-- !private "VSs5Range"
-- !private "PSs16RawRepresentable"
+- !private "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
+- !private "Ps16RawRepresentable"
 - !private "V10ObjectiveC8Selector"
-- !private "PSs14SetAlgebraType"
-- !private "PSs17SignedIntegerType"
-- !private "PSs16SignedNumberType"
-- !private "PSs10Strideable"
-- !private "PSs24StringLiteralConvertible"
+- !private "Ps14SetAlgebraType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -617,18 +637,17 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "PSs31UnicodeScalarLiteralConvertible"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs33_BuiltinIntegerLiteralConvertible"
-- !private "PSs14_Incrementable"
-- !private "PSs22_IntegerArithmeticType"
-- !private "PSs12_IntegerType"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
-- !private "PSs22_RandomAccessAmbiguity"
-- !private "PSs12_Reflectable"
-- !private "PSs18_SignedIntegerType"
-- !private "PSs11_Strideable"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -691,7 +710,7 @@ depends-external:
 - "./Parse.framework/Headers/PFObject.h"
 - "./Parse.framework/Headers/PFUser.h"
 - "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
 - "./Parse.framework/Headers/PFAnalytics.h"
 - "./Parse.framework/Headers/PFACL.h"
 - "./Parse.framework/Headers/PFConstants.h"

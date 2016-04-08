@@ -6,86 +6,86 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu27CreateProjectViewController", ""]
 provides-dynamic-lookup:
-- "cancelButtonTapped"
-- "requirementsTextField"
 - "projectName"
-- "uploadImageTapped"
-- "imagePickerControllerDidCancel"
-- "imagePicker"
-- "didReceiveMemoryWarning"
-- "projectImageView"
 - "saveButtonTapped"
 - "aboutTextField"
-- "viewDidLoad"
+- "imagePicker"
+- "uploadImageTapped"
+- "requirementsTextField"
+- "imagePickerControllerDidCancel"
 - "imagePickerController"
+- "viewDidLoad"
+- "projectImageView"
+- "cancelButtonTapped"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - "String"
 - "UIImagePickerControllerDelegate"
-- !private "BooleanLiteralType"
-- !private "UIImagePickerControllerOriginalImage"
-- !private "UIImage"
-- "UITableViewController"
 - "AnyObject"
-- "CreateProjectViewController"
 - "UIButton"
-- "UITextField"
-- "UIImageView"
-- "UIImagePickerController"
+- "CreateProjectViewController"
 - "UITextView"
+- "UIImageView"
+- "UITableViewController"
+- "UIImagePickerController"
+- !private "UIImage"
+- "UITextField"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "BooleanLiteralType"
 depends-member:
-- ["PSs9AnyObject", "UIImagePickerController"]
-- !private ["PSs9AnyObject", "UIImagePickerControllerOriginalImage"]
-- ["PSs9AnyObject", "aboutTextField"]
-- !private ["PSs9AnyObject", "allowsEditing"]
-- ["PSs9AnyObject", "cancelButtonTapped"]
-- !private ["PSs9AnyObject", "contentMode"]
-- ["PSs9AnyObject", "didReceiveMemoryWarning"]
-- !private ["PSs9AnyObject", "dismissViewControllerAnimated"]
-- !private ["PSs9AnyObject", "image"]
-- ["PSs9AnyObject", "imagePicker"]
-- ["PSs9AnyObject", "imagePickerController"]
-- ["PSs9AnyObject", "imagePickerControllerDidCancel"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "presentViewController"]
-- ["PSs9AnyObject", "projectImageView"]
-- ["PSs9AnyObject", "projectName"]
-- !private ["PSs9AnyObject", "reloadData"]
-- ["PSs9AnyObject", "requirementsTextField"]
-- ["PSs9AnyObject", "saveButtonTapped"]
-- !private ["PSs9AnyObject", "sourceType"]
-- !private ["PSs9AnyObject", "tableView"]
-- ["PSs9AnyObject", "uploadImageTapped"]
-- ["PSs9AnyObject", "viewDidLoad"]
-- ["PSs9AnyObject", ""]
-- ["PSs11CVarArgType", "UIImagePickerController"]
-- !private ["PSs11CVarArgType", "UIImagePickerControllerOriginalImage"]
-- ["PSs11CVarArgType", "aboutTextField"]
-- !private ["PSs11CVarArgType", "allowsEditing"]
-- ["PSs11CVarArgType", "cancelButtonTapped"]
-- !private ["PSs11CVarArgType", "contentMode"]
-- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
-- !private ["PSs11CVarArgType", "dismissViewControllerAnimated"]
-- !private ["PSs11CVarArgType", "image"]
-- ["PSs11CVarArgType", "imagePicker"]
-- ["PSs11CVarArgType", "imagePickerController"]
-- ["PSs11CVarArgType", "imagePickerControllerDidCancel"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "presentViewController"]
-- ["PSs11CVarArgType", "projectImageView"]
-- ["PSs11CVarArgType", "projectName"]
-- !private ["PSs11CVarArgType", "reloadData"]
-- ["PSs11CVarArgType", "requirementsTextField"]
-- ["PSs11CVarArgType", "saveButtonTapped"]
-- !private ["PSs11CVarArgType", "sourceType"]
-- !private ["PSs11CVarArgType", "tableView"]
-- ["PSs11CVarArgType", "uploadImageTapped"]
-- ["PSs11CVarArgType", "viewDidLoad"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs14CollectionType", "Generator"]
-- !private ["PSs14CollectionType", "Index"]
-- !private ["PSs14CollectionType", "SubSequence"]
-- !private ["PSs14CollectionType", "_Element"]
-- !private ["PSs14CollectionType", "subscript"]
+- ["Ps9AnyObject", "UIImagePickerController"]
+- !private ["Ps9AnyObject", "UIImagePickerControllerOriginalImage"]
+- ["Ps9AnyObject", "aboutTextField"]
+- !private ["Ps9AnyObject", "allowsEditing"]
+- ["Ps9AnyObject", "cancelButtonTapped"]
+- !private ["Ps9AnyObject", "contentMode"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
+- !private ["Ps9AnyObject", "image"]
+- ["Ps9AnyObject", "imagePicker"]
+- ["Ps9AnyObject", "imagePickerController"]
+- ["Ps9AnyObject", "imagePickerControllerDidCancel"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "presentViewController"]
+- ["Ps9AnyObject", "projectImageView"]
+- ["Ps9AnyObject", "projectName"]
+- !private ["Ps9AnyObject", "reloadData"]
+- ["Ps9AnyObject", "requirementsTextField"]
+- ["Ps9AnyObject", "saveButtonTapped"]
+- !private ["Ps9AnyObject", "sourceType"]
+- !private ["Ps9AnyObject", "tableView"]
+- ["Ps9AnyObject", "uploadImageTapped"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "UIImagePickerController"]
+- !private ["Ps11CVarArgType", "UIImagePickerControllerOriginalImage"]
+- ["Ps11CVarArgType", "aboutTextField"]
+- !private ["Ps11CVarArgType", "allowsEditing"]
+- ["Ps11CVarArgType", "cancelButtonTapped"]
+- !private ["Ps11CVarArgType", "contentMode"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
+- !private ["Ps11CVarArgType", "image"]
+- ["Ps11CVarArgType", "imagePicker"]
+- ["Ps11CVarArgType", "imagePickerController"]
+- ["Ps11CVarArgType", "imagePickerControllerDidCancel"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "presentViewController"]
+- ["Ps11CVarArgType", "projectImageView"]
+- ["Ps11CVarArgType", "projectName"]
+- !private ["Ps11CVarArgType", "reloadData"]
+- ["Ps11CVarArgType", "requirementsTextField"]
+- ["Ps11CVarArgType", "saveButtonTapped"]
+- !private ["Ps11CVarArgType", "sourceType"]
+- !private ["Ps11CVarArgType", "tableView"]
+- ["Ps11CVarArgType", "uploadImageTapped"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
 - ["C10startupnyu27CreateProjectViewController", "AnyObject"]
 - ["C10startupnyu27CreateProjectViewController", "String"]
 - ["C10startupnyu27CreateProjectViewController", "UIButton"]
@@ -112,99 +112,123 @@ depends-member:
 - !private ["C10startupnyu27CreateProjectViewController", "tableView"]
 - ["C10startupnyu27CreateProjectViewController", "uploadImageTapped"]
 - ["C10startupnyu27CreateProjectViewController", "viewDidLoad"]
-- !private ["PSs28CustomDebugStringConvertible", "Index"]
-- ["PSs28CustomDebugStringConvertible", "Some"]
-- !private ["PSs28CustomDebugStringConvertible", "subscript"]
-- !private ["PSs23CustomStringConvertible", "Index"]
-- ["PSs23CustomStringConvertible", "UIImagePickerController"]
-- !private ["PSs23CustomStringConvertible", "UIImagePickerControllerOriginalImage"]
-- ["PSs23CustomStringConvertible", "aboutTextField"]
-- !private ["PSs23CustomStringConvertible", "allowsEditing"]
-- ["PSs23CustomStringConvertible", "cancelButtonTapped"]
-- !private ["PSs23CustomStringConvertible", "contentMode"]
-- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
-- !private ["PSs23CustomStringConvertible", "dismissViewControllerAnimated"]
-- !private ["PSs23CustomStringConvertible", "image"]
-- ["PSs23CustomStringConvertible", "imagePicker"]
-- ["PSs23CustomStringConvertible", "imagePickerController"]
-- ["PSs23CustomStringConvertible", "imagePickerControllerDidCancel"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "presentViewController"]
-- ["PSs23CustomStringConvertible", "projectImageView"]
-- ["PSs23CustomStringConvertible", "projectName"]
-- !private ["PSs23CustomStringConvertible", "reloadData"]
-- ["PSs23CustomStringConvertible", "requirementsTextField"]
-- ["PSs23CustomStringConvertible", "saveButtonTapped"]
-- !private ["PSs23CustomStringConvertible", "sourceType"]
-- !private ["PSs23CustomStringConvertible", "subscript"]
-- !private ["PSs23CustomStringConvertible", "tableView"]
-- ["PSs23CustomStringConvertible", "uploadImageTapped"]
-- ["PSs23CustomStringConvertible", "viewDidLoad"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["VSs10Dictionary", "Index"]
-- !private ["VSs10Dictionary", "deinit"]
-- !private ["VSs10Dictionary", "subscript"]
-- !private ["PSs28DictionaryLiteralConvertible", "Index"]
-- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
-- !private ["PSs9Equatable", "PhotoLibrary"]
-- !private ["PSs9Equatable", "ScaleAspectFit"]
-- ["PSs9Equatable", "UIImagePickerController"]
-- !private ["PSs9Equatable", "UIImagePickerControllerOriginalImage"]
-- ["PSs9Equatable", "aboutTextField"]
-- !private ["PSs9Equatable", "allowsEditing"]
-- ["PSs9Equatable", "cancelButtonTapped"]
-- !private ["PSs9Equatable", "contentMode"]
-- ["PSs9Equatable", "didReceiveMemoryWarning"]
-- !private ["PSs9Equatable", "dismissViewControllerAnimated"]
-- !private ["PSs9Equatable", "image"]
-- ["PSs9Equatable", "imagePicker"]
-- ["PSs9Equatable", "imagePickerController"]
-- ["PSs9Equatable", "imagePickerControllerDidCancel"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "presentViewController"]
-- ["PSs9Equatable", "projectImageView"]
-- ["PSs9Equatable", "projectName"]
-- !private ["PSs9Equatable", "reloadData"]
-- ["PSs9Equatable", "requirementsTextField"]
-- ["PSs9Equatable", "saveButtonTapped"]
-- !private ["PSs9Equatable", "sourceType"]
-- !private ["PSs9Equatable", "tableView"]
-- ["PSs9Equatable", "uploadImageTapped"]
-- ["PSs9Equatable", "viewDidLoad"]
-- ["PSs9Equatable", ""]
-- !private ["PSs13GeneratorType", "Element"]
-- !private ["PSs8Hashable", "PhotoLibrary"]
-- !private ["PSs8Hashable", "ScaleAspectFit"]
-- ["PSs8Hashable", "UIImagePickerController"]
-- !private ["PSs8Hashable", "UIImagePickerControllerOriginalImage"]
-- ["PSs8Hashable", "aboutTextField"]
-- !private ["PSs8Hashable", "allowsEditing"]
-- ["PSs8Hashable", "cancelButtonTapped"]
-- !private ["PSs8Hashable", "contentMode"]
-- ["PSs8Hashable", "didReceiveMemoryWarning"]
-- !private ["PSs8Hashable", "dismissViewControllerAnimated"]
-- !private ["PSs8Hashable", "image"]
-- ["PSs8Hashable", "imagePicker"]
-- ["PSs8Hashable", "imagePickerController"]
-- ["PSs8Hashable", "imagePickerControllerDidCancel"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "presentViewController"]
-- ["PSs8Hashable", "projectImageView"]
-- ["PSs8Hashable", "projectName"]
-- !private ["PSs8Hashable", "reloadData"]
-- ["PSs8Hashable", "requirementsTextField"]
-- ["PSs8Hashable", "saveButtonTapped"]
-- !private ["PSs8Hashable", "sourceType"]
-- !private ["PSs8Hashable", "tableView"]
-- ["PSs8Hashable", "uploadImageTapped"]
-- ["PSs8Hashable", "viewDidLoad"]
-- ["PSs8Hashable", ""]
-- !private ["PSs9Indexable", "Generator"]
-- !private ["PSs9Indexable", "Index"]
-- !private ["PSs9Indexable", "SubSequence"]
-- !private ["PSs9Indexable", "_Element"]
-- !private ["PSs9Indexable", "subscript"]
-- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- ["Ps28CustomDebugStringConvertible", "UIImagePickerController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImagePickerControllerOriginalImage"]
+- ["Ps28CustomDebugStringConvertible", "aboutTextField"]
+- !private ["Ps28CustomDebugStringConvertible", "allowsEditing"]
+- ["Ps28CustomDebugStringConvertible", "cancelButtonTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "contentMode"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "imagePicker"]
+- ["Ps28CustomDebugStringConvertible", "imagePickerController"]
+- ["Ps28CustomDebugStringConvertible", "imagePickerControllerDidCancel"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- ["Ps28CustomDebugStringConvertible", "projectImageView"]
+- ["Ps28CustomDebugStringConvertible", "projectName"]
+- !private ["Ps28CustomDebugStringConvertible", "reloadData"]
+- ["Ps28CustomDebugStringConvertible", "requirementsTextField"]
+- ["Ps28CustomDebugStringConvertible", "saveButtonTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "sourceType"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "tableView"]
+- ["Ps28CustomDebugStringConvertible", "uploadImageTapped"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- ["Ps23CustomStringConvertible", "UIImagePickerController"]
+- !private ["Ps23CustomStringConvertible", "UIImagePickerControllerOriginalImage"]
+- ["Ps23CustomStringConvertible", "aboutTextField"]
+- !private ["Ps23CustomStringConvertible", "allowsEditing"]
+- ["Ps23CustomStringConvertible", "cancelButtonTapped"]
+- !private ["Ps23CustomStringConvertible", "contentMode"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "imagePicker"]
+- ["Ps23CustomStringConvertible", "imagePickerController"]
+- ["Ps23CustomStringConvertible", "imagePickerControllerDidCancel"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
+- ["Ps23CustomStringConvertible", "projectImageView"]
+- ["Ps23CustomStringConvertible", "projectName"]
+- !private ["Ps23CustomStringConvertible", "reloadData"]
+- ["Ps23CustomStringConvertible", "requirementsTextField"]
+- ["Ps23CustomStringConvertible", "saveButtonTapped"]
+- !private ["Ps23CustomStringConvertible", "sourceType"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "tableView"]
+- ["Ps23CustomStringConvertible", "uploadImageTapped"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Ps9Equatable", "PhotoLibrary"]
+- !private ["Ps9Equatable", "ScaleAspectFit"]
+- ["Ps9Equatable", "UIImagePickerController"]
+- !private ["Ps9Equatable", "UIImagePickerControllerOriginalImage"]
+- ["Ps9Equatable", "aboutTextField"]
+- !private ["Ps9Equatable", "allowsEditing"]
+- ["Ps9Equatable", "cancelButtonTapped"]
+- !private ["Ps9Equatable", "contentMode"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "dismissViewControllerAnimated"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "imagePicker"]
+- ["Ps9Equatable", "imagePickerController"]
+- ["Ps9Equatable", "imagePickerControllerDidCancel"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "presentViewController"]
+- ["Ps9Equatable", "projectImageView"]
+- ["Ps9Equatable", "projectName"]
+- !private ["Ps9Equatable", "reloadData"]
+- ["Ps9Equatable", "requirementsTextField"]
+- ["Ps9Equatable", "saveButtonTapped"]
+- !private ["Ps9Equatable", "sourceType"]
+- !private ["Ps9Equatable", "tableView"]
+- ["Ps9Equatable", "uploadImageTapped"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "PhotoLibrary"]
+- !private ["Ps8Hashable", "ScaleAspectFit"]
+- ["Ps8Hashable", "UIImagePickerController"]
+- !private ["Ps8Hashable", "UIImagePickerControllerOriginalImage"]
+- ["Ps8Hashable", "aboutTextField"]
+- !private ["Ps8Hashable", "allowsEditing"]
+- ["Ps8Hashable", "cancelButtonTapped"]
+- !private ["Ps8Hashable", "contentMode"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "dismissViewControllerAnimated"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "imagePicker"]
+- ["Ps8Hashable", "imagePickerController"]
+- ["Ps8Hashable", "imagePickerControllerDidCancel"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "presentViewController"]
+- ["Ps8Hashable", "projectImageView"]
+- ["Ps8Hashable", "projectName"]
+- !private ["Ps8Hashable", "reloadData"]
+- ["Ps8Hashable", "requirementsTextField"]
+- ["Ps8Hashable", "saveButtonTapped"]
+- !private ["Ps8Hashable", "sourceType"]
+- !private ["Ps8Hashable", "tableView"]
+- ["Ps8Hashable", "uploadImageTapped"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
 - ["PSo8NSCoding", "UIImagePickerController"]
 - !private ["PSo8NSCoding", "UIImagePickerControllerOriginalImage"]
 - ["PSo8NSCoding", "aboutTextField"]
@@ -304,21 +328,21 @@ depends-member:
 - ["PSo16NSObjectProtocol", "uploadImageTapped"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- ["PSs21NilLiteralConvertible", "Some"]
+- ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
-- !private ["PSs16RawRepresentable", "PhotoLibrary"]
-- !private ["PSs16RawRepresentable", "ScaleAspectFit"]
-- !private ["PSs12SequenceType", "Element"]
-- !private ["PSs12SequenceType", "Generator"]
-- !private ["PSs12SequenceType", "Index"]
-- !private ["PSs12SequenceType", "SubSequence"]
-- !private ["PSs12SequenceType", "_Element"]
-- !private ["PSs12SequenceType", "subscript"]
-- !private ["VSs5Slice", "Generator"]
-- !private ["VSs5Slice", "Index"]
-- !private ["VSs5Slice", "SubSequence"]
-- !private ["VSs5Slice", "_Element"]
+- !private ["Ps16RawRepresentable", "PhotoLibrary"]
+- !private ["Ps16RawRepresentable", "ScaleAspectFit"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
@@ -610,37 +634,37 @@ depends-member:
 - !private ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "uploadImageTapped"]
 - ["CSo16UIViewController", "viewDidLoad"]
-- !private ["PSs21_ObjectiveCBridgeable", "Index"]
-- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
-- !private ["PSs12_Reflectable", "Index"]
-- ["PSs12_Reflectable", "Some"]
-- !private ["PSs12_Reflectable", "contentMode"]
-- !private ["PSs12_Reflectable", "image"]
-- !private ["PSs12_Reflectable", "reloadData"]
-- !private ["PSs12_Reflectable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps12_Reflectable", "Index"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "contentMode"]
+- !private ["Ps12_Reflectable", "image"]
+- !private ["Ps12_Reflectable", "reloadData"]
+- !private ["Ps12_Reflectable", "subscript"]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- !private "PSs14CollectionType"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
 - "C10startupnyu27CreateProjectViewController"
-- "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
-- !private "VSs10Dictionary"
-- !private "PSs28DictionaryLiteralConvertible"
-- "PSs9Equatable"
-- !private "PSs13GeneratorType"
-- "PSs8Hashable"
-- !private "PSs9Indexable"
-- !private "VSs17IndexingGenerator"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "PSs21NilLiteralConvertible"
+- "Ps21NilLiteralConvertible"
 - "Sq"
-- !private "PSs16RawRepresentable"
-- !private "PSs12SequenceType"
-- !private "VSs5Slice"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Vs5Slice"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -665,8 +689,8 @@ depends-nominal:
 - !private "CSo6UIView"
 - !private "OSC17UIViewContentMode"
 - "CSo16UIViewController"
-- !private "PSs21_ObjectiveCBridgeable"
-- "PSs12_Reflectable"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -729,7 +753,7 @@ depends-external:
 - "./Parse.framework/Headers/PFObject.h"
 - "./Parse.framework/Headers/PFUser.h"
 - "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
 - "./Parse.framework/Headers/PFAnalytics.h"
 - "./Parse.framework/Headers/PFACL.h"
 - "./Parse.framework/Headers/PFConstants.h"

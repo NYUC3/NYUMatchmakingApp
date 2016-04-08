@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0Fs-bF-7pt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0Fs-bF-7pt">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Custom Tabbar-->
@@ -82,11 +82,11 @@
             </objects>
             <point key="canvasLocation" x="1159" y="1376"/>
         </scene>
-        <!--Item-->
+        <!--My Projects-->
         <scene sceneID="RpJ-Ux-IwV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A1R-ji-KSP" customClass="NavVC" customModule="startupnyu" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="W5V-jG-17L"/>
+                    <tabBarItem key="tabBarItem" title="My Projects" id="W5V-jG-17L"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UC1-T7-mSb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
