@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "72b9d4e6d5c67e429abc5ec14185cec3"
-build_time: [513402179, 426629000]
+build_time: [513890857, 618226000]
 inputs:
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/NavVC.swift": [511740548, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/ProjectTableViewController.swift": [513401766, 0]
@@ -20,7 +20,7 @@ inputs:
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/ExploreVC.swift": [513401685, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/EditProfileTableTableViewController.swift": [511742294, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/LoginVC.swift": [511740548, 0]
-  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/CreateProjectViewController.swift": [511743520, 0]
+  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/CreateProjectViewController.swift": [513890856, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/ProfileViewController.swift": [511743527, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/messageListStruct.swift": [511740548, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/ProjectsListViewController.swift": [513401236, 0]

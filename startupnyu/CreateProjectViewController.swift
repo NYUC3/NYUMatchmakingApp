@@ -5,7 +5,7 @@
 //  Created by Vidyadhar V. Thatte on 3/19/16.
 //  Copyright © 2016 Polymafia. All rights reserved.
 //
-
+import Parse
 import UIKit
 
 class CreateProjectViewController: UITableViewController, UIImagePickerControllerDelegate{
@@ -20,6 +20,11 @@ class CreateProjectViewController: UITableViewController, UIImagePickerControlle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        // TO DO: Load user's projects in the table view
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +43,39 @@ class CreateProjectViewController: UITableViewController, UIImagePickerControlle
     }
     
     @IBAction func saveButtonTapped(sender: UIButton) {
+        
+        if(projectName.text != nil && aboutTextField.text != nil && requirementsTextField.text != nil && projectImageView.image != nil){
+            
+            var newProject = PFObject(className:"Project")
+            
+            // TO DO: TAGS, ABOUT, REQUIREMENTS
+            
+            newProject["email"] = ""
+            newProject["name"] = projectName.text
+            newProject["image"] = projectImageView.image
+            
+            newProject.saveInBackgroundWithBlock {
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    // The object has been saved.
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                } else {
+                    // There was a problem, check error.description
+                }
+            }
+        
+        }
+        
+        else{
+            
+            let alert = UIAlertController(title: "Save Failed", message: "Some of the fields are missing. Please fill up all the fields.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        
+        }
+        
+
+        
         
     }
     
