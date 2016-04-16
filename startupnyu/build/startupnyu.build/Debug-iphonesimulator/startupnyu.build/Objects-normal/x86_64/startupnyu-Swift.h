@@ -144,6 +144,7 @@ SWIFT_CLASS("_TtC10startupnyu27CreateProjectViewController")
 - (IBAction)uploadImageTapped:(UIButton * _Nonnull)sender;
 - (IBAction)cancelButtonTapped:(id _Nonnull)sender;
 - (IBAction)saveButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)cancelButton:(UIButton * _Nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -306,11 +307,9 @@ SWIFT_CLASS("_TtC10startupnyu26ProjectTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSArray;
 
 SWIFT_CLASS("_TtC10startupnyu26ProjectsListViewController")
 @interface ProjectsListViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, strong) NSArray * _Nonnull projectsList;
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

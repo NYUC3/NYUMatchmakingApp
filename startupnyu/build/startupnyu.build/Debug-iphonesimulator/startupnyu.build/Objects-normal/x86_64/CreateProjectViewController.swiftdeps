@@ -6,43 +6,44 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu27CreateProjectViewController", ""]
 provides-dynamic-lookup:
-- "aboutTextField"
-- "saveButtonTapped"
-- "requirementsTextField"
-- "projectName"
-- "cancelButtonTapped"
-- "uploadImageTapped"
-- "imagePickerControllerDidCancel"
-- "viewDidLoad"
 - "imagePicker"
+- "viewDidLoad"
+- "imagePickerControllerDidCancel"
+- "uploadImageTapped"
 - "imagePickerController"
-- "projectImageView"
 - "didReceiveMemoryWarning"
+- "projectImageView"
+- "cancelButtonTapped"
+- "aboutTextField"
+- "requirementsTextField"
+- "saveButtonTapped"
+- "cancelButton"
+- "projectName"
 depends-top-level:
-- "UITableViewController"
-- !private "UIAlertActionStyle"
-- "UIButton"
-- !private "UIImagePickerControllerOriginalImage"
-- !private "Void"
+- !private "Bool"
+- "UITextView"
 - !private "UIImage"
+- "CreateProjectViewController"
+- "UIImageView"
+- !private "UIAlertActionStyle"
+- !private "&&"
+- "UIImagePickerController"
+- !private "PFObject"
+- !private "UIAlertController"
+- !private "Void"
+- !private "BooleanLiteralType"
 - !private "UIAlertAction"
 - "UITextField"
-- "String"
-- "CreateProjectViewController"
-- !private "StringLiteralType"
-- "AnyObject"
-- "UIImagePickerController"
-- !private "UIAlertController"
-- !private "UIAlertControllerStyle"
-- "UITextView"
-- !private "&&"
-- !private "NSError"
-- !private "!="
-- !private "BooleanLiteralType"
-- !private "PFObject"
 - "UIImagePickerControllerDelegate"
-- "UIImageView"
-- !private "Bool"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "!="
+- "UITableViewController"
+- !private "NSError"
+- "String"
+- "UIButton"
+- !private "StringLiteralType"
+- !private "UIAlertControllerStyle"
+- "AnyObject"
 depends-member:
 - !private ["Ps9AnyObject", "PFObject"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
@@ -54,6 +55,7 @@ depends-member:
 - ["Ps9AnyObject", "aboutTextField"]
 - !private ["Ps9AnyObject", "addAction"]
 - !private ["Ps9AnyObject", "allowsEditing"]
+- ["Ps9AnyObject", "cancelButton"]
 - ["Ps9AnyObject", "cancelButtonTapped"]
 - !private ["Ps9AnyObject", "contentMode"]
 - !private ["Ps9AnyObject", "deinit"]
@@ -64,6 +66,8 @@ depends-member:
 - ["Ps9AnyObject", "imagePickerController"]
 - ["Ps9AnyObject", "imagePickerControllerDidCancel"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "popToRootViewControllerAnimated"]
 - !private ["Ps9AnyObject", "presentViewController"]
 - ["Ps9AnyObject", "projectImageView"]
 - ["Ps9AnyObject", "projectName"]
@@ -91,6 +95,7 @@ depends-member:
 - ["Ps11CVarArgType", "aboutTextField"]
 - !private ["Ps11CVarArgType", "addAction"]
 - !private ["Ps11CVarArgType", "allowsEditing"]
+- ["Ps11CVarArgType", "cancelButton"]
 - ["Ps11CVarArgType", "cancelButtonTapped"]
 - !private ["Ps11CVarArgType", "contentMode"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
@@ -100,6 +105,8 @@ depends-member:
 - ["Ps11CVarArgType", "imagePickerController"]
 - ["Ps11CVarArgType", "imagePickerControllerDidCancel"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "navigationController"]
+- !private ["Ps11CVarArgType", "popToRootViewControllerAnimated"]
 - !private ["Ps11CVarArgType", "presentViewController"]
 - ["Ps11CVarArgType", "projectImageView"]
 - ["Ps11CVarArgType", "projectName"]
@@ -137,6 +144,7 @@ depends-member:
 - ["C10startupnyu27CreateProjectViewController", "UITextView"]
 - !private ["C10startupnyu27CreateProjectViewController", "Void"]
 - ["C10startupnyu27CreateProjectViewController", "aboutTextField"]
+- ["C10startupnyu27CreateProjectViewController", "cancelButton"]
 - ["C10startupnyu27CreateProjectViewController", "cancelButtonTapped"]
 - ["C10startupnyu27CreateProjectViewController", "deinit"]
 - ["C10startupnyu27CreateProjectViewController", "didReceiveMemoryWarning"]
@@ -145,6 +153,7 @@ depends-member:
 - ["C10startupnyu27CreateProjectViewController", "imagePickerController"]
 - ["C10startupnyu27CreateProjectViewController", "imagePickerControllerDidCancel"]
 - ["C10startupnyu27CreateProjectViewController", "init"]
+- !private ["C10startupnyu27CreateProjectViewController", "navigationController"]
 - !private ["C10startupnyu27CreateProjectViewController", "presentViewController"]
 - ["C10startupnyu27CreateProjectViewController", "projectImageView"]
 - ["C10startupnyu27CreateProjectViewController", "projectName"]
@@ -165,6 +174,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "aboutTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - !private ["Ps28CustomDebugStringConvertible", "allowsEditing"]
+- ["Ps28CustomDebugStringConvertible", "cancelButton"]
 - ["Ps28CustomDebugStringConvertible", "cancelButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -174,6 +184,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "imagePickerController"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "popToRootViewControllerAnimated"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
 - ["Ps28CustomDebugStringConvertible", "projectImageView"]
 - ["Ps28CustomDebugStringConvertible", "projectName"]
@@ -200,6 +212,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "aboutTextField"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - !private ["Ps23CustomStringConvertible", "allowsEditing"]
+- ["Ps23CustomStringConvertible", "cancelButton"]
 - ["Ps23CustomStringConvertible", "cancelButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "contentMode"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -209,6 +222,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "imagePickerController"]
 - ["Ps23CustomStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "popToRootViewControllerAnimated"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
 - ["Ps23CustomStringConvertible", "projectImageView"]
 - ["Ps23CustomStringConvertible", "projectName"]
@@ -243,6 +258,7 @@ depends-member:
 - ["Ps9Equatable", "aboutTextField"]
 - !private ["Ps9Equatable", "addAction"]
 - !private ["Ps9Equatable", "allowsEditing"]
+- ["Ps9Equatable", "cancelButton"]
 - ["Ps9Equatable", "cancelButtonTapped"]
 - !private ["Ps9Equatable", "contentMode"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -252,6 +268,8 @@ depends-member:
 - ["Ps9Equatable", "imagePickerController"]
 - ["Ps9Equatable", "imagePickerControllerDidCancel"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "popToRootViewControllerAnimated"]
 - !private ["Ps9Equatable", "presentViewController"]
 - ["Ps9Equatable", "projectImageView"]
 - ["Ps9Equatable", "projectName"]
@@ -282,6 +300,7 @@ depends-member:
 - ["Ps8Hashable", "aboutTextField"]
 - !private ["Ps8Hashable", "addAction"]
 - !private ["Ps8Hashable", "allowsEditing"]
+- ["Ps8Hashable", "cancelButton"]
 - ["Ps8Hashable", "cancelButtonTapped"]
 - !private ["Ps8Hashable", "contentMode"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -291,6 +310,8 @@ depends-member:
 - ["Ps8Hashable", "imagePickerController"]
 - ["Ps8Hashable", "imagePickerControllerDidCancel"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "popToRootViewControllerAnimated"]
 - !private ["Ps8Hashable", "presentViewController"]
 - ["Ps8Hashable", "projectImageView"]
 - ["Ps8Hashable", "projectName"]
@@ -322,6 +343,7 @@ depends-member:
 - ["PSo8NSCoding", "aboutTextField"]
 - !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "allowsEditing"]
+- ["PSo8NSCoding", "cancelButton"]
 - ["PSo8NSCoding", "cancelButtonTapped"]
 - !private ["PSo8NSCoding", "contentMode"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -331,6 +353,8 @@ depends-member:
 - ["PSo8NSCoding", "imagePickerController"]
 - ["PSo8NSCoding", "imagePickerControllerDidCancel"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "popToRootViewControllerAnimated"]
 - !private ["PSo8NSCoding", "presentViewController"]
 - ["PSo8NSCoding", "projectImageView"]
 - ["PSo8NSCoding", "projectName"]
@@ -354,6 +378,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "aboutTextField"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - !private ["PSo26NSExtensionRequestHandling", "allowsEditing"]
+- ["PSo26NSExtensionRequestHandling", "cancelButton"]
 - ["PSo26NSExtensionRequestHandling", "cancelButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
@@ -361,6 +386,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerControllerDidCancel"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "popToRootViewControllerAnimated"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - ["PSo26NSExtensionRequestHandling", "projectImageView"]
 - ["PSo26NSExtensionRequestHandling", "projectName"]
@@ -391,6 +418,7 @@ depends-member:
 - ["CSo8NSObject", "aboutTextField"]
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "allowsEditing"]
+- ["CSo8NSObject", "cancelButton"]
 - ["CSo8NSObject", "cancelButtonTapped"]
 - !private ["CSo8NSObject", "contentMode"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -400,6 +428,8 @@ depends-member:
 - ["CSo8NSObject", "imagePickerController"]
 - ["CSo8NSObject", "imagePickerControllerDidCancel"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "popToRootViewControllerAnimated"]
 - !private ["CSo8NSObject", "presentViewController"]
 - ["CSo8NSObject", "projectImageView"]
 - ["CSo8NSObject", "projectName"]
@@ -423,6 +453,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "aboutTextField"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "allowsEditing"]
+- ["PSo16NSObjectProtocol", "cancelButton"]
 - ["PSo16NSObjectProtocol", "cancelButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -432,6 +463,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "imagePickerController"]
 - ["PSo16NSObjectProtocol", "imagePickerControllerDidCancel"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "popToRootViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
 - ["PSo16NSObjectProtocol", "projectImageView"]
 - ["PSo16NSObjectProtocol", "projectName"]
@@ -490,6 +523,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "aboutTextField"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - !private ["PSo21UIAppearanceContainer", "allowsEditing"]
+- ["PSo21UIAppearanceContainer", "cancelButton"]
 - ["PSo21UIAppearanceContainer", "cancelButtonTapped"]
 - !private ["PSo21UIAppearanceContainer", "contentMode"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -499,6 +533,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
 - ["PSo21UIAppearanceContainer", "imagePickerControllerDidCancel"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "popToRootViewControllerAnimated"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - ["PSo21UIAppearanceContainer", "projectImageView"]
 - ["PSo21UIAppearanceContainer", "projectName"]
@@ -521,6 +557,7 @@ depends-member:
 - ["PSo18UIContentContainer", "aboutTextField"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - !private ["PSo18UIContentContainer", "allowsEditing"]
+- ["PSo18UIContentContainer", "cancelButton"]
 - ["PSo18UIContentContainer", "cancelButtonTapped"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
@@ -528,6 +565,8 @@ depends-member:
 - ["PSo18UIContentContainer", "imagePickerController"]
 - ["PSo18UIContentContainer", "imagePickerControllerDidCancel"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "popToRootViewControllerAnimated"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - ["PSo18UIContentContainer", "projectImageView"]
 - ["PSo18UIContentContainer", "projectName"]
@@ -557,6 +596,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "aboutTextField"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - !private ["PSo18UIFocusEnvironment", "allowsEditing"]
+- ["PSo18UIFocusEnvironment", "cancelButton"]
 - ["PSo18UIFocusEnvironment", "cancelButtonTapped"]
 - !private ["PSo18UIFocusEnvironment", "contentMode"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -566,6 +606,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
 - ["PSo18UIFocusEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "popToRootViewControllerAnimated"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - ["PSo18UIFocusEnvironment", "projectImageView"]
 - ["PSo18UIFocusEnvironment", "projectName"]
@@ -593,6 +635,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "imagePicker"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerControllerDidCancel"]
+- !private ["PSo31UIImagePickerControllerDelegate", "navigationController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "presentViewController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "projectImageView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "projectName"]
@@ -605,6 +648,7 @@ depends-member:
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo22UINavigationController", "allowsEditing"]
 - ["CSo22UINavigationController", "init"]
+- !private ["CSo22UINavigationController", "popToRootViewControllerAnimated"]
 - !private ["CSo22UINavigationController", "sourceType"]
 - ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "Bool"]
@@ -626,6 +670,7 @@ depends-member:
 - ["CSo11UIResponder", "aboutTextField"]
 - !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "allowsEditing"]
+- ["CSo11UIResponder", "cancelButton"]
 - ["CSo11UIResponder", "cancelButtonTapped"]
 - !private ["CSo11UIResponder", "contentMode"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -635,6 +680,8 @@ depends-member:
 - ["CSo11UIResponder", "imagePickerController"]
 - ["CSo11UIResponder", "imagePickerControllerDidCancel"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "popToRootViewControllerAnimated"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - ["CSo11UIResponder", "projectImageView"]
 - ["CSo11UIResponder", "projectName"]
@@ -656,6 +703,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "UIImagePickerController"]
 - !private ["PSo20UIScrollViewDelegate", "UIImagePickerControllerOriginalImage"]
 - ["PSo20UIScrollViewDelegate", "aboutTextField"]
+- ["PSo20UIScrollViewDelegate", "cancelButton"]
 - ["PSo20UIScrollViewDelegate", "cancelButtonTapped"]
 - ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
 - !private ["PSo20UIScrollViewDelegate", "dismissViewControllerAnimated"]
@@ -663,6 +711,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "imagePickerController"]
 - ["PSo20UIScrollViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - !private ["PSo20UIScrollViewDelegate", "presentViewController"]
 - ["PSo20UIScrollViewDelegate", "projectImageView"]
 - ["PSo20UIScrollViewDelegate", "projectName"]
@@ -682,6 +731,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "aboutTextField"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - !private ["PSo16UIStateRestoring", "allowsEditing"]
+- ["PSo16UIStateRestoring", "cancelButton"]
 - ["PSo16UIStateRestoring", "cancelButtonTapped"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
@@ -689,6 +739,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "imagePickerController"]
 - ["PSo16UIStateRestoring", "imagePickerControllerDidCancel"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "popToRootViewControllerAnimated"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - ["PSo16UIStateRestoring", "projectImageView"]
 - ["PSo16UIStateRestoring", "projectName"]
@@ -718,6 +770,7 @@ depends-member:
 - ["CSo21UITableViewController", "UITextView"]
 - !private ["CSo21UITableViewController", "Void"]
 - ["CSo21UITableViewController", "aboutTextField"]
+- ["CSo21UITableViewController", "cancelButton"]
 - ["CSo21UITableViewController", "cancelButtonTapped"]
 - ["CSo21UITableViewController", "didReceiveMemoryWarning"]
 - !private ["CSo21UITableViewController", "dismissViewControllerAnimated"]
@@ -725,6 +778,7 @@ depends-member:
 - ["CSo21UITableViewController", "imagePickerController"]
 - ["CSo21UITableViewController", "imagePickerControllerDidCancel"]
 - ["CSo21UITableViewController", "init"]
+- !private ["CSo21UITableViewController", "navigationController"]
 - !private ["CSo21UITableViewController", "presentViewController"]
 - ["CSo21UITableViewController", "projectImageView"]
 - ["CSo21UITableViewController", "projectName"]
@@ -742,6 +796,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "UIImagePickerController"]
 - !private ["PSo21UITableViewDataSource", "UIImagePickerControllerOriginalImage"]
 - ["PSo21UITableViewDataSource", "aboutTextField"]
+- ["PSo21UITableViewDataSource", "cancelButton"]
 - ["PSo21UITableViewDataSource", "cancelButtonTapped"]
 - ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
 - !private ["PSo21UITableViewDataSource", "dismissViewControllerAnimated"]
@@ -749,6 +804,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "imagePickerController"]
 - ["PSo21UITableViewDataSource", "imagePickerControllerDidCancel"]
 - ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
 - !private ["PSo21UITableViewDataSource", "presentViewController"]
 - ["PSo21UITableViewDataSource", "projectImageView"]
 - ["PSo21UITableViewDataSource", "projectName"]
@@ -766,6 +822,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "UIImagePickerController"]
 - !private ["PSo19UITableViewDelegate", "UIImagePickerControllerOriginalImage"]
 - ["PSo19UITableViewDelegate", "aboutTextField"]
+- ["PSo19UITableViewDelegate", "cancelButton"]
 - ["PSo19UITableViewDelegate", "cancelButtonTapped"]
 - ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
 - !private ["PSo19UITableViewDelegate", "dismissViewControllerAnimated"]
@@ -773,6 +830,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "imagePickerController"]
 - ["PSo19UITableViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
 - !private ["PSo19UITableViewDelegate", "presentViewController"]
 - ["PSo19UITableViewDelegate", "projectImageView"]
 - ["PSo19UITableViewDelegate", "projectName"]
@@ -796,6 +854,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "aboutTextField"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - !private ["PSo18UITraitEnvironment", "allowsEditing"]
+- ["PSo18UITraitEnvironment", "cancelButton"]
 - ["PSo18UITraitEnvironment", "cancelButtonTapped"]
 - !private ["PSo18UITraitEnvironment", "contentMode"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -805,6 +864,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "imagePickerController"]
 - ["PSo18UITraitEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "popToRootViewControllerAnimated"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - ["PSo18UITraitEnvironment", "projectImageView"]
 - ["PSo18UITraitEnvironment", "projectName"]
@@ -842,6 +903,7 @@ depends-member:
 - ["CSo16UIViewController", "aboutTextField"]
 - !private ["CSo16UIViewController", "addAction"]
 - !private ["CSo16UIViewController", "allowsEditing"]
+- ["CSo16UIViewController", "cancelButton"]
 - ["CSo16UIViewController", "cancelButtonTapped"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
@@ -849,6 +911,8 @@ depends-member:
 - ["CSo16UIViewController", "imagePickerController"]
 - ["CSo16UIViewController", "imagePickerControllerDidCancel"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "popToRootViewControllerAnimated"]
 - !private ["CSo16UIViewController", "presentViewController"]
 - ["CSo16UIViewController", "projectImageView"]
 - ["CSo16UIViewController", "projectName"]
@@ -1009,4 +1073,4 @@ depends-external:
 - "./Parse.framework/Headers/Parse.h"
 - "./Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "2e7bd06533bb7f10e0b35aacacd3afac"
+interface-hash: "94d9990c31b44dee6d6b05e4ce8b1ee4"

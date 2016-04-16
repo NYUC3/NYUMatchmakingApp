@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import Parse
 
 class ProjectsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var projectsList = []
+    
+    
+    var projectsList : Array<ExploreStruct> = [] // Note: ExploreStruct is a shitty name pls change
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // TO DO: Load user's projects into projectsList
+        
+        
     }
 
     

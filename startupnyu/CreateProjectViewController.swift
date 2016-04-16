@@ -20,11 +20,7 @@ class CreateProjectViewController: UITableViewController, UIImagePickerControlle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
-        // TO DO: Load user's projects in the table view
-        
-        
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,6 +74,13 @@ class CreateProjectViewController: UITableViewController, UIImagePickerControlle
         
         
     }
+    
+    @IBAction func cancelButton(sender: UIButton) {
+        
+        navigationController?.popToRootViewControllerAnimated(true)
+        
+    }
+    
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {

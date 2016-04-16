@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RbF-jl-bUI">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -243,7 +244,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                                     <state key="normal" title="CANCEL"/>
                                                     <connections>
-                                                        <action selector="cancelButtonTapped:" destination="pXe-Me-4kZ" eventType="touchUpInside" id="O1X-qS-uBu"/>
+                                                        <action selector="cancelButton:" destination="pXe-Me-4kZ" eventType="touchUpInside" id="kcG-vf-tWC"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
