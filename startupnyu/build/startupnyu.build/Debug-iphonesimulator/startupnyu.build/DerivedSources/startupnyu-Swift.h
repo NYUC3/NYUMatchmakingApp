@@ -239,6 +239,8 @@ SWIFT_CLASS("_TtC10startupnyu26MessagesListViewController")
 
 SWIFT_CLASS("_TtC10startupnyu23MyProjectsTableViewCell")
 @interface MyProjectsTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectName;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -310,6 +312,7 @@ SWIFT_CLASS("_TtC10startupnyu26ProjectTableViewController")
 
 SWIFT_CLASS("_TtC10startupnyu26ProjectsListViewController")
 @interface ProjectsListViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

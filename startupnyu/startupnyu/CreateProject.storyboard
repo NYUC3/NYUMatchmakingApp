@@ -55,6 +55,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="projectImage" destination="JIp-13-paI" id="S40-oG-3qL"/>
+                                            <outlet property="projectName" destination="qop-IV-vR3" id="zhR-c8-XE2"/>
                                             <segue destination="vHW-l4-jyB" kind="show" id="B5Z-wd-aKW"/>
                                         </connections>
                                     </tableViewCell>
@@ -99,6 +101,9 @@
                             <constraint firstItem="QHH-HC-zWl" firstAttribute="leading" secondItem="x9f-2t-RcJ" secondAttribute="leading" id="zXE-7U-t0g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="QHH-HC-zWl" id="k63-1V-27R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5z-k0-HuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

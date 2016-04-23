@@ -28,6 +28,7 @@
 		C21037E31C4AD7B60039E748 /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037E21C4AD7B60039E748 /* CustomTabbar.swift */; };
 		C22329371C55C1FE001CC13C /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22329361C55C1FE001CC13C /* ExploreVC.swift */; };
 		C22329391C55C5E0001CC13C /* ExploreStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22329381C55C5E0001CC13C /* ExploreStruct.swift */; };
+		C24AC1D61CCC30AB00BA3C7E /* MyProjectsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24AC1D51CCC30AB00BA3C7E /* MyProjectsStruct.swift */; };
 		C24D0AB01C56F77E00EA1053 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D0AAF1C56F77E00EA1053 /* LoginVC.swift */; };
 		C24D0AB41C56F8C900EA1053 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D0AB31C56F8C900EA1053 /* LoginViewController.swift */; };
 		C24D0AB61C56FC6B00EA1053 /* NavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D0AB51C56FC6B00EA1053 /* NavVC.swift */; };
@@ -105,6 +106,7 @@
 		C21037E21C4AD7B60039E748 /* CustomTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
 		C22329361C55C1FE001CC13C /* ExploreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		C22329381C55C5E0001CC13C /* ExploreStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreStruct.swift; sourceTree = "<group>"; };
+		C24AC1D51CCC30AB00BA3C7E /* MyProjectsStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProjectsStruct.swift; sourceTree = "<group>"; };
 		C24D0AAF1C56F77E00EA1053 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C24D0AB31C56F8C900EA1053 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C24D0AB51C56FC6B00EA1053 /* NavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavVC.swift; sourceTree = "<group>"; };
@@ -230,14 +232,12 @@
 		C2E3F0A71C444261007DDBB7 = {
 			isa = PBXGroup;
 			children = (
-				C2F098571C9E0C2E0014E2B9 /* EditProfile */,
 				00032E051C4C22CC0009B002 /* Bolts.framework */,
 				00032E061C4C22CC0009B002 /* Parse.framework */,
 				00032E071C4C22CC0009B002 /* ParseFacebookUtils.framework */,
 				00032E081C4C22CC0009B002 /* ParseFacebookUtilsV4.framework */,
 				00032E091C4C22CC0009B002 /* ParseTwitterUtils.framework */,
 				00032E0A1C4C22CC0009B002 /* ParseUI.framework */,
-				C2F098521C9E06A20014E2B9 /* Create Project */,
 				C2A0633B1C4C0839002DFF79 /* Frameworks */,
 				C2E3F0B21C444261007DDBB7 /* startupnyu */,
 				C2E3F0C71C444261007DDBB7 /* startupnyuTests */,
@@ -261,6 +261,8 @@
 			children = (
 				C2E3F0B71C444261007DDBB7 /* Main.storyboard */,
 				C21037E21C4AD7B60039E748 /* CustomTabbar.swift */,
+				C2F098521C9E06A20014E2B9 /* Create Project */,
+				C2F098571C9E0C2E0014E2B9 /* EditProfile */,
 				C21037D11C4ABB6F0039E748 /* ProjectView */,
 				C2E3F0EC1C4442FB007DDBB7 /* Login */,
 				C2E3F0EB1C4442EE007DDBB7 /* Profile */,
@@ -347,9 +349,11 @@
 				C287A3031CB7580700613D26 /* ProjectsListViewController.swift */,
 				C287A30D1CB75B1C00613D26 /* AddButtonTableViewCell.swift */,
 				C2F098531C9E06DA0014E2B9 /* CreateProjectViewController.swift */,
+				C24AC1D51CCC30AB00BA3C7E /* MyProjectsStruct.swift */,
 				C287A30B1CB75A9100613D26 /* MyProjectsTableViewCell.swift */,
 			);
 			name = "Create Project";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C2F098571C9E0C2E0014E2B9 /* EditProfile */ = {
@@ -359,6 +363,7 @@
 				C2F098551C9E0C260014E2B9 /* EditProfile.storyboard */,
 			);
 			name = EditProfile;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,6 +526,7 @@
 				C21037D01C4AB4480039E748 /* ProfileViewController.swift in Sources */,
 				C21037DB1C4ACA1C0039E748 /* messageListStruct.swift in Sources */,
 				C287A3041CB7580700613D26 /* ProjectsListViewController.swift in Sources */,
+				C24AC1D61CCC30AB00BA3C7E /* MyProjectsStruct.swift in Sources */,
 				C2E3F0B41C444261007DDBB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

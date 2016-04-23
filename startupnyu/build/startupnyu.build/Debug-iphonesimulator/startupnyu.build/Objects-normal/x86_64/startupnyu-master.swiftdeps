@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "72b9d4e6d5c67e429abc5ec14185cec3"
-build_time: [514156830, 142809000]
+build_time: [514766959, 745244000]
 inputs:
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/NavVC.swift": [511740548, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/ProjectTableViewController.swift": [513401766, 0]
@@ -15,13 +15,14 @@ inputs:
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/MessageListViewCell.swift": [511740548, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/MessagesListViewController.swift": [511740548, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/CustomTabbar.swift": [511740548, 0]
-  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/startupnyu/MyProjectsTableViewCell.swift": [513400725, 0]
+  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/startupnyu/MyProjectsTableViewCell.swift": [514765970, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/AddButtonTableViewCell.swift": [513402176, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/ExploreVC.swift": [513401685, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/EditProfileTableTableViewController.swift": [511742294, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/LoginVC.swift": [511740548, 0]
-  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/CreateProjectViewController.swift": [514156826, 0]
+  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/CreateProjectViewController.swift": [514766415, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/ProfileViewController.swift": [511743527, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/messageListStruct.swift": [511740548, 0]
-  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/ProjectsListViewController.swift": [513891251, 0]
+  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/ProjectsListViewController.swift": [514766958, 0]
+  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/MyProjectsStruct.swift": [514766699, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/startupnyu/AppDelegate.swift": [512079550, 0]
