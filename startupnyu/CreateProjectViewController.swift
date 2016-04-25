@@ -40,21 +40,22 @@ class CreateProjectViewController: UITableViewController, UIImagePickerControlle
     
     @IBAction func saveButtonTapped(sender: UIButton) {
         
-        if(projectName.text != nil && aboutTextField.text != nil && requirementsTextField.text != nil && projectImageView.image != nil){
+        if(projectName.text != nil && aboutTextField.text != nil && requirementsTextField.text != nil){
             
             var newProject = PFObject(className:"Project")
             
             // TO DO: TAGS, ABOUT, REQUIREMENTS
             
-            newProject["email"] = ""
-            newProject["name"] = projectName.text
-            newProject["image"] = projectImageView.image
-            
+            newProject["email"] = PFUser.currentUser()?.email
+            newProject["Name"] = projectName.text
+            newProject["Tags"] = ""
+            //newProject["Image"] = UIImage(named: "star")
+            self.dismissViewControllerAnimated(true, completion: nil)
             newProject.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
                     // The object has been saved.
-                    self.dismissViewControllerAnimated(true, completion: nil)
+                    
                 } else {
                     // There was a problem, check error.description
                 }

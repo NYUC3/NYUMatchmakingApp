@@ -7,13 +7,10 @@ provides-member:
 - ["V10startupnyu15MyProjectStruct", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "PFFile"
-- "String"
 - "MyProjectStruct"
+- "String"
 depends-member:
-- ["V10startupnyu15MyProjectStruct", "PFFile"]
 - ["V10startupnyu15MyProjectStruct", "String"]
-- ["V10startupnyu15MyProjectStruct", "image"]
 - ["V10startupnyu15MyProjectStruct", "init"]
 - ["V10startupnyu15MyProjectStruct", "name"]
 - ["V10startupnyu15MyProjectStruct", "tags"]
@@ -89,4 +86,4 @@ depends-external:
 - "./Parse.framework/Headers/Parse.h"
 - "./Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "0c0e6e4b0c38b9af38a1f1455c1ad830"
+interface-hash: "ba7c7b1dbd54ca3d2888f5430e7ed9d6"

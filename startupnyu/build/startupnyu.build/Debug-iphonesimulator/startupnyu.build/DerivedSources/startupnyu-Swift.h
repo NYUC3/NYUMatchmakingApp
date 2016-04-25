@@ -317,6 +317,7 @@ SWIFT_CLASS("_TtC10startupnyu26ProjectTableViewController")
 SWIFT_CLASS("_TtC10startupnyu26ProjectsListViewController")
 @interface ProjectsListViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

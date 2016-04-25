@@ -6,35 +6,36 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu26ProjectsListViewController", ""]
 provides-dynamic-lookup:
+- "tableView"
+- "tableView"
+- "tableView"
 - "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
+- "viewDidAppear"
 depends-top-level:
+- !private "PFQuery"
+- !private "print"
+- "UITableViewDelegate"
+- "UITableView"
+- !private "String"
+- "ProjectsListViewController"
+- !private "StringLiteralType"
+- !private "=="
+- "MyProjectStruct"
+- !private "MyProjectsTableViewCell"
+- "Bool"
+- "NSIndexPath"
+- !private "PFUser"
+- "UIViewController"
+- !private "Void"
+- !private "AddButtonTableViewCell"
+- "UITableViewCell"
+- !private "PFObject"
+- "UITableViewDataSource"
+- "Int"
+- "UnicodeScalarType"
+- "Array"
 - !private "NSError"
 - !private "+"
-- "MyProjectStruct"
-- "ProjectsListViewController"
-- !private "PFQuery"
-- "UIViewController"
-- "Int"
-- !private "=="
-- "UITableViewCell"
-- !private "print"
-- !private "String"
-- !private "StringLiteralType"
-- "UnicodeScalarType"
-- !private "MyProjectsTableViewCell"
-- "UITableViewDataSource"
-- "Array"
-- !private "Void"
-- "UITableViewDelegate"
-- !private "PFUser"
-- !private "AddButtonTableViewCell"
-- !private "PFFile"
-- !private "PFObject"
-- "UITableView"
-- "NSIndexPath"
 depends-member:
 - !private ["Ps9AnyObject", "MyProjectStruct"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -68,6 +69,7 @@ depends-member:
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "userInfo"]
+- ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - !private ["Ps9AnyObject", "whereKey"]
@@ -131,6 +133,7 @@ depends-member:
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "userInfo"]
+- ["Ps11CVarArgType", "viewDidAppear"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
 - !private ["Ps11CVarArgType", "whereKey"]
@@ -185,6 +188,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "userInfo"]
+- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - !private ["Ps28CustomDebugStringConvertible", "whereKey"]
@@ -230,6 +234,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "userInfo"]
+- ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - !private ["Ps23CustomStringConvertible", "whereKey"]
@@ -270,6 +275,7 @@ depends-member:
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "userInfo"]
+- ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - !private ["Ps9Equatable", "whereKey"]
@@ -315,6 +321,7 @@ depends-member:
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "userInfo"]
+- ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - !private ["Ps8Hashable", "whereKey"]
@@ -368,7 +375,6 @@ depends-member:
 - ["V10startupnyu15MyProjectStruct", "deinit"]
 - !private ["V10startupnyu15MyProjectStruct", "init"]
 - !private ["V10startupnyu15MyProjectStruct", "name"]
-- !private ["V10startupnyu15MyProjectStruct", "tags"]
 - !private ["C10startupnyu23MyProjectsTableViewCell", "projectName"]
 - !private ["PSo8NSCoding", "MyProjectStruct"]
 - !private ["PSo8NSCoding", "PFQuery"]
@@ -398,6 +404,7 @@ depends-member:
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "userInfo"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
@@ -429,6 +436,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -436,12 +444,12 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "AddButtonTableViewCell"]
 - ["CSo8NSObject", "Array"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "MyProjectStruct"]
 - !private ["CSo8NSObject", "MyProjectsTableViewCell"]
 - !private ["CSo8NSObject", "NSError"]
 - ["CSo8NSObject", "NSIndexPath"]
-- !private ["CSo8NSObject", "PFFile"]
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
@@ -478,6 +486,7 @@ depends-member:
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "userInfo"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["CSo8NSObject", "whereKey"]
@@ -513,6 +522,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "whereKey"]
@@ -538,12 +548,12 @@ depends-member:
 - !private ["CSo6PFUser", "email"]
 - !private ["C10startupnyu26ProjectsListViewController", "AddButtonTableViewCell"]
 - ["C10startupnyu26ProjectsListViewController", "Array"]
+- ["C10startupnyu26ProjectsListViewController", "Bool"]
 - ["C10startupnyu26ProjectsListViewController", "Int"]
 - ["C10startupnyu26ProjectsListViewController", "MyProjectStruct"]
 - !private ["C10startupnyu26ProjectsListViewController", "MyProjectsTableViewCell"]
 - !private ["C10startupnyu26ProjectsListViewController", "NSError"]
 - ["C10startupnyu26ProjectsListViewController", "NSIndexPath"]
-- !private ["C10startupnyu26ProjectsListViewController", "PFFile"]
 - !private ["C10startupnyu26ProjectsListViewController", "PFObject"]
 - !private ["C10startupnyu26ProjectsListViewController", "PFQuery"]
 - !private ["C10startupnyu26ProjectsListViewController", "PFUser"]
@@ -571,6 +581,7 @@ depends-member:
 - ["C10startupnyu26ProjectsListViewController", "scrollViewWillEndDragging"]
 - ["C10startupnyu26ProjectsListViewController", "sectionIndexTitlesForTableView"]
 - ["C10startupnyu26ProjectsListViewController", "tableView"]
+- ["C10startupnyu26ProjectsListViewController", "viewDidAppear"]
 - ["C10startupnyu26ProjectsListViewController", "viewDidLoad"]
 - ["C10startupnyu26ProjectsListViewController", "viewForZoomingInScrollView"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
@@ -639,6 +650,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -664,6 +676,7 @@ depends-member:
 - ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
@@ -701,6 +714,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -708,12 +722,12 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "AddButtonTableViewCell"]
 - ["CSo11UIResponder", "Array"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "MyProjectStruct"]
 - !private ["CSo11UIResponder", "MyProjectsTableViewCell"]
 - !private ["CSo11UIResponder", "NSError"]
 - ["CSo11UIResponder", "NSIndexPath"]
-- !private ["CSo11UIResponder", "PFFile"]
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
@@ -744,6 +758,7 @@ depends-member:
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
@@ -793,6 +808,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
@@ -872,6 +888,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
@@ -881,12 +898,12 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "AddButtonTableViewCell"]
 - ["CSo16UIViewController", "Array"]
+- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "MyProjectStruct"]
 - !private ["CSo16UIViewController", "MyProjectsTableViewCell"]
 - !private ["CSo16UIViewController", "NSError"]
 - ["CSo16UIViewController", "NSIndexPath"]
-- !private ["CSo16UIViewController", "PFFile"]
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
@@ -913,6 +930,7 @@ depends-member:
 - ["CSo16UIViewController", "scrollViewWillEndDragging"]
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
@@ -1165,4 +1183,4 @@ depends-external:
 - "./Parse.framework/Headers/Parse.h"
 - "./Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "eb2faeaeaf7d997e13b3adcf76d5ca88"
+interface-hash: "3f72b4b00a2081e3b1968f42fd5a2666"

@@ -15,6 +15,10 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var tableView: UITableView!
     
     var projectsList : Array<MyProjectStruct> = [] // Note: ExploreStruct is a shitty name pls change
+    
+    override func viewDidAppear(animated: Bool) {
+        tableView.reloadData()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +39,11 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
                 if let objects = objects {
                     for object in objects {
                         
+                            print(object)
                         
-                        let projectObject = MyProjectStruct(name: object["Name"] as! String, tags: object["Tags"] as! String, image: object["Image"] as! PFFile)
-                        self.projectsList.append(projectObject)
-                        
-                        self.tableView.reloadData()
+                            let projectObject = MyProjectStruct(name: object["Name"] as! String, tags: object["Tags"] as! String)
+                            self.projectsList.append(projectObject)
+                            self.tableView.reloadData()
                         
                     }
                 }
@@ -69,7 +73,6 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
             let cell = tableView.dequeueReusableCellWithIdentifier("createproject", forIndexPath: indexPath) as! MyProjectsTableViewCell
             // WORK ON DISPLAYING PICTURE
             cell.projectName.text = projectsList[indexPath.row].name
-            cell.projectName.text = projectsList[indexPath.row].tags
             return cell
         }
 
