@@ -86,7 +86,7 @@
         <scene sceneID="RpJ-Ux-IwV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A1R-ji-KSP" customClass="NavVC" customModule="startupnyu" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Projects" id="W5V-jG-17L"/>
+                    <tabBarItem key="tabBarItem" title="My Projects" image="list" id="W5V-jG-17L"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UC1-T7-mSb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -114,6 +114,7 @@
     </scenes>
     <resources>
         <image name="User" width="11" height="20"/>
+        <image name="list" width="25" height="25"/>
         <image name="star" width="27" height="24"/>
     </resources>
 </document>

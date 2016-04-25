@@ -67,7 +67,7 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
         }
         else{
             let cell = tableView.dequeueReusableCellWithIdentifier("createproject", forIndexPath: indexPath) as! MyProjectsTableViewCell
-            
+            // WORK ON DISPLAYING PICTURE
             cell.projectName.text = projectsList[indexPath.row].name
             cell.projectName.text = projectsList[indexPath.row].tags
             return cell
