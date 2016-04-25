@@ -160,19 +160,24 @@ SWIFT_CLASS("_TtC10startupnyu12CustomTabbar")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
+@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC10startupnyu35EditProfileTableTableViewController")
 @interface EditProfileTableTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImageView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleTextField;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified bioTextField;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (IBAction)uploadProfileImageButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)cancelButtonTapped:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)saveButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
 @class NSIndexPath;
 @class UIStoryboardSegue;
 
@@ -259,7 +264,6 @@ SWIFT_CLASS("_TtC10startupnyu5NavVC")
 @end
 
 @class UISegmentedControl;
-@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC10startupnyu21ProfileViewController")
 @interface ProfileViewController : UITableViewController
