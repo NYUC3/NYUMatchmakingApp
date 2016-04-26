@@ -207,6 +207,7 @@ SWIFT_CLASS("_TtC10startupnyu19LoginViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)LoginButton:(UIButton * _Nonnull)sender;
+- (IBAction)unwindTologinup:(UIStoryboardSegue * _Nonnull)segue;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -339,6 +340,19 @@ SWIFT_CLASS("_TtC10startupnyu21SettingsViewContoller")
 @interface SettingsViewContoller : UITableViewController
 - (IBAction)logoutButton:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10startupnyu8SignupVC")
+@interface SignupVC : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified confirmPasswordTextField;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (IBAction)DoneButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

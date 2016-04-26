@@ -8,14 +8,14 @@ provides-member:
 provides-dynamic-lookup:
 - "logoutButton"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UITableViewController"
-- !private "UIStoryboard"
-- !private "LoginViewController"
 - !private "PFUser"
 - "UIButton"
-- !private "StringLiteralType"
+- "UITableViewController"
+- !private "UIStoryboard"
 - "SettingsViewContoller"
+- !private "BooleanLiteralType"
+- !private "StringLiteralType"
+- !private "LoginViewController"
 depends-member:
 - !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
