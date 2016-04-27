@@ -30,12 +30,32 @@ class ProjectTableViewController: UITableViewController  {
         // ASSIGN INFORMATION TO UI
         self.title = projectName
 
-        
-        
         // GESTURES
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
         rightSwipe.direction = .Right
         view.addGestureRecognizer(rightSwipe)
+        
+        var query = PFQuery(className:"Project")
+        query.whereKey("Name", equalTo:title!)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+                if let objects = objects {
+                    for object in objects {
+                        // Load information Here
+                        
+                    }
+                }
+            } else {
+                // Log details of the failure
+                print("Error: \(error!) \(error!.userInfo)")
+            }
+        }
+
         
     }
 
