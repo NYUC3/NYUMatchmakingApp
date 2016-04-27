@@ -6,55 +6,57 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "btnClicked"
-- "unwindToProfileView"
-- "profileImageView"
 - "bio"
 - "oneLineDescription"
-- "fullnameLabel"
-- "links"
+- "userInformationLabel"
 - "onelineDescriptionLabel"
 - "settingsButton"
-- "segmentView"
-- "skills"
-- "userInformationLabel"
-- "viewDidLoad"
 - "segmentTapped"
+- "skills"
+- "unwindToProfileView"
+- "segmentView"
+- "viewDidLoad"
+- "btnClicked"
+- "fullnameLabel"
+- "links"
 - "fullName"
+- "profileImageView"
 depends-top-level:
-- !private "PFObject"
-- "UISegmentedControl"
-- !private "Void"
-- !private "+"
-- "StringLiteralType"
-- !private "UINavigationItem"
-- !private "NSFontAttributeName"
-- !private "PFQuery"
-- !private "~="
-- "UILabel"
-- "UIImageView"
-- "UIStoryboardSegue"
-- "ProfileViewController"
-- "UITableViewController"
-- !private "UIBarButtonItemStyle"
-- !private "/"
-- !private "UIColor"
-- !private "UIStoryboard"
-- !private "NSError"
-- !private "=="
-- !private "Dictionary"
-- !private "print"
-- !private "UINavigationBar"
-- !private "UIImage"
 - !private "SettingsNavigationController"
-- !private "BooleanLiteralType"
-- !private "UIFont"
-- !private "String"
+- !private "UINavigationItem"
 - "UnicodeScalarType"
+- !private "NSFontAttributeName"
+- "StringLiteralType"
+- !private "UIBarButtonItemStyle"
+- "UISegmentedControl"
+- !private "NSError"
+- !private "String"
+- !private "UINavigationBar"
+- !private "PFObject"
+- !private "UIFont"
+- !private "Dictionary"
+- !private "Void"
+- "UIStoryboardSegue"
+- !private "=="
+- !private "UIStoryboard"
+- !private "~="
+- !private "PFQuery"
+- !private "UIColor"
+- !private "+"
+- !private "/"
+- "ProfileViewController"
+- !private "BooleanLiteralType"
+- !private "print"
+- !private "UIImage"
 - "UIBarButtonItem"
+- !private "PFUser"
+- "UITableViewController"
+- "UIImageView"
+- "UILabel"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "PFQuery"]
+- !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIBarButtonItemStyle"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -69,7 +71,9 @@ depends-member:
 - ["Ps9AnyObject", "btnClicked"]
 - !private ["Ps9AnyObject", "clipsToBounds"]
 - !private ["Ps9AnyObject", "cornerRadius"]
+- !private ["Ps9AnyObject", "currentUser"]
 - !private ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "email"]
 - !private ["Ps9AnyObject", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "fullName"]
@@ -132,6 +136,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSFontAttributeName"]
 - !private ["Ps11CVarArgType", "PFQuery"]
+- !private ["Ps11CVarArgType", "PFUser"]
 - !private ["Ps11CVarArgType", "UIBarButtonItem"]
 - !private ["Ps11CVarArgType", "UIBarButtonItemStyle"]
 - !private ["Ps11CVarArgType", "UIColor"]
@@ -146,6 +151,8 @@ depends-member:
 - ["Ps11CVarArgType", "btnClicked"]
 - !private ["Ps11CVarArgType", "clipsToBounds"]
 - !private ["Ps11CVarArgType", "cornerRadius"]
+- !private ["Ps11CVarArgType", "currentUser"]
+- !private ["Ps11CVarArgType", "email"]
 - !private ["Ps11CVarArgType", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps11CVarArgType", "frame"]
 - ["Ps11CVarArgType", "fullName"]
@@ -195,6 +202,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "PFQuery"]
+- !private ["Ps28CustomDebugStringConvertible", "PFUser"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
@@ -214,6 +222,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
+- !private ["Ps28CustomDebugStringConvertible", "email"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - ["Ps28CustomDebugStringConvertible", "fullName"]
@@ -254,6 +264,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
 - !private ["Ps23CustomStringConvertible", "PFQuery"]
+- !private ["Ps23CustomStringConvertible", "PFUser"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItemStyle"]
@@ -273,6 +284,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "clipsToBounds"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
+- !private ["Ps23CustomStringConvertible", "email"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - ["Ps23CustomStringConvertible", "fullName"]
@@ -316,6 +329,7 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSFontAttributeName"]
 - !private ["Ps9Equatable", "PFQuery"]
+- !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "Plain"]
 - !private ["Ps9Equatable", "UIBarButtonItem"]
 - !private ["Ps9Equatable", "UIBarButtonItemStyle"]
@@ -332,6 +346,8 @@ depends-member:
 - ["Ps9Equatable", "btnClicked"]
 - !private ["Ps9Equatable", "clipsToBounds"]
 - !private ["Ps9Equatable", "cornerRadius"]
+- !private ["Ps9Equatable", "currentUser"]
+- !private ["Ps9Equatable", "email"]
 - !private ["Ps9Equatable", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps9Equatable", "frame"]
 - ["Ps9Equatable", "fullName"]
@@ -378,6 +394,7 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSFontAttributeName"]
 - !private ["Ps8Hashable", "PFQuery"]
+- !private ["Ps8Hashable", "PFUser"]
 - !private ["Ps8Hashable", "Plain"]
 - !private ["Ps8Hashable", "UIBarButtonItem"]
 - !private ["Ps8Hashable", "UIBarButtonItemStyle"]
@@ -394,6 +411,8 @@ depends-member:
 - ["Ps8Hashable", "btnClicked"]
 - !private ["Ps8Hashable", "clipsToBounds"]
 - !private ["Ps8Hashable", "cornerRadius"]
+- !private ["Ps8Hashable", "currentUser"]
+- !private ["Ps8Hashable", "email"]
 - !private ["Ps8Hashable", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps8Hashable", "frame"]
 - ["Ps8Hashable", "fullName"]
@@ -469,6 +488,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "count"]
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
 - !private ["PSo8NSCoding", "PFQuery"]
+- !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIBarButtonItemStyle"]
 - !private ["PSo8NSCoding", "UIColor"]
@@ -520,6 +540,7 @@ depends-member:
 - !private ["CSo7NSError", "userInfo"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
+- !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItemStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
@@ -556,6 +577,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSFontAttributeName"]
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
+- !private ["CSo8NSObject", "PFUser"]
 - !private ["CSo8NSObject", "SettingsNavigationController"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIBarButtonItem"]
@@ -577,7 +599,9 @@ depends-member:
 - ["CSo8NSObject", "btnClicked"]
 - !private ["CSo8NSObject", "clipsToBounds"]
 - !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "currentUser"]
 - !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "email"]
 - !private ["CSo8NSObject", "findObjectsInBackgroundWithBlock"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "fullName"]
@@ -612,6 +636,7 @@ depends-member:
 - !private ["CSo8NSObject", "whereKey"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
+- !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItemStyle"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
@@ -626,6 +651,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "btnClicked"]
 - !private ["PSo16NSObjectProtocol", "clipsToBounds"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
+- !private ["PSo16NSObjectProtocol", "email"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackgroundWithBlock"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "fullName"]
@@ -669,14 +696,21 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
+- !private ["CSo8PFObject", "currentUser"]
+- !private ["CSo8PFObject", "email"]
 - !private ["CSo8PFObject", "subscript"]
 - !private ["CSo7PFQuery", "findObjectsInBackgroundWithBlock"]
 - !private ["CSo7PFQuery", "init"]
 - !private ["CSo7PFQuery", "whereKey"]
+- !private ["PSo13PFSubclassing", "currentUser"]
+- !private ["PSo13PFSubclassing", "email"]
+- !private ["CSo6PFUser", "currentUser"]
+- !private ["CSo6PFUser", "email"]
 - !private ["C10startupnyu21ProfileViewController", "NSError"]
 - !private ["C10startupnyu21ProfileViewController", "NSFontAttributeName"]
 - !private ["C10startupnyu21ProfileViewController", "PFObject"]
 - !private ["C10startupnyu21ProfileViewController", "PFQuery"]
+- !private ["C10startupnyu21ProfileViewController", "PFUser"]
 - !private ["C10startupnyu21ProfileViewController", "SettingsNavigationController"]
 - !private ["C10startupnyu21ProfileViewController", "String"]
 - ["C10startupnyu21ProfileViewController", "UIBarButtonItem"]
@@ -767,6 +801,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
+- !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItemStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
@@ -815,6 +850,7 @@ depends-member:
 - !private ["CSo7UIColor", "blackColor"]
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
+- !private ["PSo18UIContentContainer", "PFUser"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItemStyle"]
 - !private ["PSo18UIContentContainer", "UIColor"]
@@ -865,6 +901,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "PFQuery"]
+- !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItemStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
@@ -919,6 +956,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
+- !private ["CSo11UIResponder", "PFUser"]
 - !private ["CSo11UIResponder", "SettingsNavigationController"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
@@ -965,6 +1003,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "PFQuery"]
+- !private ["PSo20UIScrollViewDelegate", "PFUser"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItemStyle"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
@@ -997,6 +1036,7 @@ depends-member:
 - !private ["CSo18UISegmentedControl", "selectedSegmentIndex"]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
 - !private ["PSo16UIStateRestoring", "PFQuery"]
+- !private ["PSo16UIStateRestoring", "PFUser"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItemStyle"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
@@ -1032,6 +1072,7 @@ depends-member:
 - !private ["CSo21UITableViewController", "NSFontAttributeName"]
 - !private ["CSo21UITableViewController", "PFObject"]
 - !private ["CSo21UITableViewController", "PFQuery"]
+- !private ["CSo21UITableViewController", "PFUser"]
 - !private ["CSo21UITableViewController", "SettingsNavigationController"]
 - !private ["CSo21UITableViewController", "String"]
 - ["CSo21UITableViewController", "UIBarButtonItem"]
@@ -1070,6 +1111,7 @@ depends-member:
 - ["CSo21UITableViewController", ""]
 - !private ["PSo21UITableViewDataSource", "NSFontAttributeName"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
+- !private ["PSo21UITableViewDataSource", "PFUser"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItemStyle"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
@@ -1101,6 +1143,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "NSFontAttributeName"]
 - !private ["PSo19UITableViewDelegate", "PFQuery"]
+- !private ["PSo19UITableViewDelegate", "PFUser"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItemStyle"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
@@ -1132,6 +1175,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UITraitEnvironment", "PFQuery"]
+- !private ["PSo18UITraitEnvironment", "PFUser"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItemStyle"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
@@ -1183,6 +1227,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
+- !private ["CSo16UIViewController", "PFUser"]
 - !private ["CSo16UIViewController", "SettingsNavigationController"]
 - !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
@@ -1353,6 +1398,8 @@ depends-nominal:
 - !private "Ps16OutputStreamType"
 - !private "CSo8PFObject"
 - !private "CSo7PFQuery"
+- !private "PSo13PFSubclassing"
+- !private "CSo6PFUser"
 - "C10startupnyu21ProfileViewController"
 - !private "Ps21RandomAccessIndexType"
 - !private "Vs5Range"

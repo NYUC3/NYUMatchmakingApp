@@ -81,7 +81,7 @@ class ProfileViewController: UITableViewController{
         case 0:
             
             let query = PFQuery(className:"Student")
-            query.whereKey("email", equalTo:"vdthatte@nyu.edu")
+            query.whereKey("email", equalTo:(PFUser.currentUser()?.email)!)
             query.findObjectsInBackgroundWithBlock {
                 (objects: [PFObject]?, error: NSError?) -> Void in
                 
