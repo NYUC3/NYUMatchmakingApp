@@ -64,9 +64,9 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let storyboard = UIStoryboard(name: "ExploreStoryBoard", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("projectView") as! ProjectTableViewController
-        vc.projectName = projects[(tableView.indexPathForSelectedRow?.row)!].name!
-    } // prepareForSegue
-
+        let vc = segue.destinationViewController as! ProjectTableViewController
+        vc.projectName = projects[self.tableView.indexPathForSelectedRow!.row].name!
+        
+    }
+    
 }

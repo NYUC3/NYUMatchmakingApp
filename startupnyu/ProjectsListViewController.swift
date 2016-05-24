@@ -77,6 +77,11 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
         }
 
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! MyProjectTableViewController
+        vc.projectName = projectsList[self.tableView.indexPathForSelectedRow!.row].name
+        
+    }
 
 }

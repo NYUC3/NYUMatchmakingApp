@@ -9,37 +9,37 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 - "tableView"
-- "viewDidLoad"
 - "prepareForSegue"
+- "viewDidLoad"
 depends-top-level:
-- !private "PFObject"
-- "UITableView"
 - !private "UIStoryboard"
-- !private "PFQuery"
-- "AnyObject"
-- "ExploreVC"
-- !private "String"
-- !private "StringLiteralType"
-- !private "=="
-- "NSIndexPath"
-- "ExploreStruct"
-- !private "UIImage"
 - "Int"
-- "UnicodeScalarType"
-- !private "PFUser"
-- "UITableViewCell"
-- !private "Void"
-- "UIViewController"
-- "Array"
-- !private "LoginViewController"
-- "UITableViewDataSource"
-- "UITableViewDelegate"
-- !private "NSError"
+- "ExploreStruct"
 - !private "ProjectCell"
-- "UIStoryboardSegue"
-- !private "BooleanLiteralType"
+- !private "Void"
+- "UITableView"
+- "ExploreVC"
+- !private "PFUser"
+- !private "LoginViewController"
 - !private "print"
+- !private "StringLiteralType"
+- "UnicodeScalarType"
+- !private "=="
 - !private "ProjectTableViewController"
+- "NSIndexPath"
+- "AnyObject"
+- "UITableViewCell"
+- "UITableViewDelegate"
+- !private "PFObject"
+- !private "UIImage"
+- "UITableViewDataSource"
+- "Array"
+- "UIViewController"
+- !private "PFQuery"
+- !private "String"
+- !private "NSError"
+- !private "BooleanLiteralType"
+- "UIStoryboardSegue"
 depends-member:
 - !private ["Ps9AnyObject", "ExploreStruct"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -48,6 +48,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "currentUser"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps9AnyObject", "destinationViewController"]
 - !private ["Ps9AnyObject", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -98,11 +99,9 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "append"]
 - !private ["Ps23ArrayLiteralConvertible", "count"]
-- !private ["Ps23ArrayLiteralConvertible", "name"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
 - !private ["Vs10ArraySlice", "Generator"]
 - !private ["Vs10ArraySlice", "Index"]
-- !private ["Vs10ArraySlice", "name"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
@@ -120,6 +119,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIStoryboard"]
 - !private ["Ps11CVarArgType", "currentUser"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps11CVarArgType", "destinationViewController"]
 - !private ["Ps11CVarArgType", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
@@ -163,7 +163,6 @@ depends-member:
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "append"]
 - !private ["Ps14CollectionType", "count"]
-- !private ["Ps14CollectionType", "name"]
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
@@ -182,13 +181,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "currentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "indexPathForSelectedRow"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewControllerWithIdentifier"]
-- !private ["Ps28CustomDebugStringConvertible", "name"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
@@ -235,13 +234,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "currentUser"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps23CustomStringConvertible", "destinationViewController"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps23CustomStringConvertible", "indexPathForSelectedRow"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
-- !private ["Ps23CustomStringConvertible", "name"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
@@ -283,6 +282,7 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "currentUser"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps9Equatable", "destinationViewController"]
 - !private ["Ps9Equatable", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
@@ -382,6 +382,7 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "currentUser"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps8Hashable", "destinationViewController"]
 - !private ["Ps8Hashable", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -425,7 +426,6 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
-- !private ["Ps9Indexable", "name"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
@@ -450,7 +450,6 @@ depends-member:
 - !private ["Ps21MutableCollectionType", "_Element"]
 - !private ["Ps21MutableCollectionType", "append"]
 - !private ["Ps21MutableCollectionType", "count"]
-- !private ["Ps21MutableCollectionType", "name"]
 - !private ["Ps21MutableCollectionType", "subscript"]
 - !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
@@ -458,16 +457,13 @@ depends-member:
 - !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "append"]
 - !private ["Ps16MutableIndexable", "count"]
-- !private ["Ps16MutableIndexable", "name"]
 - !private ["Ps16MutableIndexable", "subscript"]
-- !private ["Vs12MutableSlice", "name"]
 - !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
 - !private ["Ps16MutableSliceable", "SubSequence"]
 - !private ["Ps16MutableSliceable", "_Element"]
 - !private ["Ps16MutableSliceable", "append"]
 - !private ["Ps16MutableSliceable", "count"]
-- !private ["Ps16MutableSliceable", "name"]
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "ExploreStruct"]
 - !private ["PSo8NSCoding", "PFQuery"]
@@ -566,6 +562,7 @@ depends-member:
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "currentUser"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo8NSObject", "destinationViewController"]
 - !private ["CSo8NSObject", "findObjectsInBackgroundWithBlock"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -608,6 +605,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "currentUser"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackgroundWithBlock"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
@@ -671,7 +669,6 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "append"]
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
-- !private ["Ps30RangeReplaceableCollectionType", "name"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
@@ -680,7 +677,6 @@ depends-member:
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "append"]
 - !private ["Ps12SequenceType", "count"]
-- !private ["Ps12SequenceType", "name"]
 - !private ["Ps12SequenceType", "subscript"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
@@ -951,6 +947,7 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo12UIStoryboard", "init"]
 - !private ["CSo12UIStoryboard", "instantiateViewControllerWithIdentifier"]
+- !private ["CSo17UIStoryboardSegue", "destinationViewController"]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "indexPathForSelectedRow"]
 - !private ["CSo11UITableView", "reloadData"]
@@ -1116,7 +1113,6 @@ depends-member:
 - !private ["Ps10_ArrayType", "_Element"]
 - !private ["Ps10_ArrayType", "append"]
 - !private ["Ps10_ArrayType", "count"]
-- !private ["Ps10_ArrayType", "name"]
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -1131,7 +1127,6 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
-- !private ["Ps24_DestructorSafeContainer", "name"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "Distance"]
@@ -1168,7 +1163,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "indexPathForSelectedRow"]
 - !private ["Ps12_Reflectable", "init"]
-- !private ["Ps12_Reflectable", "name"]
 - !private ["Ps12_Reflectable", "projectDesc"]
 - !private ["Ps12_Reflectable", "projectImage"]
 - !private ["Ps12_Reflectable", "projectName"]
@@ -1217,7 +1211,6 @@ depends-nominal:
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
-- !private "Vs12MutableSlice"
 - !private "Ps16MutableSliceable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -1265,6 +1258,7 @@ depends-nominal:
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
 - !private "CSo12UIStoryboard"
+- !private "CSo17UIStoryboardSegue"
 - !private "CSo11UITableView"
 - !private "CSo15UITableViewCell"
 - !private "CSo21UITableViewController"

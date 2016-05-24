@@ -6,47 +6,54 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu26ProjectsListViewController", ""]
 provides-dynamic-lookup:
-- "viewDidAppear"
-- "tableView"
-- "tableView"
-- "tableView"
+- "prepareForSegue"
 - "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+- "viewDidAppear"
 depends-top-level:
-- "UITableViewCell"
+- !private "Void"
+- "UITableView"
 - "Array"
-- !private "String"
+- !private "PFUser"
+- !private "+"
 - "UITableViewDataSource"
 - "UITableViewDelegate"
-- !private "Void"
-- !private "PFUser"
-- "NSIndexPath"
-- !private "StringLiteralType"
-- !private "=="
+- "Bool"
+- "AnyObject"
 - !private "print"
-- !private "+"
-- !private "MyProjectsTableViewCell"
-- "UIViewController"
-- "MyProjectStruct"
-- "ProjectsListViewController"
-- !private "NSError"
-- "UITableView"
-- !private "PFObject"
-- !private "AddButtonTableViewCell"
 - !private "PFQuery"
 - "Int"
+- !private "AddButtonTableViewCell"
+- "NSIndexPath"
+- !private "PFObject"
 - "UnicodeScalarType"
-- "Bool"
+- "UITableViewCell"
+- !private "MyProjectTableViewController"
+- "UIStoryboardSegue"
+- !private "StringLiteralType"
+- !private "String"
+- !private "MyProjectsTableViewCell"
+- !private "=="
+- "UIViewController"
+- !private "NSError"
+- "MyProjectStruct"
+- "ProjectsListViewController"
 depends-member:
 - !private ["Ps9AnyObject", "MyProjectStruct"]
 - !private ["Ps9AnyObject", "PFQuery"]
 - !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "currentUser"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps9AnyObject", "destinationViewController"]
 - !private ["Ps9AnyObject", "email"]
 - !private ["Ps9AnyObject", "findObjectsInBackgroundWithBlock"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps9AnyObject", "indexPathForSelectedRow"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- ["Ps9AnyObject", "prepareForSegue"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "projectName"]
 - ["Ps9AnyObject", "projectsList"]
@@ -106,11 +113,14 @@ depends-member:
 - !private ["Ps11CVarArgType", "PFUser"]
 - !private ["Ps11CVarArgType", "currentUser"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps11CVarArgType", "destinationViewController"]
 - !private ["Ps11CVarArgType", "email"]
 - !private ["Ps11CVarArgType", "findObjectsInBackgroundWithBlock"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps11CVarArgType", "indexPathForSelectedRow"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
+- ["Ps11CVarArgType", "prepareForSegue"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "projectName"]
 - ["Ps11CVarArgType", "projectsList"]
@@ -161,11 +171,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "currentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "email"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackgroundWithBlock"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "indexPathForSelectedRow"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "projectName"]
 - ["Ps28CustomDebugStringConvertible", "projectsList"]
@@ -207,11 +220,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "currentUser"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps23CustomStringConvertible", "destinationViewController"]
 - !private ["Ps23CustomStringConvertible", "email"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackgroundWithBlock"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps23CustomStringConvertible", "indexPathForSelectedRow"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "projectName"]
 - ["Ps23CustomStringConvertible", "projectsList"]
@@ -248,11 +264,14 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "currentUser"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps9Equatable", "destinationViewController"]
 - !private ["Ps9Equatable", "email"]
 - !private ["Ps9Equatable", "findObjectsInBackgroundWithBlock"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps9Equatable", "indexPathForSelectedRow"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- ["Ps9Equatable", "prepareForSegue"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "projectName"]
 - ["Ps9Equatable", "projectsList"]
@@ -294,11 +313,14 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "currentUser"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps8Hashable", "destinationViewController"]
 - !private ["Ps8Hashable", "email"]
 - !private ["Ps8Hashable", "findObjectsInBackgroundWithBlock"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["Ps8Hashable", "indexPathForSelectedRow"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- ["Ps8Hashable", "prepareForSegue"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "projectName"]
 - ["Ps8Hashable", "projectsList"]
@@ -375,14 +397,17 @@ depends-member:
 - ["V10startupnyu15MyProjectStruct", "deinit"]
 - !private ["V10startupnyu15MyProjectStruct", "init"]
 - !private ["V10startupnyu15MyProjectStruct", "name"]
+- !private ["C10startupnyu28MyProjectTableViewController", "projectName"]
 - !private ["C10startupnyu23MyProjectsTableViewCell", "projectName"]
 - !private ["PSo8NSCoding", "MyProjectStruct"]
 - !private ["PSo8NSCoding", "PFQuery"]
 - !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo8NSCoding", "indexPathForSelectedRow"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- ["PSo8NSCoding", "prepareForSegue"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "projectName"]
 - ["PSo8NSCoding", "projectsList"]
@@ -420,7 +445,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "projectName"]
 - ["PSo26NSExtensionRequestHandling", "projectsList"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
@@ -443,10 +470,12 @@ depends-member:
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "AddButtonTableViewCell"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Array"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "MyProjectStruct"]
+- !private ["CSo8NSObject", "MyProjectTableViewController"]
 - !private ["CSo8NSObject", "MyProjectsTableViewCell"]
 - !private ["CSo8NSObject", "NSError"]
 - ["CSo8NSObject", "NSIndexPath"]
@@ -454,16 +483,20 @@ depends-member:
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
 - !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "currentUser"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo8NSObject", "destinationViewController"]
 - !private ["CSo8NSObject", "email"]
 - !private ["CSo8NSObject", "findObjectsInBackgroundWithBlock"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["CSo8NSObject", "indexPathForSelectedRow"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "projectName"]
 - ["CSo8NSObject", "projectsList"]
@@ -495,11 +528,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "currentUser"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - !private ["PSo16NSObjectProtocol", "email"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackgroundWithBlock"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo16NSObjectProtocol", "indexPathForSelectedRow"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "projectName"]
 - ["PSo16NSObjectProtocol", "projectsList"]
@@ -547,10 +583,12 @@ depends-member:
 - !private ["CSo6PFUser", "currentUser"]
 - !private ["CSo6PFUser", "email"]
 - !private ["C10startupnyu26ProjectsListViewController", "AddButtonTableViewCell"]
+- ["C10startupnyu26ProjectsListViewController", "AnyObject"]
 - ["C10startupnyu26ProjectsListViewController", "Array"]
 - ["C10startupnyu26ProjectsListViewController", "Bool"]
 - ["C10startupnyu26ProjectsListViewController", "Int"]
 - ["C10startupnyu26ProjectsListViewController", "MyProjectStruct"]
+- !private ["C10startupnyu26ProjectsListViewController", "MyProjectTableViewController"]
 - !private ["C10startupnyu26ProjectsListViewController", "MyProjectsTableViewCell"]
 - !private ["C10startupnyu26ProjectsListViewController", "NSError"]
 - ["C10startupnyu26ProjectsListViewController", "NSIndexPath"]
@@ -558,6 +596,7 @@ depends-member:
 - !private ["C10startupnyu26ProjectsListViewController", "PFQuery"]
 - !private ["C10startupnyu26ProjectsListViewController", "PFUser"]
 - !private ["C10startupnyu26ProjectsListViewController", "String"]
+- ["C10startupnyu26ProjectsListViewController", "UIStoryboardSegue"]
 - ["C10startupnyu26ProjectsListViewController", "UITableView"]
 - ["C10startupnyu26ProjectsListViewController", "UITableViewCell"]
 - !private ["C10startupnyu26ProjectsListViewController", "Void"]
@@ -565,6 +604,7 @@ depends-member:
 - ["C10startupnyu26ProjectsListViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C10startupnyu26ProjectsListViewController", "init"]
 - ["C10startupnyu26ProjectsListViewController", "numberOfSectionsInTableView"]
+- ["C10startupnyu26ProjectsListViewController", "prepareForSegue"]
 - !private ["C10startupnyu26ProjectsListViewController", "print"]
 - ["C10startupnyu26ProjectsListViewController", "projectsList"]
 - ["C10startupnyu26ProjectsListViewController", "scrollViewDidEndDecelerating"]
@@ -617,10 +657,12 @@ depends-member:
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "indexPathForSelectedRow"]
 - !private ["PSo29UIAccessibilityIdentification", "projectName"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "indexPathForSelectedRow"]
 - !private ["PSo12UIAppearance", "projectName"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "text"]
@@ -629,8 +671,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21UIAppearanceContainer", "indexPathForSelectedRow"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- ["PSo21UIAppearanceContainer", "prepareForSegue"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "projectName"]
 - ["PSo21UIAppearanceContainer", "projectsList"]
@@ -660,7 +704,9 @@ depends-member:
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- ["PSo18UIContentContainer", "prepareForSegue"]
 - !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "projectName"]
 - ["PSo18UIContentContainer", "projectsList"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
@@ -681,10 +727,12 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "indexPathForSelectedRow"]
 - !private ["PSo17UICoordinateSpace", "projectName"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "indexPathForSelectedRow"]
 - !private ["PSo13UIDynamicItem", "projectName"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "text"]
@@ -693,8 +741,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo18UIFocusEnvironment", "indexPathForSelectedRow"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UIFocusEnvironment", "prepareForSegue"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "projectName"]
 - ["PSo18UIFocusEnvironment", "projectsList"]
@@ -721,10 +771,12 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "projectName"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "AddButtonTableViewCell"]
+- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "MyProjectStruct"]
+- !private ["CSo11UIResponder", "MyProjectTableViewController"]
 - !private ["CSo11UIResponder", "MyProjectsTableViewCell"]
 - !private ["CSo11UIResponder", "NSError"]
 - ["CSo11UIResponder", "NSIndexPath"]
@@ -732,13 +784,16 @@ depends-member:
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
 - !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["CSo11UIResponder", "indexPathForSelectedRow"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- ["CSo11UIResponder", "prepareForSegue"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "projectName"]
 - ["CSo11UIResponder", "projectsList"]
@@ -762,6 +817,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo12UIScrollView", "indexPathForSelectedRow"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "MyProjectStruct"]
 - !private ["PSo20UIScrollViewDelegate", "PFQuery"]
@@ -769,6 +825,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
+- !private ["PSo20UIScrollViewDelegate", "projectName"]
 - !private ["PSo20UIScrollViewDelegate", "projectsList"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
@@ -792,7 +849,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- ["PSo16UIStateRestoring", "prepareForSegue"]
 - !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "projectName"]
 - ["PSo16UIStateRestoring", "projectsList"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
@@ -812,16 +871,20 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo17UIStoryboardSegue", "destinationViewController"]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo11UITableView", "indexPathForSelectedRow"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "projectName"]
+- !private ["CSo21UITableViewController", "projectName"]
 - !private ["PSo21UITableViewDataSource", "MyProjectStruct"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
 - !private ["PSo21UITableViewDataSource", "PFUser"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "print"]
+- !private ["PSo21UITableViewDataSource", "projectName"]
 - !private ["PSo21UITableViewDataSource", "projectsList"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
@@ -845,6 +908,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "print"]
+- !private ["PSo19UITableViewDelegate", "projectName"]
 - !private ["PSo19UITableViewDelegate", "projectsList"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
@@ -867,8 +931,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "PFUser"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo18UITraitEnvironment", "indexPathForSelectedRow"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UITraitEnvironment", "prepareForSegue"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "projectName"]
 - ["PSo18UITraitEnvironment", "projectsList"]
@@ -893,14 +959,17 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "indexPathForSelectedRow"]
 - !private ["CSo6UIView", "projectName"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "AddButtonTableViewCell"]
+- ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Array"]
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "MyProjectStruct"]
+- !private ["CSo16UIViewController", "MyProjectTableViewController"]
 - !private ["CSo16UIViewController", "MyProjectsTableViewCell"]
 - !private ["CSo16UIViewController", "NSError"]
 - ["CSo16UIViewController", "NSIndexPath"]
@@ -908,13 +977,17 @@ depends-member:
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
 - !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "Void"]
+- !private ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- ["CSo16UIViewController", "prepareForSegue"]
 - !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "projectName"]
 - ["CSo16UIViewController", "projectsList"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
@@ -993,6 +1066,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "append"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps12_Reflectable", "indexPathForSelectedRow"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "projectName"]
 - !private ["Ps12_Reflectable", "reloadData"]
@@ -1040,6 +1114,7 @@ depends-nominal:
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
 - "V10startupnyu15MyProjectStruct"
+- !private "C10startupnyu28MyProjectTableViewController"
 - !private "C10startupnyu23MyProjectsTableViewCell"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -1083,8 +1158,10 @@ depends-nominal:
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
+- !private "CSo17UIStoryboardSegue"
 - !private "CSo11UITableView"
 - !private "CSo15UITableViewCell"
+- !private "CSo21UITableViewController"
 - "PSo21UITableViewDataSource"
 - "PSo19UITableViewDelegate"
 - "PSo18UITraitEnvironment"
@@ -1183,4 +1260,4 @@ depends-external:
 - "./Parse.framework/Headers/Parse.h"
 - "./Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "3f72b4b00a2081e3b1968f42fd5a2666"
+interface-hash: "8e1bc7d54ac9e60e2e4548b779512770"
