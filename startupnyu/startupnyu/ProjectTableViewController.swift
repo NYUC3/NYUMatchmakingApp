@@ -9,8 +9,10 @@
 import UIKit
 import Foundation
 import Parse
+import MessageUI
 
-class ProjectTableViewController: UITableViewController  {
+
+class ProjectTableViewController: UITableViewController, MFMailComposeViewControllerDelegate{
     
     var projectName : String = "name"
 
@@ -55,9 +57,24 @@ class ProjectTableViewController: UITableViewController  {
                 print("Error: \(error!) \(error!.userInfo)")
             }
         }
-
         
     }
+    
+    @IBAction func shareThroughEmailTapped(sender: AnyObject) {
+        
+        // TODO: Create an email with the necessary project information
+        var email = MFMailComposeViewController()
+        email.mailComposeDelegate = self
+        email.setSubject("My subject")
+        email.setMessageBody("Some example text", isHTML: false) // or true, if you prefer
+        presentViewController(email, animated: true, completion: nil)
+        
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
 
     @IBAction func segmentControlTapped(sender: UISegmentedControl) {
         
@@ -81,4 +98,5 @@ class ProjectTableViewController: UITableViewController  {
             navigationController?.popToRootViewControllerAnimated(true)
         }
     }
+
 }

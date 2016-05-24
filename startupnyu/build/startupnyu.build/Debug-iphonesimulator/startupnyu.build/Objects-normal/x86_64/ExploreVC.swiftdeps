@@ -12,34 +12,34 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "Array"
-- "UITableView"
-- !private "PFObject"
-- !private "PFQuery"
-- "AnyObject"
-- "UITableViewDelegate"
+- !private "print"
 - !private "String"
-- !private "UIImage"
-- "UITableViewDataSource"
-- "Int"
-- !private "UIStoryboard"
 - "UnicodeScalarType"
+- "AnyObject"
+- "Array"
+- !private "PFQuery"
+- !private "StringLiteralType"
+- "UITableView"
+- "Int"
+- "UIStoryboardSegue"
+- "UITableViewDelegate"
+- "UIViewController"
+- "NSIndexPath"
+- !private "PFObject"
+- !private "=="
+- "UITableViewDataSource"
+- !private "UIStoryboard"
+- !private "UIImage"
+- !private "LoginViewController"
+- "ExploreVC"
+- !private "ProjectTableViewController"
 - "ExploreStruct"
 - "UITableViewCell"
-- !private "NSError"
-- "UIStoryboardSegue"
-- !private "Void"
-- "ExploreVC"
-- "NSIndexPath"
-- "UIViewController"
-- !private "PFUser"
-- !private "ProjectTableViewController"
-- !private "StringLiteralType"
-- !private "=="
-- !private "LoginViewController"
-- !private "print"
 - !private "ProjectCell"
+- !private "BooleanLiteralType"
+- !private "Void"
+- !private "NSError"
+- !private "PFUser"
 depends-member:
 - !private ["Ps9AnyObject", "ExploreStruct"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -441,6 +441,7 @@ depends-member:
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "projectName"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
@@ -1208,6 +1209,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "PSo35MFMailComposeViewControllerDelegate"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"

@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import MessageUI;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -314,14 +315,18 @@ SWIFT_CLASS("_TtC10startupnyu11ProjectCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MFMailComposeViewController;
+@class NSError;
 
 SWIFT_CLASS("_TtC10startupnyu26ProjectTableViewController")
-@interface ProjectTableViewController : UITableViewController
+@interface ProjectTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
 @property (nonatomic, copy) NSString * _Nonnull projectName;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentControl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescriptionLabel;
 - (void)viewDidLoad;
+- (IBAction)shareThroughEmailTapped:(id _Nonnull)sender;
+- (void)mailComposeController:(MFMailComposeViewController * _Null_unspecified)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError * _Null_unspecified)error;
 - (IBAction)segmentControlTapped:(UISegmentedControl * _Nonnull)sender;
 - (void)handleSwipes:(UISwipeGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;

@@ -133,11 +133,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="351" id="3Hq-YJ-4dO">
-                                        <rect key="frame" x="0.0" y="250" width="600" height="351"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="327" id="3Hq-YJ-4dO">
+                                        <rect key="frame" x="0.0" y="250" width="600" height="327"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Hq-YJ-4dO" id="TbL-JK-xj8">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="350.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="326.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YlS-3z-amh">
@@ -153,9 +153,9 @@
                                                     </connections>
                                                 </segmentedControl>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19q-Ay-NQ8">
-                                                    <rect key="frame" x="55" y="44" width="490" height="299"/>
+                                                    <rect key="frame" x="55" y="44" width="490" height="274.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="299" id="M18-bh-d1M"/>
+                                                        <constraint firstAttribute="height" constant="274.5" id="M18-bh-d1M"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,6 +169,28 @@
                                                 <constraint firstItem="YlS-3z-amh" firstAttribute="top" secondItem="TbL-JK-xj8" secondAttribute="topMargin" id="nuu-wj-iz4"/>
                                                 <constraint firstItem="YlS-3z-amh" firstAttribute="centerX" secondItem="TbL-JK-xj8" secondAttribute="centerX" id="qMt-IN-ATC"/>
                                                 <constraint firstItem="19q-Ay-NQ8" firstAttribute="top" secondItem="YlS-3z-amh" secondAttribute="bottom" constant="8" symbolic="YES" id="yth-pT-Y1e"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="loe-8T-bLG">
+                                        <rect key="frame" x="0.0" y="577" width="600" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="loe-8T-bLG" id="g9h-Kv-LQM">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEh-gA-EcS">
+                                                    <rect key="frame" x="8" y="19" width="584" height="30"/>
+                                                    <state key="normal" title="Share Through Emal"/>
+                                                    <connections>
+                                                        <action selector="shareThroughEmailTapped:" destination="wyB-Uw-GCK" eventType="touchUpInside" id="mSl-vh-d4t"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TEh-gA-EcS" firstAttribute="trailing" secondItem="g9h-Kv-LQM" secondAttribute="trailingMargin" id="oE9-1K-tCu"/>
+                                                <constraint firstItem="TEh-gA-EcS" firstAttribute="centerY" secondItem="g9h-Kv-LQM" secondAttribute="centerY" id="ocb-dy-Ijw"/>
+                                                <constraint firstItem="TEh-gA-EcS" firstAttribute="leading" secondItem="g9h-Kv-LQM" secondAttribute="leadingMargin" id="tn9-CW-uDz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
