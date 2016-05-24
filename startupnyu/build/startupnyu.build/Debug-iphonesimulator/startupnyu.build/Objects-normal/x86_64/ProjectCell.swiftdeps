@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu11ProjectCell", ""]
 provides-dynamic-lookup:
-- "projectDesc"
 - "projectImage"
 - "projectName"
+- "projectDesc"
 depends-top-level:
 - "UITableViewCell"
-- "UIImageView"
-- "ProjectCell"
 - "UILabel"
+- "ProjectCell"
+- "UIImageView"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "projectDesc"]

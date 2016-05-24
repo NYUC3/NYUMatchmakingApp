@@ -54,6 +54,7 @@
 		C2A0635B1C4C08D4002DFF79 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A0635A1C4C08D4002DFF79 /* libsqlite3.tbd */; };
 		C2A492311C4C1ABC00947A8F /* SettingsViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A492301C4C1ABC00947A8F /* SettingsViewContoller.swift */; };
 		C2A492331C4C1B8E00947A8F /* SettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A492321C4C1B8E00947A8F /* SettingsNavigationController.swift */; };
+		C2D677FA1CF4F44600890709 /* MyProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D677F91CF4F44600890709 /* MyProjectViewController.swift */; };
 		C2E3F0B41C444261007DDBB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E3F0B31C444261007DDBB7 /* AppDelegate.swift */; };
 		C2E3F0B91C444261007DDBB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E3F0B71C444261007DDBB7 /* Main.storyboard */; };
 		C2E3F0BB1C444261007DDBB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E3F0BA1C444261007DDBB7 /* Assets.xcassets */; };
@@ -134,6 +135,7 @@
 		C2A0635A1C4C08D4002DFF79 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C2A492301C4C1ABC00947A8F /* SettingsViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewContoller.swift; sourceTree = "<group>"; };
 		C2A492321C4C1B8E00947A8F /* SettingsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavigationController.swift; sourceTree = "<group>"; };
+		C2D677F91CF4F44600890709 /* MyProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProjectViewController.swift; sourceTree = "<group>"; };
 		C2E3F0B01C444261007DDBB7 /* startupnyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = startupnyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E3F0B31C444261007DDBB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E3F0B81C444261007DDBB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				C2F098531C9E06DA0014E2B9 /* CreateProjectViewController.swift */,
 				C24AC1D51CCC30AB00BA3C7E /* MyProjectsStruct.swift */,
 				C287A30B1CB75A9100613D26 /* MyProjectsTableViewCell.swift */,
+				C2D677F91CF4F44600890709 /* MyProjectViewController.swift */,
 			);
 			name = "Create Project";
 			path = ..;
@@ -513,6 +516,7 @@
 			files = (
 				C24D0AB61C56FC6B00EA1053 /* NavVC.swift in Sources */,
 				00032E1A1C4DBC3C0009B002 /* ProjectTableViewController.swift in Sources */,
+				C2D677FA1CF4F44600890709 /* MyProjectViewController.swift in Sources */,
 				C21037E11C4ACE190039E748 /* MessageViewCell.swift in Sources */,
 				C22329391C55C5E0001CC13C /* ExploreStruct.swift in Sources */,
 				C2A492311C4C1ABC00947A8F /* SettingsViewContoller.swift in Sources */,

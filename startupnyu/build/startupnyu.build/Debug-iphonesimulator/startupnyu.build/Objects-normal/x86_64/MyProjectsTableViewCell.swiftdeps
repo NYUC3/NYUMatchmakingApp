@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu23MyProjectsTableViewCell", ""]
 provides-dynamic-lookup:
-- "projectImage"
-- "projectName"
 - "awakeFromNib"
 - "setSelected"
+- "projectName"
+- "projectImage"
 depends-top-level:
 - "UITableViewCell"
+- "UIImageView"
 - "UILabel"
 - "Bool"
 - "MyProjectsTableViewCell"
-- "UIImageView"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "init"]

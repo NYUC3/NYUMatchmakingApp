@@ -7,13 +7,13 @@ provides-member:
 - ["C10startupnyu22AddButtonTableViewCell", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
-- "setSelected"
 - "addLabel"
+- "setSelected"
 depends-top-level:
-- "Bool"
 - "AddButtonTableViewCell"
 - "UILabel"
 - "UITableViewCell"
+- "Bool"
 depends-member:
 - ["C10startupnyu22AddButtonTableViewCell", "Bool"]
 - ["C10startupnyu22AddButtonTableViewCell", "UILabel"]

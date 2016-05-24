@@ -6,47 +6,53 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu19MessageListViewCell", ""]
 provides-dynamic-lookup:
+- "awakeFromNib"
 - "setSelected"
 - "senderProfileImage"
 - "nameLabel"
-- "awakeFromNib"
 depends-top-level:
-- "MessageListViewCell"
-- "UITableViewCell"
 - "UIImageView"
 - "UILabel"
 - "Bool"
+- "UITableViewCell"
+- "MessageListViewCell"
 depends-member:
-- ["PSs9AnyObject", "awakeFromNib"]
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", "nameLabel"]
-- ["PSs9AnyObject", "senderProfileImage"]
-- ["PSs9AnyObject", "setSelected"]
-- ["PSs9AnyObject", ""]
-- ["PSs11CVarArgType", "awakeFromNib"]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "nameLabel"]
-- ["PSs11CVarArgType", "senderProfileImage"]
-- ["PSs11CVarArgType", "setSelected"]
-- ["PSs11CVarArgType", ""]
-- ["PSs23CustomStringConvertible", "awakeFromNib"]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", "nameLabel"]
-- ["PSs23CustomStringConvertible", "senderProfileImage"]
-- ["PSs23CustomStringConvertible", "setSelected"]
-- ["PSs23CustomStringConvertible", ""]
-- ["PSs9Equatable", "awakeFromNib"]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "nameLabel"]
-- ["PSs9Equatable", "senderProfileImage"]
-- ["PSs9Equatable", "setSelected"]
-- ["PSs9Equatable", ""]
-- ["PSs8Hashable", "awakeFromNib"]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "nameLabel"]
-- ["PSs8Hashable", "senderProfileImage"]
-- ["PSs8Hashable", "setSelected"]
-- ["PSs8Hashable", ""]
+- ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "nameLabel"]
+- ["Ps9AnyObject", "senderProfileImage"]
+- ["Ps9AnyObject", "setSelected"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "awakeFromNib"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "nameLabel"]
+- ["Ps11CVarArgType", "senderProfileImage"]
+- ["Ps11CVarArgType", "setSelected"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "nameLabel"]
+- ["Ps28CustomDebugStringConvertible", "senderProfileImage"]
+- ["Ps28CustomDebugStringConvertible", "setSelected"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "nameLabel"]
+- ["Ps23CustomStringConvertible", "senderProfileImage"]
+- ["Ps23CustomStringConvertible", "setSelected"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "nameLabel"]
+- ["Ps9Equatable", "senderProfileImage"]
+- ["Ps9Equatable", "setSelected"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "nameLabel"]
+- ["Ps8Hashable", "senderProfileImage"]
+- ["Ps8Hashable", "setSelected"]
+- ["Ps8Hashable", ""]
 - ["C10startupnyu19MessageListViewCell", "Bool"]
 - ["C10startupnyu19MessageListViewCell", "UIImageView"]
 - ["C10startupnyu19MessageListViewCell", "UILabel"]
@@ -149,18 +155,19 @@ depends-member:
 - ["CSo6UIView", "nameLabel"]
 - ["CSo6UIView", "senderProfileImage"]
 - ["CSo6UIView", "setSelected"]
-- ["PSs12_Reflectable", "awakeFromNib"]
-- ["PSs12_Reflectable", "init"]
-- ["PSs12_Reflectable", "nameLabel"]
-- ["PSs12_Reflectable", "senderProfileImage"]
-- ["PSs12_Reflectable", "setSelected"]
-- ["PSs12_Reflectable", ""]
+- ["Ps12_Reflectable", "awakeFromNib"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "nameLabel"]
+- ["Ps12_Reflectable", "senderProfileImage"]
+- ["Ps12_Reflectable", "setSelected"]
+- ["Ps12_Reflectable", ""]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - "C10startupnyu19MessageListViewCell"
 - "PSo8NSCoding"
 - "CSo8NSObject"
@@ -176,7 +183,7 @@ depends-nominal:
 - "CSo15UITableViewCell"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- "PSs12_Reflectable"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -239,7 +246,7 @@ depends-external:
 - "./Parse.framework/Headers/PFObject.h"
 - "./Parse.framework/Headers/PFUser.h"
 - "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
 - "./Parse.framework/Headers/PFAnalytics.h"
 - "./Parse.framework/Headers/PFACL.h"
 - "./Parse.framework/Headers/PFConstants.h"

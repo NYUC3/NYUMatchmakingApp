@@ -7,15 +7,15 @@ provides-member:
 - ["C10startupnyu19MessageListViewCell", ""]
 provides-dynamic-lookup:
 - "nameLabel"
-- "awakeFromNib"
-- "setSelected"
 - "senderProfileImage"
+- "setSelected"
+- "awakeFromNib"
 depends-top-level:
-- "UILabel"
 - "UIImageView"
-- "Bool"
-- "MessageListViewCell"
 - "UITableViewCell"
+- "Bool"
+- "UILabel"
+- "MessageListViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "init"]

@@ -8,56 +8,64 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
-- !private "UIColor"
-- "CustomTabbar"
 - !private "UITabBar"
+- "CustomTabbar"
 - "UITabBarController"
+- !private "UIColor"
 depends-member:
-- !private ["PSs9AnyObject", "UIColor"]
-- !private ["PSs9AnyObject", "UITabBar"]
-- !private ["PSs9AnyObject", "appearance"]
-- !private ["PSs9AnyObject", "blackColor"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "tintColor"]
-- ["PSs9AnyObject", "viewDidLoad"]
-- ["PSs9AnyObject", ""]
-- !private ["PSs11CVarArgType", "UIColor"]
-- !private ["PSs11CVarArgType", "UITabBar"]
-- !private ["PSs11CVarArgType", "appearance"]
-- !private ["PSs11CVarArgType", "blackColor"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "tintColor"]
-- ["PSs11CVarArgType", "viewDidLoad"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs23CustomStringConvertible", "UIColor"]
-- !private ["PSs23CustomStringConvertible", "UITabBar"]
-- !private ["PSs23CustomStringConvertible", "appearance"]
-- !private ["PSs23CustomStringConvertible", "blackColor"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "tintColor"]
-- ["PSs23CustomStringConvertible", "viewDidLoad"]
-- ["PSs23CustomStringConvertible", ""]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UITabBar"]
+- !private ["Ps9AnyObject", "appearance"]
+- !private ["Ps9AnyObject", "blackColor"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "tintColor"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "UITabBar"]
+- !private ["Ps11CVarArgType", "appearance"]
+- !private ["Ps11CVarArgType", "blackColor"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "tintColor"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UITabBar"]
+- !private ["Ps28CustomDebugStringConvertible", "appearance"]
+- !private ["Ps28CustomDebugStringConvertible", "blackColor"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UITabBar"]
+- !private ["Ps23CustomStringConvertible", "appearance"]
+- !private ["Ps23CustomStringConvertible", "blackColor"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
 - !private ["C10startupnyu12CustomTabbar", "UIColor"]
 - !private ["C10startupnyu12CustomTabbar", "UITabBar"]
 - ["C10startupnyu12CustomTabbar", "deinit"]
 - ["C10startupnyu12CustomTabbar", "init"]
 - ["C10startupnyu12CustomTabbar", "viewDidLoad"]
-- !private ["PSs9Equatable", "UIColor"]
-- !private ["PSs9Equatable", "UITabBar"]
-- !private ["PSs9Equatable", "appearance"]
-- !private ["PSs9Equatable", "blackColor"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "tintColor"]
-- ["PSs9Equatable", "viewDidLoad"]
-- ["PSs9Equatable", ""]
-- !private ["PSs8Hashable", "UIColor"]
-- !private ["PSs8Hashable", "UITabBar"]
-- !private ["PSs8Hashable", "appearance"]
-- !private ["PSs8Hashable", "blackColor"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "tintColor"]
-- ["PSs8Hashable", "viewDidLoad"]
-- ["PSs8Hashable", ""]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UITabBar"]
+- !private ["Ps9Equatable", "appearance"]
+- !private ["Ps9Equatable", "blackColor"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "tintColor"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UITabBar"]
+- !private ["Ps8Hashable", "appearance"]
+- !private ["Ps8Hashable", "blackColor"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "tintColor"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UITabBar"]
 - !private ["PSo8NSCoding", "appearance"]
@@ -152,16 +160,17 @@ depends-member:
 - !private ["CSo16UIViewController", "UITabBar"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "viewDidLoad"]
-- !private ["PSs24_ColorLiteralConvertible", "blackColor"]
-- !private ["PSs12_Reflectable", "appearance"]
-- !private ["PSs12_Reflectable", "tintColor"]
+- !private ["Ps24_ColorLiteralConvertible", "blackColor"]
+- !private ["Ps12_Reflectable", "appearance"]
+- !private ["Ps12_Reflectable", "tintColor"]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
 - "C10startupnyu12CustomTabbar"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -184,8 +193,8 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "PSs24_ColorLiteralConvertible"
-- !private "PSs12_Reflectable"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -248,7 +257,7 @@ depends-external:
 - "./Parse.framework/Headers/PFObject.h"
 - "./Parse.framework/Headers/PFUser.h"
 - "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
 - "./Parse.framework/Headers/PFAnalytics.h"
 - "./Parse.framework/Headers/PFACL.h"
 - "./Parse.framework/Headers/PFConstants.h"

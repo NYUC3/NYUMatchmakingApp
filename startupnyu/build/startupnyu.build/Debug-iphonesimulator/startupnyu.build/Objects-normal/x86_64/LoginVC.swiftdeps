@@ -7,8 +7,8 @@ provides-member:
 - ["C10startupnyu7LoginVC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UIViewController"
 - "LoginVC"
+- "UIViewController"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

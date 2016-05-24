@@ -8,55 +8,63 @@ provides-member:
 provides-dynamic-lookup:
 - "logoutButton"
 depends-top-level:
-- "SettingsViewContoller"
 - !private "StringLiteralType"
-- !private "LoginViewController"
-- "UIButton"
 - !private "PFUser"
-- !private "BooleanLiteralType"
 - "UITableViewController"
+- "SettingsViewContoller"
+- "UIButton"
 - !private "UIStoryboard"
+- !private "BooleanLiteralType"
+- !private "LoginViewController"
 depends-member:
-- !private ["PSs9AnyObject", "PFUser"]
-- !private ["PSs9AnyObject", "UIStoryboard"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs9AnyObject", "logOut"]
-- ["PSs9AnyObject", "logoutButton"]
-- !private ["PSs9AnyObject", "presentViewController"]
-- ["PSs9AnyObject", ""]
-- !private ["PSs11CVarArgType", "PFUser"]
-- !private ["PSs11CVarArgType", "UIStoryboard"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs11CVarArgType", "logOut"]
-- ["PSs11CVarArgType", "logoutButton"]
-- !private ["PSs11CVarArgType", "presentViewController"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs23CustomStringConvertible", "PFUser"]
-- !private ["PSs23CustomStringConvertible", "UIStoryboard"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs23CustomStringConvertible", "logOut"]
-- ["PSs23CustomStringConvertible", "logoutButton"]
-- !private ["PSs23CustomStringConvertible", "presentViewController"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["PSs9Equatable", "PFUser"]
-- !private ["PSs9Equatable", "UIStoryboard"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs9Equatable", "logOut"]
-- ["PSs9Equatable", "logoutButton"]
-- !private ["PSs9Equatable", "presentViewController"]
-- ["PSs9Equatable", ""]
-- !private ["PSs8Hashable", "PFUser"]
-- !private ["PSs8Hashable", "UIStoryboard"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs8Hashable", "logOut"]
-- ["PSs8Hashable", "logoutButton"]
-- !private ["PSs8Hashable", "presentViewController"]
-- ["PSs8Hashable", ""]
+- !private ["Ps9AnyObject", "PFUser"]
+- !private ["Ps9AnyObject", "UIStoryboard"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps9AnyObject", "logOut"]
+- ["Ps9AnyObject", "logoutButton"]
+- !private ["Ps9AnyObject", "presentViewController"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "PFUser"]
+- !private ["Ps11CVarArgType", "UIStoryboard"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps11CVarArgType", "logOut"]
+- ["Ps11CVarArgType", "logoutButton"]
+- !private ["Ps11CVarArgType", "presentViewController"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "PFUser"]
+- !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "logOut"]
+- ["Ps28CustomDebugStringConvertible", "logoutButton"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "PFUser"]
+- !private ["Ps23CustomStringConvertible", "UIStoryboard"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps23CustomStringConvertible", "logOut"]
+- ["Ps23CustomStringConvertible", "logoutButton"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "PFUser"]
+- !private ["Ps9Equatable", "UIStoryboard"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps9Equatable", "logOut"]
+- ["Ps9Equatable", "logoutButton"]
+- !private ["Ps9Equatable", "presentViewController"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "PFUser"]
+- !private ["Ps8Hashable", "UIStoryboard"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps8Hashable", "logOut"]
+- ["Ps8Hashable", "logoutButton"]
+- !private ["Ps8Hashable", "presentViewController"]
+- ["Ps8Hashable", ""]
 - !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - ["PSo8NSCoding", "init"]
@@ -171,11 +179,12 @@ depends-member:
 - ["CSo16UIViewController", "logoutButton"]
 - !private ["CSo16UIViewController", "presentViewController"]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
@@ -258,7 +267,7 @@ depends-external:
 - "./Parse.framework/Headers/PFObject.h"
 - "./Parse.framework/Headers/PFUser.h"
 - "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
 - "./Parse.framework/Headers/PFAnalytics.h"
 - "./Parse.framework/Headers/PFACL.h"
 - "./Parse.framework/Headers/PFConstants.h"
