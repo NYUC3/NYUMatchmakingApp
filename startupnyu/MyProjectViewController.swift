@@ -12,7 +12,10 @@ import Parse
 
 class MyProjectTableViewController: UITableViewController  {
     
-    var projectName : String = "my name"
+    var projectName : String = "name"
+    var projectActivity : String = ""
+    var projectAbout : String = ""
+    var projectRequirements : String = ""
     
     @IBOutlet weak var projectImage: UIImageView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
@@ -48,6 +51,11 @@ class MyProjectTableViewController: UITableViewController  {
                     for object in objects {
                         // Load information Here
                         
+                        self.projectDescriptionLabel.text = object["About"] as! String
+                        self.projectAbout = object["About"] as! String
+                        self.projectRequirements = object["Requirements"] as! String
+                        self.projectActivity = object["Activity"] as! String
+                        
                     }
                 }
             } else {
@@ -64,11 +72,11 @@ class MyProjectTableViewController: UITableViewController  {
         switch segmentControl.selectedSegmentIndex
         {
         case 0:
-            projectDescriptionLabel.text = "We're building a super-fast, futuristic transport technology. Inspired by Elon Musk's Hyper Loop cocept, professors at the University of California have teamed up with students to make the futuristic concept a reality."
+            projectDescriptionLabel.text = self.projectAbout
         case 1:
-            projectDescriptionLabel.text = "Find us at the prototyping fund showcase!";
+            projectDescriptionLabel.text = self.projectActivity
         case 2:
-            projectDescriptionLabel.text = "Mechanical Engineers!";
+            projectDescriptionLabel.text = self.projectRequirements
         default:
             break;
         }

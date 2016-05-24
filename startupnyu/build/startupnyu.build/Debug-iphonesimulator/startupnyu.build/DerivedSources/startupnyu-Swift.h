@@ -249,6 +249,9 @@ SWIFT_CLASS("_TtC10startupnyu26MessagesListViewController")
 SWIFT_CLASS("_TtC10startupnyu28MyProjectTableViewController")
 @interface MyProjectTableViewController : UITableViewController
 @property (nonatomic, copy) NSString * _Nonnull projectName;
+@property (nonatomic, copy) NSString * _Nonnull projectActivity;
+@property (nonatomic, copy) NSString * _Nonnull projectAbout;
+@property (nonatomic, copy) NSString * _Nonnull projectRequirements;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentControl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescriptionLabel;
@@ -321,6 +324,9 @@ SWIFT_CLASS("_TtC10startupnyu11ProjectCell")
 SWIFT_CLASS("_TtC10startupnyu26ProjectTableViewController")
 @interface ProjectTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
 @property (nonatomic, copy) NSString * _Nonnull projectName;
+@property (nonatomic, copy) NSString * _Nonnull projectActivity;
+@property (nonatomic, copy) NSString * _Nonnull projectAbout;
+@property (nonatomic, copy) NSString * _Nonnull projectRequirements;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentControl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescriptionLabel;

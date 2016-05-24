@@ -6,38 +6,41 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu26ProjectTableViewController", ""]
 provides-dynamic-lookup:
-- "projectDescriptionLabel"
-- "viewDidLoad"
-- "mailComposeController"
-- "segmentControlTapped"
+- "shareThroughEmailTapped"
 - "projectName"
 - "segmentControl"
-- "projectImage"
+- "segmentControlTapped"
 - "handleSwipes"
-- "shareThroughEmailTapped"
+- "projectRequirements"
+- "projectActivity"
+- "projectDescriptionLabel"
+- "projectAbout"
+- "mailComposeController"
+- "projectImage"
+- "viewDidLoad"
 depends-top-level:
+- "UISwipeGestureRecognizer"
+- !private "Void"
+- "AnyObject"
+- !private "~="
+- !private "=="
+- "MFMailComposeViewControllerDelegate"
+- "UISegmentedControl"
+- "UnicodeScalarType"
+- "StringLiteralType"
+- "String"
+- !private "Selector"
+- !private "PFObject"
 - "UILabel"
 - "UIImageView"
-- "UITableViewController"
-- !private "print"
-- "String"
-- "UISwipeGestureRecognizer"
-- !private "PFQuery"
-- !private "PFObject"
-- !private "BooleanLiteralType"
-- "MFMailComposeViewControllerDelegate"
-- "UnicodeScalarType"
 - "NSError"
-- "UISegmentedControl"
-- "MFMailComposeViewController"
+- !private "PFQuery"
+- "UITableViewController"
 - "ProjectTableViewController"
-- !private "=="
-- !private "~="
-- "StringLiteralType"
-- "AnyObject"
-- !private "Void"
 - "MFMailComposeResult"
-- !private "Selector"
+- "MFMailComposeViewController"
+- !private "print"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "MFMailComposeViewController"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -57,15 +60,19 @@ depends-member:
 - !private ["Ps9AnyObject", "popToRootViewControllerAnimated"]
 - !private ["Ps9AnyObject", "presentViewController"]
 - !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "projectAbout"]
+- ["Ps9AnyObject", "projectActivity"]
 - ["Ps9AnyObject", "projectDescriptionLabel"]
 - ["Ps9AnyObject", "projectImage"]
 - ["Ps9AnyObject", "projectName"]
+- ["Ps9AnyObject", "projectRequirements"]
 - ["Ps9AnyObject", "segmentControl"]
 - ["Ps9AnyObject", "segmentControlTapped"]
 - !private ["Ps9AnyObject", "selectedSegmentIndex"]
 - !private ["Ps9AnyObject", "setMessageBody"]
 - !private ["Ps9AnyObject", "setSubject"]
 - ["Ps9AnyObject", "shareThroughEmailTapped"]
+- !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "title"]
 - !private ["Ps9AnyObject", "userInfo"]
@@ -115,15 +122,19 @@ depends-member:
 - !private ["Ps11CVarArgType", "popToRootViewControllerAnimated"]
 - !private ["Ps11CVarArgType", "presentViewController"]
 - !private ["Ps11CVarArgType", "print"]
+- ["Ps11CVarArgType", "projectAbout"]
+- ["Ps11CVarArgType", "projectActivity"]
 - ["Ps11CVarArgType", "projectDescriptionLabel"]
 - ["Ps11CVarArgType", "projectImage"]
 - ["Ps11CVarArgType", "projectName"]
+- ["Ps11CVarArgType", "projectRequirements"]
 - ["Ps11CVarArgType", "segmentControl"]
 - ["Ps11CVarArgType", "segmentControlTapped"]
 - !private ["Ps11CVarArgType", "selectedSegmentIndex"]
 - !private ["Ps11CVarArgType", "setMessageBody"]
 - !private ["Ps11CVarArgType", "setSubject"]
 - ["Ps11CVarArgType", "shareThroughEmailTapped"]
+- !private ["Ps11CVarArgType", "subscript"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "title"]
 - !private ["Ps11CVarArgType", "userInfo"]
@@ -164,15 +175,19 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "popToRootViewControllerAnimated"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "projectAbout"]
+- ["Ps28CustomDebugStringConvertible", "projectActivity"]
 - ["Ps28CustomDebugStringConvertible", "projectDescriptionLabel"]
 - ["Ps28CustomDebugStringConvertible", "projectImage"]
 - ["Ps28CustomDebugStringConvertible", "projectName"]
+- ["Ps28CustomDebugStringConvertible", "projectRequirements"]
 - ["Ps28CustomDebugStringConvertible", "segmentControl"]
 - ["Ps28CustomDebugStringConvertible", "segmentControlTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "selectedSegmentIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "setMessageBody"]
 - !private ["Ps28CustomDebugStringConvertible", "setSubject"]
 - ["Ps28CustomDebugStringConvertible", "shareThroughEmailTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "userInfo"]
@@ -206,15 +221,19 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "popToRootViewControllerAnimated"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "projectAbout"]
+- ["Ps23CustomStringConvertible", "projectActivity"]
 - ["Ps23CustomStringConvertible", "projectDescriptionLabel"]
 - ["Ps23CustomStringConvertible", "projectImage"]
 - ["Ps23CustomStringConvertible", "projectName"]
+- ["Ps23CustomStringConvertible", "projectRequirements"]
 - ["Ps23CustomStringConvertible", "segmentControl"]
 - ["Ps23CustomStringConvertible", "segmentControlTapped"]
 - !private ["Ps23CustomStringConvertible", "selectedSegmentIndex"]
 - !private ["Ps23CustomStringConvertible", "setMessageBody"]
 - !private ["Ps23CustomStringConvertible", "setSubject"]
 - ["Ps23CustomStringConvertible", "shareThroughEmailTapped"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - !private ["Ps23CustomStringConvertible", "userInfo"]
@@ -247,15 +266,19 @@ depends-member:
 - !private ["Ps9Equatable", "popToRootViewControllerAnimated"]
 - !private ["Ps9Equatable", "presentViewController"]
 - !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "projectAbout"]
+- ["Ps9Equatable", "projectActivity"]
 - ["Ps9Equatable", "projectDescriptionLabel"]
 - ["Ps9Equatable", "projectImage"]
 - ["Ps9Equatable", "projectName"]
+- ["Ps9Equatable", "projectRequirements"]
 - ["Ps9Equatable", "segmentControl"]
 - ["Ps9Equatable", "segmentControlTapped"]
 - !private ["Ps9Equatable", "selectedSegmentIndex"]
 - !private ["Ps9Equatable", "setMessageBody"]
 - !private ["Ps9Equatable", "setSubject"]
 - ["Ps9Equatable", "shareThroughEmailTapped"]
+- !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "title"]
 - !private ["Ps9Equatable", "userInfo"]
@@ -291,15 +314,19 @@ depends-member:
 - !private ["Ps8Hashable", "popToRootViewControllerAnimated"]
 - !private ["Ps8Hashable", "presentViewController"]
 - !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "projectAbout"]
+- ["Ps8Hashable", "projectActivity"]
 - ["Ps8Hashable", "projectDescriptionLabel"]
 - ["Ps8Hashable", "projectImage"]
 - ["Ps8Hashable", "projectName"]
+- ["Ps8Hashable", "projectRequirements"]
 - ["Ps8Hashable", "segmentControl"]
 - ["Ps8Hashable", "segmentControlTapped"]
 - !private ["Ps8Hashable", "selectedSegmentIndex"]
 - !private ["Ps8Hashable", "setMessageBody"]
 - !private ["Ps8Hashable", "setSubject"]
 - ["Ps8Hashable", "shareThroughEmailTapped"]
+- !private ["Ps8Hashable", "subscript"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "title"]
 - !private ["Ps8Hashable", "userInfo"]
@@ -307,6 +334,7 @@ depends-member:
 - ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "whereKey"]
 - ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "SubSequence"]
@@ -340,8 +368,11 @@ depends-member:
 - !private ["PSo35MFMailComposeViewControllerDelegate", "navigationController"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "presentViewController"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "print"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "projectAbout"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "projectActivity"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "projectDescriptionLabel"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "projectName"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "projectRequirements"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "segmentControl"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "title"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "view"]
@@ -380,9 +411,12 @@ depends-member:
 - !private ["PSo8NSCoding", "popToRootViewControllerAnimated"]
 - !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "projectAbout"]
+- ["PSo8NSCoding", "projectActivity"]
 - ["PSo8NSCoding", "projectDescriptionLabel"]
 - ["PSo8NSCoding", "projectImage"]
 - ["PSo8NSCoding", "projectName"]
+- ["PSo8NSCoding", "projectRequirements"]
 - ["PSo8NSCoding", "segmentControl"]
 - ["PSo8NSCoding", "segmentControlTapped"]
 - !private ["PSo8NSCoding", "selectedSegmentIndex"]
@@ -413,9 +447,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "popToRootViewControllerAnimated"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "projectAbout"]
+- ["PSo26NSExtensionRequestHandling", "projectActivity"]
 - ["PSo26NSExtensionRequestHandling", "projectDescriptionLabel"]
 - ["PSo26NSExtensionRequestHandling", "projectImage"]
 - ["PSo26NSExtensionRequestHandling", "projectName"]
+- ["PSo26NSExtensionRequestHandling", "projectRequirements"]
 - ["PSo26NSExtensionRequestHandling", "segmentControl"]
 - ["PSo26NSExtensionRequestHandling", "segmentControlTapped"]
 - !private ["PSo26NSExtensionRequestHandling", "setMessageBody"]
@@ -456,15 +493,19 @@ depends-member:
 - !private ["CSo8NSObject", "popToRootViewControllerAnimated"]
 - !private ["CSo8NSObject", "presentViewController"]
 - !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "projectAbout"]
+- ["CSo8NSObject", "projectActivity"]
 - ["CSo8NSObject", "projectDescriptionLabel"]
 - ["CSo8NSObject", "projectImage"]
 - ["CSo8NSObject", "projectName"]
+- ["CSo8NSObject", "projectRequirements"]
 - ["CSo8NSObject", "segmentControl"]
 - ["CSo8NSObject", "segmentControlTapped"]
 - !private ["CSo8NSObject", "selectedSegmentIndex"]
 - !private ["CSo8NSObject", "setMessageBody"]
 - !private ["CSo8NSObject", "setSubject"]
 - ["CSo8NSObject", "shareThroughEmailTapped"]
+- !private ["CSo8NSObject", "subscript"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "userInfo"]
@@ -489,15 +530,19 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "popToRootViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "projectAbout"]
+- ["PSo16NSObjectProtocol", "projectActivity"]
 - ["PSo16NSObjectProtocol", "projectDescriptionLabel"]
 - ["PSo16NSObjectProtocol", "projectImage"]
 - ["PSo16NSObjectProtocol", "projectName"]
+- ["PSo16NSObjectProtocol", "projectRequirements"]
 - ["PSo16NSObjectProtocol", "segmentControl"]
 - ["PSo16NSObjectProtocol", "segmentControlTapped"]
 - !private ["PSo16NSObjectProtocol", "selectedSegmentIndex"]
 - !private ["PSo16NSObjectProtocol", "setMessageBody"]
 - !private ["PSo16NSObjectProtocol", "setSubject"]
 - ["PSo16NSObjectProtocol", "shareThroughEmailTapped"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
@@ -517,6 +562,7 @@ depends-member:
 - !private ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
+- !private ["CSo8PFObject", "subscript"]
 - !private ["CSo7PFQuery", "findObjectsInBackgroundWithBlock"]
 - !private ["CSo7PFQuery", "init"]
 - !private ["CSo7PFQuery", "whereKey"]
@@ -541,9 +587,12 @@ depends-member:
 - !private ["C10startupnyu26ProjectTableViewController", "navigationController"]
 - !private ["C10startupnyu26ProjectTableViewController", "presentViewController"]
 - !private ["C10startupnyu26ProjectTableViewController", "print"]
+- ["C10startupnyu26ProjectTableViewController", "projectAbout"]
+- ["C10startupnyu26ProjectTableViewController", "projectActivity"]
 - ["C10startupnyu26ProjectTableViewController", "projectDescriptionLabel"]
 - ["C10startupnyu26ProjectTableViewController", "projectImage"]
 - ["C10startupnyu26ProjectTableViewController", "projectName"]
+- ["C10startupnyu26ProjectTableViewController", "projectRequirements"]
 - ["C10startupnyu26ProjectTableViewController", "segmentControl"]
 - ["C10startupnyu26ProjectTableViewController", "segmentControlTapped"]
 - ["C10startupnyu26ProjectTableViewController", "shareThroughEmailTapped"]
@@ -607,9 +656,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "popToRootViewControllerAnimated"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "projectAbout"]
+- ["PSo21UIAppearanceContainer", "projectActivity"]
 - ["PSo21UIAppearanceContainer", "projectDescriptionLabel"]
 - ["PSo21UIAppearanceContainer", "projectImage"]
 - ["PSo21UIAppearanceContainer", "projectName"]
+- ["PSo21UIAppearanceContainer", "projectRequirements"]
 - ["PSo21UIAppearanceContainer", "segmentControl"]
 - ["PSo21UIAppearanceContainer", "segmentControlTapped"]
 - !private ["PSo21UIAppearanceContainer", "selectedSegmentIndex"]
@@ -634,9 +686,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "popToRootViewControllerAnimated"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "projectAbout"]
+- ["PSo18UIContentContainer", "projectActivity"]
 - ["PSo18UIContentContainer", "projectDescriptionLabel"]
 - ["PSo18UIContentContainer", "projectImage"]
 - ["PSo18UIContentContainer", "projectName"]
+- ["PSo18UIContentContainer", "projectRequirements"]
 - ["PSo18UIContentContainer", "segmentControl"]
 - ["PSo18UIContentContainer", "segmentControlTapped"]
 - !private ["PSo18UIContentContainer", "setMessageBody"]
@@ -673,9 +728,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "popToRootViewControllerAnimated"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "projectAbout"]
+- ["PSo18UIFocusEnvironment", "projectActivity"]
 - ["PSo18UIFocusEnvironment", "projectDescriptionLabel"]
 - ["PSo18UIFocusEnvironment", "projectImage"]
 - ["PSo18UIFocusEnvironment", "projectName"]
+- ["PSo18UIFocusEnvironment", "projectRequirements"]
 - ["PSo18UIFocusEnvironment", "segmentControl"]
 - ["PSo18UIFocusEnvironment", "segmentControlTapped"]
 - !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
@@ -722,9 +780,12 @@ depends-member:
 - !private ["CSo11UIResponder", "popToRootViewControllerAnimated"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "projectAbout"]
+- ["CSo11UIResponder", "projectActivity"]
 - ["CSo11UIResponder", "projectDescriptionLabel"]
 - ["CSo11UIResponder", "projectImage"]
 - ["CSo11UIResponder", "projectName"]
+- ["CSo11UIResponder", "projectRequirements"]
 - ["CSo11UIResponder", "segmentControl"]
 - ["CSo11UIResponder", "segmentControlTapped"]
 - !private ["CSo11UIResponder", "selectedSegmentIndex"]
@@ -746,9 +807,12 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - !private ["PSo20UIScrollViewDelegate", "presentViewController"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
+- ["PSo20UIScrollViewDelegate", "projectAbout"]
+- ["PSo20UIScrollViewDelegate", "projectActivity"]
 - ["PSo20UIScrollViewDelegate", "projectDescriptionLabel"]
 - ["PSo20UIScrollViewDelegate", "projectImage"]
 - ["PSo20UIScrollViewDelegate", "projectName"]
+- ["PSo20UIScrollViewDelegate", "projectRequirements"]
 - ["PSo20UIScrollViewDelegate", "segmentControl"]
 - ["PSo20UIScrollViewDelegate", "segmentControlTapped"]
 - ["PSo20UIScrollViewDelegate", "shareThroughEmailTapped"]
@@ -770,9 +834,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "popToRootViewControllerAnimated"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "projectAbout"]
+- ["PSo16UIStateRestoring", "projectActivity"]
 - ["PSo16UIStateRestoring", "projectDescriptionLabel"]
 - ["PSo16UIStateRestoring", "projectImage"]
 - ["PSo16UIStateRestoring", "projectName"]
+- ["PSo16UIStateRestoring", "projectRequirements"]
 - ["PSo16UIStateRestoring", "segmentControl"]
 - ["PSo16UIStateRestoring", "segmentControlTapped"]
 - !private ["PSo16UIStateRestoring", "setMessageBody"]
@@ -807,9 +874,12 @@ depends-member:
 - !private ["CSo21UITableViewController", "navigationController"]
 - !private ["CSo21UITableViewController", "presentViewController"]
 - !private ["CSo21UITableViewController", "print"]
+- ["CSo21UITableViewController", "projectAbout"]
+- ["CSo21UITableViewController", "projectActivity"]
 - ["CSo21UITableViewController", "projectDescriptionLabel"]
 - ["CSo21UITableViewController", "projectImage"]
 - ["CSo21UITableViewController", "projectName"]
+- ["CSo21UITableViewController", "projectRequirements"]
 - ["CSo21UITableViewController", "segmentControl"]
 - ["CSo21UITableViewController", "segmentControlTapped"]
 - ["CSo21UITableViewController", "shareThroughEmailTapped"]
@@ -828,9 +898,12 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "navigationController"]
 - !private ["PSo21UITableViewDataSource", "presentViewController"]
 - !private ["PSo21UITableViewDataSource", "print"]
+- ["PSo21UITableViewDataSource", "projectAbout"]
+- ["PSo21UITableViewDataSource", "projectActivity"]
 - ["PSo21UITableViewDataSource", "projectDescriptionLabel"]
 - ["PSo21UITableViewDataSource", "projectImage"]
 - ["PSo21UITableViewDataSource", "projectName"]
+- ["PSo21UITableViewDataSource", "projectRequirements"]
 - ["PSo21UITableViewDataSource", "segmentControl"]
 - ["PSo21UITableViewDataSource", "segmentControlTapped"]
 - ["PSo21UITableViewDataSource", "shareThroughEmailTapped"]
@@ -849,9 +922,12 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "navigationController"]
 - !private ["PSo19UITableViewDelegate", "presentViewController"]
 - !private ["PSo19UITableViewDelegate", "print"]
+- ["PSo19UITableViewDelegate", "projectAbout"]
+- ["PSo19UITableViewDelegate", "projectActivity"]
 - ["PSo19UITableViewDelegate", "projectDescriptionLabel"]
 - ["PSo19UITableViewDelegate", "projectImage"]
 - ["PSo19UITableViewDelegate", "projectName"]
+- ["PSo19UITableViewDelegate", "projectRequirements"]
 - ["PSo19UITableViewDelegate", "segmentControl"]
 - ["PSo19UITableViewDelegate", "segmentControlTapped"]
 - ["PSo19UITableViewDelegate", "shareThroughEmailTapped"]
@@ -875,9 +951,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "popToRootViewControllerAnimated"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "projectAbout"]
+- ["PSo18UITraitEnvironment", "projectActivity"]
 - ["PSo18UITraitEnvironment", "projectDescriptionLabel"]
 - ["PSo18UITraitEnvironment", "projectImage"]
 - ["PSo18UITraitEnvironment", "projectName"]
+- ["PSo18UITraitEnvironment", "projectRequirements"]
 - ["PSo18UITraitEnvironment", "segmentControl"]
 - ["PSo18UITraitEnvironment", "segmentControlTapped"]
 - !private ["PSo18UITraitEnvironment", "selectedSegmentIndex"]
@@ -916,9 +995,12 @@ depends-member:
 - !private ["CSo16UIViewController", "popToRootViewControllerAnimated"]
 - !private ["CSo16UIViewController", "presentViewController"]
 - !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "projectAbout"]
+- ["CSo16UIViewController", "projectActivity"]
 - ["CSo16UIViewController", "projectDescriptionLabel"]
 - ["CSo16UIViewController", "projectImage"]
 - ["CSo16UIViewController", "projectName"]
+- ["CSo16UIViewController", "projectRequirements"]
 - ["CSo16UIViewController", "segmentControl"]
 - ["CSo16UIViewController", "segmentControlTapped"]
 - !private ["CSo16UIViewController", "setMessageBody"]
@@ -1010,6 +1092,7 @@ depends-nominal:
 - !private "Ps16ForwardIndexType"
 - !private "Ps13GeneratorType"
 - "Ps8Hashable"
+- !private "SQ"
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
 - !private "Si"
@@ -1042,6 +1125,7 @@ depends-nominal:
 - !private "Ps13OptionSetType"
 - !private "Sq"
 - !private "Ps16OutputStreamType"
+- !private "CSo8PFObject"
 - !private "CSo7PFQuery"
 - "C10startupnyu26ProjectTableViewController"
 - !private "Ps21RandomAccessIndexType"
@@ -1174,4 +1258,4 @@ depends-external:
 - "./Parse.framework/Headers/Parse.h"
 - "./Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "59d645ea3926bd120bca015afeaf1268"
+interface-hash: "0a54563b091c6fb7330518c03f1cab12"
