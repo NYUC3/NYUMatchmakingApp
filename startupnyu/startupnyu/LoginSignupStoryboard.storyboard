@@ -38,7 +38,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgN-HQ-fKL">
                                 <rect key="frame" x="20" y="28" width="560" height="97"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLz-Qz-7SN">
@@ -131,11 +131,11 @@
                                     <constraint firstAttribute="height" constant="110" id="bsa-ZX-OVC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="C7o-RN-vLB" firstAttribute="top" secondItem="5mU-9a-EOs" secondAttribute="bottom" constant="71" id="11U-FF-J5Z"/>
                             <constraint firstItem="C7o-RN-vLB" firstAttribute="trailing" secondItem="LfF-Hd-E5X" secondAttribute="trailing" id="4DA-jE-OGP"/>

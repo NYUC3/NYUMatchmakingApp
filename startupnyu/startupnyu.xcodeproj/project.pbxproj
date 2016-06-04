@@ -15,7 +15,6 @@
 		00032E0F1C4C22CC0009B002 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00032E091C4C22CC0009B002 /* ParseTwitterUtils.framework */; };
 		00032E101C4C22CC0009B002 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00032E0A1C4C22CC0009B002 /* ParseUI.framework */; };
 		00032E1A1C4DBC3C0009B002 /* ProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00032E191C4DBC3C0009B002 /* ProjectTableViewController.swift */; };
-		00032E1F1C4DC7730009B002 /* ExploreStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00032E1E1C4DC7730009B002 /* ExploreStoryBoard.storyboard */; };
 		00032E251C4DC83D0009B002 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00032E241C4DC83D0009B002 /* LaunchScreen.xib */; };
 		00D648B31C543959001ACD0C /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D648B21C543959001ACD0C /* ProjectCell.swift */; };
 		C21037D01C4AB4480039E748 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037CF1C4AB4480039E748 /* ProfileViewController.swift */; };
@@ -63,12 +62,8 @@
 		C2E3F0BE1C444261007DDBB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E3F0BC1C444261007DDBB7 /* LaunchScreen.storyboard */; };
 		C2E3F0C91C444261007DDBB7 /* startupnyuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E3F0C81C444261007DDBB7 /* startupnyuTests.swift */; };
 		C2E3F0D41C444261007DDBB7 /* startupnyuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E3F0D31C444261007DDBB7 /* startupnyuUITests.swift */; };
-		C2E3F0E21C44429E007DDBB7 /* ProfileViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E3F0E11C44429E007DDBB7 /* ProfileViewStoryboard.storyboard */; };
 		C2E3F0E61C4442BB007DDBB7 /* MessageStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E3F0E51C4442BB007DDBB7 /* MessageStoryBoard.storyboard */; };
-		C2E9D2BC1CD127280008D30E /* ProjectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E9D2BB1CD127280008D30E /* ProjectView.storyboard */; };
-		C2F098511C9E06750014E2B9 /* CreateProject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F098501C9E06750014E2B9 /* CreateProject.storyboard */; };
 		C2F098541C9E06DA0014E2B9 /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F098531C9E06DA0014E2B9 /* CreateProjectViewController.swift */; };
-		C2F098561C9E0C260014E2B9 /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2F098551C9E0C260014E2B9 /* EditProfile.storyboard */; };
 		C2F098591C9E0C550014E2B9 /* EditProfileTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F098581C9E0C550014E2B9 /* EditProfileTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,7 +93,6 @@
 		00032E091C4C22CC0009B002 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
 		00032E0A1C4C22CC0009B002 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		00032E191C4DBC3C0009B002 /* ProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewController.swift; sourceTree = "<group>"; };
-		00032E1E1C4DC7730009B002 /* ExploreStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExploreStoryBoard.storyboard; sourceTree = "<group>"; };
 		00032E241C4DC83D0009B002 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		00D648B21C543959001ACD0C /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		C21037CF1C4AB4480039E748 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -152,12 +146,8 @@
 		C2E3F0CF1C444261007DDBB7 /* startupnyuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = startupnyuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E3F0D31C444261007DDBB7 /* startupnyuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startupnyuUITests.swift; sourceTree = "<group>"; };
 		C2E3F0D51C444261007DDBB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2E3F0E11C44429E007DDBB7 /* ProfileViewStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileViewStoryboard.storyboard; sourceTree = "<group>"; };
 		C2E3F0E51C4442BB007DDBB7 /* MessageStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessageStoryBoard.storyboard; sourceTree = "<group>"; };
-		C2E9D2BB1CD127280008D30E /* ProjectView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProjectView.storyboard; sourceTree = "<group>"; };
-		C2F098501C9E06750014E2B9 /* CreateProject.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateProject.storyboard; path = startupnyu/CreateProject.storyboard; sourceTree = "<group>"; };
 		C2F098531C9E06DA0014E2B9 /* CreateProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectViewController.swift; sourceTree = "<group>"; };
-		C2F098551C9E0C260014E2B9 /* EditProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EditProfile.storyboard; path = startupnyu/EditProfile.storyboard; sourceTree = "<group>"; };
 		C2F098581C9E0C550014E2B9 /* EditProfileTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				00032E191C4DBC3C0009B002 /* ProjectTableViewController.swift */,
-				C2E9D2BB1CD127280008D30E /* ProjectView.storyboard */,
 			);
 			name = ProjectView;
 			sourceTree = "<group>";
@@ -311,7 +300,6 @@
 			isa = PBXGroup;
 			children = (
 				00D648B21C543959001ACD0C /* ProjectCell.swift */,
-				00032E1E1C4DC7730009B002 /* ExploreStoryBoard.storyboard */,
 				C24D0AB51C56FC6B00EA1053 /* NavVC.swift */,
 				C22329381C55C5E0001CC13C /* ExploreStruct.swift */,
 				C22329361C55C1FE001CC13C /* ExploreVC.swift */,
@@ -337,7 +325,6 @@
 		C2E3F0EB1C4442EE007DDBB7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				C2E3F0E11C44429E007DDBB7 /* ProfileViewStoryboard.storyboard */,
 				C2A492321C4C1B8E00947A8F /* SettingsNavigationController.swift */,
 				C2A492301C4C1ABC00947A8F /* SettingsViewContoller.swift */,
 				C21037CF1C4AB4480039E748 /* ProfileViewController.swift */,
@@ -358,7 +345,6 @@
 		C2F098521C9E06A20014E2B9 /* Create Project */ = {
 			isa = PBXGroup;
 			children = (
-				C2F098501C9E06750014E2B9 /* CreateProject.storyboard */,
 				C287A3031CB7580700613D26 /* ProjectsListViewController.swift */,
 				C287A30D1CB75B1C00613D26 /* AddButtonTableViewCell.swift */,
 				C2F098531C9E06DA0014E2B9 /* CreateProjectViewController.swift */,
@@ -375,7 +361,6 @@
 			isa = PBXGroup;
 			children = (
 				C2F098581C9E0C550014E2B9 /* EditProfileTableTableViewController.swift */,
-				C2F098551C9E0C260014E2B9 /* EditProfile.storyboard */,
 			);
 			name = EditProfile;
 			path = ..;
@@ -485,13 +470,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E9D2BC1CD127280008D30E /* ProjectView.storyboard in Resources */,
-				C2E3F0E21C44429E007DDBB7 /* ProfileViewStoryboard.storyboard in Resources */,
 				00032DF61C4C216F0009B002 /* LoginSignupStoryboard.storyboard in Resources */,
-				C2F098511C9E06750014E2B9 /* CreateProject.storyboard in Resources */,
-				C2F098561C9E0C260014E2B9 /* EditProfile.storyboard in Resources */,
 				C2E3F0E61C4442BB007DDBB7 /* MessageStoryBoard.storyboard in Resources */,
-				00032E1F1C4DC7730009B002 /* ExploreStoryBoard.storyboard in Resources */,
 				C2E3F0BE1C444261007DDBB7 /* LaunchScreen.storyboard in Resources */,
 				C2E3F0BB1C444261007DDBB7 /* Assets.xcassets in Resources */,
 				C2E3F0B91C444261007DDBB7 /* Main.storyboard in Resources */,

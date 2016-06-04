@@ -157,7 +157,7 @@ class ProfileViewController: UITableViewController{
  */
     
     func btnClicked(){
-        let storyboard = UIStoryboard(name: "ProfileViewStoryboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier("settingsNav") as! SettingsNavigationController
         self.presentViewController(vc, animated: true, completion: nil)
     }
