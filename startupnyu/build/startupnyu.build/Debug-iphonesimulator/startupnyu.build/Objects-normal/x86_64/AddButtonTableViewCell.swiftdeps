@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu22AddButtonTableViewCell", ""]
 provides-dynamic-lookup:
-- "awakeFromNib"
-- "addLabel"
 - "setSelected"
+- "addLabel"
+- "awakeFromNib"
 depends-top-level:
-- "AddButtonTableViewCell"
-- "UILabel"
-- "UITableViewCell"
 - "Bool"
+- "AddButtonTableViewCell"
+- "UITableViewCell"
+- "UILabel"
 depends-member:
 - ["C10startupnyu22AddButtonTableViewCell", "Bool"]
 - ["C10startupnyu22AddButtonTableViewCell", "UILabel"]

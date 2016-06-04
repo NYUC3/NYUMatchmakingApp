@@ -178,6 +178,27 @@ SWIFT_CLASS("_TtC10startupnyu35EditProfileTableTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIViewController;
+
+SWIFT_CLASS("_TtC10startupnyu34EditProjectNavigationBarController")
+@interface EditProjectNavigationBarController : UINavigationController
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10startupnyu25EditProjectViewController")
+@interface EditProjectViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (IBAction)saveProfileButtonTapped:(UIBarButtonItem * _Nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITableView;
 @class NSIndexPath;
 @class UIStoryboardSegue;
@@ -256,6 +277,8 @@ SWIFT_CLASS("_TtC10startupnyu28MyProjectTableViewController")
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentControl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescriptionLabel;
 - (void)viewDidLoad;
+- (IBAction)unwindToMyProjects:(UIStoryboardSegue * _Nonnull)segue;
+- (void)editTapped;
 - (IBAction)segmentControlTapped:(UISegmentedControl * _Nonnull)sender;
 - (void)handleSwipes:(UISwipeGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -290,7 +313,6 @@ SWIFT_CLASS("_TtC10startupnyu21ProfileViewController")
 @interface ProfileViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified settingsButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profileImageView;
-@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified userInformationLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fullnameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified onelineDescriptionLabel;
@@ -300,7 +322,6 @@ SWIFT_CLASS("_TtC10startupnyu21ProfileViewController")
 @property (nonatomic, copy) NSString * _Nonnull fullName;
 @property (nonatomic, copy) NSString * _Nonnull oneLineDescription;
 - (void)viewDidLoad;
-- (IBAction)segmentTapped:(UISegmentedControl * _Nonnull)sender;
 - (void)btnClicked;
 - (IBAction)unwindToProfileView:(UIStoryboardSegue * _Nonnull)segue;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -332,7 +353,7 @@ SWIFT_CLASS("_TtC10startupnyu26ProjectTableViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescriptionLabel;
 - (void)viewDidLoad;
 - (IBAction)shareThroughEmailTapped:(id _Nonnull)sender;
-- (void)mailComposeController:(MFMailComposeViewController * _Null_unspecified)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError * _Null_unspecified)error;
+- (void)mailComposeController:(MFMailComposeViewController * _Nonnull)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError * _Nullable)error;
 - (IBAction)segmentControlTapped:(UISegmentedControl * _Nonnull)sender;
 - (void)handleSwipes:(UISwipeGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;

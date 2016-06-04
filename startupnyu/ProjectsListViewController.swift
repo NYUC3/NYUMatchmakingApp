@@ -11,9 +11,7 @@ import Parse
 
 class ProjectsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    
     @IBOutlet weak var tableView: UITableView!
-    
     var projectsList : Array<MyProjectStruct> = [] // Note: ExploreStruct is a shitty name pls change
     
     override func viewDidAppear(animated: Bool) {
@@ -22,12 +20,10 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
         // TO DO: Load user's projects into projectsList
         
-        var query = PFQuery(className:"Project")
+        let query = PFQuery(className:"Project")
         query.whereKey("email", equalTo:(PFUser.currentUser()?.email)!)
         query.findObjectsInBackgroundWithBlock {
             (objects: [PFObject]?, error: NSError?) -> Void in
@@ -38,13 +34,16 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
                 // Do something with the found objects
                 if let objects = objects {
                     for object in objects {
-                        
-                            print(object)
-                        
-                            let projectObject = MyProjectStruct(name: object["Name"] as! String, tags: object["Tags"] as! String)
-                            self.projectsList.append(projectObject)
-                            self.tableView.reloadData()
-                        
+                        if let userPicture = object["Image"] as? PFFile {
+                            userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
+                                if (error == nil) {
+                                    
+                                    let projectObject = MyProjectStruct(name: object["Name"] as! String, tags: object["Tags"] as! String, img: UIImage(data:imageData!)!)
+                                    self.projectsList.append(projectObject)
+                                    self.tableView.reloadData()
+                                }
+                            }
+                        }
                     }
                 }
             } else {
@@ -52,16 +51,11 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
                 print("Error: \(error!) \(error!.userInfo)")
             }
         }
-
-        
-        
     }
 
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return projectsList.count + 1
     }
-    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
@@ -69,19 +63,19 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
             let cell = tableView.dequeueReusableCellWithIdentifier("addbutton", forIndexPath: indexPath) as! AddButtonTableViewCell
             return cell
         }
+            
         else{
             let cell = tableView.dequeueReusableCellWithIdentifier("createproject", forIndexPath: indexPath) as! MyProjectsTableViewCell
             // WORK ON DISPLAYING PICTURE
             cell.projectName.text = projectsList[indexPath.row].name
+            cell.projectImage.image = projectsList[indexPath.row].image
             return cell
         }
-
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let vc = segue.destinationViewController as! MyProjectTableViewController
         vc.projectName = projectsList[self.tableView.indexPathForSelectedRow!.row].name
-        
     }
 
 }

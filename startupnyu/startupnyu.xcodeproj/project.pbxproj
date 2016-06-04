@@ -26,6 +26,8 @@
 		C21037DF1C4ACDC10039E748 /* MessageStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037DE1C4ACDC10039E748 /* MessageStruct.swift */; };
 		C21037E11C4ACE190039E748 /* MessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037E01C4ACE190039E748 /* MessageViewCell.swift */; };
 		C21037E31C4AD7B60039E748 /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037E21C4AD7B60039E748 /* CustomTabbar.swift */; };
+		C2126F011CFFE59800D777D0 /* EditProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2126F001CFFE59800D777D0 /* EditProjectViewController.swift */; };
+		C2126F051CFFE6F800D777D0 /* EditProjectNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2126F041CFFE6F800D777D0 /* EditProjectNavigationBar.swift */; };
 		C22329371C55C1FE001CC13C /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22329361C55C1FE001CC13C /* ExploreVC.swift */; };
 		C22329391C55C5E0001CC13C /* ExploreStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22329381C55C5E0001CC13C /* ExploreStruct.swift */; };
 		C230E0E31CCEE30B00482E54 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230E0E21CCEE30B00482E54 /* SignupVC.swift */; };
@@ -107,6 +109,8 @@
 		C21037DE1C4ACDC10039E748 /* MessageStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageStruct.swift; sourceTree = "<group>"; };
 		C21037E01C4ACE190039E748 /* MessageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewCell.swift; sourceTree = "<group>"; };
 		C21037E21C4AD7B60039E748 /* CustomTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
+		C2126F001CFFE59800D777D0 /* EditProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProjectViewController.swift; sourceTree = "<group>"; };
+		C2126F041CFFE6F800D777D0 /* EditProjectNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProjectNavigationBar.swift; sourceTree = "<group>"; };
 		C22329361C55C1FE001CC13C /* ExploreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		C22329381C55C5E0001CC13C /* ExploreStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreStruct.swift; sourceTree = "<group>"; };
 		C230E0E21CCEE30B00482E54 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
@@ -311,6 +315,7 @@
 				C24D0AB51C56FC6B00EA1053 /* NavVC.swift */,
 				C22329381C55C5E0001CC13C /* ExploreStruct.swift */,
 				C22329361C55C1FE001CC13C /* ExploreVC.swift */,
+				C2126F001CFFE59800D777D0 /* EditProjectViewController.swift */,
 			);
 			name = Explore;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				C24AC1D51CCC30AB00BA3C7E /* MyProjectsStruct.swift */,
 				C287A30B1CB75A9100613D26 /* MyProjectsTableViewCell.swift */,
 				C2D677F91CF4F44600890709 /* MyProjectViewController.swift */,
+				C2126F041CFFE6F800D777D0 /* EditProjectNavigationBar.swift */,
 			);
 			name = "Create Project";
 			path = ..;
@@ -537,8 +543,10 @@
 				C2F098541C9E06DA0014E2B9 /* CreateProjectViewController.swift in Sources */,
 				C21037D01C4AB4480039E748 /* ProfileViewController.swift in Sources */,
 				C21037DB1C4ACA1C0039E748 /* messageListStruct.swift in Sources */,
+				C2126F051CFFE6F800D777D0 /* EditProjectNavigationBar.swift in Sources */,
 				C287A3041CB7580700613D26 /* ProjectsListViewController.swift in Sources */,
 				C24AC1D61CCC30AB00BA3C7E /* MyProjectsStruct.swift in Sources */,
+				C2126F011CFFE59800D777D0 /* EditProjectViewController.swift in Sources */,
 				C2E3F0B41C444261007DDBB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

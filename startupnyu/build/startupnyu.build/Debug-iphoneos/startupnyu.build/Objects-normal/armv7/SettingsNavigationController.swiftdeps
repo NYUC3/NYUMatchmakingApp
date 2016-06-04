@@ -10,16 +10,18 @@ depends-top-level:
 - "UINavigationController"
 - "SettingsNavigationController"
 depends-member:
-- ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", ""]
-- ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", ""]
-- ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", ""]
-- ["PSs9Equatable", "init"]
-- ["PSs9Equatable", ""]
-- ["PSs8Hashable", "init"]
-- ["PSs8Hashable", ""]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", ""]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -44,11 +46,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo16UIViewController", "init"]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
@@ -124,7 +127,7 @@ depends-external:
 - "./Parse.framework/Headers/PFObject.h"
 - "./Parse.framework/Headers/PFUser.h"
 - "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
 - "./Parse.framework/Headers/PFAnalytics.h"
 - "./Parse.framework/Headers/PFACL.h"
 - "./Parse.framework/Headers/PFConstants.h"

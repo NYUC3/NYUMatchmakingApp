@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import MessageUI;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -242,6 +243,26 @@ SWIFT_CLASS("_TtC10startupnyu26MessagesListViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISegmentedControl;
+@class UISwipeGestureRecognizer;
+
+SWIFT_CLASS("_TtC10startupnyu28MyProjectTableViewController")
+@interface MyProjectTableViewController : UITableViewController
+@property (nonatomic, copy) NSString * _Nonnull projectName;
+@property (nonatomic, copy) NSString * _Nonnull projectActivity;
+@property (nonatomic, copy) NSString * _Nonnull projectAbout;
+@property (nonatomic, copy) NSString * _Nonnull projectRequirements;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentControl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescriptionLabel;
+- (void)viewDidLoad;
+- (IBAction)segmentControlTapped:(UISegmentedControl * _Nonnull)sender;
+- (void)handleSwipes:(UISwipeGestureRecognizer * _Nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10startupnyu23MyProjectsTableViewCell")
 @interface MyProjectsTableViewCell : UITableViewCell
@@ -264,7 +285,6 @@ SWIFT_CLASS("_TtC10startupnyu5NavVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC10startupnyu21ProfileViewController")
 @interface ProfileViewController : UITableViewController
@@ -298,15 +318,21 @@ SWIFT_CLASS("_TtC10startupnyu11ProjectCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UISwipeGestureRecognizer;
+@class MFMailComposeViewController;
+@class NSError;
 
 SWIFT_CLASS("_TtC10startupnyu26ProjectTableViewController")
-@interface ProjectTableViewController : UITableViewController
+@interface ProjectTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
 @property (nonatomic, copy) NSString * _Nonnull projectName;
+@property (nonatomic, copy) NSString * _Nonnull projectActivity;
+@property (nonatomic, copy) NSString * _Nonnull projectAbout;
+@property (nonatomic, copy) NSString * _Nonnull projectRequirements;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentControl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescriptionLabel;
 - (void)viewDidLoad;
+- (IBAction)shareThroughEmailTapped:(id _Nonnull)sender;
+- (void)mailComposeController:(MFMailComposeViewController * _Null_unspecified)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError * _Null_unspecified)error;
 - (IBAction)segmentControlTapped:(UISegmentedControl * _Nonnull)sender;
 - (void)handleSwipes:(UISwipeGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -322,6 +348,7 @@ SWIFT_CLASS("_TtC10startupnyu26ProjectsListViewController")
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

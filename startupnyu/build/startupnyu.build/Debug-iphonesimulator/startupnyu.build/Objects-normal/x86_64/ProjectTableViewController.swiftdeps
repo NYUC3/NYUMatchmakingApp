@@ -6,51 +6,57 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu26ProjectTableViewController", ""]
 provides-dynamic-lookup:
-- "shareThroughEmailTapped"
-- "projectName"
-- "segmentControl"
-- "segmentControlTapped"
 - "handleSwipes"
 - "projectRequirements"
+- "segmentControlTapped"
+- "shareThroughEmailTapped"
+- "segmentControl"
+- "projectName"
+- "projectAbout"
+- "projectImage"
+- "mailComposeController"
+- "viewDidLoad"
 - "projectActivity"
 - "projectDescriptionLabel"
-- "projectAbout"
-- "mailComposeController"
-- "projectImage"
-- "viewDidLoad"
 depends-top-level:
-- "UISwipeGestureRecognizer"
-- !private "Void"
-- "AnyObject"
-- !private "~="
-- !private "=="
-- "MFMailComposeViewControllerDelegate"
-- "UISegmentedControl"
-- "UnicodeScalarType"
-- "StringLiteralType"
 - "String"
-- !private "Selector"
-- !private "PFObject"
+- !private "UIImage"
 - "UILabel"
+- !private "=="
 - "UIImageView"
-- "NSError"
-- !private "PFQuery"
-- "UITableViewController"
-- "ProjectTableViewController"
-- "MFMailComposeResult"
-- "MFMailComposeViewController"
 - !private "print"
+- !private "~="
+- "MFMailComposeViewControllerDelegate"
+- "StringLiteralType"
+- !private "NSData"
+- !private "PFObject"
+- "UITableViewController"
+- !private "Selector"
+- !private "PFFile"
+- !private "PFQuery"
+- "MFMailComposeResult"
+- "NSError"
+- "UISegmentedControl"
+- "UISwipeGestureRecognizer"
+- "MFMailComposeViewController"
+- "AnyObject"
+- "ProjectTableViewController"
+- "UnicodeScalarType"
+- !private "Void"
 - !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "MFMailComposeViewController"]
 - !private ["Ps9AnyObject", "PFQuery"]
 - !private ["Ps9AnyObject", "Selector"]
+- !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UISwipeGestureRecognizer"]
 - !private ["Ps9AnyObject", "addGestureRecognizer"]
 - !private ["Ps9AnyObject", "direction"]
 - !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
 - !private ["Ps9AnyObject", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps9AnyObject", "getDataInBackgroundWithBlock"]
 - ["Ps9AnyObject", "handleSwipes"]
+- !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "lineBreakMode"]
 - ["Ps9AnyObject", "mailComposeController"]
@@ -107,12 +113,15 @@ depends-member:
 - !private ["Ps11CVarArgType", "MFMailComposeViewController"]
 - !private ["Ps11CVarArgType", "PFQuery"]
 - !private ["Ps11CVarArgType", "Selector"]
+- !private ["Ps11CVarArgType", "UIImage"]
 - !private ["Ps11CVarArgType", "UISwipeGestureRecognizer"]
 - !private ["Ps11CVarArgType", "addGestureRecognizer"]
 - !private ["Ps11CVarArgType", "direction"]
 - !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
 - !private ["Ps11CVarArgType", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps11CVarArgType", "getDataInBackgroundWithBlock"]
 - ["Ps11CVarArgType", "handleSwipes"]
+- !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "lineBreakMode"]
 - ["Ps11CVarArgType", "mailComposeController"]
@@ -158,6 +167,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Selector"]
 - !private ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UISwipeGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
@@ -165,7 +175,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "direction"]
 - !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps28CustomDebugStringConvertible", "getDataInBackgroundWithBlock"]
 - ["Ps28CustomDebugStringConvertible", "handleSwipes"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "lineBreakMode"]
 - ["Ps28CustomDebugStringConvertible", "mailComposeController"]
@@ -203,6 +215,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "PFQuery"]
 - !private ["Ps23CustomStringConvertible", "Selector"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UISwipeGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -211,7 +224,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "direction"]
 - !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps23CustomStringConvertible", "getDataInBackgroundWithBlock"]
 - ["Ps23CustomStringConvertible", "handleSwipes"]
+- !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "lineBreakMode"]
 - ["Ps23CustomStringConvertible", "mailComposeController"]
@@ -250,13 +265,16 @@ depends-member:
 - !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Right"]
 - !private ["Ps9Equatable", "Selector"]
+- !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UISwipeGestureRecognizer"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addGestureRecognizer"]
 - !private ["Ps9Equatable", "direction"]
 - !private ["Ps9Equatable", "dismissViewControllerAnimated"]
 - !private ["Ps9Equatable", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps9Equatable", "getDataInBackgroundWithBlock"]
 - ["Ps9Equatable", "handleSwipes"]
+- !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "lineBreakMode"]
 - ["Ps9Equatable", "mailComposeController"]
@@ -298,13 +316,16 @@ depends-member:
 - !private ["Ps8Hashable", "MFMailComposeViewController"]
 - !private ["Ps8Hashable", "PFQuery"]
 - !private ["Ps8Hashable", "Selector"]
+- !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UISwipeGestureRecognizer"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addGestureRecognizer"]
 - !private ["Ps8Hashable", "direction"]
 - !private ["Ps8Hashable", "dismissViewControllerAnimated"]
 - !private ["Ps8Hashable", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps8Hashable", "getDataInBackgroundWithBlock"]
 - ["Ps8Hashable", "handleSwipes"]
+- !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "lineBreakMode"]
 - ["Ps8Hashable", "mailComposeController"]
@@ -361,6 +382,7 @@ depends-member:
 - !private ["PSo35MFMailComposeViewControllerDelegate", "MFMailComposeViewController"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "PFQuery"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "Selector"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "UIImage"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "UISwipeGestureRecognizer"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "handleSwipes"]
@@ -371,8 +393,8 @@ depends-member:
 - !private ["PSo35MFMailComposeViewControllerDelegate", "projectAbout"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "projectActivity"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "projectDescriptionLabel"]
+- !private ["PSo35MFMailComposeViewControllerDelegate", "projectImage"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "projectName"]
-- !private ["PSo35MFMailComposeViewControllerDelegate", "projectRequirements"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "segmentControl"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "title"]
 - !private ["PSo35MFMailComposeViewControllerDelegate", "view"]
@@ -398,10 +420,12 @@ depends-member:
 - !private ["PSo8NSCoding", "MFMailComposeViewController"]
 - !private ["PSo8NSCoding", "PFQuery"]
 - !private ["PSo8NSCoding", "Selector"]
+- !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UISwipeGestureRecognizer"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
 - !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - ["PSo8NSCoding", "handleSwipes"]
+- !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "lineBreakMode"]
 - ["PSo8NSCoding", "mailComposeController"]
@@ -437,6 +461,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "MFMailComposeViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
 - !private ["PSo26NSExtensionRequestHandling", "Selector"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UISwipeGestureRecognizer"]
 - !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
 - ["PSo26NSExtensionRequestHandling", "handleSwipes"]
@@ -468,11 +493,14 @@ depends-member:
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "MFMailComposeResult"]
 - ["CSo8NSObject", "MFMailComposeViewController"]
+- !private ["CSo8NSObject", "NSData"]
 - ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "PFFile"]
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "Selector"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UISegmentedControl"]
@@ -483,7 +511,9 @@ depends-member:
 - !private ["CSo8NSObject", "direction"]
 - !private ["CSo8NSObject", "dismissViewControllerAnimated"]
 - !private ["CSo8NSObject", "findObjectsInBackgroundWithBlock"]
+- !private ["CSo8NSObject", "getDataInBackgroundWithBlock"]
 - ["CSo8NSObject", "handleSwipes"]
+- !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "lineBreakMode"]
 - ["CSo8NSObject", "mailComposeController"]
@@ -515,12 +545,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "MFMailComposeViewController"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
 - !private ["PSo16NSObjectProtocol", "Selector"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UISwipeGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "direction"]
 - !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackgroundWithBlock"]
+- !private ["PSo16NSObjectProtocol", "getDataInBackgroundWithBlock"]
 - ["PSo16NSObjectProtocol", "handleSwipes"]
+- !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "lineBreakMode"]
 - ["PSo16NSObjectProtocol", "mailComposeController"]
@@ -562,6 +595,7 @@ depends-member:
 - !private ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
+- !private ["CSo6PFFile", "getDataInBackgroundWithBlock"]
 - !private ["CSo8PFObject", "subscript"]
 - !private ["CSo7PFQuery", "findObjectsInBackgroundWithBlock"]
 - !private ["CSo7PFQuery", "init"]
@@ -569,11 +603,14 @@ depends-member:
 - ["C10startupnyu26ProjectTableViewController", "AnyObject"]
 - ["C10startupnyu26ProjectTableViewController", "MFMailComposeResult"]
 - ["C10startupnyu26ProjectTableViewController", "MFMailComposeViewController"]
+- !private ["C10startupnyu26ProjectTableViewController", "NSData"]
 - ["C10startupnyu26ProjectTableViewController", "NSError"]
+- !private ["C10startupnyu26ProjectTableViewController", "PFFile"]
 - !private ["C10startupnyu26ProjectTableViewController", "PFObject"]
 - !private ["C10startupnyu26ProjectTableViewController", "PFQuery"]
 - !private ["C10startupnyu26ProjectTableViewController", "Selector"]
 - ["C10startupnyu26ProjectTableViewController", "String"]
+- !private ["C10startupnyu26ProjectTableViewController", "UIImage"]
 - ["C10startupnyu26ProjectTableViewController", "UIImageView"]
 - ["C10startupnyu26ProjectTableViewController", "UILabel"]
 - ["C10startupnyu26ProjectTableViewController", "UISegmentedControl"]
@@ -631,11 +668,14 @@ depends-member:
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "lineBreakMode"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
 - !private ["PSo29UIAccessibilityIdentification", "selectedSegmentIndex"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "addGestureRecognizer"]
+- !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "lineBreakMode"]
 - !private ["PSo12UIAppearance", "numberOfLines"]
 - !private ["PSo12UIAppearance", "selectedSegmentIndex"]
@@ -643,10 +683,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "MFMailComposeViewController"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
 - !private ["PSo21UIAppearanceContainer", "Selector"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UISwipeGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
 - ["PSo21UIAppearanceContainer", "handleSwipes"]
+- !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "lineBreakMode"]
 - ["PSo21UIAppearanceContainer", "mailComposeController"]
@@ -676,6 +718,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "MFMailComposeViewController"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
 - !private ["PSo18UIContentContainer", "Selector"]
+- !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UISwipeGestureRecognizer"]
 - !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
 - ["PSo18UIContentContainer", "handleSwipes"]
@@ -703,11 +746,13 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "selectedSegmentIndex"]
 - !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
+- !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "lineBreakMode"]
 - !private ["PSo17UICoordinateSpace", "numberOfLines"]
 - !private ["PSo17UICoordinateSpace", "selectedSegmentIndex"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "lineBreakMode"]
 - !private ["PSo13UIDynamicItem", "numberOfLines"]
 - !private ["PSo13UIDynamicItem", "selectedSegmentIndex"]
@@ -715,10 +760,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "MFMailComposeViewController"]
 - !private ["PSo18UIFocusEnvironment", "PFQuery"]
 - !private ["PSo18UIFocusEnvironment", "Selector"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UISwipeGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
 - ["PSo18UIFocusEnvironment", "handleSwipes"]
+- !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "lineBreakMode"]
 - ["PSo18UIFocusEnvironment", "mailComposeController"]
@@ -747,6 +794,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo19UIGestureRecognizer", "direction"]
 - !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "lineBreakMode"]
 - !private ["CSo7UILabel", "numberOfLines"]
 - !private ["CSo7UILabel", "text"]
@@ -758,11 +807,14 @@ depends-member:
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "MFMailComposeResult"]
 - ["CSo11UIResponder", "MFMailComposeViewController"]
+- !private ["CSo11UIResponder", "NSData"]
 - ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "PFFile"]
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "Selector"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UISegmentedControl"]
@@ -771,6 +823,7 @@ depends-member:
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
 - !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
 - ["CSo11UIResponder", "handleSwipes"]
+- !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "lineBreakMode"]
 - ["CSo11UIResponder", "mailComposeController"]
@@ -799,6 +852,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "MFMailComposeViewController"]
 - !private ["PSo20UIScrollViewDelegate", "PFQuery"]
 - !private ["PSo20UIScrollViewDelegate", "Selector"]
+- !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UISwipeGestureRecognizer"]
 - !private ["PSo20UIScrollViewDelegate", "dismissViewControllerAnimated"]
 - ["PSo20UIScrollViewDelegate", "handleSwipes"]
@@ -824,6 +878,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "MFMailComposeViewController"]
 - !private ["PSo16UIStateRestoring", "PFQuery"]
 - !private ["PSo16UIStateRestoring", "Selector"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UISwipeGestureRecognizer"]
 - !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
 - ["PSo16UIStateRestoring", "handleSwipes"]
@@ -857,11 +912,14 @@ depends-member:
 - ["CSo21UITableViewController", "AnyObject"]
 - ["CSo21UITableViewController", "MFMailComposeResult"]
 - ["CSo21UITableViewController", "MFMailComposeViewController"]
+- !private ["CSo21UITableViewController", "NSData"]
 - ["CSo21UITableViewController", "NSError"]
+- !private ["CSo21UITableViewController", "PFFile"]
 - !private ["CSo21UITableViewController", "PFObject"]
 - !private ["CSo21UITableViewController", "PFQuery"]
 - !private ["CSo21UITableViewController", "Selector"]
 - ["CSo21UITableViewController", "String"]
+- !private ["CSo21UITableViewController", "UIImage"]
 - ["CSo21UITableViewController", "UIImageView"]
 - ["CSo21UITableViewController", "UILabel"]
 - ["CSo21UITableViewController", "UISegmentedControl"]
@@ -890,6 +948,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "MFMailComposeViewController"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
 - !private ["PSo21UITableViewDataSource", "Selector"]
+- !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UISwipeGestureRecognizer"]
 - !private ["PSo21UITableViewDataSource", "dismissViewControllerAnimated"]
 - ["PSo21UITableViewDataSource", "handleSwipes"]
@@ -914,6 +973,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "MFMailComposeViewController"]
 - !private ["PSo19UITableViewDelegate", "PFQuery"]
 - !private ["PSo19UITableViewDelegate", "Selector"]
+- !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UISwipeGestureRecognizer"]
 - !private ["PSo19UITableViewDelegate", "dismissViewControllerAnimated"]
 - ["PSo19UITableViewDelegate", "handleSwipes"]
@@ -938,10 +998,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "MFMailComposeViewController"]
 - !private ["PSo18UITraitEnvironment", "PFQuery"]
 - !private ["PSo18UITraitEnvironment", "Selector"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UISwipeGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
 - ["PSo18UITraitEnvironment", "handleSwipes"]
+- !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "lineBreakMode"]
 - ["PSo18UITraitEnvironment", "mailComposeController"]
@@ -969,6 +1031,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addGestureRecognizer"]
+- !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "lineBreakMode"]
 - !private ["CSo6UIView", "numberOfLines"]
 - !private ["CSo6UIView", "selectedSegmentIndex"]
@@ -976,11 +1039,14 @@ depends-member:
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "MFMailComposeResult"]
 - ["CSo16UIViewController", "MFMailComposeViewController"]
+- !private ["CSo16UIViewController", "NSData"]
 - ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "PFFile"]
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "Selector"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UISegmentedControl"]
@@ -1033,6 +1099,7 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "Distance"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps22_IntegerArithmeticType", "Distance"]
@@ -1061,6 +1128,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "addGestureRecognizer"]
 - !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "lineBreakMode"]
 - !private ["Ps12_Reflectable", "numberOfLines"]
@@ -1125,6 +1193,7 @@ depends-nominal:
 - !private "Ps13OptionSetType"
 - !private "Sq"
 - !private "Ps16OutputStreamType"
+- !private "CSo6PFFile"
 - !private "CSo8PFObject"
 - !private "CSo7PFQuery"
 - "C10startupnyu26ProjectTableViewController"
@@ -1151,6 +1220,8 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "CSo19UIGestureRecognizer"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
 - !private "CSo7UILabel"
 - !private "CSo22UINavigationController"
 - "CSo11UIResponder"
@@ -1180,6 +1251,7 @@ depends-nominal:
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
+- !private "Ps24_ImageLiteralConvertible"
 - !private "Ps14_Incrementable"
 - !private "Ps22_IntegerArithmeticType"
 - !private "Ps12_IntegerType"
@@ -1258,4 +1330,4 @@ depends-external:
 - "./Parse.framework/Headers/Parse.h"
 - "./Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "0a54563b091c6fb7330518c03f1cab12"
+interface-hash: "a68d9a3d1a568899af9ed81f6ae939f8"

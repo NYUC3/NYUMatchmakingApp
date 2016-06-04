@@ -12,7 +12,7 @@ import Parse
 
 class MyProjectTableViewController: UITableViewController  {
     
-    var projectName : String = "name"
+    var projectName : String = ""
     var projectActivity : String = ""
     var projectAbout : String = ""
     var projectRequirements : String = ""
@@ -54,17 +54,38 @@ class MyProjectTableViewController: UITableViewController  {
                         self.projectDescriptionLabel.text = object["About"] as! String
                         self.projectAbout = object["About"] as! String
                         self.projectRequirements = object["Requirements"] as! String
-                        self.projectActivity = object["Activity"] as! String
+                        
+                        if let picture = object["Image"] as? PFFile {
+                            picture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
+                                if (error == nil) {
+                                    self.projectImage.image = UIImage(data:imageData!)!
+                                }
+                            }
+                        }
                         
                     }
                 }
             } else {
                 // Log details of the failure
                 print("Error: \(error!) \(error!.userInfo)")
-            }
+           }
         }
         
+        let play = UIBarButtonItem(title: "Edit", style: .Plain, target: self, action: "editTapped")
         
+        navigationItem.rightBarButtonItems =  [play]
+        
+    }
+    
+    @IBAction func unwindToMyProjects(segue: UIStoryboardSegue) {
+        // some code to execute
+    } // unwindToPrevious
+    
+    func editTapped(){
+        
+        let vc = EditProjectNavigationBarController()
+        self.presentViewController(vc, animated: true, completion: nil)
+    
     }
     
     @IBAction func segmentControlTapped(sender: UISegmentedControl) {
@@ -75,13 +96,13 @@ class MyProjectTableViewController: UITableViewController  {
             projectDescriptionLabel.text = self.projectAbout
         case 1:
             projectDescriptionLabel.text = self.projectActivity
-        case 2:
-            projectDescriptionLabel.text = self.projectRequirements
         default:
             break;
         }
         
     }
+    
+    
     
     func handleSwipes(sender:UISwipeGestureRecognizer) {
         

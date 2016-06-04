@@ -6,421 +6,489 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "segmentView"
-- "skills"
 - "fullnameLabel"
 - "links"
-- "bio"
 - "oneLineDescription"
-- "segmentTapped"
-- "unwindToProfileView"
 - "profileImageView"
-- "btnClicked"
+- "segmentView"
+- "skills"
 - "settingsButton"
-- "fullName"
-- "viewDidLoad"
 - "onelineDescriptionLabel"
+- "unwindToProfileView"
+- "btnClicked"
+- "bio"
+- "viewDidLoad"
 - "userInformationLabel"
+- "segmentTapped"
+- "fullName"
 depends-top-level:
-- !private "Dictionary"
-- !private "String"
-- "UIBarButtonItem"
-- !private "~="
-- !private "=="
-- "UISegmentedControl"
+- "UIStoryboardSegue"
+- !private "UIColor"
+- "ProfileViewController"
+- "UnicodeScalarType"
+- !private "Void"
+- !private "/"
+- !private "UINavigationItem"
 - "StringLiteralType"
+- !private "NSError"
+- !private "=="
+- !private "+"
+- !private "~="
 - !private "SettingsNavigationController"
-- "UIImageView"
+- "UISegmentedControl"
+- !private "UIBarButtonItemStyle"
+- !private "print"
+- !private "Dictionary"
 - "UITableViewController"
 - "UILabel"
-- "ProfileViewController"
-- !private "+"
-- !private "print"
-- !private "PFQuery"
-- !private "/"
-- "UnicodeScalarType"
-- !private "UIBarButtonItemStyle"
-- !private "UIStoryboard"
-- !private "Void"
-- !private "UINavigationItem"
-- !private "UINavigationBar"
-- !private "UIImage"
+- !private "String"
 - !private "NSFontAttributeName"
-- !private "UIFont"
-- !private "UIColor"
-- !private "NSError"
-- "UIStoryboardSegue"
-- !private "BooleanLiteralType"
+- !private "PFUser"
 - !private "PFObject"
+- !private "UINavigationBar"
+- "UIImageView"
+- "UIBarButtonItem"
+- !private "PFQuery"
+- !private "BooleanLiteralType"
+- !private "UIFont"
+- !private "UIStoryboard"
+- !private "UIImage"
 depends-member:
-- !private ["PSs9AnyObject", "NSFontAttributeName"]
-- !private ["PSs9AnyObject", "PFQuery"]
-- !private ["PSs9AnyObject", "UIBarButtonItem"]
-- !private ["PSs9AnyObject", "UIBarButtonItemStyle"]
-- !private ["PSs9AnyObject", "UIColor"]
-- !private ["PSs9AnyObject", "UIFont"]
-- !private ["PSs9AnyObject", "UIImage"]
-- !private ["PSs9AnyObject", "UINavigationBar"]
-- !private ["PSs9AnyObject", "UINavigationItem"]
-- !private ["PSs9AnyObject", "UIStoryboard"]
-- !private ["PSs9AnyObject", "appearance"]
-- ["PSs9AnyObject", "bio"]
-- !private ["PSs9AnyObject", "blackColor"]
-- ["PSs9AnyObject", "btnClicked"]
-- !private ["PSs9AnyObject", "clipsToBounds"]
-- !private ["PSs9AnyObject", "cornerRadius"]
-- !private ["PSs9AnyObject", "deinit"]
-- !private ["PSs9AnyObject", "findObjectsInBackgroundWithBlock"]
-- !private ["PSs9AnyObject", "frame"]
-- ["PSs9AnyObject", "fullName"]
-- ["PSs9AnyObject", "fullnameLabel"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs9AnyObject", "layer"]
-- !private ["PSs9AnyObject", "lineBreakMode"]
-- ["PSs9AnyObject", "links"]
-- !private ["PSs9AnyObject", "navigationItem"]
-- !private ["PSs9AnyObject", "numberOfLines"]
-- ["PSs9AnyObject", "oneLineDescription"]
-- ["PSs9AnyObject", "onelineDescriptionLabel"]
-- !private ["PSs9AnyObject", "presentViewController"]
-- !private ["PSs9AnyObject", "print"]
-- ["PSs9AnyObject", "profileImageView"]
-- !private ["PSs9AnyObject", "rightBarButtonItem"]
-- ["PSs9AnyObject", "segmentTapped"]
-- ["PSs9AnyObject", "segmentView"]
-- !private ["PSs9AnyObject", "selectedSegmentIndex"]
-- ["PSs9AnyObject", "settingsButton"]
-- ["PSs9AnyObject", "skills"]
-- !private ["PSs9AnyObject", "subscript"]
-- !private ["PSs9AnyObject", "text"]
-- !private ["PSs9AnyObject", "tintColor"]
-- !private ["PSs9AnyObject", "title"]
-- !private ["PSs9AnyObject", "titleTextAttributes"]
-- ["PSs9AnyObject", "unwindToProfileView"]
-- !private ["PSs9AnyObject", "userInfo"]
-- ["PSs9AnyObject", "userInformationLabel"]
-- ["PSs9AnyObject", "viewDidLoad"]
-- !private ["PSs9AnyObject", "whereKey"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "NSFontAttributeName"]
+- !private ["Ps9AnyObject", "PFQuery"]
+- !private ["Ps9AnyObject", "PFUser"]
+- !private ["Ps9AnyObject", "UIBarButtonItem"]
+- !private ["Ps9AnyObject", "UIBarButtonItemStyle"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIFont"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UINavigationBar"]
+- !private ["Ps9AnyObject", "UINavigationItem"]
+- !private ["Ps9AnyObject", "UIStoryboard"]
+- !private ["Ps9AnyObject", "appearance"]
+- ["Ps9AnyObject", "bio"]
+- !private ["Ps9AnyObject", "blackColor"]
+- ["Ps9AnyObject", "btnClicked"]
+- !private ["Ps9AnyObject", "clipsToBounds"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- !private ["Ps9AnyObject", "currentUser"]
+- !private ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "email"]
+- !private ["Ps9AnyObject", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "fullName"]
+- ["Ps9AnyObject", "fullnameLabel"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "lineBreakMode"]
+- ["Ps9AnyObject", "links"]
+- !private ["Ps9AnyObject", "navigationItem"]
+- !private ["Ps9AnyObject", "numberOfLines"]
+- ["Ps9AnyObject", "oneLineDescription"]
+- ["Ps9AnyObject", "onelineDescriptionLabel"]
+- !private ["Ps9AnyObject", "presentViewController"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "profileImageView"]
+- !private ["Ps9AnyObject", "rightBarButtonItem"]
+- ["Ps9AnyObject", "segmentTapped"]
+- ["Ps9AnyObject", "segmentView"]
+- !private ["Ps9AnyObject", "selectedSegmentIndex"]
+- ["Ps9AnyObject", "settingsButton"]
+- ["Ps9AnyObject", "skills"]
+- !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "tintColor"]
+- !private ["Ps9AnyObject", "title"]
+- !private ["Ps9AnyObject", "titleTextAttributes"]
+- ["Ps9AnyObject", "unwindToProfileView"]
+- !private ["Ps9AnyObject", "userInfo"]
+- ["Ps9AnyObject", "userInformationLabel"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "whereKey"]
+- ["Ps9AnyObject", ""]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
 - !private ["Sa", "count"]
-- !private ["PSs23ArrayLiteralConvertible", "Generator"]
-- !private ["PSs23ArrayLiteralConvertible", "Index"]
-- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
-- !private ["PSs23ArrayLiteralConvertible", "_Element"]
-- !private ["PSs23ArrayLiteralConvertible", "count"]
-- !private ["VSs10ArraySlice", "Generator"]
-- !private ["VSs10ArraySlice", "Index"]
-- !private ["PSs22BidirectionalIndexType", "Distance"]
-- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
-- !private ["PSs21BitwiseOperationsType", "Distance"]
-- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "count"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["CSo7CALayer", "cornerRadius"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC6CGRect", "size"]
 - !private ["VSC6CGSize", "width"]
-- !private ["PSs11CVarArgType", "Distance"]
-- !private ["PSs11CVarArgType", "IntegerLiteralType"]
-- !private ["PSs11CVarArgType", "NSFontAttributeName"]
-- !private ["PSs11CVarArgType", "PFQuery"]
-- !private ["PSs11CVarArgType", "UIBarButtonItem"]
-- !private ["PSs11CVarArgType", "UIBarButtonItemStyle"]
-- !private ["PSs11CVarArgType", "UIColor"]
-- !private ["PSs11CVarArgType", "UIFont"]
-- !private ["PSs11CVarArgType", "UIImage"]
-- !private ["PSs11CVarArgType", "UINavigationBar"]
-- !private ["PSs11CVarArgType", "UINavigationItem"]
-- !private ["PSs11CVarArgType", "UIStoryboard"]
-- !private ["PSs11CVarArgType", "appearance"]
-- ["PSs11CVarArgType", "bio"]
-- !private ["PSs11CVarArgType", "blackColor"]
-- ["PSs11CVarArgType", "btnClicked"]
-- !private ["PSs11CVarArgType", "clipsToBounds"]
-- !private ["PSs11CVarArgType", "cornerRadius"]
-- !private ["PSs11CVarArgType", "findObjectsInBackgroundWithBlock"]
-- !private ["PSs11CVarArgType", "frame"]
-- ["PSs11CVarArgType", "fullName"]
-- ["PSs11CVarArgType", "fullnameLabel"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs11CVarArgType", "layer"]
-- !private ["PSs11CVarArgType", "lineBreakMode"]
-- ["PSs11CVarArgType", "links"]
-- !private ["PSs11CVarArgType", "navigationItem"]
-- !private ["PSs11CVarArgType", "numberOfLines"]
-- ["PSs11CVarArgType", "oneLineDescription"]
-- ["PSs11CVarArgType", "onelineDescriptionLabel"]
-- !private ["PSs11CVarArgType", "presentViewController"]
-- !private ["PSs11CVarArgType", "print"]
-- ["PSs11CVarArgType", "profileImageView"]
-- !private ["PSs11CVarArgType", "rightBarButtonItem"]
-- ["PSs11CVarArgType", "segmentTapped"]
-- ["PSs11CVarArgType", "segmentView"]
-- !private ["PSs11CVarArgType", "selectedSegmentIndex"]
-- ["PSs11CVarArgType", "settingsButton"]
-- ["PSs11CVarArgType", "skills"]
-- !private ["PSs11CVarArgType", "subscript"]
-- !private ["PSs11CVarArgType", "text"]
-- !private ["PSs11CVarArgType", "tintColor"]
-- !private ["PSs11CVarArgType", "title"]
-- !private ["PSs11CVarArgType", "titleTextAttributes"]
-- ["PSs11CVarArgType", "unwindToProfileView"]
-- !private ["PSs11CVarArgType", "userInfo"]
-- ["PSs11CVarArgType", "userInformationLabel"]
-- ["PSs11CVarArgType", "viewDidLoad"]
-- !private ["PSs11CVarArgType", "whereKey"]
-- ["PSs11CVarArgType", ""]
-- !private ["VSs9Character", "deinit"]
-- !private ["PSs14CollectionType", "Generator"]
-- !private ["PSs14CollectionType", "Index"]
-- !private ["PSs14CollectionType", "Key"]
-- !private ["PSs14CollectionType", "SubSequence"]
-- !private ["PSs14CollectionType", "Value"]
-- !private ["PSs14CollectionType", "_Element"]
-- !private ["PSs14CollectionType", "count"]
-- !private ["PSs10Comparable", "Distance"]
-- !private ["PSs10Comparable", "IntegerLiteralType"]
-- !private ["PSs10Comparable", "init"]
-- !private ["PSs28CustomDebugStringConvertible", "Generator"]
-- !private ["PSs28CustomDebugStringConvertible", "Index"]
-- !private ["PSs28CustomDebugStringConvertible", "Key"]
-- ["PSs28CustomDebugStringConvertible", "Some"]
-- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
-- !private ["PSs28CustomDebugStringConvertible", "Value"]
-- !private ["PSs28CustomDebugStringConvertible", "_Element"]
-- !private ["PSs28CustomDebugStringConvertible", "count"]
-- !private ["PSs28CustomDebugStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "Distance"]
-- !private ["PSs23CustomStringConvertible", "Generator"]
-- !private ["PSs23CustomStringConvertible", "Index"]
-- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["PSs23CustomStringConvertible", "Key"]
-- !private ["PSs23CustomStringConvertible", "NSFontAttributeName"]
-- !private ["PSs23CustomStringConvertible", "PFQuery"]
-- !private ["PSs23CustomStringConvertible", "SubSequence"]
-- !private ["PSs23CustomStringConvertible", "UIBarButtonItem"]
-- !private ["PSs23CustomStringConvertible", "UIBarButtonItemStyle"]
-- !private ["PSs23CustomStringConvertible", "UIColor"]
-- !private ["PSs23CustomStringConvertible", "UIFont"]
-- !private ["PSs23CustomStringConvertible", "UIImage"]
-- !private ["PSs23CustomStringConvertible", "UINavigationBar"]
-- !private ["PSs23CustomStringConvertible", "UINavigationItem"]
-- !private ["PSs23CustomStringConvertible", "UIStoryboard"]
-- !private ["PSs23CustomStringConvertible", "Value"]
-- !private ["PSs23CustomStringConvertible", "_Element"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs23CustomStringConvertible", "appearance"]
-- ["PSs23CustomStringConvertible", "bio"]
-- !private ["PSs23CustomStringConvertible", "blackColor"]
-- ["PSs23CustomStringConvertible", "btnClicked"]
-- !private ["PSs23CustomStringConvertible", "clipsToBounds"]
-- !private ["PSs23CustomStringConvertible", "cornerRadius"]
-- !private ["PSs23CustomStringConvertible", "count"]
-- !private ["PSs23CustomStringConvertible", "findObjectsInBackgroundWithBlock"]
-- !private ["PSs23CustomStringConvertible", "frame"]
-- ["PSs23CustomStringConvertible", "fullName"]
-- ["PSs23CustomStringConvertible", "fullnameLabel"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs23CustomStringConvertible", "layer"]
-- !private ["PSs23CustomStringConvertible", "lineBreakMode"]
-- ["PSs23CustomStringConvertible", "links"]
-- !private ["PSs23CustomStringConvertible", "navigationItem"]
-- !private ["PSs23CustomStringConvertible", "numberOfLines"]
-- ["PSs23CustomStringConvertible", "oneLineDescription"]
-- ["PSs23CustomStringConvertible", "onelineDescriptionLabel"]
-- !private ["PSs23CustomStringConvertible", "presentViewController"]
-- !private ["PSs23CustomStringConvertible", "print"]
-- ["PSs23CustomStringConvertible", "profileImageView"]
-- !private ["PSs23CustomStringConvertible", "rightBarButtonItem"]
-- ["PSs23CustomStringConvertible", "segmentTapped"]
-- ["PSs23CustomStringConvertible", "segmentView"]
-- !private ["PSs23CustomStringConvertible", "selectedSegmentIndex"]
-- ["PSs23CustomStringConvertible", "settingsButton"]
-- ["PSs23CustomStringConvertible", "skills"]
-- !private ["PSs23CustomStringConvertible", "subscript"]
-- !private ["PSs23CustomStringConvertible", "text"]
-- !private ["PSs23CustomStringConvertible", "tintColor"]
-- !private ["PSs23CustomStringConvertible", "title"]
-- !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
-- ["PSs23CustomStringConvertible", "unwindToProfileView"]
-- !private ["PSs23CustomStringConvertible", "userInfo"]
-- ["PSs23CustomStringConvertible", "userInformationLabel"]
-- ["PSs23CustomStringConvertible", "viewDidLoad"]
-- !private ["PSs23CustomStringConvertible", "whereKey"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["VSs10Dictionary", "Key"]
-- !private ["VSs10Dictionary", "Value"]
-- !private ["PSs28DictionaryLiteralConvertible", "Key"]
-- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSFontAttributeName"]
+- !private ["Ps11CVarArgType", "PFQuery"]
+- !private ["Ps11CVarArgType", "PFUser"]
+- !private ["Ps11CVarArgType", "UIBarButtonItem"]
+- !private ["Ps11CVarArgType", "UIBarButtonItemStyle"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "UIFont"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "UINavigationBar"]
+- !private ["Ps11CVarArgType", "UINavigationItem"]
+- !private ["Ps11CVarArgType", "UIStoryboard"]
+- !private ["Ps11CVarArgType", "appearance"]
+- ["Ps11CVarArgType", "bio"]
+- !private ["Ps11CVarArgType", "blackColor"]
+- ["Ps11CVarArgType", "btnClicked"]
+- !private ["Ps11CVarArgType", "clipsToBounds"]
+- !private ["Ps11CVarArgType", "cornerRadius"]
+- !private ["Ps11CVarArgType", "currentUser"]
+- !private ["Ps11CVarArgType", "email"]
+- !private ["Ps11CVarArgType", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps11CVarArgType", "frame"]
+- ["Ps11CVarArgType", "fullName"]
+- ["Ps11CVarArgType", "fullnameLabel"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps11CVarArgType", "layer"]
+- !private ["Ps11CVarArgType", "lineBreakMode"]
+- ["Ps11CVarArgType", "links"]
+- !private ["Ps11CVarArgType", "navigationItem"]
+- !private ["Ps11CVarArgType", "numberOfLines"]
+- ["Ps11CVarArgType", "oneLineDescription"]
+- ["Ps11CVarArgType", "onelineDescriptionLabel"]
+- !private ["Ps11CVarArgType", "presentViewController"]
+- !private ["Ps11CVarArgType", "print"]
+- ["Ps11CVarArgType", "profileImageView"]
+- !private ["Ps11CVarArgType", "rightBarButtonItem"]
+- ["Ps11CVarArgType", "segmentTapped"]
+- ["Ps11CVarArgType", "segmentView"]
+- !private ["Ps11CVarArgType", "selectedSegmentIndex"]
+- ["Ps11CVarArgType", "settingsButton"]
+- ["Ps11CVarArgType", "skills"]
+- !private ["Ps11CVarArgType", "subscript"]
+- !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "tintColor"]
+- !private ["Ps11CVarArgType", "title"]
+- !private ["Ps11CVarArgType", "titleTextAttributes"]
+- ["Ps11CVarArgType", "unwindToProfileView"]
+- !private ["Ps11CVarArgType", "userInfo"]
+- ["Ps11CVarArgType", "userInformationLabel"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- !private ["Ps11CVarArgType", "whereKey"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "count"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "PFQuery"]
+- !private ["Ps28CustomDebugStringConvertible", "PFUser"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItemStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIFont"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UINavigationBar"]
+- !private ["Ps28CustomDebugStringConvertible", "UINavigationItem"]
+- !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "appearance"]
+- ["Ps28CustomDebugStringConvertible", "bio"]
+- !private ["Ps28CustomDebugStringConvertible", "blackColor"]
+- ["Ps28CustomDebugStringConvertible", "btnClicked"]
+- !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
+- !private ["Ps28CustomDebugStringConvertible", "email"]
+- !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "fullName"]
+- ["Ps28CustomDebugStringConvertible", "fullnameLabel"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "lineBreakMode"]
+- ["Ps28CustomDebugStringConvertible", "links"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
+- !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
+- ["Ps28CustomDebugStringConvertible", "oneLineDescription"]
+- ["Ps28CustomDebugStringConvertible", "onelineDescriptionLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "profileImageView"]
+- !private ["Ps28CustomDebugStringConvertible", "rightBarButtonItem"]
+- ["Ps28CustomDebugStringConvertible", "segmentTapped"]
+- ["Ps28CustomDebugStringConvertible", "segmentView"]
+- !private ["Ps28CustomDebugStringConvertible", "selectedSegmentIndex"]
+- ["Ps28CustomDebugStringConvertible", "settingsButton"]
+- ["Ps28CustomDebugStringConvertible", "skills"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "title"]
+- !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
+- ["Ps28CustomDebugStringConvertible", "unwindToProfileView"]
+- !private ["Ps28CustomDebugStringConvertible", "userInfo"]
+- ["Ps28CustomDebugStringConvertible", "userInformationLabel"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "whereKey"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
+- !private ["Ps23CustomStringConvertible", "PFQuery"]
+- !private ["Ps23CustomStringConvertible", "PFUser"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
+- !private ["Ps23CustomStringConvertible", "UIBarButtonItemStyle"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIFont"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UINavigationBar"]
+- !private ["Ps23CustomStringConvertible", "UINavigationItem"]
+- !private ["Ps23CustomStringConvertible", "UIStoryboard"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "appearance"]
+- ["Ps23CustomStringConvertible", "bio"]
+- !private ["Ps23CustomStringConvertible", "blackColor"]
+- ["Ps23CustomStringConvertible", "btnClicked"]
+- !private ["Ps23CustomStringConvertible", "clipsToBounds"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
+- !private ["Ps23CustomStringConvertible", "email"]
+- !private ["Ps23CustomStringConvertible", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "fullName"]
+- ["Ps23CustomStringConvertible", "fullnameLabel"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "lineBreakMode"]
+- ["Ps23CustomStringConvertible", "links"]
+- !private ["Ps23CustomStringConvertible", "navigationItem"]
+- !private ["Ps23CustomStringConvertible", "numberOfLines"]
+- ["Ps23CustomStringConvertible", "oneLineDescription"]
+- ["Ps23CustomStringConvertible", "onelineDescriptionLabel"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "profileImageView"]
+- !private ["Ps23CustomStringConvertible", "rightBarButtonItem"]
+- ["Ps23CustomStringConvertible", "segmentTapped"]
+- ["Ps23CustomStringConvertible", "segmentView"]
+- !private ["Ps23CustomStringConvertible", "selectedSegmentIndex"]
+- ["Ps23CustomStringConvertible", "settingsButton"]
+- ["Ps23CustomStringConvertible", "skills"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- !private ["Ps23CustomStringConvertible", "title"]
+- !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
+- ["Ps23CustomStringConvertible", "unwindToProfileView"]
+- !private ["Ps23CustomStringConvertible", "userInfo"]
+- ["Ps23CustomStringConvertible", "userInformationLabel"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "whereKey"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Sd", "deinit"]
-- !private ["PSs9Equatable", "ByWordWrapping"]
-- !private ["PSs9Equatable", "Distance"]
-- !private ["PSs9Equatable", "IntegerLiteralType"]
-- !private ["PSs9Equatable", "NSFontAttributeName"]
-- !private ["PSs9Equatable", "PFQuery"]
-- !private ["PSs9Equatable", "Plain"]
-- !private ["PSs9Equatable", "UIBarButtonItem"]
-- !private ["PSs9Equatable", "UIBarButtonItemStyle"]
-- !private ["PSs9Equatable", "UIColor"]
-- !private ["PSs9Equatable", "UIFont"]
-- !private ["PSs9Equatable", "UIImage"]
-- !private ["PSs9Equatable", "UINavigationBar"]
-- !private ["PSs9Equatable", "UINavigationItem"]
-- !private ["PSs9Equatable", "UIStoryboard"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- !private ["PSs9Equatable", "appearance"]
-- ["PSs9Equatable", "bio"]
-- !private ["PSs9Equatable", "blackColor"]
-- ["PSs9Equatable", "btnClicked"]
-- !private ["PSs9Equatable", "clipsToBounds"]
-- !private ["PSs9Equatable", "cornerRadius"]
-- !private ["PSs9Equatable", "findObjectsInBackgroundWithBlock"]
-- !private ["PSs9Equatable", "frame"]
-- ["PSs9Equatable", "fullName"]
-- ["PSs9Equatable", "fullnameLabel"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs9Equatable", "layer"]
-- !private ["PSs9Equatable", "lineBreakMode"]
-- ["PSs9Equatable", "links"]
-- !private ["PSs9Equatable", "navigationItem"]
-- !private ["PSs9Equatable", "numberOfLines"]
-- ["PSs9Equatable", "oneLineDescription"]
-- ["PSs9Equatable", "onelineDescriptionLabel"]
-- !private ["PSs9Equatable", "presentViewController"]
-- !private ["PSs9Equatable", "print"]
-- ["PSs9Equatable", "profileImageView"]
-- !private ["PSs9Equatable", "rightBarButtonItem"]
-- ["PSs9Equatable", "segmentTapped"]
-- ["PSs9Equatable", "segmentView"]
-- !private ["PSs9Equatable", "selectedSegmentIndex"]
-- ["PSs9Equatable", "settingsButton"]
-- !private ["PSs9Equatable", "size"]
-- ["PSs9Equatable", "skills"]
-- !private ["PSs9Equatable", "subscript"]
-- !private ["PSs9Equatable", "text"]
-- !private ["PSs9Equatable", "tintColor"]
-- !private ["PSs9Equatable", "title"]
-- !private ["PSs9Equatable", "titleTextAttributes"]
-- ["PSs9Equatable", "unwindToProfileView"]
-- !private ["PSs9Equatable", "userInfo"]
-- ["PSs9Equatable", "userInformationLabel"]
-- ["PSs9Equatable", "viewDidLoad"]
-- !private ["PSs9Equatable", "whereKey"]
-- !private ["PSs9Equatable", "width"]
-- ["PSs9Equatable", ""]
-- !private ["PSs9ErrorType", "userInfo"]
-- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps9Equatable", "ByWordWrapping"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSFontAttributeName"]
+- !private ["Ps9Equatable", "PFQuery"]
+- !private ["Ps9Equatable", "PFUser"]
+- !private ["Ps9Equatable", "Plain"]
+- !private ["Ps9Equatable", "UIBarButtonItem"]
+- !private ["Ps9Equatable", "UIBarButtonItemStyle"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIFont"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UINavigationBar"]
+- !private ["Ps9Equatable", "UINavigationItem"]
+- !private ["Ps9Equatable", "UIStoryboard"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "appearance"]
+- ["Ps9Equatable", "bio"]
+- !private ["Ps9Equatable", "blackColor"]
+- ["Ps9Equatable", "btnClicked"]
+- !private ["Ps9Equatable", "clipsToBounds"]
+- !private ["Ps9Equatable", "cornerRadius"]
+- !private ["Ps9Equatable", "currentUser"]
+- !private ["Ps9Equatable", "email"]
+- !private ["Ps9Equatable", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "fullName"]
+- ["Ps9Equatable", "fullnameLabel"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "lineBreakMode"]
+- ["Ps9Equatable", "links"]
+- !private ["Ps9Equatable", "navigationItem"]
+- !private ["Ps9Equatable", "numberOfLines"]
+- ["Ps9Equatable", "oneLineDescription"]
+- ["Ps9Equatable", "onelineDescriptionLabel"]
+- !private ["Ps9Equatable", "presentViewController"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "profileImageView"]
+- !private ["Ps9Equatable", "rightBarButtonItem"]
+- ["Ps9Equatable", "segmentTapped"]
+- ["Ps9Equatable", "segmentView"]
+- !private ["Ps9Equatable", "selectedSegmentIndex"]
+- ["Ps9Equatable", "settingsButton"]
+- !private ["Ps9Equatable", "size"]
+- ["Ps9Equatable", "skills"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "tintColor"]
+- !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "titleTextAttributes"]
+- ["Ps9Equatable", "unwindToProfileView"]
+- !private ["Ps9Equatable", "userInfo"]
+- ["Ps9Equatable", "userInformationLabel"]
+- ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "whereKey"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps9ErrorType", "userInfo"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
-- !private ["PSs16ForwardIndexType", "Distance"]
-- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
-- !private ["PSs13GeneratorType", "Element"]
-- !private ["PSs8Hashable", "ByWordWrapping"]
-- !private ["PSs8Hashable", "Distance"]
-- !private ["PSs8Hashable", "IntegerLiteralType"]
-- !private ["PSs8Hashable", "NSFontAttributeName"]
-- !private ["PSs8Hashable", "PFQuery"]
-- !private ["PSs8Hashable", "Plain"]
-- !private ["PSs8Hashable", "UIBarButtonItem"]
-- !private ["PSs8Hashable", "UIBarButtonItemStyle"]
-- !private ["PSs8Hashable", "UIColor"]
-- !private ["PSs8Hashable", "UIFont"]
-- !private ["PSs8Hashable", "UIImage"]
-- !private ["PSs8Hashable", "UINavigationBar"]
-- !private ["PSs8Hashable", "UINavigationItem"]
-- !private ["PSs8Hashable", "UIStoryboard"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- !private ["PSs8Hashable", "appearance"]
-- ["PSs8Hashable", "bio"]
-- !private ["PSs8Hashable", "blackColor"]
-- ["PSs8Hashable", "btnClicked"]
-- !private ["PSs8Hashable", "clipsToBounds"]
-- !private ["PSs8Hashable", "cornerRadius"]
-- !private ["PSs8Hashable", "findObjectsInBackgroundWithBlock"]
-- !private ["PSs8Hashable", "frame"]
-- ["PSs8Hashable", "fullName"]
-- ["PSs8Hashable", "fullnameLabel"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "instantiateViewControllerWithIdentifier"]
-- !private ["PSs8Hashable", "layer"]
-- !private ["PSs8Hashable", "lineBreakMode"]
-- ["PSs8Hashable", "links"]
-- !private ["PSs8Hashable", "navigationItem"]
-- !private ["PSs8Hashable", "numberOfLines"]
-- ["PSs8Hashable", "oneLineDescription"]
-- ["PSs8Hashable", "onelineDescriptionLabel"]
-- !private ["PSs8Hashable", "presentViewController"]
-- !private ["PSs8Hashable", "print"]
-- ["PSs8Hashable", "profileImageView"]
-- !private ["PSs8Hashable", "rightBarButtonItem"]
-- ["PSs8Hashable", "segmentTapped"]
-- ["PSs8Hashable", "segmentView"]
-- !private ["PSs8Hashable", "selectedSegmentIndex"]
-- ["PSs8Hashable", "settingsButton"]
-- ["PSs8Hashable", "skills"]
-- !private ["PSs8Hashable", "subscript"]
-- !private ["PSs8Hashable", "text"]
-- !private ["PSs8Hashable", "tintColor"]
-- !private ["PSs8Hashable", "title"]
-- !private ["PSs8Hashable", "titleTextAttributes"]
-- ["PSs8Hashable", "unwindToProfileView"]
-- !private ["PSs8Hashable", "userInfo"]
-- ["PSs8Hashable", "userInformationLabel"]
-- ["PSs8Hashable", "viewDidLoad"]
-- !private ["PSs8Hashable", "whereKey"]
-- ["PSs8Hashable", ""]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "ByWordWrapping"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSFontAttributeName"]
+- !private ["Ps8Hashable", "PFQuery"]
+- !private ["Ps8Hashable", "PFUser"]
+- !private ["Ps8Hashable", "Plain"]
+- !private ["Ps8Hashable", "UIBarButtonItem"]
+- !private ["Ps8Hashable", "UIBarButtonItemStyle"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIFont"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UINavigationBar"]
+- !private ["Ps8Hashable", "UINavigationItem"]
+- !private ["Ps8Hashable", "UIStoryboard"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "appearance"]
+- ["Ps8Hashable", "bio"]
+- !private ["Ps8Hashable", "blackColor"]
+- ["Ps8Hashable", "btnClicked"]
+- !private ["Ps8Hashable", "clipsToBounds"]
+- !private ["Ps8Hashable", "cornerRadius"]
+- !private ["Ps8Hashable", "currentUser"]
+- !private ["Ps8Hashable", "email"]
+- !private ["Ps8Hashable", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "fullName"]
+- ["Ps8Hashable", "fullnameLabel"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewControllerWithIdentifier"]
+- !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "lineBreakMode"]
+- ["Ps8Hashable", "links"]
+- !private ["Ps8Hashable", "navigationItem"]
+- !private ["Ps8Hashable", "numberOfLines"]
+- ["Ps8Hashable", "oneLineDescription"]
+- ["Ps8Hashable", "onelineDescriptionLabel"]
+- !private ["Ps8Hashable", "presentViewController"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "profileImageView"]
+- !private ["Ps8Hashable", "rightBarButtonItem"]
+- ["Ps8Hashable", "segmentTapped"]
+- ["Ps8Hashable", "segmentView"]
+- !private ["Ps8Hashable", "selectedSegmentIndex"]
+- ["Ps8Hashable", "settingsButton"]
+- ["Ps8Hashable", "skills"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "tintColor"]
+- !private ["Ps8Hashable", "title"]
+- !private ["Ps8Hashable", "titleTextAttributes"]
+- ["Ps8Hashable", "unwindToProfileView"]
+- !private ["Ps8Hashable", "userInfo"]
+- ["Ps8Hashable", "userInformationLabel"]
+- ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "whereKey"]
+- ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
-- !private ["PSs9Indexable", "Generator"]
-- !private ["PSs9Indexable", "Index"]
-- !private ["PSs9Indexable", "Key"]
-- !private ["PSs9Indexable", "SubSequence"]
-- !private ["PSs9Indexable", "Value"]
-- !private ["PSs9Indexable", "_Element"]
-- !private ["PSs9Indexable", "count"]
-- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "count"]
+- !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
-- !private ["VSs5Int16", "deinit"]
-- !private ["VSs5Int32", "deinit"]
-- !private ["VSs5Int64", "deinit"]
-- !private ["VSs4Int8", "deinit"]
-- !private ["PSs21IntegerArithmeticType", "Distance"]
-- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs25IntegerLiteralConvertible", "Distance"]
-- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs11IntegerType", "Distance"]
-- !private ["PSs11IntegerType", "IntegerLiteralType"]
-- !private ["PSs14MirrorPathType", "Distance"]
-- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
-- !private ["PSs14MirrorPathType", "init"]
-- !private ["PSs21MutableCollectionType", "Generator"]
-- !private ["PSs21MutableCollectionType", "Index"]
-- !private ["PSs21MutableCollectionType", "SubSequence"]
-- !private ["PSs21MutableCollectionType", "_Element"]
-- !private ["PSs21MutableCollectionType", "count"]
-- !private ["PSs16MutableIndexable", "Generator"]
-- !private ["PSs16MutableIndexable", "Index"]
-- !private ["PSs16MutableIndexable", "SubSequence"]
-- !private ["PSs16MutableIndexable", "_Element"]
-- !private ["PSs16MutableIndexable", "count"]
-- !private ["PSs16MutableSliceable", "Generator"]
-- !private ["PSs16MutableSliceable", "Index"]
-- !private ["PSs16MutableSliceable", "SubSequence"]
-- !private ["PSs16MutableSliceable", "_Element"]
-- !private ["PSs16MutableSliceable", "count"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "count"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "count"]
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
 - !private ["PSo8NSCoding", "PFQuery"]
+- !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
 - !private ["PSo8NSCoding", "UIBarButtonItemStyle"]
 - !private ["PSo8NSCoding", "UIColor"]
@@ -472,6 +540,7 @@ depends-member:
 - !private ["CSo7NSError", "userInfo"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
+- !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItemStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
@@ -508,6 +577,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSFontAttributeName"]
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
+- !private ["CSo8NSObject", "PFUser"]
 - !private ["CSo8NSObject", "SettingsNavigationController"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIBarButtonItem"]
@@ -529,7 +599,9 @@ depends-member:
 - ["CSo8NSObject", "btnClicked"]
 - !private ["CSo8NSObject", "clipsToBounds"]
 - !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "currentUser"]
 - !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "email"]
 - !private ["CSo8NSObject", "findObjectsInBackgroundWithBlock"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "fullName"]
@@ -564,6 +636,7 @@ depends-member:
 - !private ["CSo8NSObject", "whereKey"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
+- !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItemStyle"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
@@ -578,6 +651,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "btnClicked"]
 - !private ["PSo16NSObjectProtocol", "clipsToBounds"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
+- !private ["PSo16NSObjectProtocol", "email"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackgroundWithBlock"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "fullName"]
@@ -617,18 +692,25 @@ depends-member:
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo7NSValue", "deinit"]
-- ["PSs21NilLiteralConvertible", "Some"]
+- ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
-- !private ["PSs16OutputStreamType", "init"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["CSo8PFObject", "currentUser"]
+- !private ["CSo8PFObject", "email"]
 - !private ["CSo8PFObject", "subscript"]
 - !private ["CSo7PFQuery", "findObjectsInBackgroundWithBlock"]
 - !private ["CSo7PFQuery", "init"]
 - !private ["CSo7PFQuery", "whereKey"]
+- !private ["PSo13PFSubclassing", "currentUser"]
+- !private ["PSo13PFSubclassing", "email"]
+- !private ["CSo6PFUser", "currentUser"]
+- !private ["CSo6PFUser", "email"]
 - !private ["C10startupnyu21ProfileViewController", "NSError"]
 - !private ["C10startupnyu21ProfileViewController", "NSFontAttributeName"]
 - !private ["C10startupnyu21ProfileViewController", "PFObject"]
 - !private ["C10startupnyu21ProfileViewController", "PFQuery"]
+- !private ["C10startupnyu21ProfileViewController", "PFUser"]
 - !private ["C10startupnyu21ProfileViewController", "SettingsNavigationController"]
 - !private ["C10startupnyu21ProfileViewController", "String"]
 - ["C10startupnyu21ProfileViewController", "UIBarButtonItem"]
@@ -665,36 +747,36 @@ depends-member:
 - ["C10startupnyu21ProfileViewController", "unwindToProfileView"]
 - ["C10startupnyu21ProfileViewController", "userInformationLabel"]
 - ["C10startupnyu21ProfileViewController", "viewDidLoad"]
-- !private ["PSs21RandomAccessIndexType", "Distance"]
-- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
-- !private ["VSs5Range", "deinit"]
-- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
-- !private ["PSs30RangeReplaceableCollectionType", "Index"]
-- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
-- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
-- !private ["PSs30RangeReplaceableCollectionType", "count"]
-- !private ["PSs16RawRepresentable", "ByWordWrapping"]
-- !private ["PSs16RawRepresentable", "Plain"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "count"]
+- !private ["Ps16RawRepresentable", "ByWordWrapping"]
+- !private ["Ps16RawRepresentable", "Plain"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
-- !private ["PSs12SequenceType", "Element"]
-- !private ["PSs12SequenceType", "Generator"]
-- !private ["PSs12SequenceType", "Index"]
-- !private ["PSs12SequenceType", "Key"]
-- !private ["PSs12SequenceType", "SubSequence"]
-- !private ["PSs12SequenceType", "Value"]
-- !private ["PSs12SequenceType", "_Element"]
-- !private ["PSs12SequenceType", "count"]
-- !private ["PSs17SignedIntegerType", "Distance"]
-- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs16SignedNumberType", "Distance"]
-- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
-- !private ["PSs10Streamable", "init"]
-- !private ["PSs10Strideable", "Distance"]
-- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "count"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
-- !private ["PSs30StringInterpolationConvertible", "init"]
-- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "appearance"]
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
@@ -719,6 +801,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
+- !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItemStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
@@ -767,6 +850,7 @@ depends-member:
 - !private ["CSo7UIColor", "blackColor"]
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
+- !private ["PSo18UIContentContainer", "PFUser"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIBarButtonItemStyle"]
 - !private ["PSo18UIContentContainer", "UIColor"]
@@ -817,6 +901,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "PFQuery"]
+- !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItemStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
@@ -871,6 +956,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
+- !private ["CSo11UIResponder", "PFUser"]
 - !private ["CSo11UIResponder", "SettingsNavigationController"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
@@ -917,6 +1003,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "PFQuery"]
+- !private ["PSo20UIScrollViewDelegate", "PFUser"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "UIBarButtonItemStyle"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
@@ -949,6 +1036,7 @@ depends-member:
 - !private ["CSo18UISegmentedControl", "selectedSegmentIndex"]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
 - !private ["PSo16UIStateRestoring", "PFQuery"]
+- !private ["PSo16UIStateRestoring", "PFUser"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIBarButtonItemStyle"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
@@ -984,6 +1072,7 @@ depends-member:
 - !private ["CSo21UITableViewController", "NSFontAttributeName"]
 - !private ["CSo21UITableViewController", "PFObject"]
 - !private ["CSo21UITableViewController", "PFQuery"]
+- !private ["CSo21UITableViewController", "PFUser"]
 - !private ["CSo21UITableViewController", "SettingsNavigationController"]
 - !private ["CSo21UITableViewController", "String"]
 - ["CSo21UITableViewController", "UIBarButtonItem"]
@@ -1022,6 +1111,7 @@ depends-member:
 - ["CSo21UITableViewController", ""]
 - !private ["PSo21UITableViewDataSource", "NSFontAttributeName"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
+- !private ["PSo21UITableViewDataSource", "PFUser"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItem"]
 - !private ["PSo21UITableViewDataSource", "UIBarButtonItemStyle"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
@@ -1053,6 +1143,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "NSFontAttributeName"]
 - !private ["PSo19UITableViewDelegate", "PFQuery"]
+- !private ["PSo19UITableViewDelegate", "PFUser"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItem"]
 - !private ["PSo19UITableViewDelegate", "UIBarButtonItemStyle"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
@@ -1084,6 +1175,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UITraitEnvironment", "PFQuery"]
+- !private ["PSo18UITraitEnvironment", "PFUser"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItemStyle"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
@@ -1135,6 +1227,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
+- !private ["CSo16UIViewController", "PFUser"]
 - !private ["CSo16UIViewController", "SettingsNavigationController"]
 - !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
@@ -1172,125 +1265,122 @@ depends-member:
 - ["CSo16UIViewController", "userInformationLabel"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - !private ["Su", "deinit"]
-- !private ["VSs6UInt16", "deinit"]
-- !private ["VSs6UInt32", "deinit"]
-- !private ["VSs6UInt64", "deinit"]
-- !private ["VSs5UInt8", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
-- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
-- !private ["PSs10_ArrayType", "Generator"]
-- !private ["PSs10_ArrayType", "Index"]
-- !private ["PSs10_ArrayType", "SubSequence"]
-- !private ["PSs10_ArrayType", "_Element"]
-- !private ["PSs10_ArrayType", "count"]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
-- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
-- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
-- !private ["PSs16_CocoaStringType", "init"]
-- !private ["PSs24_ColorLiteralConvertible", "blackColor"]
-- !private ["PSs24_DestructorSafeContainer", "Generator"]
-- !private ["PSs24_DestructorSafeContainer", "Index"]
-- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
-- !private ["PSs24_DestructorSafeContainer", "_Element"]
-- !private ["PSs24_DestructorSafeContainer", "count"]
-- !private ["PSs24_ImageLiteralConvertible", "init"]
-- !private ["PSs14_Incrementable", "Distance"]
-- !private ["PSs14_Incrementable", "IntegerLiteralType"]
-- !private ["PSs22_IntegerArithmeticType", "Distance"]
-- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs12_IntegerType", "Distance"]
-- !private ["PSs12_IntegerType", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
-- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
-- !private ["PSs21_ObjectiveCBridgeable", "Index"]
-- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "Key"]
-- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["PSs21_ObjectiveCBridgeable", "Value"]
-- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["PSs21_ObjectiveCBridgeable", "count"]
-- !private ["PSs21_ObjectiveCBridgeable", "init"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
-- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
-- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "Distance"]
-- !private ["PSs12_Reflectable", "Generator"]
-- !private ["PSs12_Reflectable", "Index"]
-- !private ["PSs12_Reflectable", "IntegerLiteralType"]
-- !private ["PSs12_Reflectable", "Key"]
-- ["PSs12_Reflectable", "Some"]
-- !private ["PSs12_Reflectable", "SubSequence"]
-- !private ["PSs12_Reflectable", "Value"]
-- !private ["PSs12_Reflectable", "_Element"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "appearance"]
-- !private ["PSs12_Reflectable", "clipsToBounds"]
-- !private ["PSs12_Reflectable", "count"]
-- !private ["PSs12_Reflectable", "frame"]
-- !private ["PSs12_Reflectable", "init"]
-- !private ["PSs12_Reflectable", "layer"]
-- !private ["PSs12_Reflectable", "lineBreakMode"]
-- !private ["PSs12_Reflectable", "numberOfLines"]
-- !private ["PSs12_Reflectable", "selectedSegmentIndex"]
-- !private ["PSs12_Reflectable", "size"]
-- !private ["PSs12_Reflectable", "text"]
-- !private ["PSs12_Reflectable", "titleTextAttributes"]
-- !private ["PSs12_Reflectable", "width"]
-- !private ["PSs18_SignedIntegerType", "Distance"]
-- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs11_Strideable", "Distance"]
-- !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "count"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "blackColor"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Key"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "appearance"]
+- !private ["Ps12_Reflectable", "clipsToBounds"]
+- !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "frame"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "layer"]
+- !private ["Ps12_Reflectable", "lineBreakMode"]
+- !private ["Ps12_Reflectable", "numberOfLines"]
+- !private ["Ps12_Reflectable", "selectedSegmentIndex"]
+- !private ["Ps12_Reflectable", "size"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "titleTextAttributes"]
+- !private ["Ps12_Reflectable", "width"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "Sa"
-- !private "PSs23ArrayLiteralConvertible"
-- !private "VSs10ArraySlice"
-- !private "PSs22BidirectionalIndexType"
-- !private "PSs21BitwiseOperationsType"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - !private "CSo7CALayer"
 - !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
 - !private "VSC6CGSize"
-- "PSs11CVarArgType"
-- !private "VSs9Character"
-- !private "PSs14CollectionType"
-- !private "PSs10Comparable"
-- "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
-- !private "VSs10Dictionary"
-- !private "PSs28DictionaryLiteralConvertible"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
 - !private "Sd"
-- "PSs9Equatable"
-- !private "PSs9ErrorType"
-- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "Ps9Equatable"
+- !private "Ps9ErrorType"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
-- !private "PSs16ForwardIndexType"
-- !private "PSs13GeneratorType"
-- "PSs8Hashable"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
 - !private "SQ"
-- !private "PSs9Indexable"
-- !private "VSs17IndexingGenerator"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
 - !private "Si"
-- !private "VSs5Int16"
-- !private "VSs5Int32"
-- !private "VSs5Int64"
-- !private "VSs4Int8"
-- !private "PSs21IntegerArithmeticType"
-- !private "PSs25IntegerLiteralConvertible"
-- !private "PSs11IntegerType"
-- !private "PSs14MirrorPathType"
-- !private "PSs21MutableCollectionType"
-- !private "PSs16MutableIndexable"
-- !private "PSs16MutableSliceable"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo7NSError"
@@ -1303,25 +1393,27 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - !private "CSo7NSValue"
-- "PSs21NilLiteralConvertible"
+- "Ps21NilLiteralConvertible"
 - "Sq"
-- !private "PSs16OutputStreamType"
+- !private "Ps16OutputStreamType"
 - !private "CSo8PFObject"
 - !private "CSo7PFQuery"
+- !private "PSo13PFSubclassing"
+- !private "CSo6PFUser"
 - "C10startupnyu21ProfileViewController"
-- !private "PSs21RandomAccessIndexType"
-- !private "VSs5Range"
-- !private "PSs30RangeReplaceableCollectionType"
-- !private "PSs16RawRepresentable"
+- !private "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
 - !private "V10ObjectiveC8Selector"
-- !private "PSs12SequenceType"
-- !private "PSs17SignedIntegerType"
-- !private "PSs16SignedNumberType"
-- !private "PSs10Streamable"
-- !private "PSs10Strideable"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
 - !private "SS"
-- !private "PSs30StringInterpolationConvertible"
-- !private "PSs24StringLiteralConvertible"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1353,32 +1445,30 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "Su"
-- !private "VSs6UInt16"
-- !private "VSs6UInt32"
-- !private "VSs6UInt64"
-- !private "VSs5UInt8"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
 - !private "Sc"
-- !private "PSs31UnicodeScalarLiteralConvertible"
-- !private "PSs10_ArrayType"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- !private "PSs33_BuiltinIntegerLiteralConvertible"
-- !private "PSs32_BuiltinStringLiteralConvertible"
-- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
-- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
-- !private "PSs16_CocoaStringType"
-- !private "PSs24_ColorLiteralConvertible"
-- !private "PSs24_DestructorSafeContainer"
-- !private "PSs24_ImageLiteralConvertible"
-- !private "PSs14_Incrementable"
-- !private "PSs22_IntegerArithmeticType"
-- !private "PSs12_IntegerType"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
-- !private "PSs22_RandomAccessAmbiguity"
-- "PSs12_Reflectable"
-- !private "PSs18_SignedIntegerType"
-- !private "PSs11_Strideable"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
@@ -1441,7 +1531,7 @@ depends-external:
 - "./Parse.framework/Headers/PFObject.h"
 - "./Parse.framework/Headers/PFUser.h"
 - "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
 - "./Parse.framework/Headers/PFAnalytics.h"
 - "./Parse.framework/Headers/PFACL.h"
 - "./Parse.framework/Headers/PFConstants.h"

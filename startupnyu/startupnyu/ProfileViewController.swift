@@ -13,18 +13,15 @@ class ProfileViewController: UITableViewController{
     
     @IBOutlet weak var settingsButton: UIBarButtonItem!
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var segmentView: UISegmentedControl!
     @IBOutlet weak var userInformationLabel: UILabel!
     @IBOutlet weak var fullnameLabel: UILabel!
     @IBOutlet weak var onelineDescriptionLabel: UILabel!
  
-    
     var bio = ""
     var links = ""
     var skills = ""
     var fullName = ""
     var oneLineDescription = ""
-    
     
     override func viewDidLoad() {
         
@@ -63,7 +60,16 @@ class ProfileViewController: UITableViewController{
                         
                         self.userInformationLabel.text = object["bio"] as? String
                         
-                       // self.profileImageView.image = UIImage(data: object["ProfilePicture"])
+                        self.userInformationLabel.lineBreakMode = .ByWordWrapping
+                        self.userInformationLabel.numberOfLines = 0
+                        
+                        if let userPicture = PFUser.currentUser()?["dp"] as? PFFile {
+                            userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
+                                if (error == nil) {
+                                    self.profileImageView.image = UIImage(data:imageData!)
+                                }
+                            }
+                        }
                     }
                 }
             } else {
@@ -73,7 +79,7 @@ class ProfileViewController: UITableViewController{
         }
     }
     
-    
+    /*
     @IBAction func segmentTapped(sender: UISegmentedControl) {
         
         switch segmentView.selectedSegmentIndex
@@ -148,6 +154,7 @@ class ProfileViewController: UITableViewController{
             break; 
         }
     }
+ */
     
     func btnClicked(){
         let storyboard = UIStoryboard(name: "ProfileViewStoryboard", bundle: nil)
@@ -155,11 +162,7 @@ class ProfileViewController: UITableViewController{
         self.presentViewController(vc, animated: true, completion: nil)
     }
     
-    
     @IBAction func unwindToProfileView(segue: UIStoryboardSegue) {
         // some code to execute
     } // unwindToPrevious
-    
-    
-
 }

@@ -78,7 +78,7 @@ depends-external:
 - "./Parse.framework/Headers/PFObject.h"
 - "./Parse.framework/Headers/PFUser.h"
 - "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/Github/startupnyu-ios/startupnyu/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
 - "./Parse.framework/Headers/PFAnalytics.h"
 - "./Parse.framework/Headers/PFACL.h"
 - "./Parse.framework/Headers/PFConstants.h"

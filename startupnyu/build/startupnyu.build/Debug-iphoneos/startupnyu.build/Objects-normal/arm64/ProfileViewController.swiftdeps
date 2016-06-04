@@ -6,53 +6,55 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "unwindToProfileView"
-- "btnClicked"
-- "profileImageView"
-- "fullnameLabel"
 - "links"
 - "oneLineDescription"
 - "bio"
+- "btnClicked"
 - "userInformationLabel"
-- "viewDidLoad"
-- "segmentTapped"
 - "fullName"
-- "onelineDescriptionLabel"
 - "settingsButton"
-- "segmentView"
+- "onelineDescriptionLabel"
+- "viewDidLoad"
 - "skills"
+- "segmentView"
+- "unwindToProfileView"
+- "profileImageView"
+- "segmentTapped"
+- "fullnameLabel"
 depends-top-level:
-- "UIBarButtonItem"
-- !private "Dictionary"
-- !private "UIFont"
-- "ProfileViewController"
-- !private "String"
-- !private "print"
-- !private "+"
-- !private "SettingsNavigationController"
-- !private "UIStoryboard"
-- !private "PFObject"
-- !private "UINavigationBar"
-- !private "/"
-- !private "NSError"
-- !private "BooleanLiteralType"
-- !private "UIBarButtonItemStyle"
-- !private "NSFontAttributeName"
-- "UISegmentedControl"
-- !private "UINavigationItem"
-- !private "UIImage"
-- !private "=="
-- !private "Void"
-- !private "~="
-- !private "PFUser"
-- "UIImageView"
-- "StringLiteralType"
-- "UIStoryboardSegue"
 - !private "UIColor"
-- !private "PFQuery"
-- "UILabel"
+- "UIStoryboardSegue"
+- !private "Void"
+- !private "PFUser"
+- !private "/"
+- !private "+"
+- !private "NSData"
+- !private "SettingsNavigationController"
+- !private "PFFile"
+- "UISegmentedControl"
+- !private "BooleanLiteralType"
 - "UnicodeScalarType"
+- !private "PFObject"
+- !private "NSError"
 - "UITableViewController"
+- "UILabel"
+- !private "NSFontAttributeName"
+- !private "UINavigationBar"
+- !private "=="
+- "UIImageView"
+- !private "String"
+- !private "~="
+- !private "Dictionary"
+- "StringLiteralType"
+- !private "print"
+- "UIBarButtonItem"
+- !private "UIImage"
+- !private "PFQuery"
+- "ProfileViewController"
+- !private "UIStoryboard"
+- !private "UIBarButtonItemStyle"
+- !private "UIFont"
+- !private "UINavigationItem"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -78,6 +80,8 @@ depends-member:
 - !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "fullName"]
 - ["Ps9AnyObject", "fullnameLabel"]
+- !private ["Ps9AnyObject", "getDataInBackgroundWithBlock"]
+- !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps9AnyObject", "layer"]
@@ -157,6 +161,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "frame"]
 - ["Ps11CVarArgType", "fullName"]
 - ["Ps11CVarArgType", "fullnameLabel"]
+- !private ["Ps11CVarArgType", "getDataInBackgroundWithBlock"]
+- !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps11CVarArgType", "layer"]
@@ -228,6 +234,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - ["Ps28CustomDebugStringConvertible", "fullName"]
 - ["Ps28CustomDebugStringConvertible", "fullnameLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "getDataInBackgroundWithBlock"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
@@ -290,6 +298,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "frame"]
 - ["Ps23CustomStringConvertible", "fullName"]
 - ["Ps23CustomStringConvertible", "fullnameLabel"]
+- !private ["Ps23CustomStringConvertible", "getDataInBackgroundWithBlock"]
+- !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps23CustomStringConvertible", "layer"]
@@ -352,6 +362,8 @@ depends-member:
 - !private ["Ps9Equatable", "frame"]
 - ["Ps9Equatable", "fullName"]
 - ["Ps9Equatable", "fullnameLabel"]
+- !private ["Ps9Equatable", "getDataInBackgroundWithBlock"]
+- !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps9Equatable", "layer"]
@@ -417,6 +429,8 @@ depends-member:
 - !private ["Ps8Hashable", "frame"]
 - ["Ps8Hashable", "fullName"]
 - ["Ps8Hashable", "fullnameLabel"]
+- !private ["Ps8Hashable", "getDataInBackgroundWithBlock"]
+- !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps8Hashable", "layer"]
@@ -506,6 +520,7 @@ depends-member:
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "fullName"]
 - ["PSo8NSCoding", "fullnameLabel"]
+- !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "lineBreakMode"]
@@ -573,8 +588,10 @@ depends-member:
 - !private ["OSC15NSLineBreakMode", "ByWordWrapping"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSNumber", "deinit"]
+- !private ["CSo8NSObject", "NSData"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSFontAttributeName"]
+- !private ["CSo8NSObject", "PFFile"]
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
@@ -606,6 +623,8 @@ depends-member:
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "fullName"]
 - ["CSo8NSObject", "fullnameLabel"]
+- !private ["CSo8NSObject", "getDataInBackgroundWithBlock"]
+- !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
 - !private ["CSo8NSObject", "layer"]
@@ -657,6 +676,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "fullName"]
 - ["PSo16NSObjectProtocol", "fullnameLabel"]
+- !private ["PSo16NSObjectProtocol", "getDataInBackgroundWithBlock"]
+- !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "layer"]
@@ -696,6 +717,7 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
+- !private ["CSo6PFFile", "getDataInBackgroundWithBlock"]
 - !private ["CSo8PFObject", "currentUser"]
 - !private ["CSo8PFObject", "email"]
 - !private ["CSo8PFObject", "subscript"]
@@ -704,10 +726,14 @@ depends-member:
 - !private ["CSo7PFQuery", "whereKey"]
 - !private ["PSo13PFSubclassing", "currentUser"]
 - !private ["PSo13PFSubclassing", "email"]
+- !private ["PSo13PFSubclassing", "subscript"]
 - !private ["CSo6PFUser", "currentUser"]
 - !private ["CSo6PFUser", "email"]
+- !private ["CSo6PFUser", "subscript"]
+- !private ["C10startupnyu21ProfileViewController", "NSData"]
 - !private ["C10startupnyu21ProfileViewController", "NSError"]
 - !private ["C10startupnyu21ProfileViewController", "NSFontAttributeName"]
+- !private ["C10startupnyu21ProfileViewController", "PFFile"]
 - !private ["C10startupnyu21ProfileViewController", "PFObject"]
 - !private ["C10startupnyu21ProfileViewController", "PFQuery"]
 - !private ["C10startupnyu21ProfileViewController", "PFUser"]
@@ -780,6 +806,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "appearance"]
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "lineBreakMode"]
@@ -791,6 +818,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "appearance"]
 - !private ["PSo12UIAppearance", "clipsToBounds"]
 - !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "lineBreakMode"]
@@ -817,6 +845,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "fullName"]
 - ["PSo21UIAppearanceContainer", "fullnameLabel"]
+- !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - !private ["PSo21UIAppearanceContainer", "lineBreakMode"]
@@ -884,6 +913,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "appearance"]
 - !private ["PSo17UICoordinateSpace", "clipsToBounds"]
 - !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "lineBreakMode"]
 - !private ["PSo17UICoordinateSpace", "numberOfLines"]
@@ -893,6 +923,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "appearance"]
 - !private ["PSo13UIDynamicItem", "clipsToBounds"]
 - !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "lineBreakMode"]
 - !private ["PSo13UIDynamicItem", "numberOfLines"]
@@ -917,6 +948,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "fullName"]
 - ["PSo18UIFocusEnvironment", "fullnameLabel"]
+- !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - !private ["PSo18UIFocusEnvironment", "lineBreakMode"]
@@ -944,6 +976,7 @@ depends-member:
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "clipsToBounds"]
 - !private ["CSo11UIImageView", "frame"]
+- !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "layer"]
 - !private ["CSo7UILabel", "lineBreakMode"]
 - !private ["CSo7UILabel", "numberOfLines"]
@@ -952,8 +985,10 @@ depends-member:
 - !private ["CSo15UINavigationBar", "titleTextAttributes"]
 - !private ["CSo16UINavigationItem", "init"]
 - !private ["CSo16UINavigationItem", "rightBarButtonItem"]
+- !private ["CSo11UIResponder", "NSData"]
 - !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
+- !private ["CSo11UIResponder", "PFFile"]
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
@@ -979,6 +1014,7 @@ depends-member:
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "fullName"]
 - ["CSo11UIResponder", "fullnameLabel"]
+- !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "lineBreakMode"]
@@ -1068,8 +1104,10 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo12UIStoryboard", "init"]
 - !private ["CSo12UIStoryboard", "instantiateViewControllerWithIdentifier"]
+- !private ["CSo21UITableViewController", "NSData"]
 - !private ["CSo21UITableViewController", "NSError"]
 - !private ["CSo21UITableViewController", "NSFontAttributeName"]
+- !private ["CSo21UITableViewController", "PFFile"]
 - !private ["CSo21UITableViewController", "PFObject"]
 - !private ["CSo21UITableViewController", "PFQuery"]
 - !private ["CSo21UITableViewController", "PFUser"]
@@ -1191,6 +1229,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "fullName"]
 - ["PSo18UITraitEnvironment", "fullnameLabel"]
+- !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - !private ["PSo18UITraitEnvironment", "lineBreakMode"]
@@ -1217,14 +1256,17 @@ depends-member:
 - !private ["CSo6UIView", "appearance"]
 - !private ["CSo6UIView", "clipsToBounds"]
 - !private ["CSo6UIView", "frame"]
+- !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "lineBreakMode"]
 - !private ["CSo6UIView", "numberOfLines"]
 - !private ["CSo6UIView", "selectedSegmentIndex"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "titleTextAttributes"]
+- !private ["CSo16UIViewController", "NSData"]
 - !private ["CSo16UIViewController", "NSError"]
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
+- !private ["CSo16UIViewController", "PFFile"]
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
@@ -1324,6 +1366,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "clipsToBounds"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "frame"]
+- !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "lineBreakMode"]
@@ -1396,6 +1439,7 @@ depends-nominal:
 - "Ps21NilLiteralConvertible"
 - "Sq"
 - !private "Ps16OutputStreamType"
+- !private "CSo6PFFile"
 - !private "CSo8PFObject"
 - !private "CSo7PFQuery"
 - !private "PSo13PFSubclassing"

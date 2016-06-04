@@ -7,8 +7,8 @@ provides-member:
 - ["V10startupnyu11messageList", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - "messageList"
+- "String"
 depends-member:
 - ["V10startupnyu11messageList", "String"]
 - ["V10startupnyu11messageList", "image"]

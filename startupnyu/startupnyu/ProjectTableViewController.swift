@@ -14,7 +14,7 @@ import MessageUI
 
 class ProjectTableViewController: UITableViewController, MFMailComposeViewControllerDelegate{
     
-    var projectName : String = "name"
+    var projectName : String = ""
     var projectActivity : String = ""
     var projectAbout : String = ""
     var projectRequirements : String = ""
@@ -30,8 +30,6 @@ class ProjectTableViewController: UITableViewController, MFMailComposeViewContro
         projectDescriptionLabel.lineBreakMode = .ByWordWrapping
         projectDescriptionLabel.numberOfLines = 0
         
-        // LOAD INFORMATION FROM DB
-    
         // ASSIGN INFORMATION TO UI
         self.title = projectName
 
@@ -40,7 +38,7 @@ class ProjectTableViewController: UITableViewController, MFMailComposeViewContro
         rightSwipe.direction = .Right
         view.addGestureRecognizer(rightSwipe)
         
-        var query = PFQuery(className:"Project")
+        let query = PFQuery(className:"Project")
         query.whereKey("Name", equalTo:title!)
         query.findObjectsInBackgroundWithBlock {
             (objects: [PFObject]?, error: NSError?) -> Void in
@@ -51,13 +49,21 @@ class ProjectTableViewController: UITableViewController, MFMailComposeViewContro
                 // Do something with the found objects
                 if let objects = objects {
                     for object in objects {
+                        
                         // Load information Here
                         
-                        self.projectDescriptionLabel.text = object["About"] as! String
+                        self.projectDescriptionLabel.text = object["About"] as? String
                         self.projectAbout = object["About"] as! String
-                        self.projectRequirements = object["Requirements"] as! String
                         self.projectActivity = object["Activity"] as! String
                         
+                        if let userPicture = object["Image"] as? PFFile {
+                            userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
+                                if (error == nil) {
+                                    self.projectImage.image = UIImage(data:imageData!)!
+                                }
+                            }
+                        }
+                    
                     }
                 }
             } else {
@@ -71,40 +77,32 @@ class ProjectTableViewController: UITableViewController, MFMailComposeViewContro
     @IBAction func shareThroughEmailTapped(sender: AnyObject) {
         
         // TODO: Create an email with the necessary project information
-        var email = MFMailComposeViewController()
+        let email = MFMailComposeViewController()
+        presentViewController(email, animated: true, completion: nil)
         email.mailComposeDelegate = self
         email.setSubject("Interesting Project to work on!")
         email.setMessageBody("Some example text", isHTML: false) // or true, if you prefer
-        presentViewController(email, animated: true, completion: nil)
-        
     }
-    
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-
     @IBAction func segmentControlTapped(sender: UISegmentedControl) {
         // TODO: Load descriptions from the db
-        switch segmentControl.selectedSegmentIndex
-        {
+        switch segmentControl.selectedSegmentIndex {
         case 0:
             projectDescriptionLabel.text = self.projectAbout
         case 1:
             projectDescriptionLabel.text = self.projectActivity
-        case 2:
-            projectDescriptionLabel.text = self.projectRequirements
         default:
             break;
         }
-        
     }
     
     func handleSwipes(sender:UISwipeGestureRecognizer) {
-        
         if (sender.direction == .Right) {
             navigationController?.popToRootViewControllerAnimated(true)
         }
     }
-
 }
