@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/Target\ Support\ Files/AWSLambda/AWSLambda-dummy.m \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/Target\ Support\ Files/AWSLambda/AWSLambda-prefix.pch
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target\ Support\ Files/AWSLambda/AWSLambda-dummy.m \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target\ Support\ Files/AWSLambda/AWSLambda-prefix.pch

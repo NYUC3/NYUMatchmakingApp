@@ -205,6 +205,8 @@ SWIFT_CLASS("_TtC10startupnyu25EditProjectViewController")
 
 SWIFT_CLASS("_TtC10startupnyu9ExploreVC")
 @interface ExploreVC : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull menu_items;
+@property (nonatomic, copy) NSString * _Nullable menuItemSelected;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -321,6 +323,7 @@ SWIFT_CLASS("_TtC10startupnyu21ProfileViewController")
 @property (nonatomic, copy) NSString * _Nonnull skills;
 @property (nonatomic, copy) NSString * _Nonnull fullName;
 @property (nonatomic, copy) NSString * _Nonnull oneLineDescription;
+@property (nonatomic, copy) NSString * _Nullable studentName;
 - (void)viewDidLoad;
 - (void)btnClicked;
 - (IBAction)unwindToProfileView:(UIStoryboardSegue * _Nonnull)segue;
@@ -370,6 +373,7 @@ SWIFT_CLASS("_TtC10startupnyu26ProjectsListViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)LogoutTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -402,6 +406,16 @@ SWIFT_CLASS("_TtC10startupnyu8SignupVC")
 - (void)viewDidAppear:(BOOL)animated;
 - (IBAction)DoneButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10startupnyu20StudentCellTableView")
+@interface StudentCellTableView : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified studentImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified studentName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified studentOneLineBio;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

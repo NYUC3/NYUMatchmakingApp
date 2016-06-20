@@ -6,51 +6,52 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "onelineDescriptionLabel"
-- "fullName"
-- "fullnameLabel"
-- "bio"
-- "unwindToProfileView"
-- "settingsButton"
-- "oneLineDescription"
-- "btnClicked"
 - "profileImageView"
-- "links"
-- "userInformationLabel"
-- "viewDidLoad"
 - "skills"
+- "links"
+- "settingsButton"
+- "fullnameLabel"
+- "btnClicked"
+- "studentName"
+- "userInformationLabel"
+- "bio"
+- "oneLineDescription"
+- "unwindToProfileView"
+- "viewDidLoad"
+- "fullName"
+- "onelineDescriptionLabel"
 depends-top-level:
-- !private "Void"
+- !private "print"
+- !private "PFFile"
 - !private "NSData"
 - !private "UIColor"
+- "String"
 - "UIStoryboardSegue"
-- "UIBarButtonItem"
-- !private "String"
+- !private "PFQuery"
 - "UnicodeScalarType"
-- !private "NSFontAttributeName"
-- !private "UIBarButtonItemStyle"
 - "StringLiteralType"
 - !private "=="
+- "UILabel"
+- !private "PFObject"
+- !private "NSError"
+- !private "/"
+- !private "UINavigationBar"
 - !private "+"
 - !private "PFUser"
-- !private "UIImage"
-- !private "UINavigationBar"
-- !private "PFObject"
-- "UIImageView"
-- !private "Dictionary"
-- !private "PFQuery"
-- "UITableViewController"
-- "UILabel"
-- !private "UINavigationItem"
-- !private "PFFile"
-- !private "UIStoryboard"
-- !private "UIFont"
 - !private "SettingsNavigationController"
-- !private "/"
-- "ProfileViewController"
-- !private "NSError"
+- "UITableViewController"
+- !private "NSFontAttributeName"
+- !private "UINavigationItem"
+- "UIBarButtonItem"
+- !private "Dictionary"
+- "UIImageView"
+- !private "UIFont"
+- !private "UIImage"
+- !private "Void"
 - !private "BooleanLiteralType"
-- !private "print"
+- !private "UIBarButtonItemStyle"
+- "ProfileViewController"
+- !private "UIStoryboard"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -92,6 +93,7 @@ depends-member:
 - !private ["Ps9AnyObject", "rightBarButtonItem"]
 - ["Ps9AnyObject", "settingsButton"]
 - ["Ps9AnyObject", "skills"]
+- ["Ps9AnyObject", "studentName"]
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "tintColor"]
@@ -169,6 +171,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "rightBarButtonItem"]
 - ["Ps11CVarArgType", "settingsButton"]
 - ["Ps11CVarArgType", "skills"]
+- ["Ps11CVarArgType", "studentName"]
 - !private ["Ps11CVarArgType", "subscript"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "tintColor"]
@@ -238,6 +241,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "rightBarButtonItem"]
 - ["Ps28CustomDebugStringConvertible", "settingsButton"]
 - ["Ps28CustomDebugStringConvertible", "skills"]
+- ["Ps28CustomDebugStringConvertible", "studentName"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
@@ -298,6 +302,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "rightBarButtonItem"]
 - ["Ps23CustomStringConvertible", "settingsButton"]
 - ["Ps23CustomStringConvertible", "skills"]
+- ["Ps23CustomStringConvertible", "studentName"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "tintColor"]
@@ -359,6 +364,7 @@ depends-member:
 - ["Ps9Equatable", "settingsButton"]
 - !private ["Ps9Equatable", "size"]
 - ["Ps9Equatable", "skills"]
+- ["Ps9Equatable", "studentName"]
 - !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "tintColor"]
@@ -421,6 +427,7 @@ depends-member:
 - !private ["Ps8Hashable", "rightBarButtonItem"]
 - ["Ps8Hashable", "settingsButton"]
 - ["Ps8Hashable", "skills"]
+- ["Ps8Hashable", "studentName"]
 - !private ["Ps8Hashable", "subscript"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "tintColor"]
@@ -507,6 +514,7 @@ depends-member:
 - !private ["PSo8NSCoding", "rightBarButtonItem"]
 - ["PSo8NSCoding", "settingsButton"]
 - ["PSo8NSCoding", "skills"]
+- ["PSo8NSCoding", "studentName"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "tintColor"]
 - !private ["PSo8NSCoding", "title"]
@@ -547,6 +555,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "profileImageView"]
 - ["PSo26NSExtensionRequestHandling", "settingsButton"]
 - ["PSo26NSExtensionRequestHandling", "skills"]
+- ["PSo26NSExtensionRequestHandling", "studentName"]
 - !private ["PSo26NSExtensionRequestHandling", "title"]
 - ["PSo26NSExtensionRequestHandling", "unwindToProfileView"]
 - ["PSo26NSExtensionRequestHandling", "userInformationLabel"]
@@ -562,7 +571,7 @@ depends-member:
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
 - !private ["CSo8NSObject", "SettingsNavigationController"]
-- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIBarButtonItemStyle"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -603,6 +612,7 @@ depends-member:
 - !private ["CSo8NSObject", "rightBarButtonItem"]
 - ["CSo8NSObject", "settingsButton"]
 - ["CSo8NSObject", "skills"]
+- ["CSo8NSObject", "studentName"]
 - !private ["CSo8NSObject", "subscript"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "tintColor"]
@@ -652,6 +662,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "rightBarButtonItem"]
 - ["PSo16NSObjectProtocol", "settingsButton"]
 - ["PSo16NSObjectProtocol", "skills"]
+- ["PSo16NSObjectProtocol", "studentName"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
@@ -690,7 +701,7 @@ depends-member:
 - !private ["C10startupnyu21ProfileViewController", "PFQuery"]
 - !private ["C10startupnyu21ProfileViewController", "PFUser"]
 - !private ["C10startupnyu21ProfileViewController", "SettingsNavigationController"]
-- !private ["C10startupnyu21ProfileViewController", "String"]
+- ["C10startupnyu21ProfileViewController", "String"]
 - ["C10startupnyu21ProfileViewController", "UIBarButtonItem"]
 - !private ["C10startupnyu21ProfileViewController", "UIBarButtonItemStyle"]
 - !private ["C10startupnyu21ProfileViewController", "UIColor"]
@@ -718,6 +729,7 @@ depends-member:
 - ["C10startupnyu21ProfileViewController", "profileImageView"]
 - ["C10startupnyu21ProfileViewController", "settingsButton"]
 - ["C10startupnyu21ProfileViewController", "skills"]
+- ["C10startupnyu21ProfileViewController", "studentName"]
 - !private ["C10startupnyu21ProfileViewController", "title"]
 - ["C10startupnyu21ProfileViewController", "unwindToProfileView"]
 - ["C10startupnyu21ProfileViewController", "userInformationLabel"]
@@ -805,6 +817,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "profileImageView"]
 - ["PSo21UIAppearanceContainer", "settingsButton"]
 - ["PSo21UIAppearanceContainer", "skills"]
+- ["PSo21UIAppearanceContainer", "studentName"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "title"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
@@ -845,6 +858,7 @@ depends-member:
 - ["PSo18UIContentContainer", "profileImageView"]
 - ["PSo18UIContentContainer", "settingsButton"]
 - ["PSo18UIContentContainer", "skills"]
+- ["PSo18UIContentContainer", "studentName"]
 - !private ["PSo18UIContentContainer", "title"]
 - ["PSo18UIContentContainer", "unwindToProfileView"]
 - ["PSo18UIContentContainer", "userInformationLabel"]
@@ -900,6 +914,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "profileImageView"]
 - ["PSo18UIFocusEnvironment", "settingsButton"]
 - ["PSo18UIFocusEnvironment", "skills"]
+- ["PSo18UIFocusEnvironment", "studentName"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "title"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
@@ -928,7 +943,7 @@ depends-member:
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
 - !private ["CSo11UIResponder", "SettingsNavigationController"]
-- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIBarButtonItemStyle"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -962,6 +977,7 @@ depends-member:
 - ["CSo11UIResponder", "profileImageView"]
 - ["CSo11UIResponder", "settingsButton"]
 - ["CSo11UIResponder", "skills"]
+- ["CSo11UIResponder", "studentName"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "title"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
@@ -993,6 +1009,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "profileImageView"]
 - ["PSo20UIScrollViewDelegate", "settingsButton"]
 - ["PSo20UIScrollViewDelegate", "skills"]
+- ["PSo20UIScrollViewDelegate", "studentName"]
 - !private ["PSo20UIScrollViewDelegate", "title"]
 - ["PSo20UIScrollViewDelegate", "unwindToProfileView"]
 - ["PSo20UIScrollViewDelegate", "userInformationLabel"]
@@ -1023,6 +1040,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "profileImageView"]
 - ["PSo16UIStateRestoring", "settingsButton"]
 - ["PSo16UIStateRestoring", "skills"]
+- ["PSo16UIStateRestoring", "studentName"]
 - !private ["PSo16UIStateRestoring", "title"]
 - ["PSo16UIStateRestoring", "unwindToProfileView"]
 - ["PSo16UIStateRestoring", "userInformationLabel"]
@@ -1038,7 +1056,7 @@ depends-member:
 - !private ["CSo21UITableViewController", "PFQuery"]
 - !private ["CSo21UITableViewController", "PFUser"]
 - !private ["CSo21UITableViewController", "SettingsNavigationController"]
-- !private ["CSo21UITableViewController", "String"]
+- ["CSo21UITableViewController", "String"]
 - ["CSo21UITableViewController", "UIBarButtonItem"]
 - !private ["CSo21UITableViewController", "UIBarButtonItemStyle"]
 - !private ["CSo21UITableViewController", "UIColor"]
@@ -1065,6 +1083,7 @@ depends-member:
 - ["CSo21UITableViewController", "profileImageView"]
 - ["CSo21UITableViewController", "settingsButton"]
 - ["CSo21UITableViewController", "skills"]
+- ["CSo21UITableViewController", "studentName"]
 - !private ["CSo21UITableViewController", "title"]
 - ["CSo21UITableViewController", "unwindToProfileView"]
 - ["CSo21UITableViewController", "userInformationLabel"]
@@ -1095,6 +1114,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "profileImageView"]
 - ["PSo21UITableViewDataSource", "settingsButton"]
 - ["PSo21UITableViewDataSource", "skills"]
+- ["PSo21UITableViewDataSource", "studentName"]
 - !private ["PSo21UITableViewDataSource", "title"]
 - ["PSo21UITableViewDataSource", "unwindToProfileView"]
 - ["PSo21UITableViewDataSource", "userInformationLabel"]
@@ -1125,6 +1145,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "profileImageView"]
 - ["PSo19UITableViewDelegate", "settingsButton"]
 - ["PSo19UITableViewDelegate", "skills"]
+- ["PSo19UITableViewDelegate", "studentName"]
 - !private ["PSo19UITableViewDelegate", "title"]
 - ["PSo19UITableViewDelegate", "unwindToProfileView"]
 - ["PSo19UITableViewDelegate", "userInformationLabel"]
@@ -1162,6 +1183,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "profileImageView"]
 - ["PSo18UITraitEnvironment", "settingsButton"]
 - ["PSo18UITraitEnvironment", "skills"]
+- ["PSo18UITraitEnvironment", "studentName"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "title"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
@@ -1186,7 +1208,7 @@ depends-member:
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
 - !private ["CSo16UIViewController", "SettingsNavigationController"]
-- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIBarButtonItemStyle"]
 - !private ["CSo16UIViewController", "UIColor"]
@@ -1214,6 +1236,7 @@ depends-member:
 - ["CSo16UIViewController", "profileImageView"]
 - ["CSo16UIViewController", "settingsButton"]
 - ["CSo16UIViewController", "skills"]
+- ["CSo16UIViewController", "studentName"]
 - !private ["CSo16UIViewController", "title"]
 - ["CSo16UIViewController", "unwindToProfileView"]
 - ["CSo16UIViewController", "userInformationLabel"]
@@ -1489,4 +1512,111 @@ depends-external:
 - "./Parse.framework/Headers/Parse.h"
 - "./Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "e6f7f0f8f2ac1e684309e86d30345d09"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCacheBackgroundTaskManager.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSError+AWSMTLModelException.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLReflection.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTS.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSUICKeyChainStore.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMMemoryCache.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMDiskCache.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCache.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSKSReachability.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMResultSet.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabase.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDB.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSGZIP.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTask.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSExecutor.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationToken.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBolts.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSInfo.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSValidation.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestRetryHandler.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSignature.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLSessionManager.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLResponseSerialization.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestSerialization.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSerialization.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSClientContext.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSLogging.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCategory.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMantle.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSNetworking.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSServiceEnum.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Resources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Model.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBObjectMapper.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDB.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDB-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQSResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQS.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQS-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNSResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNS.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNS-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/BTNavigationDropdownMenu.swiftmodule/x86_64.swiftmodule"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/module.modulemap"
+interface-hash: "da5018a93a876b542da4ad7950af89f2"

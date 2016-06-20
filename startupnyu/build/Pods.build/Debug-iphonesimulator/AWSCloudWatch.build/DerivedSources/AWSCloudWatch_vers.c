@@ -1,0 +1,1 @@
+ const unsigned char AWSCloudWatchVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:AWSCloudWatch  PROJECT:Pods-2.4.3" "\n"; const double AWSCloudWatchVersionNumber __attribute__ ((used)) = (double)2.4;

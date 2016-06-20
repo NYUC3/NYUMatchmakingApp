@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/Target\ Support\ Files/AWSS3/AWSS3-dummy.m \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/Target\ Support\ Files/AWSS3/AWSS3-prefix.pch
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target\ Support\ Files/AWSS3/AWSS3-dummy.m \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target\ Support\ Files/AWSS3/AWSS3-prefix.pch

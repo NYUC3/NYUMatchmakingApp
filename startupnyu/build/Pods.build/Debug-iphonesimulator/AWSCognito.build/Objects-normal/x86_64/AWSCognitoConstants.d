@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCognito/Cognito/Internal/AWSCognitoConstants.m \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/Target\ Support\ Files/AWSCognito/AWSCognito-prefix.pch \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCognito/Cognito/Internal/AWSCognitoConstants.h
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSCognito/AWSCognito/Internal/AWSCognitoConstants.m \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target\ Support\ Files/AWSCognito/AWSCognito-prefix.pch \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSCognito/AWSCognito/Internal/AWSCognitoConstants.h

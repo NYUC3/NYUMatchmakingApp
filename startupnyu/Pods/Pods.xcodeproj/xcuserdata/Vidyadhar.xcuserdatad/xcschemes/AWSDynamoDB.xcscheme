@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "96FCD1B7F258331F810C16B0"
-               BuildableName = "libAWSDynamoDB.a"
+               BlueprintIdentifier = "1507D3A4C79B4369C534EFEE"
+               BuildableName = "AWSDynamoDB.framework"
                BlueprintName = "AWSDynamoDB"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

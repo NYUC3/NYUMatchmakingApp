@@ -1,0 +1,1 @@
+ const unsigned char AWSMachineLearningVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:AWSMachineLearning  PROJECT:Pods-2.4.3" "\n"; const double AWSMachineLearningVersionNumber __attribute__ ((used)) = (double)2.4;

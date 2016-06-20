@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C960E7428C7B9798D79FFA7E"
-               BuildableName = "libAWSSES.a"
+               BlueprintIdentifier = "33E9A98569AC6E52FB912616"
+               BuildableName = "AWSSES.framework"
                BlueprintName = "AWSSES"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

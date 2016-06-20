@@ -18,9 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Parse.setApplicationId("6HYMDryHEYDdYFY6p21vaeRBbPHbgl6fbdsN1cid",
-            clientKey: "0BugFUjCpygQHgTWohLA0o8uLYfiV7xlyEW0KTnE")
+        Parse.setApplicationId("6HYMDryHEYDdYFY6p21vaeRBbPHbgl6fbdsN1cid", clientKey: "0BugFUjCpygQHgTWohLA0o8uLYfiV7xlyEW0KTnE")
+        
+   /*
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "APPLICATION_ID"
+            $0.clientKey = "MASTER_KEY"
+            $0.server = "https://e572151f.ngrok.io/parse" // replace this with ngrok or aws link
+        }
+
+        Parse.initializeWithConfiguration(configuration)
+    */
     /*
+         
        var tableVC:ProjectTableViewController = ProjectTableViewController(className: "Project")
         tableVC.title = "Projects"
         
@@ -35,7 +45,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: frame)
         
         window!.rootViewController = navigationVC
-        window!.makeKeyAndVisible()*/
+        window!.makeKeyAndVisible()
+         
+         
+    */
         
         return true
     }

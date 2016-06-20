@@ -17,4 +17,9 @@ class SettingsViewContoller: UITableViewController {
         let vc = storyboard.instantiateViewControllerWithIdentifier("login") as! LoginViewController
         self.presentViewController(vc, animated: true, completion: nil)
     }
+    
+    
+    
+    
+    
 }

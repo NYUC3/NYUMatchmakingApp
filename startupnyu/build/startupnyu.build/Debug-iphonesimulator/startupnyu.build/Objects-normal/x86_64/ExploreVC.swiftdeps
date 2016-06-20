@@ -1,56 +1,69 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "StudentStruct"
 - "ExploreVC"
 provides-nominal:
+- "V10startupnyu13StudentStruct"
 - "C10startupnyu9ExploreVC"
 provides-member:
+- ["V10startupnyu13StudentStruct", ""]
 - ["C10startupnyu9ExploreVC", ""]
 provides-dynamic-lookup:
-- "prepareForSegue"
+- "menuItemSelected"
 - "tableView"
 - "tableView"
 - "tableView"
 - "viewDidLoad"
+- "prepareForSegue"
+- "menu_items"
 depends-top-level:
-- "UITableViewDataSource"
-- "ExploreVC"
-- "UITableView"
-- "UITableViewDelegate"
-- !private "NSError"
+- !private "ProfileViewController"
 - "Array"
-- !private "PFQuery"
-- !private "LoginViewController"
-- !private "NSData"
-- !private "PFObject"
-- !private "String"
-- "ExploreStruct"
-- !private "StringLiteralType"
-- !private "=="
-- !private "print"
-- !private "UIStoryboard"
-- !private "UIImage"
-- !private "ProjectCell"
-- "UITableViewCell"
-- "Int"
-- "AnyObject"
-- "UIStoryboardSegue"
-- !private "Void"
-- "NSIndexPath"
-- !private "ProjectTableViewController"
-- !private "PFUser"
-- !private "PFFile"
 - "UIViewController"
+- !private "NSError"
+- "NSIndexPath"
+- !private "BTNavigationDropdownMenu"
+- !private "LoginViewController"
+- "StudentStruct"
+- "StringLiteralType"
+- !private "ProjectTableViewController"
+- !private "=="
 - "UnicodeScalarType"
+- "ExploreVC"
+- !private "Void"
+- "UIStoryboardSegue"
+- !private "PFUser"
+- !private "ProjectCell"
+- "ExploreStruct"
+- !private "print"
+- !private "StudentCellTableView"
+- !private "UIStoryboard"
+- !private "PFFile"
+- "UITableView"
+- !private "+"
+- "AnyObject"
+- "Int"
+- "String"
+- "UITableViewCell"
+- !private "PFQuery"
+- "UIImage"
+- "UITableViewDelegate"
 - !private "BooleanLiteralType"
+- !private "PFObject"
+- "UITableViewDataSource"
+- !private "NSData"
 depends-member:
+- !private ["Ps9AnyObject", "BTNavigationDropdownMenu"]
 - !private ["Ps9AnyObject", "ExploreStruct"]
 - !private ["Ps9AnyObject", "PFQuery"]
 - !private ["Ps9AnyObject", "PFUser"]
+- !private ["Ps9AnyObject", "StudentStruct"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "currentUser"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9AnyObject", "destinationViewController"]
+- !private ["Ps9AnyObject", "didSelectItemAtIndexHandler"]
 - !private ["Ps9AnyObject", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps9AnyObject", "getDataInBackgroundWithBlock"]
 - !private ["Ps9AnyObject", "image"]
@@ -58,6 +71,10 @@ depends-member:
 - !private ["Ps9AnyObject", "indexPathForSelectedRow"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewControllerWithIdentifier"]
+- ["Ps9AnyObject", "menuItemSelected"]
+- ["Ps9AnyObject", "menu_items"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "navigationItem"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
 - ["Ps9AnyObject", "prepareForSegue"]
 - !private ["Ps9AnyObject", "presentViewController"]
@@ -81,14 +98,20 @@ depends-member:
 - ["Ps9AnyObject", "scrollViewWillBeginZooming"]
 - ["Ps9AnyObject", "scrollViewWillEndDragging"]
 - ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
+- !private ["Ps9AnyObject", "studentImageView"]
+- !private ["Ps9AnyObject", "studentName"]
+- !private ["Ps9AnyObject", "studentOneLineBio"]
+- ["Ps9AnyObject", "students"]
 - !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "title"]
+- !private ["Ps9AnyObject", "titleView"]
 - !private ["Ps9AnyObject", "userInfo"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", ""]
+- ["Sa", "Element"]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
@@ -96,16 +119,21 @@ depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
+- !private ["Sa", "first"]
 - !private ["Sa", "subscript"]
+- ["Ps23ArrayLiteralConvertible", "Element"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - !private ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "append"]
 - !private ["Ps23ArrayLiteralConvertible", "count"]
+- !private ["Ps23ArrayLiteralConvertible", "first"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
 - !private ["Vs10ArraySlice", "Generator"]
 - !private ["Vs10ArraySlice", "Index"]
+- !private ["C24BTNavigationDropdownMenu24BTNavigationDropdownMenu", "didSelectItemAtIndexHandler"]
+- !private ["C24BTNavigationDropdownMenu24BTNavigationDropdownMenu", "init"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
@@ -114,16 +142,19 @@ depends-member:
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "BTNavigationDropdownMenu"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "ExploreStruct"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "PFQuery"]
 - !private ["Ps11CVarArgType", "PFUser"]
+- !private ["Ps11CVarArgType", "StudentStruct"]
 - !private ["Ps11CVarArgType", "UIImage"]
 - !private ["Ps11CVarArgType", "UIStoryboard"]
 - !private ["Ps11CVarArgType", "currentUser"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps11CVarArgType", "destinationViewController"]
+- !private ["Ps11CVarArgType", "didSelectItemAtIndexHandler"]
 - !private ["Ps11CVarArgType", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps11CVarArgType", "getDataInBackgroundWithBlock"]
 - !private ["Ps11CVarArgType", "image"]
@@ -131,6 +162,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "indexPathForSelectedRow"]
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "instantiateViewControllerWithIdentifier"]
+- ["Ps11CVarArgType", "menuItemSelected"]
+- ["Ps11CVarArgType", "menu_items"]
+- !private ["Ps11CVarArgType", "navigationController"]
+- !private ["Ps11CVarArgType", "navigationItem"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
 - ["Ps11CVarArgType", "prepareForSegue"]
 - !private ["Ps11CVarArgType", "presentViewController"]
@@ -154,31 +189,41 @@ depends-member:
 - ["Ps11CVarArgType", "scrollViewWillBeginZooming"]
 - ["Ps11CVarArgType", "scrollViewWillEndDragging"]
 - ["Ps11CVarArgType", "sectionIndexTitlesForTableView"]
+- !private ["Ps11CVarArgType", "studentImageView"]
+- !private ["Ps11CVarArgType", "studentName"]
+- !private ["Ps11CVarArgType", "studentOneLineBio"]
+- ["Ps11CVarArgType", "students"]
 - !private ["Ps11CVarArgType", "subscript"]
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "title"]
+- !private ["Ps11CVarArgType", "titleView"]
 - !private ["Ps11CVarArgType", "userInfo"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
+- ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "SubSequence"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "append"]
 - !private ["Ps14CollectionType", "count"]
+- !private ["Ps14CollectionType", "first"]
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "BTNavigationDropdownMenu"]
+- ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "ExploreStruct"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "PFQuery"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
 - !private ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "StudentStruct"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
@@ -188,13 +233,19 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "currentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "didSelectItemAtIndexHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
 - !private ["Ps28CustomDebugStringConvertible", "getDataInBackgroundWithBlock"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "indexPathForSelectedRow"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewControllerWithIdentifier"]
+- ["Ps28CustomDebugStringConvertible", "menuItemSelected"]
+- ["Ps28CustomDebugStringConvertible", "menu_items"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
@@ -218,21 +269,29 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillBeginZooming"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillEndDragging"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "studentImageView"]
+- !private ["Ps28CustomDebugStringConvertible", "studentName"]
+- !private ["Ps28CustomDebugStringConvertible", "studentOneLineBio"]
+- ["Ps28CustomDebugStringConvertible", "students"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
+- !private ["Ps28CustomDebugStringConvertible", "titleView"]
 - !private ["Ps28CustomDebugStringConvertible", "userInfo"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "BTNavigationDropdownMenu"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
+- ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "ExploreStruct"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "PFQuery"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
+- !private ["Ps23CustomStringConvertible", "StudentStruct"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
@@ -243,13 +302,19 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "currentUser"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps23CustomStringConvertible", "destinationViewController"]
+- !private ["Ps23CustomStringConvertible", "didSelectItemAtIndexHandler"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackgroundWithBlock"]
+- !private ["Ps23CustomStringConvertible", "first"]
 - !private ["Ps23CustomStringConvertible", "getDataInBackgroundWithBlock"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps23CustomStringConvertible", "indexPathForSelectedRow"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
+- ["Ps23CustomStringConvertible", "menuItemSelected"]
+- ["Ps23CustomStringConvertible", "menu_items"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "navigationItem"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
@@ -273,26 +338,34 @@ depends-member:
 - ["Ps23CustomStringConvertible", "scrollViewWillBeginZooming"]
 - ["Ps23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps23CustomStringConvertible", "studentImageView"]
+- !private ["Ps23CustomStringConvertible", "studentName"]
+- !private ["Ps23CustomStringConvertible", "studentOneLineBio"]
+- ["Ps23CustomStringConvertible", "students"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "title"]
+- !private ["Ps23CustomStringConvertible", "titleView"]
 - !private ["Ps23CustomStringConvertible", "userInfo"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "BTNavigationDropdownMenu"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "ExploreStruct"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "PFQuery"]
 - !private ["Ps9Equatable", "PFUser"]
+- !private ["Ps9Equatable", "StudentStruct"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "currentUser"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9Equatable", "destinationViewController"]
+- !private ["Ps9Equatable", "didSelectItemAtIndexHandler"]
 - !private ["Ps9Equatable", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps9Equatable", "getDataInBackgroundWithBlock"]
 - !private ["Ps9Equatable", "image"]
@@ -300,6 +373,10 @@ depends-member:
 - !private ["Ps9Equatable", "indexPathForSelectedRow"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewControllerWithIdentifier"]
+- ["Ps9Equatable", "menuItemSelected"]
+- ["Ps9Equatable", "menu_items"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "navigationItem"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - ["Ps9Equatable", "prepareForSegue"]
 - !private ["Ps9Equatable", "presentViewController"]
@@ -323,10 +400,15 @@ depends-member:
 - ["Ps9Equatable", "scrollViewWillBeginZooming"]
 - ["Ps9Equatable", "scrollViewWillEndDragging"]
 - ["Ps9Equatable", "sectionIndexTitlesForTableView"]
+- !private ["Ps9Equatable", "studentImageView"]
+- !private ["Ps9Equatable", "studentName"]
+- !private ["Ps9Equatable", "studentOneLineBio"]
+- ["Ps9Equatable", "students"]
 - !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "titleView"]
 - !private ["Ps9Equatable", "userInfo"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
@@ -339,6 +421,7 @@ depends-member:
 - !private ["V10startupnyu13ExploreStruct", "tags"]
 - ["C10startupnyu9ExploreVC", "AnyObject"]
 - ["C10startupnyu9ExploreVC", "Array"]
+- !private ["C10startupnyu9ExploreVC", "BTNavigationDropdownMenu"]
 - ["C10startupnyu9ExploreVC", "ExploreStruct"]
 - ["C10startupnyu9ExploreVC", "Int"]
 - !private ["C10startupnyu9ExploreVC", "LoginViewController"]
@@ -349,9 +432,12 @@ depends-member:
 - !private ["C10startupnyu9ExploreVC", "PFObject"]
 - !private ["C10startupnyu9ExploreVC", "PFQuery"]
 - !private ["C10startupnyu9ExploreVC", "PFUser"]
+- !private ["C10startupnyu9ExploreVC", "ProfileViewController"]
 - !private ["C10startupnyu9ExploreVC", "ProjectCell"]
 - !private ["C10startupnyu9ExploreVC", "ProjectTableViewController"]
-- !private ["C10startupnyu9ExploreVC", "String"]
+- ["C10startupnyu9ExploreVC", "String"]
+- !private ["C10startupnyu9ExploreVC", "StudentCellTableView"]
+- ["C10startupnyu9ExploreVC", "StudentStruct"]
 - !private ["C10startupnyu9ExploreVC", "UIImage"]
 - !private ["C10startupnyu9ExploreVC", "UIStoryboard"]
 - ["C10startupnyu9ExploreVC", "UIStoryboardSegue"]
@@ -361,6 +447,10 @@ depends-member:
 - ["C10startupnyu9ExploreVC", "deinit"]
 - ["C10startupnyu9ExploreVC", "indexPathForPreferredFocusedViewInTableView"]
 - ["C10startupnyu9ExploreVC", "init"]
+- ["C10startupnyu9ExploreVC", "menuItemSelected"]
+- ["C10startupnyu9ExploreVC", "menu_items"]
+- !private ["C10startupnyu9ExploreVC", "navigationController"]
+- !private ["C10startupnyu9ExploreVC", "navigationItem"]
 - ["C10startupnyu9ExploreVC", "numberOfSectionsInTableView"]
 - ["C10startupnyu9ExploreVC", "prepareForSegue"]
 - !private ["C10startupnyu9ExploreVC", "presentViewController"]
@@ -379,6 +469,7 @@ depends-member:
 - ["C10startupnyu9ExploreVC", "scrollViewWillBeginZooming"]
 - ["C10startupnyu9ExploreVC", "scrollViewWillEndDragging"]
 - ["C10startupnyu9ExploreVC", "sectionIndexTitlesForTableView"]
+- ["C10startupnyu9ExploreVC", "students"]
 - ["C10startupnyu9ExploreVC", "tableView"]
 - !private ["C10startupnyu9ExploreVC", "title"]
 - ["C10startupnyu9ExploreVC", "viewDidLoad"]
@@ -388,17 +479,20 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "BTNavigationDropdownMenu"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "ExploreStruct"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "PFQuery"]
 - !private ["Ps8Hashable", "PFUser"]
+- !private ["Ps8Hashable", "StudentStruct"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "currentUser"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps8Hashable", "destinationViewController"]
+- !private ["Ps8Hashable", "didSelectItemAtIndexHandler"]
 - !private ["Ps8Hashable", "findObjectsInBackgroundWithBlock"]
 - !private ["Ps8Hashable", "getDataInBackgroundWithBlock"]
 - !private ["Ps8Hashable", "image"]
@@ -406,6 +500,10 @@ depends-member:
 - !private ["Ps8Hashable", "indexPathForSelectedRow"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewControllerWithIdentifier"]
+- ["Ps8Hashable", "menuItemSelected"]
+- ["Ps8Hashable", "menu_items"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "navigationItem"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - ["Ps8Hashable", "prepareForSegue"]
 - !private ["Ps8Hashable", "presentViewController"]
@@ -429,21 +527,28 @@ depends-member:
 - ["Ps8Hashable", "scrollViewWillBeginZooming"]
 - ["Ps8Hashable", "scrollViewWillEndDragging"]
 - ["Ps8Hashable", "sectionIndexTitlesForTableView"]
+- !private ["Ps8Hashable", "studentImageView"]
+- !private ["Ps8Hashable", "studentName"]
+- !private ["Ps8Hashable", "studentOneLineBio"]
+- ["Ps8Hashable", "students"]
 - !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "title"]
+- !private ["Ps8Hashable", "titleView"]
 - !private ["Ps8Hashable", "userInfo"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
+- ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
+- !private ["Ps9Indexable", "first"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
@@ -463,37 +568,50 @@ depends-member:
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
+- ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
 - !private ["Ps21MutableCollectionType", "SubSequence"]
 - !private ["Ps21MutableCollectionType", "_Element"]
 - !private ["Ps21MutableCollectionType", "append"]
 - !private ["Ps21MutableCollectionType", "count"]
+- !private ["Ps21MutableCollectionType", "first"]
 - !private ["Ps21MutableCollectionType", "subscript"]
+- ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
 - !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "append"]
 - !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableIndexable", "first"]
 - !private ["Ps16MutableIndexable", "subscript"]
+- ["Ps16MutableSliceable", "Element"]
 - !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
 - !private ["Ps16MutableSliceable", "SubSequence"]
 - !private ["Ps16MutableSliceable", "_Element"]
 - !private ["Ps16MutableSliceable", "append"]
 - !private ["Ps16MutableSliceable", "count"]
+- !private ["Ps16MutableSliceable", "first"]
 - !private ["Ps16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "BTNavigationDropdownMenu"]
 - !private ["PSo8NSCoding", "ExploreStruct"]
 - !private ["PSo8NSCoding", "PFQuery"]
 - !private ["PSo8NSCoding", "PFUser"]
+- !private ["PSo8NSCoding", "StudentStruct"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo8NSCoding", "didSelectItemAtIndexHandler"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo8NSCoding", "indexPathForSelectedRow"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "menuItemSelected"]
+- ["PSo8NSCoding", "menu_items"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "navigationItem"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "prepareForSegue"]
 - !private ["PSo8NSCoding", "presentViewController"]
@@ -517,9 +635,14 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillBeginZooming"]
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
+- !private ["PSo8NSCoding", "studentImageView"]
+- !private ["PSo8NSCoding", "studentName"]
+- !private ["PSo8NSCoding", "studentOneLineBio"]
+- ["PSo8NSCoding", "students"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "titleView"]
 - !private ["PSo8NSCoding", "userInfo"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
@@ -529,13 +652,19 @@ depends-member:
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "userInfo"]
 - !private ["CSo7NSError", "userInfo"]
+- !private ["PSo26NSExtensionRequestHandling", "BTNavigationDropdownMenu"]
 - !private ["PSo26NSExtensionRequestHandling", "ExploreStruct"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
+- !private ["PSo26NSExtensionRequestHandling", "StudentStruct"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "menuItemSelected"]
+- ["PSo26NSExtensionRequestHandling", "menu_items"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
@@ -555,6 +684,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillBeginZooming"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "studentName"]
+- ["PSo26NSExtensionRequestHandling", "students"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - !private ["PSo26NSExtensionRequestHandling", "title"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
@@ -564,6 +695,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Array"]
+- !private ["CSo8NSObject", "BTNavigationDropdownMenu"]
 - ["CSo8NSObject", "ExploreStruct"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "LoginViewController"]
@@ -574,9 +706,12 @@ depends-member:
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
+- !private ["CSo8NSObject", "ProfileViewController"]
 - !private ["CSo8NSObject", "ProjectCell"]
 - !private ["CSo8NSObject", "ProjectTableViewController"]
-- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "StudentCellTableView"]
+- ["CSo8NSObject", "StudentStruct"]
 - !private ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIStoryboard"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
@@ -586,6 +721,7 @@ depends-member:
 - !private ["CSo8NSObject", "currentUser"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo8NSObject", "destinationViewController"]
+- !private ["CSo8NSObject", "didSelectItemAtIndexHandler"]
 - !private ["CSo8NSObject", "findObjectsInBackgroundWithBlock"]
 - !private ["CSo8NSObject", "getDataInBackgroundWithBlock"]
 - !private ["CSo8NSObject", "image"]
@@ -593,6 +729,10 @@ depends-member:
 - !private ["CSo8NSObject", "indexPathForSelectedRow"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
+- ["CSo8NSObject", "menuItemSelected"]
+- ["CSo8NSObject", "menu_items"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "presentViewController"]
@@ -616,21 +756,29 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillBeginZooming"]
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
+- !private ["CSo8NSObject", "studentImageView"]
+- !private ["CSo8NSObject", "studentName"]
+- !private ["CSo8NSObject", "studentOneLineBio"]
+- ["CSo8NSObject", "students"]
 - !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "titleView"]
 - !private ["CSo8NSObject", "userInfo"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
+- !private ["PSo16NSObjectProtocol", "BTNavigationDropdownMenu"]
 - !private ["PSo16NSObjectProtocol", "ExploreStruct"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
+- !private ["PSo16NSObjectProtocol", "StudentStruct"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "currentUser"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "destinationViewController"]
+- !private ["PSo16NSObjectProtocol", "didSelectItemAtIndexHandler"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackgroundWithBlock"]
 - !private ["PSo16NSObjectProtocol", "getDataInBackgroundWithBlock"]
 - !private ["PSo16NSObjectProtocol", "image"]
@@ -638,6 +786,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "indexPathForSelectedRow"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
+- ["PSo16NSObjectProtocol", "menuItemSelected"]
+- ["PSo16NSObjectProtocol", "menu_items"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
@@ -661,10 +813,15 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillBeginZooming"]
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
+- !private ["PSo16NSObjectProtocol", "studentImageView"]
+- !private ["PSo16NSObjectProtocol", "studentName"]
+- !private ["PSo16NSObjectProtocol", "studentOneLineBio"]
+- ["PSo16NSObjectProtocol", "students"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "titleView"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -685,26 +842,30 @@ depends-member:
 - !private ["CSo7PFQuery", "init"]
 - !private ["PSo13PFSubclassing", "currentUser"]
 - !private ["CSo6PFUser", "currentUser"]
+- !private ["C10startupnyu21ProfileViewController", "studentName"]
 - !private ["C10startupnyu11ProjectCell", "projectDesc"]
 - !private ["C10startupnyu11ProjectCell", "projectImage"]
 - !private ["C10startupnyu11ProjectCell", "projectName"]
 - !private ["C10startupnyu26ProjectTableViewController", "projectName"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "append"]
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
+- !private ["Ps30RangeReplaceableCollectionType", "first"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
-- !private ["Ps12SequenceType", "Element"]
+- ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
 - !private ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "append"]
 - !private ["Ps12SequenceType", "count"]
+- !private ["Ps12SequenceType", "first"]
 - !private ["Ps12SequenceType", "subscript"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
@@ -720,7 +881,18 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["C10startupnyu20StudentCellTableView", "studentImageView"]
+- !private ["C10startupnyu20StudentCellTableView", "studentName"]
+- !private ["C10startupnyu20StudentCellTableView", "studentOneLineBio"]
+- ["V10startupnyu13StudentStruct", "String"]
+- ["V10startupnyu13StudentStruct", "UIImage"]
+- ["V10startupnyu13StudentStruct", "deinit"]
+- ["V10startupnyu13StudentStruct", "image"]
+- ["V10startupnyu13StudentStruct", "init"]
+- ["V10startupnyu13StudentStruct", "name"]
+- ["V10startupnyu13StudentStruct", "oneLineBio"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "didSelectItemAtIndexHandler"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForSelectedRow"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
@@ -728,25 +900,40 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "projectImage"]
 - !private ["PSo29UIAccessibilityIdentification", "projectName"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "studentImageView"]
+- !private ["PSo29UIAccessibilityIdentification", "studentName"]
+- !private ["PSo29UIAccessibilityIdentification", "studentOneLineBio"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "didSelectItemAtIndexHandler"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "indexPathForSelectedRow"]
+- !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "projectDesc"]
 - !private ["PSo12UIAppearance", "projectImage"]
 - !private ["PSo12UIAppearance", "projectName"]
 - !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "studentImageView"]
+- !private ["PSo12UIAppearance", "studentName"]
+- !private ["PSo12UIAppearance", "studentOneLineBio"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "BTNavigationDropdownMenu"]
 - !private ["PSo21UIAppearanceContainer", "ExploreStruct"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
+- !private ["PSo21UIAppearanceContainer", "StudentStruct"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "didSelectItemAtIndexHandler"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForSelectedRow"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "menuItemSelected"]
+- ["PSo21UIAppearanceContainer", "menu_items"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "prepareForSegue"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
@@ -769,19 +956,29 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillBeginZooming"]
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UIAppearanceContainer", "studentImageView"]
+- !private ["PSo21UIAppearanceContainer", "studentName"]
+- !private ["PSo21UIAppearanceContainer", "studentOneLineBio"]
+- ["PSo21UIAppearanceContainer", "students"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "title"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "BTNavigationDropdownMenu"]
 - !private ["PSo18UIContentContainer", "ExploreStruct"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
 - !private ["PSo18UIContentContainer", "PFUser"]
+- !private ["PSo18UIContentContainer", "StudentStruct"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "menuItemSelected"]
+- ["PSo18UIContentContainer", "menu_items"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "navigationItem"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - ["PSo18UIContentContainer", "prepareForSegue"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
@@ -801,37 +998,56 @@ depends-member:
 - ["PSo18UIContentContainer", "scrollViewWillBeginZooming"]
 - ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
+- !private ["PSo18UIContentContainer", "studentName"]
+- ["PSo18UIContentContainer", "students"]
 - ["PSo18UIContentContainer", "tableView"]
 - !private ["PSo18UIContentContainer", "title"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "didSelectItemAtIndexHandler"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "indexPathForSelectedRow"]
+- !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "projectDesc"]
 - !private ["PSo17UICoordinateSpace", "projectImage"]
 - !private ["PSo17UICoordinateSpace", "projectName"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "studentImageView"]
+- !private ["PSo17UICoordinateSpace", "studentName"]
+- !private ["PSo17UICoordinateSpace", "studentOneLineBio"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "didSelectItemAtIndexHandler"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "indexPathForSelectedRow"]
+- !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "projectDesc"]
 - !private ["PSo13UIDynamicItem", "projectImage"]
 - !private ["PSo13UIDynamicItem", "projectName"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "studentImageView"]
+- !private ["PSo13UIDynamicItem", "studentName"]
+- !private ["PSo13UIDynamicItem", "studentOneLineBio"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "BTNavigationDropdownMenu"]
 - !private ["PSo18UIFocusEnvironment", "ExploreStruct"]
 - !private ["PSo18UIFocusEnvironment", "PFQuery"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
+- !private ["PSo18UIFocusEnvironment", "StudentStruct"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "didSelectItemAtIndexHandler"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIFocusEnvironment", "indexPathForSelectedRow"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "menuItemSelected"]
+- ["PSo18UIFocusEnvironment", "menu_items"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "prepareForSegue"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
@@ -854,6 +1070,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
+- !private ["PSo18UIFocusEnvironment", "studentImageView"]
+- !private ["PSo18UIFocusEnvironment", "studentName"]
+- !private ["PSo18UIFocusEnvironment", "studentOneLineBio"]
+- ["PSo18UIFocusEnvironment", "students"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "title"]
@@ -863,11 +1083,16 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "projectDesc"]
 - !private ["PSo27UIGestureRecognizerDelegate", "projectImage"]
 - !private ["PSo27UIGestureRecognizerDelegate", "projectName"]
+- !private ["PSo27UIGestureRecognizerDelegate", "studentImageView"]
+- !private ["PSo27UIGestureRecognizerDelegate", "studentName"]
+- !private ["PSo27UIGestureRecognizerDelegate", "studentOneLineBio"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo16UINavigationItem", "titleView"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Array"]
+- !private ["CSo11UIResponder", "BTNavigationDropdownMenu"]
 - ["CSo11UIResponder", "ExploreStruct"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "LoginViewController"]
@@ -878,9 +1103,12 @@ depends-member:
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
+- !private ["CSo11UIResponder", "ProfileViewController"]
 - !private ["CSo11UIResponder", "ProjectCell"]
 - !private ["CSo11UIResponder", "ProjectTableViewController"]
-- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "StudentCellTableView"]
+- ["CSo11UIResponder", "StudentStruct"]
 - !private ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
@@ -888,10 +1116,15 @@ depends-member:
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo11UIResponder", "didSelectItemAtIndexHandler"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["CSo11UIResponder", "indexPathForSelectedRow"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "menuItemSelected"]
+- ["CSo11UIResponder", "menu_items"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "prepareForSegue"]
 - !private ["CSo11UIResponder", "presentViewController"]
@@ -914,6 +1147,10 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillBeginZooming"]
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
+- !private ["CSo11UIResponder", "studentImageView"]
+- !private ["CSo11UIResponder", "studentName"]
+- !private ["CSo11UIResponder", "studentOneLineBio"]
+- ["CSo11UIResponder", "students"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "title"]
@@ -922,12 +1159,18 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "indexPathForSelectedRow"]
 - !private ["CSo12UIScrollView", "reloadData"]
+- !private ["PSo20UIScrollViewDelegate", "BTNavigationDropdownMenu"]
 - !private ["PSo20UIScrollViewDelegate", "ExploreStruct"]
 - !private ["PSo20UIScrollViewDelegate", "PFQuery"]
 - !private ["PSo20UIScrollViewDelegate", "PFUser"]
+- !private ["PSo20UIScrollViewDelegate", "StudentStruct"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIStoryboard"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "menuItemSelected"]
+- !private ["PSo20UIScrollViewDelegate", "menu_items"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
+- !private ["PSo20UIScrollViewDelegate", "navigationItem"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "presentViewController"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
@@ -946,17 +1189,25 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo20UIScrollViewDelegate", "studentName"]
+- !private ["PSo20UIScrollViewDelegate", "students"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo20UIScrollViewDelegate", "title"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "BTNavigationDropdownMenu"]
 - !private ["PSo16UIStateRestoring", "ExploreStruct"]
 - !private ["PSo16UIStateRestoring", "PFQuery"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
+- !private ["PSo16UIStateRestoring", "StudentStruct"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "menuItemSelected"]
+- ["PSo16UIStateRestoring", "menu_items"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "navigationItem"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - ["PSo16UIStateRestoring", "prepareForSegue"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
@@ -976,6 +1227,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "scrollViewWillBeginZooming"]
 - ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
+- !private ["PSo16UIStateRestoring", "studentName"]
+- ["PSo16UIStateRestoring", "students"]
 - ["PSo16UIStateRestoring", "tableView"]
 - !private ["PSo16UIStateRestoring", "title"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -991,13 +1244,23 @@ depends-member:
 - !private ["CSo15UITableViewCell", "projectDesc"]
 - !private ["CSo15UITableViewCell", "projectImage"]
 - !private ["CSo15UITableViewCell", "projectName"]
+- !private ["CSo15UITableViewCell", "studentImageView"]
+- !private ["CSo15UITableViewCell", "studentName"]
+- !private ["CSo15UITableViewCell", "studentOneLineBio"]
 - !private ["CSo21UITableViewController", "projectName"]
+- !private ["CSo21UITableViewController", "studentName"]
+- !private ["PSo21UITableViewDataSource", "BTNavigationDropdownMenu"]
 - !private ["PSo21UITableViewDataSource", "ExploreStruct"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
 - !private ["PSo21UITableViewDataSource", "PFUser"]
+- !private ["PSo21UITableViewDataSource", "StudentStruct"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UIStoryboard"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21UITableViewDataSource", "menuItemSelected"]
+- !private ["PSo21UITableViewDataSource", "menu_items"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
+- !private ["PSo21UITableViewDataSource", "navigationItem"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "presentViewController"]
 - !private ["PSo21UITableViewDataSource", "print"]
@@ -1016,16 +1279,24 @@ depends-member:
 - ["PSo21UITableViewDataSource", "scrollViewWillBeginZooming"]
 - ["PSo21UITableViewDataSource", "scrollViewWillEndDragging"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UITableViewDataSource", "studentName"]
+- !private ["PSo21UITableViewDataSource", "students"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - !private ["PSo21UITableViewDataSource", "title"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "BTNavigationDropdownMenu"]
 - !private ["PSo19UITableViewDelegate", "ExploreStruct"]
 - !private ["PSo19UITableViewDelegate", "PFQuery"]
 - !private ["PSo19UITableViewDelegate", "PFUser"]
+- !private ["PSo19UITableViewDelegate", "StudentStruct"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UIStoryboard"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UITableViewDelegate", "menuItemSelected"]
+- !private ["PSo19UITableViewDelegate", "menu_items"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
+- !private ["PSo19UITableViewDelegate", "navigationItem"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "presentViewController"]
 - !private ["PSo19UITableViewDelegate", "print"]
@@ -1044,20 +1315,29 @@ depends-member:
 - ["PSo19UITableViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo19UITableViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo19UITableViewDelegate", "studentName"]
+- !private ["PSo19UITableViewDelegate", "students"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - !private ["PSo19UITableViewDelegate", "title"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "BTNavigationDropdownMenu"]
 - !private ["PSo18UITraitEnvironment", "ExploreStruct"]
 - !private ["PSo18UITraitEnvironment", "PFQuery"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
+- !private ["PSo18UITraitEnvironment", "StudentStruct"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo18UITraitEnvironment", "didSelectItemAtIndexHandler"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UITraitEnvironment", "indexPathForSelectedRow"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "menuItemSelected"]
+- ["PSo18UITraitEnvironment", "menu_items"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "prepareForSegue"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
@@ -1080,6 +1360,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
+- !private ["PSo18UITraitEnvironment", "studentImageView"]
+- !private ["PSo18UITraitEnvironment", "studentName"]
+- !private ["PSo18UITraitEnvironment", "studentOneLineBio"]
+- ["PSo18UITraitEnvironment", "students"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "title"]
@@ -1087,15 +1371,20 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "didSelectItemAtIndexHandler"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "indexPathForSelectedRow"]
 - !private ["CSo6UIView", "projectDesc"]
 - !private ["CSo6UIView", "projectImage"]
 - !private ["CSo6UIView", "projectName"]
 - !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "studentImageView"]
+- !private ["CSo6UIView", "studentName"]
+- !private ["CSo6UIView", "studentOneLineBio"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Array"]
+- !private ["CSo16UIViewController", "BTNavigationDropdownMenu"]
 - ["CSo16UIViewController", "ExploreStruct"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "LoginViewController"]
@@ -1106,9 +1395,12 @@ depends-member:
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
+- !private ["CSo16UIViewController", "ProfileViewController"]
 - !private ["CSo16UIViewController", "ProjectCell"]
 - !private ["CSo16UIViewController", "ProjectTableViewController"]
-- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "StudentCellTableView"]
+- ["CSo16UIViewController", "StudentStruct"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
@@ -1118,6 +1410,10 @@ depends-member:
 - !private ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "menuItemSelected"]
+- ["CSo16UIViewController", "menu_items"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "navigationItem"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - ["CSo16UIViewController", "prepareForSegue"]
 - !private ["CSo16UIViewController", "presentViewController"]
@@ -1137,6 +1433,8 @@ depends-member:
 - ["CSo16UIViewController", "scrollViewWillBeginZooming"]
 - ["CSo16UIViewController", "scrollViewWillEndDragging"]
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
+- !private ["CSo16UIViewController", "studentName"]
+- ["CSo16UIViewController", "students"]
 - ["CSo16UIViewController", "tableView"]
 - !private ["CSo16UIViewController", "title"]
 - ["CSo16UIViewController", "viewDidLoad"]
@@ -1149,12 +1447,14 @@ depends-member:
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- ["Ps10_ArrayType", "Element"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
 - !private ["Ps10_ArrayType", "_Element"]
 - !private ["Ps10_ArrayType", "append"]
 - !private ["Ps10_ArrayType", "count"]
+- !private ["Ps10_ArrayType", "first"]
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -1163,12 +1463,14 @@ depends-member:
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "first"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "Distance"]
@@ -1178,6 +1480,7 @@ depends-member:
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
@@ -1186,12 +1489,14 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "first"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "Distance"]
+- ["Ps12_Reflectable", "Element"]
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
@@ -1202,6 +1507,8 @@ depends-member:
 - !private ["Ps12_Reflectable", "append"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
+- !private ["Ps12_Reflectable", "didSelectItemAtIndexHandler"]
+- !private ["Ps12_Reflectable", "first"]
 - !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "indexPathForSelectedRow"]
 - !private ["Ps12_Reflectable", "init"]
@@ -1209,15 +1516,19 @@ depends-member:
 - !private ["Ps12_Reflectable", "projectImage"]
 - !private ["Ps12_Reflectable", "projectName"]
 - !private ["Ps12_Reflectable", "reloadData"]
+- !private ["Ps12_Reflectable", "studentImageView"]
+- !private ["Ps12_Reflectable", "studentName"]
+- !private ["Ps12_Reflectable", "studentOneLineBio"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
 - "Ps9AnyObject"
-- !private "Sa"
-- !private "Ps23ArrayLiteralConvertible"
+- "Sa"
+- "Ps23ArrayLiteralConvertible"
 - !private "Vs10ArraySlice"
+- !private "C24BTNavigationDropdownMenu24BTNavigationDropdownMenu"
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
 - !private "Sb"
@@ -1225,7 +1536,7 @@ depends-nominal:
 - !private "Ps11BooleanType"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
-- !private "Ps14CollectionType"
+- "Ps14CollectionType"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
@@ -1240,7 +1551,7 @@ depends-nominal:
 - !private "Ps13GeneratorType"
 - "Ps8Hashable"
 - !private "SQ"
-- !private "Ps9Indexable"
+- "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
 - !private "Si"
 - !private "Vs5Int16"
@@ -1252,9 +1563,9 @@ depends-nominal:
 - !private "Ps11IntegerType"
 - !private "PSo35MFMailComposeViewControllerDelegate"
 - !private "Ps14MirrorPathType"
-- !private "Ps21MutableCollectionType"
-- !private "Ps16MutableIndexable"
-- !private "Ps16MutableSliceable"
+- "Ps21MutableCollectionType"
+- "Ps16MutableIndexable"
+- "Ps16MutableSliceable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo7NSError"
@@ -1273,11 +1584,12 @@ depends-nominal:
 - !private "CSo7PFQuery"
 - !private "PSo13PFSubclassing"
 - !private "CSo6PFUser"
+- !private "C10startupnyu21ProfileViewController"
 - !private "C10startupnyu11ProjectCell"
 - !private "C10startupnyu26ProjectTableViewController"
 - !private "Ps21RandomAccessIndexType"
-- !private "Ps30RangeReplaceableCollectionType"
-- !private "Ps12SequenceType"
+- "Ps30RangeReplaceableCollectionType"
+- "Ps12SequenceType"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
@@ -1286,6 +1598,8 @@ depends-nominal:
 - !private "SS"
 - !private "Ps30StringInterpolationConvertible"
 - !private "Ps24StringLiteralConvertible"
+- !private "C10startupnyu20StudentCellTableView"
+- "V10startupnyu13StudentStruct"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -1297,6 +1611,7 @@ depends-nominal:
 - !private "CSo7UIImage"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
+- !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
@@ -1318,22 +1633,22 @@ depends-nominal:
 - !private "Vs5UInt8"
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
-- !private "Ps10_ArrayType"
+- "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
 - !private "Ps32_BuiltinStringLiteralConvertible"
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
-- !private "Ps24_DestructorSafeContainer"
+- "Ps24_DestructorSafeContainer"
 - !private "Ps24_ImageLiteralConvertible"
 - !private "Ps14_Incrementable"
 - !private "Ps22_IntegerArithmeticType"
 - !private "Ps12_IntegerType"
-- !private "Ps21_ObjectiveCBridgeable"
+- "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps22_RandomAccessAmbiguity"
-- !private "Ps12_Reflectable"
+- "Ps12_Reflectable"
 - !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
@@ -1405,4 +1720,111 @@ depends-external:
 - "./Parse.framework/Headers/Parse.h"
 - "./Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "ae61a21e61f56f178f06410bf5fbda30"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCacheBackgroundTaskManager.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSError+AWSMTLModelException.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLReflection.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTS.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSUICKeyChainStore.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMMemoryCache.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMDiskCache.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCache.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSKSReachability.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMResultSet.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabase.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDB.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSGZIP.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTask.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSExecutor.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationToken.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBolts.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSInfo.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSValidation.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestRetryHandler.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSignature.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLSessionManager.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLResponseSerialization.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestSerialization.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSerialization.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSClientContext.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSLogging.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCategory.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMantle.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSNetworking.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSServiceEnum.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Resources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Model.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBObjectMapper.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDB.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDB-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSDynamoDB.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQSResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQS.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Headers/AWSSQS-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSQS.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNSResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNS.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Headers/AWSSNS-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSSNS.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognitoService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Headers/AWSCognito-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCognito.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/BTNavigationDropdownMenu.swiftmodule/x86_64.swiftmodule"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/module.modulemap"
+interface-hash: "e028ce2e6376a854ad41e61246bd27d5"

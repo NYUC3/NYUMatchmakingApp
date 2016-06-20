@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AWSCognitoIdentityProvider.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>AWSCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -35,6 +40,11 @@
 			<false/>
 		</dict>
 		<key>AWSElasticLoadBalancing.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWSIoT.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -84,7 +94,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>BTNavigationDropdownMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-startupnyu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -92,87 +107,102 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>063CD40FE7507A72F88F5AFC19C8C51A</key>
+		<key>006E2138B9475DEE0B38D1DE5E72DB28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0F7924CBDFB941DC1EC5D535797DC826</key>
+		<key>06944EDBD63E0663D8E94CF5B641FADC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>189DA1178F145E7C4906A118ED3F9B5A</key>
+		<key>0F8EF035E449BF333B2C5F4A5E1E2312</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1E21EC213BAFA8213D11C061E21B4C4C</key>
+		<key>22874371504A07CAB9DB5C306EA39656</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>445FB829734E6DB00B0FE2B9D2F0B02D</key>
+		<key>2B38360BBDF40C0AEE16297120318463</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4866E038E822FFB8734BEA6972F4BD52</key>
+		<key>2DB3350C949BE1E48A18930BF921E618</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E87B26517EAE40C632143AB5007BE49</key>
+		<key>31A6D57B6C9E34365A4503608F6C0C73</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83AD0A4979C9CF13BE8A04419B43AA38</key>
+		<key>39E930A3416C39CD6777CD4C5EF9D0C6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>902C0020A199BB5C48ACECD66E4F8CFB</key>
+		<key>596489490277F6BFF510808CE2145304</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>995E1D4B46B1E4B887F8A0C26B5D7F8B</key>
+		<key>5D29F19DD025D9E598ED0928E6ADC61B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF1524DE326376139DDC8A4FF0DE2017</key>
+		<key>6378078F5B95548EFA973FBD769C6227</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D494B581AA8FB43A58A240CFDC8D89AE</key>
+		<key>86C54E540EB14666DF6A64355E375F10</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DD710E732F04BD5A37578EA94A0FB5DB</key>
+		<key>9C1910960704CBC5F2F8EAA664BE0497</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE453F91A385DB4FA4E5C35EC43406E6</key>
+		<key>9C359306D3F5DAE06975F15F47E68A96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F2D1F80BC3453A69CBE682BD11458047</key>
+		<key>A0AED1CB65D257A95B6903082D09635A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA6F9A6D34527B483448BA7BB2DB2292</key>
+		<key>A99C4B9AE8A8006E7716150B24385324</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC7B190B6E972D02C71663C7671B1453</key>
+		<key>AEE9BCAE6FCC8CCAB99320AAEEFE718D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E41D35188E9FEB38ADC110303C4041A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E986108DC9E275ED9F5DC6840FA69BD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2DBD6A86B28830640BA03AFCF04C090</key>
 		<dict>
 			<key>primary</key>
 			<true/>

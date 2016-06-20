@@ -1,0 +1,58 @@
+{ "results": [
+	{
+        "bcryptPassword": "$2a$10$31aCLyF6CdUBJNxqX8xVG.cXmoF3ay9Zvx3ds7kV6jpa0quMboHHC",
+        "createdAt": "2016-04-26T15:20:08.731Z",
+        "dp": {
+            "__type": "File",
+            "name": "tfss-9e9c1351-e610-4559-a9b9-ff34092d8097-LAMBO-432.jpg",
+            "url": "http://files.parsetfss.com/c194578d-4920-4bdd-ad07-c774d49b638c/tfss-9e9c1351-e610-4559-a9b9-ff34092d8097-LAMBO-432.jpg"
+        },
+        "email": "sarth@nyu.edu",
+        "objectId": "9QqW4MxRqr",
+        "sessionToken": "R312oHphweoXCdbuSwpg9lTkc",
+        "updatedAt": "2016-06-01T23:45:38.348Z",
+        "username": "sarth@nyu.edu"
+    },
+	{
+        "bcryptPassword": "$2a$10$GEw7uxFk9AnnTeTZgHG.1OjP30IOw59V7uYcCHQjeQ/Kq1TvdR.AW",
+        "createdAt": "2016-04-26T00:10:15.029Z",
+        "dp": {
+            "__type": "File",
+            "name": "tfss-228324bf-d32c-4581-8083-53920c08e93c-Screen Shot 2016-03-25 at 12.03.36 AM.png",
+            "url": "http://files.parsetfss.com/c194578d-4920-4bdd-ad07-c774d49b638c/tfss-228324bf-d32c-4581-8083-53920c08e93c-Screen%20Shot%202016-03-25%20at%2012.03.36%20AM.png"
+        },
+        "email": "rockstarvd@gmail.com",
+        "objectId": "c7v4NugpEc",
+        "sessionToken": "hVeuYv84029N8fPRFjfYVcH0J",
+        "updatedAt": "2016-06-01T23:46:15.549Z",
+        "username": "rockstarvd@gmail.com"
+    },
+	{
+        "bcryptPassword": "$2a$10$kdEGFsmLAlVTFhldAwgzgesYyfE3TdAtdSG0.B2r9Ih676XvgT1B2",
+        "createdAt": "2016-01-17T17:22:09.984Z",
+        "dp": {
+            "__type": "File",
+            "name": "tfss-2e2e7922-41b2-459e-b798-ce77b2303f69-Screen Shot 2016-03-25 at 12.03.36 AM.png",
+            "url": "http://files.parsetfss.com/c194578d-4920-4bdd-ad07-c774d49b638c/tfss-2e2e7922-41b2-459e-b798-ce77b2303f69-Screen%20Shot%202016-03-25%20at%2012.03.36%20AM.png"
+        },
+        "email": "vdthatte@nyu.edu",
+        "objectId": "gtmsUU1zKC",
+        "sessionToken": "MIwKnp1U36s6KnXBh0ljCN2W6",
+        "updatedAt": "2016-06-01T23:46:00.854Z",
+        "username": "Vd"
+    },
+	{
+        "bcryptPassword": "$2a$10$q.Hkxkl50qZzi21V.Z7yW.TVsz4hfFTdJjEF54Mo0758sD/YA.hE2",
+        "createdAt": "2016-04-26T00:11:23.386Z",
+        "dp": {
+            "__type": "File",
+            "name": "tfss-0db67d43-8cf0-4787-92f8-a64eca231891-Screen Shot 2016-03-24 at 10.00.09 PM.png",
+            "url": "http://files.parsetfss.com/c194578d-4920-4bdd-ad07-c774d49b638c/tfss-0db67d43-8cf0-4787-92f8-a64eca231891-Screen%20Shot%202016-03-24%20at%2010.00.09%20PM.png"
+        },
+        "email": "vd@edu.com",
+        "objectId": "iJ1RGuYyZm",
+        "sessionToken": "LcVS2pIbUYlXI5Y7PnQS5B3VK",
+        "updatedAt": "2016-06-01T23:45:48.334Z",
+        "username": "vd@edu.com"
+    }
+] }

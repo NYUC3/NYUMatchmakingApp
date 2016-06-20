@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillTerminate"
-- "applicationWillResignActive"
-- "applicationDidBecomeActive"
-- "window"
-- "applicationWillEnterForeground"
-- "application"
 - "applicationDidEnterBackground"
+- "applicationWillEnterForeground"
+- "applicationWillTerminate"
+- "window"
+- "applicationWillResignActive"
+- "application"
+- "applicationDidBecomeActive"
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private "Parse"
-- "UIWindow"
-- "UIApplicationDelegate"
+- "AnyObject"
 - "Bool"
+- !private "StringLiteralType"
+- "AppDelegate"
+- !private "Parse"
 - "UIApplication"
 - "UIResponder"
+- "UIApplicationDelegate"
+- !private "BooleanLiteralType"
 - "NSObject"
-- !private "StringLiteralType"
-- "AnyObject"
-- "AppDelegate"
+- "UIWindow"
 depends-member:
 - !private ["Ps9AnyObject", "Parse"]
 - ["Ps9AnyObject", "application"]
@@ -307,4 +307,8 @@ depends-external:
 - "./Parse.framework/Headers/Parse.h"
 - "./Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/BTNavigationDropdownMenu.swiftmodule/x86_64.swiftmodule"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/module.modulemap"
 interface-hash: "d159a83959118c14b38256c0c56fbaf9"

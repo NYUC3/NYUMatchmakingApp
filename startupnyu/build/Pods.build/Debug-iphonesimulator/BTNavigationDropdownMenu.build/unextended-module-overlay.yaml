@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/BTNavigationDropdownMenu.build/unextended-module.modulemap',
+    }]
+  }]
+}

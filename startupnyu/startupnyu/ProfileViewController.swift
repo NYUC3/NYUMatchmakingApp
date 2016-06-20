@@ -23,6 +23,8 @@ class ProfileViewController: UITableViewController{
     var fullName = ""
     var oneLineDescription = ""
     
+    var studentName : String?
+    
     override func viewDidLoad() {
         
         // CUSTOMIZE UI

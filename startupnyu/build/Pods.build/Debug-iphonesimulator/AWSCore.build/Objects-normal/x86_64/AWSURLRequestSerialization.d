@@ -1,31 +1,32 @@
 dependencies: \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Serialization/AWSURLRequestSerialization.m \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/Target\ Support\ Files/AWSCore/AWSCore-prefix.pch \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Serialization/AWSURLRequestSerialization.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Networking/AWSNetworking.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Utility/AWSModel.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/AWSMantle.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/AWSMTLJSONAdapter.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/AWSMTLManagedObjectAdapter.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/AWSMTLModel.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/AWSMTLModel+NSCoding.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/AWSMTLValueTransformer.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/NSArray+AWSMTLManipulationAdditions.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/NSDictionary+AWSMTLManipulationAdditions.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/NSObject+AWSMTLComparisonAdditions.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/NSValueTransformer+AWSMTLInversionAdditions.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Mantle/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Serialization/AWSSerialization.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/GZIP/AWSGZIP.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Bolts/AWSBolts.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Bolts/AWSBoltsVersion.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Bolts/AWSCancellationToken.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Bolts/AWSCancellationTokenRegistration.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Bolts/AWSCancellationTokenSource.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Bolts/AWSExecutor.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Bolts/AWSTask.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Bolts/AWSTaskCompletionSource.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Serialization/AWSValidation.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Utility/AWSCategory.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Utility/AWSLogging.h \
-  /Users/Vidyadhar/Desktop/startupnyu-ios/startupnyu/Pods/AWSCore/AWSCore/Service/AWSClientContext.h
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSCore/AWSCore/Serialization/AWSURLRequestSerialization.m \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target\ Support\ Files/AWSCore/AWSCore-prefix.pch \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSCore/AWSCore/Serialization/AWSURLRequestSerialization.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSNetworking.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSModel.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSMantle.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSMTLJSONAdapter.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSMTLManagedObjectAdapter.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSMTLModel.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSMTLModel+NSCoding.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSMTLValueTransformer.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/NSArray+AWSMTLManipulationAdditions.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/NSDictionary+AWSMTLManipulationAdditions.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/NSObject+AWSMTLComparisonAdditions.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/NSValueTransformer+AWSMTLInversionAdditions.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSCore/AWSCore/Serialization/AWSSerialization.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSGZIP.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSBolts.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSBoltsVersion.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSCancellationToken.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSCancellationTokenRegistration.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSCancellationTokenSource.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSExecutor.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSTask.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSTaskCompletionSource.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSCore/AWSCore/Serialization/AWSValidation.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSCategory.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSServiceEnum.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSLogging.h \
+  /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Headers/Private/AWSCore/AWSClientContext.h

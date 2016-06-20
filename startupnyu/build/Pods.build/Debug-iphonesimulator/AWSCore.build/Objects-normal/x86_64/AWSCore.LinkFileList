@@ -19,6 +19,8 @@
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSFMResultSet.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSGZIP.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSIdentityProvider.o
+/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSInfo.o
+/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSKSReachability.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSLogging.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSMTLJSONAdapter.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSMTLManagedObjectAdapter.o
@@ -28,7 +30,6 @@
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSMTLValueTransformer.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSModel.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSNetworking.o
-/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSReachability.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSSTSModel.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSSTSResources.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSSTSService.o
@@ -55,3 +56,4 @@
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/NSObject+AWSMTLComparisonAdditions.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/NSValueTransformer+AWSMTLInversionAdditions.o
 /Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.o
+/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSCore.build/Objects-normal/x86_64/AWSCore_vers.o

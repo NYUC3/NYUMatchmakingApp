@@ -8,6 +8,13 @@
 
 import UIKit
 import Parse
+import AWSCore
+import AWSS3
+import AWSDynamoDB
+import AWSSQS
+import AWSSNS
+import AWSCognito
+
 
 class LoginViewController: UIViewController {
 
@@ -17,7 +24,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

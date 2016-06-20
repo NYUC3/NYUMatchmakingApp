@@ -16,6 +16,7 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidAppear(animated: Bool) {
         tableView.reloadData()
+        self.title = "My Projects"
     }
 
     override func viewDidLoad() {
@@ -51,6 +52,8 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
                 print("Error: \(error!) \(error!.userInfo)")
             }
         }
+
+        
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -74,8 +77,25 @@ class ProjectsListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let vc = segue.destinationViewController as! MyProjectTableViewController
-        vc.projectName = projectsList[self.tableView.indexPathForSelectedRow!.row].name
+        
+        if(tableView.indexPathForSelectedRow == projectsList.count + 1){
+            
+        }
+        else{
+            
+            let vc = segue.destinationViewController as! MyProjectTableViewController
+            vc.projectName = projectsList[self.tableView.indexPathForSelectedRow!.row].name
+        
+        }
     }
 
+
+    @IBAction func LogoutTapped(sender: AnyObject) {
+        
+        PFUser.logOut()
+        let storyboard = UIStoryboard(name: "LoginSignupStoryboard", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("login") as! LoginViewController
+        self.presentViewController(vc, animated: true, completion: nil)
+        
+    }
 }
