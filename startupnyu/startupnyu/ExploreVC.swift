@@ -33,13 +33,21 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var students : Array<StudentStruct> = []
     var menuItemSelected : String?
     
+    @IBOutlet weak var shareButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         menuItemSelected = menu_items[0]
         self.title = "Explore"
         let menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title:menu_items.first!, items:menu_items)
         self.navigationItem.titleView = menuView
+        
+        if let font = UIFont(name: "Avenir", size: 15) {
+            shareButton.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
+        }
+
         
         menuView.didSelectItemAtIndexHandler = {[weak self] (indexPath: Int) -> () in
             self?.menuItemSelected = self?.menu_items[indexPath]

@@ -734,8 +734,13 @@
                             <constraint firstItem="r8I-Mc-FkY" firstAttribute="bottom" secondItem="x0a-Xm-Ket" secondAttribute="top" id="VG8-3S-zmn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1Bb-7G-e8e"/>
+                    <navigationItem key="navigationItem" id="1Bb-7G-e8e">
+                        <barButtonItem key="rightBarButtonItem" title="SHARE" id="dsw-k7-mcB">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="shareButton" destination="dsw-k7-mcB" id="57M-Ij-uL4"/>
                         <outlet property="tableView" destination="r8I-Mc-FkY" id="J1o-HL-YTh"/>
                     </connections>
                 </viewController>

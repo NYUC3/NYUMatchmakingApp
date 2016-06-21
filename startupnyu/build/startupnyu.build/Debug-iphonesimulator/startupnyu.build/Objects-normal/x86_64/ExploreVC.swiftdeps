@@ -9,55 +9,64 @@ provides-member:
 - ["V10startupnyu13StudentStruct", ""]
 - ["C10startupnyu9ExploreVC", ""]
 provides-dynamic-lookup:
+- "prepareForSegue"
 - "menuItemSelected"
 - "tableView"
 - "tableView"
 - "tableView"
-- "viewDidLoad"
-- "prepareForSegue"
 - "menu_items"
+- "viewDidLoad"
+- "shareButton"
 depends-top-level:
-- !private "ProfileViewController"
-- "Array"
-- "UIViewController"
-- !private "NSError"
-- "NSIndexPath"
-- !private "BTNavigationDropdownMenu"
-- !private "LoginViewController"
-- "StudentStruct"
-- "StringLiteralType"
+- "AnyObject"
+- !private "BooleanLiteralType"
 - !private "ProjectTableViewController"
-- !private "=="
-- "UnicodeScalarType"
-- "ExploreVC"
-- !private "Void"
-- "UIStoryboardSegue"
-- !private "PFUser"
 - !private "ProjectCell"
 - "ExploreStruct"
-- !private "print"
+- !private "ProfileViewController"
+- "UIBarButtonItem"
+- "UIStoryboardSegue"
 - !private "StudentCellTableView"
-- !private "UIStoryboard"
-- !private "PFFile"
-- "UITableView"
-- !private "+"
-- "AnyObject"
-- "Int"
-- "String"
-- "UITableViewCell"
+- !private "UIFont"
 - !private "PFQuery"
-- "UIImage"
-- "UITableViewDelegate"
-- !private "BooleanLiteralType"
 - !private "PFObject"
-- "UITableViewDataSource"
+- "UITableView"
+- !private "NSError"
+- "NSIndexPath"
+- !private "print"
+- "UITableViewCell"
+- "UIViewController"
 - !private "NSData"
+- !private "BTNavigationDropdownMenu"
+- !private "Dictionary"
+- !private "+"
+- "UIImage"
+- !private "Void"
+- "StringLiteralType"
+- "ExploreVC"
+- "StudentStruct"
+- "UITableViewDataSource"
+- !private "UIControlState"
+- "UITableViewDelegate"
+- !private "PFUser"
+- "UnicodeScalarType"
+- "Array"
+- !private "=="
+- !private "UIStoryboard"
+- !private "LoginViewController"
+- !private "PFFile"
+- "String"
+- "Int"
+- !private "NSFontAttributeName"
 depends-member:
 - !private ["Ps9AnyObject", "BTNavigationDropdownMenu"]
 - !private ["Ps9AnyObject", "ExploreStruct"]
+- !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "PFQuery"]
 - !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "StudentStruct"]
+- !private ["Ps9AnyObject", "UIControlState"]
+- !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "currentUser"]
@@ -73,6 +82,7 @@ depends-member:
 - !private ["Ps9AnyObject", "instantiateViewControllerWithIdentifier"]
 - ["Ps9AnyObject", "menuItemSelected"]
 - ["Ps9AnyObject", "menu_items"]
+- !private ["Ps9AnyObject", "navigationBar"]
 - !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "navigationItem"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
@@ -98,6 +108,8 @@ depends-member:
 - ["Ps9AnyObject", "scrollViewWillBeginZooming"]
 - ["Ps9AnyObject", "scrollViewWillEndDragging"]
 - ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
+- !private ["Ps9AnyObject", "setTitleTextAttributes"]
+- ["Ps9AnyObject", "shareButton"]
 - !private ["Ps9AnyObject", "studentImageView"]
 - !private ["Ps9AnyObject", "studentName"]
 - !private ["Ps9AnyObject", "studentOneLineBio"]
@@ -106,6 +118,7 @@ depends-member:
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "title"]
+- !private ["Ps9AnyObject", "titleTextAttributes"]
 - !private ["Ps9AnyObject", "titleView"]
 - !private ["Ps9AnyObject", "userInfo"]
 - ["Ps9AnyObject", "viewDidLoad"]
@@ -124,6 +137,7 @@ depends-member:
 - ["Ps23ArrayLiteralConvertible", "Element"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "Normal"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - !private ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "append"]
@@ -142,13 +156,17 @@ depends-member:
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["Ps11CVarArgType", "BTNavigationDropdownMenu"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "ExploreStruct"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSFontAttributeName"]
 - !private ["Ps11CVarArgType", "PFQuery"]
 - !private ["Ps11CVarArgType", "PFUser"]
 - !private ["Ps11CVarArgType", "StudentStruct"]
+- !private ["Ps11CVarArgType", "UIControlState"]
+- !private ["Ps11CVarArgType", "UIFont"]
 - !private ["Ps11CVarArgType", "UIImage"]
 - !private ["Ps11CVarArgType", "UIStoryboard"]
 - !private ["Ps11CVarArgType", "currentUser"]
@@ -164,6 +182,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "instantiateViewControllerWithIdentifier"]
 - ["Ps11CVarArgType", "menuItemSelected"]
 - ["Ps11CVarArgType", "menu_items"]
+- !private ["Ps11CVarArgType", "navigationBar"]
 - !private ["Ps11CVarArgType", "navigationController"]
 - !private ["Ps11CVarArgType", "navigationItem"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
@@ -189,6 +208,8 @@ depends-member:
 - ["Ps11CVarArgType", "scrollViewWillBeginZooming"]
 - ["Ps11CVarArgType", "scrollViewWillEndDragging"]
 - ["Ps11CVarArgType", "sectionIndexTitlesForTableView"]
+- !private ["Ps11CVarArgType", "setTitleTextAttributes"]
+- ["Ps11CVarArgType", "shareButton"]
 - !private ["Ps11CVarArgType", "studentImageView"]
 - !private ["Ps11CVarArgType", "studentName"]
 - !private ["Ps11CVarArgType", "studentOneLineBio"]
@@ -197,6 +218,7 @@ depends-member:
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "title"]
+- !private ["Ps11CVarArgType", "titleTextAttributes"]
 - !private ["Ps11CVarArgType", "titleView"]
 - !private ["Ps11CVarArgType", "userInfo"]
 - ["Ps11CVarArgType", "viewDidLoad"]
@@ -206,7 +228,9 @@ depends-member:
 - ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "append"]
 - !private ["Ps14CollectionType", "count"]
@@ -220,13 +244,18 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "ExploreStruct"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "PFQuery"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
-- !private ["Ps28CustomDebugStringConvertible", "Some"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "StudentStruct"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIControlState"]
+- !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
@@ -244,6 +273,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewControllerWithIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "menuItemSelected"]
 - ["Ps28CustomDebugStringConvertible", "menu_items"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
@@ -269,6 +299,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillBeginZooming"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillEndDragging"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
+- ["Ps28CustomDebugStringConvertible", "shareButton"]
 - !private ["Ps28CustomDebugStringConvertible", "studentImageView"]
 - !private ["Ps28CustomDebugStringConvertible", "studentName"]
 - !private ["Ps28CustomDebugStringConvertible", "studentOneLineBio"]
@@ -277,6 +309,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
+- !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
 - !private ["Ps28CustomDebugStringConvertible", "titleView"]
 - !private ["Ps28CustomDebugStringConvertible", "userInfo"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -289,12 +322,17 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
 - !private ["Ps23CustomStringConvertible", "PFQuery"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
 - !private ["Ps23CustomStringConvertible", "StudentStruct"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIControlState"]
+- !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
@@ -313,6 +351,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
 - ["Ps23CustomStringConvertible", "menuItemSelected"]
 - ["Ps23CustomStringConvertible", "menu_items"]
+- !private ["Ps23CustomStringConvertible", "navigationBar"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "navigationItem"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
@@ -338,6 +377,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "scrollViewWillBeginZooming"]
 - ["Ps23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
+- ["Ps23CustomStringConvertible", "shareButton"]
 - !private ["Ps23CustomStringConvertible", "studentImageView"]
 - !private ["Ps23CustomStringConvertible", "studentName"]
 - !private ["Ps23CustomStringConvertible", "studentOneLineBio"]
@@ -346,19 +387,28 @@ depends-member:
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "title"]
+- !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
 - !private ["Ps23CustomStringConvertible", "titleView"]
 - !private ["Ps23CustomStringConvertible", "userInfo"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "BTNavigationDropdownMenu"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "ExploreStruct"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSFontAttributeName"]
+- !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "PFQuery"]
 - !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "StudentStruct"]
+- !private ["Ps9Equatable", "UIControlState"]
+- !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -375,6 +425,7 @@ depends-member:
 - !private ["Ps9Equatable", "instantiateViewControllerWithIdentifier"]
 - ["Ps9Equatable", "menuItemSelected"]
 - ["Ps9Equatable", "menu_items"]
+- !private ["Ps9Equatable", "navigationBar"]
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "navigationItem"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
@@ -400,6 +451,8 @@ depends-member:
 - ["Ps9Equatable", "scrollViewWillBeginZooming"]
 - ["Ps9Equatable", "scrollViewWillEndDragging"]
 - ["Ps9Equatable", "sectionIndexTitlesForTableView"]
+- !private ["Ps9Equatable", "setTitleTextAttributes"]
+- ["Ps9Equatable", "shareButton"]
 - !private ["Ps9Equatable", "studentImageView"]
 - !private ["Ps9Equatable", "studentName"]
 - !private ["Ps9Equatable", "studentOneLineBio"]
@@ -408,6 +461,7 @@ depends-member:
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "title"]
+- !private ["Ps9Equatable", "titleTextAttributes"]
 - !private ["Ps9Equatable", "titleView"]
 - !private ["Ps9Equatable", "userInfo"]
 - ["Ps9Equatable", "viewDidLoad"]
@@ -427,6 +481,7 @@ depends-member:
 - !private ["C10startupnyu9ExploreVC", "LoginViewController"]
 - !private ["C10startupnyu9ExploreVC", "NSData"]
 - !private ["C10startupnyu9ExploreVC", "NSError"]
+- !private ["C10startupnyu9ExploreVC", "NSFontAttributeName"]
 - ["C10startupnyu9ExploreVC", "NSIndexPath"]
 - !private ["C10startupnyu9ExploreVC", "PFFile"]
 - !private ["C10startupnyu9ExploreVC", "PFObject"]
@@ -438,6 +493,9 @@ depends-member:
 - ["C10startupnyu9ExploreVC", "String"]
 - !private ["C10startupnyu9ExploreVC", "StudentCellTableView"]
 - ["C10startupnyu9ExploreVC", "StudentStruct"]
+- ["C10startupnyu9ExploreVC", "UIBarButtonItem"]
+- !private ["C10startupnyu9ExploreVC", "UIControlState"]
+- !private ["C10startupnyu9ExploreVC", "UIFont"]
 - !private ["C10startupnyu9ExploreVC", "UIImage"]
 - !private ["C10startupnyu9ExploreVC", "UIStoryboard"]
 - ["C10startupnyu9ExploreVC", "UIStoryboardSegue"]
@@ -469,6 +527,7 @@ depends-member:
 - ["C10startupnyu9ExploreVC", "scrollViewWillBeginZooming"]
 - ["C10startupnyu9ExploreVC", "scrollViewWillEndDragging"]
 - ["C10startupnyu9ExploreVC", "sectionIndexTitlesForTableView"]
+- ["C10startupnyu9ExploreVC", "shareButton"]
 - ["C10startupnyu9ExploreVC", "students"]
 - ["C10startupnyu9ExploreVC", "tableView"]
 - !private ["C10startupnyu9ExploreVC", "title"]
@@ -483,9 +542,12 @@ depends-member:
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "ExploreStruct"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSFontAttributeName"]
 - !private ["Ps8Hashable", "PFQuery"]
 - !private ["Ps8Hashable", "PFUser"]
 - !private ["Ps8Hashable", "StudentStruct"]
+- !private ["Ps8Hashable", "UIControlState"]
+- !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -502,6 +564,7 @@ depends-member:
 - !private ["Ps8Hashable", "instantiateViewControllerWithIdentifier"]
 - ["Ps8Hashable", "menuItemSelected"]
 - ["Ps8Hashable", "menu_items"]
+- !private ["Ps8Hashable", "navigationBar"]
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "navigationItem"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
@@ -527,6 +590,8 @@ depends-member:
 - ["Ps8Hashable", "scrollViewWillBeginZooming"]
 - ["Ps8Hashable", "scrollViewWillEndDragging"]
 - ["Ps8Hashable", "sectionIndexTitlesForTableView"]
+- !private ["Ps8Hashable", "setTitleTextAttributes"]
+- ["Ps8Hashable", "shareButton"]
 - !private ["Ps8Hashable", "studentImageView"]
 - !private ["Ps8Hashable", "studentName"]
 - !private ["Ps8Hashable", "studentOneLineBio"]
@@ -535,6 +600,7 @@ depends-member:
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "title"]
+- !private ["Ps8Hashable", "titleTextAttributes"]
 - !private ["Ps8Hashable", "titleView"]
 - !private ["Ps8Hashable", "userInfo"]
 - ["Ps8Hashable", "viewDidLoad"]
@@ -544,7 +610,9 @@ depends-member:
 - ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
@@ -597,9 +665,12 @@ depends-member:
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "BTNavigationDropdownMenu"]
 - !private ["PSo8NSCoding", "ExploreStruct"]
+- !private ["PSo8NSCoding", "NSFontAttributeName"]
 - !private ["PSo8NSCoding", "PFQuery"]
 - !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "StudentStruct"]
+- !private ["PSo8NSCoding", "UIControlState"]
+- !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
@@ -610,6 +681,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "menuItemSelected"]
 - ["PSo8NSCoding", "menu_items"]
+- !private ["PSo8NSCoding", "navigationBar"]
 - !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "navigationItem"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
@@ -635,6 +707,8 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillBeginZooming"]
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
+- !private ["PSo8NSCoding", "setTitleTextAttributes"]
+- ["PSo8NSCoding", "shareButton"]
 - !private ["PSo8NSCoding", "studentImageView"]
 - !private ["PSo8NSCoding", "studentName"]
 - !private ["PSo8NSCoding", "studentOneLineBio"]
@@ -642,6 +716,7 @@ depends-member:
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "titleView"]
 - !private ["PSo8NSCoding", "userInfo"]
 - ["PSo8NSCoding", "viewDidLoad"]
@@ -654,15 +729,19 @@ depends-member:
 - !private ["CSo7NSError", "userInfo"]
 - !private ["PSo26NSExtensionRequestHandling", "BTNavigationDropdownMenu"]
 - !private ["PSo26NSExtensionRequestHandling", "ExploreStruct"]
+- !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - !private ["PSo26NSExtensionRequestHandling", "StudentStruct"]
+- !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "menuItemSelected"]
 - ["PSo26NSExtensionRequestHandling", "menu_items"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
@@ -684,6 +763,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillBeginZooming"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
+- ["PSo26NSExtensionRequestHandling", "shareButton"]
 - !private ["PSo26NSExtensionRequestHandling", "studentName"]
 - ["PSo26NSExtensionRequestHandling", "students"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
@@ -701,6 +781,7 @@ depends-member:
 - !private ["CSo8NSObject", "LoginViewController"]
 - !private ["CSo8NSObject", "NSData"]
 - !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSFontAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "PFFile"]
 - !private ["CSo8NSObject", "PFObject"]
@@ -712,6 +793,9 @@ depends-member:
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "StudentCellTableView"]
 - ["CSo8NSObject", "StudentStruct"]
+- ["CSo8NSObject", "UIBarButtonItem"]
+- !private ["CSo8NSObject", "UIControlState"]
+- !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIStoryboard"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
@@ -731,6 +815,7 @@ depends-member:
 - !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
 - ["CSo8NSObject", "menuItemSelected"]
 - ["CSo8NSObject", "menu_items"]
+- !private ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
@@ -756,6 +841,8 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillBeginZooming"]
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
+- !private ["CSo8NSObject", "setTitleTextAttributes"]
+- ["CSo8NSObject", "shareButton"]
 - !private ["CSo8NSObject", "studentImageView"]
 - !private ["CSo8NSObject", "studentName"]
 - !private ["CSo8NSObject", "studentOneLineBio"]
@@ -764,15 +851,19 @@ depends-member:
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "titleView"]
 - !private ["CSo8NSObject", "userInfo"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - !private ["PSo16NSObjectProtocol", "BTNavigationDropdownMenu"]
 - !private ["PSo16NSObjectProtocol", "ExploreStruct"]
+- !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "StudentStruct"]
+- !private ["PSo16NSObjectProtocol", "UIControlState"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "currentUser"]
@@ -788,6 +879,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
 - ["PSo16NSObjectProtocol", "menuItemSelected"]
 - ["PSo16NSObjectProtocol", "menu_items"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
@@ -813,6 +905,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillBeginZooming"]
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
+- !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
+- ["PSo16NSObjectProtocol", "shareButton"]
 - !private ["PSo16NSObjectProtocol", "studentImageView"]
 - !private ["PSo16NSObjectProtocol", "studentName"]
 - !private ["PSo16NSObjectProtocol", "studentOneLineBio"]
@@ -821,6 +915,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "titleView"]
 - !private ["PSo16NSObjectProtocol", "userInfo"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
@@ -831,8 +926,9 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "userInfo"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
-- !private ["Ps21NilLiteralConvertible", "Some"]
-- !private ["Sq", "Some"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Ps13OptionSetType", "Normal"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["CSo6PFFile", "getDataInBackgroundWithBlock"]
@@ -858,15 +954,19 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
 - !private ["Ps30RangeReplaceableCollectionType", "first"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps16RawRepresentable", "Normal"]
 - ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "append"]
 - !private ["Ps12SequenceType", "count"]
 - !private ["Ps12SequenceType", "first"]
 - !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps14SetAlgebraType", "Normal"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "Distance"]
@@ -900,10 +1000,12 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "projectImage"]
 - !private ["PSo29UIAccessibilityIdentification", "projectName"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitleTextAttributes"]
 - !private ["PSo29UIAccessibilityIdentification", "studentImageView"]
 - !private ["PSo29UIAccessibilityIdentification", "studentName"]
 - !private ["PSo29UIAccessibilityIdentification", "studentOneLineBio"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "didSelectItemAtIndexHandler"]
 - !private ["PSo12UIAppearance", "image"]
@@ -913,15 +1015,20 @@ depends-member:
 - !private ["PSo12UIAppearance", "projectImage"]
 - !private ["PSo12UIAppearance", "projectName"]
 - !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "setTitleTextAttributes"]
 - !private ["PSo12UIAppearance", "studentImageView"]
 - !private ["PSo12UIAppearance", "studentName"]
 - !private ["PSo12UIAppearance", "studentOneLineBio"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "BTNavigationDropdownMenu"]
 - !private ["PSo21UIAppearanceContainer", "ExploreStruct"]
+- !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "StudentStruct"]
+- !private ["PSo21UIAppearanceContainer", "UIControlState"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
@@ -932,6 +1039,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "menuItemSelected"]
 - ["PSo21UIAppearanceContainer", "menu_items"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
@@ -956,6 +1064,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillBeginZooming"]
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
+- ["PSo21UIAppearanceContainer", "shareButton"]
 - !private ["PSo21UIAppearanceContainer", "studentImageView"]
 - !private ["PSo21UIAppearanceContainer", "studentName"]
 - !private ["PSo21UIAppearanceContainer", "studentOneLineBio"]
@@ -963,20 +1072,28 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "title"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo15UIBarButtonItem", "setTitleTextAttributes"]
+- !private ["CSo9UIBarItem", "setTitleTextAttributes"]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
 - !private ["PSo18UIContentContainer", "BTNavigationDropdownMenu"]
 - !private ["PSo18UIContentContainer", "ExploreStruct"]
+- !private ["PSo18UIContentContainer", "NSFontAttributeName"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
 - !private ["PSo18UIContentContainer", "PFUser"]
 - !private ["PSo18UIContentContainer", "StudentStruct"]
+- !private ["PSo18UIContentContainer", "UIControlState"]
+- !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "menuItemSelected"]
 - ["PSo18UIContentContainer", "menu_items"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - !private ["PSo18UIContentContainer", "navigationItem"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
@@ -998,6 +1115,7 @@ depends-member:
 - ["PSo18UIContentContainer", "scrollViewWillBeginZooming"]
 - ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
+- ["PSo18UIContentContainer", "shareButton"]
 - !private ["PSo18UIContentContainer", "studentName"]
 - ["PSo18UIContentContainer", "students"]
 - ["PSo18UIContentContainer", "tableView"]
@@ -1005,6 +1123,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
+- !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "didSelectItemAtIndexHandler"]
 - !private ["PSo17UICoordinateSpace", "image"]
@@ -1018,6 +1137,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "studentName"]
 - !private ["PSo17UICoordinateSpace", "studentOneLineBio"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "didSelectItemAtIndexHandler"]
 - !private ["PSo13UIDynamicItem", "image"]
@@ -1031,11 +1151,15 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "studentName"]
 - !private ["PSo13UIDynamicItem", "studentOneLineBio"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "BTNavigationDropdownMenu"]
 - !private ["PSo18UIFocusEnvironment", "ExploreStruct"]
+- !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "PFQuery"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "StudentStruct"]
+- !private ["PSo18UIFocusEnvironment", "UIControlState"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
@@ -1046,6 +1170,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "menuItemSelected"]
 - ["PSo18UIFocusEnvironment", "menu_items"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
@@ -1070,6 +1195,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UIFocusEnvironment", "shareButton"]
 - !private ["PSo18UIFocusEnvironment", "studentImageView"]
 - !private ["PSo18UIFocusEnvironment", "studentName"]
 - !private ["PSo18UIFocusEnvironment", "studentOneLineBio"]
@@ -1077,9 +1203,11 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "title"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo6UIFont", "init"]
 - !private ["PSo27UIGestureRecognizerDelegate", "projectDesc"]
 - !private ["PSo27UIGestureRecognizerDelegate", "projectImage"]
 - !private ["PSo27UIGestureRecognizerDelegate", "projectName"]
@@ -1089,6 +1217,8 @@ depends-member:
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
+- !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["CSo16UINavigationItem", "titleView"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Array"]
@@ -1098,6 +1228,7 @@ depends-member:
 - !private ["CSo11UIResponder", "LoginViewController"]
 - !private ["CSo11UIResponder", "NSData"]
 - !private ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSFontAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "PFFile"]
 - !private ["CSo11UIResponder", "PFObject"]
@@ -1109,6 +1240,9 @@ depends-member:
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "StudentCellTableView"]
 - ["CSo11UIResponder", "StudentStruct"]
+- ["CSo11UIResponder", "UIBarButtonItem"]
+- !private ["CSo11UIResponder", "UIControlState"]
+- !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
@@ -1123,6 +1257,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "menuItemSelected"]
 - ["CSo11UIResponder", "menu_items"]
+- !private ["CSo11UIResponder", "navigationBar"]
 - !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
@@ -1147,6 +1282,7 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillBeginZooming"]
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
+- ["CSo11UIResponder", "shareButton"]
 - !private ["CSo11UIResponder", "studentImageView"]
 - !private ["CSo11UIResponder", "studentName"]
 - !private ["CSo11UIResponder", "studentOneLineBio"]
@@ -1154,6 +1290,7 @@ depends-member:
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "title"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
@@ -1161,9 +1298,12 @@ depends-member:
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "BTNavigationDropdownMenu"]
 - !private ["PSo20UIScrollViewDelegate", "ExploreStruct"]
+- !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "PFQuery"]
 - !private ["PSo20UIScrollViewDelegate", "PFUser"]
 - !private ["PSo20UIScrollViewDelegate", "StudentStruct"]
+- !private ["PSo20UIScrollViewDelegate", "UIControlState"]
+- !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIStoryboard"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1189,6 +1329,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo20UIScrollViewDelegate", "shareButton"]
 - !private ["PSo20UIScrollViewDelegate", "studentName"]
 - !private ["PSo20UIScrollViewDelegate", "students"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
@@ -1197,15 +1338,19 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "BTNavigationDropdownMenu"]
 - !private ["PSo16UIStateRestoring", "ExploreStruct"]
+- !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
 - !private ["PSo16UIStateRestoring", "PFQuery"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
 - !private ["PSo16UIStateRestoring", "StudentStruct"]
+- !private ["PSo16UIStateRestoring", "UIControlState"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "menuItemSelected"]
 - ["PSo16UIStateRestoring", "menu_items"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - !private ["PSo16UIStateRestoring", "navigationItem"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
@@ -1227,6 +1372,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "scrollViewWillBeginZooming"]
 - ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
+- ["PSo16UIStateRestoring", "shareButton"]
 - !private ["PSo16UIStateRestoring", "studentName"]
 - ["PSo16UIStateRestoring", "students"]
 - ["PSo16UIStateRestoring", "tableView"]
@@ -1251,9 +1397,12 @@ depends-member:
 - !private ["CSo21UITableViewController", "studentName"]
 - !private ["PSo21UITableViewDataSource", "BTNavigationDropdownMenu"]
 - !private ["PSo21UITableViewDataSource", "ExploreStruct"]
+- !private ["PSo21UITableViewDataSource", "NSFontAttributeName"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
 - !private ["PSo21UITableViewDataSource", "PFUser"]
 - !private ["PSo21UITableViewDataSource", "StudentStruct"]
+- !private ["PSo21UITableViewDataSource", "UIControlState"]
+- !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UIStoryboard"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
@@ -1279,6 +1428,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "scrollViewWillBeginZooming"]
 - ["PSo21UITableViewDataSource", "scrollViewWillEndDragging"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UITableViewDataSource", "shareButton"]
 - !private ["PSo21UITableViewDataSource", "studentName"]
 - !private ["PSo21UITableViewDataSource", "students"]
 - ["PSo21UITableViewDataSource", "tableView"]
@@ -1287,9 +1437,12 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "BTNavigationDropdownMenu"]
 - !private ["PSo19UITableViewDelegate", "ExploreStruct"]
+- !private ["PSo19UITableViewDelegate", "NSFontAttributeName"]
 - !private ["PSo19UITableViewDelegate", "PFQuery"]
 - !private ["PSo19UITableViewDelegate", "PFUser"]
 - !private ["PSo19UITableViewDelegate", "StudentStruct"]
+- !private ["PSo19UITableViewDelegate", "UIControlState"]
+- !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UIStoryboard"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1315,6 +1468,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo19UITableViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo19UITableViewDelegate", "shareButton"]
 - !private ["PSo19UITableViewDelegate", "studentName"]
 - !private ["PSo19UITableViewDelegate", "students"]
 - ["PSo19UITableViewDelegate", "tableView"]
@@ -1323,9 +1477,12 @@ depends-member:
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "BTNavigationDropdownMenu"]
 - !private ["PSo18UITraitEnvironment", "ExploreStruct"]
+- !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UITraitEnvironment", "PFQuery"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
 - !private ["PSo18UITraitEnvironment", "StudentStruct"]
+- !private ["PSo18UITraitEnvironment", "UIControlState"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
@@ -1336,6 +1493,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "menuItemSelected"]
 - ["PSo18UITraitEnvironment", "menu_items"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
@@ -1360,6 +1518,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UITraitEnvironment", "shareButton"]
 - !private ["PSo18UITraitEnvironment", "studentImageView"]
 - !private ["PSo18UITraitEnvironment", "studentName"]
 - !private ["PSo18UITraitEnvironment", "studentOneLineBio"]
@@ -1367,6 +1526,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "title"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
@@ -1382,6 +1542,7 @@ depends-member:
 - !private ["CSo6UIView", "studentName"]
 - !private ["CSo6UIView", "studentOneLineBio"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "titleTextAttributes"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Array"]
 - !private ["CSo16UIViewController", "BTNavigationDropdownMenu"]
@@ -1390,6 +1551,7 @@ depends-member:
 - !private ["CSo16UIViewController", "LoginViewController"]
 - !private ["CSo16UIViewController", "NSData"]
 - !private ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSFontAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "PFFile"]
 - !private ["CSo16UIViewController", "PFObject"]
@@ -1401,6 +1563,9 @@ depends-member:
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "StudentCellTableView"]
 - ["CSo16UIViewController", "StudentStruct"]
+- ["CSo16UIViewController", "UIBarButtonItem"]
+- !private ["CSo16UIViewController", "UIControlState"]
+- !private ["CSo16UIViewController", "UIFont"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
@@ -1412,6 +1577,7 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "menuItemSelected"]
 - ["CSo16UIViewController", "menu_items"]
+- !private ["CSo16UIViewController", "navigationBar"]
 - !private ["CSo16UIViewController", "navigationController"]
 - !private ["CSo16UIViewController", "navigationItem"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
@@ -1433,6 +1599,7 @@ depends-member:
 - ["CSo16UIViewController", "scrollViewWillBeginZooming"]
 - ["CSo16UIViewController", "scrollViewWillEndDragging"]
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
+- ["CSo16UIViewController", "shareButton"]
 - !private ["CSo16UIViewController", "studentName"]
 - ["CSo16UIViewController", "students"]
 - ["CSo16UIViewController", "tableView"]
@@ -1484,7 +1651,9 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
@@ -1500,8 +1669,10 @@ depends-member:
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
-- !private ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "Key"]
+- ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "append"]
@@ -1521,6 +1692,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "studentOneLineBio"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "titleTextAttributes"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
@@ -1534,12 +1706,15 @@ depends-nominal:
 - !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
 - "Ps14CollectionType"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
 - !private "Sd"
 - "Ps9Equatable"
 - !private "Ps9ErrorType"
@@ -1576,8 +1751,9 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- !private "Ps21NilLiteralConvertible"
-- !private "Sq"
+- "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
+- "Sq"
 - !private "Ps16OutputStreamType"
 - !private "CSo6PFFile"
 - !private "CSo8PFObject"
@@ -1589,7 +1765,9 @@ depends-nominal:
 - !private "C10startupnyu26ProjectTableViewController"
 - !private "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
 - "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
@@ -1603,14 +1781,21 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo15UIBarButtonItem"
+- !private "CSo9UIBarItem"
+- !private "PSo16UIBarPositioning"
 - "PSo18UIContentContainer"
+- !private "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "CSo6UIFont"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UIImage"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
+- !private "CSo15UINavigationBar"
+- !private "CSo22UINavigationController"
 - !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
@@ -1827,4 +2012,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-umbrella.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/module.modulemap"
-interface-hash: "e028ce2e6376a854ad41e61246bd27d5"
+interface-hash: "e5c540a5199ef69ee3042009eaea6afb"

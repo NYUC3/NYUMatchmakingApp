@@ -20,6 +20,8 @@
 		47BB7B2E7AC12A6F08A31748 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2525BA45FEFE1C8F8A67156 /* libPods.a */; };
 		C202B0B51D16F03000BA895C /* Pods_startupnyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF217452D92E5C4224BBC2D /* Pods_startupnyu.framework */; };
 		C202B0C81D1767ED00BA895C /* StudentCellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C202B0C71D1767ED00BA895C /* StudentCellTableView.swift */; };
+		C2034B631D18C1EC0090DFBC /* background-login.png in Resources */ = {isa = PBXBuildFile; fileRef = C2034B621D18C1EC0090DFBC /* background-login.png */; };
+		C2034B671D18D0B30090DFBC /* Mail Button.png in Resources */ = {isa = PBXBuildFile; fileRef = C2034B661D18D0B30090DFBC /* Mail Button.png */; };
 		C21037D01C4AB4480039E748 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037CF1C4AB4480039E748 /* ProfileViewController.swift */; };
 		C21037D71C4AC81A0039E748 /* MessagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037D61C4AC81A0039E748 /* MessagesListViewController.swift */; };
 		C21037D91C4AC89F0039E748 /* MessageListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21037D81C4AC89F0039E748 /* MessageListViewCell.swift */; };
@@ -104,6 +106,8 @@
 		A2525BA45FEFE1C8F8A67156 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C202B0B71D16F03000BA895C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Pods.framework; path = "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/Pods.framework"; sourceTree = "<absolute>"; };
 		C202B0C71D1767ED00BA895C /* StudentCellTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCellTableView.swift; sourceTree = "<group>"; };
+		C2034B621D18C1EC0090DFBC /* background-login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-login.png"; sourceTree = "<group>"; };
+		C2034B661D18D0B30090DFBC /* Mail Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mail Button.png"; sourceTree = "<group>"; };
 		C21037CF1C4AB4480039E748 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C21037D61C4AC81A0039E748 /* MessagesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesListViewController.swift; sourceTree = "<group>"; };
 		C21037D81C4AC89F0039E748 /* MessageListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListViewCell.swift; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 		C2E3F0B21C444261007DDBB7 /* startupnyu */ = {
 			isa = PBXGroup;
 			children = (
+				C2034B621D18C1EC0090DFBC /* background-login.png */,
+				C2034B661D18D0B30090DFBC /* Mail Button.png */,
 				C2E3F0B71C444261007DDBB7 /* Main.storyboard */,
 				C21037E21C4AD7B60039E748 /* CustomTabbar.swift */,
 				C2F098521C9E06A20014E2B9 /* Create Project */,
@@ -502,7 +508,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				00032DF61C4C216F0009B002 /* LoginSignupStoryboard.storyboard in Resources */,
+				C2034B671D18D0B30090DFBC /* Mail Button.png in Resources */,
 				C2E3F0E61C4442BB007DDBB7 /* MessageStoryBoard.storyboard in Resources */,
+				C2034B631D18C1EC0090DFBC /* background-login.png in Resources */,
 				C2E3F0BE1C444261007DDBB7 /* LaunchScreen.storyboard in Resources */,
 				C2E3F0BB1C444261007DDBB7 /* Assets.xcassets in Resources */,
 				C2E3F0B91C444261007DDBB7 /* Main.storyboard in Resources */,

@@ -17,6 +17,7 @@ class SignupVC: UIViewController {
     
     
     override func viewDidLoad() {
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background-login.png")!)
         
     }
     

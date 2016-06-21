@@ -207,6 +207,7 @@ SWIFT_CLASS("_TtC10startupnyu9ExploreVC")
 @interface ExploreVC : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull menu_items;
 @property (nonatomic, copy) NSString * _Nullable menuItemSelected;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified shareButton;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -228,6 +229,7 @@ SWIFT_CLASS("_TtC10startupnyu19LoginViewController")
 @interface LoginViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified username;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginButtonOutlet;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)LoginButton:(UIButton * _Nonnull)sender;

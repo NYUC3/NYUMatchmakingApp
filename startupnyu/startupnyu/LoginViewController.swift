@@ -20,10 +20,14 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loginButtonOutlet: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background-login.png")!)
+        loginButtonOutlet.layer.cornerRadius = 25
+        loginButtonOutlet.layer.opacity = 0.7
     }
 
     override func didReceiveMemoryWarning() {
