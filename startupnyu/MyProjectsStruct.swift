@@ -7,18 +7,18 @@
 //
 
 import Foundation
-import Parse
 import UIKit
 
 struct MyProjectStruct {
+    
     init( name : String, tags : String, img: UIImage ){
         self.name = name
         self.tags = tags
         self.image = img
-    }
+    } // init(_)
     
     var name : String
     var tags : String
     var image : UIImage
     
-}
+} // MyProjectStruct

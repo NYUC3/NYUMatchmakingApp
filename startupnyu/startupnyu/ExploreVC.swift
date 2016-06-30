@@ -7,165 +7,100 @@
 //
 
 import UIKit
-import Parse
 import BTNavigationDropdownMenu
-
-
-struct StudentStruct {
-    var name : String
-    var image : UIImage
-    var oneLineBio : String
-    init(name : String, image : UIImage, oneLineBio : String){
-        self.name = name
-        self.image = image
-        self.oneLineBio = oneLineBio
-    }
-}
-
-
 
 
 class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let menu_items = ["Projects", "People"]
+    @IBOutlet weak var shareButton: UIBarButtonItem!                // share button
+    @IBOutlet weak var tableView: UITableView!                      // table view
     
-    var projects : Array<ExploreStruct> = []
-    var students : Array<StudentStruct> = []
-    var menuItemSelected : String?
+    let menu_items = ["Projects", "People"]                         // options for the dropdown in an array
     
-    @IBOutlet weak var shareButton: UIBarButtonItem!
-    @IBOutlet weak var tableView: UITableView!
+    var projects : Array<ExploreStruct> = []                        // array to store project profiles
+    var students : Array<StudentStruct> = []                        // array to store student profiles
+    
+    var menuItemSelected : String?                                  // variable stores selected option from dropDown
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        menuItemSelected = menu_items[0]
-        self.title = "Explore"
+        // setup dropdown menu
+        menuItemSelected = menu_items[0]                            // set default dropdown selection to option at index 0
         let menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title:menu_items.first!, items:menu_items)
         self.navigationItem.titleView = menuView
         
-        if let font = UIFont(name: "Avenir", size: 15) {
-            shareButton.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
-        }
-
-        
         menuView.didSelectItemAtIndexHandler = {[weak self] (indexPath: Int) -> () in
+        
             self?.menuItemSelected = self?.menu_items[indexPath]
             print(self!.students)
             self?.tableView.reloadData()
-        }
         
-        if( PFUser.currentUser() == nil ){
-            // display login
-            print(PFUser.currentUser())
-            let storyboard = UIStoryboard(name: "LoginSignupStoryboard", bundle: nil)
-            let vc = storyboard.instantiateViewControllerWithIdentifier("login") as! LoginViewController
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
-        else{
-            let query = PFQuery(className:"Project")
-            query.findObjectsInBackgroundWithBlock {
-                (objects: [PFObject]?, error: NSError?) -> Void in
-                
-                if error == nil {
-                    // The find succeeded.
-                    print("Successfully retrieved \(objects!.count) scores.")
-                    // Do something with the found objects
-                    if let objects = objects {
-                        for object in objects {
-                            
-                            if let userPicture = object["Image"] as? PFFile {
-                                userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
-                                    if (error == nil) {
-                                        let theStruct = ExploreStruct(name: object["Name"] as! String, tags: object["Tags"] as? String, img: UIImage(data:imageData!)!)
-                                        self.projects.append(theStruct)
-                                        self.tableView.reloadData()
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                
-                else {
-                    // Log details of the failure
-                    print("Error: \(error!) \(error!.userInfo)")
-                }
-                
-                
-                let another_query = PFQuery(className:"Student")
-                another_query.findObjectsInBackgroundWithBlock {
-                    (objects: [PFObject]?, error: NSError?) -> Void in
-                    
-                    if error == nil {
-                        // The find succeeded.
-                        print("Successfully retrieved \(objects!.count) scores.")
-                        // Do something with the found objects
-                        if let objects = objects {
-                            for object in objects {
-                                
-                                if let userPicture = object["ProfilePicture"] as? PFFile {
-                                    userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
-                                        if (error == nil) {
-                                            let theStruct = StudentStruct(name: (object["FirstName"]  as! String) + (object["LastName"] as! String), image: UIImage(data:imageData!)!, oneLineBio: (object["OneLineDescription"] as? String)!)
-                                            self.students.append(theStruct)
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                
-            }
-            
-        }
-    }
+        }//menuView
+        
+        // UI Customization
+        self.title = "Explore"
+        if let font = UIFont(name: "Avenir", size: 15) {
+        
+            shareButton.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
+        
+        }//if
+
+    } //viewDidLoad()
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
+        // returns the number based on the option selected in the dropdown menu
+        
         if(menuItemSelected == "Projects"){
             return projects.count
-        }
+        }//if
         else{
             return students.count
-        }
+        }//else
         
-    }
+    } //tableview( numberofRowsInSection )
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
         if(menuItemSelected == "Projects"){
-            
+
             let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ProjectCell
             cell.projectName.text = projects[indexPath.row].name
             cell.projectDesc.text = projects[indexPath.row].tags
             cell.projectImage.image = projects[indexPath.row].image
             return cell
         
-        }
+        }//if
+        
         else{
-            
+        
             let cell = tableView.dequeueReusableCellWithIdentifier("studentcell", forIndexPath: indexPath) as! StudentCellTableView
             cell.studentImageView.image = students[indexPath.row].image
             cell.studentName.text = students[indexPath.row].name
             cell.studentOneLineBio.text = students[indexPath.row].oneLineBio
             return cell
         
-        }
+        }//else
     
-    }
+    }//tableview ( cellforrowatindexpath )
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {   // segue to the next screen based on the student/project profile selected
+        
         if(menuItemSelected == "Projects"){
+        
             let vc = segue.destinationViewController as! ProjectTableViewController
             vc.projectName = projects[self.tableView.indexPathForSelectedRow!.row].name!
-        }
+        
+        }//of
+        
         else{
+        
             let vc = segue.destinationViewController as! ProfileViewController
             vc.studentName = students[self.tableView.indexPathForSelectedRow!.row].name
-        }
-
-    }
+        
+        }//else
+    
+    }//prepareForSegue
     
 }

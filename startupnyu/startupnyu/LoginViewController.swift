@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Parse
 import AWSCore
 import AWSS3
 import AWSDynamoDB
@@ -18,43 +17,36 @@ import AWSCognito
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var username: UITextField!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var loginButtonOutlet: UIButton!
+    @IBOutlet weak var username: UITextField!           // username
+    @IBOutlet weak var password: UITextField!           // password
+    @IBOutlet weak var loginButtonOutlet: UIButton!     // loginButton
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // UI Customization
+        
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background-login.png")!)
+        
         loginButtonOutlet.layer.cornerRadius = 25
         loginButtonOutlet.layer.opacity = 0.7
-    }
+        
+        
+    } //viewDidLoad()
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func LoginButton(sender: UIButton) {
-        PFUser.logInWithUsernameInBackground(username.text! , password:password.text!) {
-            (user: PFUser?, error: NSError?) -> Void in
-            if user != nil {
-                // Do stuff after successful login.
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewControllerWithIdentifier("mainTab") as! CustomTabbar
-                self.presentViewController(vc, animated: true, completion: nil)
-            } else {
-                // The login failed. Check error to see why.
-                let alert = UIAlertController(title: "Something Went Wrong", message: "Please try again!", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
-                self.presentViewController(alert, animated: true, completion: nil)
-            }
-        }
-    }
+        
+        
+        
+        
+        
+    } //LoginButton()
     
     @IBAction func unwindTologinup(segue: UIStoryboardSegue) {
         // some code to execute
-    } // unwindToPrevious
+    } // unwindTologinup
 
 
-}
+} // LoginViewController

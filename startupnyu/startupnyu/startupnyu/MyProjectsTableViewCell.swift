@@ -10,8 +10,8 @@ import UIKit
 
 class MyProjectsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var projectName: UILabel!
-    @IBOutlet weak var projectImage: UIImageView!
+    @IBOutlet weak var projectName: UILabel!            // Name
+    @IBOutlet weak var projectImage: UIImageView!       // Image
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +24,4 @@ class MyProjectsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-}
+} // MyProjectsTableViewCell

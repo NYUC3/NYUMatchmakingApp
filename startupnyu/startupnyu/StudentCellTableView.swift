@@ -10,9 +10,9 @@ import UIKit
 
 class StudentCellTableView: UITableViewCell {
     
-    @IBOutlet weak var studentImageView: UIImageView!
-    @IBOutlet weak var studentName: UILabel!
-    @IBOutlet weak var studentOneLineBio: UILabel!
+    @IBOutlet weak var studentImageView: UIImageView!   // student profile image
+    @IBOutlet weak var studentName: UILabel!            // student name
+    @IBOutlet weak var studentOneLineBio: UILabel!      // student bio in one line
     
 
 }

@@ -8,46 +8,39 @@ provides-member:
 provides-dynamic-lookup:
 - "aboutTextField"
 - "imagePickerController"
+- "viewDidLoad"
+- "projectName"
+- "saveButtonTapped"
+- "cancelButtonTapped"
 - "cancelButton"
+- "didReceiveMemoryWarning"
 - "imagePicker"
-- "imagePickerControllerDidCancel"
 - "uploadImageTapped"
 - "requirementsTextField"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
-- "cancelButtonTapped"
-- "projectName"
+- "imagePickerControllerDidCancel"
 - "projectImageView"
-- "saveButtonTapped"
 depends-top-level:
-- !private "UIAlertControllerStyle"
-- !private "UIAlertController"
-- !private "&&"
-- "UITextField"
-- "UIImagePickerControllerDelegate"
-- !private "NSError"
-- "UITextView"
-- !private "!="
-- "CreateProjectViewController"
-- !private "StringLiteralType"
-- !private "Void"
-- !private "UIAlertAction"
-- "UITableViewController"
-- !private "UIImagePickerControllerOriginalImage"
 - "String"
-- "UIButton"
-- !private "Bool"
-- !private "UIImage"
-- !private "PFObject"
-- "AnyObject"
-- "UIImageView"
-- !private "UIAlertActionStyle"
-- !private "BooleanLiteralType"
-- !private "PFUser"
 - "UIImagePickerController"
+- !private "UIAlertController"
+- !private "BooleanLiteralType"
+- "UIImagePickerControllerDelegate"
+- !private "!="
+- "UITextField"
+- "CreateProjectViewController"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "UIAlertControllerStyle"
+- "UITextView"
+- !private "StringLiteralType"
+- "UITableViewController"
+- "UIButton"
+- "UIImageView"
+- !private "UIAlertAction"
+- !private "&&"
+- "AnyObject"
+- !private "UIImage"
+- !private "UIAlertActionStyle"
 depends-member:
-- !private ["Ps9AnyObject", "PFObject"]
-- !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertActionStyle"]
 - !private ["Ps9AnyObject", "UIAlertController"]
@@ -60,11 +53,8 @@ depends-member:
 - ["Ps9AnyObject", "cancelButton"]
 - ["Ps9AnyObject", "cancelButtonTapped"]
 - !private ["Ps9AnyObject", "contentMode"]
-- !private ["Ps9AnyObject", "currentUser"]
-- !private ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
-- !private ["Ps9AnyObject", "email"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "imagePicker"]
 - ["Ps9AnyObject", "imagePickerController"]
@@ -78,9 +68,7 @@ depends-member:
 - !private ["Ps9AnyObject", "reloadData"]
 - ["Ps9AnyObject", "requirementsTextField"]
 - ["Ps9AnyObject", "saveButtonTapped"]
-- !private ["Ps9AnyObject", "saveInBackgroundWithBlock"]
 - !private ["Ps9AnyObject", "sourceType"]
-- !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "uploadImageTapped"]
@@ -89,8 +77,6 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
-- !private ["Ps11CVarArgType", "PFObject"]
-- !private ["Ps11CVarArgType", "PFUser"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertActionStyle"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
@@ -103,10 +89,8 @@ depends-member:
 - ["Ps11CVarArgType", "cancelButton"]
 - ["Ps11CVarArgType", "cancelButtonTapped"]
 - !private ["Ps11CVarArgType", "contentMode"]
-- !private ["Ps11CVarArgType", "currentUser"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
-- !private ["Ps11CVarArgType", "email"]
 - !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "imagePicker"]
 - ["Ps11CVarArgType", "imagePickerController"]
@@ -120,9 +104,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "reloadData"]
 - ["Ps11CVarArgType", "requirementsTextField"]
 - ["Ps11CVarArgType", "saveButtonTapped"]
-- !private ["Ps11CVarArgType", "saveInBackgroundWithBlock"]
 - !private ["Ps11CVarArgType", "sourceType"]
-- !private ["Ps11CVarArgType", "subscript"]
 - !private ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "uploadImageTapped"]
@@ -134,10 +116,6 @@ depends-member:
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "subscript"]
 - ["C10startupnyu27CreateProjectViewController", "AnyObject"]
-- !private ["C10startupnyu27CreateProjectViewController", "Bool"]
-- !private ["C10startupnyu27CreateProjectViewController", "NSError"]
-- !private ["C10startupnyu27CreateProjectViewController", "PFObject"]
-- !private ["C10startupnyu27CreateProjectViewController", "PFUser"]
 - ["C10startupnyu27CreateProjectViewController", "String"]
 - !private ["C10startupnyu27CreateProjectViewController", "UIAlertAction"]
 - !private ["C10startupnyu27CreateProjectViewController", "UIAlertActionStyle"]
@@ -150,7 +128,6 @@ depends-member:
 - ["C10startupnyu27CreateProjectViewController", "UIImageView"]
 - ["C10startupnyu27CreateProjectViewController", "UITextField"]
 - ["C10startupnyu27CreateProjectViewController", "UITextView"]
-- !private ["C10startupnyu27CreateProjectViewController", "Void"]
 - ["C10startupnyu27CreateProjectViewController", "aboutTextField"]
 - ["C10startupnyu27CreateProjectViewController", "cancelButton"]
 - ["C10startupnyu27CreateProjectViewController", "cancelButtonTapped"]
@@ -171,8 +148,6 @@ depends-member:
 - ["C10startupnyu27CreateProjectViewController", "uploadImageTapped"]
 - ["C10startupnyu27CreateProjectViewController", "viewDidLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
-- !private ["Ps28CustomDebugStringConvertible", "PFObject"]
-- !private ["Ps28CustomDebugStringConvertible", "PFUser"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
@@ -186,10 +161,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "cancelButton"]
 - ["Ps28CustomDebugStringConvertible", "cancelButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
-- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
-- !private ["Ps28CustomDebugStringConvertible", "email"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "imagePicker"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerController"]
@@ -203,7 +176,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - ["Ps28CustomDebugStringConvertible", "requirementsTextField"]
 - ["Ps28CustomDebugStringConvertible", "saveButtonTapped"]
-- !private ["Ps28CustomDebugStringConvertible", "saveInBackgroundWithBlock"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceType"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "tableView"]
@@ -212,8 +184,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "Index"]
-- !private ["Ps23CustomStringConvertible", "PFObject"]
-- !private ["Ps23CustomStringConvertible", "PFUser"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
@@ -227,10 +197,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "cancelButton"]
 - ["Ps23CustomStringConvertible", "cancelButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "contentMode"]
-- !private ["Ps23CustomStringConvertible", "currentUser"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
-- !private ["Ps23CustomStringConvertible", "email"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "imagePicker"]
 - ["Ps23CustomStringConvertible", "imagePickerController"]
@@ -244,7 +212,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - ["Ps23CustomStringConvertible", "requirementsTextField"]
 - ["Ps23CustomStringConvertible", "saveButtonTapped"]
-- !private ["Ps23CustomStringConvertible", "saveInBackgroundWithBlock"]
 - !private ["Ps23CustomStringConvertible", "sourceType"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "tableView"]
@@ -259,8 +226,6 @@ depends-member:
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
 - !private ["Ps9Equatable", "Alert"]
 - !private ["Ps9Equatable", "Default"]
-- !private ["Ps9Equatable", "PFObject"]
-- !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "PhotoLibrary"]
 - !private ["Ps9Equatable", "ScaleAspectFit"]
 - !private ["Ps9Equatable", "UIAlertAction"]
@@ -276,10 +241,8 @@ depends-member:
 - ["Ps9Equatable", "cancelButton"]
 - ["Ps9Equatable", "cancelButtonTapped"]
 - !private ["Ps9Equatable", "contentMode"]
-- !private ["Ps9Equatable", "currentUser"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "dismissViewControllerAnimated"]
-- !private ["Ps9Equatable", "email"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "imagePicker"]
 - ["Ps9Equatable", "imagePickerController"]
@@ -293,9 +256,7 @@ depends-member:
 - !private ["Ps9Equatable", "reloadData"]
 - ["Ps9Equatable", "requirementsTextField"]
 - ["Ps9Equatable", "saveButtonTapped"]
-- !private ["Ps9Equatable", "saveInBackgroundWithBlock"]
 - !private ["Ps9Equatable", "sourceType"]
-- !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "uploadImageTapped"]
@@ -304,8 +265,6 @@ depends-member:
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["Ps8Hashable", "Alert"]
 - !private ["Ps8Hashable", "Default"]
-- !private ["Ps8Hashable", "PFObject"]
-- !private ["Ps8Hashable", "PFUser"]
 - !private ["Ps8Hashable", "PhotoLibrary"]
 - !private ["Ps8Hashable", "ScaleAspectFit"]
 - !private ["Ps8Hashable", "UIAlertAction"]
@@ -321,10 +280,8 @@ depends-member:
 - ["Ps8Hashable", "cancelButton"]
 - ["Ps8Hashable", "cancelButtonTapped"]
 - !private ["Ps8Hashable", "contentMode"]
-- !private ["Ps8Hashable", "currentUser"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "dismissViewControllerAnimated"]
-- !private ["Ps8Hashable", "email"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "imagePicker"]
 - ["Ps8Hashable", "imagePickerController"]
@@ -338,9 +295,7 @@ depends-member:
 - !private ["Ps8Hashable", "reloadData"]
 - ["Ps8Hashable", "requirementsTextField"]
 - ["Ps8Hashable", "saveButtonTapped"]
-- !private ["Ps8Hashable", "saveInBackgroundWithBlock"]
 - !private ["Ps8Hashable", "sourceType"]
-- !private ["Ps8Hashable", "subscript"]
 - !private ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "uploadImageTapped"]
@@ -353,8 +308,6 @@ depends-member:
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
-- !private ["PSo8NSCoding", "PFObject"]
-- !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertActionStyle"]
 - !private ["PSo8NSCoding", "UIAlertController"]
@@ -389,8 +342,6 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "PFObject"]
-- !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertActionStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
@@ -421,10 +372,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "AnyObject"]
-- !private ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "NSError"]
-- !private ["CSo8NSObject", "PFObject"]
-- !private ["CSo8NSObject", "PFUser"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertActionStyle"]
@@ -437,17 +384,14 @@ depends-member:
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "UITextView"]
-- !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "aboutTextField"]
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "allowsEditing"]
 - ["CSo8NSObject", "cancelButton"]
 - ["CSo8NSObject", "cancelButtonTapped"]
 - !private ["CSo8NSObject", "contentMode"]
-- !private ["CSo8NSObject", "currentUser"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "dismissViewControllerAnimated"]
-- !private ["CSo8NSObject", "email"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imagePicker"]
 - ["CSo8NSObject", "imagePickerController"]
@@ -461,15 +405,11 @@ depends-member:
 - !private ["CSo8NSObject", "reloadData"]
 - ["CSo8NSObject", "requirementsTextField"]
 - ["CSo8NSObject", "saveButtonTapped"]
-- !private ["CSo8NSObject", "saveInBackgroundWithBlock"]
 - !private ["CSo8NSObject", "sourceType"]
-- !private ["CSo8NSObject", "subscript"]
 - !private ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "uploadImageTapped"]
 - ["CSo8NSObject", "viewDidLoad"]
-- !private ["PSo16NSObjectProtocol", "PFObject"]
-- !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
@@ -482,10 +422,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "cancelButton"]
 - ["PSo16NSObjectProtocol", "cancelButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
-- !private ["PSo16NSObjectProtocol", "currentUser"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
-- !private ["PSo16NSObjectProtocol", "email"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imagePicker"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
@@ -499,9 +437,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - ["PSo16NSObjectProtocol", "requirementsTextField"]
 - ["PSo16NSObjectProtocol", "saveButtonTapped"]
-- !private ["PSo16NSObjectProtocol", "saveInBackgroundWithBlock"]
 - !private ["PSo16NSObjectProtocol", "sourceType"]
-- !private ["PSo16NSObjectProtocol", "subscript"]
 - !private ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "uploadImageTapped"]
@@ -510,15 +446,6 @@ depends-member:
 - ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
-- !private ["CSo8PFObject", "currentUser"]
-- !private ["CSo8PFObject", "email"]
-- !private ["CSo8PFObject", "init"]
-- !private ["CSo8PFObject", "saveInBackgroundWithBlock"]
-- !private ["CSo8PFObject", "subscript"]
-- !private ["PSo13PFSubclassing", "currentUser"]
-- !private ["PSo13PFSubclassing", "email"]
-- !private ["CSo6PFUser", "currentUser"]
-- !private ["CSo6PFUser", "email"]
 - !private ["Ps16RawRepresentable", "Alert"]
 - !private ["Ps16RawRepresentable", "Default"]
 - !private ["Ps16RawRepresentable", "PhotoLibrary"]
@@ -547,8 +474,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "text"]
-- !private ["PSo21UIAppearanceContainer", "PFObject"]
-- !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
@@ -582,8 +507,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "uploadImageTapped"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "PFObject"]
-- !private ["PSo18UIContentContainer", "PFUser"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertActionStyle"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
@@ -622,8 +545,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "text"]
-- !private ["PSo18UIFocusEnvironment", "PFObject"]
-- !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertActionStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
@@ -660,8 +581,6 @@ depends-member:
 - !private ["CSo23UIImagePickerController", "allowsEditing"]
 - ["CSo23UIImagePickerController", "init"]
 - !private ["CSo23UIImagePickerController", "sourceType"]
-- !private ["PSo31UIImagePickerControllerDelegate", "PFObject"]
-- !private ["PSo31UIImagePickerControllerDelegate", "PFUser"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIAlertAction"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIAlertActionStyle"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIAlertController"]
@@ -689,10 +608,6 @@ depends-member:
 - !private ["CSo22UINavigationController", "popToRootViewControllerAnimated"]
 - !private ["CSo22UINavigationController", "sourceType"]
 - ["CSo11UIResponder", "AnyObject"]
-- !private ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "NSError"]
-- !private ["CSo11UIResponder", "PFObject"]
-- !private ["CSo11UIResponder", "PFUser"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertActionStyle"]
@@ -705,7 +620,6 @@ depends-member:
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "UITextView"]
-- !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "aboutTextField"]
 - !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "allowsEditing"]
@@ -734,8 +648,6 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["CSo12UIScrollView", "text"]
-- !private ["PSo20UIScrollViewDelegate", "PFObject"]
-- !private ["PSo20UIScrollViewDelegate", "PFUser"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertActionStyle"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
@@ -761,8 +673,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "uploadImageTapped"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
-- !private ["PSo16UIStateRestoring", "PFObject"]
-- !private ["PSo16UIStateRestoring", "PFUser"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertActionStyle"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
@@ -794,10 +704,6 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "reloadData"]
 - ["CSo21UITableViewController", "AnyObject"]
-- !private ["CSo21UITableViewController", "Bool"]
-- !private ["CSo21UITableViewController", "NSError"]
-- !private ["CSo21UITableViewController", "PFObject"]
-- !private ["CSo21UITableViewController", "PFUser"]
 - ["CSo21UITableViewController", "String"]
 - !private ["CSo21UITableViewController", "UIAlertAction"]
 - !private ["CSo21UITableViewController", "UIAlertActionStyle"]
@@ -810,7 +716,6 @@ depends-member:
 - ["CSo21UITableViewController", "UIImageView"]
 - ["CSo21UITableViewController", "UITextField"]
 - ["CSo21UITableViewController", "UITextView"]
-- !private ["CSo21UITableViewController", "Void"]
 - ["CSo21UITableViewController", "aboutTextField"]
 - ["CSo21UITableViewController", "cancelButton"]
 - ["CSo21UITableViewController", "cancelButtonTapped"]
@@ -830,8 +735,6 @@ depends-member:
 - ["CSo21UITableViewController", "uploadImageTapped"]
 - ["CSo21UITableViewController", "viewDidLoad"]
 - ["CSo21UITableViewController", ""]
-- !private ["PSo21UITableViewDataSource", "PFObject"]
-- !private ["PSo21UITableViewDataSource", "PFUser"]
 - !private ["PSo21UITableViewDataSource", "UIAlertAction"]
 - !private ["PSo21UITableViewDataSource", "UIAlertActionStyle"]
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
@@ -857,8 +760,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", "uploadImageTapped"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
 - ["PSo21UITableViewDataSource", ""]
-- !private ["PSo19UITableViewDelegate", "PFObject"]
-- !private ["PSo19UITableViewDelegate", "PFUser"]
 - !private ["PSo19UITableViewDelegate", "UIAlertAction"]
 - !private ["PSo19UITableViewDelegate", "UIAlertActionStyle"]
 - !private ["PSo19UITableViewDelegate", "UIAlertController"]
@@ -888,8 +789,6 @@ depends-member:
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["CSo10UITextView", "text"]
-- !private ["PSo18UITraitEnvironment", "PFObject"]
-- !private ["PSo18UITraitEnvironment", "PFUser"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
@@ -929,10 +828,6 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - !private ["OSC17UIViewContentMode", "ScaleAspectFit"]
 - ["CSo16UIViewController", "AnyObject"]
-- !private ["CSo16UIViewController", "Bool"]
-- !private ["CSo16UIViewController", "NSError"]
-- !private ["CSo16UIViewController", "PFObject"]
-- !private ["CSo16UIViewController", "PFUser"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertActionStyle"]
@@ -945,7 +840,6 @@ depends-member:
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "UITextView"]
-- !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "aboutTextField"]
 - !private ["CSo16UIViewController", "addAction"]
 - !private ["CSo16UIViewController", "allowsEditing"]
@@ -1006,9 +900,6 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "Ps21NilLiteralConvertible"
 - "Sq"
-- !private "CSo8PFObject"
-- !private "PSo13PFSubclassing"
-- !private "CSo6PFUser"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
 - !private "Vs5Slice"
@@ -1061,66 +952,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "./Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "./Bolts.framework/Headers/BFURL.h"
-- "./Bolts.framework/Headers/BFMeasurementEvent.h"
-- "./Bolts.framework/Headers/BFAppLinkTarget.h"
-- "./Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "./Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "./Bolts.framework/Headers/BFAppLinkResolving.h"
-- "./Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "./Bolts.framework/Headers/BFAppLink.h"
-- "./Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "./Bolts.framework/Headers/BFTask.h"
-- "./Bolts.framework/Headers/BFExecutor.h"
-- "./Bolts.framework/Headers/BFDefines.h"
-- "./Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "./Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "./Bolts.framework/Headers/BFCancellationToken.h"
-- "./Bolts.framework/Headers/BoltsVersion.h"
-- "./Bolts.framework/Headers/Bolts.h"
-- "./Bolts.framework/Modules/module.modulemap"
-- "./Parse.framework/Headers/PFPurchase.h"
-- "./Parse.framework/Headers/PFProduct.h"
-- "./Parse.framework/Headers/PFPush+Deprecated.h"
-- "./Parse.framework/Headers/PFPush+Synchronous.h"
-- "./Parse.framework/Headers/PFPush.h"
-- "./Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
-- "./Parse.framework/Headers/PFInstallation.h"
-- "./Parse.framework/Headers/PFUserAuthenticationDelegate.h"
-- "./Parse.framework/Headers/PFUser+Deprecated.h"
-- "./Parse.framework/Headers/PFUser+Synchronous.h"
-- "./Parse.framework/Headers/PFSession.h"
-- "./Parse.framework/Headers/PFRole.h"
-- "./Parse.framework/Headers/PFRelation.h"
-- "./Parse.framework/Headers/PFQuery+Deprecated.h"
-- "./Parse.framework/Headers/PFQuery+Synchronous.h"
-- "./Parse.framework/Headers/PFQuery.h"
-- "./Parse.framework/Headers/PFObject+Deprecated.h"
-- "./Parse.framework/Headers/PFObject+Synchronous.h"
-- "./Parse.framework/Headers/PFObject+Subclass.h"
-- "./Parse.framework/Headers/PFGeoPoint.h"
-- "./Parse.framework/Headers/PFFile+Synchronous.h"
-- "./Parse.framework/Headers/PFFile+Deprecated.h"
-- "./Parse.framework/Headers/PFFile.h"
-- "./Parse.framework/Headers/PFConfig+Synchronous.h"
-- "./Parse.framework/Headers/PFConfig.h"
-- "./Parse.framework/Headers/PFCloud+Synchronous.h"
-- "./Parse.framework/Headers/PFCloud+Deprecated.h"
-- "./Parse.framework/Headers/PFCloud.h"
-- "./Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
-- "./Parse.framework/Headers/PFSubclassing.h"
-- "./Parse.framework/Headers/PFObject.h"
-- "./Parse.framework/Headers/PFUser.h"
-- "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
-- "./Parse.framework/Headers/PFAnalytics.h"
-- "./Parse.framework/Headers/PFACL.h"
-- "./Parse.framework/Headers/PFConstants.h"
-- "./Parse.framework/Headers/ParseClientConfiguration.h"
-- "./Parse.framework/Headers/Parse.h"
-- "./Parse.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCacheBackgroundTaskManager.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSError+AWSMTLModelException.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLReflection.h"
@@ -1228,4 +1059,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-umbrella.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/module.modulemap"
-interface-hash: "94d9990c31b44dee6d6b05e4ce8b1ee4"
+interface-hash: "c4bb1264d85188e6bb95e1c7ee1bcb54"

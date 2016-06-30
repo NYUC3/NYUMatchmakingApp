@@ -7,95 +7,88 @@
 //
 
 import UIKit
-import Parse
 
 class ProjectsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var tableView: UITableView!
-    var projectsList : Array<MyProjectStruct> = [] // Note: ExploreStruct is a shitty name pls change
+    @IBOutlet weak var tableView: UITableView!                          // table view
+    
+    var projectsList : Array<MyProjectStruct> = []                      // array to store all the projects
+    
     
     override func viewDidAppear(animated: Bool) {
+    
         tableView.reloadData()
         self.title = "My Projects"
-    }
+    
+    } // viewDidAppear(_)
 
+    
+    
     override func viewDidLoad() {
+    
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        // TO DO: Load user's projects into projectsList
-        
-        let query = PFQuery(className:"Project")
-        query.whereKey("email", equalTo:(PFUser.currentUser()?.email)!)
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [PFObject]?, error: NSError?) -> Void in
-            
-            if error == nil {
-                // The find succeeded.
-                print("Successfully retrieved \(objects!.count) scores.")
-                // Do something with the found objects
-                if let objects = objects {
-                    for object in objects {
-                        if let userPicture = object["Image"] as? PFFile {
-                            userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
-                                if (error == nil) {
-                                    
-                                    let projectObject = MyProjectStruct(name: object["Name"] as! String, tags: object["Tags"] as! String, img: UIImage(data:imageData!)!)
-                                    self.projectsList.append(projectObject)
-                                    self.tableView.reloadData()
-                                }
-                            }
-                        }
-                    }
-                }
-            } else {
-                // Log details of the failure
-                print("Error: \(error!) \(error!.userInfo)")
-            }
-        }
+    
+    } // viewDidLoad()
 
-        
-    }
-
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return projectsList.count + 1
-    }
+    
+        return projectsList.count + 1                                   // + 1 is the extra cell for the plus/add button
+    
+    } // tableView(numberOfRows)
+    
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         
         if(indexPath.row == projectsList.count){
+            
             let cell = tableView.dequeueReusableCellWithIdentifier("addbutton", forIndexPath: indexPath) as! AddButtonTableViewCell
             return cell
-        }
             
+        } //if
+    
         else{
+            
             let cell = tableView.dequeueReusableCellWithIdentifier("createproject", forIndexPath: indexPath) as! MyProjectsTableViewCell
             // WORK ON DISPLAYING PICTURE
             cell.projectName.text = projectsList[indexPath.row].name
             cell.projectImage.image = projectsList[indexPath.row].image
             return cell
-        }
-    }
+            
+        } //else
+        
+    } // tableView(cellForRowAtIndexPath)
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if(tableView.indexPathForSelectedRow == projectsList.count + 1){
             
-        }
+        } // if
+            
         else{
             
             let vc = segue.destinationViewController as! MyProjectTableViewController
             vc.projectName = projectsList[self.tableView.indexPathForSelectedRow!.row].name
         
-        }
-    }
+        } // else
+        
+    } // prepareForSegue(_)
 
 
+    
     @IBAction func LogoutTapped(sender: AnyObject) {
         
-        PFUser.logOut()
+        //PFUser.logOut()
         let storyboard = UIStoryboard(name: "LoginSignupStoryboard", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier("login") as! LoginViewController
         self.presentViewController(vc, animated: true, completion: nil)
         
-    }
-}
+    } // LogoutTapped(_)
+    
+    
+    
+} // ProjectsListViewController

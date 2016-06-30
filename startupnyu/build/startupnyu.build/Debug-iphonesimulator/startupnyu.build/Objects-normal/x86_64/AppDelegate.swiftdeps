@@ -6,27 +6,24 @@ provides-nominal:
 provides-member:
 - ["C10startupnyu11AppDelegate", ""]
 provides-dynamic-lookup:
-- "application"
-- "applicationWillEnterForeground"
 - "applicationDidEnterBackground"
-- "applicationDidBecomeActive"
 - "window"
+- "application"
 - "applicationWillResignActive"
 - "applicationWillTerminate"
+- "applicationWillEnterForeground"
+- "applicationDidBecomeActive"
 depends-top-level:
-- !private "Parse"
-- "UIWindow"
-- "NSObject"
-- !private "StringLiteralType"
-- "UIResponder"
-- "AppDelegate"
 - "UIApplicationDelegate"
-- "AnyObject"
+- "UIResponder"
+- "UIWindow"
+- "AppDelegate"
 - "Bool"
+- "NSObject"
+- "AnyObject"
 - "UIApplication"
 - !private "BooleanLiteralType"
 depends-member:
-- !private ["Ps9AnyObject", "Parse"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -40,13 +37,11 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "setApplicationId"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C10startupnyu11AppDelegate", "AnyObject"]
 - ["C10startupnyu11AppDelegate", "Bool"]
 - ["C10startupnyu11AppDelegate", "NSObject"]
-- !private ["C10startupnyu11AppDelegate", "Parse"]
 - ["C10startupnyu11AppDelegate", "UIApplication"]
 - ["C10startupnyu11AppDelegate", "UIWindow"]
 - ["C10startupnyu11AppDelegate", "application"]
@@ -64,7 +59,6 @@ depends-member:
 - ["C10startupnyu11AppDelegate", "deinit"]
 - ["C10startupnyu11AppDelegate", "init"]
 - ["C10startupnyu11AppDelegate", "window"]
-- !private ["Ps11CVarArgType", "Parse"]
 - ["Ps11CVarArgType", "application"]
 - ["Ps11CVarArgType", "applicationDidBecomeActive"]
 - ["Ps11CVarArgType", "applicationDidEnterBackground"]
@@ -78,10 +72,8 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillResignActive"]
 - ["Ps11CVarArgType", "applicationWillTerminate"]
 - ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "setApplicationId"]
 - ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
-- !private ["Ps28CustomDebugStringConvertible", "Parse"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -95,10 +87,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "setApplicationId"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "Parse"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -112,10 +102,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
 - ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "setApplicationId"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "Parse"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -129,10 +117,8 @@ depends-member:
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
 - ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "setApplicationId"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
-- !private ["Ps8Hashable", "Parse"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -146,13 +132,11 @@ depends-member:
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
 - ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "setApplicationId"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "NSObject"]
-- !private ["CSo8NSObject", "Parse"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIWindow"]
 - ["CSo8NSObject", "application"]
@@ -168,9 +152,7 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "setApplicationId"]
 - ["CSo8NSObject", "window"]
-- !private ["PSo16NSObjectProtocol", "Parse"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -184,11 +166,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "setApplicationId"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["CSo5Parse", "setApplicationId"]
-- !private ["PSo21UIApplicationDelegate", "Parse"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -206,7 +185,6 @@ depends-member:
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "NSObject"]
-- !private ["CSo11UIResponder", "Parse"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIWindow"]
 - ["CSo11UIResponder", "application"]
@@ -234,7 +212,6 @@ depends-nominal:
 - "Ps8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "CSo5Parse"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
 depends-dynamic-lookup:
@@ -247,66 +224,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "./Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "./Bolts.framework/Headers/BFURL.h"
-- "./Bolts.framework/Headers/BFMeasurementEvent.h"
-- "./Bolts.framework/Headers/BFAppLinkTarget.h"
-- "./Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "./Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "./Bolts.framework/Headers/BFAppLinkResolving.h"
-- "./Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "./Bolts.framework/Headers/BFAppLink.h"
-- "./Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "./Bolts.framework/Headers/BFTask.h"
-- "./Bolts.framework/Headers/BFExecutor.h"
-- "./Bolts.framework/Headers/BFDefines.h"
-- "./Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "./Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "./Bolts.framework/Headers/BFCancellationToken.h"
-- "./Bolts.framework/Headers/BoltsVersion.h"
-- "./Bolts.framework/Headers/Bolts.h"
-- "./Bolts.framework/Modules/module.modulemap"
-- "./Parse.framework/Headers/PFPurchase.h"
-- "./Parse.framework/Headers/PFProduct.h"
-- "./Parse.framework/Headers/PFPush+Deprecated.h"
-- "./Parse.framework/Headers/PFPush+Synchronous.h"
-- "./Parse.framework/Headers/PFPush.h"
-- "./Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
-- "./Parse.framework/Headers/PFInstallation.h"
-- "./Parse.framework/Headers/PFUserAuthenticationDelegate.h"
-- "./Parse.framework/Headers/PFUser+Deprecated.h"
-- "./Parse.framework/Headers/PFUser+Synchronous.h"
-- "./Parse.framework/Headers/PFSession.h"
-- "./Parse.framework/Headers/PFRole.h"
-- "./Parse.framework/Headers/PFRelation.h"
-- "./Parse.framework/Headers/PFQuery+Deprecated.h"
-- "./Parse.framework/Headers/PFQuery+Synchronous.h"
-- "./Parse.framework/Headers/PFQuery.h"
-- "./Parse.framework/Headers/PFObject+Deprecated.h"
-- "./Parse.framework/Headers/PFObject+Synchronous.h"
-- "./Parse.framework/Headers/PFObject+Subclass.h"
-- "./Parse.framework/Headers/PFGeoPoint.h"
-- "./Parse.framework/Headers/PFFile+Synchronous.h"
-- "./Parse.framework/Headers/PFFile+Deprecated.h"
-- "./Parse.framework/Headers/PFFile.h"
-- "./Parse.framework/Headers/PFConfig+Synchronous.h"
-- "./Parse.framework/Headers/PFConfig.h"
-- "./Parse.framework/Headers/PFCloud+Synchronous.h"
-- "./Parse.framework/Headers/PFCloud+Deprecated.h"
-- "./Parse.framework/Headers/PFCloud.h"
-- "./Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
-- "./Parse.framework/Headers/PFSubclassing.h"
-- "./Parse.framework/Headers/PFObject.h"
-- "./Parse.framework/Headers/PFUser.h"
-- "./Parse.framework/Headers/PFAnonymousUtils.h"
-- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Bolts.framework/Modules/module.modulemap"
-- "./Parse.framework/Headers/PFAnalytics.h"
-- "./Parse.framework/Headers/PFACL.h"
-- "./Parse.framework/Headers/PFConstants.h"
-- "./Parse.framework/Headers/ParseClientConfiguration.h"
-- "./Parse.framework/Headers/Parse.h"
-- "./Parse.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCacheBackgroundTaskManager.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSError+AWSMTLModelException.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLReflection.h"
@@ -414,4 +331,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-umbrella.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/module.modulemap"
-interface-hash: "d159a83959118c14b38256c0c56fbaf9"
+interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"

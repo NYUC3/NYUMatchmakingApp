@@ -7,162 +7,56 @@
 //
 
 import UIKit
-import Parse
 
 class ProfileViewController: UITableViewController{
     
-    @IBOutlet weak var settingsButton: UIBarButtonItem!
-    @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var userInformationLabel: UILabel!
-    @IBOutlet weak var fullnameLabel: UILabel!
-    @IBOutlet weak var onelineDescriptionLabel: UILabel!
+    @IBOutlet weak var settingsButton: UIBarButtonItem!         // settings button
+    @IBOutlet weak var profileImageView: UIImageView!           // profile image view
+    @IBOutlet weak var userInformationLabel: UILabel!           // user information label
+    @IBOutlet weak var fullnameLabel: UILabel!                  // full name label
+    @IBOutlet weak var onelineDescriptionLabel: UILabel!        // one line description label
  
+    // variables to store student information. will be shown blank if nothing is retrieved from the DB
+    
     var bio = ""
     var links = ""
     var skills = ""
     var fullName = ""
     var oneLineDescription = ""
     
-    var studentName : String?
+    var studentName : String?                                   // save student name from previous screen/class
     
     override func viewDidLoad() {
         
-        // CUSTOMIZE UI
+        // Customize UI
+        
         self.title = "Profile"
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;
         self.profileImageView.clipsToBounds = true;
+        
         if let font = UIFont(name: "AppleSDGothicNeo-Regular ", size: 34) {
             UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font]
-        }
+        } // if
+        
+        // label
         self.userInformationLabel.numberOfLines = 0
         userInformationLabel.lineBreakMode = .ByWordWrapping
         
-        let navigationItem = UINavigationItem()
+        // Settings Button
         let img = UIImage(named: "Settings")
-        let button = UIBarButtonItem(image: img, style:UIBarButtonItemStyle.Plain , target: self, action: "btnClicked")
+        let button = UIBarButtonItem(image: img, style:UIBarButtonItemStyle.Plain , target: self, action: #selector(ProfileViewController.btnClicked))
         button.tintColor = UIColor.blackColor()
         self.navigationItem.rightBarButtonItem = button
-
-        let query = PFQuery(className:"Student")
-        query.whereKey("email", equalTo:"vdthatte@nyu.edu")
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [PFObject]?, error: NSError?) -> Void in
-            
-            if error == nil {
-                // The find succeeded.
-                print("Successfully retrieved \(objects!.count) scores.")
-                // Do something with the found objects
-                if let objects = objects {
-                    for object in objects {
-                        // FULL NAME
-                        
-                        self.fullnameLabel.text = (object["FirstName"] as! String) + " " + (object["LastName"] as! String)
-                        
-                        self.onelineDescriptionLabel.text = object["OneLineDescription"] as? String
-                        
-                        self.userInformationLabel.text = object["bio"] as? String
-                        
-                        self.userInformationLabel.lineBreakMode = .ByWordWrapping
-                        self.userInformationLabel.numberOfLines = 0
-                        
-                        if let userPicture = PFUser.currentUser()?["dp"] as? PFFile {
-                            userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
-                                if (error == nil) {
-                                    self.profileImageView.image = UIImage(data:imageData!)
-                                }
-                            }
-                        }
-                    }
-                }
-            } else {
-                // Log details of the failure
-                print("Error: \(error!) \(error!.userInfo)")
-            }
-        }
-    }
     
-    /*
-    @IBAction func segmentTapped(sender: UISegmentedControl) {
-        
-        switch segmentView.selectedSegmentIndex
-        {
-        case 0:
-            
-            let query = PFQuery(className:"Student")
-            query.whereKey("email", equalTo:(PFUser.currentUser()?.email)!)
-            query.findObjectsInBackgroundWithBlock {
-                (objects: [PFObject]?, error: NSError?) -> Void in
-                
-                if error == nil {
-                    // The find succeeded.
-                    print("Successfully retrieved \(objects!.count) scores.")
-                    // Do something with the found objects
-                    if let objects = objects {
-                        for object in objects {
-                            self.userInformationLabel.text = object["bio"] as? String
-                        }
-                    }
-                } else {
-                    // Log details of the failure
-                    print("Error: \(error!) \(error!.userInfo)")
-                }
-            }
-            
-        case 1:
-            
-            let query = PFQuery(className:"Student")
-            query.whereKey("email", equalTo:"vdthatte@nyu.edu")
-            query.findObjectsInBackgroundWithBlock {
-                (objects: [PFObject]?, error: NSError?) -> Void in
-                
-                if error == nil {
-                    // The find succeeded.
-                    print("Successfully retrieved \(objects!.count) scores.")
-                    // Do something with the found objects
-                    if let objects = objects {
-                        for object in objects {
-                            self.userInformationLabel.text = object["Links"] as? String
-                        }
-                    }
-                } else {
-                    // Log details of the failure
-                    print("Error: \(error!) \(error!.userInfo)")
-                }
-            }
-            
-        case 2:
-            
-            let query = PFQuery(className:"Student")
-            query.whereKey("email", equalTo:"vdthatte@nyu.edu")
-            query.findObjectsInBackgroundWithBlock {
-                (objects: [PFObject]?, error: NSError?) -> Void in
-                
-                if error == nil {
-                    // The find succeeded.
-                    print("Successfully retrieved \(objects!.count) scores.")
-                    // Do something with the found objects
-                    if let objects = objects {
-                        for object in objects {
-                            self.userInformationLabel.text = object["Skills"] as? String
-                        }
-                    }
-                } else {
-                    // Log details of the failure
-                    print("Error: \(error!) \(error!.userInfo)")
-                }
-            }
-
-        default:
-            break; 
-        }
-    }
- */
+    } // viewDidLoad()
     
     func btnClicked(){
+    
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier("settingsNav") as! SettingsNavigationController
         self.presentViewController(vc, animated: true, completion: nil)
-    }
+    
+    } // btnClicked()
     
     @IBAction func unwindToProfileView(segue: UIStoryboardSegue) {
         // some code to execute

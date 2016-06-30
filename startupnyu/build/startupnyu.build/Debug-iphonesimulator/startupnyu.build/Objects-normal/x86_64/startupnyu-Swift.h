@@ -205,21 +205,14 @@ SWIFT_CLASS("_TtC10startupnyu25EditProjectViewController")
 
 SWIFT_CLASS("_TtC10startupnyu9ExploreVC")
 @interface ExploreVC : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull menu_items;
-@property (nonatomic, copy) NSString * _Nullable menuItemSelected;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified shareButton;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull menu_items;
+@property (nonatomic, copy) NSString * _Nullable menuItemSelected;
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10startupnyu7LoginVC")
-@interface LoginVC : UIViewController
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -231,39 +224,8 @@ SWIFT_CLASS("_TtC10startupnyu19LoginViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginButtonOutlet;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (IBAction)LoginButton:(UIButton * _Nonnull)sender;
 - (IBAction)unwindTologinup:(UIStoryboardSegue * _Nonnull)segue;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10startupnyu19MessageListViewCell")
-@interface MessageListViewCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified senderProfileImage;
-- (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10startupnyu15MessageViewCell")
-@interface MessageViewCell : UITableViewCell
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10startupnyu26MessagesListViewController")
-@interface MessagesListViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -305,7 +267,6 @@ SWIFT_CLASS("_TtC10startupnyu23MyProjectsTableViewCell")
 SWIFT_CLASS("_TtC10startupnyu5NavVC")
 @interface NavVC : UINavigationController
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -405,7 +366,6 @@ SWIFT_CLASS("_TtC10startupnyu8SignupVC")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified confirmPasswordTextField;
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
 - (IBAction)DoneButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -418,28 +378,6 @@ SWIFT_CLASS("_TtC10startupnyu20StudentCellTableView")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified studentName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified studentOneLineBio;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UITouch;
-@class UIEvent;
-@class NSLayoutConstraint;
-@class UIView;
-
-SWIFT_CLASS("_TtC10startupnyu22messagesViewController")
-@interface messagesViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITextFieldDelegate, UITableViewDataSource>
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified messageDockConstraint;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified messageTextBox;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified dockView;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified sendButton;
-- (void)viewDidLoad;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (IBAction)sendButtonTapped:(UIButton * _Nonnull)sender;
-- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
-- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

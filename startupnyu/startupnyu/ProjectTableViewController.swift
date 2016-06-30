@@ -8,103 +8,93 @@
 
 import UIKit
 import Foundation
-import Parse
 import MessageUI
 
 
 class ProjectTableViewController: UITableViewController, MFMailComposeViewControllerDelegate{
     
+    @IBOutlet weak var projectImage: UIImageView!                       // project profile image
+    @IBOutlet weak var segmentControl: UISegmentedControl!              // segment control
+    @IBOutlet weak var projectDescriptionLabel: UILabel!                // project description
+    
+    
+    
     var projectName : String = ""
     var projectActivity : String = ""
     var projectAbout : String = ""
     var projectRequirements : String = ""
-
-    @IBOutlet weak var projectImage: UIImageView!
-    @IBOutlet weak var segmentControl: UISegmentedControl!
-    @IBOutlet weak var projectDescriptionLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // CUSTOMIZE UI
+        // Customize UI
         projectDescriptionLabel.lineBreakMode = .ByWordWrapping
         projectDescriptionLabel.numberOfLines = 0
         
-        // ASSIGN INFORMATION TO UI
+        // Setting project name as title
         self.title = projectName
 
-        // GESTURES
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        // Setup swipe gesture - left slipe as back button
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(ProjectTableViewController.handleSwipes(_:)))
         rightSwipe.direction = .Right
         view.addGestureRecognizer(rightSwipe)
         
-        let query = PFQuery(className:"Project")
-        query.whereKey("Name", equalTo:title!)
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [PFObject]?, error: NSError?) -> Void in
-            
-            if error == nil {
-                // The find succeeded.
-                print("Successfully retrieved \(objects!.count) scores.")
-                // Do something with the found objects
-                if let objects = objects {
-                    for object in objects {
-                        
-                        // Load information Here
-                        
-                        self.projectDescriptionLabel.text = object["About"] as? String
-                        self.projectAbout = object["About"] as! String
-                        self.projectActivity = object["Activity"] as! String
-                        
-                        if let userPicture = object["Image"] as? PFFile {
-                            userPicture.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
-                                if (error == nil) {
-                                    self.projectImage.image = UIImage(data:imageData!)!
-                                }
-                            }
-                        }
-                    
-                    }
-                }
-            } else {
-                // Log details of the failure
-                print("Error: \(error!) \(error!.userInfo)")
-            }
-        }
-        
     }
+    
+    
     
     @IBAction func shareThroughEmailTapped(sender: AnyObject) {
         
-        // TODO: Create an email with the necessary project information
+        // TODO: Create an email with the necessary project information and fix bug
+        
         let email = MFMailComposeViewController()
         presentViewController(email, animated: true, completion: nil)
         email.mailComposeDelegate = self
         email.setSubject("Interesting Project to work on!")
         email.setMessageBody("Some example text", isHTML: false) // or true, if you prefer
-    }
+        
+    } // shareThroughEmailTapped
+    
+    
 
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        
         dismissViewControllerAnimated(true, completion: nil)
-    }
+        
+    } // mailComposeController
 
+    
+    
     @IBAction func segmentControlTapped(sender: UISegmentedControl) {
+        
         // TODO: Load descriptions from the db
         switch segmentControl.selectedSegmentIndex {
+            
         case 0:
             projectDescriptionLabel.text = self.projectAbout
         case 1:
             projectDescriptionLabel.text = self.projectActivity
         default:
             break;
-        }
-    }
+            
+        } // switch
+        
+    } // segmentControlTapped
+    
+    
     
     func handleSwipes(sender:UISwipeGestureRecognizer) {
+        
         if (sender.direction == .Right) {
+            
             navigationController?.popToRootViewControllerAnimated(true)
-        }
-    }
-    
+            
+        } // if
 
-}
+    } // handleSwipes()
+    
+    
+    
+} // ProjectTableViewController

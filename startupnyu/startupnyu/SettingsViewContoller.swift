@@ -7,19 +7,17 @@
 //
 
 import UIKit
-import Parse
+
 
 class SettingsViewContoller: UITableViewController {
 
     @IBAction func logoutButton(sender: UIButton) {
-        PFUser.logOut()
+        
+        //PFUser.logOut()
         let storyboard = UIStoryboard(name: "LoginSignupStoryboard", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier("login") as! LoginViewController
         self.presentViewController(vc, animated: true, completion: nil)
-    }
     
+    } // logoutButton()
     
-    
-    
-    
-}
+} // SettingsViewController

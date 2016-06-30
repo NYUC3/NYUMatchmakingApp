@@ -9,8 +9,8 @@
 import UIKit
 
 class AddButtonTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var addLabel: UILabel!
+    
+    @IBOutlet weak var addLabel: UILabel!               // add button(label)
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,4 +23,4 @@ class AddButtonTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-}
+} // AddButtonTableViewCell
