@@ -1,0 +1,1073 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AWSSampleDynamoDBTableName"
+- "DDBDynamoDBManger"
+- "DDBTableRow"
+provides-nominal:
+- "C19DynamoDBSampleSwift17DDBDynamoDBManger"
+- "C19DynamoDBSampleSwift11DDBTableRow"
+provides-member:
+- ["C19DynamoDBSampleSwift17DDBDynamoDBManger", ""]
+- ["C19DynamoDBSampleSwift11DDBTableRow", ""]
+provides-dynamic-lookup:
+- "internalName"
+- "UserId"
+- "TopScore"
+- "createTable"
+- "Losses"
+- "hashKeyAttribute"
+- "internalState"
+- "username"
+- "describeTable"
+- "Wins"
+- "rangeKeyAttribute"
+- "ignoreAttributes"
+- "dynamoDBTableName"
+- "GameTitle"
+depends-top-level:
+- !private "AWSDynamoDBGlobalSecondaryIndex"
+- "StringLiteralType"
+- !private "AnyObject"
+- !private "AWSDynamoDBDescribeTableOutput"
+- "AWSSampleDynamoDBTableName"
+- !private "Array"
+- !private "AWSDynamoDBTableStatus"
+- !private "!="
+- !private "AWSDynamoDBProjection"
+- !private "AWSDynamoDBProjectionType"
+- !private "..."
+- !private "=="
+- "AWSDynamoDBModeling"
+- !private "AWSDynamoDBCreateTableInput"
+- "NSObject"
+- "DDBDynamoDBManger"
+- "AWSDynamoDBObjectModel"
+- "NSNumber"
+- !private "AWSDynamoDB"
+- !private "AWSDynamoDBProvisionedThroughput"
+- !private "AWSDynamoDBKeyType"
+- !private "sleep"
+- "AWSTask"
+- !private "AWSDynamoDBScalarAttributeType"
+- !private "AWSDynamoDBKeySchemaElement"
+- !private "AWSDynamoDBDescribeTableInput"
+- "String"
+- "DDBTableRow"
+- !private "AWSDynamoDBAttributeDefinition"
+depends-member:
+- !private ["CSo11AWSDynamoDB", "createTable"]
+- !private ["CSo11AWSDynamoDB", "defaultDynamoDB"]
+- !private ["CSo11AWSDynamoDB", "describeTable"]
+- !private ["CSo30AWSDynamoDBAttributeDefinition", "attributeName"]
+- !private ["CSo30AWSDynamoDBAttributeDefinition", "attributeType"]
+- !private ["CSo30AWSDynamoDBAttributeDefinition", "init"]
+- !private ["CSo27AWSDynamoDBCreateTableInput", "attributeDefinitions"]
+- !private ["CSo27AWSDynamoDBCreateTableInput", "globalSecondaryIndexes"]
+- !private ["CSo27AWSDynamoDBCreateTableInput", "init"]
+- !private ["CSo27AWSDynamoDBCreateTableInput", "keySchema"]
+- !private ["CSo27AWSDynamoDBCreateTableInput", "provisionedThroughput"]
+- !private ["CSo27AWSDynamoDBCreateTableInput", "tableName"]
+- !private ["CSo29AWSDynamoDBDescribeTableInput", "init"]
+- !private ["CSo29AWSDynamoDBDescribeTableInput", "tableName"]
+- !private ["CSo30AWSDynamoDBDescribeTableOutput", "table"]
+- !private ["CSo31AWSDynamoDBGlobalSecondaryIndex", "indexName"]
+- !private ["CSo31AWSDynamoDBGlobalSecondaryIndex", "init"]
+- !private ["CSo31AWSDynamoDBGlobalSecondaryIndex", "keySchema"]
+- !private ["CSo31AWSDynamoDBGlobalSecondaryIndex", "projection"]
+- !private ["CSo31AWSDynamoDBGlobalSecondaryIndex", "provisionedThroughput"]
+- !private ["CSo27AWSDynamoDBKeySchemaElement", "attributeName"]
+- !private ["CSo27AWSDynamoDBKeySchemaElement", "init"]
+- !private ["CSo27AWSDynamoDBKeySchemaElement", "keyType"]
+- !private ["OSC18AWSDynamoDBKeyType", "Hash"]
+- !private ["OSC18AWSDynamoDBKeyType", "Range"]
+- !private ["PSo19AWSDynamoDBModeling", "AWSSampleDynamoDBTableName"]
+- ["PSo19AWSDynamoDBModeling", "dynamoDBTableName"]
+- ["PSo19AWSDynamoDBModeling", "hashKeyAttribute"]
+- ["PSo19AWSDynamoDBModeling", "ignoreAttributes"]
+- ["PSo19AWSDynamoDBModeling", "rangeKeyAttribute"]
+- ["PSo19AWSDynamoDBModeling", ""]
+- !private ["CSo22AWSDynamoDBObjectModel", "AWSSampleDynamoDBTableName"]
+- ["CSo22AWSDynamoDBObjectModel", "GameTitle"]
+- ["CSo22AWSDynamoDBObjectModel", "Losses"]
+- ["CSo22AWSDynamoDBObjectModel", "NSNumber"]
+- ["CSo22AWSDynamoDBObjectModel", "String"]
+- ["CSo22AWSDynamoDBObjectModel", "TopScore"]
+- ["CSo22AWSDynamoDBObjectModel", "UserId"]
+- ["CSo22AWSDynamoDBObjectModel", "Wins"]
+- ["CSo22AWSDynamoDBObjectModel", "dynamoDBTableName"]
+- ["CSo22AWSDynamoDBObjectModel", "hashKeyAttribute"]
+- ["CSo22AWSDynamoDBObjectModel", "ignoreAttributes"]
+- ["CSo22AWSDynamoDBObjectModel", "init"]
+- ["CSo22AWSDynamoDBObjectModel", "internalName"]
+- ["CSo22AWSDynamoDBObjectModel", "internalState"]
+- ["CSo22AWSDynamoDBObjectModel", "rangeKeyAttribute"]
+- ["CSo22AWSDynamoDBObjectModel", "username"]
+- ["CSo22AWSDynamoDBObjectModel", ""]
+- !private ["CSo21AWSDynamoDBProjection", "init"]
+- !private ["CSo21AWSDynamoDBProjection", "projectionType"]
+- !private ["OSC25AWSDynamoDBProjectionType", "All"]
+- !private ["CSo32AWSDynamoDBProvisionedThroughput", "init"]
+- !private ["CSo32AWSDynamoDBProvisionedThroughput", "readCapacityUnits"]
+- !private ["CSo32AWSDynamoDBProvisionedThroughput", "writeCapacityUnits"]
+- !private ["OSC30AWSDynamoDBScalarAttributeType", "N"]
+- !private ["OSC30AWSDynamoDBScalarAttributeType", "S"]
+- !private ["CSo27AWSDynamoDBTableDescription", "tableStatus"]
+- !private ["OSC22AWSDynamoDBTableStatus", "Active"]
+- !private ["OSC22AWSDynamoDBTableStatus", "RawValue"]
+- !private ["OSC22AWSDynamoDBTableStatus", "deinit"]
+- !private ["PSo21AWSMTLJSONSerializing", "AWSSampleDynamoDBTableName"]
+- ["PSo21AWSMTLJSONSerializing", "GameTitle"]
+- ["PSo21AWSMTLJSONSerializing", "Losses"]
+- ["PSo21AWSMTLJSONSerializing", "TopScore"]
+- ["PSo21AWSMTLJSONSerializing", "UserId"]
+- ["PSo21AWSMTLJSONSerializing", "Wins"]
+- !private ["PSo21AWSMTLJSONSerializing", "attributeDefinitions"]
+- !private ["PSo21AWSMTLJSONSerializing", "attributeName"]
+- !private ["PSo21AWSMTLJSONSerializing", "attributeType"]
+- ["PSo21AWSMTLJSONSerializing", "dynamoDBTableName"]
+- !private ["PSo21AWSMTLJSONSerializing", "globalSecondaryIndexes"]
+- ["PSo21AWSMTLJSONSerializing", "hashKeyAttribute"]
+- ["PSo21AWSMTLJSONSerializing", "ignoreAttributes"]
+- !private ["PSo21AWSMTLJSONSerializing", "indexName"]
+- ["PSo21AWSMTLJSONSerializing", "init"]
+- ["PSo21AWSMTLJSONSerializing", "internalName"]
+- ["PSo21AWSMTLJSONSerializing", "internalState"]
+- !private ["PSo21AWSMTLJSONSerializing", "keySchema"]
+- !private ["PSo21AWSMTLJSONSerializing", "keyType"]
+- !private ["PSo21AWSMTLJSONSerializing", "projection"]
+- !private ["PSo21AWSMTLJSONSerializing", "projectionType"]
+- !private ["PSo21AWSMTLJSONSerializing", "provisionedThroughput"]
+- ["PSo21AWSMTLJSONSerializing", "rangeKeyAttribute"]
+- !private ["PSo21AWSMTLJSONSerializing", "readCapacityUnits"]
+- !private ["PSo21AWSMTLJSONSerializing", "table"]
+- !private ["PSo21AWSMTLJSONSerializing", "tableName"]
+- !private ["PSo21AWSMTLJSONSerializing", "tableStatus"]
+- ["PSo21AWSMTLJSONSerializing", "username"]
+- !private ["PSo21AWSMTLJSONSerializing", "writeCapacityUnits"]
+- ["PSo21AWSMTLJSONSerializing", ""]
+- !private ["CSo11AWSMTLModel", "AWSSampleDynamoDBTableName"]
+- ["CSo11AWSMTLModel", "GameTitle"]
+- ["CSo11AWSMTLModel", "Losses"]
+- ["CSo11AWSMTLModel", "NSNumber"]
+- ["CSo11AWSMTLModel", "String"]
+- ["CSo11AWSMTLModel", "TopScore"]
+- ["CSo11AWSMTLModel", "UserId"]
+- ["CSo11AWSMTLModel", "Wins"]
+- !private ["CSo11AWSMTLModel", "attributeDefinitions"]
+- !private ["CSo11AWSMTLModel", "attributeName"]
+- !private ["CSo11AWSMTLModel", "attributeType"]
+- ["CSo11AWSMTLModel", "dynamoDBTableName"]
+- !private ["CSo11AWSMTLModel", "globalSecondaryIndexes"]
+- ["CSo11AWSMTLModel", "hashKeyAttribute"]
+- ["CSo11AWSMTLModel", "ignoreAttributes"]
+- !private ["CSo11AWSMTLModel", "indexName"]
+- ["CSo11AWSMTLModel", "init"]
+- ["CSo11AWSMTLModel", "internalName"]
+- ["CSo11AWSMTLModel", "internalState"]
+- !private ["CSo11AWSMTLModel", "keySchema"]
+- !private ["CSo11AWSMTLModel", "keyType"]
+- !private ["CSo11AWSMTLModel", "projection"]
+- !private ["CSo11AWSMTLModel", "projectionType"]
+- !private ["CSo11AWSMTLModel", "provisionedThroughput"]
+- ["CSo11AWSMTLModel", "rangeKeyAttribute"]
+- !private ["CSo11AWSMTLModel", "readCapacityUnits"]
+- !private ["CSo11AWSMTLModel", "table"]
+- !private ["CSo11AWSMTLModel", "tableName"]
+- !private ["CSo11AWSMTLModel", "tableStatus"]
+- ["CSo11AWSMTLModel", "username"]
+- !private ["CSo11AWSMTLModel", "writeCapacityUnits"]
+- !private ["CSo8AWSModel", "attributeDefinitions"]
+- !private ["CSo8AWSModel", "attributeName"]
+- !private ["CSo8AWSModel", "attributeType"]
+- !private ["CSo8AWSModel", "globalSecondaryIndexes"]
+- !private ["CSo8AWSModel", "indexName"]
+- !private ["CSo8AWSModel", "init"]
+- !private ["CSo8AWSModel", "keySchema"]
+- !private ["CSo8AWSModel", "keyType"]
+- !private ["CSo8AWSModel", "projection"]
+- !private ["CSo8AWSModel", "projectionType"]
+- !private ["CSo8AWSModel", "provisionedThroughput"]
+- !private ["CSo8AWSModel", "readCapacityUnits"]
+- !private ["CSo8AWSModel", "table"]
+- !private ["CSo8AWSModel", "tableName"]
+- !private ["CSo8AWSModel", "tableStatus"]
+- !private ["CSo8AWSModel", "writeCapacityUnits"]
+- !private ["CSo10AWSRequest", "attributeDefinitions"]
+- !private ["CSo10AWSRequest", "globalSecondaryIndexes"]
+- !private ["CSo10AWSRequest", "init"]
+- !private ["CSo10AWSRequest", "keySchema"]
+- !private ["CSo10AWSRequest", "provisionedThroughput"]
+- !private ["CSo10AWSRequest", "tableName"]
+- !private ["CSo10AWSService", "createTable"]
+- !private ["CSo10AWSService", "defaultDynamoDB"]
+- !private ["CSo10AWSService", "describeTable"]
+- !private ["CSo7AWSTask", "continueWithSuccessBlock"]
+- !private ["CSo7AWSTask", "result"]
+- !private ["Ps9AnyObject", "AWSDynamoDB"]
+- !private ["Ps9AnyObject", "AWSDynamoDBAttributeDefinition"]
+- !private ["Ps9AnyObject", "AWSDynamoDBCreateTableInput"]
+- !private ["Ps9AnyObject", "AWSDynamoDBDescribeTableInput"]
+- !private ["Ps9AnyObject", "AWSDynamoDBGlobalSecondaryIndex"]
+- !private ["Ps9AnyObject", "AWSDynamoDBKeySchemaElement"]
+- !private ["Ps9AnyObject", "AWSDynamoDBKeyType"]
+- !private ["Ps9AnyObject", "AWSDynamoDBProjection"]
+- !private ["Ps9AnyObject", "AWSDynamoDBProjectionType"]
+- !private ["Ps9AnyObject", "AWSDynamoDBProvisionedThroughput"]
+- !private ["Ps9AnyObject", "AWSDynamoDBScalarAttributeType"]
+- !private ["Ps9AnyObject", "AWSDynamoDBTableStatus"]
+- !private ["Ps9AnyObject", "AWSSampleDynamoDBTableName"]
+- ["Ps9AnyObject", "GameTitle"]
+- ["Ps9AnyObject", "Losses"]
+- ["Ps9AnyObject", "TopScore"]
+- ["Ps9AnyObject", "UserId"]
+- ["Ps9AnyObject", "Wins"]
+- !private ["Ps9AnyObject", "attributeDefinitions"]
+- !private ["Ps9AnyObject", "attributeName"]
+- !private ["Ps9AnyObject", "attributeType"]
+- !private ["Ps9AnyObject", "continueWithSuccessBlock"]
+- ["Ps9AnyObject", "createTable"]
+- !private ["Ps9AnyObject", "defaultDynamoDB"]
+- !private ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "describeTable"]
+- ["Ps9AnyObject", "dynamoDBTableName"]
+- !private ["Ps9AnyObject", "globalSecondaryIndexes"]
+- ["Ps9AnyObject", "hashKeyAttribute"]
+- ["Ps9AnyObject", "ignoreAttributes"]
+- !private ["Ps9AnyObject", "indexName"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "internalName"]
+- ["Ps9AnyObject", "internalState"]
+- !private ["Ps9AnyObject", "keySchema"]
+- !private ["Ps9AnyObject", "keyType"]
+- !private ["Ps9AnyObject", "projection"]
+- !private ["Ps9AnyObject", "projectionType"]
+- !private ["Ps9AnyObject", "provisionedThroughput"]
+- ["Ps9AnyObject", "rangeKeyAttribute"]
+- !private ["Ps9AnyObject", "readCapacityUnits"]
+- !private ["Ps9AnyObject", "result"]
+- !private ["Ps9AnyObject", "sleep"]
+- !private ["Ps9AnyObject", "table"]
+- !private ["Ps9AnyObject", "tableName"]
+- !private ["Ps9AnyObject", "tableStatus"]
+- ["Ps9AnyObject", "username"]
+- !private ["Ps9AnyObject", "writeCapacityUnits"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "append"]
+- !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "_DisabledRangeIndex"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "_DisabledRangeIndex"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "AWSDynamoDB"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBAttributeDefinition"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBCreateTableInput"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBDescribeTableInput"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBGlobalSecondaryIndex"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBKeySchemaElement"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBKeyType"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBProjection"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBProjectionType"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBProvisionedThroughput"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBScalarAttributeType"]
+- !private ["Ps11CVarArgType", "AWSDynamoDBTableStatus"]
+- !private ["Ps11CVarArgType", "AWSSampleDynamoDBTableName"]
+- !private ["Ps11CVarArgType", "Distance"]
+- ["Ps11CVarArgType", "GameTitle"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- ["Ps11CVarArgType", "Losses"]
+- ["Ps11CVarArgType", "TopScore"]
+- ["Ps11CVarArgType", "UserId"]
+- ["Ps11CVarArgType", "Wins"]
+- !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
+- !private ["Ps11CVarArgType", "attributeDefinitions"]
+- !private ["Ps11CVarArgType", "attributeName"]
+- !private ["Ps11CVarArgType", "attributeType"]
+- !private ["Ps11CVarArgType", "continueWithSuccessBlock"]
+- ["Ps11CVarArgType", "createTable"]
+- !private ["Ps11CVarArgType", "defaultDynamoDB"]
+- ["Ps11CVarArgType", "describeTable"]
+- ["Ps11CVarArgType", "dynamoDBTableName"]
+- !private ["Ps11CVarArgType", "globalSecondaryIndexes"]
+- ["Ps11CVarArgType", "hashKeyAttribute"]
+- ["Ps11CVarArgType", "ignoreAttributes"]
+- !private ["Ps11CVarArgType", "indexName"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "internalName"]
+- ["Ps11CVarArgType", "internalState"]
+- !private ["Ps11CVarArgType", "keySchema"]
+- !private ["Ps11CVarArgType", "keyType"]
+- !private ["Ps11CVarArgType", "projection"]
+- !private ["Ps11CVarArgType", "projectionType"]
+- !private ["Ps11CVarArgType", "provisionedThroughput"]
+- ["Ps11CVarArgType", "rangeKeyAttribute"]
+- !private ["Ps11CVarArgType", "readCapacityUnits"]
+- !private ["Ps11CVarArgType", "result"]
+- !private ["Ps11CVarArgType", "sleep"]
+- !private ["Ps11CVarArgType", "table"]
+- !private ["Ps11CVarArgType", "tableName"]
+- !private ["Ps11CVarArgType", "tableStatus"]
+- ["Ps11CVarArgType", "username"]
+- !private ["Ps11CVarArgType", "writeCapacityUnits"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs14ClosedInterval", "deinit"]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "append"]
+- !private ["Ps14CollectionType", "init"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDB"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBAttributeDefinition"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBCreateTableInput"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBDescribeTableInput"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBGlobalSecondaryIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBKeySchemaElement"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBKeyType"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBProjection"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBProjectionType"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBProvisionedThroughput"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBScalarAttributeType"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSDynamoDBTableStatus"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSSampleDynamoDBTableName"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- ["Ps28CustomDebugStringConvertible", "GameTitle"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- ["Ps28CustomDebugStringConvertible", "Losses"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- ["Ps28CustomDebugStringConvertible", "TopScore"]
+- ["Ps28CustomDebugStringConvertible", "UserId"]
+- ["Ps28CustomDebugStringConvertible", "Wins"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "attributeDefinitions"]
+- !private ["Ps28CustomDebugStringConvertible", "attributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "attributeType"]
+- !private ["Ps28CustomDebugStringConvertible", "continueWithSuccessBlock"]
+- ["Ps28CustomDebugStringConvertible", "createTable"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultDynamoDB"]
+- ["Ps28CustomDebugStringConvertible", "describeTable"]
+- ["Ps28CustomDebugStringConvertible", "dynamoDBTableName"]
+- !private ["Ps28CustomDebugStringConvertible", "globalSecondaryIndexes"]
+- ["Ps28CustomDebugStringConvertible", "hashKeyAttribute"]
+- ["Ps28CustomDebugStringConvertible", "ignoreAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "indexName"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "internalName"]
+- ["Ps28CustomDebugStringConvertible", "internalState"]
+- !private ["Ps28CustomDebugStringConvertible", "keySchema"]
+- !private ["Ps28CustomDebugStringConvertible", "keyType"]
+- !private ["Ps28CustomDebugStringConvertible", "projection"]
+- !private ["Ps28CustomDebugStringConvertible", "projectionType"]
+- !private ["Ps28CustomDebugStringConvertible", "provisionedThroughput"]
+- ["Ps28CustomDebugStringConvertible", "rangeKeyAttribute"]
+- !private ["Ps28CustomDebugStringConvertible", "readCapacityUnits"]
+- !private ["Ps28CustomDebugStringConvertible", "result"]
+- !private ["Ps28CustomDebugStringConvertible", "sleep"]
+- !private ["Ps28CustomDebugStringConvertible", "table"]
+- !private ["Ps28CustomDebugStringConvertible", "tableName"]
+- !private ["Ps28CustomDebugStringConvertible", "tableStatus"]
+- ["Ps28CustomDebugStringConvertible", "username"]
+- !private ["Ps28CustomDebugStringConvertible", "writeCapacityUnits"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDB"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBAttributeDefinition"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBCreateTableInput"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBDescribeTableInput"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBGlobalSecondaryIndex"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBKeySchemaElement"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBKeyType"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBProjection"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBProjectionType"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBProvisionedThroughput"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBScalarAttributeType"]
+- !private ["Ps23CustomStringConvertible", "AWSDynamoDBTableStatus"]
+- !private ["Ps23CustomStringConvertible", "AWSSampleDynamoDBTableName"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- ["Ps23CustomStringConvertible", "GameTitle"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- ["Ps23CustomStringConvertible", "Losses"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- ["Ps23CustomStringConvertible", "TopScore"]
+- ["Ps23CustomStringConvertible", "UserId"]
+- ["Ps23CustomStringConvertible", "Wins"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "attributeDefinitions"]
+- !private ["Ps23CustomStringConvertible", "attributeName"]
+- !private ["Ps23CustomStringConvertible", "attributeType"]
+- !private ["Ps23CustomStringConvertible", "continueWithSuccessBlock"]
+- ["Ps23CustomStringConvertible", "createTable"]
+- !private ["Ps23CustomStringConvertible", "defaultDynamoDB"]
+- ["Ps23CustomStringConvertible", "describeTable"]
+- ["Ps23CustomStringConvertible", "dynamoDBTableName"]
+- !private ["Ps23CustomStringConvertible", "globalSecondaryIndexes"]
+- ["Ps23CustomStringConvertible", "hashKeyAttribute"]
+- ["Ps23CustomStringConvertible", "ignoreAttributes"]
+- !private ["Ps23CustomStringConvertible", "indexName"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "internalName"]
+- ["Ps23CustomStringConvertible", "internalState"]
+- !private ["Ps23CustomStringConvertible", "keySchema"]
+- !private ["Ps23CustomStringConvertible", "keyType"]
+- !private ["Ps23CustomStringConvertible", "projection"]
+- !private ["Ps23CustomStringConvertible", "projectionType"]
+- !private ["Ps23CustomStringConvertible", "provisionedThroughput"]
+- ["Ps23CustomStringConvertible", "rangeKeyAttribute"]
+- !private ["Ps23CustomStringConvertible", "readCapacityUnits"]
+- !private ["Ps23CustomStringConvertible", "result"]
+- !private ["Ps23CustomStringConvertible", "sleep"]
+- !private ["Ps23CustomStringConvertible", "table"]
+- !private ["Ps23CustomStringConvertible", "tableName"]
+- !private ["Ps23CustomStringConvertible", "tableStatus"]
+- ["Ps23CustomStringConvertible", "username"]
+- !private ["Ps23CustomStringConvertible", "writeCapacityUnits"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDB"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBAttributeDefinition"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBCreateTableInput"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBDescribeTableInput"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBDescribeTableOutput"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBGlobalSecondaryIndex"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBKeySchemaElement"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBKeyType"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBProjection"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBProjectionType"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBProvisionedThroughput"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBScalarAttributeType"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSDynamoDBTableStatus"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSSampleDynamoDBTableName"]
+- ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AWSTask"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "AnyObject"]
+- ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "createTable"]
+- ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "deinit"]
+- ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "describeTable"]
+- ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "init"]
+- !private ["C19DynamoDBSampleSwift17DDBDynamoDBManger", "sleep"]
+- !private ["C19DynamoDBSampleSwift11DDBTableRow", "AWSSampleDynamoDBTableName"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "GameTitle"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "Losses"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "NSNumber"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "String"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "TopScore"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "UserId"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "Wins"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "deinit"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "dynamoDBTableName"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "hashKeyAttribute"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "ignoreAttributes"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "init"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "internalName"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "internalState"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "rangeKeyAttribute"]
+- ["C19DynamoDBSampleSwift11DDBTableRow", "username"]
+- !private ["Ps9Equatable", "AWSDynamoDB"]
+- !private ["Ps9Equatable", "AWSDynamoDBAttributeDefinition"]
+- !private ["Ps9Equatable", "AWSDynamoDBCreateTableInput"]
+- !private ["Ps9Equatable", "AWSDynamoDBDescribeTableInput"]
+- !private ["Ps9Equatable", "AWSDynamoDBGlobalSecondaryIndex"]
+- !private ["Ps9Equatable", "AWSDynamoDBKeySchemaElement"]
+- !private ["Ps9Equatable", "AWSDynamoDBKeyType"]
+- !private ["Ps9Equatable", "AWSDynamoDBProjection"]
+- !private ["Ps9Equatable", "AWSDynamoDBProjectionType"]
+- !private ["Ps9Equatable", "AWSDynamoDBProvisionedThroughput"]
+- !private ["Ps9Equatable", "AWSDynamoDBScalarAttributeType"]
+- !private ["Ps9Equatable", "AWSDynamoDBTableStatus"]
+- !private ["Ps9Equatable", "AWSSampleDynamoDBTableName"]
+- !private ["Ps9Equatable", "Active"]
+- !private ["Ps9Equatable", "All"]
+- !private ["Ps9Equatable", "Distance"]
+- ["Ps9Equatable", "GameTitle"]
+- !private ["Ps9Equatable", "Generator"]
+- !private ["Ps9Equatable", "Hash"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- ["Ps9Equatable", "Losses"]
+- !private ["Ps9Equatable", "N"]
+- !private ["Ps9Equatable", "Range"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "S"]
+- ["Ps9Equatable", "TopScore"]
+- ["Ps9Equatable", "UserId"]
+- ["Ps9Equatable", "Wins"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "attributeDefinitions"]
+- !private ["Ps9Equatable", "attributeName"]
+- !private ["Ps9Equatable", "attributeType"]
+- !private ["Ps9Equatable", "continueWithSuccessBlock"]
+- ["Ps9Equatable", "createTable"]
+- !private ["Ps9Equatable", "defaultDynamoDB"]
+- ["Ps9Equatable", "describeTable"]
+- ["Ps9Equatable", "dynamoDBTableName"]
+- !private ["Ps9Equatable", "globalSecondaryIndexes"]
+- ["Ps9Equatable", "hashKeyAttribute"]
+- ["Ps9Equatable", "ignoreAttributes"]
+- !private ["Ps9Equatable", "indexName"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "internalName"]
+- ["Ps9Equatable", "internalState"]
+- !private ["Ps9Equatable", "keySchema"]
+- !private ["Ps9Equatable", "keyType"]
+- !private ["Ps9Equatable", "projection"]
+- !private ["Ps9Equatable", "projectionType"]
+- !private ["Ps9Equatable", "provisionedThroughput"]
+- ["Ps9Equatable", "rangeKeyAttribute"]
+- !private ["Ps9Equatable", "readCapacityUnits"]
+- !private ["Ps9Equatable", "result"]
+- !private ["Ps9Equatable", "sleep"]
+- !private ["Ps9Equatable", "table"]
+- !private ["Ps9Equatable", "tableName"]
+- !private ["Ps9Equatable", "tableStatus"]
+- ["Ps9Equatable", "username"]
+- !private ["Ps9Equatable", "writeCapacityUnits"]
+- ["Ps9Equatable", ""]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "AWSDynamoDB"]
+- !private ["Ps8Hashable", "AWSDynamoDBAttributeDefinition"]
+- !private ["Ps8Hashable", "AWSDynamoDBCreateTableInput"]
+- !private ["Ps8Hashable", "AWSDynamoDBDescribeTableInput"]
+- !private ["Ps8Hashable", "AWSDynamoDBGlobalSecondaryIndex"]
+- !private ["Ps8Hashable", "AWSDynamoDBKeySchemaElement"]
+- !private ["Ps8Hashable", "AWSDynamoDBKeyType"]
+- !private ["Ps8Hashable", "AWSDynamoDBProjection"]
+- !private ["Ps8Hashable", "AWSDynamoDBProjectionType"]
+- !private ["Ps8Hashable", "AWSDynamoDBProvisionedThroughput"]
+- !private ["Ps8Hashable", "AWSDynamoDBScalarAttributeType"]
+- !private ["Ps8Hashable", "AWSDynamoDBTableStatus"]
+- !private ["Ps8Hashable", "AWSSampleDynamoDBTableName"]
+- !private ["Ps8Hashable", "Active"]
+- !private ["Ps8Hashable", "All"]
+- !private ["Ps8Hashable", "Distance"]
+- ["Ps8Hashable", "GameTitle"]
+- !private ["Ps8Hashable", "Hash"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- ["Ps8Hashable", "Losses"]
+- !private ["Ps8Hashable", "N"]
+- !private ["Ps8Hashable", "Range"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "S"]
+- ["Ps8Hashable", "TopScore"]
+- ["Ps8Hashable", "UserId"]
+- ["Ps8Hashable", "Wins"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "attributeDefinitions"]
+- !private ["Ps8Hashable", "attributeName"]
+- !private ["Ps8Hashable", "attributeType"]
+- !private ["Ps8Hashable", "continueWithSuccessBlock"]
+- ["Ps8Hashable", "createTable"]
+- !private ["Ps8Hashable", "defaultDynamoDB"]
+- ["Ps8Hashable", "describeTable"]
+- ["Ps8Hashable", "dynamoDBTableName"]
+- !private ["Ps8Hashable", "globalSecondaryIndexes"]
+- ["Ps8Hashable", "hashKeyAttribute"]
+- ["Ps8Hashable", "ignoreAttributes"]
+- !private ["Ps8Hashable", "indexName"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "internalName"]
+- ["Ps8Hashable", "internalState"]
+- !private ["Ps8Hashable", "keySchema"]
+- !private ["Ps8Hashable", "keyType"]
+- !private ["Ps8Hashable", "projection"]
+- !private ["Ps8Hashable", "projectionType"]
+- !private ["Ps8Hashable", "provisionedThroughput"]
+- ["Ps8Hashable", "rangeKeyAttribute"]
+- !private ["Ps8Hashable", "readCapacityUnits"]
+- !private ["Ps8Hashable", "result"]
+- !private ["Ps8Hashable", "sleep"]
+- !private ["Ps8Hashable", "table"]
+- !private ["Ps8Hashable", "tableName"]
+- !private ["Ps8Hashable", "tableStatus"]
+- ["Ps8Hashable", "username"]
+- !private ["Ps8Hashable", "writeCapacityUnits"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "_DisabledRangeIndex"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "_DisabledRangeIndex"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "_DisabledRangeIndex"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "append"]
+- !private ["Ps21MutableCollectionType", "init"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "append"]
+- !private ["Ps16MutableSliceable", "init"]
+- !private ["PSo8NSCoding", "AWSSampleDynamoDBTableName"]
+- ["PSo8NSCoding", "GameTitle"]
+- ["PSo8NSCoding", "Losses"]
+- ["PSo8NSCoding", "TopScore"]
+- ["PSo8NSCoding", "UserId"]
+- ["PSo8NSCoding", "Wins"]
+- !private ["PSo8NSCoding", "attributeDefinitions"]
+- !private ["PSo8NSCoding", "attributeName"]
+- !private ["PSo8NSCoding", "attributeType"]
+- ["PSo8NSCoding", "dynamoDBTableName"]
+- !private ["PSo8NSCoding", "globalSecondaryIndexes"]
+- ["PSo8NSCoding", "hashKeyAttribute"]
+- ["PSo8NSCoding", "ignoreAttributes"]
+- !private ["PSo8NSCoding", "indexName"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "internalName"]
+- ["PSo8NSCoding", "internalState"]
+- !private ["PSo8NSCoding", "keySchema"]
+- !private ["PSo8NSCoding", "keyType"]
+- !private ["PSo8NSCoding", "projection"]
+- !private ["PSo8NSCoding", "projectionType"]
+- !private ["PSo8NSCoding", "provisionedThroughput"]
+- ["PSo8NSCoding", "rangeKeyAttribute"]
+- !private ["PSo8NSCoding", "readCapacityUnits"]
+- !private ["PSo8NSCoding", "table"]
+- !private ["PSo8NSCoding", "tableName"]
+- !private ["PSo8NSCoding", "tableStatus"]
+- ["PSo8NSCoding", "username"]
+- !private ["PSo8NSCoding", "writeCapacityUnits"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "AWSSampleDynamoDBTableName"]
+- ["PSo9NSCopying", "GameTitle"]
+- ["PSo9NSCopying", "Losses"]
+- ["PSo9NSCopying", "TopScore"]
+- ["PSo9NSCopying", "UserId"]
+- ["PSo9NSCopying", "Wins"]
+- !private ["PSo9NSCopying", "attributeDefinitions"]
+- !private ["PSo9NSCopying", "attributeName"]
+- !private ["PSo9NSCopying", "attributeType"]
+- ["PSo9NSCopying", "dynamoDBTableName"]
+- !private ["PSo9NSCopying", "globalSecondaryIndexes"]
+- ["PSo9NSCopying", "hashKeyAttribute"]
+- ["PSo9NSCopying", "ignoreAttributes"]
+- !private ["PSo9NSCopying", "indexName"]
+- ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "internalName"]
+- ["PSo9NSCopying", "internalState"]
+- !private ["PSo9NSCopying", "keySchema"]
+- !private ["PSo9NSCopying", "keyType"]
+- !private ["PSo9NSCopying", "projection"]
+- !private ["PSo9NSCopying", "projectionType"]
+- !private ["PSo9NSCopying", "provisionedThroughput"]
+- ["PSo9NSCopying", "rangeKeyAttribute"]
+- !private ["PSo9NSCopying", "readCapacityUnits"]
+- !private ["PSo9NSCopying", "table"]
+- !private ["PSo9NSCopying", "tableName"]
+- !private ["PSo9NSCopying", "tableStatus"]
+- ["PSo9NSCopying", "username"]
+- !private ["PSo9NSCopying", "writeCapacityUnits"]
+- ["PSo9NSCopying", ""]
+- ["CSo8NSNumber", "deinit"]
+- !private ["CSo8NSObject", "AWSDynamoDB"]
+- !private ["CSo8NSObject", "AWSDynamoDBAttributeDefinition"]
+- !private ["CSo8NSObject", "AWSDynamoDBCreateTableInput"]
+- !private ["CSo8NSObject", "AWSDynamoDBDescribeTableInput"]
+- !private ["CSo8NSObject", "AWSDynamoDBDescribeTableOutput"]
+- !private ["CSo8NSObject", "AWSDynamoDBGlobalSecondaryIndex"]
+- !private ["CSo8NSObject", "AWSDynamoDBKeySchemaElement"]
+- !private ["CSo8NSObject", "AWSDynamoDBKeyType"]
+- !private ["CSo8NSObject", "AWSDynamoDBProjection"]
+- !private ["CSo8NSObject", "AWSDynamoDBProjectionType"]
+- !private ["CSo8NSObject", "AWSDynamoDBProvisionedThroughput"]
+- !private ["CSo8NSObject", "AWSDynamoDBScalarAttributeType"]
+- !private ["CSo8NSObject", "AWSDynamoDBTableStatus"]
+- !private ["CSo8NSObject", "AWSSampleDynamoDBTableName"]
+- ["CSo8NSObject", "AWSTask"]
+- !private ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "GameTitle"]
+- ["CSo8NSObject", "Losses"]
+- ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "TopScore"]
+- ["CSo8NSObject", "UserId"]
+- ["CSo8NSObject", "Wins"]
+- !private ["CSo8NSObject", "attributeDefinitions"]
+- !private ["CSo8NSObject", "attributeName"]
+- !private ["CSo8NSObject", "attributeType"]
+- !private ["CSo8NSObject", "continueWithSuccessBlock"]
+- ["CSo8NSObject", "createTable"]
+- !private ["CSo8NSObject", "defaultDynamoDB"]
+- ["CSo8NSObject", "describeTable"]
+- ["CSo8NSObject", "dynamoDBTableName"]
+- !private ["CSo8NSObject", "globalSecondaryIndexes"]
+- ["CSo8NSObject", "hashKeyAttribute"]
+- ["CSo8NSObject", "ignoreAttributes"]
+- !private ["CSo8NSObject", "indexName"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "internalName"]
+- ["CSo8NSObject", "internalState"]
+- !private ["CSo8NSObject", "keySchema"]
+- !private ["CSo8NSObject", "keyType"]
+- !private ["CSo8NSObject", "projection"]
+- !private ["CSo8NSObject", "projectionType"]
+- !private ["CSo8NSObject", "provisionedThroughput"]
+- ["CSo8NSObject", "rangeKeyAttribute"]
+- !private ["CSo8NSObject", "readCapacityUnits"]
+- !private ["CSo8NSObject", "result"]
+- !private ["CSo8NSObject", "sleep"]
+- !private ["CSo8NSObject", "table"]
+- !private ["CSo8NSObject", "tableName"]
+- !private ["CSo8NSObject", "tableStatus"]
+- ["CSo8NSObject", "username"]
+- !private ["CSo8NSObject", "writeCapacityUnits"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDB"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBAttributeDefinition"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBCreateTableInput"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBDescribeTableInput"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBGlobalSecondaryIndex"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBKeySchemaElement"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBKeyType"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBProjection"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBProjectionType"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBProvisionedThroughput"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBScalarAttributeType"]
+- !private ["PSo16NSObjectProtocol", "AWSDynamoDBTableStatus"]
+- !private ["PSo16NSObjectProtocol", "AWSSampleDynamoDBTableName"]
+- ["PSo16NSObjectProtocol", "GameTitle"]
+- ["PSo16NSObjectProtocol", "Losses"]
+- ["PSo16NSObjectProtocol", "TopScore"]
+- ["PSo16NSObjectProtocol", "UserId"]
+- ["PSo16NSObjectProtocol", "Wins"]
+- !private ["PSo16NSObjectProtocol", "attributeDefinitions"]
+- !private ["PSo16NSObjectProtocol", "attributeName"]
+- !private ["PSo16NSObjectProtocol", "attributeType"]
+- !private ["PSo16NSObjectProtocol", "continueWithSuccessBlock"]
+- ["PSo16NSObjectProtocol", "createTable"]
+- !private ["PSo16NSObjectProtocol", "defaultDynamoDB"]
+- ["PSo16NSObjectProtocol", "describeTable"]
+- ["PSo16NSObjectProtocol", "dynamoDBTableName"]
+- !private ["PSo16NSObjectProtocol", "globalSecondaryIndexes"]
+- ["PSo16NSObjectProtocol", "hashKeyAttribute"]
+- ["PSo16NSObjectProtocol", "ignoreAttributes"]
+- !private ["PSo16NSObjectProtocol", "indexName"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "internalName"]
+- ["PSo16NSObjectProtocol", "internalState"]
+- !private ["PSo16NSObjectProtocol", "keySchema"]
+- !private ["PSo16NSObjectProtocol", "keyType"]
+- !private ["PSo16NSObjectProtocol", "projection"]
+- !private ["PSo16NSObjectProtocol", "projectionType"]
+- !private ["PSo16NSObjectProtocol", "provisionedThroughput"]
+- ["PSo16NSObjectProtocol", "rangeKeyAttribute"]
+- !private ["PSo16NSObjectProtocol", "readCapacityUnits"]
+- !private ["PSo16NSObjectProtocol", "result"]
+- !private ["PSo16NSObjectProtocol", "sleep"]
+- !private ["PSo16NSObjectProtocol", "table"]
+- !private ["PSo16NSObjectProtocol", "tableName"]
+- !private ["PSo16NSObjectProtocol", "tableStatus"]
+- ["PSo16NSObjectProtocol", "username"]
+- !private ["PSo16NSObjectProtocol", "writeCapacityUnits"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "_DisabledRangeIndex"]
+- !private ["Vs5Range", "Generator"]
+- !private ["Vs14RangeGenerator", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "append"]
+- !private ["Ps30RangeReplaceableCollectionType", "init"]
+- !private ["Ps16RawRepresentable", "Active"]
+- !private ["Ps16RawRepresentable", "All"]
+- !private ["Ps16RawRepresentable", "Hash"]
+- !private ["Ps16RawRepresentable", "N"]
+- !private ["Ps16RawRepresentable", "Range"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "S"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "append"]
+- !private ["Ps12SequenceType", "init"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "_DisabledRangeIndex"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "_DisabledRangeIndex"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "append"]
+- !private ["Ps10_ArrayType", "init"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_DisabledRangeIndex"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "append"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "_DisabledRangeIndex"]
+depends-nominal:
+- !private "CSo11AWSDynamoDB"
+- !private "CSo30AWSDynamoDBAttributeDefinition"
+- !private "CSo27AWSDynamoDBCreateTableInput"
+- !private "CSo29AWSDynamoDBDescribeTableInput"
+- !private "CSo30AWSDynamoDBDescribeTableOutput"
+- !private "CSo31AWSDynamoDBGlobalSecondaryIndex"
+- !private "CSo27AWSDynamoDBKeySchemaElement"
+- !private "OSC18AWSDynamoDBKeyType"
+- "PSo19AWSDynamoDBModeling"
+- "CSo22AWSDynamoDBObjectModel"
+- !private "CSo21AWSDynamoDBProjection"
+- !private "OSC25AWSDynamoDBProjectionType"
+- !private "CSo32AWSDynamoDBProvisionedThroughput"
+- !private "OSC30AWSDynamoDBScalarAttributeType"
+- !private "CSo27AWSDynamoDBTableDescription"
+- !private "OSC22AWSDynamoDBTableStatus"
+- "PSo21AWSMTLJSONSerializing"
+- "CSo11AWSMTLModel"
+- !private "CSo8AWSModel"
+- !private "CSo10AWSRequest"
+- !private "CSo10AWSService"
+- !private "CSo7AWSTask"
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Vs14ClosedInterval"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "C19DynamoDBSampleSwift17DDBDynamoDBManger"
+- "C19DynamoDBSampleSwift11DDBTableRow"
+- "Ps9Equatable"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- !private "Ps21RandomAccessIndexType"
+- !private "Vs5Range"
+- !private "Vs14RangeGenerator"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCacheBackgroundTaskManager.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSError+AWSMTLModelException.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLReflection.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSTS.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSUICKeyChainStore.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMMemoryCache.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMDiskCache.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTMCache.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSKSReachability.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMResultSet.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDatabase.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSFMDB.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSGZIP.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSTask.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSExecutor.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCancellationToken.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSBolts.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSInfo.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSValidation.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestRetryHandler.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSignature.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLSessionManager.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLResponseSerialization.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSURLRequestSerialization.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSerialization.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSClientContext.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSLogging.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCategory.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSMantle.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSNetworking.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSServiceEnum.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Headers/AWSCore-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSCore.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBObjectMapper.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBResources.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBModel.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDBService.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDB.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDB-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSDynamoDB.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "915a2e73a819ecd1dd2c9543a66bc07a"

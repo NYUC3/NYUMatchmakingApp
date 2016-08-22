@@ -4,92 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AWSAutoScaling.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSCloudWatch.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSCognito.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSCognitoIdentityProvider.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>AWSCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>AWSDynamoDB.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSEC2.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSElasticLoadBalancing.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSIoT.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSKinesis.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSLambda.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSMachineLearning.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSMobileAnalytics.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSS3.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSSES.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSSNS.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSSQS.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>AWSSimpleDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -104,105 +24,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>006E2138B9475DEE0B38D1DE5E72DB28</key>
+		<key>24730E6080BE85DF4349F7635EE1DC72</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>06944EDBD63E0663D8E94CF5B641FADC</key>
+		<key>77F294C89C43B558D9F6924F91A1CF17</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0F8EF035E449BF333B2C5F4A5E1E2312</key>
+		<key>969FC2B4B2F47ED4B6BEA4A00278F18E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>22874371504A07CAB9DB5C306EA39656</key>
+		<key>F4C9A0D3CDCB3586963E22188922CBBE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B38360BBDF40C0AEE16297120318463</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2DB3350C949BE1E48A18930BF921E618</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>31A6D57B6C9E34365A4503608F6C0C73</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>39E930A3416C39CD6777CD4C5EF9D0C6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>596489490277F6BFF510808CE2145304</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5D29F19DD025D9E598ED0928E6ADC61B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6378078F5B95548EFA973FBD769C6227</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>86C54E540EB14666DF6A64355E375F10</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9C1910960704CBC5F2F8EAA664BE0497</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9C359306D3F5DAE06975F15F47E68A96</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A0AED1CB65D257A95B6903082D09635A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A99C4B9AE8A8006E7716150B24385324</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AEE9BCAE6FCC8CCAB99320AAEEFE718D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E41D35188E9FEB38ADC110303C4041A2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E986108DC9E275ED9F5DC6840FA69BD9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F2DBD6A86B28830640BA03AFCF04C090</key>
+		<key>FD4BF642BDE3EB69F02F6A562140B118</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -118,11 +118,6 @@ SWIFT_CLASS("_TtC10startupnyu11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary * _Nullable)launchOptions;
-- (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
-- (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
-- (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
-- (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
-- (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -141,7 +136,6 @@ SWIFT_CLASS("_TtC10startupnyu27CreateProjectViewController")
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified requirementsTextField;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (IBAction)uploadImageTapped:(UIButton * _Nonnull)sender;
 - (IBAction)cancelButtonTapped:(id _Nonnull)sender;
 - (IBAction)saveButtonTapped:(UIButton * _Nonnull)sender;
@@ -210,6 +204,7 @@ SWIFT_CLASS("_TtC10startupnyu9ExploreVC")
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull menu_items;
 @property (nonatomic, copy) NSString * _Nullable menuItemSelected;
 - (void)viewDidLoad;
+- (void)presentSignInViewController;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
@@ -310,13 +305,13 @@ SWIFT_CLASS("_TtC10startupnyu11ProjectCell")
 
 SWIFT_CLASS("_TtC10startupnyu26ProjectTableViewController")
 @interface ProjectTableViewController : UITableViewController <MFMailComposeViewControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentControl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescriptionLabel;
 @property (nonatomic, copy) NSString * _Nonnull projectName;
 @property (nonatomic, copy) NSString * _Nonnull projectActivity;
 @property (nonatomic, copy) NSString * _Nonnull projectAbout;
 @property (nonatomic, copy) NSString * _Nonnull projectRequirements;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
-@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentControl;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescriptionLabel;
 - (void)viewDidLoad;
 - (IBAction)shareThroughEmailTapped:(id _Nonnull)sender;
 - (void)mailComposeController:(MFMailComposeViewController * _Nonnull)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError * _Nullable)error;

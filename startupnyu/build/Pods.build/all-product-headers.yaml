@@ -449,63 +449,82 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers",
+      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers",
       'contents': [
         {
           'type': 'file',
-          'name': "AWSS3-Swift.h",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Headers/AWSS3-Swift.h"
+          'name': "BTNavigationDropdownMenu-Swift.h",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
         },
         {
           'type': 'file',
-          'name': "AWSS3-umbrella.h",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target Support Files/AWSS3/AWSS3-umbrella.h"
-        },
-        {
-          'type': 'file',
-          'name': "AWSS3.h",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSS3/AWSS3/AWSS3.h"
-        },
-        {
-          'type': 'file',
-          'name': "AWSS3Model.h",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSS3/AWSS3/AWSS3Model.h"
-        },
-        {
-          'type': 'file',
-          'name': "AWSS3PreSignedURL.h",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSS3/AWSS3/AWSS3PreSignedURL.h"
-        },
-        {
-          'type': 'file',
-          'name': "AWSS3Resources.h",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSS3/AWSS3/AWSS3Resources.h"
-        },
-        {
-          'type': 'file',
-          'name': "AWSS3Service.h",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSS3/AWSS3/AWSS3Service.h"
-        },
-        {
-          'type': 'file',
-          'name': "AWSS3TransferManager.h",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSS3/AWSS3/AWSS3TransferManager.h"
-        },
-        {
-          'type': 'file',
-          'name': "AWSS3TransferUtility.h",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/AWSS3/AWSS3/AWSS3TransferUtility.h"
+          'name': "BTNavigationDropdownMenu-umbrella.h",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu-umbrella.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/AWSS3.framework/Modules",
+      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/AWSS3.build/module.modulemap"
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/BTNavigationDropdownMenu.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/Pods.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Swift.h",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/Pods.framework/Headers/Pods-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods-umbrella.h",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target Support Files/Pods/Pods-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/Pods.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/Pods.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/Pods_startupnyu.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-startupnyu-umbrella.h",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/Pods/Target Support Files/Pods-startupnyu/Pods-startupnyu-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_startupnyu-Swift.h",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/Pods_startupnyu.framework/Headers/Pods_startupnyu-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Debug-iphonesimulator/Pods_startupnyu.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/startupnyu/build/Pods.build/Debug-iphonesimulator/Pods-startupnyu.build/module.modulemap"
         }
       ]
     }

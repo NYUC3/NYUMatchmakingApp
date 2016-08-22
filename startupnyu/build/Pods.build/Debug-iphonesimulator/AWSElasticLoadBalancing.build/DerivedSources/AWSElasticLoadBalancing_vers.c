@@ -1,1 +1,0 @@
- const unsigned char AWSElasticLoadBalancingVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:AWSElasticLoadBalancing  PROJECT:Pods-2.4.3" "\n"; const double AWSElasticLoadBalancingVersionNumber __attribute__ ((used)) = (double)2.4;

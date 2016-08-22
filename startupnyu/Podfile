@@ -1,25 +1,6 @@
-source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '8.0'
 use_frameworks!
-
-target :'startupnyu' do
-    pod 'AWSAutoScaling'
-    pod 'AWSCloudWatch'
-    pod 'AWSCognito'
-    pod 'AWSCognitoIdentityProvider'
-    pod 'AWSDynamoDB'
-    pod 'AWSEC2'
-    pod 'AWSElasticLoadBalancing'
-    pod 'AWSIoT'
-    pod 'AWSKinesis'
-    pod 'AWSLambda'
-    pod 'AWSMachineLearning'
-    pod 'AWSMobileAnalytics'
-    pod 'AWSS3'
-    pod 'AWSSES'
-    pod 'AWSSimpleDB'
-    pod 'AWSSNS'
-    pod 'AWSSQS'
-    pod 'BTNavigationDropdownMenu'
+pod 'BTNavigationDropdownMenu'
+target 'startupnyu' do
+    pod 'AWSDynamoDB', '~> 2.4.1'
 end

@@ -1,1 +1,0 @@
- const unsigned char AWSCognitoIdentityProviderVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:AWSCognitoIdentityProvider  PROJECT:Pods-2.4.3" "\n"; const double AWSCognitoIdentityProviderVersionNumber __attribute__ ((used)) = (double)2.4;

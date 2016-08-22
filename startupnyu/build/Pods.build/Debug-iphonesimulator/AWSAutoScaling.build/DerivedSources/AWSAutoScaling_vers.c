@@ -1,1 +1,0 @@
- const unsigned char AWSAutoScalingVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:AWSAutoScaling  PROJECT:Pods-2.4.3" "\n"; const double AWSAutoScalingVersionNumber __attribute__ ((used)) = (double)2.4;

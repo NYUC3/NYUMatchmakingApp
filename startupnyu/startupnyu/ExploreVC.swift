@@ -8,9 +8,12 @@
 
 import UIKit
 import BTNavigationDropdownMenu
+import AWSCore
 
 
 class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    // MARK:- Outlets and Variables
     
     @IBOutlet weak var shareButton: UIBarButtonItem!                // share button
     @IBOutlet weak var tableView: UITableView!                      // table view
@@ -22,31 +25,71 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var menuItemSelected : String?                                  // variable stores selected option from dropDown
     
+    
+    // MARK:- ViewDidLoad()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // setup dropdown menu
+        
+        
+        
+
+        
+        
+        
+        
+        
+        let signedIn = false // dummy value
+        
+        
+         // setup dropdown menu
+        if(signedIn){
+            
+            
+        
+        }
+        else{
+            
+            //presentSignInViewController()
+        
+        }
+
+        
+    
         menuItemSelected = menu_items[0]                            // set default dropdown selection to option at index 0
         let menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title:menu_items.first!, items:menu_items)
         self.navigationItem.titleView = menuView
         
         menuView.didSelectItemAtIndexHandler = {[weak self] (indexPath: Int) -> () in
-        
+            
             self?.menuItemSelected = self?.menu_items[indexPath]
             print(self!.students)
             self?.tableView.reloadData()
-        
+            
         }//menuView
         
         // UI Customization
         self.title = "Explore"
         if let font = UIFont(name: "Avenir", size: 15) {
-        
+            
             shareButton.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
-        
+            
         }//if
+        
+        
+        
 
+
+        
     } //viewDidLoad()
+    
+    func presentSignInViewController() {
+
+    }
+    
+    
+    // MARK:- Table View Methods
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
@@ -84,6 +127,8 @@ class ExploreVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }//else
     
     }//tableview ( cellforrowatindexpath )
+    
+    // MARK:- Segue Methods
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {   // segue to the next screen based on the student/project profile selected
         

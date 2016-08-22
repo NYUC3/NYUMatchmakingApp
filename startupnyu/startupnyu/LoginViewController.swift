@@ -7,13 +7,6 @@
 //
 
 import UIKit
-import AWSCore
-import AWSS3
-import AWSDynamoDB
-import AWSSQS
-import AWSSNS
-import AWSCognito
-
 
 class LoginViewController: UIViewController {
 
