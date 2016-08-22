@@ -1,10 +1,13 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
-options: "da12538fa71306df2a4004e615400bfa"
-build_time: [525199412, 912529000]
+options: "08885da909e16627493b0500113e32d3"
+build_time: [525213860, 554473000]
 inputs:
+  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/SignupViewController.swift": !dirty [9223372036854775807, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/DDBDetailViewController.swift": [525199411, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/ProjectTableViewCell.swift": [525198526, 0]
-  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/DDBMainTableViewController.swift": [525198493, 0]
+  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/DDBMainTableViewController.swift": [525212823, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/AppDelegate.swift": [524354140, 0]
+  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/LoginViewController.swift": !private [525213844, 0]
+  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/SingleProjectViewController.swift": [525212137, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/DDBDynamoDBManager.swift": [525199386, 0]
   "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/DynamoDBSampleSwift/DDBSearchViewController.swift": [524354140, 0]

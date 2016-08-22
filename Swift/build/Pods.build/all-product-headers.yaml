@@ -449,6 +449,33 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "BTNavigationDropdownMenu-Swift.h",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "BTNavigationDropdownMenu-umbrella.h",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/Pods/Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Pods.build/Debug-iphonesimulator/BTNavigationDropdownMenu.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/Pods_DynamoDBSampleSwift.framework/Headers",
       'contents': [
         {

@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "descriptionLabel"
 - "nameLabel"
 depends-top-level:
-- "UITableViewCell"
-- "ProjectTableViewCell"
 - "UILabel"
+- "ProjectTableViewCell"
+- "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "descriptionLabel"]
 - ["Ps9AnyObject", "init"]
@@ -207,4 +207,8 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSDynamoDB.framework/Headers/AWSDynamoDB-umbrella.h"
 - "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/AWSDynamoDB.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/BTNavigationDropdownMenu.swiftmodule/x86_64.swiftmodule"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-Swift.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Headers/BTNavigationDropdownMenu-umbrella.h"
+- "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/build/Debug-iphonesimulator/BTNavigationDropdownMenu.framework/Modules/module.modulemap"
 interface-hash: "f4266a315067baff9365db6174b2d32a"

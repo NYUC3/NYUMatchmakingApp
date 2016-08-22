@@ -8,13 +8,14 @@
 *  http://aws.amazon.com/apache2.0
 *
 * or in the "license" file accompanying this file. This file is distributed
-* on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+* on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF var KIND, either
 * express or implied. See the License for the specific language governing
 * permissions and limitations under the License.
 */
 
 import UIKit
 import AWSDynamoDB
+import BTNavigationDropdownMenu
 
 class DDBMainTableViewController: UITableViewController {
 
@@ -22,7 +23,10 @@ class DDBMainTableViewController: UITableViewController {
     var lock:NSLock?
     var lastEvaluatedKey:[String : AWSDynamoDBAttributeValue]!
     var  doneLoading = false
+    let menu_items = ["My Projects", "All Projects"]
 
+    @IBOutlet var theTableView: UITableView!
+    
     var needsToRefresh = false
 
     @IBAction func unwindToMainTableViewControllerFromSearchViewController(unwindSegue:UIStoryboardSegue) {
@@ -146,55 +150,15 @@ class DDBMainTableViewController: UITableViewController {
 
     }
 
-    func generateTestData() {
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-
-        let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.defaultDynamoDBObjectMapper()
-
-        var tasks = [AWSTask]()
-        let gameTitleArray =  ["Galaxy Invaders","Meteor Blasters", "Starship X", "Alien Adventure","Attack Ships"]
-        for i in 0..<25 {
-            for j in 0..<2 {
-                let tableRow = DDBTableRow();
-                tableRow.UserId = "\(i)"
-                if j == 0 {
-                    let c = Int(arc4random_uniform(UInt32(gameTitleArray.count)))
-                    tableRow.GameTitle = gameTitleArray[c]
-                } else {
-                    tableRow.GameTitle = "Comet Quest"
-                }
-                tableRow.TopScore = Int(arc4random_uniform(3000))
-                tableRow.Wins = Int(arc4random_uniform(100))
-                tableRow.Losses = Int(arc4random_uniform(100))
-
-                //Those two properties won't be saved to DynamoDB since it has been defined in ignoredAttributes
-                tableRow.internalName = "internal attributes(should not be saved to dynamoDB)"
-                tableRow.internalState = i;
-
-                tasks.append(dynamoDBObjectMapper.save(tableRow))
-            }
-        }
-
-        AWSTask(forCompletionOfAllTasks: tasks).continueWithExecutor(AWSExecutor.mainThreadExecutor(), withBlock: { (task:AWSTask!) -> AnyObject! in
-            if ((task.error) != nil) {
-                print("Error: \(task.error)")
-            }
-
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-
-            self.refreshList(true)
-            return nil
-        })
-    }
 
     @IBAction func showActionSheet(sender: AnyObject) {
-        let alertController = UIAlertController(title: "Choose Your Action", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let alertController = UIAlertController(title: "Manage Projects", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
 
         let addAction = UIAlertAction(title: "Add", style: UIAlertActionStyle.Default, handler: { (action:UIAlertAction) -> Void in
             self.performSegueWithIdentifier("DDBSeguePushDetailViewController", sender: alertController)
         })
 
-        let editTitle = self.tableView.editing ? "End Editing" : "Edit" ;
+        let editTitle = self.tableView.editing ? "End Editing" : "Delete" ;
         let editAction = UIAlertAction(title: editTitle, style: UIAlertActionStyle.Default, handler: { (action:UIAlertAction) -> Void in
             if self.tableView.editing {
                 self.tableView.editing = false
@@ -202,7 +166,8 @@ class DDBMainTableViewController: UITableViewController {
                 self.tableView.editing = true
             }
         })
-
+/*
+        
         let genAction = UIAlertAction(title: "Generate Test Data", style: UIAlertActionStyle.Default, handler: { (action:UIAlertAction) -> Void in
             self.generateTestData()
         })
@@ -210,27 +175,34 @@ class DDBMainTableViewController: UITableViewController {
         let refreshAction = UIAlertAction(title: "Refresh", style: UIAlertActionStyle.Default, handler: { (action:UIAlertAction) -> Void in
             self.refreshList(true)
         })
-
+*/
+        
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: { (action:UIAlertAction) -> Void in
 
         })
 
         alertController.addAction(addAction)
         alertController.addAction(editAction)
-        alertController.addAction(genAction)
-        alertController.addAction(refreshAction)
+        //alertController.addAction(genAction)
+        //alertController.addAction(refreshAction)
         alertController.addAction(cancelAction)
 
         self.presentViewController(alertController, animated: true, completion: nil)
-
-
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, containerView: self.navigationController!.view, title: "All Projects", items: menu_items)
+        self.navigationItem.titleView = menuView
+        
+        menuView.didSelectItemAtIndexHandler = {[weak self] (indexPath: Int) -> () in
+            print("Did select item at index: \(indexPath)")
+            // TODO: reload table based on menu
+        }
 
         tableRows = []
         lock = NSLock()
-
         self.setupTable()
     }
 
@@ -243,13 +215,8 @@ class DDBMainTableViewController: UITableViewController {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // Return the number of sections.
         return 1
@@ -266,6 +233,7 @@ class DDBMainTableViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! ProjectTableViewCell
 
         // Configure the cell...
@@ -309,11 +277,15 @@ class DDBMainTableViewController: UITableViewController {
 
         }
     }
+    
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-
-        self.performSegueWithIdentifier("DDBSeguePushDetailViewController", sender: tableView.cellForRowAtIndexPath(indexPath))
+        
+        let name = tableRows![indexPath.row].UserId
+        let description = tableRows![indexPath.row].GameTitle
+        
+        //self.performSegueWithIdentifier("DDBSeguePushDetailViewController", sender: tableView.cellForRowAtIndexPath(indexPath))
     }
 
 
@@ -343,7 +315,14 @@ class DDBMainTableViewController: UITableViewController {
             }
         }
         
-        
+        else if(segue.identifier == "project-view"){
+            
+            let name = tableRows![(theTableView.indexPathForSelectedRow?.row)!].UserId
+            let description = tableRows![(theTableView.indexPathForSelectedRow?.row)!].GameTitle
+            let vc = segue.destinationViewController as! SingleProjectViewController
+            vc.projectName = name!
+            vc.projectDescription = description!
+        }
         
     }
     

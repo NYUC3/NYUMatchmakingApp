@@ -148,8 +148,8 @@ SWIFT_CLASS("_TtC19DynamoDBSampleSwift17DDBDynamoDBManger")
 
 @class NSLock;
 @class AWSDynamoDBAttributeValue;
-@class UIStoryboardSegue;
 @class UITableView;
+@class UIStoryboardSegue;
 @class NSIndexPath;
 @class UITableViewCell;
 
@@ -159,16 +159,16 @@ SWIFT_CLASS("_TtC19DynamoDBSampleSwift26DDBMainTableViewController")
 @property (nonatomic, strong) NSLock * _Nullable lock;
 @property (nonatomic, copy) NSDictionary<NSString *, AWSDynamoDBAttributeValue *> * _Null_unspecified lastEvaluatedKey;
 @property (nonatomic) BOOL doneLoading;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull menu_items;
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified theTableView;
 @property (nonatomic) BOOL needsToRefresh;
 - (IBAction)unwindToMainTableViewControllerFromSearchViewController:(UIStoryboardSegue * _Nonnull)unwindSegue;
 - (void)setupTable;
 - (void)refreshList:(BOOL)startFromBeginning;
 - (void)deleteTableRow:(DDBTableRow * _Nonnull)row;
-- (void)generateTestData;
 - (IBAction)showActionSheet:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
-- (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -237,6 +237,22 @@ SWIFT_CLASS("_TtC19DynamoDBSampleSwift20ProjectTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+
+SWIFT_CLASS("_TtC19DynamoDBSampleSwift27SingleProjectViewController")
+@interface SingleProjectViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectNameLabel;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified projectDescriptionTextView;
+@property (nonatomic, copy) NSString * _Nonnull projectName;
+@property (nonatomic, copy) NSString * _Nonnull projectDescription;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

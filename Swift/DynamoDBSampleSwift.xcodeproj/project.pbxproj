@@ -17,6 +17,9 @@
 		BD843B2A1A44F4C3005E2575 /* DDBDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD843B291A44F4C3005E2575 /* DDBDetailViewController.swift */; };
 		BD843B2E1A44F575005E2575 /* DDBMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD843B2D1A44F575005E2575 /* DDBMainTableViewController.swift */; };
 		C26203131D6B5D6B00029C31 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26203121D6B5D6B00029C31 /* ProjectTableViewCell.swift */; };
+		C26203151D6B91B100029C31 /* SingleProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26203141D6B91B100029C31 /* SingleProjectViewController.swift */; };
+		C26203191D6B9B8A00029C31 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26203181D6B9B8A00029C31 /* LoginViewController.swift */; };
+		C262031B1D6B9BA300029C31 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C262031A1D6B9BA300029C31 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		BD843B291A44F4C3005E2575 /* DDBDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DDBDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BD843B2D1A44F575005E2575 /* DDBMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DDBMainTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C26203121D6B5D6B00029C31 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		C26203141D6B91B100029C31 /* SingleProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleProjectViewController.swift; sourceTree = "<group>"; };
+		C26203181D6B9B8A00029C31 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C262031A1D6B9BA300029C31 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DDFE5AC52C51D83443C124DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,11 +78,14 @@
 			isa = PBXGroup;
 			children = (
 				BD843AFC1A44B071005E2575 /* AppDelegate.swift */,
+				C26203181D6B9B8A00029C31 /* LoginViewController.swift */,
+				C262031A1D6B9BA300029C31 /* SignupViewController.swift */,
 				BD843B241A44C3E5005E2575 /* DDBDynamoDBManager.swift */,
 				BD843B2D1A44F575005E2575 /* DDBMainTableViewController.swift */,
 				BD843B291A44F4C3005E2575 /* DDBDetailViewController.swift */,
 				BD5E34691A4A22F9007A5169 /* DDBSearchViewController.swift */,
 				BD843B001A44B071005E2575 /* Main.storyboard */,
+				C26203141D6B91B100029C31 /* SingleProjectViewController.swift */,
 				C26203121D6B5D6B00029C31 /* ProjectTableViewCell.swift */,
 				BD843B031A44B071005E2575 /* Images.xcassets */,
 				BD843B051A44B071005E2575 /* LaunchScreen.xib */,
@@ -235,10 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C262031B1D6B9BA300029C31 /* SignupViewController.swift in Sources */,
 				BD843B2A1A44F4C3005E2575 /* DDBDetailViewController.swift in Sources */,
 				C26203131D6B5D6B00029C31 /* ProjectTableViewCell.swift in Sources */,
 				BD843B2E1A44F575005E2575 /* DDBMainTableViewController.swift in Sources */,
 				BD843AFD1A44B071005E2575 /* AppDelegate.swift in Sources */,
+				C26203191D6B9B8A00029C31 /* LoginViewController.swift in Sources */,
+				C26203151D6B91B100029C31 /* SingleProjectViewController.swift in Sources */,
 				BD843B251A44C3E5005E2575 /* DDBDynamoDBManager.swift in Sources */,
 				BD5E346A1A4A22F9007A5169 /* DDBSearchViewController.swift in Sources */,
 			);

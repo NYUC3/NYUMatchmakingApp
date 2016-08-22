@@ -54,8 +54,10 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-DynamoDBSampleSwift/AWSCore.framework'
   install_framework 'Pods-DynamoDBSampleSwift/AWSDynamoDB.framework'
+  install_framework 'Pods-DynamoDBSampleSwift/BTNavigationDropdownMenu.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-DynamoDBSampleSwift/AWSCore.framework'
   install_framework 'Pods-DynamoDBSampleSwift/AWSDynamoDB.framework'
+  install_framework 'Pods-DynamoDBSampleSwift/BTNavigationDropdownMenu.framework'
 fi

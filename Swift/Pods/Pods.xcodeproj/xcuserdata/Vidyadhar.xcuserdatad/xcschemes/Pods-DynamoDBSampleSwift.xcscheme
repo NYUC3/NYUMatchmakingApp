@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F33B44E0CA03576A12F7B2C"
+               BlueprintIdentifier = "6B98858172DE10F77B63AA48"
                BuildableName = "Pods_DynamoDBSampleSwift.framework"
                BlueprintName = "Pods-DynamoDBSampleSwift"
                ReferencedContainer = "container:Pods.xcodeproj">
