@@ -1,5 +1,0 @@
-version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
-options: "60853de6d7cb50e193d139e5a876cb5b"
-build_time: [525213785, 350289000]
-inputs:
-  "/Users/Vidyadhar/Desktop/NYUMatchmakingApp/Swift/Pods/LoginViewController.swift": !dirty [525213783, 0]

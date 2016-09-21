@@ -1,6 +1,0 @@
-
-use_frameworks!
-pod 'BTNavigationDropdownMenu'
-target 'startupnyu' do
-    pod 'AWSDynamoDB', '~> 2.4.1'
-end

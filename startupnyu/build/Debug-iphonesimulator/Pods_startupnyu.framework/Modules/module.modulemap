@@ -1,6 +1,0 @@
-framework module Pods_startupnyu {
-  umbrella header "Pods-startupnyu-umbrella.h"
-
-  export *
-  module * { export * }
-}

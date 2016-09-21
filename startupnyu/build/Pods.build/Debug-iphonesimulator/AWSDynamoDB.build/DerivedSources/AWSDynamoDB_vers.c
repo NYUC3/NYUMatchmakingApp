@@ -1,1 +1,0 @@
- const unsigned char AWSDynamoDBVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:AWSDynamoDB  PROJECT:Pods-2.4.3" "\n"; const double AWSDynamoDBVersionNumber __attribute__ ((used)) = (double)2.4;

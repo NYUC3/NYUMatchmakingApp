@@ -1,1 +1,0 @@
- const unsigned char Pods_DynamoDBSampleSwiftVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_DynamoDBSampleSwift  PROJECT:Pods-1" "\n"; const double Pods_DynamoDBSampleSwiftVersionNumber __attribute__ ((used)) = (double)1.;

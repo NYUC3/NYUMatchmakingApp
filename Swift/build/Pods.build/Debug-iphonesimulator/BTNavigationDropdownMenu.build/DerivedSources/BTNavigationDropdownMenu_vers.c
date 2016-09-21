@@ -1,1 +1,0 @@
- const unsigned char BTNavigationDropdownMenuVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:BTNavigationDropdownMenu  PROJECT:Pods-0.4.1" "\n"; const double BTNavigationDropdownMenuVersionNumber __attribute__ ((used)) = (double)0.4;
