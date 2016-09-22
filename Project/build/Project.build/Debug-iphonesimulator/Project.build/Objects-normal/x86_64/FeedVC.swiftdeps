@@ -10,16 +10,16 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 depends-top-level:
-- "Feed"
-- "UITableViewDelegate"
-- "UITableViewDataSource"
-- "UIViewController"
-- !private "StringLiteralType"
 - "Int"
-- "UITableView"
-- "IndexPath"
-- "FeedVC"
 - "UITableViewCell"
+- "UITableViewDelegate"
+- "UITableView"
+- "UITableViewDataSource"
+- "IndexPath"
+- !private "StringLiteralType"
+- "Feed"
+- "UIViewController"
+- "FeedVC"
 depends-member:
 - ["Ps9AnyObject", "Feed"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]

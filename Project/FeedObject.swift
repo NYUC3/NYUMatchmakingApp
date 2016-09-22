@@ -7,7 +7,21 @@
 //
 
 import Foundation
+import Parse
 
 struct Feed {
+    
+    init(name : String, title: String, desc : String, image : NSData){
+        self.name = name
+        self.title = title
+        self.description = desc
+        self.image = image
+    }
+    
+    var name : String?
+    var title : String?
+    var description : String?
+    var image : NSData?
+    
     
 }

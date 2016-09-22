@@ -1,11 +1,15 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "23dd1bd989564002d7abfc5b300c061f"
-build_time: [527819563, 424515000]
+build_time: [527834087, 576904000]
 inputs:
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/HomeVCTableViewCell.swift": [527818424, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/FeedVC.swift": [527819553, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/FeedObject.swift": [527819452, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/AddActivityVC.swift": [527819442, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateNewActivityVC.swift": [527832605, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/MyFeedVC.swift": [527830925, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/HomeVCTableViewCell.swift": [527830382, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/FeedVC.swift": [527830162, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/FeedObject.swift": [527832852, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/AddActivityVC.swift": [527834086, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/FeedVCTableViewCell.swift": [527830454, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/AppDelegate.swift": [527818157, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/HomeViewController.swift": [527819391, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/ProjectObject.swift": [527819294, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/HomeViewController.swift": [527830031, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/ProjectObject.swift": [527819809, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/MyFeedCell.swift": [527833928, 0]

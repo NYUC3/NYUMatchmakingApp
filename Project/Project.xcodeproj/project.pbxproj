@@ -35,6 +35,10 @@
 		C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF951D935B8500429DE4 /* AddActivityVC.swift */; };
 		C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF971D935CC000429DE4 /* FeedObject.swift */; };
 		C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF991D935D1600429DE4 /* ProjectObject.swift */; };
+		C26DDF9E1D935F4400429DE4 /* FeedVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF9D1D935F4400429DE4 /* FeedVCTableViewCell.swift */; };
+		C26DDFA01D938A8500429DE4 /* MyFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */; };
+		C26DDFA21D938ADC00429DE4 /* CreateNewActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */; };
+		C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +104,10 @@
 		C26DDF951D935B8500429DE4 /* AddActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityVC.swift; sourceTree = "<group>"; };
 		C26DDF971D935CC000429DE4 /* FeedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedObject.swift; path = ../FeedObject.swift; sourceTree = "<group>"; };
 		C26DDF991D935D1600429DE4 /* ProjectObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectObject.swift; sourceTree = "<group>"; };
+		C26DDF9D1D935F4400429DE4 /* FeedVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVCTableViewCell.swift; sourceTree = "<group>"; };
+		C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedVC.swift; sourceTree = "<group>"; };
+		C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewActivityVC.swift; sourceTree = "<group>"; };
+		C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,10 +241,14 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */,
+				C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */,
+				C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */,
 				C26DDF931D935A4A00429DE4 /* FeedVC.swift */,
 				C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */,
 				C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */,
 				C26DDF951D935B8500429DE4 /* AddActivityVC.swift */,
+				C26DDF9D1D935F4400429DE4 /* FeedVCTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -377,13 +389,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26DDFA21D938ADC00429DE4 /* CreateNewActivityVC.swift in Sources */,
+				C26DDFA01D938A8500429DE4 /* MyFeedVC.swift in Sources */,
 				C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */,
 				C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */,
 				C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */,
 				C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */,
+				C26DDF9E1D935F4400429DE4 /* FeedVCTableViewCell.swift in Sources */,
 				C26DDF431D93499300429DE4 /* AppDelegate.swift in Sources */,
 				C26DDF901D93595A00429DE4 /* HomeViewController.swift in Sources */,
 				C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */,
+				C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

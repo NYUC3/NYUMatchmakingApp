@@ -9,7 +9,11 @@
 import UIKit
 
 class HomeVCTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var projectImage: UIImageView!
+    @IBOutlet weak var projectName: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,8 +21,7 @@ class HomeVCTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
-
+    
 }

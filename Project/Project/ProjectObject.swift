@@ -10,4 +10,14 @@ import Foundation
 
 struct Project {
     
+    init(name : String, desc : String, image : NSData){
+        self.name = name
+        self.description = desc
+        self.image = image
+    }
+    
+    var name : String?
+    var description : String?
+    var image : NSData?
+    
 }

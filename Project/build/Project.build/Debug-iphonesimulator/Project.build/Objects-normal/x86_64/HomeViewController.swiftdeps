@@ -10,16 +10,16 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 depends-top-level:
-- "UITableViewCell"
-- "UIViewController"
+- "Project"
 - "Int"
 - "UITableView"
-- "Project"
-- "IndexPath"
+- "UITableViewCell"
 - "UITableViewDelegate"
+- "UIViewController"
 - !private "StringLiteralType"
 - "UITableViewDataSource"
 - "HomeViewController"
+- "IndexPath"
 depends-member:
 - ["Ps9AnyObject", "Project"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]

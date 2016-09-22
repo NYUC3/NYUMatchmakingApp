@@ -27,7 +27,6 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
-
     
     
     /*

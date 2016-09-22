@@ -116,13 +116,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UITableView;
+@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC7Project13AddActivityVC")
-@interface AddActivityVC : UIViewController
+@interface AddActivityVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified theTableView;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -142,8 +147,28 @@ SWIFT_CLASS("_TtC7Project11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class UITableViewCell;
+@class UIImagePickerController;
+@class UIBarButtonItem;
+@class UIButton;
+@class UITextField;
+@class UIImageView;
+
+SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
+@interface CreateNewActivityVC : UIViewController <UIImagePickerControllerDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectNameLabel;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified activityLabel;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified actvityDescription;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified feedUploadImage;
+@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker;
+- (void)viewDidLoad;
+- (IBAction)cancelButtonTapped:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)saveButtonTapped:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)uploadButton:(UIButton * _Nonnull)sender;
+- (void)imagePickerControllerWithPicker:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7Project6FeedVC")
 @interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -154,9 +179,26 @@ SWIFT_CLASS("_TtC7Project6FeedVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+
+SWIFT_CLASS("_TtC7Project19FeedVCTableViewCell")
+@interface FeedVCTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified feedImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified feedTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified feedDescriptionLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7Project19HomeVCTableViewCell")
 @interface HomeVCTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -169,6 +211,28 @@ SWIFT_CLASS("_TtC7Project18HomeViewController")
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project10MyFeedCell")
+@interface MyFeedCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified myFeedImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified myProjectLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified myTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified myActivityDiscription;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project8MyFeedVC")
+@interface MyFeedVC : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
