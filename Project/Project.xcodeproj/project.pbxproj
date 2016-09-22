@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C26DDF431D93499300429DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF421D93499300429DE4 /* AppDelegate.swift */; };
-		C26DDF451D93499300429DE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF441D93499300429DE4 /* ViewController.swift */; };
 		C26DDF481D93499300429DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26DDF461D93499300429DE4 /* Main.storyboard */; };
 		C26DDF4A1D93499300429DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26DDF491D93499300429DE4 /* Assets.xcassets */; };
 		C26DDF4D1D93499300429DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26DDF4B1D93499300429DE4 /* LaunchScreen.storyboard */; };
@@ -30,6 +29,10 @@
 		C26DDF8B1D934A7A00429DE4 /* Parse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C26DDF721D934A2C00429DE4 /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C26DDF8D1D934A7F00429DE4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26DDF711D934A2C00429DE4 /* Bolts.framework */; };
 		C26DDF8E1D934A7F00429DE4 /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C26DDF711D934A2C00429DE4 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C26DDF901D93595A00429DE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */; };
+		C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */; };
+		C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF931D935A4A00429DE4 /* FeedVC.swift */; };
+		C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF951D935B8500429DE4 /* AddActivityVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +70,6 @@
 /* Begin PBXFileReference section */
 		C26DDF3F1D93499300429DE4 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26DDF421D93499300429DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C26DDF441D93499300429DE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C26DDF471D93499300429DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C26DDF491D93499300429DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C26DDF4C1D93499300429DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,10 @@
 		C26DDF841D934A6500429DE4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C26DDF861D934A6A00429DE4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		C26DDF881D934A6F00429DE4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVCTableViewCell.swift; sourceTree = "<group>"; };
+		C26DDF931D935A4A00429DE4 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		C26DDF951D935B8500429DE4 /* AddActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +163,10 @@
 			children = (
 				C26DDF701D934A1800429DE4 /* Framework */,
 				C26DDF421D93499300429DE4 /* AppDelegate.swift */,
-				C26DDF441D93499300429DE4 /* ViewController.swift */,
+				C26DDF931D935A4A00429DE4 /* FeedVC.swift */,
+				C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */,
+				C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */,
+				C26DDF951D935B8500429DE4 /* AddActivityVC.swift */,
 				C26DDF461D93499300429DE4 /* Main.storyboard */,
 				C26DDF491D93499300429DE4 /* Assets.xcassets */,
 				C26DDF4B1D93499300429DE4 /* LaunchScreen.storyboard */,
@@ -346,8 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C26DDF451D93499300429DE4 /* ViewController.swift in Sources */,
+				C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */,
+				C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */,
+				C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */,
 				C26DDF431D93499300429DE4 /* AppDelegate.swift in Sources */,
+				C26DDF901D93595A00429DE4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

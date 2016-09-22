@@ -115,6 +115,17 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC7Project13AddActivityVC")
+@interface AddActivityVC : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 
@@ -130,11 +141,27 @@ SWIFT_CLASS("_TtC7Project11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
-@class NSCoder;
 
-SWIFT_CLASS("_TtC7Project14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC7Project6FeedVC")
+@interface FeedVC : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project19HomeVCTableViewCell")
+@interface HomeVCTableViewCell : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project18HomeViewController")
+@interface HomeViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

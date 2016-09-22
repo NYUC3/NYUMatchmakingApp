@@ -1,216 +1,160 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "ViewController"
+- "HomeVCTableViewCell"
 provides-nominal:
-- "C7Project14ViewController"
+- "C7Project19HomeVCTableViewCell"
 provides-member:
-- ["C7Project14ViewController", ""]
+- ["C7Project19HomeVCTableViewCell", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
+- "setSelected"
+- "awakeFromNib"
 depends-top-level:
-- "AssignmentPrecedence"
-- "UIViewController"
-- !private "PFObject"
-- !private "StringLiteralType"
-- "ViewController"
+- "HomeVCTableViewCell"
+- "Bool"
+- "UITableViewCell"
 depends-member:
-- !private ["Ps9AnyObject", "PFObject"]
-- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "saveInBackground"]
-- !private ["Ps9AnyObject", "subscript"]
-- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "setSelected"]
 - ["Ps9AnyObject", ""]
-- ["CSo6BFTask", "deinit"]
-- !private ["Ps7CVarArg", "PFObject"]
-- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Sb", "deinit"]
+- ["PSo15CALayerDelegate", "awakeFromNib"]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "setSelected"]
+- ["PSo15CALayerDelegate", ""]
+- ["Ps7CVarArg", "awakeFromNib"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "saveInBackground"]
-- !private ["Ps7CVarArg", "subscript"]
-- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", "setSelected"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "PFObject"]
-- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
-- !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "setSelected"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps23CustomStringConvertible", "PFObject"]
-- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "saveInBackground"]
-- !private ["Ps23CustomStringConvertible", "subscript"]
-- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "setSelected"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "PFObject"]
-- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "awakeFromNib"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "saveInBackground"]
-- !private ["Ps9Equatable", "subscript"]
-- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "setSelected"]
 - ["Ps9Equatable", ""]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
-- !private ["Ps26ExpressibleByStringLiteral", "init"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Ps8Hashable", "PFObject"]
-- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "awakeFromNib"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "saveInBackground"]
-- !private ["Ps8Hashable", "subscript"]
-- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "setSelected"]
 - ["Ps8Hashable", ""]
-- !private ["SQ", "deinit"]
-- !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "init"]
+- ["C7Project19HomeVCTableViewCell", "Bool"]
+- ["C7Project19HomeVCTableViewCell", "awakeFromNib"]
+- ["C7Project19HomeVCTableViewCell", "deinit"]
+- ["C7Project19HomeVCTableViewCell", "init"]
+- ["C7Project19HomeVCTableViewCell", "setSelected"]
 - ["CSo7NSCoder", "deinit"]
-- !private ["PSo8NSCoding", "PFObject"]
-- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "awakeFromNib"]
 - !private ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "setSelected"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "PFObject"]
-- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
-- !private ["PSo26NSExtensionRequestHandling", "init"]
-- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
-- ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo16NSMutableCopying", "init"]
-- !private ["CSo8NSObject", "PFObject"]
-- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "awakeFromNib"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "saveInBackground"]
-- !private ["CSo8NSObject", "subscript"]
-- ["CSo8NSObject", "viewDidLoad"]
-- !private ["PSo16NSObjectProtocol", "PFObject"]
-- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "setSelected"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "saveInBackground"]
-- !private ["PSo16NSObjectProtocol", "subscript"]
-- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "setSelected"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- ["CSo8PFObject", "deinit"]
-- !private ["CSo8PFObject", "init"]
-- !private ["CSo8PFObject", "saveInBackground"]
-- !private ["CSo8PFObject", "subscript"]
-- ["SS", "deinit"]
-- !private ["SS", "init"]
-- !private ["Ps16TextOutputStream", "init"]
-- !private ["Ps20TextOutputStreamable", "init"]
-- !private ["PSo21UIAppearanceContainer", "PFObject"]
-- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
 - !private ["PSo21UIAppearanceContainer", "init"]
-- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "PFObject"]
-- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
-- !private ["PSo18UIContentContainer", "init"]
-- ["PSo18UIContentContainer", "viewDidLoad"]
-- ["PSo18UIContentContainer", ""]
-- !private ["PSo18UIFocusEnvironment", "PFObject"]
-- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
 - !private ["PSo18UIFocusEnvironment", "init"]
-- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["CSo11UIResponder", "PFObject"]
-- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["PSo11UIFocusItem", "awakeFromNib"]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "setSelected"]
+- ["PSo11UIFocusItem", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "awakeFromNib"]
 - ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "viewDidLoad"]
-- !private ["PSo30UIResponderStandardEditActions", "PFObject"]
-- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "setSelected"]
+- ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
-- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "setSelected"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo16UIStateRestoring", "PFObject"]
-- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
-- !private ["PSo16UIStateRestoring", "init"]
-- ["PSo16UIStateRestoring", "viewDidLoad"]
-- ["PSo16UIStateRestoring", ""]
-- !private ["PSo18UITraitEnvironment", "PFObject"]
-- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "deinit"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", ""]
+- ["OSC20UITableViewCellStyle", "deinit"]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
 - !private ["PSo18UITraitEnvironment", "init"]
-- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "setSelected"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo16UIViewController", "PFObject"]
-- ["CSo16UIViewController", "deinit"]
-- ["CSo16UIViewController", "didReceiveMemoryWarning"]
-- ["CSo16UIViewController", "init"]
-- ["CSo16UIViewController", "viewDidLoad"]
-- ["CSo16UIViewController", ""]
-- !private ["C7Project14ViewController", "PFObject"]
-- ["C7Project14ViewController", "deinit"]
-- ["C7Project14ViewController", "didReceiveMemoryWarning"]
-- ["C7Project14ViewController", "init"]
-- ["C7Project14ViewController", "viewDidLoad"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "PFObject"]
-- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "setSelected"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- ["Ps9_Hashable", "awakeFromNib"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "saveInBackground"]
-- !private ["Ps9_Hashable", "subscript"]
-- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", "setSelected"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
-- "CSo6BFTask"
+- "Sb"
+- "PSo15CALayerDelegate"
 - "Ps7CVarArg"
-- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
-- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
-- !private "Ps26ExpressibleByStringLiteral"
-- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
-- !private "SQ"
-- !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
+- "C7Project19HomeVCTableViewCell"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
-- "PSo26NSExtensionRequestHandling"
-- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
 - "Sq"
-- "CSo8PFObject"
-- "SS"
-- !private "Ps16TextOutputStream"
-- !private "Ps20TextOutputStreamable"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- "PSo18UIContentContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "PSo27UIGestureRecognizerDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
-- "PSo16UIStateRestoring"
+- "CSo15UITableViewCell"
+- "OSC20UITableViewCellStyle"
 - "PSo18UITraitEnvironment"
-- "CSo16UIViewController"
-- "C7Project14ViewController"
-- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- !private "Ps34_ExpressibleByBuiltinStringLiteral"
-- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
 - "Ps9_Hashable"
-- !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -281,4 +225,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "aa76cbb1f80cdb9b191bd4a69e8c5417"
+interface-hash: "17865508f450f917909d2453d6b3af5f"
