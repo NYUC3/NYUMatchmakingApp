@@ -8,20 +8,28 @@
 
 import UIKit
 
-class FeedVC: UIViewController {
+class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let feedList = [Feed]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        
     }
     
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return feedList.count
+    }
 
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "feed-cell", for: indexPath)
+        
+        return cell
+    }
+
+    
+    
     /*
     // MARK: - Navigation
 

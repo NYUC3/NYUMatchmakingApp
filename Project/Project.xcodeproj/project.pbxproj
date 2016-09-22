@@ -33,6 +33,8 @@
 		C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */; };
 		C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF931D935A4A00429DE4 /* FeedVC.swift */; };
 		C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF951D935B8500429DE4 /* AddActivityVC.swift */; };
+		C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF971D935CC000429DE4 /* FeedObject.swift */; };
+		C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF991D935D1600429DE4 /* ProjectObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVCTableViewCell.swift; sourceTree = "<group>"; };
 		C26DDF931D935A4A00429DE4 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		C26DDF951D935B8500429DE4 /* AddActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityVC.swift; sourceTree = "<group>"; };
+		C26DDF971D935CC000429DE4 /* FeedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedObject.swift; path = ../FeedObject.swift; sourceTree = "<group>"; };
+		C26DDF991D935D1600429DE4 /* ProjectObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,12 +165,10 @@
 		C26DDF411D93499300429DE4 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				C26DDF9C1D935E0800429DE4 /* View */,
+				C26DDF9B1D935DEF00429DE4 /* Model */,
 				C26DDF701D934A1800429DE4 /* Framework */,
 				C26DDF421D93499300429DE4 /* AppDelegate.swift */,
-				C26DDF931D935A4A00429DE4 /* FeedVC.swift */,
-				C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */,
-				C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */,
-				C26DDF951D935B8500429DE4 /* AddActivityVC.swift */,
 				C26DDF461D93499300429DE4 /* Main.storyboard */,
 				C26DDF491D93499300429DE4 /* Assets.xcassets */,
 				C26DDF4B1D93499300429DE4 /* LaunchScreen.storyboard */,
@@ -217,6 +219,26 @@
 				C26DDF761D934A3E00429DE4 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C26DDF9B1D935DEF00429DE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C26DDF971D935CC000429DE4 /* FeedObject.swift */,
+				C26DDF991D935D1600429DE4 /* ProjectObject.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C26DDF9C1D935E0800429DE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C26DDF931D935A4A00429DE4 /* FeedVC.swift */,
+				C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */,
+				C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */,
+				C26DDF951D935B8500429DE4 /* AddActivityVC.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,9 +379,11 @@
 			files = (
 				C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */,
 				C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */,
+				C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */,
 				C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */,
 				C26DDF431D93499300429DE4 /* AppDelegate.swift in Sources */,
 				C26DDF901D93595A00429DE4 /* HomeViewController.swift in Sources */,
+				C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +636,7 @@
 				C26DDF691D93499300429DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C26DDF6A1D93499300429DE4 /* Build configuration list for PBXNativeTarget "ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -620,6 +645,7 @@
 				C26DDF6C1D93499300429DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C26DDF6D1D93499300429DE4 /* Build configuration list for PBXNativeTarget "ProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -628,6 +654,7 @@
 				C26DDF6F1D93499300429DE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
