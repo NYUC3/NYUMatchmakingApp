@@ -11,7 +11,7 @@ import Parse
 
 struct Feed {
     
-    init(name : String, title: String, desc : String, image : NSData){
+    init(name : String, title: String, desc : String, image : PFFile){
         self.name = name
         self.title = title
         self.description = desc
@@ -21,7 +21,7 @@ struct Feed {
     var name : String?
     var title : String?
     var description : String?
-    var image : NSData?
+    var image : PFFile?
     
     
 }

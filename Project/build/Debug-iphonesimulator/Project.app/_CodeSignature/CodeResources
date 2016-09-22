@@ -35,7 +35,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4FIoCJ7vHcrfgPvdYwfRzQXqofc=
+			M/oZRAd9T5T3ymEVvZpFyz8pojU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,7 +44,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GYBLXnzG+Fnwkw8iZzTSTrDpP/c=
+			zFTaxEQT/H+B7KSAeH2KMh0EHlc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NYjm61Ej5SN6YFROeXiIw59FsCo=
+			L31suvkZNPDVxbP/+1NK2404w8s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6RkKUSDK7BeEdExqJjr4rS492HE=
+			iI4jko3jQgrSzOfoDu/WXvgtUWs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,7 +80,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cRf3eoLOPM5xmjD4s57fXw6Bz2g=
+			q4rNTvZJGtWSw282bNS1yufKiK4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mYGL5QCe8USfKes5vmQ8GsS3/0o=
+			O3Luns5sbfUwgsbiBa+pttWT/fA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -98,7 +98,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JQTGRIsSpJYsqGh01EMPIpzTPs8=
+			+twb9NhOCaWDALIqfCVTD9WtKds=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -226,7 +226,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m2yEaQrarpFSksmHj6E//QocC8k=
+		PkaQW2eAKRIRazp/JVEs1XNT0tI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -235,6 +235,10 @@
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
 		wyYX1cXEYB1a9v5ZrJt+Uy5NFG8=
+		</data>
+		<key>place.png</key>
+		<data>
+		nHsHej1iKelWQPHIOqa/u6TSJTw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -282,11 +286,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4FIoCJ7vHcrfgPvdYwfRzQXqofc=
+			M/oZRAd9T5T3ymEVvZpFyz8pojU=
 			</data>
 			<key>hash2</key>
 			<data>
-			k7Po8Q5sTtISO8O9qxxnMg1871tkockfyiVWjUGtgog=
+			sziq6CeiOpSm2d7ysC+CrP5uYuavzb0U1yxn5x8D5no=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -295,11 +299,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GYBLXnzG+Fnwkw8iZzTSTrDpP/c=
+			zFTaxEQT/H+B7KSAeH2KMh0EHlc=
 			</data>
 			<key>hash2</key>
 			<data>
-			vcZoEo/z5liZn0tkCXRljamoYUiq7EFi8zCtPG+REtg=
+			YXCJpMpDlcu2CkRLxosJZYKfkEKKLxrQeYifXZD6VWY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -321,11 +325,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NYjm61Ej5SN6YFROeXiIw59FsCo=
+			L31suvkZNPDVxbP/+1NK2404w8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			dQUCGR28oLq/ET+LgBTiAHDMYAX2bPXCmCNgyIU8vEg=
+			d058RTvkF/LqvMgT6UYMXbuPdJFXExkGPvqVkSfhtlA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -334,11 +338,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6RkKUSDK7BeEdExqJjr4rS492HE=
+			iI4jko3jQgrSzOfoDu/WXvgtUWs=
 			</data>
 			<key>hash2</key>
 			<data>
-			4w3HOhLreIWW8QGJqEiM33pFyvpT43NmxNjK5kZmim8=
+			6sVM9DthIeepNpbX+JkPS/zsMkRrwBYyZuIKm6b2nd4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -347,11 +351,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cRf3eoLOPM5xmjD4s57fXw6Bz2g=
+			q4rNTvZJGtWSw282bNS1yufKiK4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1QS9AhphInfWIsaJA0ebo0pNGiwP5iDJa0b0mXBvP0w=
+			Ak+U4QMLb4+7xYWaq5Y7vMktE0Cs8X2cci2hmKRphS4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -360,11 +364,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mYGL5QCe8USfKes5vmQ8GsS3/0o=
+			O3Luns5sbfUwgsbiBa+pttWT/fA=
 			</data>
 			<key>hash2</key>
 			<data>
-			7xgWXGtNxMLRrf+sIuipchgsfFPv8nd3mQItf1eX6SQ=
+			suZzLlBgXsIiyG5pt31CA8f7t51/wZAa1stFHPTB8Rk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -373,11 +377,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JQTGRIsSpJYsqGh01EMPIpzTPs8=
+			+twb9NhOCaWDALIqfCVTD9WtKds=
 			</data>
 			<key>hash2</key>
 			<data>
-			8iZwttImigCf8PpneaXGbalPCrLi7mnKDhm6SRpz8LA=
+			RjYRm9xcEgzI9J2Lb0L5M8ilI/Ay91FDM3RRMR1eJIA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -712,6 +716,17 @@
 			<key>hash2</key>
 			<data>
 			CDNni4KOfGg4kqrp3FyST+ObUPYJe2ubnxJXbQKhVQU=
+			</data>
+		</dict>
+		<key>place.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nHsHej1iKelWQPHIOqa/u6TSJTw=
+			</data>
+			<key>hash2</key>
+			<data>
+			VXjciCZl8kriUMkYJ2iBdskTgrQLoQ4fyesrJiQ24LI=
 			</data>
 		</dict>
 	</dict>

@@ -21,13 +21,10 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
-        
         self.dismiss(animated: true, completion: nil)
-        
     }
 
     
@@ -37,12 +34,13 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate {
         activity["activityName"] = activityLabel.text
         activity["activityDescription"] = actvityDescription.text
         activity["username"] = "vdthatte@nyu.edu"
+        
+        activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.feedUploadImage.image!, 0.1)!)
         activity.saveInBackground()
         dismiss(animated: true, completion: nil)
     }
 
     @IBAction func uploadButton(_ sender: UIButton) {
-        
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)

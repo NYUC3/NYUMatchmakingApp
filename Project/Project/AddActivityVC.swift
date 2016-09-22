@@ -34,7 +34,7 @@ class AddActivityVC: UIViewController, UITableViewDataSource, UITableViewDelegat
                 if let objects = objects {
                     for object in objects {
                         
-                        let feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: NSData())
+                        let feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: object["image"] as! PFFile)
                         self.myFeedList.append(feed)
                         
                     }
@@ -61,6 +61,13 @@ class AddActivityVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         cell.myProjectLabel.text = myFeedList[indexPath.row].name
         cell.myTitleLabel.text = myFeedList[indexPath.row].title
         cell.myActivityDiscription.text = myFeedList[indexPath.row].description
+        
+        var imageFromParse = myFeedList[indexPath.row].image
+        imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
+            var image: UIImage! = UIImage(data: imageData!)!
+            cell.myFeedImageView.image = image
+        })
+
         return cell
     }
 

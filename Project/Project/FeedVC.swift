@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -14,6 +15,31 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var query = PFQuery(className:"MyActivities")
+        query.whereKey("username", equalTo:"vdthatte@nyu.edu")
+        query.findObjectsInBackground {
+            (objects: [PFObject]?, error: Error?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+                if let objects = objects {
+                    for object in objects {
+                        
+                        let feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: object["image"] as! PFFile)
+                        self.feedList.append(feed)
+                        
+                    }
+                }
+                
+                self.theTableView.reloadData()
+            } else {
+                // Log details of the failure
+                print("Error: \(error!) \(error! as! NSError)")
+            }
+        }
         
         
     }
