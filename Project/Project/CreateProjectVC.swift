@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate {
     
@@ -24,6 +25,14 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate {
 
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
+        
+        let activity = PFObject(className:"Projects")
+        activity["Name"] = projectNameTextField.text
+        activity["Description"] = projectDescriptionTextfield.text
+        activity["username"] = "vdthatte@nyu.edu"
+        
+        activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.projectImageView.image!, 0.1)!)
+        activity.saveInBackground()
     }
 
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
@@ -36,7 +45,7 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate {
         present(imagePicker, animated: true, completion: nil)
     }
 
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    private func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             projectImageView.contentMode = .scaleAspectFit
             projectImageView.image = pickedImage
