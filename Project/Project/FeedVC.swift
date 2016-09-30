@@ -11,13 +11,13 @@ import Parse
 
 class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    let feedList = [Feed]()
+    var feedList = [Feed]()
     
+    @IBOutlet weak var daTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         var query = PFQuery(className:"MyActivities")
-        query.whereKey("username", equalTo:"vdthatte@nyu.edu")
         query.findObjectsInBackground {
             (objects: [PFObject]?, error: Error?) -> Void in
             
@@ -34,10 +34,10 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     }
                 }
                 
-                self.theTableView.reloadData()
+                self.daTableView.reloadData()
             } else {
                 // Log details of the failure
-                print("Error: \(error!) \(error! as! NSError)")
+                print("Error: \(error!) \(error! as? NSError)")
             }
         }
         
@@ -49,7 +49,16 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "feed-cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "feed-cell", for: indexPath) as! FeedVCTableViewCell
+        cell.projectNameLabel.text = feedList[indexPath.row].name
+        cell.feedTitleLabel.text  = feedList[indexPath.row].title
+        cell.feedDescriptionLabel.text = feedList[indexPath.row].description
+        
+        let imageFromParse = feedList[indexPath.row].image
+        imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
+            let image: UIImage! = UIImage(data: imageData!)!
+            cell.feedImage.image = image
+        })
         
         return cell
     }
