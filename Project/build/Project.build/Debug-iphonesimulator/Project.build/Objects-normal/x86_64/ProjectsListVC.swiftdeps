@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
 depends-top-level:
-- "UIViewController"
 - "Project"
 - "ProjectsListVC"
+- "UIViewController"
 depends-member:
 - ["Ps9AnyObject", "Project"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]

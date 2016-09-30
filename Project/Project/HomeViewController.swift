@@ -7,15 +7,47 @@
 //
 
 import UIKit
+import Parse
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var projectsList = [Project]()
     
+    @IBOutlet weak var projectTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        var query = PFQuery(className:"Projects")
+        query.whereKey("username", equalTo:"vdthatte@nyu.edu")
+        query.findObjectsInBackground {
+            (objects: [PFObject]?, error: Error?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+                if let objects = objects {
+                    for object in objects {
+                        
+                        
+                        let project = Project(name: object["Name"] as! String, desc: object["Description"] as! String, image: object["image"] as! PFFile)
+                        
+                        self.projectsList.append(project)
+                    }
+                }
+                
+                self.projectTableView.reloadData()
+            } else {
+                // Log details of the failure
+                print("Error: \(error!) \(error! as! NSError)")
+            }
+        }
+        
+        
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -27,7 +59,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "home-cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "home-cell", for: indexPath) as! HomeVCTableViewCell
+        cell.projectName.text = projectsList[indexPath.row].name
+        cell.descriptionLabel.text = projectsList[indexPath.row].description
+        
+        //var imageFromParse = projectsList[indexPath.row].image
+        //cell.projectImage.image = imageFromParse
+        
+
+        
         return cell
     }
 

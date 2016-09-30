@@ -7,14 +7,14 @@ provides-member:
 - ["V7Project7Project", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Project"
-- "NSData"
 - "String"
+- "PFFile"
+- "Project"
 - "AssignmentPrecedence"
 depends-member:
-- ["CSo6NSData", "deinit"]
 - ["Sq", "deinit"]
-- ["V7Project7Project", "NSData"]
+- ["CSo6PFFile", "deinit"]
+- ["V7Project7Project", "PFFile"]
 - ["V7Project7Project", "String"]
 - ["V7Project7Project", "deinit"]
 - ["V7Project7Project", "description"]
@@ -23,8 +23,8 @@ depends-member:
 - ["V7Project7Project", "name"]
 - ["SS", "deinit"]
 depends-nominal:
-- "CSo6NSData"
 - "Sq"
+- "CSo6PFFile"
 - "V7Project7Project"
 - "SS"
 depends-dynamic-lookup:
@@ -97,4 +97,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "4bb2e38f68cd3aed42d8f9947a33f3aa"
+interface-hash: "b5fa7df60aecee6f53b660b1f8ea916a"

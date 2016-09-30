@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import Parse
 
 struct Project {
     
-    init(name : String, desc : String, image : NSData){
+    init(name : String, desc : String, image : PFFile){
         self.name = name
         self.description = desc
         self.image = image
@@ -18,6 +19,6 @@ struct Project {
     
     var name : String?
     var description : String?
-    var image : NSData?
+    var image : PFFile?
     
 }
