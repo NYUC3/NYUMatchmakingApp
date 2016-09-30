@@ -170,6 +170,22 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 @end
 
 
+SWIFT_CLASS("_TtC7Project15CreateProjectVC")
+@interface CreateProjectVC : UIViewController <UIImagePickerControllerDelegate>
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImageView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectNameTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectDescriptionTextfield;
+@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker;
+- (void)viewDidLoad;
+- (IBAction)saveButtonTapped:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)cancelButtonTapped:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)uploadButtonTapped:(UIButton * _Nonnull)sender;
+- (void)imagePickerControllerWithPicker:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7Project6FeedVC")
 @interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified daTableView;
@@ -232,6 +248,15 @@ SWIFT_CLASS("_TtC7Project10MyFeedCell")
 
 SWIFT_CLASS("_TtC7Project8MyFeedVC")
 @interface MyFeedVC : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project14ProjectsListVC")
+@interface ProjectsListVC : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
