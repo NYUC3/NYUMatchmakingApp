@@ -21,33 +21,45 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         // Do any additional setup after loading the view.
         
-        var query = PFQuery(className:"Projects")
-        query.whereKey("username", equalTo:"vdthatte@nyu.edu")
-        query.findObjectsInBackground {
-            (objects: [PFObject]?, error: Error?) -> Void in
+        if(PFUser.current() == nil){
             
-            if error == nil {
-                // The find succeeded.
-                print("Successfully retrieved \(objects!.count) scores.")
-                // Do something with the found objects
-                if let objects = objects {
-                    for object in objects {
-                        
-                        
-                        let project = Project(name: object["Name"] as! String, desc: object["Description"] as! String, image: object["image"] as! PFFile)
-                        
-                        self.projectsList.append(project)
-                    }
-                }
-                
-                self.projectTableView.reloadData()
-            } else {
-                // Log details of the failure
-                print("Error: \(error!) \(error! as! NSError)")
-            }
+            // present login screen
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "loginvc") as! LoginVC
+            self.present(vc, animated: true, completion: nil)
+            
         }
+        else{
+            
+            let query = PFQuery(className:"Projects")
+            query.whereKey("username", equalTo:PFUser.current()?.username)
+            query.findObjectsInBackground {
+                (objects: [PFObject]?, error: Error?) -> Void in
+                
+                if error == nil {
+                    // The find succeeded.
+                    print("Successfully retrieved \(objects!.count) scores.")
+                    // Do something with the found objects
+                    if let objects = objects {
+                        for object in objects {
+                            
+                            
+                            let project = Project(name: object["Name"] as! String, desc: object["Description"] as! String, image: object["image"] as! PFFile)
+                            
+                            self.projectsList.append(project)
+                        }
+                    }
+                    
+                    self.projectTableView.reloadData()
+                } else {
+                    // Log details of the failure
+                    print("Error: \(error!) \(error! as! NSError)")
+                }
+            }
         
-        
+        }
+    
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{

@@ -232,6 +232,20 @@ SWIFT_CLASS("_TtC7Project18HomeViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboardSegue;
+
+SWIFT_CLASS("_TtC7Project7LoginVC")
+@interface LoginVC : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified email;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)LoginTapped:(UIButton * _Nonnull)sender;
+- (IBAction)unwindToLoginWithSegue:(UIStoryboardSegue * _Nonnull)segue;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7Project10MyFeedCell")
 @interface MyFeedCell : UITableViewCell

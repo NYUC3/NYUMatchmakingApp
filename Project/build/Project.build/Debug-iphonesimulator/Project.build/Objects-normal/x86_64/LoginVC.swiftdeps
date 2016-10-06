@@ -1,0 +1,636 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginVC"
+provides-nominal:
+- "C7Project7LoginVC"
+provides-member:
+- ["C7Project7LoginVC", ""]
+provides-dynamic-lookup:
+- "LoginTapped"
+- "password"
+- "unwindToLogin"
+- "viewDidLoad"
+- "email"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- !private "PFUser"
+- !private "CastingPrecedence"
+- !private "!="
+- "LoginVC"
+- "UITextField"
+- !private "UIAlertAction"
+- !private "UIStoryboard"
+- !private "UIAlertController"
+- !private "UIAlertActionStyle"
+- !private "Error"
+- !private "HomeViewController"
+- "UIViewController"
+- "StringLiteralType"
+- "BooleanLiteralType"
+- !private "Void"
+- "UIButton"
+- !private "UIAlertControllerStyle"
+- "UIStoryboardSegue"
+depends-member:
+- ["Ps9AnyObject", "LoginTapped"]
+- !private ["Ps9AnyObject", "PFUser"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertActionStyle"]
+- !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UIAlertControllerStyle"]
+- !private ["Ps9AnyObject", "UIStoryboard"]
+- !private ["Ps9AnyObject", "addAction"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "email"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
+- !private ["Ps9AnyObject", "logInWithUsername"]
+- ["Ps9AnyObject", "password"]
+- !private ["Ps9AnyObject", "present"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "unwindToLogin"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "text"]
+- ["Ps7CVarArg", "LoginTapped"]
+- !private ["Ps7CVarArg", "PFUser"]
+- !private ["Ps7CVarArg", "UIAlertAction"]
+- !private ["Ps7CVarArg", "UIAlertActionStyle"]
+- !private ["Ps7CVarArg", "UIAlertController"]
+- !private ["Ps7CVarArg", "UIAlertControllerStyle"]
+- !private ["Ps7CVarArg", "UIStoryboard"]
+- !private ["Ps7CVarArg", "addAction"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Ps7CVarArg", "email"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
+- !private ["Ps7CVarArg", "logInWithUsername"]
+- ["Ps7CVarArg", "password"]
+- !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "text"]
+- ["Ps7CVarArg", "unwindToLogin"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "LoginTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "PFUser"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertControllerStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
+- !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "email"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "logInWithUsername"]
+- ["Ps28CustomDebugStringConvertible", "password"]
+- !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "unwindToLogin"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "debugDescription"]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "LoginTapped"]
+- !private ["Ps23CustomStringConvertible", "PFUser"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UIAlertControllerStyle"]
+- !private ["Ps23CustomStringConvertible", "UIStoryboard"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addAction"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "email"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- !private ["Ps23CustomStringConvertible", "logInWithUsername"]
+- ["Ps23CustomStringConvertible", "password"]
+- !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "unwindToLogin"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "LoginTapped"]
+- !private ["Ps9Equatable", "PFUser"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertActionStyle"]
+- !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UIAlertControllerStyle"]
+- !private ["Ps9Equatable", "UIStoryboard"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addAction"]
+- !private ["Ps9Equatable", "alert"]
+- !private ["Ps9Equatable", "default"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "email"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewController"]
+- !private ["Ps9Equatable", "logInWithUsername"]
+- ["Ps9Equatable", "password"]
+- !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "unwindToLogin"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "debugDescription"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "LoginTapped"]
+- !private ["Ps8Hashable", "PFUser"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertActionStyle"]
+- !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UIAlertControllerStyle"]
+- !private ["Ps8Hashable", "UIStoryboard"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addAction"]
+- !private ["Ps8Hashable", "alert"]
+- !private ["Ps8Hashable", "default"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "email"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewController"]
+- !private ["Ps8Hashable", "logInWithUsername"]
+- ["Ps8Hashable", "password"]
+- !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "unwindToLogin"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["C7Project18HomeViewController", "deinit"]
+- ["SQ", "deinit"]
+- !private ["C7Project7LoginVC", "Error"]
+- !private ["C7Project7LoginVC", "HomeViewController"]
+- ["C7Project7LoginVC", "LoginTapped"]
+- !private ["C7Project7LoginVC", "PFUser"]
+- !private ["C7Project7LoginVC", "UIAlertAction"]
+- !private ["C7Project7LoginVC", "UIAlertActionStyle"]
+- !private ["C7Project7LoginVC", "UIAlertController"]
+- !private ["C7Project7LoginVC", "UIAlertControllerStyle"]
+- ["C7Project7LoginVC", "UIButton"]
+- !private ["C7Project7LoginVC", "UIStoryboard"]
+- ["C7Project7LoginVC", "UIStoryboardSegue"]
+- ["C7Project7LoginVC", "UITextField"]
+- !private ["C7Project7LoginVC", "Void"]
+- ["C7Project7LoginVC", "deinit"]
+- ["C7Project7LoginVC", "didReceiveMemoryWarning"]
+- ["C7Project7LoginVC", "email"]
+- ["C7Project7LoginVC", "init"]
+- ["C7Project7LoginVC", "password"]
+- !private ["C7Project7LoginVC", "present"]
+- ["C7Project7LoginVC", "unwindToLogin"]
+- ["C7Project7LoginVC", "viewDidLoad"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "LoginTapped"]
+- !private ["PSo8NSCoding", "PFUser"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertActionStyle"]
+- !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UIAlertControllerStyle"]
+- !private ["PSo8NSCoding", "UIStoryboard"]
+- !private ["PSo8NSCoding", "addAction"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "email"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "password"]
+- !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "unwindToLogin"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- ["PSo26NSExtensionRequestHandling", "LoginTapped"]
+- !private ["PSo26NSExtensionRequestHandling", "PFUser"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertActionStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertControllerStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "email"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "password"]
+- !private ["PSo26NSExtensionRequestHandling", "present"]
+- ["PSo26NSExtensionRequestHandling", "unwindToLogin"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "Error"]
+- !private ["CSo8NSObject", "HomeViewController"]
+- ["CSo8NSObject", "LoginTapped"]
+- !private ["CSo8NSObject", "PFUser"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertActionStyle"]
+- !private ["CSo8NSObject", "UIAlertController"]
+- !private ["CSo8NSObject", "UIAlertControllerStyle"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIStoryboard"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
+- ["CSo8NSObject", "UITextField"]
+- !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addAction"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "email"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewController"]
+- !private ["CSo8NSObject", "logInWithUsername"]
+- ["CSo8NSObject", "password"]
+- !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "unwindToLogin"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "LoginTapped"]
+- !private ["PSo16NSObjectProtocol", "PFUser"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIAlertControllerStyle"]
+- !private ["PSo16NSObjectProtocol", "UIStoryboard"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "email"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- !private ["PSo16NSObjectProtocol", "logInWithUsername"]
+- ["PSo16NSObjectProtocol", "password"]
+- !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "unwindToLogin"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Sq", "debugDescription"]
+- ["Sq", "deinit"]
+- !private ["CSo8PFObject", "logInWithUsername"]
+- !private ["PSo13PFSubclassing", "logInWithUsername"]
+- !private ["CSo6PFUser", "logInWithUsername"]
+- !private ["Ps16RawRepresentable", "alert"]
+- !private ["Ps16RawRepresentable", "default"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["CSo13UIAlertAction", "deinit"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "default"]
+- !private ["OSC18UIAlertActionStyle", "deinit"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "deinit"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "alert"]
+- !private ["OSC22UIAlertControllerStyle", "deinit"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo21UIAppearanceContainer", "LoginTapped"]
+- !private ["PSo21UIAppearanceContainer", "PFUser"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertControllerStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "email"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "password"]
+- !private ["PSo21UIAppearanceContainer", "present"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "unwindToLogin"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "LoginTapped"]
+- !private ["PSo18UIContentContainer", "PFUser"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertActionStyle"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UIAlertControllerStyle"]
+- !private ["PSo18UIContentContainer", "UIStoryboard"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "email"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "password"]
+- !private ["PSo18UIContentContainer", "present"]
+- ["PSo18UIContentContainer", "unwindToLogin"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo18UIFocusEnvironment", "LoginTapped"]
+- !private ["PSo18UIFocusEnvironment", "PFUser"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertActionStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertControllerStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "email"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "password"]
+- !private ["PSo18UIFocusEnvironment", "present"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "unwindToLogin"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo11UIResponder", "Error"]
+- !private ["CSo11UIResponder", "HomeViewController"]
+- ["CSo11UIResponder", "LoginTapped"]
+- !private ["CSo11UIResponder", "PFUser"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertActionStyle"]
+- !private ["CSo11UIResponder", "UIAlertController"]
+- !private ["CSo11UIResponder", "UIAlertControllerStyle"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIStoryboard"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
+- ["CSo11UIResponder", "UITextField"]
+- !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "addAction"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "email"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "password"]
+- !private ["CSo11UIResponder", "present"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "unwindToLogin"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "LoginTapped"]
+- !private ["PSo30UIResponderStandardEditActions", "PFUser"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertActionStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertController"]
+- !private ["PSo30UIResponderStandardEditActions", "UIAlertControllerStyle"]
+- !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
+- !private ["PSo30UIResponderStandardEditActions", "addAction"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "email"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "password"]
+- !private ["PSo30UIResponderStandardEditActions", "present"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", "unwindToLogin"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["PSo16UIStateRestoring", "LoginTapped"]
+- !private ["PSo16UIStateRestoring", "PFUser"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertActionStyle"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UIAlertControllerStyle"]
+- !private ["PSo16UIStateRestoring", "UIStoryboard"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "email"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "password"]
+- !private ["PSo16UIStateRestoring", "present"]
+- ["PSo16UIStateRestoring", "unwindToLogin"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo12UIStoryboard", "deinit"]
+- !private ["CSo12UIStoryboard", "init"]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- ["PSo18UITraitEnvironment", "LoginTapped"]
+- !private ["PSo18UITraitEnvironment", "PFUser"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UIAlertControllerStyle"]
+- !private ["PSo18UITraitEnvironment", "UIStoryboard"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "email"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "password"]
+- !private ["PSo18UITraitEnvironment", "present"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "unwindToLogin"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "Error"]
+- !private ["CSo16UIViewController", "HomeViewController"]
+- ["CSo16UIViewController", "LoginTapped"]
+- !private ["CSo16UIViewController", "PFUser"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- !private ["CSo16UIViewController", "UIAlertActionStyle"]
+- !private ["CSo16UIViewController", "UIAlertController"]
+- !private ["CSo16UIViewController", "UIAlertControllerStyle"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIStoryboard"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
+- ["CSo16UIViewController", "UITextField"]
+- !private ["CSo16UIViewController", "Void"]
+- !private ["CSo16UIViewController", "addAction"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "email"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "password"]
+- !private ["CSo16UIViewController", "present"]
+- ["CSo16UIViewController", "unwindToLogin"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "LoginTapped"]
+- !private ["Ps9_Hashable", "PFUser"]
+- !private ["Ps9_Hashable", "UIAlertAction"]
+- !private ["Ps9_Hashable", "UIAlertActionStyle"]
+- !private ["Ps9_Hashable", "UIAlertController"]
+- !private ["Ps9_Hashable", "UIAlertControllerStyle"]
+- !private ["Ps9_Hashable", "UIStoryboard"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addAction"]
+- !private ["Ps9_Hashable", "alert"]
+- !private ["Ps9_Hashable", "default"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["Ps9_Hashable", "email"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
+- !private ["Ps9_Hashable", "logInWithUsername"]
+- ["Ps9_Hashable", "password"]
+- !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "text"]
+- ["Ps9_Hashable", "unwindToLogin"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "C7Project18HomeViewController"
+- "SQ"
+- "C7Project7LoginVC"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- !private "CSo8PFObject"
+- !private "PSo13PFSubclassing"
+- !private "CSo6PFUser"
+- !private "Ps16RawRepresentable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- !private "CSo12UIStoryboard"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFTask.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFDefines.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/Bolts.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPurchase.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFProduct.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFInstallation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFSession.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFRole.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFRelation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConfig+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConfig.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFACL.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConstants.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/ParseClientConfiguration.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "daaf5fe9c945568f6af00663aacb062d"
