@@ -33,7 +33,7 @@ class LoginVC: UIViewController {
             if user != nil {
                 // Do stuff after successful login.
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "homevc") as! HomeViewController
+                let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar") as! UITabBarController
                 self.present(vc, animated: true, completion: nil)
             } else {
                 // The login failed. Check error to see why.

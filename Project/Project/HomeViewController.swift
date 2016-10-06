@@ -32,8 +32,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else{
             
+            print("--USERNAME--")
+            print(PFUser.current()?.username!)
+            
             let query = PFQuery(className:"Projects")
-            query.whereKey("username", equalTo:PFUser.current()?.username)
+            query.whereKey("username", equalTo:"vdthatte@nyu.edu")
             query.findObjectsInBackground {
                 (objects: [PFObject]?, error: Error?) -> Void in
                 
@@ -54,7 +57,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     self.projectTableView.reloadData()
                 } else {
                     // Log details of the failure
-                    print("Error: \(error!) \(error! as! NSError)")
+                    print("Error: \(error!) \(error! as NSError)")
                 }
             }
         

@@ -277,4 +277,17 @@ SWIFT_CLASS("_TtC7Project14ProjectsListVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC7Project8SignupVC")
+@interface SignupVC : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified email;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified password;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified confirmpassword;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)SignupTappd:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #pragma clang diagnostic pop

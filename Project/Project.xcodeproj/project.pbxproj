@@ -11,6 +11,7 @@
 		C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */; };
 		C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */; };
 		C23BBF331DA6AE7800202169 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF321DA6AE7800202169 /* LoginVC.swift */; };
+		C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF341DA6B21100202169 /* SignupVC.swift */; };
 		C26DDF431D93499300429DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF421D93499300429DE4 /* AppDelegate.swift */; };
 		C26DDF481D93499300429DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26DDF461D93499300429DE4 /* Main.storyboard */; };
 		C26DDF4A1D93499300429DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26DDF491D93499300429DE4 /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListVC.swift; sourceTree = SOURCE_ROOT; };
 		C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectVC.swift; sourceTree = "<group>"; };
 		C23BBF321DA6AE7800202169 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C23BBF341DA6B21100202169 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		C26DDF3F1D93499300429DE4 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26DDF421D93499300429DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C26DDF471D93499300429DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C23BBF341DA6B21100202169 /* SignupVC.swift */,
 				C23BBF321DA6AE7800202169 /* LoginVC.swift */,
 				C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */,
 				C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */,
@@ -408,6 +411,7 @@
 				C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */,
 				C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */,
 				C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */,
+				C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */,
 				C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */,
 				C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */,
 				C26DDF9E1D935F4400429DE4 /* FeedVCTableViewCell.swift in Sources */,
