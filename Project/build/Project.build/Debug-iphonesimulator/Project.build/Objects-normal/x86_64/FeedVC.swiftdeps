@@ -11,44 +11,41 @@ provides-dynamic-lookup:
 - "tableView"
 - "viewDidLoad"
 depends-top-level:
-- !private "FeedVCTableViewCell"
-- !private "UIImage"
-- !private "StringLiteralType"
 - "FeedVC"
-- !private "NSError"
-- !private "Void"
-- !private "Data"
-- "UITableViewDelegate"
-- !private "String"
-- "UITableViewDataSource"
-- !private "Error"
-- "UnicodeScalarType"
-- !private "PFObject"
-- "Int"
-- "Feed"
+- !private "!="
 - "UITableViewCell"
-- !private "print"
 - "UIViewController"
-- "UITableView"
-- "CastingPrecedence"
-- !private "PFFile"
-- "AssignmentPrecedence"
-- "IndexPath"
-- !private "=="
 - !private "PFQuery"
+- "UnicodeScalarType"
+- "UITableView"
+- !private "StringLiteralType"
+- !private "NSError"
+- "UITableViewDataSource"
+- "UITableViewDelegate"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "Error"
+- "IndexPath"
+- !private "FeedVCTableViewCell"
+- !private "String"
+- !private "PFFile"
+- "Feed"
+- "Int"
+- !private "Data"
+- !private "print"
+- !private "Void"
+- !private "PFObject"
 depends-member:
 - ["Ps9AnyObject", "Feed"]
 - !private ["Ps9AnyObject", "PFQuery"]
-- !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "daTableView"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "feedDescriptionLabel"]
-- !private ["Ps9AnyObject", "feedImage"]
 - ["Ps9AnyObject", "feedList"]
 - !private ["Ps9AnyObject", "feedTitleLabel"]
 - !private ["Ps9AnyObject", "findObjectsInBackground"]
 - !private ["Ps9AnyObject", "getDataInBackground"]
-- !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedView"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9AnyObject", "init"]
@@ -123,9 +120,7 @@ depends-member:
 - !private ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
 - !private ["PSo15CALayerDelegate", "feedDescriptionLabel"]
-- !private ["PSo15CALayerDelegate", "feedImage"]
 - !private ["PSo15CALayerDelegate", "feedTitleLabel"]
-- !private ["PSo15CALayerDelegate", "image"]
 - !private ["PSo15CALayerDelegate", "projectNameLabel"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
 - !private ["PSo15CALayerDelegate", "text"]
@@ -137,7 +132,6 @@ depends-member:
 - !private ["Ps7CVarArg", "PFQuery"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
-- !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "append"]
@@ -145,12 +139,10 @@ depends-member:
 - ["Ps7CVarArg", "daTableView"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "feedDescriptionLabel"]
-- !private ["Ps7CVarArg", "feedImage"]
 - ["Ps7CVarArg", "feedList"]
 - !private ["Ps7CVarArg", "feedTitleLabel"]
 - !private ["Ps7CVarArg", "findObjectsInBackground"]
 - !private ["Ps7CVarArg", "getDataInBackground"]
-- !private ["Ps7CVarArg", "image"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedView"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps7CVarArg", "init"]
@@ -203,19 +195,16 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "PFQuery"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
-- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - ["Ps28CustomDebugStringConvertible", "daTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "feedDescriptionLabel"]
-- !private ["Ps28CustomDebugStringConvertible", "feedImage"]
 - ["Ps28CustomDebugStringConvertible", "feedList"]
 - !private ["Ps28CustomDebugStringConvertible", "feedTitleLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "getDataInBackground"]
-- !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -275,7 +264,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "PFQuery"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
-- !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -284,12 +272,10 @@ depends-member:
 - ["Ps23CustomStringConvertible", "daTableView"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "feedDescriptionLabel"]
-- !private ["Ps23CustomStringConvertible", "feedImage"]
 - ["Ps23CustomStringConvertible", "feedList"]
 - !private ["Ps23CustomStringConvertible", "feedTitleLabel"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackground"]
 - !private ["Ps23CustomStringConvertible", "getDataInBackground"]
-- !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -320,7 +306,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["V10Foundation4Data", "deinit"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
 - !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
@@ -336,18 +321,15 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "PFQuery"]
 - !private ["Ps9Equatable", "Stride"]
-- !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "daTableView"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "feedDescriptionLabel"]
-- !private ["Ps9Equatable", "feedImage"]
 - ["Ps9Equatable", "feedList"]
 - !private ["Ps9Equatable", "feedTitleLabel"]
 - !private ["Ps9Equatable", "findObjectsInBackground"]
 - !private ["Ps9Equatable", "getDataInBackground"]
-- !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9Equatable", "init"]
@@ -415,7 +397,6 @@ depends-member:
 - !private ["C7Project6FeedVC", "PFObject"]
 - !private ["C7Project6FeedVC", "PFQuery"]
 - !private ["C7Project6FeedVC", "String"]
-- !private ["C7Project6FeedVC", "UIImage"]
 - ["C7Project6FeedVC", "UITableView"]
 - ["C7Project6FeedVC", "UITableViewCell"]
 - !private ["C7Project6FeedVC", "Void"]
@@ -448,7 +429,6 @@ depends-member:
 - ["C7Project6FeedVC", "viewForZoomingInScrollView"]
 - ["C7Project19FeedVCTableViewCell", "deinit"]
 - !private ["C7Project19FeedVCTableViewCell", "feedDescriptionLabel"]
-- !private ["C7Project19FeedVCTableViewCell", "feedImage"]
 - !private ["C7Project19FeedVCTableViewCell", "feedTitleLabel"]
 - !private ["C7Project19FeedVCTableViewCell", "projectNameLabel"]
 - !private ["Sf", "deinit"]
@@ -456,18 +436,15 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "PFQuery"]
 - !private ["Ps8Hashable", "Stride"]
-- !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "daTableView"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "feedDescriptionLabel"]
-- !private ["Ps8Hashable", "feedImage"]
 - ["Ps8Hashable", "feedList"]
 - !private ["Ps8Hashable", "feedTitleLabel"]
 - !private ["Ps8Hashable", "findObjectsInBackground"]
 - !private ["Ps8Hashable", "getDataInBackground"]
-- !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps8Hashable", "init"]
@@ -568,14 +545,11 @@ depends-member:
 - ["CSo7NSCoder", "deinit"]
 - ["PSo8NSCoding", "Feed"]
 - !private ["PSo8NSCoding", "PFQuery"]
-- !private ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "daTableView"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - !private ["PSo8NSCoding", "feedDescriptionLabel"]
-- !private ["PSo8NSCoding", "feedImage"]
 - ["PSo8NSCoding", "feedList"]
 - !private ["PSo8NSCoding", "feedTitleLabel"]
-- !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedView"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo8NSCoding", "init"]
@@ -609,7 +583,6 @@ depends-member:
 - !private ["CSo7NSError", "deinit"]
 - ["PSo26NSExtensionRequestHandling", "Feed"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
-- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - ["PSo26NSExtensionRequestHandling", "daTableView"]
 - ["PSo26NSExtensionRequestHandling", "feedList"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
@@ -649,19 +622,16 @@ depends-member:
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "String"]
-- !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "daTableView"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "feedDescriptionLabel"]
-- !private ["CSo8NSObject", "feedImage"]
 - ["CSo8NSObject", "feedList"]
 - !private ["CSo8NSObject", "feedTitleLabel"]
 - !private ["CSo8NSObject", "findObjectsInBackground"]
 - !private ["CSo8NSObject", "getDataInBackground"]
-- !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
@@ -692,16 +662,13 @@ depends-member:
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "Feed"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
-- !private ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "daTableView"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "feedDescriptionLabel"]
-- !private ["PSo16NSObjectProtocol", "feedImage"]
 - ["PSo16NSObjectProtocol", "feedList"]
 - !private ["PSo16NSObjectProtocol", "feedTitleLabel"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackground"]
 - !private ["PSo16NSObjectProtocol", "getDataInBackground"]
-- !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedView"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16NSObjectProtocol", "init"]
@@ -820,31 +787,23 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
 - !private ["PSo29UIAccessibilityIdentification", "feedDescriptionLabel"]
-- !private ["PSo29UIAccessibilityIdentification", "feedImage"]
 - !private ["PSo29UIAccessibilityIdentification", "feedTitleLabel"]
-- !private ["PSo29UIAccessibilityIdentification", "image"]
-- !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "projectNameLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
 - !private ["PSo12UIAppearance", "feedDescriptionLabel"]
-- !private ["PSo12UIAppearance", "feedImage"]
 - !private ["PSo12UIAppearance", "feedTitleLabel"]
-- !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "projectNameLabel"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "text"]
 - ["PSo21UIAppearanceContainer", "Feed"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
-- !private ["PSo21UIAppearanceContainer", "UIImage"]
 - ["PSo21UIAppearanceContainer", "daTableView"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
 - !private ["PSo21UIAppearanceContainer", "feedDescriptionLabel"]
-- !private ["PSo21UIAppearanceContainer", "feedImage"]
 - ["PSo21UIAppearanceContainer", "feedList"]
 - !private ["PSo21UIAppearanceContainer", "feedTitleLabel"]
-- !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedView"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UIAppearanceContainer", "init"]
@@ -875,7 +834,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "Feed"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
-- !private ["PSo18UIContentContainer", "UIImage"]
 - ["PSo18UIContentContainer", "daTableView"]
 - ["PSo18UIContentContainer", "feedList"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
@@ -906,30 +864,23 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
 - !private ["PSo17UICoordinateSpace", "feedDescriptionLabel"]
-- !private ["PSo17UICoordinateSpace", "feedImage"]
 - !private ["PSo17UICoordinateSpace", "feedTitleLabel"]
-- !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "projectNameLabel"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
 - !private ["PSo13UIDynamicItem", "feedDescriptionLabel"]
-- !private ["PSo13UIDynamicItem", "feedImage"]
 - !private ["PSo13UIDynamicItem", "feedTitleLabel"]
-- !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "projectNameLabel"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "text"]
 - ["PSo18UIFocusEnvironment", "Feed"]
 - !private ["PSo18UIFocusEnvironment", "PFQuery"]
-- !private ["PSo18UIFocusEnvironment", "UIImage"]
 - ["PSo18UIFocusEnvironment", "daTableView"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
 - !private ["PSo18UIFocusEnvironment", "feedDescriptionLabel"]
-- !private ["PSo18UIFocusEnvironment", "feedImage"]
 - ["PSo18UIFocusEnvironment", "feedList"]
 - !private ["PSo18UIFocusEnvironment", "feedTitleLabel"]
-- !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIFocusEnvironment", "init"]
@@ -960,19 +911,13 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
 - !private ["PSo11UIFocusItem", "feedDescriptionLabel"]
-- !private ["PSo11UIFocusItem", "feedImage"]
 - !private ["PSo11UIFocusItem", "feedTitleLabel"]
-- !private ["PSo11UIFocusItem", "image"]
 - !private ["PSo11UIFocusItem", "projectNameLabel"]
 - !private ["PSo11UIFocusItem", "reloadData"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo27UIGestureRecognizerDelegate", "feedDescriptionLabel"]
-- !private ["PSo27UIGestureRecognizerDelegate", "feedImage"]
 - !private ["PSo27UIGestureRecognizerDelegate", "feedTitleLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "projectNameLabel"]
-- !private ["CSo7UIImage", "deinit"]
-- !private ["CSo7UIImage", "init"]
-- !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "Data"]
 - !private ["CSo11UIResponder", "Error"]
@@ -985,17 +930,14 @@ depends-member:
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "String"]
-- !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "daTableView"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - !private ["CSo11UIResponder", "feedDescriptionLabel"]
-- !private ["CSo11UIResponder", "feedImage"]
 - ["CSo11UIResponder", "feedList"]
 - !private ["CSo11UIResponder", "feedTitleLabel"]
-- !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
@@ -1025,14 +967,11 @@ depends-member:
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["PSo30UIResponderStandardEditActions", "Feed"]
 - !private ["PSo30UIResponderStandardEditActions", "PFQuery"]
-- !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - ["PSo30UIResponderStandardEditActions", "daTableView"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
 - !private ["PSo30UIResponderStandardEditActions", "feedDescriptionLabel"]
-- !private ["PSo30UIResponderStandardEditActions", "feedImage"]
 - ["PSo30UIResponderStandardEditActions", "feedList"]
 - !private ["PSo30UIResponderStandardEditActions", "feedTitleLabel"]
-- !private ["PSo30UIResponderStandardEditActions", "image"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedView"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
@@ -1065,7 +1004,6 @@ depends-member:
 - !private ["CSo12UIScrollView", "reloadData"]
 - ["PSo20UIScrollViewDelegate", "Feed"]
 - !private ["PSo20UIScrollViewDelegate", "PFQuery"]
-- !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "daTableView"]
 - !private ["PSo20UIScrollViewDelegate", "feedList"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
@@ -1093,7 +1031,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "Feed"]
 - !private ["PSo16UIStateRestoring", "PFQuery"]
-- !private ["PSo16UIStateRestoring", "UIImage"]
 - ["PSo16UIStateRestoring", "daTableView"]
 - ["PSo16UIStateRestoring", "feedList"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
@@ -1126,12 +1063,10 @@ depends-member:
 - !private ["CSo11UITableView", "reloadData"]
 - ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "feedDescriptionLabel"]
-- !private ["CSo15UITableViewCell", "feedImage"]
 - !private ["CSo15UITableViewCell", "feedTitleLabel"]
 - !private ["CSo15UITableViewCell", "projectNameLabel"]
 - ["PSo21UITableViewDataSource", "Feed"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
-- !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "daTableView"]
 - !private ["PSo21UITableViewDataSource", "feedList"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
@@ -1159,7 +1094,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "Feed"]
 - !private ["PSo19UITableViewDelegate", "PFQuery"]
-- !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "daTableView"]
 - !private ["PSo19UITableViewDelegate", "feedList"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
@@ -1187,14 +1121,11 @@ depends-member:
 - ["PSo19UITableViewDelegate", ""]
 - ["PSo18UITraitEnvironment", "Feed"]
 - !private ["PSo18UITraitEnvironment", "PFQuery"]
-- !private ["PSo18UITraitEnvironment", "UIImage"]
 - ["PSo18UITraitEnvironment", "daTableView"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
 - !private ["PSo18UITraitEnvironment", "feedDescriptionLabel"]
-- !private ["PSo18UITraitEnvironment", "feedImage"]
 - ["PSo18UITraitEnvironment", "feedList"]
 - !private ["PSo18UITraitEnvironment", "feedTitleLabel"]
-- !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UITraitEnvironment", "init"]
@@ -1225,9 +1156,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dequeueReusableCell"]
 - !private ["CSo6UIView", "feedDescriptionLabel"]
-- !private ["CSo6UIView", "feedImage"]
 - !private ["CSo6UIView", "feedTitleLabel"]
-- !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "projectNameLabel"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "text"]
@@ -1242,7 +1171,6 @@ depends-member:
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "String"]
-- !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "Void"]
@@ -1291,9 +1219,7 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "feedDescriptionLabel"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "feedImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "feedTitleLabel"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "projectNameLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
@@ -1314,24 +1240,20 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "Feed"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "PFQuery"]
 - !private ["Ps9_Hashable", "Stride"]
-- !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "daTableView"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "feedDescriptionLabel"]
-- !private ["Ps9_Hashable", "feedImage"]
 - ["Ps9_Hashable", "feedList"]
 - !private ["Ps9_Hashable", "feedTitleLabel"]
 - !private ["Ps9_Hashable", "findObjectsInBackground"]
 - !private ["Ps9_Hashable", "getDataInBackground"]
-- !private ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9_Hashable", "init"]
@@ -1409,7 +1331,6 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- !private "V10Foundation4Data"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
 - !private "Sd"
@@ -1483,8 +1404,6 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
 - !private "PSo27UIGestureRecognizerDelegate"
-- !private "CSo7UIImage"
-- !private "CSo11UIImageView"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -1513,7 +1432,6 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps26_ExpressibleByImageLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"

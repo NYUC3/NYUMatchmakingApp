@@ -28,8 +28,23 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 if let objects = objects {
                     for object in objects {
                         
-                        let feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: object["image"] as! PFFile)
-                        self.feedList.append(feed)
+                        var name = ""
+                        var title = ""
+                        var description = ""
+                        
+                        if(object["projectName"] != nil){
+                            name = object["projectName"] as! String
+                        }
+                        if(object["activityName"] != nil){
+                            title = object["activityName"] as! String
+                        }
+                        if(object["activityDescription"] != nil){
+                            description = object["activityDescription"] as! String
+                        }
+                        if(object["image"] != nil){
+                            let feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile)
+                            self.feedList.append(feed)
+                        }
                         
                     }
                 }
@@ -56,8 +71,8 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         let imageFromParse = feedList[indexPath.row].image
         imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
-            let image: UIImage! = UIImage(data: imageData!)!
-            cell.feedImage.image = image
+            //let image: UIImage! = UIImage(data: imageData!)!
+            //cell.feedImage.image = image
         })
         
         return cell

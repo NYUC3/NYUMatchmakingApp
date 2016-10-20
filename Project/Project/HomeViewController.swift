@@ -11,7 +11,7 @@ import Parse
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var projectsList = [Project]()
+    var projectsList = [Feed]()
     
     @IBOutlet weak var projectTableView: UITableView!
     
@@ -32,34 +32,40 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else{
             
-            print("--USERNAME--")
-            print(PFUser.current()?.username!)
-            
-            let query = PFQuery(className:"Projects")
-            query.whereKey("username", equalTo:"vdthatte@nyu.edu")
-            query.findObjectsInBackground {
-                (objects: [PFObject]?, error: Error?) -> Void in
-                
-                if error == nil {
-                    // The find succeeded.
-                    print("Successfully retrieved \(objects!.count) scores.")
-                    // Do something with the found objects
-                    if let objects = objects {
-                        for object in objects {
-                            
-                            
-                            let project = Project(name: object["Name"] as! String, desc: object["Description"] as! String, image: object["image"] as! PFFile)
-                            
+             let query = PFQuery(className:"Projects")
+             // query.whereKey("username", equalTo:"vdthatte@nyu.edu")
+             query.findObjectsInBackground {
+             (objects: [PFObject]?, error: Error?) -> Void in
+             
+             if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+             if let objects = objects {
+                for object in objects {
+             
+                    if(object["image"] != nil){
+                        let theImg = object["image"] as! PFFile
+                        if(theImg != nil){
+                            let project = Feed(name: "one", title: "one", desc: "one", image: theImg)
                             self.projectsList.append(project)
                         }
-                    }
                     
-                    self.projectTableView.reloadData()
-                } else {
-                    // Log details of the failure
-                    print("Error: \(error!) \(error! as NSError)")
+                    }
                 }
-            }
+                
+                self.projectTableView.reloadData()
+             }
+             
+             self.projectTableView.reloadData()
+             
+             }
+             else {
+                // Log details of the failure
+                print("Error: \(error!) \(error! as NSError)")
+                }
+             }
+            
         
         }
     
@@ -70,19 +76,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "home-cell", for: indexPath) as! HomeVCTableViewCell
         cell.projectName.text = projectsList[indexPath.row].name
         cell.descriptionLabel.text = projectsList[indexPath.row].description
         
-        //var imageFromParse = projectsList[indexPath.row].image
-        //cell.projectImage.image = imageFromParse
+        let imageFromParse = projectsList[indexPath.row].image
+        imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
+            
+            if(imageData != nil){
+                let image: UIImage! = UIImage(data: imageData!)!
+                cell.projectImage.image = image
+            }
+        })
         
 
-        
         return cell
     }
 
