@@ -67,7 +67,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         activity["projectName"] = selectedProjectName
         activity["activityName"] = activityLabel.text
         activity["activityDescription"] = actvityDescription.text
-        activity["username"] = "vdthatte@nyu.edu"
+        activity["username"] = (PFUser.current()?.username)!
         
         activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.feedUploadImage.image!, 0.1)!)
         activity.saveInBackground()

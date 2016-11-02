@@ -30,7 +30,7 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
         let activity = PFObject(className:"Projects")
         activity["Name"] = projectNameTextField.text
         activity["Description"] = projectDescriptionTextfield.text
-        activity["username"] = "vdthatte@nyu.edu"
+        activity["username"] = (PFUser.current()?.username)!
         
         activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.projectImageView.image!, 0.1)!)
         activity.saveInBackground()
