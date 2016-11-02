@@ -27,6 +27,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 // Do something with the found objects
                 if let objects = objects {
                     for object in objects {
+                        print(object["image"])
                         
                         var name = ""
                         var title = ""
@@ -43,6 +44,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                         }
                         if(object["image"] != nil){
                             let feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile)
+                            
                             self.feedList.append(feed)
                         }
                         
@@ -71,8 +73,8 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         let imageFromParse = feedList[indexPath.row].image
         imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
-            //let image: UIImage! = UIImage(data: imageData!)!
-            //cell.feedImage.image = image
+            let image: UIImage! = UIImage(data: imageData!)!
+            cell.feedImage.image = image
         })
         
         return cell
