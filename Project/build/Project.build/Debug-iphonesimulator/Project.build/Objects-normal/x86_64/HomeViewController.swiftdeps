@@ -6,44 +6,48 @@ provides-nominal:
 provides-member:
 - ["C7Project18HomeViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "prepare"
 - "projectTableView"
+- "prepare"
+- "viewDidAppear"
+- "viewDidLoad"
 - "tableView"
 - "tableView"
+- "unwindToProjectsList"
 depends-top-level:
-- !private "PFQuery"
-- !private "!="
-- !private "=="
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "Int"
-- !private "PFFile"
-- !private "UIImage"
-- !private "Void"
+- "Feed"
+- !private "String"
 - !private "UIStoryboard"
 - "UnicodeScalarType"
-- !private "HomeVCTableViewCell"
-- "IndexPath"
 - !private "Error"
-- !private "ProjectViewController"
-- "HomeViewController"
-- "UITableView"
-- !private "BooleanLiteralType"
-- !private "LoginVC"
-- !private "PFUser"
-- !private "UINavigationController"
-- "UIStoryboardSegue"
-- "Feed"
-- !private "PFObject"
-- !private "Data"
-- "UITableViewDelegate"
+- !private "!="
+- "Int"
 - "UIViewController"
-- "UITableViewDataSource"
-- !private "print"
+- !private "BooleanLiteralType"
+- !private "PFFile"
+- "Bool"
 - !private "StringLiteralType"
+- !private "PFQuery"
+- !private "HomeVCTableViewCell"
+- "UITableViewDataSource"
+- !private "UIImage"
+- !private "PFUser"
+- "UITableViewDelegate"
+- !private "UINavigationController"
+- !private "Void"
+- "CastingPrecedence"
 - !private "NSError"
+- "AssignmentPrecedence"
+- !private "=="
 - "UITableViewCell"
+- "HomeViewController"
+- !private "Data"
+- !private "PFObject"
+- "IndexPath"
+- !private "ProjectViewController"
+- !private "print"
+- "UITableView"
+- "UIStoryboardSegue"
+- !private "LoginVC"
 depends-member:
 - ["Ps9AnyObject", "Feed"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -92,6 +96,8 @@ depends-member:
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "topViewController"]
+- ["Ps9AnyObject", "unwindToProjectsList"]
+- ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
@@ -204,6 +210,8 @@ depends-member:
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "topViewController"]
+- ["Ps7CVarArg", "unwindToProjectsList"]
+- ["Ps7CVarArg", "viewDidAppear"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
@@ -281,6 +289,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "topViewController"]
+- ["Ps28CustomDebugStringConvertible", "unwindToProjectsList"]
+- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
@@ -364,6 +374,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "topViewController"]
+- ["Ps23CustomStringConvertible", "unwindToProjectsList"]
+- ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -432,6 +444,8 @@ depends-member:
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "topViewController"]
+- ["Ps9Equatable", "unwindToProjectsList"]
+- ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
@@ -514,6 +528,8 @@ depends-member:
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "topViewController"]
+- ["Ps8Hashable", "unwindToProjectsList"]
+- ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
@@ -522,6 +538,7 @@ depends-member:
 - !private ["C7Project19HomeVCTableViewCell", "descriptionLabel"]
 - !private ["C7Project19HomeVCTableViewCell", "projectImage"]
 - !private ["C7Project19HomeVCTableViewCell", "projectName"]
+- ["C7Project18HomeViewController", "Bool"]
 - !private ["C7Project18HomeViewController", "Data"]
 - !private ["C7Project18HomeViewController", "Error"]
 - ["C7Project18HomeViewController", "Feed"]
@@ -535,6 +552,7 @@ depends-member:
 - !private ["C7Project18HomeViewController", "PFQuery"]
 - !private ["C7Project18HomeViewController", "PFUser"]
 - !private ["C7Project18HomeViewController", "ProjectViewController"]
+- !private ["C7Project18HomeViewController", "String"]
 - !private ["C7Project18HomeViewController", "UIImage"]
 - !private ["C7Project18HomeViewController", "UINavigationController"]
 - !private ["C7Project18HomeViewController", "UIStoryboard"]
@@ -568,6 +586,8 @@ depends-member:
 - ["C7Project18HomeViewController", "sectionIndexTitles"]
 - ["C7Project18HomeViewController", "sectionIndexTitlesForTableView"]
 - ["C7Project18HomeViewController", "tableView"]
+- ["C7Project18HomeViewController", "unwindToProjectsList"]
+- ["C7Project18HomeViewController", "viewDidAppear"]
 - ["C7Project18HomeViewController", "viewDidLoad"]
 - ["C7Project18HomeViewController", "viewForZooming"]
 - ["C7Project18HomeViewController", "viewForZoomingInScrollView"]
@@ -680,6 +700,8 @@ depends-member:
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "topViewController"]
+- ["PSo8NSCoding", "unwindToProjectsList"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
@@ -719,11 +741,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - !private ["PSo26NSExtensionRequestHandling", "topViewController"]
+- ["PSo26NSExtensionRequestHandling", "unwindToProjectsList"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "Data"]
 - !private ["CSo8NSObject", "Error"]
 - ["CSo8NSObject", "Feed"]
@@ -737,6 +762,7 @@ depends-member:
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
 - !private ["CSo8NSObject", "ProjectViewController"]
+- !private ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UINavigationController"]
 - !private ["CSo8NSObject", "UIStoryboard"]
@@ -787,6 +813,8 @@ depends-member:
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "topViewController"]
+- ["CSo8NSObject", "unwindToProjectsList"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
@@ -837,6 +865,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "topViewController"]
+- ["PSo16NSObjectProtocol", "unwindToProjectsList"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -990,6 +1020,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "topViewController"]
+- ["PSo21UIAppearanceContainer", "unwindToProjectsList"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
@@ -1026,6 +1058,8 @@ depends-member:
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "tableView"]
 - !private ["PSo18UIContentContainer", "topViewController"]
+- ["PSo18UIContentContainer", "unwindToProjectsList"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
@@ -1087,6 +1121,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "topViewController"]
+- ["PSo18UIFocusEnvironment", "unwindToProjectsList"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
@@ -1108,6 +1144,7 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "topViewController"]
+- ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "Data"]
 - !private ["CSo11UIResponder", "Error"]
 - ["CSo11UIResponder", "Feed"]
@@ -1121,6 +1158,7 @@ depends-member:
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
 - !private ["CSo11UIResponder", "ProjectViewController"]
+- !private ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UINavigationController"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
@@ -1163,6 +1201,8 @@ depends-member:
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "topViewController"]
+- ["CSo11UIResponder", "unwindToProjectsList"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
@@ -1206,6 +1246,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "topViewController"]
+- ["PSo30UIResponderStandardEditActions", "unwindToProjectsList"]
+- ["PSo30UIResponderStandardEditActions", "viewDidAppear"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
@@ -1276,6 +1318,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "tableView"]
 - !private ["PSo16UIStateRestoring", "topViewController"]
+- ["PSo16UIStateRestoring", "unwindToProjectsList"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
@@ -1396,6 +1440,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "topViewController"]
+- ["PSo18UITraitEnvironment", "unwindToProjectsList"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
@@ -1408,6 +1454,7 @@ depends-member:
 - !private ["CSo6UIView", "projectName"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "Data"]
 - !private ["CSo16UIViewController", "Error"]
 - ["CSo16UIViewController", "Feed"]
@@ -1421,6 +1468,7 @@ depends-member:
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
 - !private ["CSo16UIViewController", "ProjectViewController"]
+- !private ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UINavigationController"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
@@ -1456,6 +1504,8 @@ depends-member:
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "tableView"]
 - !private ["CSo16UIViewController", "topViewController"]
+- ["CSo16UIViewController", "unwindToProjectsList"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
@@ -1554,6 +1604,8 @@ depends-member:
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "topViewController"]
+- ["Ps9_Hashable", "unwindToProjectsList"]
+- ["Ps9_Hashable", "viewDidAppear"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
@@ -1796,4 +1848,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "8344ce9a171ea87ec03cacb35dc52d5c"
+interface-hash: "c2d7c0a754d02c270217ed548a647711"

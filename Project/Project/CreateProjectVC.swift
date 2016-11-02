@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate {
+class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var projectImageView: UIImageView!
     @IBOutlet weak var projectNameTextField: UITextField!
@@ -19,6 +19,7 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -45,7 +46,7 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate {
         present(imagePicker, animated: true, completion: nil)
     }
 
-    private func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             projectImageView.contentMode = .scaleAspectFit
             projectImageView.image = pickedImage

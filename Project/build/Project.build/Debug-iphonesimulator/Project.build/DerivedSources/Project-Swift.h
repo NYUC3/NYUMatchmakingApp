@@ -170,15 +170,15 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
-- (NSString * _Null_unspecified)pickerViewWithPickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
-- (void)pickerViewWithPickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC7Project15CreateProjectVC")
-@interface CreateProjectVC : UIViewController <UIImagePickerControllerDelegate>
+@interface CreateProjectVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImageView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectNameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectDescriptionTextfield;
@@ -187,6 +187,7 @@ SWIFT_CLASS("_TtC7Project15CreateProjectVC")
 - (IBAction)saveButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)cancelButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)uploadButtonTapped:(UIButton * _Nonnull)sender;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -235,9 +236,11 @@ SWIFT_CLASS("_TtC7Project18HomeViewController")
 @interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified projectTableView;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)unwindToProjectsListWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -281,10 +284,10 @@ SWIFT_CLASS("_TtC7Project8MyFeedVC")
 SWIFT_CLASS("_TtC7Project21ProjectViewController")
 @interface ProjectViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescription;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)followButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

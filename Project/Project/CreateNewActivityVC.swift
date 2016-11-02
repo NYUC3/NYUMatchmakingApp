@@ -19,15 +19,41 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
     
     let imagePicker = UIImagePickerController()
     
-    var projectNames = [""]
+    var projectNames = [String]()
     
     var selectedProjectName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedProjectName = projectNames[0]
+        //selectedProjectName = projectNames[0]
         imagePicker.delegate = self
         
+        
+        print(PFUser.current()?.username)
+        
+        let query = PFQuery(className:"Projects")
+        query.whereKey("username", equalTo: (PFUser.current()?.username)!)
+        query.findObjectsInBackground {
+            (objects: [PFObject]?, error: Error?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+                if let objects = objects {
+                    for object in objects {
+                        self.projectNames.append(object["Name"] as! String)
+                    }
+                    print(self.projectNames)
+                    self.projectNamePickerView.reloadAllComponents()
+                }
+            } else {
+                // Log details of the failure
+                print("Error: \(error!)")
+            }
+        }
+        
+
     }
 
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
@@ -58,8 +84,6 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             feedUploadImage.contentMode = .scaleAspectFit
-            print("PICKED IMAGE")
-            print(pickedImage)
             feedUploadImage.image = pickedImage
         }
         
@@ -76,11 +100,11 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         return projectNames.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return projectNames[row]
     }
 
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
         selectedProjectName = projectNames[row]
     }
     

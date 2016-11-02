@@ -47,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     if(object["image"] != nil){
                         let theImg = object["image"] as! PFFile
                         if(theImg != nil){
-                            let project = Feed(name: "one", title: "one", desc: "one", image: theImg)
+                            let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg)
                             self.projectsList.append(project)
                         }
                     
@@ -69,6 +69,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         }
     
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        projectTableView.reloadData()
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -108,6 +113,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }
     }
+    
+    @IBAction func unwindToProjectsList(segue: UIStoryboardSegue) {
+        // some code to execute
+    } // unwindToPrevious
  
 
 }

@@ -13,7 +13,6 @@ class ProjectViewController: UIViewController {
     
     
     @IBOutlet weak var projectImage: UIImageView!
-    @IBOutlet weak var projectName: UILabel!
     @IBOutlet weak var projectDescription: UILabel!
 
     var projectOject : Feed?
@@ -26,6 +25,7 @@ class ProjectViewController: UIViewController {
             let image: UIImage! = UIImage(data: imageData!)!
             self.projectImage.image = image
             self.title = self.projectOject?.name
+            self.projectDescription.text = self.projectOject?.description
         })
         
         
@@ -37,5 +37,7 @@ class ProjectViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func followButtonTapped(_ sender: UIButton) {
+    }
 
 }
