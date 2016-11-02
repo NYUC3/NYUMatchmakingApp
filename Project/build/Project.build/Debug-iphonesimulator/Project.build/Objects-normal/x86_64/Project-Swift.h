@@ -154,7 +154,7 @@ SWIFT_CLASS("_TtC7Project11AppDelegate")
 @class UIImageView;
 
 SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
-@interface CreateNewActivityVC : UIViewController <UIImagePickerControllerDelegate>
+@interface CreateNewActivityVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectNameLabel;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified activityLabel;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified actvityDescription;
@@ -164,7 +164,7 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 - (IBAction)cancelButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)saveButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)uploadButton:(UIButton * _Nonnull)sender;
-- (void)imagePickerControllerWithPicker:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -221,6 +221,7 @@ SWIFT_CLASS("_TtC7Project19HomeVCTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Project18HomeViewController")
 @interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
@@ -228,11 +229,11 @@ SWIFT_CLASS("_TtC7Project18HomeViewController")
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Project7LoginVC")
 @interface LoginVC : UIViewController
@@ -262,6 +263,18 @@ SWIFT_CLASS("_TtC7Project10MyFeedCell")
 
 SWIFT_CLASS("_TtC7Project8MyFeedVC")
 @interface MyFeedVC : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project21ProjectViewController")
+@interface ProjectViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescription;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

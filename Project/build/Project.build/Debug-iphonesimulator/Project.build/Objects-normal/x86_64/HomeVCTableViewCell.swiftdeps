@@ -12,10 +12,10 @@ provides-dynamic-lookup:
 - "setSelected"
 - "awakeFromNib"
 depends-top-level:
-- "UILabel"
+- "UIImageView"
 - "HomeVCTableViewCell"
 - "UITableViewCell"
-- "UIImageView"
+- "UILabel"
 - "Bool"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]

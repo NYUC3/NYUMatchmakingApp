@@ -10,6 +10,9 @@
 		C20567A71D9463E30078B3BE /* place.png in Resources */ = {isa = PBXBuildFile; fileRef = C20567A61D9463E30078B3BE /* place.png */; };
 		C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */; };
 		C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */; };
+		C224B9521DB9302E007265E7 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = C224B9511DB9302E007265E7 /* grid.png */; };
+		C224B9541DB930AA007265E7 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = C224B9531DB930AA007265E7 /* feed.png */; };
+		C224B9561DB9328B007265E7 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224B9551DB9328B007265E7 /* ProjectViewController.swift */; };
 		C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A29AF1DB8403800275843 /* SettingsViewController.swift */; };
 		C23BBF331DA6AE7800202169 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF321DA6AE7800202169 /* LoginVC.swift */; };
 		C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF341DA6B21100202169 /* SignupVC.swift */; };
@@ -84,6 +87,9 @@
 		C20567A61D9463E30078B3BE /* place.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = place.png; sourceTree = "<group>"; };
 		C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListVC.swift; sourceTree = SOURCE_ROOT; };
 		C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectVC.swift; sourceTree = "<group>"; };
+		C224B9511DB9302E007265E7 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		C224B9531DB930AA007265E7 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
+		C224B9551DB9328B007265E7 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = SOURCE_ROOT; };
 		C23A29AF1DB8403800275843 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C23BBF321DA6AE7800202169 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C23BBF341DA6B21100202169 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
@@ -187,6 +193,8 @@
 		C26DDF411D93499300429DE4 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				C224B9531DB930AA007265E7 /* feed.png */,
+				C224B9511DB9302E007265E7 /* grid.png */,
 				C23BBF361DA6C46200202169 /* download.jpeg */,
 				C20567A61D9463E30078B3BE /* place.png */,
 				C26DDF9C1D935E0800429DE4 /* View */,
@@ -258,6 +266,7 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C224B9551DB9328B007265E7 /* ProjectViewController.swift */,
 				C23BBF341DA6B21100202169 /* SignupVC.swift */,
 				C23BBF321DA6AE7800202169 /* LoginVC.swift */,
 				C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */,
@@ -384,10 +393,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26DDF4D1D93499300429DE4 /* LaunchScreen.storyboard in Resources */,
+				C224B9541DB930AA007265E7 /* feed.png in Resources */,
 				C20567A71D9463E30078B3BE /* place.png in Resources */,
 				C23BBF371DA6C46200202169 /* download.jpeg in Resources */,
 				C26DDF4A1D93499300429DE4 /* Assets.xcassets in Resources */,
 				C26DDF481D93499300429DE4 /* Main.storyboard in Resources */,
+				C224B9521DB9302E007265E7 /* grid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +431,7 @@
 				C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */,
 				C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */,
 				C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */,
+				C224B9561DB9328B007265E7 /* ProjectViewController.swift in Sources */,
 				C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */,
 				C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */,
 				C26DDF9E1D935F4400429DE4 /* FeedVCTableViewCell.swift in Sources */,

@@ -1,0 +1,289 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ProjectViewController"
+provides-nominal:
+- "C7Project21ProjectViewController"
+provides-member:
+- ["C7Project21ProjectViewController", ""]
+provides-dynamic-lookup:
+- "projectName"
+- "projectDescription"
+- "projectImage"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+depends-top-level:
+- "UIViewController"
+- "ProjectViewController"
+- "UIImageView"
+- "UILabel"
+- "Feed"
+depends-member:
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "projectDescription"]
+- ["Ps9AnyObject", "projectImage"]
+- ["Ps9AnyObject", "projectName"]
+- ["Ps9AnyObject", "projectOject"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "projectDescription"]
+- ["Ps7CVarArg", "projectImage"]
+- ["Ps7CVarArg", "projectName"]
+- ["Ps7CVarArg", "projectOject"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "projectDescription"]
+- ["Ps28CustomDebugStringConvertible", "projectImage"]
+- ["Ps28CustomDebugStringConvertible", "projectName"]
+- ["Ps28CustomDebugStringConvertible", "projectOject"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "projectDescription"]
+- ["Ps23CustomStringConvertible", "projectImage"]
+- ["Ps23CustomStringConvertible", "projectName"]
+- ["Ps23CustomStringConvertible", "projectOject"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "projectDescription"]
+- ["Ps9Equatable", "projectImage"]
+- ["Ps9Equatable", "projectName"]
+- ["Ps9Equatable", "projectOject"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "projectDescription"]
+- ["Ps8Hashable", "projectImage"]
+- ["Ps8Hashable", "projectName"]
+- ["Ps8Hashable", "projectOject"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "projectDescription"]
+- ["PSo8NSCoding", "projectImage"]
+- ["PSo8NSCoding", "projectName"]
+- ["PSo8NSCoding", "projectOject"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "projectDescription"]
+- ["PSo26NSExtensionRequestHandling", "projectImage"]
+- ["PSo26NSExtensionRequestHandling", "projectName"]
+- ["PSo26NSExtensionRequestHandling", "projectOject"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Feed"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "projectDescription"]
+- ["CSo8NSObject", "projectImage"]
+- ["CSo8NSObject", "projectName"]
+- ["CSo8NSObject", "projectOject"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "projectDescription"]
+- ["PSo16NSObjectProtocol", "projectImage"]
+- ["PSo16NSObjectProtocol", "projectName"]
+- ["PSo16NSObjectProtocol", "projectOject"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["C7Project21ProjectViewController", "Feed"]
+- ["C7Project21ProjectViewController", "UIImageView"]
+- ["C7Project21ProjectViewController", "UILabel"]
+- ["C7Project21ProjectViewController", "deinit"]
+- ["C7Project21ProjectViewController", "didReceiveMemoryWarning"]
+- ["C7Project21ProjectViewController", "init"]
+- ["C7Project21ProjectViewController", "projectDescription"]
+- ["C7Project21ProjectViewController", "projectImage"]
+- ["C7Project21ProjectViewController", "projectName"]
+- ["C7Project21ProjectViewController", "projectOject"]
+- ["C7Project21ProjectViewController", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "projectDescription"]
+- ["PSo21UIAppearanceContainer", "projectImage"]
+- ["PSo21UIAppearanceContainer", "projectName"]
+- ["PSo21UIAppearanceContainer", "projectOject"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "projectDescription"]
+- ["PSo18UIContentContainer", "projectImage"]
+- ["PSo18UIContentContainer", "projectName"]
+- ["PSo18UIContentContainer", "projectOject"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "projectDescription"]
+- ["PSo18UIFocusEnvironment", "projectImage"]
+- ["PSo18UIFocusEnvironment", "projectName"]
+- ["PSo18UIFocusEnvironment", "projectOject"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "Feed"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "projectDescription"]
+- ["CSo11UIResponder", "projectImage"]
+- ["CSo11UIResponder", "projectName"]
+- ["CSo11UIResponder", "projectOject"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "projectDescription"]
+- ["PSo30UIResponderStandardEditActions", "projectImage"]
+- ["PSo30UIResponderStandardEditActions", "projectName"]
+- ["PSo30UIResponderStandardEditActions", "projectOject"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "projectDescription"]
+- ["PSo16UIStateRestoring", "projectImage"]
+- ["PSo16UIStateRestoring", "projectName"]
+- ["PSo16UIStateRestoring", "projectOject"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "projectDescription"]
+- ["PSo18UITraitEnvironment", "projectImage"]
+- ["PSo18UITraitEnvironment", "projectName"]
+- ["PSo18UITraitEnvironment", "projectOject"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "Feed"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "projectDescription"]
+- ["CSo16UIViewController", "projectImage"]
+- ["CSo16UIViewController", "projectName"]
+- ["CSo16UIViewController", "projectOject"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "projectDescription"]
+- ["Ps9_Hashable", "projectImage"]
+- ["Ps9_Hashable", "projectName"]
+- ["Ps9_Hashable", "projectOject"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "SQ"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "C7Project21ProjectViewController"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFTask.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFDefines.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/Bolts.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPurchase.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFProduct.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFInstallation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFSession.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFRole.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFRelation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConfig+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConfig.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFACL.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConstants.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/ParseClientConfiguration.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "56c215f055f3328d4f2f4f0143deb557"

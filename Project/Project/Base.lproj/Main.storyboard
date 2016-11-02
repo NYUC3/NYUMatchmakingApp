@@ -26,14 +26,14 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="259"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kDw-8m-eUX" id="HIl-qf-ux1">
-                                            <frame key="frameInset" width="375" height="258"/>
+                                            <frame key="frameInset" width="375" height="258.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tA-9z-FsQ">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="KM9-76-X6g"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -41,8 +41,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="ip6-yS-b3g"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="bCF-nC-Y6Z"/>
@@ -64,7 +64,7 @@
                                             <outlet property="descriptionLabel" destination="few-B0-K5o" id="bUZ-iT-XaT"/>
                                             <outlet property="projectImage" destination="bCF-nC-Y6Z" id="bWZ-jL-R3b"/>
                                             <outlet property="projectName" destination="7tA-9z-FsQ" id="r2a-J9-EXJ"/>
-                                            <segue destination="Czo-Qc-Xvo" kind="show" id="wYd-mn-RVR"/>
+                                            <segue destination="Czo-Qc-Xvo" kind="show" identifier="project-view" id="wYd-mn-RVR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -112,7 +112,7 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nGO-uu-bh2" id="WAU-ZD-EhE">
-                                            <frame key="frameInset" width="375" height="354"/>
+                                            <frame key="frameInset" width="375" height="354.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-hx-7j1"/>
@@ -137,7 +137,7 @@
                                                         <constraint firstAttribute="height" constant="73" id="YKT-pK-mLk"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -179,7 +179,13 @@
                             <constraint firstItem="7cg-4k-40P" firstAttribute="leading" secondItem="GU0-A7-rZB" secondAttribute="leading" id="pOh-jc-CtJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Activity" id="7M5-ct-Gz7"/>
+                    <navigationItem key="navigationItem" title="Activity" id="7M5-ct-Gz7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Seo-Gr-c1s">
+                            <connections>
+                                <segue destination="c6v-1t-JzG" kind="show" id="We1-VB-F3h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="daTableView" destination="7cg-4k-40P" id="NQv-b9-h9w"/>
                     </connections>
@@ -192,7 +198,7 @@
         <scene sceneID="yEb-Ec-WEH">
             <objects>
                 <navigationController title="Projcts" automaticallyAdjustsScrollViewInsets="NO" id="Cxb-m3-7Td" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Projects" id="U5g-Dj-Yjy"/>
+                    <tabBarItem key="tabBarItem" title="Projects" image="grid.png" id="U5g-Dj-Yjy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9xI-kt-Qv2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -226,7 +232,7 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1JR-nM-7Nu" id="Sr0-ur-8fC">
-                                            <frame key="frameInset" width="375" height="354"/>
+                                            <frame key="frameInset" width="375" height="354.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="OXy-4w-WxV"/>
@@ -234,7 +240,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="72" id="gvW-GN-Wno"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -242,7 +248,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="cBj-EA-anB"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -250,7 +256,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="hNh-KQ-ynS"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -288,10 +294,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="cHi-mx-uVQ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Add Activity"/>
-                                <connections>
-                                    <segue destination="c6v-1t-JzG" kind="show" id="Uq4-Sy-mZ5"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -327,6 +331,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abj-Cw-4ae">
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Upload Photo"/>
                                 <connections>
                                     <action selector="uploadButton:" destination="ILV-kd-8T8" eventType="touchUpInside" id="cGS-0T-fIT"/>
@@ -334,17 +339,17 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Activity Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTh-fI-DEx">
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Activity Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-5e-SJl">
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Project Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AHS-aD-d09">
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="H4x-Du-1mV">
@@ -389,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2h-jf-wMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5177" y="-558"/>
+            <point key="canvasLocation" x="4393" y="1600"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Eba-RE-65U">
@@ -404,7 +409,6 @@
                     <connections>
                         <segue destination="Cxb-m3-7Td" kind="relationship" relationship="viewControllers" id="qc3-1h-zEv"/>
                         <segue destination="i9I-8M-C6W" kind="relationship" relationship="viewControllers" id="4fa-pR-hYa"/>
-                        <segue destination="DZi-53-m6u" kind="relationship" relationship="viewControllers" id="3Iz-dU-5ue"/>
                         <segue destination="RiX-eR-E1C" kind="relationship" relationship="viewControllers" id="CX0-nu-WrI"/>
                     </connections>
                 </tabBarController>
@@ -560,6 +564,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="rgG-yK-Ece">
                         <barButtonItem key="leftBarButtonItem" title="settings" id="6if-JI-9Mc">
@@ -578,7 +583,7 @@
         <scene sceneID="Xe8-27-7O3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i9I-8M-C6W" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Activity" id="rjR-kP-WBq"/>
+                    <tabBarItem key="tabBarItem" title="Activity" image="feed.png" id="rjR-kP-WBq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uD9-No-LAF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -593,10 +598,10 @@
             </objects>
             <point key="canvasLocation" x="2556" y="859"/>
         </scene>
-        <!--View Controller-->
+        <!--Project View Controller-->
         <scene sceneID="34Y-ob-chu">
             <objects>
-                <viewController id="s2I-Pd-3pE" sceneMemberID="viewController">
+                <viewController id="s2I-Pd-3pE" customClass="ProjectViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mFM-Gy-xSd"/>
                         <viewControllerLayoutGuide type="bottom" id="YVG-ix-idE"/>
@@ -610,7 +615,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="nV6-zc-zxn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -618,7 +623,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="GkF-gC-gFU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -638,10 +643,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lGh-06-jJL"/>
+                    <connections>
+                        <outlet property="projectDescription" destination="ynn-bk-lyT" id="kdv-lk-g1D"/>
+                        <outlet property="projectImage" destination="xjV-il-0gf" id="Dkm-wH-hEE"/>
+                        <outlet property="projectName" destination="V2H-g7-540" id="hYU-cl-Fbq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6SV-yr-SzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="1600"/>
+            <point key="canvasLocation" x="860" y="1600"/>
         </scene>
         <!--SignupVC-->
         <scene sceneID="Y5C-OF-ZUv">
@@ -822,7 +832,7 @@
         <scene sceneID="fTW-Jw-qgI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DZi-53-m6u" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Feed" id="nXl-kB-2ub"/>
+                    <tabBarItem key="tabBarItem" title="My Feed" image="feed.png" id="nXl-kB-2ub"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M3b-6S-JJi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -841,7 +851,7 @@
         <scene sceneID="GeY-8P-3jx">
             <objects>
                 <navigationController title="My Projects" automaticallyAdjustsScrollViewInsets="NO" id="RiX-eR-E1C" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Projects" id="doA-aG-pMV"/>
+                    <tabBarItem key="tabBarItem" title="My Projects" image="grid.png" id="doA-aG-pMV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fIx-0D-aCr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -872,7 +882,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QS3-qA-9ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4392.8000000000002" y="-558.17091454272872"/>
+            <point key="canvasLocation" x="3495" y="1600"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jyq-CX-8PY">
@@ -926,10 +936,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y2M-8b-oxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="859"/>
+            <point key="canvasLocation" x="860" y="859"/>
         </scene>
     </scenes>
     <resources>
         <image name="download.jpeg" width="225" height="225"/>
+        <image name="feed.png" width="23" height="23"/>
+        <image name="grid.png" width="23" height="23"/>
     </resources>
 </document>

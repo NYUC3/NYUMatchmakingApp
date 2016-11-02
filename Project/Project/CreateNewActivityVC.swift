@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate {
+class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     @IBOutlet weak var projectNameLabel: UITextField!
@@ -21,6 +21,8 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker.delegate = self
+        
     }
 
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
@@ -47,9 +49,11 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate {
         
     }
 
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             feedUploadImage.contentMode = .scaleAspectFit
+            print("PICKED IMAGE")
+            print(pickedImage)
             feedUploadImage.image = pickedImage
         }
         

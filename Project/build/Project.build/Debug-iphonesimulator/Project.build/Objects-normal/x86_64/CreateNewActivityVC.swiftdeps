@@ -6,36 +6,37 @@ provides-nominal:
 provides-member:
 - ["C7Project19CreateNewActivityVC", ""]
 provides-dynamic-lookup:
-- "actvityDescription"
-- "imagePicker"
 - "imagePickerController"
-- "projectNameLabel"
+- "feedUploadImage"
+- "cancelButtonTapped"
 - "activityLabel"
-- "saveButtonTapped"
 - "uploadButton"
 - "viewDidLoad"
-- "cancelButtonTapped"
-- "feedUploadImage"
+- "actvityDescription"
+- "projectNameLabel"
+- "imagePicker"
+- "saveButtonTapped"
 depends-top-level:
-- "UIImagePickerControllerDelegate"
-- "UIViewController"
-- !private "BooleanLiteralType"
-- !private "PFFile"
-- !private "UIImageJPEGRepresentation"
-- !private "UIImage"
-- !private "StringLiteralType"
-- "AnyObject"
-- "UIImagePickerController"
-- "UIImageView"
-- "String"
-- "UIBarButtonItem"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
 - !private "PFObject"
-- "UIButton"
-- "UITextField"
+- "AssignmentPrecedence"
+- !private "UIImageJPEGRepresentation"
+- "CastingPrecedence"
+- !private "print"
 - "CreateNewActivityVC"
+- "UIImageView"
+- "UITextField"
+- "UIButton"
+- "UINavigationControllerDelegate"
+- "UIImagePickerController"
+- !private "UIImage"
+- "String"
+- !private "BooleanLiteralType"
+- !private "StringLiteralType"
 - !private "UIImagePickerControllerOriginalImage"
+- "UIViewController"
+- !private "PFFile"
+- "UIImagePickerControllerDelegate"
+- "UIBarButtonItem"
 depends-member:
 - !private ["Ps9AnyObject", "PFFile"]
 - !private ["Ps9AnyObject", "PFObject"]
@@ -47,6 +48,7 @@ depends-member:
 - !private ["Ps9AnyObject", "allowsEditing"]
 - ["Ps9AnyObject", "cancelButtonTapped"]
 - !private ["Ps9AnyObject", "contentMode"]
+- !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "dismiss"]
 - ["Ps9AnyObject", "feedUploadImage"]
 - !private ["Ps9AnyObject", "image"]
@@ -54,7 +56,11 @@ depends-member:
 - ["Ps9AnyObject", "imagePickerController"]
 - ["Ps9AnyObject", "imagePickerControllerDidCancel"]
 - ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "navigationController"]
+- ["Ps9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["Ps9AnyObject", "present"]
+- !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "projectNameLabel"]
 - ["Ps9AnyObject", "saveButtonTapped"]
 - !private ["Ps9AnyObject", "saveInBackground"]
@@ -82,6 +88,7 @@ depends-member:
 - !private ["Ps7CVarArg", "allowsEditing"]
 - ["Ps7CVarArg", "cancelButtonTapped"]
 - !private ["Ps7CVarArg", "contentMode"]
+- !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "dismiss"]
 - ["Ps7CVarArg", "feedUploadImage"]
 - !private ["Ps7CVarArg", "image"]
@@ -89,7 +96,11 @@ depends-member:
 - ["Ps7CVarArg", "imagePickerController"]
 - ["Ps7CVarArg", "imagePickerControllerDidCancel"]
 - ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "navigationController"]
+- ["Ps7CVarArg", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps7CVarArg", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["Ps7CVarArg", "present"]
+- !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "projectNameLabel"]
 - ["Ps7CVarArg", "saveButtonTapped"]
 - !private ["Ps7CVarArg", "saveInBackground"]
@@ -105,7 +116,6 @@ depends-member:
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "init"]
-- ["C7Project19CreateNewActivityVC", "AnyObject"]
 - !private ["C7Project19CreateNewActivityVC", "PFFile"]
 - !private ["C7Project19CreateNewActivityVC", "PFObject"]
 - ["C7Project19CreateNewActivityVC", "String"]
@@ -127,7 +137,11 @@ depends-member:
 - ["C7Project19CreateNewActivityVC", "imagePickerController"]
 - ["C7Project19CreateNewActivityVC", "imagePickerControllerDidCancel"]
 - ["C7Project19CreateNewActivityVC", "init"]
+- ["C7Project19CreateNewActivityVC", "navigationController"]
+- ["C7Project19CreateNewActivityVC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["C7Project19CreateNewActivityVC", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["C7Project19CreateNewActivityVC", "present"]
+- !private ["C7Project19CreateNewActivityVC", "print"]
 - ["C7Project19CreateNewActivityVC", "projectNameLabel"]
 - ["C7Project19CreateNewActivityVC", "saveButtonTapped"]
 - ["C7Project19CreateNewActivityVC", "uploadButton"]
@@ -144,6 +158,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "allowsEditing"]
 - ["Ps28CustomDebugStringConvertible", "cancelButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
 - ["Ps28CustomDebugStringConvertible", "feedUploadImage"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
@@ -151,7 +166,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "imagePickerController"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "navigationController"]
+- ["Ps28CustomDebugStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps28CustomDebugStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "projectNameLabel"]
 - ["Ps28CustomDebugStringConvertible", "saveButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
@@ -180,6 +199,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "allowsEditing"]
 - ["Ps23CustomStringConvertible", "cancelButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "contentMode"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
 - ["Ps23CustomStringConvertible", "feedUploadImage"]
 - !private ["Ps23CustomStringConvertible", "image"]
@@ -187,7 +207,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "imagePickerController"]
 - ["Ps23CustomStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "navigationController"]
+- ["Ps23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["Ps23CustomStringConvertible", "present"]
+- !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "projectNameLabel"]
 - ["Ps23CustomStringConvertible", "saveButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "saveInBackground"]
@@ -212,6 +236,7 @@ depends-member:
 - !private ["Ps9Equatable", "allowsEditing"]
 - ["Ps9Equatable", "cancelButtonTapped"]
 - !private ["Ps9Equatable", "contentMode"]
+- !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dismiss"]
 - ["Ps9Equatable", "feedUploadImage"]
 - !private ["Ps9Equatable", "image"]
@@ -219,8 +244,12 @@ depends-member:
 - ["Ps9Equatable", "imagePickerController"]
 - ["Ps9Equatable", "imagePickerControllerDidCancel"]
 - ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "navigationController"]
+- ["Ps9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps9Equatable", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["Ps9Equatable", "photoLibrary"]
 - !private ["Ps9Equatable", "present"]
+- !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "projectNameLabel"]
 - ["Ps9Equatable", "saveButtonTapped"]
 - !private ["Ps9Equatable", "saveInBackground"]
@@ -249,6 +278,7 @@ depends-member:
 - !private ["Ps8Hashable", "allowsEditing"]
 - ["Ps8Hashable", "cancelButtonTapped"]
 - !private ["Ps8Hashable", "contentMode"]
+- !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dismiss"]
 - ["Ps8Hashable", "feedUploadImage"]
 - !private ["Ps8Hashable", "image"]
@@ -256,8 +286,12 @@ depends-member:
 - ["Ps8Hashable", "imagePickerController"]
 - ["Ps8Hashable", "imagePickerControllerDidCancel"]
 - ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "navigationController"]
+- ["Ps8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps8Hashable", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["Ps8Hashable", "photoLibrary"]
 - !private ["Ps8Hashable", "present"]
+- !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "projectNameLabel"]
 - ["Ps8Hashable", "saveButtonTapped"]
 - !private ["Ps8Hashable", "saveInBackground"]
@@ -294,6 +328,7 @@ depends-member:
 - !private ["PSo8NSCoding", "allowsEditing"]
 - ["PSo8NSCoding", "cancelButtonTapped"]
 - !private ["PSo8NSCoding", "contentMode"]
+- !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dismiss"]
 - ["PSo8NSCoding", "feedUploadImage"]
 - !private ["PSo8NSCoding", "image"]
@@ -301,7 +336,11 @@ depends-member:
 - ["PSo8NSCoding", "imagePickerController"]
 - ["PSo8NSCoding", "imagePickerControllerDidCancel"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "navigationController"]
+- ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo8NSCoding", "present"]
+- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "projectNameLabel"]
 - ["PSo8NSCoding", "saveButtonTapped"]
 - !private ["PSo8NSCoding", "sourceType"]
@@ -319,13 +358,18 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "actvityDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "allowsEditing"]
 - ["PSo26NSExtensionRequestHandling", "cancelButtonTapped"]
+- !private ["PSo26NSExtensionRequestHandling", "delegate"]
 - !private ["PSo26NSExtensionRequestHandling", "dismiss"]
 - ["PSo26NSExtensionRequestHandling", "feedUploadImage"]
 - ["PSo26NSExtensionRequestHandling", "imagePicker"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerControllerDidCancel"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "navigationController"]
+- ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo26NSExtensionRequestHandling", "present"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "projectNameLabel"]
 - ["PSo26NSExtensionRequestHandling", "saveButtonTapped"]
 - !private ["PSo26NSExtensionRequestHandling", "sourceType"]
@@ -333,7 +377,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
-- ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "PFFile"]
 - !private ["CSo8NSObject", "PFObject"]
 - ["CSo8NSObject", "String"]
@@ -350,6 +393,7 @@ depends-member:
 - !private ["CSo8NSObject", "allowsEditing"]
 - ["CSo8NSObject", "cancelButtonTapped"]
 - !private ["CSo8NSObject", "contentMode"]
+- !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dismiss"]
 - ["CSo8NSObject", "feedUploadImage"]
 - !private ["CSo8NSObject", "image"]
@@ -357,7 +401,11 @@ depends-member:
 - ["CSo8NSObject", "imagePickerController"]
 - ["CSo8NSObject", "imagePickerControllerDidCancel"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "navigationController"]
+- ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["CSo8NSObject", "present"]
+- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "projectNameLabel"]
 - ["CSo8NSObject", "saveButtonTapped"]
 - !private ["CSo8NSObject", "saveInBackground"]
@@ -376,6 +424,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "allowsEditing"]
 - ["PSo16NSObjectProtocol", "cancelButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
 - ["PSo16NSObjectProtocol", "feedUploadImage"]
 - !private ["PSo16NSObjectProtocol", "image"]
@@ -383,7 +432,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "imagePickerController"]
 - ["PSo16NSObjectProtocol", "imagePickerControllerDidCancel"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "navigationController"]
+- ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo16NSObjectProtocol", "present"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "projectNameLabel"]
 - ["PSo16NSObjectProtocol", "saveButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "saveInBackground"]
@@ -434,6 +487,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "allowsEditing"]
 - ["PSo21UIAppearanceContainer", "cancelButtonTapped"]
 - !private ["PSo21UIAppearanceContainer", "contentMode"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dismiss"]
 - ["PSo21UIAppearanceContainer", "feedUploadImage"]
 - !private ["PSo21UIAppearanceContainer", "image"]
@@ -441,7 +495,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
 - ["PSo21UIAppearanceContainer", "imagePickerControllerDidCancel"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "navigationController"]
+- ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo21UIAppearanceContainer", "present"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "projectNameLabel"]
 - ["PSo21UIAppearanceContainer", "saveButtonTapped"]
 - !private ["PSo21UIAppearanceContainer", "sourceType"]
@@ -458,13 +516,18 @@ depends-member:
 - ["PSo18UIContentContainer", "actvityDescription"]
 - !private ["PSo18UIContentContainer", "allowsEditing"]
 - ["PSo18UIContentContainer", "cancelButtonTapped"]
+- !private ["PSo18UIContentContainer", "delegate"]
 - !private ["PSo18UIContentContainer", "dismiss"]
 - ["PSo18UIContentContainer", "feedUploadImage"]
 - ["PSo18UIContentContainer", "imagePicker"]
 - ["PSo18UIContentContainer", "imagePickerController"]
 - ["PSo18UIContentContainer", "imagePickerControllerDidCancel"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "navigationController"]
+- ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo18UIContentContainer", "present"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "projectNameLabel"]
 - ["PSo18UIContentContainer", "saveButtonTapped"]
 - !private ["PSo18UIContentContainer", "sourceType"]
@@ -489,6 +552,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "allowsEditing"]
 - ["PSo18UIFocusEnvironment", "cancelButtonTapped"]
 - !private ["PSo18UIFocusEnvironment", "contentMode"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dismiss"]
 - ["PSo18UIFocusEnvironment", "feedUploadImage"]
 - !private ["PSo18UIFocusEnvironment", "image"]
@@ -496,7 +560,11 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
 - ["PSo18UIFocusEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "navigationController"]
+- ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo18UIFocusEnvironment", "present"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "projectNameLabel"]
 - ["PSo18UIFocusEnvironment", "saveButtonTapped"]
 - !private ["PSo18UIFocusEnvironment", "sourceType"]
@@ -510,6 +578,7 @@ depends-member:
 - ["CSo7UIImage", "deinit"]
 - !private ["CSo23UIImagePickerController", "allowsEditing"]
 - ["CSo23UIImagePickerController", "deinit"]
+- !private ["CSo23UIImagePickerController", "delegate"]
 - ["CSo23UIImagePickerController", "init"]
 - !private ["CSo23UIImagePickerController", "sourceType"]
 - !private ["PSo31UIImagePickerControllerDelegate", "PFFile"]
@@ -524,7 +593,11 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "imagePicker"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerControllerDidCancel"]
+- ["PSo31UIImagePickerControllerDelegate", "navigationController"]
+- ["PSo31UIImagePickerControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo31UIImagePickerControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo31UIImagePickerControllerDelegate", "present"]
+- !private ["PSo31UIImagePickerControllerDelegate", "print"]
 - !private ["PSo31UIImagePickerControllerDelegate", "projectNameLabel"]
 - ["PSo31UIImagePickerControllerDelegate", ""]
 - ["OSC33UIImagePickerControllerSourceType", "deinit"]
@@ -533,9 +606,28 @@ depends-member:
 - !private ["CSo11UIImageView", "image"]
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo22UINavigationController", "allowsEditing"]
+- !private ["CSo22UINavigationController", "delegate"]
 - ["CSo22UINavigationController", "init"]
 - !private ["CSo22UINavigationController", "sourceType"]
-- ["CSo11UIResponder", "AnyObject"]
+- !private ["PSo30UINavigationControllerDelegate", "PFFile"]
+- !private ["PSo30UINavigationControllerDelegate", "PFObject"]
+- !private ["PSo30UINavigationControllerDelegate", "UIImageJPEGRepresentation"]
+- ["PSo30UINavigationControllerDelegate", "UIImagePickerController"]
+- !private ["PSo30UINavigationControllerDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo30UINavigationControllerDelegate", "activityLabel"]
+- !private ["PSo30UINavigationControllerDelegate", "actvityDescription"]
+- !private ["PSo30UINavigationControllerDelegate", "dismiss"]
+- !private ["PSo30UINavigationControllerDelegate", "feedUploadImage"]
+- !private ["PSo30UINavigationControllerDelegate", "imagePicker"]
+- ["PSo30UINavigationControllerDelegate", "imagePickerController"]
+- ["PSo30UINavigationControllerDelegate", "imagePickerControllerDidCancel"]
+- ["PSo30UINavigationControllerDelegate", "navigationController"]
+- ["PSo30UINavigationControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo30UINavigationControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["PSo30UINavigationControllerDelegate", "present"]
+- !private ["PSo30UINavigationControllerDelegate", "print"]
+- !private ["PSo30UINavigationControllerDelegate", "projectNameLabel"]
+- ["PSo30UINavigationControllerDelegate", ""]
 - !private ["CSo11UIResponder", "PFFile"]
 - !private ["CSo11UIResponder", "PFObject"]
 - ["CSo11UIResponder", "String"]
@@ -552,6 +644,7 @@ depends-member:
 - !private ["CSo11UIResponder", "allowsEditing"]
 - ["CSo11UIResponder", "cancelButtonTapped"]
 - !private ["CSo11UIResponder", "contentMode"]
+- !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dismiss"]
 - ["CSo11UIResponder", "feedUploadImage"]
 - !private ["CSo11UIResponder", "image"]
@@ -559,7 +652,11 @@ depends-member:
 - ["CSo11UIResponder", "imagePickerController"]
 - ["CSo11UIResponder", "imagePickerControllerDidCancel"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "navigationController"]
+- ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["CSo11UIResponder", "present"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "projectNameLabel"]
 - ["CSo11UIResponder", "saveButtonTapped"]
 - !private ["CSo11UIResponder", "sourceType"]
@@ -576,6 +673,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "allowsEditing"]
 - ["PSo30UIResponderStandardEditActions", "cancelButtonTapped"]
 - !private ["PSo30UIResponderStandardEditActions", "contentMode"]
+- !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "dismiss"]
 - ["PSo30UIResponderStandardEditActions", "feedUploadImage"]
 - !private ["PSo30UIResponderStandardEditActions", "image"]
@@ -583,7 +681,11 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "imagePickerController"]
 - ["PSo30UIResponderStandardEditActions", "imagePickerControllerDidCancel"]
 - ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "navigationController"]
+- ["PSo30UIResponderStandardEditActions", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo30UIResponderStandardEditActions", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo30UIResponderStandardEditActions", "present"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "projectNameLabel"]
 - ["PSo30UIResponderStandardEditActions", "saveButtonTapped"]
 - !private ["PSo30UIResponderStandardEditActions", "sourceType"]
@@ -600,13 +702,18 @@ depends-member:
 - ["PSo16UIStateRestoring", "actvityDescription"]
 - !private ["PSo16UIStateRestoring", "allowsEditing"]
 - ["PSo16UIStateRestoring", "cancelButtonTapped"]
+- !private ["PSo16UIStateRestoring", "delegate"]
 - !private ["PSo16UIStateRestoring", "dismiss"]
 - ["PSo16UIStateRestoring", "feedUploadImage"]
 - ["PSo16UIStateRestoring", "imagePicker"]
 - ["PSo16UIStateRestoring", "imagePickerController"]
 - ["PSo16UIStateRestoring", "imagePickerControllerDidCancel"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "navigationController"]
+- ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo16UIStateRestoring", "present"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "projectNameLabel"]
 - ["PSo16UIStateRestoring", "saveButtonTapped"]
 - !private ["PSo16UIStateRestoring", "sourceType"]
@@ -626,6 +733,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "allowsEditing"]
 - ["PSo18UITraitEnvironment", "cancelButtonTapped"]
 - !private ["PSo18UITraitEnvironment", "contentMode"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dismiss"]
 - ["PSo18UITraitEnvironment", "feedUploadImage"]
 - !private ["PSo18UITraitEnvironment", "image"]
@@ -633,7 +741,11 @@ depends-member:
 - ["PSo18UITraitEnvironment", "imagePickerController"]
 - ["PSo18UITraitEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "navigationController"]
+- ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo18UITraitEnvironment", "present"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "projectNameLabel"]
 - ["PSo18UITraitEnvironment", "saveButtonTapped"]
 - !private ["PSo18UITraitEnvironment", "sourceType"]
@@ -646,7 +758,6 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - ["OSC17UIViewContentMode", "deinit"]
 - !private ["OSC17UIViewContentMode", "scaleAspectFit"]
-- ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "PFFile"]
 - !private ["CSo16UIViewController", "PFObject"]
 - ["CSo16UIViewController", "String"]
@@ -663,13 +774,18 @@ depends-member:
 - !private ["CSo16UIViewController", "allowsEditing"]
 - ["CSo16UIViewController", "cancelButtonTapped"]
 - ["CSo16UIViewController", "deinit"]
+- !private ["CSo16UIViewController", "delegate"]
 - !private ["CSo16UIViewController", "dismiss"]
 - ["CSo16UIViewController", "feedUploadImage"]
 - ["CSo16UIViewController", "imagePicker"]
 - ["CSo16UIViewController", "imagePickerController"]
 - ["CSo16UIViewController", "imagePickerControllerDidCancel"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "navigationController"]
+- ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["CSo16UIViewController", "present"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "projectNameLabel"]
 - ["CSo16UIViewController", "saveButtonTapped"]
 - !private ["CSo16UIViewController", "sourceType"]
@@ -694,6 +810,7 @@ depends-member:
 - !private ["Ps9_Hashable", "allowsEditing"]
 - ["Ps9_Hashable", "cancelButtonTapped"]
 - !private ["Ps9_Hashable", "contentMode"]
+- !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "dismiss"]
 - ["Ps9_Hashable", "feedUploadImage"]
 - !private ["Ps9_Hashable", "image"]
@@ -701,8 +818,12 @@ depends-member:
 - ["Ps9_Hashable", "imagePickerController"]
 - ["Ps9_Hashable", "imagePickerControllerDidCancel"]
 - ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "navigationController"]
+- ["Ps9_Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["Ps9_Hashable", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["Ps9_Hashable", "photoLibrary"]
 - !private ["Ps9_Hashable", "present"]
+- !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "projectNameLabel"]
 - ["Ps9_Hashable", "saveButtonTapped"]
 - !private ["Ps9_Hashable", "saveInBackground"]
@@ -783,6 +904,7 @@ depends-nominal:
 - !private "CSo11UIImageView"
 - !private "PSo10UIKeyInput"
 - "CSo22UINavigationController"
+- "PSo30UINavigationControllerDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
@@ -871,4 +993,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "ba2d048133c841a08dea66b567405a1c"
+interface-hash: "b01a4fd0e6c40dc647ff198e35780073"
