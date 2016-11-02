@@ -104,7 +104,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             let destinationNavigationController = segue.destination as! UINavigationController
             let targetController = destinationNavigationController.topViewController as! ProjectViewController
-            //targetController.projectOject = projectsList[pro]]
+            targetController.projectOject = projectsList[(projectTableView.indexPathForSelectedRow?.row)!]
             
         }
     }

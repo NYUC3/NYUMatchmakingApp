@@ -13,7 +13,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var feedList = [Feed]()
     
-    @IBOutlet weak var daTableView: UITableView!
+    @IBOutlet weak var daTableView: UITableView! // This is a bad name
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,6 +60,13 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.daTableView.reloadData()
+    }
+    
+    
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return feedList.count
