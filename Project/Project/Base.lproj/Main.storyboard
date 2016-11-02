@@ -341,52 +341,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abj-Cw-4ae">
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Upload Photo"/>
-                                <connections>
-                                    <action selector="uploadButton:" destination="ILV-kd-8T8" eventType="touchUpInside" id="cGS-0T-fIT"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Activity Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTh-fI-DEx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BJt-mB-sWZ"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Activity Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-5e-SJl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="w2A-18-um2"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="H4x-Du-1mV">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="BRs-q6-Wkx"/>
-                                </constraints>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="H4x-Du-1mV"/>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUG-XQ-4Nn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="XB2-Us-mjO"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="ILV-kd-8T8" id="6W9-dM-YZR"/>
                                     <outlet property="delegate" destination="ILV-kd-8T8" id="cPI-xz-vLR"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abj-Cw-4ae">
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                <state key="normal" title="Upload Photo">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadButton:" destination="ILV-kd-8T8" eventType="touchUpInside" id="cGS-0T-fIT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VUG-XQ-4Nn" firstAttribute="leading" secondItem="7lb-UU-AjB" secondAttribute="leading" id="1Rb-DZ-fMC"/>
-                            <constraint firstItem="VUG-XQ-4Nn" firstAttribute="top" secondItem="H4x-Du-1mV" secondAttribute="bottom" constant="8" symbolic="YES" id="3Rh-Gc-ma4"/>
-                            <constraint firstItem="Abj-Cw-4ae" firstAttribute="centerX" secondItem="H4x-Du-1mV" secondAttribute="centerX" id="5Zm-3n-e3T"/>
-                            <constraint firstItem="H4x-Du-1mV" firstAttribute="centerX" secondItem="VUG-XQ-4Nn" secondAttribute="centerX" id="5eG-at-LF7"/>
-                            <constraint firstItem="aTh-fI-DEx" firstAttribute="trailing" secondItem="1iN-5e-SJl" secondAttribute="trailing" id="Abo-oZ-xTO"/>
-                            <constraint firstItem="1iN-5e-SJl" firstAttribute="leading" secondItem="Abj-Cw-4ae" secondAttribute="leading" id="Aun-dk-w2o"/>
-                            <constraint firstItem="H4x-Du-1mV" firstAttribute="top" secondItem="Abj-Cw-4ae" secondAttribute="bottom" constant="8" symbolic="YES" id="VXw-uR-jjO"/>
-                            <constraint firstItem="aTh-fI-DEx" firstAttribute="top" secondItem="HqI-1J-V2N" secondAttribute="bottom" constant="8" symbolic="YES" id="ZgX-f7-jmh"/>
-                            <constraint firstItem="H4x-Du-1mV" firstAttribute="leading" secondItem="7lb-UU-AjB" secondAttribute="leadingMargin" constant="71" id="bXO-Ka-LXJ"/>
-                            <constraint firstItem="1iN-5e-SJl" firstAttribute="trailing" secondItem="Abj-Cw-4ae" secondAttribute="trailing" id="dK4-i8-Pos"/>
-                            <constraint firstItem="Abj-Cw-4ae" firstAttribute="top" secondItem="1iN-5e-SJl" secondAttribute="bottom" constant="8" symbolic="YES" id="eJa-w1-3Di"/>
-                            <constraint firstAttribute="trailing" secondItem="VUG-XQ-4Nn" secondAttribute="trailing" id="jQ3-Gh-zAQ"/>
-                            <constraint firstItem="1iN-5e-SJl" firstAttribute="top" secondItem="aTh-fI-DEx" secondAttribute="bottom" constant="8" symbolic="YES" id="tkb-4K-Gg5"/>
-                            <constraint firstItem="aTh-fI-DEx" firstAttribute="leading" secondItem="7lb-UU-AjB" secondAttribute="leadingMargin" id="w2V-kt-t86"/>
-                            <constraint firstItem="aTh-fI-DEx" firstAttribute="leading" secondItem="1iN-5e-SJl" secondAttribute="leading" id="whV-3p-2RT"/>
+                            <constraint firstItem="aTh-fI-DEx" firstAttribute="trailing" secondItem="1iN-5e-SJl" secondAttribute="trailing" id="0WR-UO-Uan"/>
+                            <constraint firstItem="H4x-Du-1mV" firstAttribute="leading" secondItem="Abj-Cw-4ae" secondAttribute="leading" id="9IR-vd-Yb4"/>
+                            <constraint firstAttribute="trailing" secondItem="VUG-XQ-4Nn" secondAttribute="trailing" id="9Po-Xn-ZTJ"/>
+                            <constraint firstItem="11M-oP-fdx" firstAttribute="top" secondItem="VUG-XQ-4Nn" secondAttribute="bottom" constant="2" id="CW1-Bz-k29"/>
+                            <constraint firstItem="H4x-Du-1mV" firstAttribute="top" secondItem="1iN-5e-SJl" secondAttribute="bottom" constant="8" symbolic="YES" id="Eez-Wk-7I3"/>
+                            <constraint firstItem="Abj-Cw-4ae" firstAttribute="centerX" secondItem="VUG-XQ-4Nn" secondAttribute="centerX" id="Eri-Zf-doS"/>
+                            <constraint firstItem="aTh-fI-DEx" firstAttribute="top" secondItem="HqI-1J-V2N" secondAttribute="bottom" constant="8" symbolic="YES" id="Gjs-zG-wBM"/>
+                            <constraint firstItem="H4x-Du-1mV" firstAttribute="leading" secondItem="7lb-UU-AjB" secondAttribute="leadingMargin" constant="49" id="HWB-dF-mfe"/>
+                            <constraint firstItem="VUG-XQ-4Nn" firstAttribute="leading" secondItem="7lb-UU-AjB" secondAttribute="leading" id="VZQ-sU-wwl"/>
+                            <constraint firstItem="aTh-fI-DEx" firstAttribute="leading" secondItem="7lb-UU-AjB" secondAttribute="leadingMargin" id="gh7-bN-SYi"/>
+                            <constraint firstItem="1iN-5e-SJl" firstAttribute="top" secondItem="aTh-fI-DEx" secondAttribute="bottom" constant="8" symbolic="YES" id="oOc-P0-mZo"/>
+                            <constraint firstItem="1iN-5e-SJl" firstAttribute="centerX" secondItem="H4x-Du-1mV" secondAttribute="centerX" id="p6Q-VT-x5G"/>
+                            <constraint firstItem="aTh-fI-DEx" firstAttribute="leading" secondItem="1iN-5e-SJl" secondAttribute="leading" id="tPt-7V-O6O"/>
+                            <constraint firstItem="VUG-XQ-4Nn" firstAttribute="top" secondItem="Abj-Cw-4ae" secondAttribute="bottom" constant="8" symbolic="YES" id="tx4-uZ-wVN"/>
+                            <constraint firstItem="VUG-XQ-4Nn" firstAttribute="top" secondItem="H4x-Du-1mV" secondAttribute="bottom" constant="8" symbolic="YES" id="w4r-qP-EgL"/>
+                            <constraint firstItem="H4x-Du-1mV" firstAttribute="centerX" secondItem="Abj-Cw-4ae" secondAttribute="centerX" id="zWH-Oe-yKq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create Activity" id="TA2-lK-Ozu">
@@ -410,7 +419,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2h-jf-wMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4393" y="1600"/>
+            <point key="canvasLocation" x="4392.8000000000002" y="1599.8500749625189"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Eba-RE-65U">

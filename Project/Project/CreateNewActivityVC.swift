@@ -55,11 +55,11 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         
     }
 
-    // Image picker method
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             feedUploadImage.contentMode = .scaleAspectFit
+            print("PICKED IMAGE")
+            print(pickedImage)
             feedUploadImage.image = pickedImage
         }
         
@@ -68,7 +68,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
     
     // UIPickerView methods
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
@@ -80,8 +80,9 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         return projectNames[row]
     }
 
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
         selectedProjectName = projectNames[row]
     }
     
 }
+
