@@ -285,8 +285,9 @@ SWIFT_CLASS("_TtC7Project21ProjectViewController")
 @interface ProjectViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescription;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified followButton;
+@property (nonatomic) BOOL isFollowing;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (IBAction)followButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
