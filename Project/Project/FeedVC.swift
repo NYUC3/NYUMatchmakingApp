@@ -12,12 +12,17 @@ import Parse
 class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var feedList = [Feed]()
+    var projectsFollowing = [String]()
     
     @IBOutlet weak var daTableView: UITableView! // This is a bad name
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var query = PFQuery(className:"MyActivities")
+        let user = PFUser.current()?.username
+        print("USER")
+        print(user)
+        let query = PFQuery(className:"Follow")
+        //query.whereKey("username", equalTo: user!)
         query.findObjectsInBackground {
             (objects: [PFObject]?, error: Error?) -> Void in
             
@@ -27,43 +32,81 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 // Do something with the found objects
                 if let objects = objects {
                     for object in objects {
-                        print(object["image"])
-                        
-                        var name = ""
-                        var title = ""
-                        var description = ""
-                        
-                        if(object["projectName"] != nil){
-                            name = object["projectName"] as! String
-                        }
-                        if(object["activityName"] != nil){
-                            title = object["activityName"] as! String
-                        }
-                        if(object["activityDescription"] != nil){
-                            description = object["activityDescription"] as! String
-                        }
-                        if(object["image"] != nil){
-                            let feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile)
-                            
-                            self.feedList.append(feed)
-                        }
-                        
+                        print(object["project"])
+                        self.projectsFollowing.append(object["project"] as! String)
+                        self.queryActivities(name: object["project"] as! String)
                     }
+                    
                 }
-                
-                self.daTableView.reloadData()
             } else {
                 // Log details of the failure
-                print("Error: \(error!) \(error! as? NSError)")
+                print("Error: \(error!)")
             }
         }
+        
+        
         
         
     }
     
     
+    
+    func queryActivities( name : String ){
+        
+        let qry = PFQuery(className:"MyActivities")
+
+            qry.whereKey("projectName", equalTo: name)
+            qry.findObjectsInBackground {
+                (objects: [PFObject]?, error: Error?) -> Void in
+                
+                if error == nil {
+                    // The find succeeded.
+                    print("Successfully \(objects!.count) scores.")
+                    // Do something with the found objects
+                    if let objects = objects {
+                        for object in objects {
+                            print(object["image"])
+                            
+                            var name = ""
+                            var title = ""
+                            var description = ""
+                            
+                            if(object["projectName"] != nil){
+                                name = object["projectName"] as! String
+                            }
+                            if(object["activityName"] != nil){
+                                title = object["activityName"] as! String
+                            }
+                            if(object["activityDescription"] != nil){
+                                description = object["activityDescription"] as! String
+                            }
+                            if(object["image"] != nil){
+                                let feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile)
+                                
+                                self.feedList.append(feed)
+                            }
+                            
+                        }
+                        self.daTableView.reloadData()
+                    }
+                    
+                    
+                } else {
+                    // Log details of the failure
+                    print("Error: \(error!)")
+                }
+            }
+
+    }
+    
+    
+    
+    
+    
     override func viewDidAppear(_ animated: Bool) {
-        self.daTableView.reloadData()
+        //self.daTableView.reloadData()
+
+        
     }
     
     

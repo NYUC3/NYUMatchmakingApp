@@ -44,6 +44,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
                     for object in objects {
                         self.projectNames.append(object["Name"] as! String)
                     }
+                    self.selectedProjectName = self.projectNames[0]
                     print(self.projectNames)
                     self.projectNamePickerView.reloadAllComponents()
                 }
