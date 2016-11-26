@@ -32,9 +32,8 @@ class ProjectViewController: UIViewController {
         })
         
         
-        
-        
-        
+        self.projectDescription.numberOfLines = 0
+        self.projectDescription.lineBreakMode = .byWordWrapping
         
         let query = PFQuery(className:"Follow")
         query.whereKey("username", equalTo: (PFUser.current()?.username)!)

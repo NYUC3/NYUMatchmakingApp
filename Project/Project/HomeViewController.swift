@@ -86,6 +86,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.projectName.text = projectsList[indexPath.row].name
         cell.descriptionLabel.text = projectsList[indexPath.row].description
         
+        cell.descriptionLabel.numberOfLines = 0
+        cell.descriptionLabel.lineBreakMode = .byWordWrapping
+        
         let imageFromParse = projectsList[indexPath.row].image
         imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
             

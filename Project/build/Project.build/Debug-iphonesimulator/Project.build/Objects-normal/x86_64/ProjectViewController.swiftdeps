@@ -6,35 +6,35 @@ provides-nominal:
 provides-member:
 - ["C7Project21ProjectViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "followButton"
-- "followButtonTapped"
-- "isFollowing"
-- "projectImage"
 - "projectDescription"
+- "projectImage"
+- "followButton"
+- "isFollowing"
+- "followButtonTapped"
+- "viewDidLoad"
 depends-top-level:
-- !private "UIImage"
-- "UIButton"
-- !private "String"
-- "BooleanLiteralType"
+- "UIViewController"
+- "ProjectViewController"
 - !private "Data"
+- "UIButton"
+- !private "UIImage"
 - "Bool"
-- !private "StringLiteralType"
-- !private "PFObject"
-- !private "print"
-- !private "PFUser"
-- "UIImageView"
-- "UILabel"
-- !private "!"
-- !private "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "Void"
+- "BooleanLiteralType"
 - !private "PFQuery"
 - !private "Error"
-- "ProjectViewController"
+- !private "StringLiteralType"
+- !private "!"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "CastingPrecedence"
+- "UIImageView"
+- "UILabel"
+- !private "String"
 - "Feed"
-- "UIViewController"
+- !private "Void"
+- !private "PFObject"
+- !private "PFUser"
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "PFObject"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -49,6 +49,8 @@ depends-member:
 - !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "isFollowing"]
+- !private ["Ps9AnyObject", "lineBreakMode"]
+- !private ["Ps9AnyObject", "numberOfLines"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "projectDescription"]
 - ["Ps9AnyObject", "projectImage"]
@@ -73,6 +75,8 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "image"]
+- !private ["PSo15CALayerDelegate", "lineBreakMode"]
+- !private ["PSo15CALayerDelegate", "numberOfLines"]
 - !private ["PSo15CALayerDelegate", "setTitle"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["Ps7CVarArg", "Iterator"]
@@ -90,6 +94,8 @@ depends-member:
 - !private ["Ps7CVarArg", "image"]
 - !private ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "isFollowing"]
+- !private ["Ps7CVarArg", "lineBreakMode"]
+- !private ["Ps7CVarArg", "numberOfLines"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "projectDescription"]
 - ["Ps7CVarArg", "projectImage"]
@@ -122,13 +128,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "isFollowing"]
+- !private ["Ps28CustomDebugStringConvertible", "lineBreakMode"]
+- !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "projectDescription"]
 - ["Ps28CustomDebugStringConvertible", "projectImage"]
 - ["Ps28CustomDebugStringConvertible", "projectOject"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
-- !private ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
@@ -142,7 +149,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps17CustomReflectable", "some"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "PFObject"]
 - !private ["Ps23CustomStringConvertible", "PFQuery"]
@@ -159,6 +165,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "isFollowing"]
+- !private ["Ps23CustomStringConvertible", "lineBreakMode"]
+- !private ["Ps23CustomStringConvertible", "numberOfLines"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "projectDescription"]
 - ["Ps23CustomStringConvertible", "projectImage"]
@@ -179,6 +187,7 @@ depends-member:
 - !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "byWordWrapping"]
 - !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "deleteInBackground"]
 - !private ["Ps9Equatable", "findObjectsInBackground"]
@@ -188,7 +197,9 @@ depends-member:
 - !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "isFollowing"]
+- !private ["Ps9Equatable", "lineBreakMode"]
 - !private ["Ps9Equatable", "normal"]
+- !private ["Ps9Equatable", "numberOfLines"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "projectDescription"]
 - ["Ps9Equatable", "projectImage"]
@@ -208,7 +219,6 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -221,6 +231,7 @@ depends-member:
 - !private ["Ps8Hashable", "PFUser"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "byWordWrapping"]
 - !private ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "deleteInBackground"]
 - !private ["Ps8Hashable", "findObjectsInBackground"]
@@ -230,6 +241,8 @@ depends-member:
 - !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "isFollowing"]
+- !private ["Ps8Hashable", "lineBreakMode"]
+- !private ["Ps8Hashable", "numberOfLines"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "projectDescription"]
 - ["Ps8Hashable", "projectImage"]
@@ -249,7 +262,7 @@ depends-member:
 - !private ["Ps13IndexableBase", "Iterator"]
 - !private ["Ps13IndexableBase", "_Element"]
 - !private ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "deinit"]
+- ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
@@ -272,6 +285,8 @@ depends-member:
 - !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "isFollowing"]
+- !private ["PSo8NSCoding", "lineBreakMode"]
+- !private ["PSo8NSCoding", "numberOfLines"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "projectDescription"]
 - ["PSo8NSCoding", "projectImage"]
@@ -299,6 +314,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "title"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["OSC15NSLineBreakMode", "byWordWrapping"]
+- ["OSC15NSLineBreakMode", "deinit"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "Data"]
@@ -322,6 +339,8 @@ depends-member:
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isFollowing"]
+- !private ["CSo8NSObject", "lineBreakMode"]
+- !private ["CSo8NSObject", "numberOfLines"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "projectDescription"]
 - ["CSo8NSObject", "projectImage"]
@@ -347,6 +366,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "isFollowing"]
+- !private ["PSo16NSObjectProtocol", "lineBreakMode"]
+- !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "projectDescription"]
 - ["PSo16NSObjectProtocol", "projectImage"]
@@ -364,7 +385,6 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - !private ["Ps9OptionSet", "normal"]
 - ["Sq", "deinit"]
-- !private ["Sq", "some"]
 - ["CSo6PFFile", "deinit"]
 - !private ["CSo6PFFile", "getDataInBackground"]
 - !private ["CSo8PFObject", "current"]
@@ -415,6 +435,7 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps25RangeReplaceableIndexable", "Iterator"]
 - !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps16RawRepresentable", "byWordWrapping"]
 - !private ["Ps16RawRepresentable", "normal"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Iterator"]
@@ -426,9 +447,13 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "lineBreakMode"]
+- !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "lineBreakMode"]
+- !private ["PSo12UIAppearance", "numberOfLines"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "PFObject"]
@@ -440,6 +465,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "image"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "isFollowing"]
+- !private ["PSo21UIAppearanceContainer", "lineBreakMode"]
+- !private ["PSo21UIAppearanceContainer", "numberOfLines"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "projectDescription"]
 - ["PSo21UIAppearanceContainer", "projectImage"]
@@ -465,14 +492,20 @@ depends-member:
 - !private ["PSo18UIContentContainer", "title"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "lineBreakMode"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "numberOfLines"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["CSo9UIControl", "setTitle"]
 - ["VSC14UIControlState", "deinit"]
 - !private ["VSC14UIControlState", "normal"]
 - !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "lineBreakMode"]
+- !private ["PSo17UICoordinateSpace", "numberOfLines"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "lineBreakMode"]
+- !private ["PSo13UIDynamicItem", "numberOfLines"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "PFObject"]
@@ -484,6 +517,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "image"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "isFollowing"]
+- !private ["PSo18UIFocusEnvironment", "lineBreakMode"]
+- !private ["PSo18UIFocusEnvironment", "numberOfLines"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "projectDescription"]
 - ["PSo18UIFocusEnvironment", "projectImage"]
@@ -494,11 +529,15 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "image"]
+- !private ["PSo11UIFocusItem", "lineBreakMode"]
+- !private ["PSo11UIFocusItem", "numberOfLines"]
 - !private ["PSo11UIFocusItem", "setTitle"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["CSo7UIImage", "deinit"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "lineBreakMode"]
+- !private ["CSo7UILabel", "numberOfLines"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "Data"]
@@ -518,6 +557,8 @@ depends-member:
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "isFollowing"]
+- !private ["CSo11UIResponder", "lineBreakMode"]
+- !private ["CSo11UIResponder", "numberOfLines"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "projectDescription"]
 - ["CSo11UIResponder", "projectImage"]
@@ -535,6 +576,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "image"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "isFollowing"]
+- !private ["PSo30UIResponderStandardEditActions", "lineBreakMode"]
+- !private ["PSo30UIResponderStandardEditActions", "numberOfLines"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "projectDescription"]
 - ["PSo30UIResponderStandardEditActions", "projectImage"]
@@ -568,6 +611,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "image"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "isFollowing"]
+- !private ["PSo18UITraitEnvironment", "lineBreakMode"]
+- !private ["PSo18UITraitEnvironment", "numberOfLines"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "projectDescription"]
 - ["PSo18UITraitEnvironment", "projectImage"]
@@ -578,6 +623,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "lineBreakMode"]
+- !private ["CSo6UIView", "numberOfLines"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "Bool"]
@@ -614,6 +661,8 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "lineBreakMode"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "numberOfLines"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
@@ -630,6 +679,7 @@ depends-member:
 - !private ["Ps9_Hashable", "PFUser"]
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "byWordWrapping"]
 - !private ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "deleteInBackground"]
 - !private ["Ps9_Hashable", "findObjectsInBackground"]
@@ -639,6 +689,8 @@ depends-member:
 - !private ["Ps9_Hashable", "image"]
 - !private ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "isFollowing"]
+- !private ["Ps9_Hashable", "lineBreakMode"]
+- !private ["Ps9_Hashable", "numberOfLines"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "projectDescription"]
 - ["Ps9_Hashable", "projectImage"]
@@ -680,7 +732,6 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -691,7 +742,7 @@ depends-nominal:
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
-- !private "Si"
+- "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
 - !private "Vs5Int64"
@@ -705,6 +756,7 @@ depends-nominal:
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- "OSC15NSLineBreakMode"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -778,6 +830,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"

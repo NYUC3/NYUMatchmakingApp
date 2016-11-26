@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C7Project11AppDelegate", ""]
 provides-dynamic-lookup:
+- "applicationWillTerminate"
 - "applicationWillResignActive"
+- "applicationDidBecomeActive"
 - "applicationDidEnterBackground"
 - "applicationWillEnterForeground"
-- "applicationDidBecomeActive"
-- "window"
 - "application"
-- "applicationWillTerminate"
+- "window"
 depends-top-level:
-- "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
-- "UIWindow"
-- "UIApplication"
-- "Bool"
-- !private "ParseClientConfiguration"
-- "StringLiteralType"
 - !private "BooleanLiteralType"
-- !private "Parse"
+- "UIApplication"
 - "UIApplicationDelegate"
-- !private "AssignmentPrecedence"
+- "UIWindow"
+- "StringLiteralType"
+- !private "Parse"
 - "UIResponder"
+- "UIApplicationLaunchOptionsKey"
+- !private "ParseClientConfiguration"
+- "AppDelegate"
+- !private "AssignmentPrecedence"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "Parse"]
 - !private ["Ps9AnyObject", "ParseClientConfiguration"]
@@ -356,6 +356,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"

@@ -35,6 +35,8 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                         print(object["project"])
                         self.projectsFollowing.append(object["project"] as! String)
                         self.queryActivities(name: object["project"] as! String)
+                        
+                        
                     }
                     
                 }
@@ -100,11 +102,14 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     
+    @IBAction func refreshAction(_ sender: UIBarButtonItem) {
+        self.daTableView.reloadData()
+    }
     
     
     
     override func viewDidAppear(_ animated: Bool) {
-        //self.daTableView.reloadData()
+        self.daTableView.reloadData()
 
         
     }
@@ -120,6 +125,10 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.projectNameLabel.text = feedList[indexPath.row].name
         cell.feedTitleLabel.text  = feedList[indexPath.row].title
         cell.feedDescriptionLabel.text = feedList[indexPath.row].description
+        
+        
+        cell.feedDescriptionLabel.lineBreakMode = .byWordWrapping
+        cell.feedDescriptionLabel.numberOfLines = 0
         
         let imageFromParse = feedList[indexPath.row].image
         imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in

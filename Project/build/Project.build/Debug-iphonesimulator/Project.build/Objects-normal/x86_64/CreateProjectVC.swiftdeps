@@ -7,35 +7,35 @@ provides-member:
 - ["C7Project15CreateProjectVC", ""]
 provides-dynamic-lookup:
 - "projectNameTextField"
-- "saveButtonTapped"
-- "imagePickerController"
-- "uploadButtonTapped"
-- "projectDescriptionTextfield"
-- "projectImageView"
-- "imagePicker"
-- "cancelButtonTapped"
 - "viewDidLoad"
+- "cancelButtonTapped"
+- "projectImageView"
+- "uploadButtonTapped"
+- "saveButtonTapped"
+- "projectDescriptionTextfield"
+- "imagePicker"
+- "imagePickerController"
 depends-top-level:
-- !private "UIImage"
-- !private "UIImagePickerControllerOriginalImage"
-- "UIButton"
-- !private "BooleanLiteralType"
-- "UITextField"
-- "UIBarButtonItem"
-- "CreateProjectVC"
-- !private "StringLiteralType"
+- !private "UIImageJPEGRepresentation"
+- !private "PFFile"
 - "UIImageView"
-- "UIImagePickerController"
+- !private "BooleanLiteralType"
+- !private "StringLiteralType"
+- "String"
+- "CreateProjectVC"
+- "UITextField"
+- !private "UIImage"
+- !private "PFObject"
 - !private "PFUser"
 - "AssignmentPrecedence"
-- !private "UIImageJPEGRepresentation"
-- "CastingPrecedence"
-- "UINavigationControllerDelegate"
 - "UIViewController"
+- !private "UIImagePickerControllerOriginalImage"
+- "UIButton"
 - "UIImagePickerControllerDelegate"
-- "String"
-- !private "PFObject"
-- !private "PFFile"
+- "CastingPrecedence"
+- "UIBarButtonItem"
+- "UIImagePickerController"
+- "UINavigationControllerDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "PFFile"]
 - !private ["Ps9AnyObject", "PFObject"]
@@ -174,7 +174,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "projectNameTextField"]
 - ["Ps28CustomDebugStringConvertible", "saveButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceType"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -186,7 +185,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "init"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "PFFile"]
@@ -267,7 +265,6 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -453,7 +450,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["CSo6PFFile", "init"]
 - !private ["CSo8PFObject", "current"]
 - ["CSo8PFObject", "deinit"]
@@ -852,14 +848,13 @@ depends-nominal:
 - "C7Project15CreateProjectVC"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Data"
 - "Vs10Dictionary"
 - "Ps9Equatable"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -937,6 +932,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"

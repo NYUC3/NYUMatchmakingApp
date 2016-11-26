@@ -6,48 +6,48 @@ provides-nominal:
 provides-member:
 - ["C7Project18HomeViewController", ""]
 provides-dynamic-lookup:
-- "prepare"
-- "viewDidAppear"
-- "tableView"
-- "tableView"
-- "viewDidLoad"
-- "unwindToProjectsList"
 - "projectTableView"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "viewDidAppear"
+- "unwindToProjectsList"
+- "prepare"
 depends-top-level:
-- !private "LoginVC"
-- "UITableView"
-- "UIStoryboardSegue"
-- "CastingPrecedence"
-- !private "String"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "Void"
-- "HomeViewController"
-- !private "HomeVCTableViewCell"
-- "Feed"
-- "IndexPath"
-- !private "PFQuery"
-- !private "PFFile"
-- "Bool"
-- "Int"
-- !private "Error"
-- "UnicodeScalarType"
-- !private "UIStoryboard"
-- !private "UIImage"
-- !private "PFObject"
-- !private "print"
-- "UITableViewCell"
-- !private "StringLiteralType"
-- !private "PFUser"
-- !private "!="
-- !private "BooleanLiteralType"
-- !private "ProjectViewController"
-- !private "NSError"
-- !private "Data"
-- "UITableViewDataSource"
 - !private "UINavigationController"
-- "UIViewController"
+- "AssignmentPrecedence"
+- !private "UIStoryboard"
+- !private "BooleanLiteralType"
+- !private "HomeVCTableViewCell"
+- !private "StringLiteralType"
+- !private "String"
+- !private "Data"
+- "Int"
+- "UITableViewDataSource"
 - "UITableViewDelegate"
+- !private "print"
+- !private "PFUser"
+- !private "Error"
+- !private "!="
+- !private "PFObject"
+- "HomeViewController"
+- !private "=="
+- "UIViewController"
+- !private "PFQuery"
+- "UnicodeScalarType"
+- "Feed"
+- "UITableView"
+- "CastingPrecedence"
+- !private "NSError"
+- "UIStoryboardSegue"
+- !private "LoginVC"
+- "IndexPath"
+- !private "UIImage"
+- "Bool"
+- !private "ProjectViewController"
+- !private "Void"
+- "UITableViewCell"
+- !private "PFFile"
 depends-member:
 - ["Ps9AnyObject", "Feed"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -67,6 +67,8 @@ depends-member:
 - !private ["Ps9AnyObject", "indexPathForSelectedRow"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
+- !private ["Ps9AnyObject", "lineBreakMode"]
+- !private ["Ps9AnyObject", "numberOfLines"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
 - ["Ps9AnyObject", "prepare"]
@@ -149,6 +151,8 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "descriptionLabel"]
 - !private ["PSo15CALayerDelegate", "image"]
 - !private ["PSo15CALayerDelegate", "indexPathForSelectedRow"]
+- !private ["PSo15CALayerDelegate", "lineBreakMode"]
+- !private ["PSo15CALayerDelegate", "numberOfLines"]
 - !private ["PSo15CALayerDelegate", "projectImage"]
 - !private ["PSo15CALayerDelegate", "projectName"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
@@ -181,6 +185,8 @@ depends-member:
 - !private ["Ps7CVarArg", "indexPathForSelectedRow"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
+- !private ["Ps7CVarArg", "lineBreakMode"]
+- !private ["Ps7CVarArg", "numberOfLines"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
 - ["Ps7CVarArg", "prepare"]
@@ -258,6 +264,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "indexPathForSelectedRow"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "lineBreakMode"]
+- !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
@@ -284,7 +292,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillEndDragging"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitles"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
-- !private ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -313,7 +320,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "count"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "row"]
-- !private ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - ["Ps23CustomStringConvertible", "Feed"]
 - !private ["Ps23CustomStringConvertible", "Index"]
@@ -344,6 +350,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "indexPathForSelectedRow"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- !private ["Ps23CustomStringConvertible", "lineBreakMode"]
+- !private ["Ps23CustomStringConvertible", "numberOfLines"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps23CustomStringConvertible", "prepare"]
@@ -401,6 +409,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "byWordWrapping"]
 - !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "descriptionLabel"]
@@ -414,6 +423,8 @@ depends-member:
 - !private ["Ps9Equatable", "indexPathForSelectedRow"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
+- !private ["Ps9Equatable", "lineBreakMode"]
+- !private ["Ps9Equatable", "numberOfLines"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - ["Ps9Equatable", "prepare"]
@@ -466,7 +477,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
-- !private ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -485,6 +495,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "byWordWrapping"]
 - !private ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "descriptionLabel"]
@@ -498,6 +509,8 @@ depends-member:
 - !private ["Ps8Hashable", "indexPathForSelectedRow"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
+- !private ["Ps8Hashable", "lineBreakMode"]
+- !private ["Ps8Hashable", "numberOfLines"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - ["Ps8Hashable", "prepare"]
@@ -672,6 +685,8 @@ depends-member:
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo8NSCoding", "indexPathForSelectedRow"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "lineBreakMode"]
+- !private ["PSo8NSCoding", "numberOfLines"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "prepare"]
@@ -747,6 +762,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["OSC15NSLineBreakMode", "byWordWrapping"]
+- ["OSC15NSLineBreakMode", "deinit"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "Data"]
@@ -771,7 +788,6 @@ depends-member:
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "current"]
-- !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "descriptionLabel"]
 - !private ["CSo8NSObject", "destination"]
@@ -784,6 +800,8 @@ depends-member:
 - !private ["CSo8NSObject", "indexPathForSelectedRow"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
+- !private ["CSo8NSObject", "lineBreakMode"]
+- !private ["CSo8NSObject", "numberOfLines"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "prepare"]
@@ -836,6 +854,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "indexPathForSelectedRow"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- !private ["PSo16NSObjectProtocol", "lineBreakMode"]
+- !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "prepare"]
@@ -874,7 +894,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- !private ["Sq", "some"]
 - ["CSo6PFFile", "deinit"]
 - !private ["CSo6PFFile", "getDataInBackground"]
 - !private ["CSo8PFObject", "current"]
@@ -933,6 +952,7 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "count"]
 - ["Ps25RangeReplaceableIndexable", "init"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
+- !private ["Ps16RawRepresentable", "byWordWrapping"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
@@ -968,6 +988,8 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForSelectedRow"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "lineBreakMode"]
+- !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
 - !private ["PSo29UIAccessibilityIdentification", "projectImage"]
 - !private ["PSo29UIAccessibilityIdentification", "projectName"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
@@ -976,6 +998,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "descriptionLabel"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "indexPathForSelectedRow"]
+- !private ["PSo12UIAppearance", "lineBreakMode"]
+- !private ["PSo12UIAppearance", "numberOfLines"]
 - !private ["PSo12UIAppearance", "projectImage"]
 - !private ["PSo12UIAppearance", "projectName"]
 - !private ["PSo12UIAppearance", "reloadData"]
@@ -992,6 +1016,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForSelectedRow"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "lineBreakMode"]
+- !private ["PSo21UIAppearanceContainer", "numberOfLines"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "prepare"]
@@ -1064,11 +1090,15 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZooming"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "lineBreakMode"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "numberOfLines"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
 - !private ["PSo17UICoordinateSpace", "descriptionLabel"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "indexPathForSelectedRow"]
+- !private ["PSo17UICoordinateSpace", "lineBreakMode"]
+- !private ["PSo17UICoordinateSpace", "numberOfLines"]
 - !private ["PSo17UICoordinateSpace", "projectImage"]
 - !private ["PSo17UICoordinateSpace", "projectName"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
@@ -1077,6 +1107,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "descriptionLabel"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "indexPathForSelectedRow"]
+- !private ["PSo13UIDynamicItem", "lineBreakMode"]
+- !private ["PSo13UIDynamicItem", "numberOfLines"]
 - !private ["PSo13UIDynamicItem", "projectImage"]
 - !private ["PSo13UIDynamicItem", "projectName"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
@@ -1093,6 +1125,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIFocusEnvironment", "indexPathForSelectedRow"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "lineBreakMode"]
+- !private ["PSo18UIFocusEnvironment", "numberOfLines"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "prepare"]
@@ -1131,6 +1165,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "descriptionLabel"]
 - !private ["PSo11UIFocusItem", "image"]
 - !private ["PSo11UIFocusItem", "indexPathForSelectedRow"]
+- !private ["PSo11UIFocusItem", "lineBreakMode"]
+- !private ["PSo11UIFocusItem", "numberOfLines"]
 - !private ["PSo11UIFocusItem", "projectImage"]
 - !private ["PSo11UIFocusItem", "projectName"]
 - !private ["PSo11UIFocusItem", "reloadData"]
@@ -1141,6 +1177,8 @@ depends-member:
 - !private ["CSo7UIImage", "deinit"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "lineBreakMode"]
+- !private ["CSo7UILabel", "numberOfLines"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "topViewController"]
@@ -1173,6 +1211,8 @@ depends-member:
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["CSo11UIResponder", "indexPathForSelectedRow"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "lineBreakMode"]
+- !private ["CSo11UIResponder", "numberOfLines"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "prepare"]
@@ -1218,6 +1258,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo30UIResponderStandardEditActions", "indexPathForSelectedRow"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "lineBreakMode"]
+- !private ["PSo30UIResponderStandardEditActions", "numberOfLines"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
@@ -1412,6 +1454,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UITraitEnvironment", "indexPathForSelectedRow"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "lineBreakMode"]
+- !private ["PSo18UITraitEnvironment", "numberOfLines"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "prepare"]
@@ -1450,6 +1494,8 @@ depends-member:
 - !private ["CSo6UIView", "descriptionLabel"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "indexPathForSelectedRow"]
+- !private ["CSo6UIView", "lineBreakMode"]
+- !private ["CSo6UIView", "numberOfLines"]
 - !private ["CSo6UIView", "projectImage"]
 - !private ["CSo6UIView", "projectName"]
 - !private ["CSo6UIView", "reloadData"]
@@ -1529,6 +1575,8 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "descriptionLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "indexPathForSelectedRow"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "lineBreakMode"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "numberOfLines"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "projectImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "projectName"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
@@ -1561,6 +1609,7 @@ depends-member:
 - !private ["Ps9_Hashable", "UIStoryboard"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "byWordWrapping"]
 - !private ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "descriptionLabel"]
@@ -1574,6 +1623,8 @@ depends-member:
 - !private ["Ps9_Hashable", "indexPathForSelectedRow"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
+- !private ["Ps9_Hashable", "lineBreakMode"]
+- !private ["Ps9_Hashable", "numberOfLines"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
 - ["Ps9_Hashable", "prepare"]
@@ -1667,7 +1718,6 @@ depends-nominal:
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -1699,6 +1749,7 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - !private "CSo7NSError"
 - "PSo26NSExtensionRequestHandling"
+- "OSC15NSLineBreakMode"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -1716,6 +1767,7 @@ depends-nominal:
 - !private "Vs17RandomAccessSlice"
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - "Ps8Sequence"
 - !private "Ps13SignedInteger"
@@ -1788,6 +1840,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"
