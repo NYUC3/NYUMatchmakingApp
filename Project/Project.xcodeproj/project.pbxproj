@@ -49,6 +49,7 @@
 		C26DDFA01D938A8500429DE4 /* MyFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */; };
 		C26DDFA21D938ADC00429DE4 /* CreateNewActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */; };
 		C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */; };
+		C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedVC.swift; sourceTree = "<group>"; };
 		C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewActivityVC.swift; sourceTree = "<group>"; };
 		C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedCell.swift; sourceTree = "<group>"; };
+		C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,16 +195,12 @@
 		C26DDF411D93499300429DE4 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				C224B9531DB930AA007265E7 /* feed.png */,
-				C224B9511DB9302E007265E7 /* grid.png */,
-				C23BBF361DA6C46200202169 /* download.jpeg */,
-				C20567A61D9463E30078B3BE /* place.png */,
+				C26DDF461D93499300429DE4 /* Main.storyboard */,
+				C26DDF421D93499300429DE4 /* AppDelegate.swift */,
+				C2EF21411DE96622007FE43D /* temp files */,
 				C26DDF9C1D935E0800429DE4 /* View */,
 				C26DDF9B1D935DEF00429DE4 /* Model */,
-				C26DDF701D934A1800429DE4 /* Framework */,
-				C26DDF421D93499300429DE4 /* AppDelegate.swift */,
-				C23A29AF1DB8403800275843 /* SettingsViewController.swift */,
-				C26DDF461D93499300429DE4 /* Main.storyboard */,
+				C26DDF701D934A1800429DE4 /* Frameworks */,
 				C26DDF491D93499300429DE4 /* Assets.xcassets */,
 				C26DDF4B1D93499300429DE4 /* LaunchScreen.storyboard */,
 				C26DDF4E1D93499300429DE4 /* Info.plist */,
@@ -228,13 +226,13 @@
 			path = ProjectUITests;
 			sourceTree = "<group>";
 		};
-		C26DDF701D934A1800429DE4 /* Framework */ = {
+		C26DDF701D934A1800429DE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C26DDF711D934A2C00429DE4 /* Bolts.framework */,
 				C26DDF721D934A2C00429DE4 /* Parse.framework */,
 			);
-			name = Framework;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C26DDF751D934A3E00429DE4 /* Frameworks */ = {
@@ -266,6 +264,8 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */,
+				C23A29AF1DB8403800275843 /* SettingsViewController.swift */,
 				C224B9551DB9328B007265E7 /* ProjectViewController.swift */,
 				C23BBF341DA6B21100202169 /* SignupVC.swift */,
 				C23BBF321DA6AE7800202169 /* LoginVC.swift */,
@@ -281,6 +281,17 @@
 				C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C2EF21411DE96622007FE43D /* temp files */ = {
+			isa = PBXGroup;
+			children = (
+				C224B9531DB930AA007265E7 /* feed.png */,
+				C224B9511DB9302E007265E7 /* grid.png */,
+				C23BBF361DA6C46200202169 /* download.jpeg */,
+				C20567A61D9463E30078B3BE /* place.png */,
+			);
+			name = "temp files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +451,7 @@
 				C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */,
 				C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */,
 				C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */,
+				C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,40 +17,9 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var daTableView: UITableView! // This is a bad name
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let user = PFUser.current()?.username
-        print("USER")
-        print(user)
-        let query = PFQuery(className:"Follow")
-        //query.whereKey("username", equalTo: user!)
-        query.findObjectsInBackground {
-            (objects: [PFObject]?, error: Error?) -> Void in
-            
-            if error == nil {
-                // The find succeeded.
-                print("Successfully retrieved \(objects!.count) scores.")
-                // Do something with the found objects
-                if let objects = objects {
-                    for object in objects {
-                        print(object["project"])
-                        self.projectsFollowing.append(object["project"] as! String)
-                        self.queryActivities(name: object["project"] as! String)
-                        
-                        
-                    }
-                    
-                }
-            } else {
-                // Log details of the failure
-                print("Error: \(error!)")
-            }
-        }
-        
-        
-        
-        
+        feedList = []
+        projectsFollowing = []
     }
-    
     
     
     func queryActivities( name : String ){
@@ -109,7 +78,34 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     override func viewDidAppear(_ animated: Bool) {
+        
         self.daTableView.reloadData()
+        
+        let user = PFUser.current()?.username
+        let query = PFQuery(className:"Follow")
+        query.whereKey("username", equalTo: user!)
+        query.findObjectsInBackground {
+            (objects: [PFObject]?, error: Error?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+                if let objects = objects {
+                    for object in objects {
+                        print(object["project"])
+                        self.projectsFollowing.append(object["project"] as! String)
+                        self.queryActivities(name: object["project"] as! String)
+                        
+                        
+                    }
+                    self.daTableView.reloadData()
+                }
+            } else {
+                // Log details of the failure
+                print("Error: \(error!)")
+            }
+        }
 
         
     }

@@ -198,6 +198,15 @@ SWIFT_CLASS("_TtC7Project15CreateProjectVC")
 @end
 
 
+SWIFT_CLASS("_TtC7Project14CustomTabbarVC")
+@interface CustomTabbarVC : UITabBarController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7Project6FeedVC")
 @interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull projectsFollowing;
@@ -303,10 +312,13 @@ SWIFT_CLASS("_TtC7Project21ProjectViewController")
 
 
 SWIFT_CLASS("_TtC7Project14ProjectsListVC")
-@interface ProjectsListVC : UIViewController
+@interface ProjectsListVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified projectsTable;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (IBAction)unwindToProjectsWithSegue:(UIStoryboardSegue * _Nonnull)segue;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

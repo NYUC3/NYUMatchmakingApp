@@ -9,24 +9,66 @@
 import UIKit
 import Parse
 
-class ProjectsListVC: UIViewController {
+class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var projectsTable: UITableView!
 
     var projects = [Project]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.emailLabel.text = PFUser.current()?.email
+        
+        
+        let query = PFQuery(className:"Projects")
+        query.whereKey("username", equalTo:PFUser.current()?.email)
+        query.findObjectsInBackground {
+            (objects: [PFObject]?, error: Error?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+                if let objects = objects {
+                    for object in objects {
+                        
+                        if(object["image"] != nil){
+                            let theImg = object["image"] as! PFFile
+                            if(theImg != nil){
+                                let project = Project(name: object["Name"] as! String, desc: object["Description"] as! String, image: theImg)
+                                self.projects.append(project)
+                            }
+                            
+                        }
+                    }
+                   self.projectsTable.reloadData()
+                }
+            }
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
     @IBAction func unwindToProjects(segue: UIStoryboardSegue) {
         // some code to execute
     } // unwindToPrevious
+    
+    // Tableview delegate functions
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    
+        return projects.count
+        
+    }
+    
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "select-project", for: indexPath)
+        cell.textLabel?.text = projects[indexPath.row].name
+        return cell
+    }
+
 
 
 }
