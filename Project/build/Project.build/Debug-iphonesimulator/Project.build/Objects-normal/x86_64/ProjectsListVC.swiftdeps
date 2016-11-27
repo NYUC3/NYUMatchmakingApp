@@ -6,51 +6,57 @@ provides-nominal:
 provides-member:
 - ["C7Project14ProjectsListVC", ""]
 provides-dynamic-lookup:
-- "unwindToProjects"
-- "viewDidLoad"
 - "projectsTable"
+- "prepare"
+- "tableView"
+- "tableView"
+- "viewDidLoad"
+- "unwindToProjects"
 - "emailLabel"
-- "tableView"
-- "tableView"
 depends-top-level:
-- "UILabel"
-- "Project"
-- !private "PFFile"
+- "UIStoryboardSegue"
 - !private "String"
-- !private "print"
-- !private "PFObject"
-- "ProjectsListVC"
-- !private "StringLiteralType"
+- "UITableViewDataSource"
+- "UITableViewCell"
+- "UITableViewDelegate"
+- "Project"
 - !private "PFUser"
-- "Int"
-- "IndexPath"
+- !private "StringLiteralType"
+- !private "print"
+- !private "Error"
+- "UITableView"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "Error"
-- "UITableViewDataSource"
-- !private "CastingPrecedence"
-- "UITableViewDelegate"
-- "UITableView"
+- "CastingPrecedence"
+- !private "UINavigationController"
 - !private "PFQuery"
-- "UIStoryboardSegue"
 - !private "Void"
+- "Int"
+- "ProjectsListVC"
+- !private "PFObject"
+- !private "PFFile"
 - !private "!="
+- "IndexPath"
+- !private "ProjectViewController"
+- "UILabel"
 - "UIViewController"
-- "UITableViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "PFQuery"]
 - !private ["Ps9AnyObject", "PFUser"]
 - ["Ps9AnyObject", "Project"]
 - !private ["Ps9AnyObject", "current"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
+- !private ["Ps9AnyObject", "destination"]
 - !private ["Ps9AnyObject", "email"]
 - ["Ps9AnyObject", "emailLabel"]
 - !private ["Ps9AnyObject", "findObjectsInBackground"]
+- !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedView"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "projects"]
 - ["Ps9AnyObject", "projectsTable"]
@@ -73,6 +79,7 @@ depends-member:
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textLabel"]
+- !private ["Ps9AnyObject", "topViewController"]
 - ["Ps9AnyObject", "unwindToProjects"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZooming"]
@@ -121,7 +128,7 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
+- ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
 - !private ["PSo15CALayerDelegate", "text"]
@@ -141,14 +148,17 @@ depends-member:
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "current"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "destination"]
 - !private ["Ps7CVarArg", "email"]
 - ["Ps7CVarArg", "emailLabel"]
 - !private ["Ps7CVarArg", "findObjectsInBackground"]
+- !private ["Ps7CVarArg", "identifier"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedView"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "projects"]
 - ["Ps7CVarArg", "projectsTable"]
@@ -171,6 +181,7 @@ depends-member:
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "textLabel"]
+- !private ["Ps7CVarArg", "topViewController"]
 - ["Ps7CVarArg", "unwindToProjects"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewForZooming"]
@@ -206,14 +217,17 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- !private ["Ps28CustomDebugStringConvertible", "destination"]
 - !private ["Ps28CustomDebugStringConvertible", "email"]
 - ["Ps28CustomDebugStringConvertible", "emailLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackground"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "projects"]
 - ["Ps28CustomDebugStringConvertible", "projectsTable"]
@@ -237,6 +251,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "topViewController"]
 - ["Ps28CustomDebugStringConvertible", "unwindToProjects"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
@@ -278,14 +293,17 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- !private ["Ps23CustomStringConvertible", "destination"]
 - !private ["Ps23CustomStringConvertible", "email"]
 - ["Ps23CustomStringConvertible", "emailLabel"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackground"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "projects"]
 - ["Ps23CustomStringConvertible", "projectsTable"]
@@ -309,6 +327,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textLabel"]
+- !private ["Ps23CustomStringConvertible", "topViewController"]
 - ["Ps23CustomStringConvertible", "unwindToProjects"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZooming"]
@@ -335,14 +354,17 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
+- !private ["Ps9Equatable", "destination"]
 - !private ["Ps9Equatable", "email"]
 - ["Ps9Equatable", "emailLabel"]
 - !private ["Ps9Equatable", "findObjectsInBackground"]
+- !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "projects"]
 - ["Ps9Equatable", "projectsTable"]
@@ -366,6 +388,7 @@ depends-member:
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textLabel"]
+- !private ["Ps9Equatable", "topViewController"]
 - ["Ps9Equatable", "unwindToProjects"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZooming"]
@@ -401,14 +424,17 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
+- !private ["Ps8Hashable", "destination"]
 - !private ["Ps8Hashable", "email"]
 - ["Ps8Hashable", "emailLabel"]
 - !private ["Ps8Hashable", "findObjectsInBackground"]
+- !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "projects"]
 - ["Ps8Hashable", "projectsTable"]
@@ -432,6 +458,7 @@ depends-member:
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textLabel"]
+- !private ["Ps8Hashable", "topViewController"]
 - ["Ps8Hashable", "unwindToProjects"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZooming"]
@@ -516,6 +543,7 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "projects"]
 - ["PSo8NSCoding", "projectsTable"]
@@ -537,6 +565,7 @@ depends-member:
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textLabel"]
+- !private ["PSo8NSCoding", "topViewController"]
 - ["PSo8NSCoding", "unwindToProjects"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZooming"]
@@ -554,6 +583,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "projects"]
 - ["PSo26NSExtensionRequestHandling", "projectsTable"]
@@ -572,6 +602,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitles"]
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- !private ["PSo26NSExtensionRequestHandling", "topViewController"]
 - ["PSo26NSExtensionRequestHandling", "unwindToProjects"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
@@ -586,22 +617,27 @@ depends-member:
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
 - ["CSo8NSObject", "Project"]
+- !private ["CSo8NSObject", "ProjectViewController"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UINavigationController"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "current"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
+- !private ["CSo8NSObject", "destination"]
 - !private ["CSo8NSObject", "email"]
 - ["CSo8NSObject", "emailLabel"]
 - !private ["CSo8NSObject", "findObjectsInBackground"]
+- !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "projects"]
 - ["CSo8NSObject", "projectsTable"]
@@ -624,6 +660,7 @@ depends-member:
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textLabel"]
+- !private ["CSo8NSObject", "topViewController"]
 - ["CSo8NSObject", "unwindToProjects"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZooming"]
@@ -634,14 +671,17 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Project"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- !private ["PSo16NSObjectProtocol", "destination"]
 - !private ["PSo16NSObjectProtocol", "email"]
 - ["PSo16NSObjectProtocol", "emailLabel"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackground"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedView"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "projects"]
 - ["PSo16NSObjectProtocol", "projectsTable"]
@@ -664,6 +704,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textLabel"]
+- !private ["PSo16NSObjectProtocol", "topViewController"]
 - ["PSo16NSObjectProtocol", "unwindToProjects"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZooming"]
@@ -690,6 +731,7 @@ depends-member:
 - !private ["V7Project7Project", "deinit"]
 - !private ["V7Project7Project", "init"]
 - !private ["V7Project7Project", "name"]
+- ["C7Project21ProjectViewController", "deinit"]
 - !private ["C7Project14ProjectsListVC", "Error"]
 - ["C7Project14ProjectsListVC", "IndexPath"]
 - ["C7Project14ProjectsListVC", "Int"]
@@ -698,8 +740,10 @@ depends-member:
 - !private ["C7Project14ProjectsListVC", "PFQuery"]
 - !private ["C7Project14ProjectsListVC", "PFUser"]
 - ["C7Project14ProjectsListVC", "Project"]
+- !private ["C7Project14ProjectsListVC", "ProjectViewController"]
 - !private ["C7Project14ProjectsListVC", "String"]
 - ["C7Project14ProjectsListVC", "UILabel"]
+- !private ["C7Project14ProjectsListVC", "UINavigationController"]
 - ["C7Project14ProjectsListVC", "UIStoryboardSegue"]
 - ["C7Project14ProjectsListVC", "UITableView"]
 - ["C7Project14ProjectsListVC", "UITableViewCell"]
@@ -711,6 +755,7 @@ depends-member:
 - ["C7Project14ProjectsListVC", "init"]
 - ["C7Project14ProjectsListVC", "numberOfSections"]
 - ["C7Project14ProjectsListVC", "numberOfSectionsInTableView"]
+- ["C7Project14ProjectsListVC", "prepare"]
 - !private ["C7Project14ProjectsListVC", "print"]
 - ["C7Project14ProjectsListVC", "projects"]
 - ["C7Project14ProjectsListVC", "projectsTable"]
@@ -827,6 +872,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "projects"]
 - ["PSo21UIAppearanceContainer", "projectsTable"]
@@ -848,6 +894,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
+- !private ["PSo21UIAppearanceContainer", "topViewController"]
 - ["PSo21UIAppearanceContainer", "unwindToProjects"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
@@ -862,6 +909,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "projects"]
 - ["PSo18UIContentContainer", "projectsTable"]
@@ -880,6 +928,7 @@ depends-member:
 - ["PSo18UIContentContainer", "sectionIndexTitles"]
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "tableView"]
+- !private ["PSo18UIContentContainer", "topViewController"]
 - ["PSo18UIContentContainer", "unwindToProjects"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
@@ -904,6 +953,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "projects"]
 - ["PSo18UIFocusEnvironment", "projectsTable"]
@@ -925,6 +975,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
+- !private ["PSo18UIFocusEnvironment", "topViewController"]
 - ["PSo18UIFocusEnvironment", "unwindToProjects"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
@@ -937,6 +988,8 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "textLabel"]
 - ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "text"]
+- ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "topViewController"]
 - !private ["CSo11UIResponder", "Error"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
@@ -945,8 +998,10 @@ depends-member:
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
 - ["CSo11UIResponder", "Project"]
+- !private ["CSo11UIResponder", "ProjectViewController"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UINavigationController"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
@@ -958,6 +1013,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "projects"]
 - ["CSo11UIResponder", "projectsTable"]
@@ -979,6 +1035,7 @@ depends-member:
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textLabel"]
+- !private ["CSo11UIResponder", "topViewController"]
 - ["CSo11UIResponder", "unwindToProjects"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
@@ -993,6 +1050,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "projects"]
 - ["PSo30UIResponderStandardEditActions", "projectsTable"]
@@ -1014,6 +1072,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "topViewController"]
 - ["PSo30UIResponderStandardEditActions", "unwindToProjects"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
@@ -1059,6 +1118,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "projects"]
 - ["PSo16UIStateRestoring", "projectsTable"]
@@ -1077,11 +1137,15 @@ depends-member:
 - ["PSo16UIStateRestoring", "sectionIndexTitles"]
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "tableView"]
+- !private ["PSo16UIStateRestoring", "topViewController"]
 - ["PSo16UIStateRestoring", "unwindToProjects"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo17UIStoryboardSegue", "deinit"]
+- !private ["CSo17UIStoryboardSegue", "destination"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
 - ["CSo11UITableView", "deinit"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
 - !private ["CSo11UITableView", "reloadData"]
@@ -1155,6 +1219,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "projects"]
 - ["PSo18UITraitEnvironment", "projectsTable"]
@@ -1176,6 +1241,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
+- !private ["PSo18UITraitEnvironment", "topViewController"]
 - ["PSo18UITraitEnvironment", "unwindToProjects"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
@@ -1193,8 +1259,10 @@ depends-member:
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
 - ["CSo16UIViewController", "Project"]
+- !private ["CSo16UIViewController", "ProjectViewController"]
 - !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "UINavigationController"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
@@ -1206,6 +1274,7 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "projects"]
 - ["CSo16UIViewController", "projectsTable"]
@@ -1224,6 +1293,7 @@ depends-member:
 - ["CSo16UIViewController", "sectionIndexTitles"]
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "tableView"]
+- !private ["CSo16UIViewController", "topViewController"]
 - ["CSo16UIViewController", "unwindToProjects"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
@@ -1275,14 +1345,17 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
+- !private ["Ps9_Hashable", "destination"]
 - !private ["Ps9_Hashable", "email"]
 - ["Ps9_Hashable", "emailLabel"]
 - !private ["Ps9_Hashable", "findObjectsInBackground"]
+- !private ["Ps9_Hashable", "identifier"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "projects"]
 - ["Ps9_Hashable", "projectsTable"]
@@ -1306,6 +1379,7 @@ depends-member:
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "textLabel"]
+- !private ["Ps9_Hashable", "topViewController"]
 - ["Ps9_Hashable", "unwindToProjects"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewForZooming"]
@@ -1349,7 +1423,7 @@ depends-nominal:
 - "Ps22BidirectionalIndexable"
 - !private "Vs18BidirectionalSlice"
 - !private "Ps17BitwiseOperations"
-- !private "Sb"
+- "Sb"
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
 - !private "Vs9Character"
@@ -1406,6 +1480,7 @@ depends-nominal:
 - !private "PSo13PFSubclassing"
 - "CSo6PFUser"
 - !private "V7Project7Project"
+- "C7Project21ProjectViewController"
 - "C7Project14ProjectsListVC"
 - "Ps22RandomAccessCollection"
 - "Ps21RandomAccessIndexable"
@@ -1432,11 +1507,13 @@ depends-nominal:
 - !private "PSo11UIFocusItem"
 - !private "PSo27UIGestureRecognizerDelegate"
 - "CSo7UILabel"
+- "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
+- "CSo17UIStoryboardSegue"
 - "CSo11UITableView"
 - "CSo15UITableViewCell"
 - "PSo21UITableViewDataSource"
@@ -1539,4 +1616,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "6cef6e1db538bdb26ad66269cc596d08"
+interface-hash: "aa7aa10a453097dc82e82c5861134811"

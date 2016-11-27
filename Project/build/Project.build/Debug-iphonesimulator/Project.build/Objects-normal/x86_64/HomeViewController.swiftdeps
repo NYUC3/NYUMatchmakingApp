@@ -6,48 +6,48 @@ provides-nominal:
 provides-member:
 - ["C7Project18HomeViewController", ""]
 provides-dynamic-lookup:
-- "projectTableView"
-- "viewDidLoad"
 - "tableView"
 - "tableView"
-- "viewDidAppear"
-- "unwindToProjectsList"
 - "prepare"
+- "viewDidLoad"
+- "viewDidAppear"
+- "projectTableView"
+- "unwindToProjectsList"
 depends-top-level:
-- !private "UINavigationController"
-- "AssignmentPrecedence"
-- !private "UIStoryboard"
-- !private "BooleanLiteralType"
-- !private "HomeVCTableViewCell"
-- !private "StringLiteralType"
-- !private "String"
-- !private "Data"
-- "Int"
 - "UITableViewDataSource"
 - "UITableViewDelegate"
+- "HomeViewController"
+- !private "BooleanLiteralType"
+- "UIStoryboardSegue"
+- "UITableViewCell"
+- !private "ProjectViewController"
+- !private "UINavigationController"
+- "UITableView"
+- "Int"
+- !private "PFQuery"
+- !private "!="
+- !private "String"
+- "UnicodeScalarType"
+- !private "HomeVCTableViewCell"
+- !private "StringLiteralType"
+- !private "NSError"
+- !private "PFFile"
+- "IndexPath"
+- "CastingPrecedence"
+- "Bool"
+- !private "PFObject"
 - !private "print"
 - !private "PFUser"
-- !private "Error"
-- !private "!="
-- !private "PFObject"
-- "HomeViewController"
 - !private "=="
-- "UIViewController"
-- !private "PFQuery"
-- "UnicodeScalarType"
-- "Feed"
-- "UITableView"
-- "CastingPrecedence"
-- !private "NSError"
-- "UIStoryboardSegue"
-- !private "LoginVC"
-- "IndexPath"
-- !private "UIImage"
-- "Bool"
-- !private "ProjectViewController"
+- "AssignmentPrecedence"
+- !private "UIStoryboard"
+- !private "Error"
 - !private "Void"
-- "UITableViewCell"
-- !private "PFFile"
+- !private "LoginVC"
+- "UIViewController"
+- !private "Data"
+- !private "UIImage"
+- "Feed"
 depends-member:
 - ["Ps9AnyObject", "Feed"]
 - !private ["Ps9AnyObject", "PFQuery"]
@@ -1052,6 +1052,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo26UICollectionViewDataSource", "projectOject"]
+- !private ["PSo24UICollectionViewDelegate", "projectOject"]
 - ["PSo18UIContentContainer", "Feed"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
 - !private ["PSo18UIContentContainer", "PFUser"]
@@ -1308,6 +1310,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "present"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
+- !private ["PSo20UIScrollViewDelegate", "projectOject"]
 - !private ["PSo20UIScrollViewDelegate", "projectTableView"]
 - !private ["PSo20UIScrollViewDelegate", "projectsList"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1780,6 +1783,8 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "PSo26UICollectionViewDataSource"
+- !private "PSo24UICollectionViewDelegate"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "PSo17UICoordinateSpace"

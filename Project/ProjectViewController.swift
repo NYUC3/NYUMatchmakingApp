@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class ProjectViewController: UIViewController {
+class ProjectViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
     
@@ -60,6 +60,20 @@ class ProjectViewController: UIViewController {
         
         
     }
+    
+    // UICollectionview datasource
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return 5
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection-cell", for: indexPath)
+        return cell
+    }
+
 
 
     @IBAction func followButtonTapped(_ sender: UIButton) {

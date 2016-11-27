@@ -68,6 +68,16 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = projects[indexPath.row].name
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "view-project"){
+            
+            let destinationNavigationController = segue.destination as! UINavigationController
+            let targetController = destinationNavigationController.topViewController as! ProjectViewController
+            //targetController.projectOject = projects[(projectsTable.indexPathForSelectedRow?.row)!] // create a unified object model
+            
+        }
+    }
 
 
 

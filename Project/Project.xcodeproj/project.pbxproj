@@ -13,6 +13,8 @@
 		C224B9521DB9302E007265E7 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = C224B9511DB9302E007265E7 /* grid.png */; };
 		C224B9541DB930AA007265E7 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = C224B9531DB930AA007265E7 /* feed.png */; };
 		C224B9561DB9328B007265E7 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224B9551DB9328B007265E7 /* ProjectViewController.swift */; };
+		C22C590E1DEA5E3A00848BDE /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = C22C590D1DEA5E3A00848BDE /* title.png */; };
+		C22C59101DEA5F5400848BDE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C22C590F1DEA5F5400848BDE /* background.png */; };
 		C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A29AF1DB8403800275843 /* SettingsViewController.swift */; };
 		C23BBF331DA6AE7800202169 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF321DA6AE7800202169 /* LoginVC.swift */; };
 		C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF341DA6B21100202169 /* SignupVC.swift */; };
@@ -91,6 +93,8 @@
 		C224B9511DB9302E007265E7 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
 		C224B9531DB930AA007265E7 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
 		C224B9551DB9328B007265E7 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = SOURCE_ROOT; };
+		C22C590D1DEA5E3A00848BDE /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		C22C590F1DEA5F5400848BDE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		C23A29AF1DB8403800275843 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C23BBF321DA6AE7800202169 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C23BBF341DA6B21100202169 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
@@ -286,6 +290,8 @@
 		C2EF21411DE96622007FE43D /* temp files */ = {
 			isa = PBXGroup;
 			children = (
+				C22C590D1DEA5E3A00848BDE /* title.png */,
+				C22C590F1DEA5F5400848BDE /* background.png */,
 				C224B9531DB930AA007265E7 /* feed.png */,
 				C224B9511DB9302E007265E7 /* grid.png */,
 				C23BBF361DA6C46200202169 /* download.jpeg */,
@@ -404,7 +410,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26DDF4D1D93499300429DE4 /* LaunchScreen.storyboard in Resources */,
+				C22C590E1DEA5E3A00848BDE /* title.png in Resources */,
 				C224B9541DB930AA007265E7 /* feed.png in Resources */,
+				C22C59101DEA5F5400848BDE /* background.png in Resources */,
 				C20567A71D9463E30078B3BE /* place.png in Resources */,
 				C23BBF371DA6C46200202169 /* download.jpeg in Resources */,
 				C26DDF4A1D93499300429DE4 /* Assets.xcassets in Resources */,
