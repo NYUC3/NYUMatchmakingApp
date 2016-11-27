@@ -217,6 +217,7 @@ SWIFT_CLASS("_TtC7Project6FeedVC")
 - (void)viewDidAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)buttonClickedWithSender:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -229,6 +230,7 @@ SWIFT_CLASS("_TtC7Project19FeedVCTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified feedTitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified feedDescriptionLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeButton;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;

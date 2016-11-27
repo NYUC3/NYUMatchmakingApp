@@ -15,10 +15,10 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var projectsFollowing = [String]()
     
     @IBOutlet weak var daTableView: UITableView! // This is a bad name
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        feedList = []
-        projectsFollowing = []
+
     }
     
     
@@ -79,10 +79,13 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         
+        feedList = []
+        projectsFollowing = []
+        
         self.daTableView.reloadData()
         
         let user = PFUser.current()?.username
-        let query = PFQuery(className:"Follow")
+        let query = PFQuery(className: "Follow")
         query.whereKey("username", equalTo: user!)
         query.findObjectsInBackground {
             (objects: [PFObject]?, error: Error?) -> Void in
@@ -96,8 +99,6 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                         print(object["project"])
                         self.projectsFollowing.append(object["project"] as! String)
                         self.queryActivities(name: object["project"] as! String)
-                        
-                        
                     }
                     self.daTableView.reloadData()
                 }
@@ -121,7 +122,9 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.projectNameLabel.text = feedList[indexPath.row].name
         cell.feedTitleLabel.text  = feedList[indexPath.row].title
         cell.feedDescriptionLabel.text = feedList[indexPath.row].description
+        cell.likeButton.tag = indexPath.row
         
+        cell.likeButton.addTarget(self, action: #selector(FeedVC.buttonClicked(sender:)), for: UIControlEvents.touchUpInside)
         
         cell.feedDescriptionLabel.lineBreakMode = .byWordWrapping
         cell.feedDescriptionLabel.numberOfLines = 0
@@ -135,6 +138,11 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func buttonClicked(sender:UIButton) {
+        
+        let buttonRow = sender.tag
+        print(buttonRow)
+    }
 
 
 }

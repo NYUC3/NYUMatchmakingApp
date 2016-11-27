@@ -6,24 +6,27 @@ provides-nominal:
 provides-member:
 - ["C7Project19FeedVCTableViewCell", ""]
 provides-dynamic-lookup:
+- "feedTitleLabel"
+- "feedImage"
 - "feedDescriptionLabel"
 - "awakeFromNib"
-- "feedImage"
 - "projectNameLabel"
-- "feedTitleLabel"
+- "likeButton"
 - "setSelected"
 depends-top-level:
-- "UIImageView"
-- "Bool"
-- "FeedVCTableViewCell"
-- "UITableViewCell"
 - "UILabel"
+- "FeedVCTableViewCell"
+- "UIButton"
+- "Bool"
+- "UIImageView"
+- "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "feedDescriptionLabel"]
 - ["Ps9AnyObject", "feedImage"]
 - ["Ps9AnyObject", "feedTitleLabel"]
 - !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "likeButton"]
 - ["Ps9AnyObject", "projectNameLabel"]
 - ["Ps9AnyObject", "setSelected"]
 - ["Ps9AnyObject", ""]
@@ -33,6 +36,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "feedImage"]
 - ["PSo15CALayerDelegate", "feedTitleLabel"]
 - !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "likeButton"]
 - ["PSo15CALayerDelegate", "projectNameLabel"]
 - ["PSo15CALayerDelegate", "setSelected"]
 - ["PSo15CALayerDelegate", ""]
@@ -41,6 +45,7 @@ depends-member:
 - ["Ps7CVarArg", "feedImage"]
 - ["Ps7CVarArg", "feedTitleLabel"]
 - !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "likeButton"]
 - ["Ps7CVarArg", "projectNameLabel"]
 - ["Ps7CVarArg", "setSelected"]
 - ["Ps7CVarArg", ""]
@@ -49,6 +54,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "feedImage"]
 - ["Ps28CustomDebugStringConvertible", "feedTitleLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "likeButton"]
 - ["Ps28CustomDebugStringConvertible", "projectNameLabel"]
 - ["Ps28CustomDebugStringConvertible", "setSelected"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -57,6 +63,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "feedImage"]
 - ["Ps23CustomStringConvertible", "feedTitleLabel"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "likeButton"]
 - ["Ps23CustomStringConvertible", "projectNameLabel"]
 - ["Ps23CustomStringConvertible", "setSelected"]
 - ["Ps23CustomStringConvertible", ""]
@@ -65,10 +72,12 @@ depends-member:
 - ["Ps9Equatable", "feedImage"]
 - ["Ps9Equatable", "feedTitleLabel"]
 - !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "likeButton"]
 - ["Ps9Equatable", "projectNameLabel"]
 - ["Ps9Equatable", "setSelected"]
 - ["Ps9Equatable", ""]
 - ["C7Project19FeedVCTableViewCell", "Bool"]
+- ["C7Project19FeedVCTableViewCell", "UIButton"]
 - ["C7Project19FeedVCTableViewCell", "UIImageView"]
 - ["C7Project19FeedVCTableViewCell", "UILabel"]
 - ["C7Project19FeedVCTableViewCell", "awakeFromNib"]
@@ -77,6 +86,7 @@ depends-member:
 - ["C7Project19FeedVCTableViewCell", "feedImage"]
 - ["C7Project19FeedVCTableViewCell", "feedTitleLabel"]
 - ["C7Project19FeedVCTableViewCell", "init"]
+- ["C7Project19FeedVCTableViewCell", "likeButton"]
 - ["C7Project19FeedVCTableViewCell", "projectNameLabel"]
 - ["C7Project19FeedVCTableViewCell", "setSelected"]
 - ["Ps8Hashable", "awakeFromNib"]
@@ -84,6 +94,7 @@ depends-member:
 - ["Ps8Hashable", "feedImage"]
 - ["Ps8Hashable", "feedTitleLabel"]
 - !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "likeButton"]
 - ["Ps8Hashable", "projectNameLabel"]
 - ["Ps8Hashable", "setSelected"]
 - ["Ps8Hashable", ""]
@@ -94,10 +105,12 @@ depends-member:
 - ["PSo8NSCoding", "feedImage"]
 - ["PSo8NSCoding", "feedTitleLabel"]
 - !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "likeButton"]
 - ["PSo8NSCoding", "projectNameLabel"]
 - ["PSo8NSCoding", "setSelected"]
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "awakeFromNib"]
@@ -105,6 +118,7 @@ depends-member:
 - ["CSo8NSObject", "feedImage"]
 - ["CSo8NSObject", "feedTitleLabel"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "likeButton"]
 - ["CSo8NSObject", "projectNameLabel"]
 - ["CSo8NSObject", "setSelected"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
@@ -112,6 +126,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "feedImage"]
 - ["PSo16NSObjectProtocol", "feedTitleLabel"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "likeButton"]
 - ["PSo16NSObjectProtocol", "projectNameLabel"]
 - ["PSo16NSObjectProtocol", "setSelected"]
 - ["PSo16NSObjectProtocol", ""]
@@ -121,6 +136,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "feedImage"]
 - ["PSo29UIAccessibilityIdentification", "feedTitleLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "likeButton"]
 - ["PSo29UIAccessibilityIdentification", "projectNameLabel"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
 - ["PSo29UIAccessibilityIdentification", ""]
@@ -129,6 +145,7 @@ depends-member:
 - ["PSo12UIAppearance", "feedImage"]
 - ["PSo12UIAppearance", "feedTitleLabel"]
 - !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "likeButton"]
 - ["PSo12UIAppearance", "projectNameLabel"]
 - ["PSo12UIAppearance", "setSelected"]
 - ["PSo12UIAppearance", ""]
@@ -137,6 +154,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "feedImage"]
 - ["PSo21UIAppearanceContainer", "feedTitleLabel"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "likeButton"]
 - ["PSo21UIAppearanceContainer", "projectNameLabel"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -145,6 +163,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "feedImage"]
 - ["PSo17UICoordinateSpace", "feedTitleLabel"]
 - !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "likeButton"]
 - ["PSo17UICoordinateSpace", "projectNameLabel"]
 - ["PSo17UICoordinateSpace", "setSelected"]
 - ["PSo17UICoordinateSpace", ""]
@@ -153,6 +172,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "feedImage"]
 - ["PSo13UIDynamicItem", "feedTitleLabel"]
 - !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "likeButton"]
 - ["PSo13UIDynamicItem", "projectNameLabel"]
 - ["PSo13UIDynamicItem", "setSelected"]
 - ["PSo13UIDynamicItem", ""]
@@ -161,6 +181,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "feedImage"]
 - ["PSo18UIFocusEnvironment", "feedTitleLabel"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "likeButton"]
 - ["PSo18UIFocusEnvironment", "projectNameLabel"]
 - ["PSo18UIFocusEnvironment", "setSelected"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -169,6 +190,7 @@ depends-member:
 - ["PSo11UIFocusItem", "feedImage"]
 - ["PSo11UIFocusItem", "feedTitleLabel"]
 - !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "likeButton"]
 - ["PSo11UIFocusItem", "projectNameLabel"]
 - ["PSo11UIFocusItem", "setSelected"]
 - ["PSo11UIFocusItem", ""]
@@ -177,10 +199,12 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "feedImage"]
 - ["PSo27UIGestureRecognizerDelegate", "feedTitleLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "likeButton"]
 - ["PSo27UIGestureRecognizerDelegate", "projectNameLabel"]
 - ["PSo27UIGestureRecognizerDelegate", "setSelected"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "awakeFromNib"]
@@ -188,6 +212,7 @@ depends-member:
 - ["CSo11UIResponder", "feedImage"]
 - ["CSo11UIResponder", "feedTitleLabel"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "likeButton"]
 - ["CSo11UIResponder", "projectNameLabel"]
 - ["CSo11UIResponder", "setSelected"]
 - ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
@@ -195,10 +220,12 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "feedImage"]
 - ["PSo30UIResponderStandardEditActions", "feedTitleLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "likeButton"]
 - ["PSo30UIResponderStandardEditActions", "projectNameLabel"]
 - ["PSo30UIResponderStandardEditActions", "setSelected"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UIButton"]
 - ["CSo15UITableViewCell", "UIImageView"]
 - ["CSo15UITableViewCell", "UILabel"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
@@ -207,6 +234,7 @@ depends-member:
 - ["CSo15UITableViewCell", "feedImage"]
 - ["CSo15UITableViewCell", "feedTitleLabel"]
 - ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "likeButton"]
 - ["CSo15UITableViewCell", "projectNameLabel"]
 - ["CSo15UITableViewCell", "setSelected"]
 - ["CSo15UITableViewCell", ""]
@@ -216,10 +244,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "feedImage"]
 - ["PSo18UITraitEnvironment", "feedTitleLabel"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "likeButton"]
 - ["PSo18UITraitEnvironment", "projectNameLabel"]
 - ["PSo18UITraitEnvironment", "setSelected"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UIButton"]
 - ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "awakeFromNib"]
@@ -227,6 +257,7 @@ depends-member:
 - ["CSo6UIView", "feedImage"]
 - ["CSo6UIView", "feedTitleLabel"]
 - ["CSo6UIView", "init"]
+- ["CSo6UIView", "likeButton"]
 - ["CSo6UIView", "projectNameLabel"]
 - ["CSo6UIView", "setSelected"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
@@ -234,6 +265,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "feedImage"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "feedTitleLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "likeButton"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "projectNameLabel"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
@@ -242,6 +274,7 @@ depends-member:
 - ["Ps9_Hashable", "feedImage"]
 - ["Ps9_Hashable", "feedTitleLabel"]
 - !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "likeButton"]
 - ["Ps9_Hashable", "projectNameLabel"]
 - ["Ps9_Hashable", "setSelected"]
 - ["Ps9_Hashable", ""]
@@ -348,4 +381,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "7b1a984de8d4c082382039ec5798a4e5"
+interface-hash: "396733464ad247b6dc38bdcf624709ed"

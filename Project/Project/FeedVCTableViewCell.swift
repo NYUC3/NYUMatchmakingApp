@@ -14,6 +14,7 @@ class FeedVCTableViewCell: UITableViewCell {
     @IBOutlet weak var projectNameLabel: UILabel!
     @IBOutlet weak var feedTitleLabel: UILabel!
     @IBOutlet weak var feedDescriptionLabel: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
