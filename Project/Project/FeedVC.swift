@@ -49,6 +49,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                             }
                             if(object["activityName"] != nil){
                                 title = object["activityName"] as! String
+
                             }
                             if(object["activityDescription"] != nil){
                                 description = object["activityDescription"] as! String
@@ -59,6 +60,9 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                 
                                 
                                 feed.timestamp = String(describing: self.processTimestamp(str: String(describing: object.createdAt!)))
+                                feed.noOfLikes = object["likes"] as! Int
+                                
+                                
                                 self.feedList.append(feed)
                             }
                             
@@ -72,6 +76,8 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     print("Error: \(error!)")
                 }
             }
+        
+        
 
     }
     
@@ -146,13 +152,126 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func buttonClicked(sender:UIButton) {
         let buttonRow = sender.tag
+        
         if(feedList[buttonRow].isActive){
+            // delete a like from the likes class
+            
+            let query = PFQuery(className:"likes")
+            query.whereKey("title", equalTo: feedList[buttonRow].title!)
+            //query.whereKey("project", equalTo: projectOject?.name)
+            query.findObjectsInBackground {
+                (objects: [PFObject]?, error: Error?) -> Void in
+                
+                if error == nil {
+                    // The find succeeded.
+                    if let objects = objects {
+                        for object in objects {
+                            if(object["projectname"] as? String == self.feedList[buttonRow].name){
+                                if(object["username"] as? String == PFUser.current()?.username){
+                                    object.deleteInBackground()
+                                    
+                                    // query to activity in activity class and decrement the number of likes
+                                    
+                                    let query = PFQuery(className:"MyActivities")
+                                    query.whereKey("activityName", equalTo: self.feedList[buttonRow].title!)
+                                    query.findObjectsInBackground {
+                                        (objects: [PFObject]?, error: Error?) -> Void in
+                                        
+                                        if error == nil {
+                                            // The find succeeded.
+                                            if let objects = objects {
+                                                for object in objects {
+                                                    //if(object["projectName"] as? String == self.feedList[buttonRow].name){
+                                                        //if(object["username"] as? String == PFUser.current()?.username){
+                                                            
+                                                            // query to activity in activity class and decrement the number of likes
+                                                            let likes = object["likes"] as! Int
+                                                            print("LIKES: \(likes)")
+                                                            object["likes"] = likes - 1
+                                                            object.saveInBackground()
+                                                            
+                                                        //}
+                                                    //}
+                                                }
+                                            }
+                                        } else {
+                                            // Log details of the failure
+                                            print("Error: \(error!)")
+                                        }
+                                        
+                                    }
+                                    
+                                    
+                                    
+                                    
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    // Log details of the failure
+                    print("Error: \(error!)")
+                }
+            }
+
             let filledImage = UIImage(named: "Shape")
             sender.setImage(filledImage, for: .normal)
             feedList[buttonRow].isActive = false
             feedList[buttonRow].noOfLikes -= 1
+            
+            
         }
         else{
+            // add a like to the likes class
+            
+            let likesClass = PFObject(className:"likes")
+            likesClass["username"] = PFUser.current()?.username
+            likesClass["projectname"] = feedList[buttonRow].name
+            likesClass["title"] =  feedList[buttonRow].title
+            
+            likesClass.saveInBackground {
+                (success: Bool, error: Error?) -> Void in
+                if (success) {
+                    // The object has been saved.
+                    
+                    print("save successful")
+                    // query to activity in activity class and increment the number of likes
+                    let query = PFQuery(className:"MyActivities")
+                    query.whereKey("activityName", equalTo: self.feedList[buttonRow].title!)
+                    query.findObjectsInBackground {
+                        (objects: [PFObject]?, error: Error?) -> Void in
+                        
+                        if error == nil {
+                            // The find succeeded.
+                            if let objects = objects {
+                                for object in objects {
+                                    //if(object["projectName"] as? String == self.feedList[buttonRow].name){
+                                        //if(object["username"] as? String == PFUser.current()?.username){
+                                            
+                                            // query to activity in activity class and decrement the number of likes
+                                            print(object["likes"])
+                                            object.incrementKey("likes")
+                                            object.saveInBackground()
+                                            
+                                        //}
+                                    //}
+                                }
+                            }
+                        } else {
+                            // Log details of the failure
+                            print("Error: \(error!)")
+                        }
+
+                    }
+                    
+                    
+                    
+                } else {
+                    // There was a problem, check error.description
+                }
+            }
+            
+            
             let filledImage = UIImage(named: "filled-shape")
             sender.setImage(filledImage, for: .normal)
             feedList[buttonRow].isActive = true

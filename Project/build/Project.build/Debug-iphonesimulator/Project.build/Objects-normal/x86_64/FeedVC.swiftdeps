@@ -6,59 +6,61 @@ provides-nominal:
 provides-member:
 - ["C7Project6FeedVC", ""]
 provides-dynamic-lookup:
-- "buttonClicked"
-- "daTableView"
+- "processTimestamp"
 - "viewDidLoad"
+- "buttonClicked"
 - "tableView"
 - "tableView"
+- "queryActivities"
+- "daTableView"
 - "projectsFollowing"
 - "viewDidAppear"
-- "queryActivities"
-- "processTimestamp"
 depends-top-level:
 - !private "+"
-- !private "+="
-- "IndexPath"
-- "UIButton"
-- !private "NSFontAttributeName"
-- "ExtendedGraphemeClusterType"
-- "FeedVC"
-- !private "UIImage"
-- "Int"
-- "UIViewController"
-- !private "Error"
-- !private "BooleanLiteralType"
-- !private "-="
-- !private "StringLiteralType"
-- !private "PFQuery"
-- "UITableViewCell"
-- "UITableViewDataSource"
-- !private "!="
-- "UITableViewDelegate"
-- "Feed"
-- "AssignmentPrecedence"
-- !private "=="
 - !private "Array"
-- !private "print"
-- !private "PFUser"
-- "CastingPrecedence"
-- !private "FeedVCTableViewCell"
-- !private "PFFile"
-- !private "UIFont"
 - "String"
+- "FeedVC"
+- "CastingPrecedence"
+- !private "PFFile"
+- "AssignmentPrecedence"
+- !private "Error"
 - !private "Void"
-- "UITableView"
-- !private "UIControlEvents"
-- !private "Data"
-- "Bool"
-- !private "Dictionary"
-- !private "UnicodeScalarType"
+- "ExtendedGraphemeClusterType"
+- !private "=="
 - !private "PFObject"
+- !private "+="
+- !private "PFUser"
+- "UITableViewCell"
+- !private "NSFontAttributeName"
+- !private "-"
+- "UITableViewDataSource"
+- !private "print"
+- !private "FeedVCTableViewCell"
+- "UITableViewDelegate"
+- !private "PFQuery"
+- !private "UIControlEvents"
+- !private "!="
+- !private "BooleanLiteralType"
+- "Feed"
+- "UIViewController"
+- "UIButton"
+- !private "Data"
+- !private "UIFont"
+- !private "UnicodeScalarType"
+- "Int"
+- !private "UIImage"
+- "UITableView"
+- "Bool"
+- "IndexPath"
+- !private "StringLiteralType"
+- !private "-="
+- !private "Dictionary"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - ["Ps9AnyObject", "Feed"]
 - !private ["Ps9AnyObject", "FeedVC"]
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
+- !private ["Ps9AnyObject", "PFObject"]
 - !private ["Ps9AnyObject", "PFQuery"]
 - !private ["Ps9AnyObject", "PFUser"]
 - ["Ps9AnyObject", "String"]
@@ -71,6 +73,7 @@ depends-member:
 - !private ["Ps9AnyObject", "createdAt"]
 - !private ["Ps9AnyObject", "current"]
 - ["Ps9AnyObject", "daTableView"]
+- !private ["Ps9AnyObject", "deleteInBackground"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "feedDescriptionLabel"]
 - !private ["Ps9AnyObject", "feedImage"]
@@ -79,6 +82,7 @@ depends-member:
 - !private ["Ps9AnyObject", "findObjectsInBackground"]
 - !private ["Ps9AnyObject", "getDataInBackground"]
 - !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "incrementKey"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedView"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9AnyObject", "init"]
@@ -96,6 +100,7 @@ depends-member:
 - ["Ps9AnyObject", "projectsFollowing"]
 - ["Ps9AnyObject", "queryActivities"]
 - !private ["Ps9AnyObject", "reloadData"]
+- !private ["Ps9AnyObject", "saveInBackground"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
 - ["Ps9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -138,6 +143,7 @@ depends-member:
 - ["Sa", "init"]
 - !private ["Sa", "map"]
 - !private ["Sa", "subscript"]
+- !private ["CSo6BFTask", "deinit"]
 - !private ["Ps23BidirectionalCollection", "Element"]
 - !private ["Ps23BidirectionalCollection", "Index"]
 - !private ["Ps23BidirectionalCollection", "IndexDistance"]
@@ -204,6 +210,7 @@ depends-member:
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "NSFontAttributeName"]
+- !private ["Ps7CVarArg", "PFObject"]
 - !private ["Ps7CVarArg", "PFQuery"]
 - !private ["Ps7CVarArg", "PFUser"]
 - !private ["Ps7CVarArg", "Stride"]
@@ -223,6 +230,7 @@ depends-member:
 - !private ["Ps7CVarArg", "createdAt"]
 - !private ["Ps7CVarArg", "current"]
 - ["Ps7CVarArg", "daTableView"]
+- !private ["Ps7CVarArg", "deleteInBackground"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "feedDescriptionLabel"]
 - !private ["Ps7CVarArg", "feedImage"]
@@ -231,6 +239,7 @@ depends-member:
 - !private ["Ps7CVarArg", "findObjectsInBackground"]
 - !private ["Ps7CVarArg", "getDataInBackground"]
 - !private ["Ps7CVarArg", "image"]
+- !private ["Ps7CVarArg", "incrementKey"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedView"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps7CVarArg", "init"]
@@ -249,6 +258,7 @@ depends-member:
 - ["Ps7CVarArg", "projectsFollowing"]
 - ["Ps7CVarArg", "queryActivities"]
 - !private ["Ps7CVarArg", "reloadData"]
+- !private ["Ps7CVarArg", "saveInBackground"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
 - ["Ps7CVarArg", "scrollViewDidEndDragging"]
 - ["Ps7CVarArg", "scrollViewDidEndScrollingAnimation"]
@@ -314,6 +324,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "PFObject"]
 - !private ["Ps28CustomDebugStringConvertible", "PFQuery"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
 - ["Ps28CustomDebugStringConvertible", "String"]
@@ -331,6 +342,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "createdAt"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - ["Ps28CustomDebugStringConvertible", "daTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "deleteInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "feedDescriptionLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "feedImage"]
@@ -339,6 +351,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "getDataInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
+- !private ["Ps28CustomDebugStringConvertible", "incrementKey"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -358,6 +371,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "queryActivities"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -420,6 +434,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
+- !private ["Ps23CustomStringConvertible", "PFObject"]
 - !private ["Ps23CustomStringConvertible", "PFQuery"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
@@ -440,6 +455,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "createdAt"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - ["Ps23CustomStringConvertible", "daTableView"]
+- !private ["Ps23CustomStringConvertible", "deleteInBackground"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "feedDescriptionLabel"]
 - !private ["Ps23CustomStringConvertible", "feedImage"]
@@ -448,6 +464,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackground"]
 - !private ["Ps23CustomStringConvertible", "getDataInBackground"]
 - !private ["Ps23CustomStringConvertible", "image"]
+- !private ["Ps23CustomStringConvertible", "incrementKey"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -467,6 +484,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "queryActivities"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "saveInBackground"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -515,6 +533,7 @@ depends-member:
 - !private ["Ps9Equatable", "FeedVC"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSFontAttributeName"]
+- !private ["Ps9Equatable", "PFObject"]
 - !private ["Ps9Equatable", "PFQuery"]
 - !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "Stride"]
@@ -531,6 +550,7 @@ depends-member:
 - !private ["Ps9Equatable", "createdAt"]
 - !private ["Ps9Equatable", "current"]
 - ["Ps9Equatable", "daTableView"]
+- !private ["Ps9Equatable", "deleteInBackground"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "feedDescriptionLabel"]
 - !private ["Ps9Equatable", "feedImage"]
@@ -539,6 +559,7 @@ depends-member:
 - !private ["Ps9Equatable", "findObjectsInBackground"]
 - !private ["Ps9Equatable", "getDataInBackground"]
 - !private ["Ps9Equatable", "image"]
+- !private ["Ps9Equatable", "incrementKey"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9Equatable", "init"]
@@ -558,6 +579,7 @@ depends-member:
 - ["Ps9Equatable", "queryActivities"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "saveInBackground"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
 - ["Ps9Equatable", "scrollViewDidEndScrollingAnimation"]
@@ -692,6 +714,7 @@ depends-member:
 - !private ["Ps8Hashable", "FeedVC"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSFontAttributeName"]
+- !private ["Ps8Hashable", "PFObject"]
 - !private ["Ps8Hashable", "PFQuery"]
 - !private ["Ps8Hashable", "PFUser"]
 - !private ["Ps8Hashable", "Stride"]
@@ -708,6 +731,7 @@ depends-member:
 - !private ["Ps8Hashable", "createdAt"]
 - !private ["Ps8Hashable", "current"]
 - ["Ps8Hashable", "daTableView"]
+- !private ["Ps8Hashable", "deleteInBackground"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "feedDescriptionLabel"]
 - !private ["Ps8Hashable", "feedImage"]
@@ -716,6 +740,7 @@ depends-member:
 - !private ["Ps8Hashable", "findObjectsInBackground"]
 - !private ["Ps8Hashable", "getDataInBackground"]
 - !private ["Ps8Hashable", "image"]
+- !private ["Ps8Hashable", "incrementKey"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps8Hashable", "init"]
@@ -734,6 +759,7 @@ depends-member:
 - ["Ps8Hashable", "queryActivities"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "saveInBackground"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
 - ["Ps8Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -849,6 +875,7 @@ depends-member:
 - ["PSo8NSCoding", "Feed"]
 - !private ["PSo8NSCoding", "FeedVC"]
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
+- !private ["PSo8NSCoding", "PFObject"]
 - !private ["PSo8NSCoding", "PFQuery"]
 - !private ["PSo8NSCoding", "PFUser"]
 - ["PSo8NSCoding", "String"]
@@ -914,6 +941,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "Feed"]
 - !private ["PSo26NSExtensionRequestHandling", "FeedVC"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "PFObject"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - ["PSo26NSExtensionRequestHandling", "String"]
@@ -985,6 +1013,7 @@ depends-member:
 - !private ["CSo8NSObject", "createdAt"]
 - !private ["CSo8NSObject", "current"]
 - ["CSo8NSObject", "daTableView"]
+- !private ["CSo8NSObject", "deleteInBackground"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "feedDescriptionLabel"]
 - !private ["CSo8NSObject", "feedImage"]
@@ -993,6 +1022,7 @@ depends-member:
 - !private ["CSo8NSObject", "findObjectsInBackground"]
 - !private ["CSo8NSObject", "getDataInBackground"]
 - !private ["CSo8NSObject", "image"]
+- !private ["CSo8NSObject", "incrementKey"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
@@ -1010,6 +1040,7 @@ depends-member:
 - ["CSo8NSObject", "projectsFollowing"]
 - ["CSo8NSObject", "queryActivities"]
 - !private ["CSo8NSObject", "reloadData"]
+- !private ["CSo8NSObject", "saveInBackground"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
 - ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
@@ -1040,6 +1071,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Feed"]
 - !private ["PSo16NSObjectProtocol", "FeedVC"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
+- !private ["PSo16NSObjectProtocol", "PFObject"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - ["PSo16NSObjectProtocol", "String"]
@@ -1052,6 +1084,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "createdAt"]
 - !private ["PSo16NSObjectProtocol", "current"]
 - ["PSo16NSObjectProtocol", "daTableView"]
+- !private ["PSo16NSObjectProtocol", "deleteInBackground"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "feedDescriptionLabel"]
 - !private ["PSo16NSObjectProtocol", "feedImage"]
@@ -1060,6 +1093,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackground"]
 - !private ["PSo16NSObjectProtocol", "getDataInBackground"]
 - !private ["PSo16NSObjectProtocol", "image"]
+- !private ["PSo16NSObjectProtocol", "incrementKey"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedView"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16NSObjectProtocol", "init"]
@@ -1077,6 +1111,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "projectsFollowing"]
 - ["PSo16NSObjectProtocol", "queryActivities"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
+- !private ["PSo16NSObjectProtocol", "saveInBackground"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
@@ -1116,7 +1151,11 @@ depends-member:
 - !private ["CSo6PFFile", "getDataInBackground"]
 - !private ["CSo8PFObject", "createdAt"]
 - !private ["CSo8PFObject", "current"]
-- !private ["CSo8PFObject", "deinit"]
+- ["CSo8PFObject", "deinit"]
+- !private ["CSo8PFObject", "deleteInBackground"]
+- !private ["CSo8PFObject", "incrementKey"]
+- !private ["CSo8PFObject", "init"]
+- !private ["CSo8PFObject", "saveInBackground"]
 - !private ["CSo8PFObject", "subscript"]
 - !private ["CSo8PFObject", "username"]
 - ["CSo7PFQuery", "deinit"]
@@ -1265,6 +1304,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "Feed"]
 - !private ["PSo21UIAppearanceContainer", "FeedVC"]
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "PFObject"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - ["PSo21UIAppearanceContainer", "String"]
@@ -1330,6 +1370,7 @@ depends-member:
 - ["PSo18UIContentContainer", "Feed"]
 - !private ["PSo18UIContentContainer", "FeedVC"]
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
+- !private ["PSo18UIContentContainer", "PFObject"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
 - !private ["PSo18UIContentContainer", "PFUser"]
 - ["PSo18UIContentContainer", "String"]
@@ -1417,6 +1458,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "Feed"]
 - !private ["PSo18UIFocusEnvironment", "FeedVC"]
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "PFObject"]
 - !private ["PSo18UIFocusEnvironment", "PFQuery"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - ["PSo18UIFocusEnvironment", "String"]
@@ -1584,6 +1626,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "Feed"]
 - !private ["PSo30UIResponderStandardEditActions", "FeedVC"]
 - !private ["PSo30UIResponderStandardEditActions", "NSFontAttributeName"]
+- !private ["PSo30UIResponderStandardEditActions", "PFObject"]
 - !private ["PSo30UIResponderStandardEditActions", "PFQuery"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - ["PSo30UIResponderStandardEditActions", "String"]
@@ -1646,6 +1689,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "Feed"]
 - !private ["PSo20UIScrollViewDelegate", "FeedVC"]
 - !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
+- !private ["PSo20UIScrollViewDelegate", "PFObject"]
 - !private ["PSo20UIScrollViewDelegate", "PFQuery"]
 - !private ["PSo20UIScrollViewDelegate", "PFUser"]
 - ["PSo20UIScrollViewDelegate", "String"]
@@ -1685,6 +1729,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "Feed"]
 - !private ["PSo16UIStateRestoring", "FeedVC"]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
+- !private ["PSo16UIStateRestoring", "PFObject"]
 - !private ["PSo16UIStateRestoring", "PFQuery"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
 - ["PSo16UIStateRestoring", "String"]
@@ -1739,6 +1784,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "Feed"]
 - !private ["PSo21UITableViewDataSource", "FeedVC"]
 - !private ["PSo21UITableViewDataSource", "NSFontAttributeName"]
+- !private ["PSo21UITableViewDataSource", "PFObject"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
 - !private ["PSo21UITableViewDataSource", "PFUser"]
 - ["PSo21UITableViewDataSource", "String"]
@@ -1778,6 +1824,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "Feed"]
 - !private ["PSo19UITableViewDelegate", "FeedVC"]
 - !private ["PSo19UITableViewDelegate", "NSFontAttributeName"]
+- !private ["PSo19UITableViewDelegate", "PFObject"]
 - !private ["PSo19UITableViewDelegate", "PFQuery"]
 - !private ["PSo19UITableViewDelegate", "PFUser"]
 - ["PSo19UITableViewDelegate", "String"]
@@ -1817,6 +1864,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "Feed"]
 - !private ["PSo18UITraitEnvironment", "FeedVC"]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UITraitEnvironment", "PFObject"]
 - !private ["PSo18UITraitEnvironment", "PFQuery"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
 - ["PSo18UITraitEnvironment", "String"]
@@ -2011,6 +2059,7 @@ depends-member:
 - !private ["Ps9_Hashable", "FeedVC"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "NSFontAttributeName"]
+- !private ["Ps9_Hashable", "PFObject"]
 - !private ["Ps9_Hashable", "PFQuery"]
 - !private ["Ps9_Hashable", "PFUser"]
 - !private ["Ps9_Hashable", "Stride"]
@@ -2027,6 +2076,7 @@ depends-member:
 - !private ["Ps9_Hashable", "createdAt"]
 - !private ["Ps9_Hashable", "current"]
 - ["Ps9_Hashable", "daTableView"]
+- !private ["Ps9_Hashable", "deleteInBackground"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "feedDescriptionLabel"]
 - !private ["Ps9_Hashable", "feedImage"]
@@ -2035,6 +2085,7 @@ depends-member:
 - !private ["Ps9_Hashable", "findObjectsInBackground"]
 - !private ["Ps9_Hashable", "getDataInBackground"]
 - !private ["Ps9_Hashable", "image"]
+- !private ["Ps9_Hashable", "incrementKey"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9_Hashable", "init"]
@@ -2053,6 +2104,7 @@ depends-member:
 - ["Ps9_Hashable", "queryActivities"]
 - !private ["Ps9_Hashable", "reloadData"]
 - !private ["Ps9_Hashable", "row"]
+- !private ["Ps9_Hashable", "saveInBackground"]
 - ["Ps9_Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps9_Hashable", "scrollViewDidEndDragging"]
 - ["Ps9_Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -2121,6 +2173,7 @@ depends-nominal:
 - "Ps9AnyObject"
 - !private "Vs11AnySequence"
 - "Sa"
+- !private "CSo6BFTask"
 - "Ps23BidirectionalCollection"
 - "Ps22BidirectionalIndexable"
 - !private "Vs18BidirectionalSlice"
@@ -2188,7 +2241,7 @@ depends-nominal:
 - !private "Ps9OptionSet"
 - "Sq"
 - "CSo6PFFile"
-- !private "CSo8PFObject"
+- "CSo8PFObject"
 - "CSo7PFQuery"
 - !private "PSo13PFSubclassing"
 - "CSo6PFUser"
