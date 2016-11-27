@@ -22,6 +22,8 @@ struct Feed {
     var title : String?
     var description : String?
     var image : PFFile?
-    
+    var isActive : Bool = false
+    var noOfLikes : Int = 0
+    var timestamp : String = ""
     
 }

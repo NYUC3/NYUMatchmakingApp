@@ -11,8 +11,6 @@ import Parse
 
 class ProjectViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    
-    
     @IBOutlet weak var projectImage: UIImageView!
     @IBOutlet weak var projectDescription: UILabel!
     @IBOutlet weak var followButton: UIButton!

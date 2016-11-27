@@ -13,11 +13,13 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var feedList = [Feed]()
     var projectsFollowing = [String]()
-    
+
     @IBOutlet weak var daTableView: UITableView! // This is a bad name
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
 
     }
     
@@ -52,8 +54,11 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                 description = object["activityDescription"] as! String
                             }
                             if(object["image"] != nil){
-                                let feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile)
+                                var feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile)
                                 
+                                
+                                
+                                feed.timestamp = String(describing: self.processTimestamp(str: String(describing: object.createdAt!)))
                                 self.feedList.append(feed)
                             }
                             
@@ -70,12 +75,15 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     }
     
-    
-    @IBAction func refreshAction(_ sender: UIBarButtonItem) {
-        self.daTableView.reloadData()
+  
+    func processTimestamp(str : String)->String{
+        var processed = ""
+        var components = str.characters.split{$0 == " "}.map(String.init)
+        var dateArr = components[0].characters.split{$0 == "-"}.map(String.init)
+        processed = dateArr[1] + "/" + dateArr[2] + "/" + dateArr[0]
+        print(processed)
+        return processed
     }
-    
-    
     
     override func viewDidAppear(_ animated: Bool) {
         
@@ -107,8 +115,6 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 print("Error: \(error!)")
             }
         }
-
-        
     }
     
     
@@ -118,30 +124,40 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "feed-cell", for: indexPath) as! FeedVCTableViewCell
         cell.projectNameLabel.text = feedList[indexPath.row].name
         cell.feedTitleLabel.text  = feedList[indexPath.row].title
         cell.feedDescriptionLabel.text = feedList[indexPath.row].description
+        cell.noOfLikes.text = String(feedList[indexPath.row].noOfLikes) + " likes"
+        cell.timeStampLabel.text = feedList[indexPath.row].timestamp
         cell.likeButton.tag = indexPath.row
-        
         cell.likeButton.addTarget(self, action: #selector(FeedVC.buttonClicked(sender:)), for: UIControlEvents.touchUpInside)
-        
         cell.feedDescriptionLabel.lineBreakMode = .byWordWrapping
         cell.feedDescriptionLabel.numberOfLines = 0
-        
         let imageFromParse = feedList[indexPath.row].image
         imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
             let image: UIImage! = UIImage(data: imageData!)!
             cell.feedImage.image = image
         })
-        
         return cell
+        
     }
     
     func buttonClicked(sender:UIButton) {
-        
         let buttonRow = sender.tag
-        print(buttonRow)
+        if(feedList[buttonRow].isActive){
+            let filledImage = UIImage(named: "Shape")
+            sender.setImage(filledImage, for: .normal)
+            feedList[buttonRow].isActive = false
+            feedList[buttonRow].noOfLikes -= 1
+        }
+        else{
+            let filledImage = UIImage(named: "filled-shape")
+            sender.setImage(filledImage, for: .normal)
+            feedList[buttonRow].isActive = true
+            feedList[buttonRow].noOfLikes += 1
+        }
     }
 
 

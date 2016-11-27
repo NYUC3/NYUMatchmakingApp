@@ -213,7 +213,7 @@ SWIFT_CLASS("_TtC7Project6FeedVC")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified daTableView;
 - (void)viewDidLoad;
 - (void)queryActivitiesWithName:(NSString * _Nonnull)name;
-- (IBAction)refreshAction:(UIBarButtonItem * _Nonnull)sender;
+- (NSString * _Nonnull)processTimestampWithStr:(NSString * _Nonnull)str;
 - (void)viewDidAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -231,6 +231,8 @@ SWIFT_CLASS("_TtC7Project19FeedVCTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified feedTitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified feedDescriptionLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified noOfLikes;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeStampLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
