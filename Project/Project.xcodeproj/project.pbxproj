@@ -51,6 +51,15 @@
 		C26DDFA01D938A8500429DE4 /* MyFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */; };
 		C26DDFA21D938ADC00429DE4 /* CreateNewActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */; };
 		C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */; };
+		C272EB751DEA963000402E10 /* AKImageCropperOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB711DEA963000402E10 /* AKImageCropperOverlayView.swift */; };
+		C272EB761DEA963000402E10 /* AKImageCropperScollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB721DEA963000402E10 /* AKImageCropperScollView.swift */; };
+		C272EB771DEA963000402E10 /* AKImageCropperTouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB731DEA963000402E10 /* AKImageCropperTouchView.swift */; };
+		C272EB781DEA963000402E10 /* AKImageCropperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB741DEA963000402E10 /* AKImageCropperView.swift */; };
+		C272EB7D1DEA964700402E10 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB791DEA964700402E10 /* CGFloat.swift */; };
+		C272EB7E1DEA964700402E10 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB7A1DEA964700402E10 /* CGRect.swift */; };
+		C272EB7F1DEA964700402E10 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB7B1DEA964700402E10 /* UIColor.swift */; };
+		C272EB801DEA964700402E10 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB7C1DEA964700402E10 /* UIImage.swift */; };
+		C272EB831DEA977E00402E10 /* CropImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB821DEA977E00402E10 /* CropImageViewController.swift */; };
 		C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +142,15 @@
 		C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedVC.swift; sourceTree = "<group>"; };
 		C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewActivityVC.swift; sourceTree = "<group>"; };
 		C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedCell.swift; sourceTree = "<group>"; };
+		C272EB711DEA963000402E10 /* AKImageCropperOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKImageCropperOverlayView.swift; sourceTree = "<group>"; };
+		C272EB721DEA963000402E10 /* AKImageCropperScollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKImageCropperScollView.swift; sourceTree = "<group>"; };
+		C272EB731DEA963000402E10 /* AKImageCropperTouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKImageCropperTouchView.swift; sourceTree = "<group>"; };
+		C272EB741DEA963000402E10 /* AKImageCropperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKImageCropperView.swift; sourceTree = "<group>"; };
+		C272EB791DEA964700402E10 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		C272EB7A1DEA964700402E10 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
+		C272EB7B1DEA964700402E10 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C272EB7C1DEA964700402E10 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		C272EB821DEA977E00402E10 /* CropImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropImageViewController.swift; sourceTree = "<group>"; };
 		C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,6 +251,7 @@
 		C26DDF701D934A1800429DE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C272EB701DEA961C00402E10 /* AKImageCropper */,
 				C26DDF711D934A2C00429DE4 /* Bolts.framework */,
 				C26DDF721D934A2C00429DE4 /* Parse.framework */,
 			);
@@ -268,6 +287,7 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C272EB821DEA977E00402E10 /* CropImageViewController.swift */,
 				C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */,
 				C23A29AF1DB8403800275843 /* SettingsViewController.swift */,
 				C224B9551DB9328B007265E7 /* ProjectViewController.swift */,
@@ -285,6 +305,29 @@
 				C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C272EB701DEA961C00402E10 /* AKImageCropper */ = {
+			isa = PBXGroup;
+			children = (
+				C272EB811DEA964B00402E10 /* SwiftExtension */,
+				C272EB711DEA963000402E10 /* AKImageCropperOverlayView.swift */,
+				C272EB721DEA963000402E10 /* AKImageCropperScollView.swift */,
+				C272EB731DEA963000402E10 /* AKImageCropperTouchView.swift */,
+				C272EB741DEA963000402E10 /* AKImageCropperView.swift */,
+			);
+			name = AKImageCropper;
+			sourceTree = "<group>";
+		};
+		C272EB811DEA964B00402E10 /* SwiftExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C272EB791DEA964700402E10 /* CGFloat.swift */,
+				C272EB7A1DEA964700402E10 /* CGRect.swift */,
+				C272EB7B1DEA964700402E10 /* UIColor.swift */,
+				C272EB7C1DEA964700402E10 /* UIImage.swift */,
+			);
+			name = SwiftExtension;
 			sourceTree = "<group>";
 		};
 		C2EF21411DE96622007FE43D /* temp files */ = {
@@ -444,21 +487,30 @@
 			files = (
 				C26DDFA21D938ADC00429DE4 /* CreateNewActivityVC.swift in Sources */,
 				C26DDFA01D938A8500429DE4 /* MyFeedVC.swift in Sources */,
+				C272EB781DEA963000402E10 /* AKImageCropperView.swift in Sources */,
 				C23BBF331DA6AE7800202169 /* LoginVC.swift in Sources */,
 				C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */,
 				C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */,
+				C272EB751DEA963000402E10 /* AKImageCropperOverlayView.swift in Sources */,
+				C272EB7E1DEA964700402E10 /* CGRect.swift in Sources */,
 				C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */,
 				C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */,
 				C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */,
+				C272EB801DEA964700402E10 /* UIImage.swift in Sources */,
 				C224B9561DB9328B007265E7 /* ProjectViewController.swift in Sources */,
+				C272EB831DEA977E00402E10 /* CropImageViewController.swift in Sources */,
+				C272EB771DEA963000402E10 /* AKImageCropperTouchView.swift in Sources */,
 				C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */,
+				C272EB7D1DEA964700402E10 /* CGFloat.swift in Sources */,
 				C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */,
 				C26DDF9E1D935F4400429DE4 /* FeedVCTableViewCell.swift in Sources */,
 				C26DDF431D93499300429DE4 /* AppDelegate.swift in Sources */,
 				C26DDF901D93595A00429DE4 /* HomeViewController.swift in Sources */,
+				C272EB7F1DEA964700402E10 /* UIColor.swift in Sources */,
 				C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */,
 				C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */,
 				C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */,
+				C272EB761DEA963000402E10 /* AKImageCropperScollView.swift in Sources */,
 				C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
