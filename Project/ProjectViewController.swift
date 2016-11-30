@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class ProjectViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ProjectViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var projectImage: UIImageView!
     @IBOutlet weak var projectDescription: UILabel!
@@ -17,6 +17,8 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 
     var projectOject : Feed?
     var isFollowing : Bool = false
+    
+    var activities : [Feed] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +51,7 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
                         }
                     }
                 }
-2
+
             } else {
                 // Log details of the failure
                 print("Error: \(error!)")
@@ -59,18 +61,26 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         
     }
     
-    // UICollectionview datasource
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 5
+    // table view stuff
+    
+
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        
+        return activities.count
+    
     }
+
     
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-    
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collection-cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "activities-cell", for: indexPath)
         return cell
+        
     }
+
+    
+
 
 
 

@@ -7,51 +7,51 @@ provides-member:
 - ["C7Project19CreateNewActivityVC", ""]
 provides-dynamic-lookup:
 - "imagePicker"
-- "selectedProjectName"
-- "actvityDescription"
-- "feedUploadImage"
 - "cancelButtonTapped"
 - "pickerView"
 - "pickerView"
 - "pickerView"
+- "actvityDescription"
 - "imagePickerController"
-- "saveButtonTapped"
-- "numberOfComponents"
-- "activityLabel"
-- "projectNamePickerView"
 - "viewDidLoad"
-- "projectNames"
+- "feedUploadImage"
 - "uploadButton"
+- "activityLabel"
+- "numberOfComponents"
+- "saveButtonTapped"
+- "projectNamePickerView"
+- "selectedProjectName"
+- "projectNames"
 depends-top-level:
-- !private "PFQuery"
+- !private "PFUser"
 - "UIImagePickerControllerDelegate"
-- !private "UIImageJPEGRepresentation"
-- "Int"
-- !private "UIImagePickerControllerOriginalImage"
+- !private "print"
+- !private "Void"
 - "UIViewController"
-- !private "BooleanLiteralType"
-- "UIImagePickerController"
-- "StringLiteralType"
-- "UIPickerViewDataSource"
-- "UIPickerView"
-- "UIPickerViewDelegate"
-- "UINavigationControllerDelegate"
 - "CastingPrecedence"
-- "UIBarButtonItem"
+- "UIImagePickerController"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "PFFile"
-- "String"
+- !private "UIImagePickerControllerOriginalImage"
+- "UIPickerViewDataSource"
+- "UIPickerView"
 - "UIButton"
-- !private "Void"
-- "CreateNewActivityVC"
+- "Int"
+- "UIPickerViewDelegate"
 - !private "PFObject"
-- !private "Error"
+- "UINavigationControllerDelegate"
+- !private "BooleanLiteralType"
 - "UIImageView"
 - !private "UIImage"
-- !private "PFUser"
+- "String"
+- !private "Error"
+- "CreateNewActivityVC"
+- "UIBarButtonItem"
+- !private "PFFile"
+- !private "UIImageJPEGRepresentation"
+- !private "PFQuery"
+- "StringLiteralType"
 - "UITextField"
-- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "PFFile"]
 - !private ["Ps9AnyObject", "PFObject"]
@@ -300,7 +300,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "saveButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
 - ["Ps28CustomDebugStringConvertible", "selectedProjectName"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceType"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -326,7 +325,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "count"]
 - ["Ps17CustomReflectable", "init"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
@@ -469,7 +467,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -766,7 +763,6 @@ depends-member:
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["CSo6PFFile", "init"]
 - !private ["CSo8PFObject", "current"]
 - ["CSo8PFObject", "deinit"]
@@ -1479,7 +1475,6 @@ depends-nominal:
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -1595,6 +1590,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"

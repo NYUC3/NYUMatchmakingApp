@@ -14,7 +14,7 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var projectsTable: UITableView!
 
-    var projects = [Project]()
+    var projects = [Feed]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,9 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
                         if(object["image"] != nil){
                             let theImg = object["image"] as! PFFile
                             if(theImg != nil){
-                                let project = Project(name: object["Name"] as! String, desc: object["Description"] as! String, image: theImg)
+                                
+                                let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg)
+                                //let project = Project(name: object["Name"] as! String, desc: object["Description"] as! String, image: theImg)
                                 self.projects.append(project)
                             }
                             
@@ -74,7 +76,7 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
             
             let destinationNavigationController = segue.destination as! UINavigationController
             let targetController = destinationNavigationController.topViewController as! ProjectViewController
-            //targetController.projectOject = projects[(projectsTable.indexPathForSelectedRow?.row)!] // create a unified object model
+            targetController.projectOject = projects[(projectsTable.indexPathForSelectedRow?.row)!]
             
         }
     }

@@ -15,6 +15,7 @@
 		C224B9561DB9328B007265E7 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224B9551DB9328B007265E7 /* ProjectViewController.swift */; };
 		C22C590E1DEA5E3A00848BDE /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = C22C590D1DEA5E3A00848BDE /* title.png */; };
 		C22C59101DEA5F5400848BDE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C22C590F1DEA5F5400848BDE /* background.png */; };
+		C236D2291DEF7F91008A392C /* SingleActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236D2281DEF7F91008A392C /* SingleActivityVC.swift */; };
 		C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A29AF1DB8403800275843 /* SettingsViewController.swift */; };
 		C23BBF331DA6AE7800202169 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF321DA6AE7800202169 /* LoginVC.swift */; };
 		C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF341DA6B21100202169 /* SignupVC.swift */; };
@@ -104,6 +105,7 @@
 		C224B9551DB9328B007265E7 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = SOURCE_ROOT; };
 		C22C590D1DEA5E3A00848BDE /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		C22C590F1DEA5F5400848BDE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		C236D2281DEF7F91008A392C /* SingleActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleActivityVC.swift; sourceTree = "<group>"; };
 		C23A29AF1DB8403800275843 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C23BBF321DA6AE7800202169 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C23BBF341DA6B21100202169 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C236D2281DEF7F91008A392C /* SingleActivityVC.swift */,
 				C272EB821DEA977E00402E10 /* CropImageViewController.swift */,
 				C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */,
 				C23A29AF1DB8403800275843 /* SettingsViewController.swift */,
@@ -510,6 +513,7 @@
 				C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */,
 				C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */,
 				C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */,
+				C236D2291DEF7F91008A392C /* SingleActivityVC.swift in Sources */,
 				C272EB761DEA963000402E10 /* AKImageCropperScollView.swift in Sources */,
 				C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */,
 			);

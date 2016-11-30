@@ -6,31 +6,31 @@ provides-nominal:
 provides-member:
 - ["C7Project7LoginVC", ""]
 provides-dynamic-lookup:
-- "unwindToLogin"
-- "didReceiveMemoryWarning"
-- "email"
+- "password"
 - "LoginTapped"
 - "viewDidLoad"
-- "password"
+- "unwindToLogin"
+- "email"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "StringLiteralType"
-- "UIViewController"
-- !private "UIStoryboard"
 - "BooleanLiteralType"
-- !private "UIAlertControllerStyle"
-- !private "PFUser"
-- !private "Void"
-- !private "Error"
-- "UIButton"
-- !private "UIAlertAction"
-- "UITextField"
-- !private "UIAlertActionStyle"
-- !private "!="
 - !private "UIAlertController"
-- !private "CastingPrecedence"
+- !private "!="
+- !private "UIAlertActionStyle"
+- "UITextField"
 - "UIStoryboardSegue"
+- !private "Void"
+- !private "PFUser"
+- "StringLiteralType"
+- !private "UIAlertControllerStyle"
+- "UIButton"
 - !private "UITabBarController"
+- !private "CastingPrecedence"
 - "LoginVC"
+- !private "Error"
+- !private "UIStoryboard"
+- !private "UIAlertAction"
+- "UIViewController"
 depends-member:
 - ["Ps9AnyObject", "LoginTapped"]
 - !private ["Ps9AnyObject", "PFUser"]
@@ -486,6 +486,7 @@ depends-member:
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "debugDescription"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
@@ -573,6 +574,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"
