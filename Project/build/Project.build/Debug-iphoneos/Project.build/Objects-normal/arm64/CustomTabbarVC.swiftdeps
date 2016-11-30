@@ -1,0 +1,361 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CustomTabbarVC"
+provides-nominal:
+- "C7Project14CustomTabbarVC"
+provides-member:
+- ["C7Project14CustomTabbarVC", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- "CustomTabbarVC"
+- !private "UITabBar"
+- "UITabBarController"
+- "AssignmentPrecedence"
+- !private "UIColor"
+depends-member:
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UITabBar"]
+- !private ["Ps9AnyObject", "appearance"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "red"]
+- !private ["Ps9AnyObject", "tintColor"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "appearance"]
+- !private ["PSo15CALayerDelegate", "backgroundColor"]
+- !private ["PSo15CALayerDelegate", "tintColor"]
+- !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UITabBar"]
+- !private ["Ps7CVarArg", "appearance"]
+- !private ["Ps7CVarArg", "backgroundColor"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "red"]
+- !private ["Ps7CVarArg", "tintColor"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "white"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UITabBar"]
+- !private ["Ps28CustomDebugStringConvertible", "appearance"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "red"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "white"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UITabBar"]
+- !private ["Ps23CustomStringConvertible", "appearance"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "red"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "white"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["C7Project14CustomTabbarVC", "UIColor"]
+- !private ["C7Project14CustomTabbarVC", "UITabBar"]
+- ["C7Project14CustomTabbarVC", "deinit"]
+- ["C7Project14CustomTabbarVC", "didReceiveMemoryWarning"]
+- ["C7Project14CustomTabbarVC", "init"]
+- ["C7Project14CustomTabbarVC", "viewDidLoad"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UITabBar"]
+- !private ["Ps9Equatable", "appearance"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "red"]
+- !private ["Ps9Equatable", "tintColor"]
+- ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "white"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UITabBar"]
+- !private ["Ps8Hashable", "appearance"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "red"]
+- !private ["Ps8Hashable", "tintColor"]
+- ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "white"]
+- ["Ps8Hashable", ""]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UITabBar"]
+- !private ["PSo8NSCoding", "appearance"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "red"]
+- !private ["PSo8NSCoding", "tintColor"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "white"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "red"]
+- !private ["PSo9NSCopying", "white"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UITabBar"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UITabBar"]
+- !private ["CSo8NSObject", "appearance"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "red"]
+- !private ["CSo8NSObject", "tintColor"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "white"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UITabBar"]
+- !private ["PSo16NSObjectProtocol", "appearance"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "red"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "white"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "red"]
+- !private ["PSo14NSSecureCoding", "white"]
+- ["Sq", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "appearance"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo12UIAppearance", "appearance"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UITabBar"]
+- !private ["PSo21UIAppearanceContainer", "appearance"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo7UIColor", "deinit"]
+- !private ["CSo7UIColor", "red"]
+- !private ["CSo7UIColor", "white"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UITabBar"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "appearance"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo13UIDynamicItem", "appearance"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UITabBar"]
+- !private ["PSo18UIFocusEnvironment", "appearance"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "appearance"]
+- !private ["PSo11UIFocusItem", "backgroundColor"]
+- !private ["PSo11UIFocusItem", "tintColor"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UITabBar"]
+- !private ["CSo11UIResponder", "appearance"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "tintColor"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UITabBar"]
+- !private ["PSo30UIResponderStandardEditActions", "appearance"]
+- !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "tintColor"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UITabBar"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo8UITabBar", "appearance"]
+- !private ["CSo8UITabBar", "backgroundColor"]
+- ["CSo8UITabBar", "deinit"]
+- !private ["CSo8UITabBar", "tintColor"]
+- !private ["CSo18UITabBarController", "UIColor"]
+- !private ["CSo18UITabBarController", "UITabBar"]
+- ["CSo18UITabBarController", "deinit"]
+- ["CSo18UITabBarController", "didReceiveMemoryWarning"]
+- ["CSo18UITabBarController", "init"]
+- ["CSo18UITabBarController", "viewDidLoad"]
+- ["CSo18UITabBarController", ""]
+- !private ["PSo16UITabBarDelegate", "UIColor"]
+- !private ["PSo16UITabBarDelegate", "UITabBar"]
+- ["PSo16UITabBarDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo16UITabBarDelegate", "init"]
+- ["PSo16UITabBarDelegate", "viewDidLoad"]
+- ["PSo16UITabBarDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UITabBar"]
+- !private ["PSo18UITraitEnvironment", "appearance"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "appearance"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UITabBar"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "appearance"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
+- !private ["Ps26_ExpressibleByColorLiteral", "red"]
+- !private ["Ps26_ExpressibleByColorLiteral", "white"]
+- !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "UITabBar"]
+- !private ["Ps9_Hashable", "appearance"]
+- !private ["Ps9_Hashable", "backgroundColor"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "red"]
+- !private ["Ps9_Hashable", "tintColor"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "white"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "C7Project14CustomTabbarVC"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "Sq"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "CSo8UITabBar"
+- "CSo18UITabBarController"
+- "PSo16UITabBarDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFTask.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFDefines.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/Bolts.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPurchase.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFProduct.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFInstallation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFSession.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFRole.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFRelation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConfig+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConfig.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFACL.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConstants.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/ParseClientConfiguration.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+interface-hash: "fed411a5602fe9447d048802ca346929"

@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "c52fcf1ae78db39de548293789135c62"
-build_time: [533537024, 532366000]
+build_time: [533537463, 358090000]
 inputs:
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateNewActivityVC.swift": [531509470, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/MyFeedVC.swift": [531424272, 0]
@@ -15,7 +15,7 @@ inputs:
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/SettingsViewController.swift": [530236982, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/UIImage.swift": [533535097, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/ProjectViewController.swift": [533527364, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CropImageViewController.swift": [533537023, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CropImageViewController.swift": [533537063, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/AKImageCropperTouchView.swift": [533535737, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateProjectVC.swift": [531432954, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CGFloat.swift": [533535097, 0]

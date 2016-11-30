@@ -10,14 +10,14 @@ provides-dynamic-lookup:
 - "cropView"
 - "viewDidLoad"
 depends-top-level:
-- !private "StringLiteralType"
-- "AKImageCropperView"
+- "UIViewController"
 - !private "BooleanLiteralType"
-- "AssignmentPrecedence"
 - !private "UIImage"
 - !private "CGRect"
-- "UIViewController"
+- !private "StringLiteralType"
 - "CropImageViewController"
+- "AssignmentPrecedence"
+- "AKImageCropperView"
 depends-member:
 - !private ["P7Project31AKImageCropperTouchViewDelegate", "init"]
 - !private ["P7Project31AKImageCropperTouchViewDelegate", "refresh"]

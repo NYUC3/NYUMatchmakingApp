@@ -1,0 +1,851 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AKImageCropperOverlayView"
+provides-nominal:
+- "C7Project25AKImageCropperOverlayView"
+provides-member:
+- ["C7Project25AKImageCropperOverlayView", ""]
+provides-dynamic-lookup:
+- "draw"
+- "overlayViewDrawBg"
+- "cornerSize"
+- "croppperView"
+- "cornerOffset"
+depends-top-level:
+- !private "UIBezierPath"
+- "CGRect"
+- !private "+"
+- "AKImageCropperView"
+- !private "CGPoint"
+- "CGSize"
+- !private "UIGraphicsGetCurrentContext"
+- "CGFloat"
+- "AKImageCropperOverlayView"
+- "UIView"
+- !private "-"
+depends-member:
+- ["C7Project25AKImageCropperOverlayView", "AKImageCropperView"]
+- ["C7Project25AKImageCropperOverlayView", "CGFloat"]
+- !private ["C7Project25AKImageCropperOverlayView", "CGPoint"]
+- ["C7Project25AKImageCropperOverlayView", "CGRect"]
+- ["C7Project25AKImageCropperOverlayView", "CGSize"]
+- !private ["C7Project25AKImageCropperOverlayView", "UIBezierPath"]
+- !private ["C7Project25AKImageCropperOverlayView", "UIGraphicsGetCurrentContext"]
+- ["C7Project25AKImageCropperOverlayView", "cornerOffset"]
+- ["C7Project25AKImageCropperOverlayView", "cornerSize"]
+- ["C7Project25AKImageCropperOverlayView", "croppperView"]
+- ["C7Project25AKImageCropperOverlayView", "deinit"]
+- ["C7Project25AKImageCropperOverlayView", "draw"]
+- ["C7Project25AKImageCropperOverlayView", "init"]
+- ["C7Project25AKImageCropperOverlayView", "overlayViewDrawBg"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "cornerOffset"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "cornerSize"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "cropRect"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "grid"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "overlayColor"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "overlayViewDrawGridInCropRect"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["P7Project31AKImageCropperTouchViewDelegate", "overlayViewDrawStrokeInCropRect"]
+- !private ["C7Project18AKImageCropperView", "cornerOffset"]
+- !private ["C7Project18AKImageCropperView", "cornerSize"]
+- !private ["C7Project18AKImageCropperView", "cropRect"]
+- !private ["C7Project18AKImageCropperView", "deinit"]
+- !private ["C7Project18AKImageCropperView", "grid"]
+- !private ["C7Project18AKImageCropperView", "overlayColor"]
+- !private ["C7Project18AKImageCropperView", "overlayViewDrawGridInCropRect"]
+- !private ["C7Project18AKImageCropperView", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["C7Project18AKImageCropperView", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["C7Project18AKImageCropperView", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["C7Project18AKImageCropperView", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["C7Project18AKImageCropperView", "overlayViewDrawStrokeInCropRect"]
+- !private ["P7Project26AKImageCropperViewDelegate", "cornerOffset"]
+- !private ["P7Project26AKImageCropperViewDelegate", "cornerSize"]
+- !private ["P7Project26AKImageCropperViewDelegate", "cropRect"]
+- !private ["P7Project26AKImageCropperViewDelegate", "grid"]
+- !private ["P7Project26AKImageCropperViewDelegate", "overlayColor"]
+- !private ["P7Project26AKImageCropperViewDelegate", "overlayViewDrawGridInCropRect"]
+- !private ["P7Project26AKImageCropperViewDelegate", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["P7Project26AKImageCropperViewDelegate", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["P7Project26AKImageCropperViewDelegate", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["P7Project26AKImageCropperViewDelegate", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["P7Project26AKImageCropperViewDelegate", "overlayViewDrawStrokeInCropRect"]
+- !private ["Ps16AbsoluteValuable", "Stride"]
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "CGPoint"]
+- !private ["Ps9AnyObject", "UIBezierPath"]
+- !private ["Ps9AnyObject", "UIGraphicsGetCurrentContext"]
+- !private ["Ps9AnyObject", "clear"]
+- ["Ps9AnyObject", "cornerOffset"]
+- ["Ps9AnyObject", "cornerSize"]
+- !private ["Ps9AnyObject", "cropRect"]
+- ["Ps9AnyObject", "croppperView"]
+- ["Ps9AnyObject", "draw"]
+- !private ["Ps9AnyObject", "fill"]
+- !private ["Ps9AnyObject", "grid"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "overlayColor"]
+- ["Ps9AnyObject", "overlayViewDrawBg"]
+- !private ["Ps9AnyObject", "overlayViewDrawGridInCropRect"]
+- !private ["Ps9AnyObject", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["Ps9AnyObject", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["Ps9AnyObject", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["Ps9AnyObject", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["Ps9AnyObject", "overlayViewDrawStrokeInCropRect"]
+- !private ["Ps9AnyObject", "saveGState"]
+- !private ["Ps9AnyObject", "setFill"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps19BinaryFloatingPoint", "Stride"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSo15CALayerDelegate", "CGFloat"]
+- !private ["PSo15CALayerDelegate", "CGPoint"]
+- !private ["PSo15CALayerDelegate", "UIBezierPath"]
+- !private ["PSo15CALayerDelegate", "UIGraphicsGetCurrentContext"]
+- ["PSo15CALayerDelegate", "cornerOffset"]
+- ["PSo15CALayerDelegate", "cornerSize"]
+- !private ["PSo15CALayerDelegate", "cropRect"]
+- ["PSo15CALayerDelegate", "croppperView"]
+- ["PSo15CALayerDelegate", "draw"]
+- !private ["PSo15CALayerDelegate", "grid"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "overlayColor"]
+- ["PSo15CALayerDelegate", "overlayViewDrawBg"]
+- !private ["PSo15CALayerDelegate", "overlayViewDrawGridInCropRect"]
+- !private ["PSo15CALayerDelegate", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo15CALayerDelegate", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo15CALayerDelegate", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo15CALayerDelegate", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo15CALayerDelegate", "overlayViewDrawStrokeInCropRect"]
+- ["PSo15CALayerDelegate", ""]
+- !private ["CSo9CGContext", "clear"]
+- ["CSo9CGContext", "deinit"]
+- !private ["CSo9CGContext", "saveGState"]
+- !private ["V12CoreGraphics7CGFloat", "Stride"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- ["VSC7CGPoint", "deinit"]
+- !private ["VSC7CGPoint", "init"]
+- ["VSC6CGRect", "deinit"]
+- !private ["VSC6CGRect", "insetBy"]
+- !private ["VSC6CGRect", "maxX"]
+- !private ["VSC6CGRect", "maxY"]
+- !private ["VSC6CGRect", "minX"]
+- !private ["VSC6CGRect", "minY"]
+- !private ["VSC6CGRect", "offsetBy"]
+- ["VSC6CGSize", "deinit"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps7CVarArg", "CGFloat"]
+- !private ["Ps7CVarArg", "CGPoint"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "UIBezierPath"]
+- !private ["Ps7CVarArg", "UIGraphicsGetCurrentContext"]
+- ["Ps7CVarArg", "cornerOffset"]
+- ["Ps7CVarArg", "cornerSize"]
+- !private ["Ps7CVarArg", "cropRect"]
+- ["Ps7CVarArg", "croppperView"]
+- ["Ps7CVarArg", "draw"]
+- !private ["Ps7CVarArg", "fill"]
+- !private ["Ps7CVarArg", "grid"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "overlayColor"]
+- ["Ps7CVarArg", "overlayViewDrawBg"]
+- !private ["Ps7CVarArg", "overlayViewDrawGridInCropRect"]
+- !private ["Ps7CVarArg", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["Ps7CVarArg", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["Ps7CVarArg", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["Ps7CVarArg", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["Ps7CVarArg", "overlayViewDrawStrokeInCropRect"]
+- !private ["Ps7CVarArg", "setFill"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "Stride"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBezierPath"]
+- !private ["Ps28CustomDebugStringConvertible", "UIGraphicsGetCurrentContext"]
+- ["Ps28CustomDebugStringConvertible", "cornerOffset"]
+- ["Ps28CustomDebugStringConvertible", "cornerSize"]
+- !private ["Ps28CustomDebugStringConvertible", "cropRect"]
+- ["Ps28CustomDebugStringConvertible", "croppperView"]
+- ["Ps28CustomDebugStringConvertible", "draw"]
+- !private ["Ps28CustomDebugStringConvertible", "fill"]
+- !private ["Ps28CustomDebugStringConvertible", "grid"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "insetBy"]
+- !private ["Ps28CustomDebugStringConvertible", "maxX"]
+- !private ["Ps28CustomDebugStringConvertible", "maxY"]
+- !private ["Ps28CustomDebugStringConvertible", "minX"]
+- !private ["Ps28CustomDebugStringConvertible", "minY"]
+- !private ["Ps28CustomDebugStringConvertible", "offsetBy"]
+- !private ["Ps28CustomDebugStringConvertible", "overlayColor"]
+- ["Ps28CustomDebugStringConvertible", "overlayViewDrawBg"]
+- !private ["Ps28CustomDebugStringConvertible", "overlayViewDrawGridInCropRect"]
+- !private ["Ps28CustomDebugStringConvertible", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["Ps28CustomDebugStringConvertible", "overlayViewDrawStrokeInCropRect"]
+- !private ["Ps28CustomDebugStringConvertible", "setFill"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "insetBy"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "maxX"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "maxY"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "minX"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "minY"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "offsetBy"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "height"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "insetBy"]
+- !private ["Ps17CustomReflectable", "maxX"]
+- !private ["Ps17CustomReflectable", "maxY"]
+- !private ["Ps17CustomReflectable", "minX"]
+- !private ["Ps17CustomReflectable", "minY"]
+- !private ["Ps17CustomReflectable", "offsetBy"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "CGFloat"]
+- !private ["Ps23CustomStringConvertible", "CGPoint"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "UIBezierPath"]
+- !private ["Ps23CustomStringConvertible", "UIGraphicsGetCurrentContext"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "cornerOffset"]
+- ["Ps23CustomStringConvertible", "cornerSize"]
+- !private ["Ps23CustomStringConvertible", "cropRect"]
+- ["Ps23CustomStringConvertible", "croppperView"]
+- ["Ps23CustomStringConvertible", "draw"]
+- !private ["Ps23CustomStringConvertible", "fill"]
+- !private ["Ps23CustomStringConvertible", "grid"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "overlayColor"]
+- ["Ps23CustomStringConvertible", "overlayViewDrawBg"]
+- !private ["Ps23CustomStringConvertible", "overlayViewDrawGridInCropRect"]
+- !private ["Ps23CustomStringConvertible", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["Ps23CustomStringConvertible", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["Ps23CustomStringConvertible", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["Ps23CustomStringConvertible", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["Ps23CustomStringConvertible", "overlayViewDrawStrokeInCropRect"]
+- !private ["Ps23CustomStringConvertible", "setFill"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "Stride"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CGFloat"]
+- !private ["Ps9Equatable", "CGPoint"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "UIBezierPath"]
+- !private ["Ps9Equatable", "UIGraphicsGetCurrentContext"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "cornerOffset"]
+- ["Ps9Equatable", "cornerSize"]
+- !private ["Ps9Equatable", "cropRect"]
+- ["Ps9Equatable", "croppperView"]
+- ["Ps9Equatable", "draw"]
+- !private ["Ps9Equatable", "fill"]
+- !private ["Ps9Equatable", "grid"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "insetBy"]
+- !private ["Ps9Equatable", "maxX"]
+- !private ["Ps9Equatable", "maxY"]
+- !private ["Ps9Equatable", "minX"]
+- !private ["Ps9Equatable", "minY"]
+- !private ["Ps9Equatable", "offsetBy"]
+- !private ["Ps9Equatable", "overlayColor"]
+- ["Ps9Equatable", "overlayViewDrawBg"]
+- !private ["Ps9Equatable", "overlayViewDrawGridInCropRect"]
+- !private ["Ps9Equatable", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["Ps9Equatable", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["Ps9Equatable", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["Ps9Equatable", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["Ps9Equatable", "overlayViewDrawStrokeInCropRect"]
+- !private ["Ps9Equatable", "setFill"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps13FloatingPoint", "Stride"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "CGFloat"]
+- !private ["Ps8Hashable", "CGPoint"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "UIBezierPath"]
+- !private ["Ps8Hashable", "UIGraphicsGetCurrentContext"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "cornerOffset"]
+- ["Ps8Hashable", "cornerSize"]
+- !private ["Ps8Hashable", "cropRect"]
+- ["Ps8Hashable", "croppperView"]
+- ["Ps8Hashable", "draw"]
+- !private ["Ps8Hashable", "fill"]
+- !private ["Ps8Hashable", "grid"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "overlayColor"]
+- ["Ps8Hashable", "overlayViewDrawBg"]
+- !private ["Ps8Hashable", "overlayViewDrawGridInCropRect"]
+- !private ["Ps8Hashable", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["Ps8Hashable", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["Ps8Hashable", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["Ps8Hashable", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["Ps8Hashable", "overlayViewDrawStrokeInCropRect"]
+- !private ["Ps8Hashable", "setFill"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps25LosslessStringConvertible", "Stride"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps10MirrorPath", "Stride"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "CGPoint"]
+- !private ["PSo8NSCoding", "UIBezierPath"]
+- !private ["PSo8NSCoding", "UIGraphicsGetCurrentContext"]
+- ["PSo8NSCoding", "cornerOffset"]
+- ["PSo8NSCoding", "cornerSize"]
+- !private ["PSo8NSCoding", "cropRect"]
+- ["PSo8NSCoding", "croppperView"]
+- ["PSo8NSCoding", "draw"]
+- !private ["PSo8NSCoding", "fill"]
+- !private ["PSo8NSCoding", "grid"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "overlayColor"]
+- ["PSo8NSCoding", "overlayViewDrawBg"]
+- !private ["PSo8NSCoding", "overlayViewDrawGridInCropRect"]
+- !private ["PSo8NSCoding", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo8NSCoding", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo8NSCoding", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo8NSCoding", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo8NSCoding", "overlayViewDrawStrokeInCropRect"]
+- !private ["PSo8NSCoding", "setFill"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "fill"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "setFill"]
+- ["CSo8NSObject", "AKImageCropperView"]
+- ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CGPoint"]
+- ["CSo8NSObject", "CGRect"]
+- ["CSo8NSObject", "CGSize"]
+- !private ["CSo8NSObject", "UIBezierPath"]
+- !private ["CSo8NSObject", "UIGraphicsGetCurrentContext"]
+- ["CSo8NSObject", "cornerOffset"]
+- ["CSo8NSObject", "cornerSize"]
+- !private ["CSo8NSObject", "cropRect"]
+- ["CSo8NSObject", "croppperView"]
+- ["CSo8NSObject", "draw"]
+- !private ["CSo8NSObject", "fill"]
+- !private ["CSo8NSObject", "grid"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "overlayColor"]
+- ["CSo8NSObject", "overlayViewDrawBg"]
+- !private ["CSo8NSObject", "overlayViewDrawGridInCropRect"]
+- !private ["CSo8NSObject", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["CSo8NSObject", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["CSo8NSObject", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["CSo8NSObject", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["CSo8NSObject", "overlayViewDrawStrokeInCropRect"]
+- !private ["CSo8NSObject", "setFill"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "CGPoint"]
+- !private ["PSo16NSObjectProtocol", "UIBezierPath"]
+- !private ["PSo16NSObjectProtocol", "UIGraphicsGetCurrentContext"]
+- ["PSo16NSObjectProtocol", "cornerOffset"]
+- ["PSo16NSObjectProtocol", "cornerSize"]
+- !private ["PSo16NSObjectProtocol", "cropRect"]
+- ["PSo16NSObjectProtocol", "croppperView"]
+- ["PSo16NSObjectProtocol", "draw"]
+- !private ["PSo16NSObjectProtocol", "fill"]
+- !private ["PSo16NSObjectProtocol", "grid"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "overlayColor"]
+- ["PSo16NSObjectProtocol", "overlayViewDrawBg"]
+- !private ["PSo16NSObjectProtocol", "overlayViewDrawGridInCropRect"]
+- !private ["PSo16NSObjectProtocol", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo16NSObjectProtocol", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo16NSObjectProtocol", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo16NSObjectProtocol", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo16NSObjectProtocol", "overlayViewDrawStrokeInCropRect"]
+- !private ["PSo16NSObjectProtocol", "setFill"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "setFill"]
+- ["Sq", "deinit"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "CGFloat"]
+- !private ["PSo29UIAccessibilityIdentification", "CGPoint"]
+- !private ["PSo29UIAccessibilityIdentification", "UIBezierPath"]
+- !private ["PSo29UIAccessibilityIdentification", "UIGraphicsGetCurrentContext"]
+- ["PSo29UIAccessibilityIdentification", "cornerOffset"]
+- ["PSo29UIAccessibilityIdentification", "cornerSize"]
+- !private ["PSo29UIAccessibilityIdentification", "cropRect"]
+- ["PSo29UIAccessibilityIdentification", "croppperView"]
+- ["PSo29UIAccessibilityIdentification", "draw"]
+- !private ["PSo29UIAccessibilityIdentification", "grid"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "overlayColor"]
+- ["PSo29UIAccessibilityIdentification", "overlayViewDrawBg"]
+- !private ["PSo29UIAccessibilityIdentification", "overlayViewDrawGridInCropRect"]
+- !private ["PSo29UIAccessibilityIdentification", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo29UIAccessibilityIdentification", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo29UIAccessibilityIdentification", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo29UIAccessibilityIdentification", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo29UIAccessibilityIdentification", "overlayViewDrawStrokeInCropRect"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "CGFloat"]
+- !private ["PSo12UIAppearance", "CGPoint"]
+- !private ["PSo12UIAppearance", "UIBezierPath"]
+- !private ["PSo12UIAppearance", "UIGraphicsGetCurrentContext"]
+- ["PSo12UIAppearance", "cornerOffset"]
+- ["PSo12UIAppearance", "cornerSize"]
+- !private ["PSo12UIAppearance", "cropRect"]
+- ["PSo12UIAppearance", "croppperView"]
+- ["PSo12UIAppearance", "draw"]
+- !private ["PSo12UIAppearance", "grid"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "overlayColor"]
+- ["PSo12UIAppearance", "overlayViewDrawBg"]
+- !private ["PSo12UIAppearance", "overlayViewDrawGridInCropRect"]
+- !private ["PSo12UIAppearance", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo12UIAppearance", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo12UIAppearance", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo12UIAppearance", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo12UIAppearance", "overlayViewDrawStrokeInCropRect"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "CGFloat"]
+- !private ["PSo21UIAppearanceContainer", "CGPoint"]
+- !private ["PSo21UIAppearanceContainer", "UIBezierPath"]
+- !private ["PSo21UIAppearanceContainer", "UIGraphicsGetCurrentContext"]
+- ["PSo21UIAppearanceContainer", "cornerOffset"]
+- ["PSo21UIAppearanceContainer", "cornerSize"]
+- !private ["PSo21UIAppearanceContainer", "cropRect"]
+- ["PSo21UIAppearanceContainer", "croppperView"]
+- ["PSo21UIAppearanceContainer", "draw"]
+- !private ["PSo21UIAppearanceContainer", "grid"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "overlayColor"]
+- ["PSo21UIAppearanceContainer", "overlayViewDrawBg"]
+- !private ["PSo21UIAppearanceContainer", "overlayViewDrawGridInCropRect"]
+- !private ["PSo21UIAppearanceContainer", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo21UIAppearanceContainer", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo21UIAppearanceContainer", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo21UIAppearanceContainer", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo21UIAppearanceContainer", "overlayViewDrawStrokeInCropRect"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo12UIBezierPath", "deinit"]
+- !private ["CSo12UIBezierPath", "fill"]
+- !private ["CSo12UIBezierPath", "init"]
+- !private ["CSo7UIColor", "setFill"]
+- !private ["PSo17UICoordinateSpace", "CGFloat"]
+- !private ["PSo17UICoordinateSpace", "CGPoint"]
+- !private ["PSo17UICoordinateSpace", "UIBezierPath"]
+- !private ["PSo17UICoordinateSpace", "UIGraphicsGetCurrentContext"]
+- ["PSo17UICoordinateSpace", "cornerOffset"]
+- ["PSo17UICoordinateSpace", "cornerSize"]
+- !private ["PSo17UICoordinateSpace", "cropRect"]
+- ["PSo17UICoordinateSpace", "croppperView"]
+- ["PSo17UICoordinateSpace", "draw"]
+- !private ["PSo17UICoordinateSpace", "grid"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "overlayColor"]
+- ["PSo17UICoordinateSpace", "overlayViewDrawBg"]
+- !private ["PSo17UICoordinateSpace", "overlayViewDrawGridInCropRect"]
+- !private ["PSo17UICoordinateSpace", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo17UICoordinateSpace", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo17UICoordinateSpace", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo17UICoordinateSpace", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo17UICoordinateSpace", "overlayViewDrawStrokeInCropRect"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "CGFloat"]
+- !private ["PSo13UIDynamicItem", "CGPoint"]
+- !private ["PSo13UIDynamicItem", "UIBezierPath"]
+- !private ["PSo13UIDynamicItem", "UIGraphicsGetCurrentContext"]
+- ["PSo13UIDynamicItem", "cornerOffset"]
+- ["PSo13UIDynamicItem", "cornerSize"]
+- !private ["PSo13UIDynamicItem", "cropRect"]
+- ["PSo13UIDynamicItem", "croppperView"]
+- ["PSo13UIDynamicItem", "draw"]
+- !private ["PSo13UIDynamicItem", "grid"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "overlayColor"]
+- ["PSo13UIDynamicItem", "overlayViewDrawBg"]
+- !private ["PSo13UIDynamicItem", "overlayViewDrawGridInCropRect"]
+- !private ["PSo13UIDynamicItem", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo13UIDynamicItem", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo13UIDynamicItem", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo13UIDynamicItem", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo13UIDynamicItem", "overlayViewDrawStrokeInCropRect"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "CGFloat"]
+- !private ["PSo18UIFocusEnvironment", "CGPoint"]
+- !private ["PSo18UIFocusEnvironment", "UIBezierPath"]
+- !private ["PSo18UIFocusEnvironment", "UIGraphicsGetCurrentContext"]
+- ["PSo18UIFocusEnvironment", "cornerOffset"]
+- ["PSo18UIFocusEnvironment", "cornerSize"]
+- !private ["PSo18UIFocusEnvironment", "cropRect"]
+- ["PSo18UIFocusEnvironment", "croppperView"]
+- ["PSo18UIFocusEnvironment", "draw"]
+- !private ["PSo18UIFocusEnvironment", "grid"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "overlayColor"]
+- ["PSo18UIFocusEnvironment", "overlayViewDrawBg"]
+- !private ["PSo18UIFocusEnvironment", "overlayViewDrawGridInCropRect"]
+- !private ["PSo18UIFocusEnvironment", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo18UIFocusEnvironment", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo18UIFocusEnvironment", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo18UIFocusEnvironment", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo18UIFocusEnvironment", "overlayViewDrawStrokeInCropRect"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "CGFloat"]
+- !private ["PSo11UIFocusItem", "CGPoint"]
+- !private ["PSo11UIFocusItem", "UIBezierPath"]
+- !private ["PSo11UIFocusItem", "UIGraphicsGetCurrentContext"]
+- ["PSo11UIFocusItem", "cornerOffset"]
+- ["PSo11UIFocusItem", "cornerSize"]
+- !private ["PSo11UIFocusItem", "cropRect"]
+- ["PSo11UIFocusItem", "croppperView"]
+- ["PSo11UIFocusItem", "draw"]
+- !private ["PSo11UIFocusItem", "grid"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "overlayColor"]
+- ["PSo11UIFocusItem", "overlayViewDrawBg"]
+- !private ["PSo11UIFocusItem", "overlayViewDrawGridInCropRect"]
+- !private ["PSo11UIFocusItem", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo11UIFocusItem", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo11UIFocusItem", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo11UIFocusItem", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo11UIFocusItem", "overlayViewDrawStrokeInCropRect"]
+- ["PSo11UIFocusItem", ""]
+- ["CSo11UIResponder", "AKImageCropperView"]
+- ["CSo11UIResponder", "CGFloat"]
+- !private ["CSo11UIResponder", "CGPoint"]
+- ["CSo11UIResponder", "CGRect"]
+- ["CSo11UIResponder", "CGSize"]
+- !private ["CSo11UIResponder", "UIBezierPath"]
+- !private ["CSo11UIResponder", "UIGraphicsGetCurrentContext"]
+- ["CSo11UIResponder", "cornerOffset"]
+- ["CSo11UIResponder", "cornerSize"]
+- !private ["CSo11UIResponder", "cropRect"]
+- ["CSo11UIResponder", "croppperView"]
+- ["CSo11UIResponder", "draw"]
+- !private ["CSo11UIResponder", "grid"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "overlayColor"]
+- ["CSo11UIResponder", "overlayViewDrawBg"]
+- !private ["CSo11UIResponder", "overlayViewDrawGridInCropRect"]
+- !private ["CSo11UIResponder", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["CSo11UIResponder", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["CSo11UIResponder", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["CSo11UIResponder", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["CSo11UIResponder", "overlayViewDrawStrokeInCropRect"]
+- !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
+- !private ["PSo30UIResponderStandardEditActions", "CGPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "UIBezierPath"]
+- !private ["PSo30UIResponderStandardEditActions", "UIGraphicsGetCurrentContext"]
+- ["PSo30UIResponderStandardEditActions", "cornerOffset"]
+- ["PSo30UIResponderStandardEditActions", "cornerSize"]
+- !private ["PSo30UIResponderStandardEditActions", "cropRect"]
+- ["PSo30UIResponderStandardEditActions", "croppperView"]
+- ["PSo30UIResponderStandardEditActions", "draw"]
+- !private ["PSo30UIResponderStandardEditActions", "grid"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "overlayColor"]
+- ["PSo30UIResponderStandardEditActions", "overlayViewDrawBg"]
+- !private ["PSo30UIResponderStandardEditActions", "overlayViewDrawGridInCropRect"]
+- !private ["PSo30UIResponderStandardEditActions", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo30UIResponderStandardEditActions", "overlayViewDrawStrokeInCropRect"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "cornerOffset"]
+- !private ["PSo20UIScrollViewDelegate", "cornerSize"]
+- !private ["PSo20UIScrollViewDelegate", "cropRect"]
+- !private ["PSo20UIScrollViewDelegate", "grid"]
+- !private ["PSo20UIScrollViewDelegate", "overlayColor"]
+- !private ["PSo20UIScrollViewDelegate", "overlayViewDrawGridInCropRect"]
+- !private ["PSo20UIScrollViewDelegate", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo20UIScrollViewDelegate", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo20UIScrollViewDelegate", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo20UIScrollViewDelegate", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo20UIScrollViewDelegate", "overlayViewDrawStrokeInCropRect"]
+- !private ["PSo18UITraitEnvironment", "CGFloat"]
+- !private ["PSo18UITraitEnvironment", "CGPoint"]
+- !private ["PSo18UITraitEnvironment", "UIBezierPath"]
+- !private ["PSo18UITraitEnvironment", "UIGraphicsGetCurrentContext"]
+- ["PSo18UITraitEnvironment", "cornerOffset"]
+- ["PSo18UITraitEnvironment", "cornerSize"]
+- !private ["PSo18UITraitEnvironment", "cropRect"]
+- ["PSo18UITraitEnvironment", "croppperView"]
+- ["PSo18UITraitEnvironment", "draw"]
+- !private ["PSo18UITraitEnvironment", "grid"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "overlayColor"]
+- ["PSo18UITraitEnvironment", "overlayViewDrawBg"]
+- !private ["PSo18UITraitEnvironment", "overlayViewDrawGridInCropRect"]
+- !private ["PSo18UITraitEnvironment", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["PSo18UITraitEnvironment", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["PSo18UITraitEnvironment", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["PSo18UITraitEnvironment", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["PSo18UITraitEnvironment", "overlayViewDrawStrokeInCropRect"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "AKImageCropperView"]
+- ["CSo6UIView", "CGFloat"]
+- !private ["CSo6UIView", "CGPoint"]
+- ["CSo6UIView", "CGRect"]
+- ["CSo6UIView", "CGSize"]
+- !private ["CSo6UIView", "UIBezierPath"]
+- !private ["CSo6UIView", "UIGraphicsGetCurrentContext"]
+- ["CSo6UIView", "cornerOffset"]
+- ["CSo6UIView", "cornerSize"]
+- !private ["CSo6UIView", "cropRect"]
+- ["CSo6UIView", "croppperView"]
+- ["CSo6UIView", "deinit"]
+- ["CSo6UIView", "draw"]
+- !private ["CSo6UIView", "grid"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "overlayColor"]
+- ["CSo6UIView", "overlayViewDrawBg"]
+- !private ["CSo6UIView", "overlayViewDrawGridInCropRect"]
+- !private ["CSo6UIView", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["CSo6UIView", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["CSo6UIView", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["CSo6UIView", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["CSo6UIView", "overlayViewDrawStrokeInCropRect"]
+- ["CSo6UIView", ""]
+- !private ["Ps15_CVarArgAligned", "Stride"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGFloat"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGPoint"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIBezierPath"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIGraphicsGetCurrentContext"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "cornerOffset"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "cornerSize"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "cropRect"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "croppperView"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "draw"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "grid"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "overlayColor"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "overlayViewDrawBg"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "overlayViewDrawGridInCropRect"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "overlayViewDrawStrokeInCropRect"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps26_ExpressibleByColorLiteral", "setFill"]
+- !private ["Ps9_Hashable", "CGFloat"]
+- !private ["Ps9_Hashable", "CGPoint"]
+- !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "UIBezierPath"]
+- !private ["Ps9_Hashable", "UIGraphicsGetCurrentContext"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "cornerOffset"]
+- ["Ps9_Hashable", "cornerSize"]
+- !private ["Ps9_Hashable", "cropRect"]
+- ["Ps9_Hashable", "croppperView"]
+- ["Ps9_Hashable", "draw"]
+- !private ["Ps9_Hashable", "fill"]
+- !private ["Ps9_Hashable", "grid"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "overlayColor"]
+- ["Ps9_Hashable", "overlayViewDrawBg"]
+- !private ["Ps9_Hashable", "overlayViewDrawGridInCropRect"]
+- !private ["Ps9_Hashable", "overlayViewDrawInBottomLeftCropRectCornerPoint"]
+- !private ["Ps9_Hashable", "overlayViewDrawInBottomRightCropRectCornerPoint"]
+- !private ["Ps9_Hashable", "overlayViewDrawInTopLeftCropRectCornerPoint"]
+- !private ["Ps9_Hashable", "overlayViewDrawInTopRightCropRectCornerPoint"]
+- !private ["Ps9_Hashable", "overlayViewDrawStrokeInCropRect"]
+- !private ["Ps9_Hashable", "setFill"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "height"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "insetBy"]
+- !private ["Ps21_ObjectiveCBridgeable", "maxX"]
+- !private ["Ps21_ObjectiveCBridgeable", "maxY"]
+- !private ["Ps21_ObjectiveCBridgeable", "minX"]
+- !private ["Ps21_ObjectiveCBridgeable", "minY"]
+- !private ["Ps21_ObjectiveCBridgeable", "offsetBy"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- "C7Project25AKImageCropperOverlayView"
+- !private "P7Project31AKImageCropperTouchViewDelegate"
+- !private "C7Project18AKImageCropperView"
+- !private "P7Project26AKImageCropperViewDelegate"
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- "PSo15CALayerDelegate"
+- "CSo9CGContext"
+- "V12CoreGraphics7CGFloat"
+- "VSC7CGPoint"
+- "VSC6CGRect"
+- "VSC6CGSize"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps13FloatingPoint"
+- "Ps8Hashable"
+- "SQ"
+- !private "Si"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "Sq"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo12UIBezierPath"
+- !private "CSo7UIColor"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "PSo20UIScrollViewDelegate"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFURL.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFTask.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFDefines.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/Bolts.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Modules/module.modulemap"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPurchase.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFProduct.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFNetworkActivityIndicatorManager.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFInstallation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUserAuthenticationDelegate.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFSession.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFRole.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFRelation.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFQuery.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject+Subclass.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFGeoPoint.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFFile.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConfig+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConfig.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud+Synchronous.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFCloud.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnonymousUtils+Deprecated.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFSubclassing.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFObject.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFUser.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnonymousUtils.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFAnalytics.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFACL.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFConstants.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/ParseClientConfiguration.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
+- "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+interface-hash: "6f0b79138d30ec3deffd07499789e0e5"
