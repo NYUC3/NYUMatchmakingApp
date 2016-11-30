@@ -278,6 +278,16 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             feedList[buttonRow].noOfLikes += 1
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "view-activity"){
+            
+            let destinationNavigationController = segue.destination as! UINavigationController
+            let targetController = destinationNavigationController.topViewController as! SingleActivityVC
+            targetController.activityObject = feedList[(daTableView.indexPathForSelectedRow?.row)!]
+        
+        }
+    }
 
 
 }

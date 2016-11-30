@@ -8,28 +8,42 @@
 
 import UIKit
 
-class SingleActivityVC: UITabBarController {
+class SingleActivityVC: UIViewController {
     
     var activityObject : Feed?
-    
-    @IBOutlet weak var activityImage: UIImageView!
+    @IBOutlet weak var activityTitleLabel: UILabel!
     @IBOutlet weak var activityDescriptionLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var activityImage: UIImageView!
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
         
 
         
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+
+        
+        let imageFromParse = activityObject?.image
+        imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
+            let image: UIImage! = UIImage(data: imageData!)!
+            self.activityImage.image = image
+            self.activityDescriptionLabel.text = self.activityObject?.description
+            self.activityTitleLabel.text = self.activityObject?.title
+        })
+
+    }
+    
+    @IBAction func backButtonTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 
 

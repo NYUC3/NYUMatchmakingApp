@@ -367,6 +367,7 @@ SWIFT_CLASS("_TtC7Project14CustomTabbarVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Project6FeedVC")
 @interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -379,6 +380,7 @@ SWIFT_CLASS("_TtC7Project6FeedVC")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)buttonClickedWithSender:(UIButton * _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -412,7 +414,6 @@ SWIFT_CLASS("_TtC7Project19HomeVCTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Project18HomeViewController")
 @interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
@@ -516,12 +517,14 @@ SWIFT_CLASS("_TtC7Project8SignupVC")
 
 
 SWIFT_CLASS("_TtC7Project16SingleActivityVC")
-@interface SingleActivityVC : UITabBarController
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified activityImage;
+@interface SingleActivityVC : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified activityTitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified activityDescriptionLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeButton;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified activityImage;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (IBAction)backButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
