@@ -57,17 +57,63 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                             if(object["image"] != nil){
                                 var feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile)
                                 
-                                
-                                
                                 feed.timestamp = String(describing: self.processTimestamp(str: String(describing: object.createdAt!)))
-                                feed.noOfLikes = object["likes"] as! Int
+
                                 
                                 
-                                self.feedList.append(feed)
+                                // idk how to pass by reference in swift so I'm gonna add the next function here (I know this is really crappy code fyi)
+ 
+                                let query = PFQuery(className:"likes")
+                                print(feed.title)
+                                query.whereKey("title", equalTo: feed.title)
+                                qry.findObjectsInBackground {
+                                    (objects: [PFObject]?, error: Error?) -> Void in
+                                    
+                                    if error == nil{
+                                        
+                                        print("Successfully \(objects!.count) scores.")
+                                        
+                                        if let objects = objects{
+                                            
+                                            for object in objects{
+                                                
+                                                // check if the username is associated with the activity
+                                                
+                                                if(object["username"] as? String == PFUser.current()?.username){
+                                                    print("object")
+                                                    print(object["title"])
+                                                    feed.isLiked = true
+                                                    
+                                                }
+                                                
+                                                
+                                                feed.noOfLikes += 1
+                                                self.feedList.append(feed)
+                                                
+                                            }
+                                            
+                                            self.daTableView.reloadData()
+                                        }
+                                        
+                                        
+                                    }
+                                        
+                                    else{ // ERROR
+                                        
+                                        print("something went wrong: ")
+                                        
+                                    }
+                                    
+                                }
+                                
+                                
+                                
+                                
+                                
                             }
                             
                         }
-                        self.daTableView.reloadData()
+                        
                     }
                     
                     
@@ -76,7 +122,6 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                     print("Error: \(error!)")
                 }
             }
-        
         
 
     }
@@ -124,6 +169,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     
+    // Tableview data source 
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return feedList.count
@@ -137,6 +183,11 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         cell.feedDescriptionLabel.text = feedList[indexPath.row].description
         cell.noOfLikes.text = String(feedList[indexPath.row].noOfLikes) + " likes"
         cell.timeStampLabel.text = feedList[indexPath.row].timestamp
+        if(feedList[indexPath.row].isLiked){
+            print("isLiked")
+            let filledImage = UIImage(named: "filled-shape")
+            cell.likeButton.setImage(filledImage, for: .normal)
+        }
         cell.likeButton.tag = indexPath.row
         cell.likeButton.addTarget(self, action: #selector(FeedVC.buttonClicked(sender:)), for: UIControlEvents.touchUpInside)
         cell.feedDescriptionLabel.lineBreakMode = .byWordWrapping
@@ -153,7 +204,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func buttonClicked(sender:UIButton) {
         let buttonRow = sender.tag
         
-        if(feedList[buttonRow].isActive){
+        if(feedList[buttonRow].isLiked){
             // delete a like from the likes class
             
             let query = PFQuery(className:"likes")
@@ -264,18 +315,16 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
                     }
                     
-                    
-                    
                 } else {
                     // There was a problem, check error.description
                 }
             }
-            
-            
+
             let filledImage = UIImage(named: "filled-shape")
             sender.setImage(filledImage, for: .normal)
             feedList[buttonRow].isActive = true
             feedList[buttonRow].noOfLikes += 1
+            
         }
     }
     
