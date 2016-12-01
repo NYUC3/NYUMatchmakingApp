@@ -13,6 +13,8 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var feedList = [Feed]()
     var projectsFollowing = [String]()
+    
+     var overlay : UIView?
 
     @IBOutlet weak var daTableView: UITableView! // This is a bad name
     
@@ -29,6 +31,13 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let qry = PFQuery(className:"MyActivities")
 
             qry.whereKey("projectName", equalTo: name)
+        
+        overlay = UIView(frame: view.frame)
+        overlay!.backgroundColor = UIColor.black
+        overlay!.alpha = 0.8
+        self.view.addSubview(self.overlay!)
+        
+        
             qry.findObjectsInBackground {
                 (objects: [PFObject]?, error: Error?) -> Void in
                 
@@ -93,6 +102,8 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                             }
                                             
                                             self.daTableView.reloadData()
+                                            self.overlay?.removeFromSuperview()
+                                            
                                         }
                                         
                                         

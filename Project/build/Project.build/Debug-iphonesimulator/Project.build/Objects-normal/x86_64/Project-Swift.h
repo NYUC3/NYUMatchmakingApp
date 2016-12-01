@@ -372,6 +372,7 @@ SWIFT_CLASS("_TtC7Project14CustomTabbarVC")
 SWIFT_CLASS("_TtC7Project6FeedVC")
 @interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull projectsFollowing;
+@property (nonatomic, strong) UIView * _Nullable overlay;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified daTableView;
 - (void)viewDidLoad;
 - (void)queryActivitiesWithName:(NSString * _Nonnull)name;
@@ -417,6 +418,7 @@ SWIFT_CLASS("_TtC7Project19HomeVCTableViewCell")
 
 SWIFT_CLASS("_TtC7Project18HomeViewController")
 @interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) UIView * _Nullable overlay;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified projectTableView;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;

@@ -13,6 +13,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     var projectsList = [Feed]()
     
+    var overlay : UIView? // loading screen
+    
     @IBOutlet weak var projectTableView: UITableView!
     
     
@@ -32,6 +34,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else{
             
+            
+            overlay = UIView(frame: view.frame)
+            overlay!.backgroundColor = UIColor.black
+            overlay!.alpha = 0.8
+            
+            view.addSubview(overlay!)
+            
              let query = PFQuery(className:"Projects")
              // query.whereKey("username", equalTo:"vdthatte@nyu.edu")
              query.findObjectsInBackground {
@@ -41,20 +50,27 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 // The find succeeded.
                 print("Successfully retrieved \(objects!.count) scores.")
                 // Do something with the found objects
-             if let objects = objects {
-                for object in objects {
              
-                    if(object["image"] != nil){
+                if let objects = objects {
+                
+                    for object in objects {
+             
+                    
+                        if(object["image"] != nil){
                         let theImg = object["image"] as! PFFile
-                        if(theImg != nil){
-                            let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg)
-                            self.projectsList.append(project)
+                        
+                            if(theImg != nil){
+                            
+                                let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg)
+                            
+                                self.projectsList.append(project)
                         }
                     
                     }
                 }
                 
                 self.projectTableView.reloadData()
+                self.overlay?.removeFromSuperview()
              }
              
              self.projectTableView.reloadData()
