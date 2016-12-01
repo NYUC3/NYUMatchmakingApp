@@ -6,61 +6,66 @@ provides-nominal:
 provides-member:
 - ["C7Project18HomeViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "addParallaxToView"
-- "overlay"
-- "prepare"
-- "unwindToProjectsList"
 - "viewDidAppear"
-- "tableView"
-- "tableView"
+- "viewDidLoad"
 - "projectTableView"
+- "prepare"
+- "addParallaxToView"
+- "unwindToProjectsList"
+- "tableView"
+- "tableView"
+- "overlay"
 depends-top-level:
-- "UITableViewCell"
-- !private "Data"
-- "UIStoryboardSegue"
-- "Feed"
-- !private "PFFile"
-- "UITableView"
-- !private "String"
-- !private "!="
-- !private "Void"
-- !private "UIMotionEffectGroup"
-- !private "PFObject"
-- !private "PFUser"
-- "CastingPrecedence"
-- "HomeViewController"
-- "Bool"
-- !private "LoginVC"
-- !private "print"
-- "IndexPath"
-- !private "=="
-- !private "UIStoryboard"
-- "AssignmentPrecedence"
-- !private "NSError"
-- !private "PFQuery"
-- "UITableViewDataSource"
-- !private "UIImage"
-- "UIViewController"
-- "UITableViewDelegate"
-- !private "StringLiteralType"
-- !private "UIInterpolatingMotionEffect"
-- !private "HomeVCTableViewCell"
-- "Int"
-- "UIView"
-- !private "ProjectViewController"
-- !private "Error"
-- !private "BooleanLiteralType"
-- !private "Array"
-- !private "-"
-- !private "UINavigationController"
-- "UnicodeScalarType"
 - !private "UIColor"
+- !private "StringLiteralType"
+- !private "ProjectViewController"
+- !private "UIMotionEffectGroup"
+- !private "LoginVC"
+- !private "UIImage"
+- !private "PFUser"
+- "UIView"
+- "UIViewController"
+- "UnicodeScalarType"
+- !private "UIInterpolatingMotionEffect"
+- "IndexPath"
+- !private "UIStoryboard"
+- !private "PFObject"
+- "HomeViewController"
+- !private "PFQuery"
+- !private "Dictionary"
+- !private "BooleanLiteralType"
+- !private "print"
+- "Bool"
+- "UITableViewDelegate"
+- !private "!="
+- "UIStoryboardSegue"
+- !private "NSFontAttributeName"
+- !private "NSError"
+- "UITableViewDataSource"
+- !private "String"
+- "Int"
+- "UITableViewCell"
+- !private "HomeVCTableViewCell"
+- !private "UIFont"
+- !private "Error"
+- "AssignmentPrecedence"
+- !private "=="
+- "Feed"
+- "CastingPrecedence"
+- "UITableView"
+- !private "PFFile"
+- !private "Void"
+- !private "Data"
+- !private "-"
+- !private "Array"
+- !private "UINavigationController"
 depends-member:
 - ["Ps9AnyObject", "Feed"]
+- !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "PFQuery"]
 - !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIInterpolatingMotionEffect"]
 - !private ["Ps9AnyObject", "UIMotionEffectGroup"]
@@ -90,6 +95,8 @@ depends-member:
 - !private ["Ps9AnyObject", "maximumRelativeValue"]
 - !private ["Ps9AnyObject", "minimumRelativeValue"]
 - !private ["Ps9AnyObject", "motionEffects"]
+- !private ["Ps9AnyObject", "navigationBar"]
+- !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "numberOfLines"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
@@ -121,6 +128,7 @@ depends-member:
 - !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "titleTextAttributes"]
 - !private ["Ps9AnyObject", "topViewController"]
 - ["Ps9AnyObject", "unwindToProjectsList"]
 - !private ["Ps9AnyObject", "view"]
@@ -192,6 +200,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "reloadData"]
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
 - !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "titleTextAttributes"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["Ps7CVarArg", "Element"]
 - ["Ps7CVarArg", "Feed"]
@@ -199,16 +208,20 @@ depends-member:
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "NSFontAttributeName"]
 - !private ["Ps7CVarArg", "PFQuery"]
 - !private ["Ps7CVarArg", "PFUser"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "UIInterpolatingMotionEffect"]
 - !private ["Ps7CVarArg", "UIMotionEffectGroup"]
 - !private ["Ps7CVarArg", "UIStoryboard"]
 - !private ["Ps7CVarArg", "UIView"]
+- !private ["Ps7CVarArg", "Value"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "addMotionEffect"]
@@ -237,6 +250,8 @@ depends-member:
 - !private ["Ps7CVarArg", "maximumRelativeValue"]
 - !private ["Ps7CVarArg", "minimumRelativeValue"]
 - !private ["Ps7CVarArg", "motionEffects"]
+- !private ["Ps7CVarArg", "navigationBar"]
+- !private ["Ps7CVarArg", "navigationController"]
 - !private ["Ps7CVarArg", "numberOfLines"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
@@ -268,6 +283,7 @@ depends-member:
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "titleTextAttributes"]
 - !private ["Ps7CVarArg", "topViewController"]
 - ["Ps7CVarArg", "unwindToProjectsList"]
 - !private ["Ps7CVarArg", "view"]
@@ -282,7 +298,9 @@ depends-member:
 - !private ["Ps10Collection", "IndexDistance"]
 - !private ["Ps10Collection", "Indices"]
 - !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "Key"]
 - !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "Value"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "count"]
@@ -299,15 +317,19 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "PFQuery"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIInterpolatingMotionEffect"]
 - !private ["Ps28CustomDebugStringConvertible", "UIMotionEffectGroup"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addMotionEffect"]
 - ["Ps28CustomDebugStringConvertible", "addParallaxToView"]
@@ -335,6 +357,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "maximumRelativeValue"]
 - !private ["Ps28CustomDebugStringConvertible", "minimumRelativeValue"]
 - !private ["Ps28CustomDebugStringConvertible", "motionEffects"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationBar"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
@@ -367,6 +391,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
 - !private ["Ps28CustomDebugStringConvertible", "topViewController"]
 - ["Ps28CustomDebugStringConvertible", "unwindToProjectsList"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
@@ -385,8 +410,10 @@ depends-member:
 - !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
 - !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Key"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
+- !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
@@ -401,16 +428,20 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
 - !private ["Ps23CustomStringConvertible", "PFQuery"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UIInterpolatingMotionEffect"]
 - !private ["Ps23CustomStringConvertible", "UIMotionEffectGroup"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -440,6 +471,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "maximumRelativeValue"]
 - !private ["Ps23CustomStringConvertible", "minimumRelativeValue"]
 - !private ["Ps23CustomStringConvertible", "motionEffects"]
+- !private ["Ps23CustomStringConvertible", "navigationBar"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "numberOfLines"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
@@ -472,6 +505,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
 - !private ["Ps23CustomStringConvertible", "topViewController"]
 - ["Ps23CustomStringConvertible", "unwindToProjectsList"]
 - !private ["Ps23CustomStringConvertible", "view"]
@@ -491,13 +525,18 @@ depends-member:
 - !private ["Vs26DefaultRandomAccessIndices", "Iterator"]
 - !private ["Vs26DefaultRandomAccessIndices", "SubSequence"]
 - !private ["Vs26DefaultRandomAccessIndices", "_Element"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
 - !private ["Sd", "deinit"]
 - ["Ps9Equatable", "Feed"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSFontAttributeName"]
 - !private ["Ps9Equatable", "PFQuery"]
 - !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UIInterpolatingMotionEffect"]
 - !private ["Ps9Equatable", "UIMotionEffectGroup"]
@@ -530,6 +569,8 @@ depends-member:
 - !private ["Ps9Equatable", "maximumRelativeValue"]
 - !private ["Ps9Equatable", "minimumRelativeValue"]
 - !private ["Ps9Equatable", "motionEffects"]
+- !private ["Ps9Equatable", "navigationBar"]
+- !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "numberOfLines"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
@@ -562,8 +603,8 @@ depends-member:
 - !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
-- !private ["Ps9Equatable", "tiltAlongHorizontalAxis"]
 - !private ["Ps9Equatable", "tiltAlongVerticalAxis"]
+- !private ["Ps9Equatable", "titleTextAttributes"]
 - !private ["Ps9Equatable", "topViewController"]
 - ["Ps9Equatable", "unwindToProjectsList"]
 - !private ["Ps9Equatable", "view"]
@@ -585,6 +626,8 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
@@ -600,10 +643,12 @@ depends-member:
 - !private ["Sf", "deinit"]
 - ["Ps8Hashable", "Feed"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSFontAttributeName"]
 - !private ["Ps8Hashable", "PFQuery"]
 - !private ["Ps8Hashable", "PFUser"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UIInterpolatingMotionEffect"]
 - !private ["Ps8Hashable", "UIMotionEffectGroup"]
@@ -636,6 +681,8 @@ depends-member:
 - !private ["Ps8Hashable", "maximumRelativeValue"]
 - !private ["Ps8Hashable", "minimumRelativeValue"]
 - !private ["Ps8Hashable", "motionEffects"]
+- !private ["Ps8Hashable", "navigationBar"]
+- !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "numberOfLines"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
@@ -668,8 +715,8 @@ depends-member:
 - !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
-- !private ["Ps8Hashable", "tiltAlongHorizontalAxis"]
 - !private ["Ps8Hashable", "tiltAlongVerticalAxis"]
+- !private ["Ps8Hashable", "titleTextAttributes"]
 - !private ["Ps8Hashable", "topViewController"]
 - ["Ps8Hashable", "unwindToProjectsList"]
 - !private ["Ps8Hashable", "view"]
@@ -691,6 +738,7 @@ depends-member:
 - ["C7Project18HomeViewController", "Int"]
 - !private ["C7Project18HomeViewController", "LoginVC"]
 - !private ["C7Project18HomeViewController", "NSError"]
+- !private ["C7Project18HomeViewController", "NSFontAttributeName"]
 - !private ["C7Project18HomeViewController", "PFFile"]
 - !private ["C7Project18HomeViewController", "PFObject"]
 - !private ["C7Project18HomeViewController", "PFQuery"]
@@ -698,6 +746,7 @@ depends-member:
 - !private ["C7Project18HomeViewController", "ProjectViewController"]
 - !private ["C7Project18HomeViewController", "String"]
 - !private ["C7Project18HomeViewController", "UIColor"]
+- !private ["C7Project18HomeViewController", "UIFont"]
 - !private ["C7Project18HomeViewController", "UIImage"]
 - !private ["C7Project18HomeViewController", "UIInterpolatingMotionEffect"]
 - !private ["C7Project18HomeViewController", "UIMotionEffectGroup"]
@@ -713,6 +762,7 @@ depends-member:
 - ["C7Project18HomeViewController", "indexPathForPreferredFocusedView"]
 - ["C7Project18HomeViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C7Project18HomeViewController", "init"]
+- !private ["C7Project18HomeViewController", "navigationController"]
 - ["C7Project18HomeViewController", "numberOfSections"]
 - ["C7Project18HomeViewController", "numberOfSectionsInTableView"]
 - ["C7Project18HomeViewController", "overlay"]
@@ -750,7 +800,9 @@ depends-member:
 - !private ["Ps9Indexable", "IndexDistance"]
 - !private ["Ps9Indexable", "Indices"]
 - !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "count"]
@@ -762,7 +814,9 @@ depends-member:
 - !private ["Ps13IndexableBase", "IndexDistance"]
 - !private ["Ps13IndexableBase", "Indices"]
 - !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "Key"]
 - !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "Value"]
 - !private ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "append"]
 - !private ["Ps13IndexableBase", "count"]
@@ -816,9 +870,11 @@ depends-member:
 - !private ["Ps16MutableIndexable", "subscript"]
 - ["CSo7NSCoder", "deinit"]
 - ["PSo8NSCoding", "Feed"]
+- !private ["PSo8NSCoding", "NSFontAttributeName"]
 - !private ["PSo8NSCoding", "PFQuery"]
 - !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIInterpolatingMotionEffect"]
 - !private ["PSo8NSCoding", "UIMotionEffectGroup"]
@@ -842,6 +898,8 @@ depends-member:
 - !private ["PSo8NSCoding", "maximumRelativeValue"]
 - !private ["PSo8NSCoding", "minimumRelativeValue"]
 - !private ["PSo8NSCoding", "motionEffects"]
+- !private ["PSo8NSCoding", "navigationBar"]
+- !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "numberOfLines"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
@@ -872,6 +930,7 @@ depends-member:
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "topViewController"]
 - ["PSo8NSCoding", "unwindToProjectsList"]
 - !private ["PSo8NSCoding", "view"]
@@ -888,9 +947,11 @@ depends-member:
 - !private ["PSo9NSCopying", "motionEffects"]
 - !private ["CSo7NSError", "deinit"]
 - ["PSo26NSExtensionRequestHandling", "Feed"]
+- !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIInterpolatingMotionEffect"]
 - !private ["PSo26NSExtensionRequestHandling", "UIMotionEffectGroup"]
@@ -900,6 +961,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - ["PSo26NSExtensionRequestHandling", "overlay"]
@@ -944,6 +1007,7 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "LoginVC"]
 - !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSFontAttributeName"]
 - !private ["CSo8NSObject", "PFFile"]
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
@@ -951,6 +1015,7 @@ depends-member:
 - !private ["CSo8NSObject", "ProjectViewController"]
 - !private ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIInterpolatingMotionEffect"]
 - !private ["CSo8NSObject", "UIMotionEffectGroup"]
@@ -985,6 +1050,8 @@ depends-member:
 - !private ["CSo8NSObject", "maximumRelativeValue"]
 - !private ["CSo8NSObject", "minimumRelativeValue"]
 - !private ["CSo8NSObject", "motionEffects"]
+- !private ["CSo8NSObject", "navigationBar"]
+- !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "numberOfLines"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
@@ -1016,6 +1083,7 @@ depends-member:
 - !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "topViewController"]
 - ["CSo8NSObject", "unwindToProjectsList"]
 - !private ["CSo8NSObject", "view"]
@@ -1024,9 +1092,11 @@ depends-member:
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "Feed"]
+- !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIInterpolatingMotionEffect"]
 - !private ["PSo16NSObjectProtocol", "UIMotionEffectGroup"]
@@ -1056,6 +1126,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "maximumRelativeValue"]
 - !private ["PSo16NSObjectProtocol", "minimumRelativeValue"]
 - !private ["PSo16NSObjectProtocol", "motionEffects"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
@@ -1087,6 +1159,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "topViewController"]
 - ["PSo16NSObjectProtocol", "unwindToProjectsList"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -1162,7 +1235,6 @@ depends-member:
 - ["Ps25RangeReplaceableIndexable", "init"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "byWordWrapping"]
-- !private ["Ps16RawRepresentable", "tiltAlongHorizontalAxis"]
 - !private ["Ps16RawRepresentable", "tiltAlongVerticalAxis"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["Ps8Sequence", "Element"]
@@ -1170,7 +1242,9 @@ depends-member:
 - !private ["Ps8Sequence", "IndexDistance"]
 - !private ["Ps8Sequence", "Indices"]
 - !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "Key"]
 - !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "Value"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "count"]
@@ -1211,6 +1285,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo12UIAppearance", "addMotionEffect"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "alpha"]
@@ -1228,10 +1303,13 @@ depends-member:
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "removeFromSuperview"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
 - ["PSo21UIAppearanceContainer", "Feed"]
+- !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIInterpolatingMotionEffect"]
 - !private ["PSo21UIAppearanceContainer", "UIMotionEffectGroup"]
@@ -1251,6 +1329,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "indexPathForSelectedRow"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "lineBreakMode"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "numberOfLines"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
@@ -1281,6 +1361,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "topViewController"]
 - ["PSo21UIAppearanceContainer", "unwindToProjectsList"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -1289,12 +1370,15 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
 - !private ["CSo7UIColor", "black"]
 - ["CSo7UIColor", "deinit"]
 - ["PSo18UIContentContainer", "Feed"]
+- !private ["PSo18UIContentContainer", "NSFontAttributeName"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
 - !private ["PSo18UIContentContainer", "PFUser"]
 - !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIInterpolatingMotionEffect"]
 - !private ["PSo18UIContentContainer", "UIMotionEffectGroup"]
@@ -1304,6 +1388,8 @@ depends-member:
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
+- !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - ["PSo18UIContentContainer", "overlay"]
@@ -1356,6 +1442,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "addMotionEffect"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "alpha"]
@@ -1373,10 +1460,13 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "removeFromSuperview"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - ["PSo18UIFocusEnvironment", "Feed"]
+- !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "PFQuery"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIInterpolatingMotionEffect"]
 - !private ["PSo18UIFocusEnvironment", "UIMotionEffectGroup"]
@@ -1396,6 +1486,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "indexPathForSelectedRow"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "lineBreakMode"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
 - !private ["PSo18UIFocusEnvironment", "numberOfLines"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
@@ -1426,6 +1518,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "topViewController"]
 - ["PSo18UIFocusEnvironment", "unwindToProjectsList"]
 - !private ["PSo18UIFocusEnvironment", "view"]
@@ -1451,6 +1544,9 @@ depends-member:
 - !private ["PSo11UIFocusItem", "reloadData"]
 - !private ["PSo11UIFocusItem", "removeFromSuperview"]
 - !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "titleTextAttributes"]
+- ["CSo6UIFont", "deinit"]
+- !private ["CSo6UIFont", "init"]
 - !private ["PSo27UIGestureRecognizerDelegate", "descriptionLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "projectImage"]
 - !private ["PSo27UIGestureRecognizerDelegate", "projectName"]
@@ -1462,7 +1558,6 @@ depends-member:
 - !private ["CSo27UIInterpolatingMotionEffect", "maximumRelativeValue"]
 - !private ["CSo27UIInterpolatingMotionEffect", "minimumRelativeValue"]
 - ["OSC31UIInterpolatingMotionEffectType", "deinit"]
-- !private ["OSC31UIInterpolatingMotionEffectType", "tiltAlongHorizontalAxis"]
 - !private ["OSC31UIInterpolatingMotionEffectType", "tiltAlongVerticalAxis"]
 - !private ["CSo7UILabel", "lineBreakMode"]
 - !private ["CSo7UILabel", "numberOfLines"]
@@ -1474,7 +1569,10 @@ depends-member:
 - ["CSo19UIMotionEffectGroup", "deinit"]
 - !private ["CSo19UIMotionEffectGroup", "init"]
 - !private ["CSo19UIMotionEffectGroup", "motionEffects"]
+- ["CSo15UINavigationBar", "deinit"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
 - ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["CSo22UINavigationController", "topViewController"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "Data"]
@@ -1485,6 +1583,7 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "LoginVC"]
 - !private ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSFontAttributeName"]
 - !private ["CSo11UIResponder", "PFFile"]
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
@@ -1492,6 +1591,7 @@ depends-member:
 - !private ["CSo11UIResponder", "ProjectViewController"]
 - !private ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UIInterpolatingMotionEffect"]
 - !private ["CSo11UIResponder", "UIMotionEffectGroup"]
@@ -1516,6 +1616,8 @@ depends-member:
 - !private ["CSo11UIResponder", "indexPathForSelectedRow"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "lineBreakMode"]
+- !private ["CSo11UIResponder", "navigationBar"]
+- !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "numberOfLines"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
@@ -1546,6 +1648,7 @@ depends-member:
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
 - !private ["CSo11UIResponder", "topViewController"]
 - ["CSo11UIResponder", "unwindToProjectsList"]
 - !private ["CSo11UIResponder", "view"]
@@ -1554,9 +1657,11 @@ depends-member:
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["PSo30UIResponderStandardEditActions", "Feed"]
+- !private ["PSo30UIResponderStandardEditActions", "NSFontAttributeName"]
 - !private ["PSo30UIResponderStandardEditActions", "PFQuery"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UIInterpolatingMotionEffect"]
 - !private ["PSo30UIResponderStandardEditActions", "UIMotionEffectGroup"]
@@ -1576,6 +1681,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "indexPathForSelectedRow"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "lineBreakMode"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationBar"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - !private ["PSo30UIResponderStandardEditActions", "numberOfLines"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
@@ -1606,6 +1713,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "sectionIndexTitlesForTableView"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "titleTextAttributes"]
 - !private ["PSo30UIResponderStandardEditActions", "topViewController"]
 - ["PSo30UIResponderStandardEditActions", "unwindToProjectsList"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
@@ -1618,17 +1726,19 @@ depends-member:
 - !private ["CSo12UIScrollView", "indexPathForSelectedRow"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - ["PSo20UIScrollViewDelegate", "Feed"]
+- !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "PFQuery"]
 - !private ["PSo20UIScrollViewDelegate", "PFUser"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
+- !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIInterpolatingMotionEffect"]
 - !private ["PSo20UIScrollViewDelegate", "UIMotionEffectGroup"]
 - !private ["PSo20UIScrollViewDelegate", "UIStoryboard"]
 - !private ["PSo20UIScrollViewDelegate", "UIView"]
-- !private ["PSo20UIScrollViewDelegate", "addParallaxToView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "overlay"]
@@ -1657,9 +1767,11 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "Feed"]
+- !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
 - !private ["PSo16UIStateRestoring", "PFQuery"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIInterpolatingMotionEffect"]
 - !private ["PSo16UIStateRestoring", "UIMotionEffectGroup"]
@@ -1669,6 +1781,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - ["PSo16UIStateRestoring", "overlay"]
@@ -1716,17 +1830,19 @@ depends-member:
 - !private ["CSo15UITableViewCell", "projectImage"]
 - !private ["CSo15UITableViewCell", "projectName"]
 - ["PSo21UITableViewDataSource", "Feed"]
+- !private ["PSo21UITableViewDataSource", "NSFontAttributeName"]
 - !private ["PSo21UITableViewDataSource", "PFQuery"]
 - !private ["PSo21UITableViewDataSource", "PFUser"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
+- !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UIInterpolatingMotionEffect"]
 - !private ["PSo21UITableViewDataSource", "UIMotionEffectGroup"]
 - !private ["PSo21UITableViewDataSource", "UIStoryboard"]
 - !private ["PSo21UITableViewDataSource", "UIView"]
-- !private ["PSo21UITableViewDataSource", "addParallaxToView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "overlay"]
@@ -1755,17 +1871,19 @@ depends-member:
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "Feed"]
+- !private ["PSo19UITableViewDelegate", "NSFontAttributeName"]
 - !private ["PSo19UITableViewDelegate", "PFQuery"]
 - !private ["PSo19UITableViewDelegate", "PFUser"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
+- !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UIInterpolatingMotionEffect"]
 - !private ["PSo19UITableViewDelegate", "UIMotionEffectGroup"]
 - !private ["PSo19UITableViewDelegate", "UIStoryboard"]
 - !private ["PSo19UITableViewDelegate", "UIView"]
-- !private ["PSo19UITableViewDelegate", "addParallaxToView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "overlay"]
@@ -1794,9 +1912,11 @@ depends-member:
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UITableViewDelegate", ""]
 - ["PSo18UITraitEnvironment", "Feed"]
+- !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UITraitEnvironment", "PFQuery"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIInterpolatingMotionEffect"]
 - !private ["PSo18UITraitEnvironment", "UIMotionEffectGroup"]
@@ -1816,6 +1936,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "indexPathForSelectedRow"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "lineBreakMode"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "numberOfLines"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
@@ -1846,6 +1968,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - !private ["PSo18UITraitEnvironment", "topViewController"]
 - ["PSo18UITraitEnvironment", "unwindToProjectsList"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -1872,6 +1995,7 @@ depends-member:
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "removeFromSuperview"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "titleTextAttributes"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "Data"]
 - !private ["CSo16UIViewController", "Error"]
@@ -1881,6 +2005,7 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "LoginVC"]
 - !private ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSFontAttributeName"]
 - !private ["CSo16UIViewController", "PFFile"]
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
@@ -1888,6 +2013,7 @@ depends-member:
 - !private ["CSo16UIViewController", "ProjectViewController"]
 - !private ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIFont"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIInterpolatingMotionEffect"]
 - !private ["CSo16UIViewController", "UIMotionEffectGroup"]
@@ -1903,6 +2029,8 @@ depends-member:
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationBar"]
+- !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - ["CSo16UIViewController", "overlay"]
@@ -1968,6 +2096,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleTextAttributes"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
@@ -1991,10 +2120,12 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "Feed"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
+- !private ["Ps9_Hashable", "NSFontAttributeName"]
 - !private ["Ps9_Hashable", "PFQuery"]
 - !private ["Ps9_Hashable", "PFUser"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "UIInterpolatingMotionEffect"]
 - !private ["Ps9_Hashable", "UIMotionEffectGroup"]
@@ -2027,6 +2158,8 @@ depends-member:
 - !private ["Ps9_Hashable", "maximumRelativeValue"]
 - !private ["Ps9_Hashable", "minimumRelativeValue"]
 - !private ["Ps9_Hashable", "motionEffects"]
+- !private ["Ps9_Hashable", "navigationBar"]
+- !private ["Ps9_Hashable", "navigationController"]
 - !private ["Ps9_Hashable", "numberOfLines"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
@@ -2059,8 +2192,8 @@ depends-member:
 - !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
-- !private ["Ps9_Hashable", "tiltAlongHorizontalAxis"]
 - !private ["Ps9_Hashable", "tiltAlongVerticalAxis"]
+- !private ["Ps9_Hashable", "titleTextAttributes"]
 - !private ["Ps9_Hashable", "topViewController"]
 - ["Ps9_Hashable", "unwindToProjectsList"]
 - !private ["Ps9_Hashable", "view"]
@@ -2083,8 +2216,10 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -2121,11 +2256,13 @@ depends-nominal:
 - !private "V10Foundation4Data"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
+- "Vs10Dictionary"
 - !private "Sd"
 - "Ps9Equatable"
 - !private "Ps5Error"
 - "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
@@ -2190,6 +2327,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
 - "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
@@ -2197,6 +2335,7 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
+- "CSo6UIFont"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UIImage"
 - !private "CSo11UIImageView"
@@ -2205,6 +2344,7 @@ depends-nominal:
 - !private "CSo7UILabel"
 - !private "CSo14UIMotionEffect"
 - "CSo19UIMotionEffectGroup"
+- "CSo15UINavigationBar"
 - "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"

@@ -467,6 +467,17 @@ SWIFT_CLASS("_TtC7Project8MyFeedVC")
 @end
 
 
+SWIFT_CLASS("_TtC7Project17NavViewController")
+@interface NavViewController : UINavigationController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC7Project21ProjectViewController")
 @interface ProjectViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;

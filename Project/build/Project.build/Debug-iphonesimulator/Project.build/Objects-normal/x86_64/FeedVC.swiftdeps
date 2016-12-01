@@ -6,62 +6,62 @@ provides-nominal:
 provides-member:
 - ["C7Project6FeedVC", ""]
 provides-dynamic-lookup:
+- "processTimestamp"
+- "tableView"
+- "tableView"
 - "buttonClicked"
 - "projectsFollowing"
 - "daTableView"
 - "viewDidAppear"
-- "prepare"
-- "processTimestamp"
-- "tableView"
-- "tableView"
-- "queryActivities"
-- "overlay"
 - "viewDidLoad"
+- "prepare"
+- "overlay"
+- "queryActivities"
 depends-top-level:
-- "Int"
-- !private "UIControlEvents"
-- !private "Void"
-- "UITableViewDelegate"
-- "UITableViewDataSource"
-- !private "print"
-- !private "NSFontAttributeName"
-- !private "PFObject"
-- !private "PFUser"
-- !private "UIImage"
-- "Bool"
-- "UIViewController"
-- "FeedVC"
+- !private "+="
+- "BooleanLiteralType"
 - "UITableViewCell"
-- "UIView"
-- "UIStoryboardSegue"
+- !private "PFQuery"
+- !private "!="
+- !private "Data"
+- "FeedVC"
+- !private "PFObject"
+- !private "print"
 - !private "SingleActivityVC"
-- "IndexPath"
 - !private "UIColor"
+- !private "UINavigationController"
+- !private "PFUser"
+- "UIStoryboardSegue"
+- "String"
+- !private "StringLiteralType"
+- !private "-"
+- "Feed"
+- "UIViewController"
+- "UITableView"
+- "UIView"
+- !private "Dictionary"
+- "IndexPath"
+- "UIButton"
 - "CastingPrecedence"
 - !private "PFFile"
+- !private "Void"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "-"
-- !private "!="
-- "UITableView"
-- "String"
+- "UITableViewDelegate"
 - !private "Error"
-- !private "+="
-- "ExtendedGraphemeClusterType"
-- "Feed"
-- !private "StringLiteralType"
 - !private "UnicodeScalarType"
-- !private "-="
-- !private "Dictionary"
-- "BooleanLiteralType"
-- !private "Array"
-- !private "PFQuery"
-- !private "+"
-- !private "UINavigationController"
-- "UIButton"
-- !private "UIFont"
 - !private "FeedVCTableViewCell"
-- !private "Data"
+- !private "NSFontAttributeName"
+- "UITableViewDataSource"
+- !private "UIControlEvents"
+- "Bool"
+- !private "UIFont"
+- "Int"
+- "ExtendedGraphemeClusterType"
+- !private "Array"
+- !private "-="
+- !private "UIImage"
+- !private "+"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - ["Ps9AnyObject", "Feed"]
@@ -77,7 +77,6 @@ depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "activityObject"]
-- !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "backgroundColor"]
@@ -120,7 +119,6 @@ depends-member:
 - ["Ps9AnyObject", "projectsFollowing"]
 - ["Ps9AnyObject", "queryActivities"]
 - !private ["Ps9AnyObject", "reloadData"]
-- !private ["Ps9AnyObject", "removeFromSuperview"]
 - !private ["Ps9AnyObject", "saveInBackground"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
@@ -206,7 +204,6 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
-- !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "addTarget"]
 - !private ["PSo15CALayerDelegate", "alpha"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
@@ -224,7 +221,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "numberOfLines"]
 - !private ["PSo15CALayerDelegate", "projectNameLabel"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
-- !private ["PSo15CALayerDelegate", "removeFromSuperview"]
 - !private ["PSo15CALayerDelegate", "setImage"]
 - !private ["PSo15CALayerDelegate", "tag"]
 - !private ["PSo15CALayerDelegate", "text"]
@@ -255,7 +251,6 @@ depends-member:
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "activityObject"]
-- !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "addTarget"]
 - !private ["Ps7CVarArg", "alpha"]
 - !private ["Ps7CVarArg", "append"]
@@ -301,7 +296,6 @@ depends-member:
 - ["Ps7CVarArg", "projectsFollowing"]
 - ["Ps7CVarArg", "queryActivities"]
 - !private ["Ps7CVarArg", "reloadData"]
-- !private ["Ps7CVarArg", "removeFromSuperview"]
 - !private ["Ps7CVarArg", "saveInBackground"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
 - ["Ps7CVarArg", "scrollViewDidEndDragging"]
@@ -383,7 +377,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "activityObject"]
-- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
@@ -429,7 +422,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "projectsFollowing"]
 - ["Ps28CustomDebugStringConvertible", "queryActivities"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
-- !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
@@ -512,7 +504,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "activityObject"]
-- !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "append"]
@@ -558,7 +549,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "projectsFollowing"]
 - ["Ps23CustomStringConvertible", "queryActivities"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
-- !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "saveInBackground"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
@@ -624,7 +614,6 @@ depends-member:
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "activityObject"]
-- !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "backgroundColor"]
@@ -669,7 +658,6 @@ depends-member:
 - ["Ps9Equatable", "projectsFollowing"]
 - ["Ps9Equatable", "queryActivities"]
 - !private ["Ps9Equatable", "reloadData"]
-- !private ["Ps9Equatable", "removeFromSuperview"]
 - !private ["Ps9Equatable", "row"]
 - !private ["Ps9Equatable", "saveInBackground"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
@@ -830,7 +818,6 @@ depends-member:
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "activityObject"]
-- !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "backgroundColor"]
@@ -874,7 +861,6 @@ depends-member:
 - ["Ps8Hashable", "projectsFollowing"]
 - ["Ps8Hashable", "queryActivities"]
 - !private ["Ps8Hashable", "reloadData"]
-- !private ["Ps8Hashable", "removeFromSuperview"]
 - !private ["Ps8Hashable", "row"]
 - !private ["Ps8Hashable", "saveInBackground"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
@@ -1004,7 +990,6 @@ depends-member:
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "activityObject"]
-- !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "backgroundColor"]
@@ -1039,7 +1024,6 @@ depends-member:
 - ["PSo8NSCoding", "projectsFollowing"]
 - ["PSo8NSCoding", "queryActivities"]
 - !private ["PSo8NSCoding", "reloadData"]
-- !private ["PSo8NSCoding", "removeFromSuperview"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
 - ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
@@ -1154,7 +1138,6 @@ depends-member:
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "activityObject"]
-- !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "backgroundColor"]
@@ -1197,7 +1180,6 @@ depends-member:
 - ["CSo8NSObject", "projectsFollowing"]
 - ["CSo8NSObject", "queryActivities"]
 - !private ["CSo8NSObject", "reloadData"]
-- !private ["CSo8NSObject", "removeFromSuperview"]
 - !private ["CSo8NSObject", "saveInBackground"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -1241,7 +1223,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "activityObject"]
-- !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
@@ -1284,7 +1265,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "projectsFollowing"]
 - ["PSo16NSObjectProtocol", "queryActivities"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
-- !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
 - !private ["PSo16NSObjectProtocol", "saveInBackground"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -1445,7 +1425,6 @@ depends-member:
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "characters"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -1463,13 +1442,11 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
 - !private ["PSo29UIAccessibilityIdentification", "projectNameLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
-- !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "timeStampLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
-- !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
@@ -1487,7 +1464,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "numberOfLines"]
 - !private ["PSo12UIAppearance", "projectNameLabel"]
 - !private ["PSo12UIAppearance", "reloadData"]
-- !private ["PSo12UIAppearance", "removeFromSuperview"]
 - !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "tag"]
 - !private ["PSo12UIAppearance", "text"]
@@ -1506,7 +1482,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "activityObject"]
-- !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -1539,7 +1514,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "projectsFollowing"]
 - ["PSo21UIAppearanceContainer", "queryActivities"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
-- !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1635,7 +1609,6 @@ depends-member:
 - !private ["VSC15UIControlEvents", "touchUpInside"]
 - ["VSC14UIControlState", "deinit"]
 - !private ["VSC14UIControlState", "normal"]
-- !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
@@ -1653,13 +1626,11 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "numberOfLines"]
 - !private ["PSo17UICoordinateSpace", "projectNameLabel"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
-- !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
 - !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "timeStampLabel"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
-- !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
@@ -1677,7 +1648,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "numberOfLines"]
 - !private ["PSo13UIDynamicItem", "projectNameLabel"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
-- !private ["PSo13UIDynamicItem", "removeFromSuperview"]
 - !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "tag"]
 - !private ["PSo13UIDynamicItem", "text"]
@@ -1696,7 +1666,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "activityObject"]
-- !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -1729,7 +1698,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "projectsFollowing"]
 - ["PSo18UIFocusEnvironment", "queryActivities"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
-- !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1757,7 +1725,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "addTarget"]
 - !private ["PSo11UIFocusItem", "alpha"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
@@ -1775,7 +1742,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "numberOfLines"]
 - !private ["PSo11UIFocusItem", "projectNameLabel"]
 - !private ["PSo11UIFocusItem", "reloadData"]
-- !private ["PSo11UIFocusItem", "removeFromSuperview"]
 - !private ["PSo11UIFocusItem", "setImage"]
 - !private ["PSo11UIFocusItem", "tag"]
 - !private ["PSo11UIFocusItem", "text"]
@@ -1828,7 +1794,6 @@ depends-member:
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "activityObject"]
-- !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "backgroundColor"]
@@ -1861,7 +1826,6 @@ depends-member:
 - ["CSo11UIResponder", "projectsFollowing"]
 - ["CSo11UIResponder", "queryActivities"]
 - !private ["CSo11UIResponder", "reloadData"]
-- !private ["CSo11UIResponder", "removeFromSuperview"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -1901,7 +1865,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
 - !private ["PSo30UIResponderStandardEditActions", "activityObject"]
-- !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "addTarget"]
 - !private ["PSo30UIResponderStandardEditActions", "alpha"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
@@ -1934,7 +1897,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "projectsFollowing"]
 - ["PSo30UIResponderStandardEditActions", "queryActivities"]
 - !private ["PSo30UIResponderStandardEditActions", "reloadData"]
-- !private ["PSo30UIResponderStandardEditActions", "removeFromSuperview"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDecelerating"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDragging"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndScrollingAnimation"]
@@ -2176,7 +2138,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "activityObject"]
-- !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -2209,7 +2170,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "projectsFollowing"]
 - ["PSo18UITraitEnvironment", "queryActivities"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
-- !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -2237,7 +2197,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "backgroundColor"]
@@ -2256,7 +2215,6 @@ depends-member:
 - !private ["CSo6UIView", "numberOfLines"]
 - !private ["CSo6UIView", "projectNameLabel"]
 - !private ["CSo6UIView", "reloadData"]
-- !private ["CSo6UIView", "removeFromSuperview"]
 - !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "tag"]
 - !private ["CSo6UIView", "text"]
@@ -2345,7 +2303,6 @@ depends-member:
 - ["Ps14_ArrayProtocol", "init"]
 - !private ["Ps14_ArrayProtocol", "map"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addTarget"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
@@ -2363,7 +2320,6 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "numberOfLines"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "projectNameLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setImage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tag"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
@@ -2413,7 +2369,6 @@ depends-member:
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "activityObject"]
-- !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "addTarget"]
 - !private ["Ps9_Hashable", "alpha"]
 - !private ["Ps9_Hashable", "backgroundColor"]
@@ -2457,7 +2412,6 @@ depends-member:
 - ["Ps9_Hashable", "projectsFollowing"]
 - ["Ps9_Hashable", "queryActivities"]
 - !private ["Ps9_Hashable", "reloadData"]
-- !private ["Ps9_Hashable", "removeFromSuperview"]
 - !private ["Ps9_Hashable", "row"]
 - !private ["Ps9_Hashable", "saveInBackground"]
 - ["Ps9_Hashable", "scrollViewDidEndDecelerating"]

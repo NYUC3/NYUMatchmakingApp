@@ -59,6 +59,41 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
         }
         
         
+        let queryActivities = PFQuery(className:"MyActivities")
+        queryActivities.whereKey("projectName", equalTo: self.projectOject?.name)
+        queryActivities.findObjectsInBackground {
+            (objects: [PFObject]?, error: Error?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                if let objects = objects {
+                    for object in objects {
+                        
+                        if(object["image"] != nil){
+                           
+                            let theImg = object["image"] as! PFFile
+                            
+                            if(theImg != nil){
+
+                                
+                                
+                                let feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: theImg)
+                                
+                                
+                                self.activities.append(feed)
+                            }
+                        
+                        }
+                    }
+                }
+                
+            } else {
+                // Log details of the failure
+                print("Error: \(error!)")
+            }
+        }
+        
+        
     }
     
     
@@ -74,7 +109,9 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
     
-        let cell = tableView.dequeueReusableCell(withIdentifier: "activities-cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "project-activity-cell", for: indexPath)
+        cell.textLabel?.text = activities[indexPath.row].name
+        cell.textLabel?.font = UIFont(name: "Avenir", size: 18)
         return cell
         
     }

@@ -861,7 +861,7 @@
                                 <rect key="frame" x="0.0" y="475" width="375" height="143"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Gfa-0h-AYD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="project-activity-cell" id="Gfa-0h-AYD">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gfa-0h-AYD" id="pP2-or-npT">
@@ -1414,6 +1414,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="coe-Dt-5AN"/>
-        <segue reference="0L9-wy-WBG"/>
+        <segue reference="wYd-mn-RVR"/>
     </inferredMetricsTieBreakers>
 </document>
