@@ -28,8 +28,8 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         //selectedProjectName = projectNames[0]
         imagePicker.delegate = self
         
-        
-        print(PFUser.current()?.username)
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 30)!]
+
         
         let query = PFQuery(className:"Projects")
         query.whereKey("username", equalTo: (PFUser.current()?.username)!)

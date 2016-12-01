@@ -48,7 +48,7 @@ class SignupVC: UIViewController {
                 // Hooray! Let them use the app now.
                 print("logged in successfully")
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "homevc") as! HomeViewController
+                let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar") as! CustomTabbarVC
                 self.present(vc, animated: true, completion: nil)
             }
         }

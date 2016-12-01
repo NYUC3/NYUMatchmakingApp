@@ -6,31 +6,31 @@ provides-nominal:
 provides-member:
 - ["C7Project8SignupVC", ""]
 provides-dynamic-lookup:
-- "password"
-- "viewDidLoad"
+- "didReceiveMemoryWarning"
 - "email"
+- "viewDidLoad"
 - "confirmpassword"
 - "SignupTappd"
-- "didReceiveMemoryWarning"
+- "password"
 depends-top-level:
-- !private "PFUser"
-- "BooleanLiteralType"
-- !private "UIStoryboard"
-- !private "print"
-- !private "UIAlertActionStyle"
 - !private "UIAlertController"
-- "UITextField"
-- "UIButton"
-- "StringLiteralType"
-- !private "Error"
-- !private "UIAlertControllerStyle"
 - !private "Bool"
-- !private "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "UIAlertAction"
+- !private "UIAlertControllerStyle"
+- !private "Error"
+- "UIButton"
+- !private "CustomTabbarVC"
 - "UIViewController"
+- !private "CastingPrecedence"
+- !private "UIAlertActionStyle"
+- !private "UIStoryboard"
+- "AssignmentPrecedence"
+- !private "print"
 - "SignupVC"
-- !private "HomeViewController"
+- !private "PFUser"
+- "StringLiteralType"
+- "UITextField"
+- !private "UIAlertAction"
+- "BooleanLiteralType"
 - !private "Void"
 depends-member:
 - !private ["Ps9AnyObject", "PFUser"]
@@ -122,6 +122,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "username"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["C7Project14CustomTabbarVC", "deinit"]
 - !private ["Ps9Equatable", "PFUser"]
 - ["Ps9Equatable", "SignupTappd"]
 - !private ["Ps9Equatable", "UIAlertAction"]
@@ -174,7 +175,6 @@ depends-member:
 - !private ["Ps8Hashable", "username"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
-- !private ["C7Project18HomeViewController", "deinit"]
 - ["SQ", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
@@ -217,8 +217,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CustomTabbarVC"]
 - !private ["CSo8NSObject", "Error"]
-- !private ["CSo8NSObject", "HomeViewController"]
 - !private ["CSo8NSObject", "PFUser"]
 - ["CSo8NSObject", "SignupTappd"]
 - !private ["CSo8NSObject", "UIAlertAction"]
@@ -285,8 +285,8 @@ depends-member:
 - !private ["Ps16RawRepresentable", "alert"]
 - !private ["Ps16RawRepresentable", "default"]
 - !private ["C7Project8SignupVC", "Bool"]
+- !private ["C7Project8SignupVC", "CustomTabbarVC"]
 - !private ["C7Project8SignupVC", "Error"]
-- !private ["C7Project8SignupVC", "HomeViewController"]
 - !private ["C7Project8SignupVC", "PFUser"]
 - ["C7Project8SignupVC", "SignupTappd"]
 - !private ["C7Project8SignupVC", "UIAlertAction"]
@@ -381,8 +381,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "CustomTabbarVC"]
 - !private ["CSo11UIResponder", "Error"]
-- !private ["CSo11UIResponder", "HomeViewController"]
 - !private ["CSo11UIResponder", "PFUser"]
 - ["CSo11UIResponder", "SignupTappd"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
@@ -464,8 +464,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "CustomTabbarVC"]
 - !private ["CSo16UIViewController", "Error"]
-- !private ["CSo16UIViewController", "HomeViewController"]
 - !private ["CSo16UIViewController", "PFUser"]
 - ["CSo16UIViewController", "SignupTappd"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
@@ -527,6 +527,7 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- !private "C7Project14CustomTabbarVC"
 - "Ps9Equatable"
 - !private "Ps5Error"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
@@ -534,7 +535,6 @@ depends-nominal:
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
-- !private "C7Project18HomeViewController"
 - "SQ"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"

@@ -23,6 +23,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         // Do any additional setup after loading the view.
         
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 30)!]
+        
         if(PFUser.current() == nil){
             
             // present login screen
@@ -136,6 +138,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func unwindToProjectsList(segue: UIStoryboardSegue) {
         // some code to execute
     } // unwindToPrevious
+    
+    
+    func addParallaxToView(vw: UIView) {
+        let amount = 10
+        
+        //let horizontal = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
+        //horizontal.minimumRelativeValue = -amount
+        //horizontal.maximumRelativeValue = amount
+        
+        let vertical = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
+        vertical.minimumRelativeValue = -amount
+        vertical.maximumRelativeValue = amount
+        
+        let group = UIMotionEffectGroup()
+        group.motionEffects = [vertical]
+        vw.addMotionEffect(group)
+    }
  
 
 }

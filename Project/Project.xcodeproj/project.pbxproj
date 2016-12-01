@@ -16,6 +16,7 @@
 		C22C590E1DEA5E3A00848BDE /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = C22C590D1DEA5E3A00848BDE /* title.png */; };
 		C22C59101DEA5F5400848BDE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C22C590F1DEA5F5400848BDE /* background.png */; };
 		C236D2291DEF7F91008A392C /* SingleActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236D2281DEF7F91008A392C /* SingleActivityVC.swift */; };
+		C236D22B1DEFBC67008A392C /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236D22A1DEFBC67008A392C /* NavViewController.swift */; };
 		C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A29AF1DB8403800275843 /* SettingsViewController.swift */; };
 		C23BBF331DA6AE7800202169 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF321DA6AE7800202169 /* LoginVC.swift */; };
 		C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF341DA6B21100202169 /* SignupVC.swift */; };
@@ -106,6 +107,7 @@
 		C22C590D1DEA5E3A00848BDE /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		C22C590F1DEA5F5400848BDE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		C236D2281DEF7F91008A392C /* SingleActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleActivityVC.swift; sourceTree = "<group>"; };
+		C236D22A1DEFBC67008A392C /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavViewController.swift; path = ../NavViewController.swift; sourceTree = "<group>"; };
 		C23A29AF1DB8403800275843 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C23BBF321DA6AE7800202169 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C23BBF341DA6B21100202169 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C236D22A1DEFBC67008A392C /* NavViewController.swift */,
 				C236D2281DEF7F91008A392C /* SingleActivityVC.swift */,
 				C272EB821DEA977E00402E10 /* CropImageViewController.swift */,
 				C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */,
@@ -492,6 +495,7 @@
 				C26DDFA01D938A8500429DE4 /* MyFeedVC.swift in Sources */,
 				C272EB781DEA963000402E10 /* AKImageCropperView.swift in Sources */,
 				C23BBF331DA6AE7800202169 /* LoginVC.swift in Sources */,
+				C236D22B1DEFBC67008A392C /* NavViewController.swift in Sources */,
 				C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */,
 				C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */,
 				C272EB751DEA963000402E10 /* AKImageCropperOverlayView.swift in Sources */,

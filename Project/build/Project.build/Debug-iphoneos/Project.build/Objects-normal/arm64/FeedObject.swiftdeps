@@ -7,14 +7,14 @@ provides-member:
 - ["V7Project4Feed", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "BooleanLiteralType"
-- "StringLiteralType"
+- "AssignmentPrecedence"
+- "PFFile"
 - "Int"
 - "Feed"
-- "AssignmentPrecedence"
 - "Bool"
 - "String"
-- "PFFile"
+- "StringLiteralType"
+- "BooleanLiteralType"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Sb", "deinit"]
@@ -38,6 +38,7 @@ depends-member:
 - ["V7Project4Feed", "image"]
 - ["V7Project4Feed", "init"]
 - ["V7Project4Feed", "isActive"]
+- ["V7Project4Feed", "isLiked"]
 - ["V7Project4Feed", "name"]
 - ["V7Project4Feed", "noOfLikes"]
 - ["V7Project4Feed", "timestamp"]
@@ -175,4 +176,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "d557bbd6eab9409a2152b777b9dfa29c"
+interface-hash: "3cb2b95ae5324843887337b139976740"

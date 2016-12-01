@@ -21,8 +21,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
-
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 30)!]
     }
     
     
@@ -35,7 +34,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         overlay = UIView(frame: view.frame)
         overlay!.backgroundColor = UIColor.black
         overlay!.alpha = 0.8
-        self.view.addSubview(self.overlay!)
+        //self.view.addSubview(self.overlay!)
         
         
             qry.findObjectsInBackground {
@@ -102,7 +101,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                             }
                                             
                                             self.daTableView.reloadData()
-                                            self.overlay?.removeFromSuperview()
+                                            //self.overlay?.removeFromSuperview()
                                             
                                         }
                                         

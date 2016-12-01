@@ -6,59 +6,68 @@ provides-nominal:
 provides-member:
 - ["C7Project18HomeViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "unwindToProjectsList"
 - "viewDidLoad"
+- "addParallaxToView"
 - "overlay"
-- "viewDidAppear"
-- "projectTableView"
 - "prepare"
+- "unwindToProjectsList"
+- "viewDidAppear"
+- "tableView"
+- "tableView"
+- "projectTableView"
 depends-top-level:
-- !private "PFFile"
-- !private "StringLiteralType"
-- !private "!="
-- "HomeViewController"
-- !private "String"
 - "UITableViewCell"
-- !private "HomeVCTableViewCell"
-- "UITableViewDataSource"
-- "UITableViewDelegate"
-- !private "UIStoryboard"
-- !private "PFObject"
-- !private "Error"
-- !private "BooleanLiteralType"
-- "UITableView"
-- !private "PFUser"
-- !private "UIImage"
-- !private "Void"
-- "Int"
-- !private "print"
-- !private "PFQuery"
-- !private "ProjectViewController"
-- !private "NSError"
-- "UIViewController"
-- "IndexPath"
-- !private "LoginVC"
-- !private "=="
-- "AssignmentPrecedence"
-- "UIView"
 - !private "Data"
-- "UnicodeScalarType"
-- "CastingPrecedence"
-- "Bool"
-- !private "UIColor"
 - "UIStoryboardSegue"
 - "Feed"
+- !private "PFFile"
+- "UITableView"
+- !private "String"
+- !private "!="
+- !private "Void"
+- !private "UIMotionEffectGroup"
+- !private "PFObject"
+- !private "PFUser"
+- "CastingPrecedence"
+- "HomeViewController"
+- "Bool"
+- !private "LoginVC"
+- !private "print"
+- "IndexPath"
+- !private "=="
+- !private "UIStoryboard"
+- "AssignmentPrecedence"
+- !private "NSError"
+- !private "PFQuery"
+- "UITableViewDataSource"
+- !private "UIImage"
+- "UIViewController"
+- "UITableViewDelegate"
+- !private "StringLiteralType"
+- !private "UIInterpolatingMotionEffect"
+- !private "HomeVCTableViewCell"
+- "Int"
+- "UIView"
+- !private "ProjectViewController"
+- !private "Error"
+- !private "BooleanLiteralType"
+- !private "Array"
+- !private "-"
 - !private "UINavigationController"
+- "UnicodeScalarType"
+- !private "UIColor"
 depends-member:
 - ["Ps9AnyObject", "Feed"]
 - !private ["Ps9AnyObject", "PFQuery"]
 - !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UIInterpolatingMotionEffect"]
+- !private ["Ps9AnyObject", "UIMotionEffectGroup"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "UIView"]
+- !private ["Ps9AnyObject", "addMotionEffect"]
+- ["Ps9AnyObject", "addParallaxToView"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "backgroundColor"]
@@ -78,6 +87,9 @@ depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "lineBreakMode"]
+- !private ["Ps9AnyObject", "maximumRelativeValue"]
+- !private ["Ps9AnyObject", "minimumRelativeValue"]
+- !private ["Ps9AnyObject", "motionEffects"]
 - !private ["Ps9AnyObject", "numberOfLines"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
@@ -117,6 +129,7 @@ depends-member:
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "IndexDistance"]
 - !private ["Sa", "Iterator"]
@@ -127,6 +140,7 @@ depends-member:
 - ["Sa", "deinit"]
 - ["Sa", "init"]
 - !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "Element"]
 - !private ["Ps23BidirectionalCollection", "Index"]
 - !private ["Ps23BidirectionalCollection", "IndexDistance"]
 - !private ["Ps23BidirectionalCollection", "Indices"]
@@ -138,6 +152,7 @@ depends-member:
 - ["Ps23BidirectionalCollection", "init"]
 - !private ["Ps23BidirectionalCollection", "row"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
 - !private ["Ps22BidirectionalIndexable", "Index"]
 - !private ["Ps22BidirectionalIndexable", "IndexDistance"]
 - !private ["Ps22BidirectionalIndexable", "Indices"]
@@ -160,6 +175,7 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "addMotionEffect"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "alpha"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
@@ -177,6 +193,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
 - !private ["PSo15CALayerDelegate", "text"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "Element"]
 - ["Ps7CVarArg", "Feed"]
 - !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "IndexDistance"]
@@ -188,10 +205,14 @@ depends-member:
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIImage"]
+- !private ["Ps7CVarArg", "UIInterpolatingMotionEffect"]
+- !private ["Ps7CVarArg", "UIMotionEffectGroup"]
 - !private ["Ps7CVarArg", "UIStoryboard"]
 - !private ["Ps7CVarArg", "UIView"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "addMotionEffect"]
+- ["Ps7CVarArg", "addParallaxToView"]
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "alpha"]
 - !private ["Ps7CVarArg", "append"]
@@ -213,6 +234,9 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "lineBreakMode"]
+- !private ["Ps7CVarArg", "maximumRelativeValue"]
+- !private ["Ps7CVarArg", "minimumRelativeValue"]
+- !private ["Ps7CVarArg", "motionEffects"]
 - !private ["Ps7CVarArg", "numberOfLines"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
@@ -253,6 +277,7 @@ depends-member:
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
 - ["Ps7CVarArg", ""]
 - !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Element"]
 - !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "IndexDistance"]
 - !private ["Ps10Collection", "Indices"]
@@ -269,6 +294,7 @@ depends-member:
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "Feed"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
@@ -278,9 +304,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UIInterpolatingMotionEffect"]
+- !private ["Ps28CustomDebugStringConvertible", "UIMotionEffectGroup"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addMotionEffect"]
+- ["Ps28CustomDebugStringConvertible", "addParallaxToView"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
@@ -302,6 +332,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "lineBreakMode"]
+- !private ["Ps28CustomDebugStringConvertible", "maximumRelativeValue"]
+- !private ["Ps28CustomDebugStringConvertible", "minimumRelativeValue"]
+- !private ["Ps28CustomDebugStringConvertible", "motionEffects"]
 - !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
@@ -347,6 +380,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
@@ -361,6 +395,7 @@ depends-member:
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "row"]
 - !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Element"]
 - ["Ps23CustomStringConvertible", "Feed"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
@@ -372,11 +407,15 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UIInterpolatingMotionEffect"]
+- !private ["Ps23CustomStringConvertible", "UIMotionEffectGroup"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addMotionEffect"]
+- ["Ps23CustomStringConvertible", "addParallaxToView"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "append"]
@@ -398,6 +437,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "lineBreakMode"]
+- !private ["Ps23CustomStringConvertible", "maximumRelativeValue"]
+- !private ["Ps23CustomStringConvertible", "minimumRelativeValue"]
+- !private ["Ps23CustomStringConvertible", "motionEffects"]
 - !private ["Ps23CustomStringConvertible", "numberOfLines"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
@@ -457,10 +499,14 @@ depends-member:
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UIInterpolatingMotionEffect"]
+- !private ["Ps9Equatable", "UIMotionEffectGroup"]
 - !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addMotionEffect"]
+- ["Ps9Equatable", "addParallaxToView"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "backgroundColor"]
@@ -481,6 +527,9 @@ depends-member:
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "lineBreakMode"]
+- !private ["Ps9Equatable", "maximumRelativeValue"]
+- !private ["Ps9Equatable", "minimumRelativeValue"]
+- !private ["Ps9Equatable", "motionEffects"]
 - !private ["Ps9Equatable", "numberOfLines"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
@@ -513,6 +562,8 @@ depends-member:
 - !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "tiltAlongHorizontalAxis"]
+- !private ["Ps9Equatable", "tiltAlongVerticalAxis"]
 - !private ["Ps9Equatable", "topViewController"]
 - ["Ps9Equatable", "unwindToProjectsList"]
 - !private ["Ps9Equatable", "view"]
@@ -522,6 +573,7 @@ depends-member:
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - ["Ps9Equatable", ""]
 - !private ["Ps5Error", "deinit"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
 - !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
@@ -553,10 +605,14 @@ depends-member:
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UIInterpolatingMotionEffect"]
+- !private ["Ps8Hashable", "UIMotionEffectGroup"]
 - !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addMotionEffect"]
+- ["Ps8Hashable", "addParallaxToView"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "backgroundColor"]
@@ -577,6 +633,9 @@ depends-member:
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "lineBreakMode"]
+- !private ["Ps8Hashable", "maximumRelativeValue"]
+- !private ["Ps8Hashable", "minimumRelativeValue"]
+- !private ["Ps8Hashable", "motionEffects"]
 - !private ["Ps8Hashable", "numberOfLines"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
@@ -609,6 +668,8 @@ depends-member:
 - !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "tiltAlongHorizontalAxis"]
+- !private ["Ps8Hashable", "tiltAlongVerticalAxis"]
 - !private ["Ps8Hashable", "topViewController"]
 - ["Ps8Hashable", "unwindToProjectsList"]
 - !private ["Ps8Hashable", "view"]
@@ -638,6 +699,8 @@ depends-member:
 - !private ["C7Project18HomeViewController", "String"]
 - !private ["C7Project18HomeViewController", "UIColor"]
 - !private ["C7Project18HomeViewController", "UIImage"]
+- !private ["C7Project18HomeViewController", "UIInterpolatingMotionEffect"]
+- !private ["C7Project18HomeViewController", "UIMotionEffectGroup"]
 - !private ["C7Project18HomeViewController", "UINavigationController"]
 - !private ["C7Project18HomeViewController", "UIStoryboard"]
 - ["C7Project18HomeViewController", "UIStoryboardSegue"]
@@ -645,6 +708,7 @@ depends-member:
 - ["C7Project18HomeViewController", "UITableViewCell"]
 - ["C7Project18HomeViewController", "UIView"]
 - !private ["C7Project18HomeViewController", "Void"]
+- ["C7Project18HomeViewController", "addParallaxToView"]
 - ["C7Project18HomeViewController", "deinit"]
 - ["C7Project18HomeViewController", "indexPathForPreferredFocusedView"]
 - ["C7Project18HomeViewController", "indexPathForPreferredFocusedViewInTableView"]
@@ -681,6 +745,7 @@ depends-member:
 - ["SQ", "deinit"]
 - ["V10Foundation9IndexPath", "deinit"]
 - !private ["V10Foundation9IndexPath", "row"]
+- !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "IndexDistance"]
 - !private ["Ps9Indexable", "Indices"]
@@ -692,6 +757,7 @@ depends-member:
 - ["Ps9Indexable", "init"]
 - !private ["Ps9Indexable", "row"]
 - !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Element"]
 - !private ["Ps13IndexableBase", "Index"]
 - !private ["Ps13IndexableBase", "IndexDistance"]
 - !private ["Ps13IndexableBase", "Indices"]
@@ -726,6 +792,7 @@ depends-member:
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Element"]
 - !private ["Ps17MutableCollection", "Index"]
 - !private ["Ps17MutableCollection", "IndexDistance"]
 - !private ["Ps17MutableCollection", "Iterator"]
@@ -736,6 +803,7 @@ depends-member:
 - ["Ps17MutableCollection", "init"]
 - !private ["Ps17MutableCollection", "row"]
 - !private ["Ps17MutableCollection", "subscript"]
+- !private ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableIndexable", "Index"]
 - !private ["Ps16MutableIndexable", "IndexDistance"]
 - !private ["Ps16MutableIndexable", "Iterator"]
@@ -752,8 +820,12 @@ depends-member:
 - !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIInterpolatingMotionEffect"]
+- !private ["PSo8NSCoding", "UIMotionEffectGroup"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "UIView"]
+- !private ["PSo8NSCoding", "addMotionEffect"]
+- ["PSo8NSCoding", "addParallaxToView"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "backgroundColor"]
@@ -767,6 +839,9 @@ depends-member:
 - !private ["PSo8NSCoding", "indexPathForSelectedRow"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "lineBreakMode"]
+- !private ["PSo8NSCoding", "maximumRelativeValue"]
+- !private ["PSo8NSCoding", "minimumRelativeValue"]
+- !private ["PSo8NSCoding", "motionEffects"]
 - !private ["PSo8NSCoding", "numberOfLines"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
@@ -808,14 +883,20 @@ depends-member:
 - !private ["PSo9NSCopying", "black"]
 - !private ["PSo9NSCopying", "findObjectsInBackground"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "maximumRelativeValue"]
+- !private ["PSo9NSCopying", "minimumRelativeValue"]
+- !private ["PSo9NSCopying", "motionEffects"]
 - !private ["CSo7NSError", "deinit"]
 - ["PSo26NSExtensionRequestHandling", "Feed"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "UIInterpolatingMotionEffect"]
+- !private ["PSo26NSExtensionRequestHandling", "UIMotionEffectGroup"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
+- ["PSo26NSExtensionRequestHandling", "addParallaxToView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
@@ -871,6 +952,8 @@ depends-member:
 - !private ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "UIInterpolatingMotionEffect"]
+- !private ["CSo8NSObject", "UIMotionEffectGroup"]
 - !private ["CSo8NSObject", "UINavigationController"]
 - !private ["CSo8NSObject", "UIStoryboard"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
@@ -878,6 +961,8 @@ depends-member:
 - ["CSo8NSObject", "UITableViewCell"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addMotionEffect"]
+- ["CSo8NSObject", "addParallaxToView"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "backgroundColor"]
@@ -897,6 +982,9 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
 - !private ["CSo8NSObject", "lineBreakMode"]
+- !private ["CSo8NSObject", "maximumRelativeValue"]
+- !private ["CSo8NSObject", "minimumRelativeValue"]
+- !private ["CSo8NSObject", "motionEffects"]
 - !private ["CSo8NSObject", "numberOfLines"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
@@ -940,8 +1028,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIInterpolatingMotionEffect"]
+- !private ["PSo16NSObjectProtocol", "UIMotionEffectGroup"]
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "addMotionEffect"]
+- ["PSo16NSObjectProtocol", "addParallaxToView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
@@ -961,6 +1053,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - !private ["PSo16NSObjectProtocol", "lineBreakMode"]
+- !private ["PSo16NSObjectProtocol", "maximumRelativeValue"]
+- !private ["PSo16NSObjectProtocol", "minimumRelativeValue"]
+- !private ["PSo16NSObjectProtocol", "motionEffects"]
 - !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
@@ -1016,6 +1111,7 @@ depends-member:
 - !private ["CSo6PFUser", "current"]
 - ["C7Project21ProjectViewController", "deinit"]
 - !private ["C7Project21ProjectViewController", "projectOject"]
+- !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
 - !private ["Ps22RandomAccessCollection", "Indices"]
@@ -1027,6 +1123,7 @@ depends-member:
 - ["Ps22RandomAccessCollection", "init"]
 - !private ["Ps22RandomAccessCollection", "row"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
 - !private ["Ps21RandomAccessIndexable", "Index"]
 - !private ["Ps21RandomAccessIndexable", "IndexDistance"]
 - !private ["Ps21RandomAccessIndexable", "Indices"]
@@ -1044,6 +1141,7 @@ depends-member:
 - !private ["Vs17RandomAccessSlice", "Iterator"]
 - !private ["Vs17RandomAccessSlice", "SubSequence"]
 - !private ["Vs17RandomAccessSlice", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
 - !private ["Ps26RangeReplaceableCollection", "Index"]
 - !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
 - !private ["Ps26RangeReplaceableCollection", "Iterator"]
@@ -1053,6 +1151,7 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "count"]
 - ["Ps26RangeReplaceableCollection", "init"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
 - !private ["Ps25RangeReplaceableIndexable", "Index"]
 - !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
 - !private ["Ps25RangeReplaceableIndexable", "Iterator"]
@@ -1063,6 +1162,8 @@ depends-member:
 - ["Ps25RangeReplaceableIndexable", "init"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "byWordWrapping"]
+- !private ["Ps16RawRepresentable", "tiltAlongHorizontalAxis"]
+- !private ["Ps16RawRepresentable", "tiltAlongVerticalAxis"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
@@ -1093,6 +1194,7 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "addMotionEffect"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
@@ -1109,6 +1211,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "addMotionEffect"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
@@ -1130,8 +1233,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIInterpolatingMotionEffect"]
+- !private ["PSo21UIAppearanceContainer", "UIMotionEffectGroup"]
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
+- !private ["PSo21UIAppearanceContainer", "addMotionEffect"]
+- ["PSo21UIAppearanceContainer", "addParallaxToView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -1189,8 +1296,11 @@ depends-member:
 - !private ["PSo18UIContentContainer", "PFUser"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "UIInterpolatingMotionEffect"]
+- !private ["PSo18UIContentContainer", "UIMotionEffectGroup"]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - !private ["PSo18UIContentContainer", "UIView"]
+- ["PSo18UIContentContainer", "addParallaxToView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIContentContainer", "init"]
@@ -1229,6 +1339,7 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "lineBreakMode"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "numberOfLines"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "addMotionEffect"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
@@ -1245,6 +1356,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "addMotionEffect"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
@@ -1266,8 +1378,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIInterpolatingMotionEffect"]
+- !private ["PSo18UIFocusEnvironment", "UIMotionEffectGroup"]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
+- !private ["PSo18UIFocusEnvironment", "addMotionEffect"]
+- ["PSo18UIFocusEnvironment", "addParallaxToView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -1318,6 +1434,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "addMotionEffect"]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "alpha"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
@@ -1340,9 +1457,23 @@ depends-member:
 - !private ["CSo7UIImage", "deinit"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "image"]
+- ["CSo27UIInterpolatingMotionEffect", "deinit"]
+- !private ["CSo27UIInterpolatingMotionEffect", "init"]
+- !private ["CSo27UIInterpolatingMotionEffect", "maximumRelativeValue"]
+- !private ["CSo27UIInterpolatingMotionEffect", "minimumRelativeValue"]
+- ["OSC31UIInterpolatingMotionEffectType", "deinit"]
+- !private ["OSC31UIInterpolatingMotionEffectType", "tiltAlongHorizontalAxis"]
+- !private ["OSC31UIInterpolatingMotionEffectType", "tiltAlongVerticalAxis"]
 - !private ["CSo7UILabel", "lineBreakMode"]
 - !private ["CSo7UILabel", "numberOfLines"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo14UIMotionEffect", "init"]
+- !private ["CSo14UIMotionEffect", "maximumRelativeValue"]
+- !private ["CSo14UIMotionEffect", "minimumRelativeValue"]
+- !private ["CSo14UIMotionEffect", "motionEffects"]
+- ["CSo19UIMotionEffectGroup", "deinit"]
+- !private ["CSo19UIMotionEffectGroup", "init"]
+- !private ["CSo19UIMotionEffectGroup", "motionEffects"]
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "topViewController"]
 - ["CSo11UIResponder", "Bool"]
@@ -1362,6 +1493,8 @@ depends-member:
 - !private ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIImage"]
+- !private ["CSo11UIResponder", "UIInterpolatingMotionEffect"]
+- !private ["CSo11UIResponder", "UIMotionEffectGroup"]
 - !private ["CSo11UIResponder", "UINavigationController"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
@@ -1369,6 +1502,8 @@ depends-member:
 - ["CSo11UIResponder", "UITableViewCell"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "addMotionEffect"]
+- ["CSo11UIResponder", "addParallaxToView"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "backgroundColor"]
@@ -1423,8 +1558,12 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
+- !private ["PSo30UIResponderStandardEditActions", "UIInterpolatingMotionEffect"]
+- !private ["PSo30UIResponderStandardEditActions", "UIMotionEffectGroup"]
 - !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
 - !private ["PSo30UIResponderStandardEditActions", "UIView"]
+- !private ["PSo30UIResponderStandardEditActions", "addMotionEffect"]
+- ["PSo30UIResponderStandardEditActions", "addParallaxToView"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "alpha"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
@@ -1483,8 +1622,11 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "PFUser"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
+- !private ["PSo20UIScrollViewDelegate", "UIInterpolatingMotionEffect"]
+- !private ["PSo20UIScrollViewDelegate", "UIMotionEffectGroup"]
 - !private ["PSo20UIScrollViewDelegate", "UIStoryboard"]
 - !private ["PSo20UIScrollViewDelegate", "UIView"]
+- !private ["PSo20UIScrollViewDelegate", "addParallaxToView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
@@ -1519,8 +1661,11 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "PFUser"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "UIInterpolatingMotionEffect"]
+- !private ["PSo16UIStateRestoring", "UIMotionEffectGroup"]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - !private ["PSo16UIStateRestoring", "UIView"]
+- ["PSo16UIStateRestoring", "addParallaxToView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16UIStateRestoring", "init"]
@@ -1575,8 +1720,11 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "PFUser"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
+- !private ["PSo21UITableViewDataSource", "UIInterpolatingMotionEffect"]
+- !private ["PSo21UITableViewDataSource", "UIMotionEffectGroup"]
 - !private ["PSo21UITableViewDataSource", "UIStoryboard"]
 - !private ["PSo21UITableViewDataSource", "UIView"]
+- !private ["PSo21UITableViewDataSource", "addParallaxToView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UITableViewDataSource", "numberOfSections"]
@@ -1611,8 +1759,11 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "PFUser"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
+- !private ["PSo19UITableViewDelegate", "UIInterpolatingMotionEffect"]
+- !private ["PSo19UITableViewDelegate", "UIMotionEffectGroup"]
 - !private ["PSo19UITableViewDelegate", "UIStoryboard"]
 - !private ["PSo19UITableViewDelegate", "UIView"]
+- !private ["PSo19UITableViewDelegate", "addParallaxToView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo19UITableViewDelegate", "numberOfSections"]
@@ -1647,8 +1798,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "PFUser"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIInterpolatingMotionEffect"]
+- !private ["PSo18UITraitEnvironment", "UIMotionEffectGroup"]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
+- !private ["PSo18UITraitEnvironment", "addMotionEffect"]
+- ["PSo18UITraitEnvironment", "addParallaxToView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -1699,6 +1854,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addMotionEffect"]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "backgroundColor"]
@@ -1733,6 +1889,8 @@ depends-member:
 - !private ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIImage"]
+- !private ["CSo16UIViewController", "UIInterpolatingMotionEffect"]
+- !private ["CSo16UIViewController", "UIMotionEffectGroup"]
 - !private ["CSo16UIViewController", "UINavigationController"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
@@ -1740,6 +1898,7 @@ depends-member:
 - ["CSo16UIViewController", "UITableViewCell"]
 - ["CSo16UIViewController", "UIView"]
 - !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "addParallaxToView"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
@@ -1782,6 +1941,7 @@ depends-member:
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
@@ -1791,6 +1951,7 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "count"]
 - ["Ps14_ArrayProtocol", "init"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addMotionEffect"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "alpha"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
@@ -1807,6 +1968,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
@@ -1834,10 +1996,14 @@ depends-member:
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIImage"]
+- !private ["Ps9_Hashable", "UIInterpolatingMotionEffect"]
+- !private ["Ps9_Hashable", "UIMotionEffectGroup"]
 - !private ["Ps9_Hashable", "UIStoryboard"]
 - !private ["Ps9_Hashable", "UIView"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addMotionEffect"]
+- ["Ps9_Hashable", "addParallaxToView"]
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "alpha"]
 - !private ["Ps9_Hashable", "backgroundColor"]
@@ -1858,6 +2024,9 @@ depends-member:
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "lineBreakMode"]
+- !private ["Ps9_Hashable", "maximumRelativeValue"]
+- !private ["Ps9_Hashable", "minimumRelativeValue"]
+- !private ["Ps9_Hashable", "motionEffects"]
 - !private ["Ps9_Hashable", "numberOfLines"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
@@ -1890,6 +2059,8 @@ depends-member:
 - !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "tiltAlongHorizontalAxis"]
+- !private ["Ps9_Hashable", "tiltAlongVerticalAxis"]
 - !private ["Ps9_Hashable", "topViewController"]
 - ["Ps9_Hashable", "unwindToProjectsList"]
 - !private ["Ps9_Hashable", "view"]
@@ -1907,6 +2078,7 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
@@ -2028,7 +2200,11 @@ depends-nominal:
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UIImage"
 - !private "CSo11UIImageView"
+- "CSo27UIInterpolatingMotionEffect"
+- "OSC31UIInterpolatingMotionEffectType"
 - !private "CSo7UILabel"
+- !private "CSo14UIMotionEffect"
+- "CSo19UIMotionEffectGroup"
 - "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -2141,4 +2317,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "15aa8a9d7e7f3bc9a652c56866e8169b"
+interface-hash: "45530e28dc284f556824db4ea7049693"

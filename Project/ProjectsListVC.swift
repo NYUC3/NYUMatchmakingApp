@@ -68,6 +68,7 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "select-project", for: indexPath)
         cell.textLabel?.text = projects[indexPath.row].name
+        cell.textLabel?.font = UIFont(name: "Avenir", size: 20)
         return cell
     }
     
