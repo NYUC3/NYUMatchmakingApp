@@ -67,8 +67,6 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                 
                                 feed.timestamp = String(describing: self.processTimestamp(str: String(describing: object.createdAt!)))
 
-                                
-                                
                                 // idk how to pass by reference in swift so I'm gonna add the next function here (I know this is really crappy code fyi)
  
                                 let q = PFQuery(className:"likes")
@@ -82,6 +80,15 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                         if let objects = objects {
                                             
                                             feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile, likes: objects.count)
+                                            
+                                            for obj in objects{
+                                            
+                                                if(obj["username"] as! String == PFUser.current()?.username){
+                                                    feed.isLiked = true
+                                                }
+                                            
+                                            }
+                                            
                                             self.feedList.append(feed)
                                             self.daTableView.reloadData()
                                         }

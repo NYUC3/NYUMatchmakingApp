@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "c52fcf1ae78db39de548293789135c62"
-build_time: [534012171, 112105000]
+build_time: [534012411, 495891000]
 inputs:
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateNewActivityVC.swift": [533873233, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/MyFeedVC.swift": [531424272, 0]
@@ -8,7 +8,7 @@ inputs:
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/LoginVC.swift": [529086922, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/NavViewController.swift": [533873147, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/HomeVCTableViewCell.swift": [534010474, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/FeedVC.swift": [534012169, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/FeedVC.swift": [534012407, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/AKImageCropperOverlayView.swift": [533535097, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CGRect.swift": [533535097, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/FeedObject.swift": [534010029, 0]
