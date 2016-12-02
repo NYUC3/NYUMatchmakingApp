@@ -11,11 +11,12 @@ import Parse
 
 struct Feed {
     
-    init(name : String, title: String, desc : String, image : PFFile){
+    init(name : String, title: String, desc : String, image : PFFile, likes : Int){
         self.name = name
         self.title = title
         self.description = desc
         self.image = image
+        self.noOfLikes = likes
     }
     
     var name : String?

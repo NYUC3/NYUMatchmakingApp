@@ -34,7 +34,7 @@ class AddActivityVC: UIViewController, UITableViewDataSource, UITableViewDelegat
                 if let objects = objects {
                     for object in objects {
                         
-                        let feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: object["image"] as! PFFile)
+                        let feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: object["image"] as! PFFile, likes: 0)
                         
                         self.myFeedList.append(feed)
                         

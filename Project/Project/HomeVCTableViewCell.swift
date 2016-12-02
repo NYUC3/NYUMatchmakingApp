@@ -13,6 +13,7 @@ class HomeVCTableViewCell: UITableViewCell {
     @IBOutlet weak var projectImage: UIImageView!
     @IBOutlet weak var projectName: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var followersLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

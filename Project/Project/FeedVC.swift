@@ -63,7 +63,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                 description = object["activityDescription"] as! String
                             }
                             if(object["image"] != nil){
-                                var feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile)
+                                var feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile, likes: 0)
                                 
                                 feed.timestamp = String(describing: self.processTimestamp(str: String(describing: object.createdAt!)))
 

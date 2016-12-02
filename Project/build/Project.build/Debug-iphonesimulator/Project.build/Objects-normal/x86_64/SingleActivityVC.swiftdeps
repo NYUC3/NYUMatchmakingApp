@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C7Project16SingleActivityVC", ""]
 provides-dynamic-lookup:
-- "backButtonTapped"
-- "viewDidAppear"
 - "activityTitleLabel"
-- "viewDidLoad"
-- "likeButton"
-- "activityImage"
 - "activityDescriptionLabel"
+- "viewDidLoad"
+- "backButtonTapped"
+- "activityImage"
+- "likeButton"
+- "viewDidAppear"
 depends-top-level:
+- !private "AssignmentPrecedence"
+- "Feed"
+- !private "Error"
+- "Bool"
+- !private "Void"
+- !private "Data"
 - "UILabel"
+- "UIBarButtonItem"
+- "UIImageView"
+- !private "UIImage"
+- !private "BooleanLiteralType"
 - "SingleActivityVC"
 - "UIViewController"
 - "UIButton"
-- !private "BooleanLiteralType"
-- "Bool"
-- "Feed"
-- "UIImageView"
-- !private "AssignmentPrecedence"
-- !private "Error"
-- "UIBarButtonItem"
-- !private "Data"
-- !private "Void"
-- !private "UIImage"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "activityDescriptionLabel"]

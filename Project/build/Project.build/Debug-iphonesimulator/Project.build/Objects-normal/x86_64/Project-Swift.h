@@ -409,6 +409,7 @@ SWIFT_CLASS("_TtC7Project19HomeVCTableViewCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified followersLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -426,7 +427,6 @@ SWIFT_CLASS("_TtC7Project18HomeViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (IBAction)unwindToProjectsListWithSegue:(UIStoryboardSegue * _Nonnull)segue;
-- (void)addParallaxToViewWithVw:(UIView * _Nonnull)vw;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

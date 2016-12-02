@@ -114,6 +114,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="few-B0-K5o" id="bUZ-iT-XaT"/>
+                                            <outlet property="followersLabel" destination="UNe-38-1ju" id="RrS-y7-Z6V"/>
                                             <outlet property="projectImage" destination="bCF-nC-Y6Z" id="bWZ-jL-R3b"/>
                                             <outlet property="projectName" destination="7tA-9z-FsQ" id="r2a-J9-EXJ"/>
                                             <segue destination="Czo-Qc-Xvo" kind="show" identifier="project-view" id="wYd-mn-RVR"/>
@@ -467,10 +468,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="H4x-Du-1mV">
-                                <rect key="frame" x="65" y="148" width="245" height="293"/>
+                                <rect key="frame" x="65" y="148" width="245" height="244"/>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUG-XQ-4Nn">
-                                <rect key="frame" x="0.0" y="449" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="400" width="375" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="XB2-Us-mjO"/>
                                 </constraints>
@@ -480,7 +481,7 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abj-Cw-4ae">
-                                <rect key="frame" x="65" y="403" width="245" height="38"/>
+                                <rect key="frame" x="65" y="354" width="245" height="38"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                 <state key="normal" title="Upload Photo">
@@ -588,10 +589,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jiW-mi-a3b">
-                                <rect key="frame" x="16" y="148" width="343" height="392"/>
+                                <rect key="frame" x="16" y="148" width="343" height="343"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHR-Va-G9U">
-                                <rect key="frame" x="16" y="487" width="343" height="53"/>
+                                <rect key="frame" x="16" y="438" width="343" height="53"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="0.74467806208053688" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="0L6-5L-vBh"/>

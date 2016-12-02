@@ -12,17 +12,13 @@ import Parse
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var projectsList = [Feed]()
-    
     var overlay : UIView? // loading screen
     
     @IBOutlet weak var projectTableView: UITableView!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 30)!]
         
         if(PFUser.current() == nil){
@@ -36,15 +32,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else{
             
-            
+            // SETUP LOADING SCREEN
             overlay = UIView(frame: view.frame)
             overlay!.backgroundColor = UIColor.black
             overlay!.alpha = 0.8
-            
             view.addSubview(overlay!)
+            // END OF LOADING SCREEN SETUP
             
              let query = PFQuery(className:"Projects")
-             // query.whereKey("username", equalTo:"vdthatte@nyu.edu")
              query.findObjectsInBackground {
              (objects: [PFObject]?, error: Error?) -> Void in
              
@@ -56,26 +51,41 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 if let objects = objects {
                 
                     for object in objects {
-             
-                    
+                
                         if(object["image"] != nil){
                         let theImg = object["image"] as! PFFile
                         
                             if(theImg != nil){
-                            
-                                let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg)
-                            
-                                self.projectsList.append(project)
-                        }
+                                
+                                let q = PFQuery(className:"Follow")
+                                //q.whereKey("username", equalTo: (PFUser.current()?.username)!)
+                                q.whereKey("project", equalTo: object["Name"] as! String)
+                                q.findObjectsInBackground {
+                                    (objects: [PFObject]?, error: Error?) -> Void in
+                                    
+                                    if error == nil {
+                                        // The find succeeded.
+                                        if let objects = objects {
+                                            let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg, likes: objects.count)
+                                            self.projectsList.append(project)
+                                        }
+                                        
+                                    } else {
+                                        // Log details of the failure
+                                        print("Error: \(error!)")
+                                    }
+                                }
+
+                            } // if
                     
+                        } // if
                     }
-                }
                 
-                self.projectTableView.reloadData()
-                self.overlay?.removeFromSuperview()
-             }
+                    self.projectTableView.reloadData()
+                    self.overlay?.removeFromSuperview()
+                }
              
-             self.projectTableView.reloadData()
+                self.projectTableView.reloadData()
              
              }
              else {
@@ -83,10 +93,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print("Error: \(error!) \(error! as NSError)")
                 }
              }
-            
-        
         }
-    
     }
     
     
@@ -98,11 +105,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return projectsList.count
     }
     
-    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "home-cell", for: indexPath) as! HomeVCTableViewCell
         cell.projectName.text = projectsList[indexPath.row].name
         cell.descriptionLabel.text = projectsList[indexPath.row].description
+        if(projectsList[indexPath.row].noOfLikes == 1){
+            
+            cell.followersLabel.text = String(projectsList[indexPath.row].noOfLikes) + " follower"
+            
+        }
+        else{
+            
+            cell.followersLabel.text = String(projectsList[indexPath.row].noOfLikes) + " followers"
+        
+        }
         
         cell.descriptionLabel.numberOfLines = 0
         cell.descriptionLabel.lineBreakMode = .byWordWrapping
@@ -116,12 +132,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         })
         
-
         return cell
     }
 
-
-    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -139,22 +152,5 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // some code to execute
     } // unwindToPrevious
     
-    
-    func addParallaxToView(vw: UIView) {
-        let amount = 10
-        
-        //let horizontal = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
-        //horizontal.minimumRelativeValue = -amount
-        //horizontal.maximumRelativeValue = amount
-        
-        let vertical = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
-        vertical.minimumRelativeValue = -amount
-        vertical.maximumRelativeValue = amount
-        
-        let group = UIMotionEffectGroup()
-        group.motionEffects = [vertical]
-        vw.addMotionEffect(group)
-    }
- 
 
 }

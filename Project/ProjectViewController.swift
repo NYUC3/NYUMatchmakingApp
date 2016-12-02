@@ -77,7 +77,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
 
                                 
                                 
-                                let feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: theImg)
+                                let feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: theImg, likes:0)
                                 
                                 
                                 self.activities.append(feed)
