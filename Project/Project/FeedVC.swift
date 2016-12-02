@@ -71,49 +71,25 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                 
                                 // idk how to pass by reference in swift so I'm gonna add the next function here (I know this is really crappy code fyi)
  
-                                let query = PFQuery(className:"likes")
-                                print(feed.title)
-                                query.whereKey("title", equalTo: feed.title)
-                                qry.findObjectsInBackground {
+                                let q = PFQuery(className:"likes")
+                                //q.whereKey("username", equalTo: (PFUser.current()?.username)!)
+                                q.whereKey("title", equalTo: title)
+                                q.findObjectsInBackground {
                                     (objects: [PFObject]?, error: Error?) -> Void in
                                     
-                                    if error == nil{
-                                        
-                                        print("Successfully \(objects!.count) scores.")
-                                        
-                                        if let objects = objects{
+                                    if error == nil {
+                                        // The find succeeded.
+                                        if let objects = objects {
                                             
-                                            for object in objects{
-                                                
-                                                // check if the username is associated with the activity
-                                                
-                                                if(object["username"] as? String == PFUser.current()?.username){
-                                                    print("object")
-                                                    print(object["title"])
-                                                    feed.isLiked = true
-                                                    
-                                                }
-                                                
-                                                
-                                                feed.noOfLikes += 1
-                                                self.feedList.append(feed)
-                                                
-                                            }
-                                            
+                                            feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile, likes: objects.count)
+                                            self.feedList.append(feed)
                                             self.daTableView.reloadData()
-                                            //self.overlay?.removeFromSuperview()
-                                            
                                         }
                                         
-                                        
+                                    } else {
+                                        // Log details of the failure
+                                        print("Error: \(error!)")
                                     }
-                                        
-                                    else{ // ERROR
-                                        
-                                        print("something went wrong: ")
-                                        
-                                    }
-                                    
                                 }
                                 
                                 
