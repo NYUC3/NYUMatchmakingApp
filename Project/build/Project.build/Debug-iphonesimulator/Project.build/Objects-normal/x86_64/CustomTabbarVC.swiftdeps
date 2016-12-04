@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C7Project14CustomTabbarVC", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
+- "CustomTabbarVC"
 - "UITabBarController"
 - !private "UITabBar"
 - "AssignmentPrecedence"
-- "CustomTabbarVC"
 - !private "UIColor"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]

@@ -7,14 +7,14 @@ provides-member:
 provides-dynamic-lookup:
 - "getImageInRect"
 depends-top-level:
-- !private "UIGraphicsEndImageContext"
-- !private "UIGraphicsBeginImageContext"
-- "CGRect"
+- !private "UIGraphicsGetCurrentContext"
 - !private "CGPoint"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
 - "UIImage"
 - !private "-"
-- !private "UIGraphicsGetCurrentContext"
+- "CGRect"
+- !private "UIGraphicsBeginImageContext"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "UIGraphicsEndImageContext"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "CGRect"]

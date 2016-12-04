@@ -10,12 +10,12 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 depends-top-level:
 - "NavViewController"
-- "AssignmentPrecedence"
 - !private "Dictionary"
-- !private "StringLiteralType"
-- !private "NSFontAttributeName"
 - "UINavigationController"
+- !private "StringLiteralType"
+- "AssignmentPrecedence"
 - !private "UIFont"
+- !private "NSFontAttributeName"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "UIFont"]

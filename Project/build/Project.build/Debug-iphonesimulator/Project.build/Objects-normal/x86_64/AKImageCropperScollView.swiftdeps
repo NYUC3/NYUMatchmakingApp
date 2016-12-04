@@ -9,11 +9,11 @@ provides-dynamic-lookup:
 - "sender"
 - "gestureRecognizerShouldBegin"
 depends-top-level:
-- "AKImageCropperTouchView"
 - "Bool"
-- "UIScrollView"
 - "UIGestureRecognizer"
+- "UIScrollView"
 - "AKImageCropperScollView"
+- "AKImageCropperTouchView"
 depends-member:
 - ["C7Project23AKImageCropperScollView", "AKImageCropperTouchView"]
 - ["C7Project23AKImageCropperScollView", "Bool"]

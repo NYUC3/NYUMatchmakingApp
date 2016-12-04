@@ -241,13 +241,13 @@ SWIFT_CLASS("_TtC7Project18AKImageCropperView")
 @end
 
 
-@interface AKImageCropperView (SWIFT_EXTENSION(Project)) <UIScrollViewDelegate>
-- (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView;
+@interface AKImageCropperView (SWIFT_EXTENSION(Project)) <AKImageCropperTouchViewDelegate>
+- (void)cropRectChanged:(CGRect)rect;
 @end
 
 
-@interface AKImageCropperView (SWIFT_EXTENSION(Project)) <AKImageCropperTouchViewDelegate>
-- (void)cropRectChanged:(CGRect)rect;
+@interface AKImageCropperView (SWIFT_EXTENSION(Project)) <UIScrollViewDelegate>
+- (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView;
 @end
 
 
@@ -351,6 +351,16 @@ SWIFT_CLASS("_TtC7Project15CreateProjectVC")
 
 SWIFT_CLASS("_TtC7Project23CropImageViewController")
 @interface CropImageViewController : UIViewController
+@property (nonatomic, strong) AKImageCropperView * _Null_unspecified cropView;
+- (void)viewDidLoad;
+- (void)viewWillLayoutSubviews;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project22CropTestViewController")
+@interface CropTestViewController : UIViewController
 @property (nonatomic, strong) AKImageCropperView * _Null_unspecified cropView;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
@@ -482,12 +492,12 @@ SWIFT_CLASS("_TtC7Project21ProjectViewController")
 @interface ProjectViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescription;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified followButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified followButton;
 @property (nonatomic) BOOL isFollowing;
 - (void)viewDidLoad;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (IBAction)followButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)followTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -538,6 +548,7 @@ SWIFT_CLASS("_TtC7Project16SingleActivityVC")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified activityImage;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (IBAction)likeButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)backButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

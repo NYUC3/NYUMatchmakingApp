@@ -181,6 +181,10 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let filledImage = UIImage(named: "filled-shape")
             cell.likeButton.setImage(filledImage, for: .normal)
         }
+        else{
+            let filledImage = UIImage(named: "Shape")
+            cell.likeButton.setImage(filledImage, for: .normal)
+        }
         cell.likeButton.tag = indexPath.row
         cell.likeButton.addTarget(self, action: #selector(FeedVC.buttonClicked(sender:)), for: UIControlEvents.touchUpInside)
         cell.feedDescriptionLabel.lineBreakMode = .byWordWrapping

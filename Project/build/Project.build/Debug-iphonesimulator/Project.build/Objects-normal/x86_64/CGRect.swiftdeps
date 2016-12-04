@@ -10,21 +10,21 @@ provides-member:
 - ["VSC6CGRect", "centersRectIn"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "<"
-- !private ">"
-- "CGRect"
-- !private "CGPoint"
+- "CGFloat"
 - "CGSize"
-- !private "/"
-- "CGRectFillScale"
-- !private "-"
+- !private "max"
+- "CGRect"
+- !private "<"
 - "AssignmentPrecedence"
-- "CGRectFitScale"
+- "CGRectFillScale"
 - "CGRectFit"
 - "CGRectCenters"
-- "CGFloat"
-- !private "max"
+- "CGRectFitScale"
+- !private "/"
+- !private "-"
 - !private "min"
+- !private "CGPoint"
+- !private ">"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]

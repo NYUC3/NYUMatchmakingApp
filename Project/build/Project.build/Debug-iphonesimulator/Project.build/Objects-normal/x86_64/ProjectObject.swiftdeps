@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Project"
+- "String"
 - "PFFile"
 - "AssignmentPrecedence"
-- "String"
 depends-member:
 - ["Sq", "deinit"]
 - ["CSo6PFFile", "deinit"]

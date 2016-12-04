@@ -13,7 +13,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var projectImage: UIImageView!
     @IBOutlet weak var projectDescription: UILabel!
-    @IBOutlet weak var followButton: UIButton!
+    @IBOutlet weak var followButton: UIBarButtonItem!
 
     var projectOject : Feed?
     var isFollowing : Bool = false
@@ -47,7 +47,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
                     for object in objects {
                         if(object["project"] as? String == self.projectOject?.name){
                             self.isFollowing = true
-                            self.followButton.setTitle("Following", for: .normal)
+                            self.followButton.title = "Following"
                         }
                     }
                 }
@@ -119,13 +119,11 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     
 
 
-
-
-    @IBAction func followButtonTapped(_ sender: UIButton) {
+    @IBAction func followTapped(_ sender: UIBarButtonItem) {
         
         if(!isFollowing){
             isFollowing = true
-            followButton.setTitle("Following", for: .normal)
+            followButton.title = "Following"
             let followClass = PFObject(className:"Follow")
             followClass["username"] = PFUser.current()?.username
             followClass["project"] = projectOject?.name
@@ -138,10 +136,10 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
                     // There was a problem, check error.description
                 }
             }
-        
+            
         }
         else{
-            followButton.setTitle("Follow", for: .normal)
+            followButton.title = "Follow"
             
             // delete the follow object from
             
@@ -166,9 +164,10 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
                     print("Error: \(error!)")
                 }
             }
-        
+            
         }
         
     }
+
 
 }

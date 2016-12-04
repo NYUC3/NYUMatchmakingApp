@@ -6,46 +6,46 @@ provides-nominal:
 provides-member:
 - ["C7Project21ProjectViewController", ""]
 provides-dynamic-lookup:
-- "isFollowing"
 - "projectDescription"
+- "isFollowing"
 - "tableView"
 - "tableView"
 - "viewDidLoad"
 - "projectImage"
 - "followButton"
-- "followButtonTapped"
+- "followTapped"
 depends-top-level:
-- "BooleanLiteralType"
-- "UIImageView"
-- "ProjectViewController"
-- "UITableViewDataSource"
-- !private "PFQuery"
 - !private "PFObject"
-- !private "print"
-- "UITableViewDelegate"
-- !private "PFUser"
-- "Bool"
-- !private "String"
-- !private "StringLiteralType"
-- "Feed"
-- "UIViewController"
-- "UIButton"
-- "IndexPath"
-- !private "PFFile"
-- !private "CastingPrecedence"
-- !private "Void"
-- "UILabel"
-- "UITableView"
-- !private "Data"
-- !private "!"
-- "UITableViewCell"
 - !private "Error"
+- !private "print"
+- !private "PFQuery"
+- !private "!"
+- "UIBarButtonItem"
+- !private "PFUser"
+- !private "CastingPrecedence"
 - "AssignmentPrecedence"
-- !private "UIImage"
-- "Int"
-- !private "!="
 - !private "=="
+- !private "!="
+- "UIViewController"
+- "UILabel"
+- !private "StringLiteralType"
+- !private "Data"
+- "IndexPath"
+- "UITableViewDelegate"
+- "Int"
+- "UITableViewCell"
+- "UITableViewDataSource"
+- !private "Void"
+- !private "UIImage"
+- !private "PFFile"
+- !private "String"
+- "BooleanLiteralType"
+- "ProjectViewController"
+- "Feed"
+- "UITableView"
+- "UIImageView"
 - !private "UIFont"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "Feed"]
 - !private ["Ps9AnyObject", "PFObject"]
@@ -59,7 +59,7 @@ depends-member:
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "findObjectsInBackground"]
 - ["Ps9AnyObject", "followButton"]
-- ["Ps9AnyObject", "followButtonTapped"]
+- ["Ps9AnyObject", "followTapped"]
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "getDataInBackground"]
 - !private ["Ps9AnyObject", "image"]
@@ -90,7 +90,6 @@ depends-member:
 - ["Ps9AnyObject", "scrollViewWillEndDragging"]
 - ["Ps9AnyObject", "sectionIndexTitles"]
 - ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
-- !private ["Ps9AnyObject", "setTitle"]
 - !private ["Ps9AnyObject", "subscript"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
@@ -148,7 +147,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "image"]
 - !private ["PSo15CALayerDelegate", "lineBreakMode"]
 - !private ["PSo15CALayerDelegate", "numberOfLines"]
-- !private ["PSo15CALayerDelegate", "setTitle"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["PSo15CALayerDelegate", "textLabel"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -174,7 +172,7 @@ depends-member:
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "findObjectsInBackground"]
 - ["Ps7CVarArg", "followButton"]
-- ["Ps7CVarArg", "followButtonTapped"]
+- ["Ps7CVarArg", "followTapped"]
 - !private ["Ps7CVarArg", "font"]
 - !private ["Ps7CVarArg", "getDataInBackground"]
 - !private ["Ps7CVarArg", "image"]
@@ -205,7 +203,6 @@ depends-member:
 - ["Ps7CVarArg", "scrollViewWillEndDragging"]
 - ["Ps7CVarArg", "sectionIndexTitles"]
 - ["Ps7CVarArg", "sectionIndexTitlesForTableView"]
-- !private ["Ps7CVarArg", "setTitle"]
 - !private ["Ps7CVarArg", "subscript"]
 - ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "text"]
@@ -252,7 +249,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackground"]
 - ["Ps28CustomDebugStringConvertible", "followButton"]
-- ["Ps28CustomDebugStringConvertible", "followButtonTapped"]
+- ["Ps28CustomDebugStringConvertible", "followTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "getDataInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
@@ -284,7 +281,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "scrollViewWillEndDragging"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitles"]
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
-- !private ["Ps28CustomDebugStringConvertible", "setTitle"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -338,7 +334,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackground"]
 - ["Ps23CustomStringConvertible", "followButton"]
-- ["Ps23CustomStringConvertible", "followButtonTapped"]
+- ["Ps23CustomStringConvertible", "followTapped"]
 - !private ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "getDataInBackground"]
 - !private ["Ps23CustomStringConvertible", "image"]
@@ -370,7 +366,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["Ps23CustomStringConvertible", "sectionIndexTitles"]
 - ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
-- !private ["Ps23CustomStringConvertible", "setTitle"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -411,7 +406,7 @@ depends-member:
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "findObjectsInBackground"]
 - ["Ps9Equatable", "followButton"]
-- ["Ps9Equatable", "followButtonTapped"]
+- ["Ps9Equatable", "followTapped"]
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "getDataInBackground"]
 - !private ["Ps9Equatable", "image"]
@@ -420,7 +415,6 @@ depends-member:
 - !private ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "isFollowing"]
 - !private ["Ps9Equatable", "lineBreakMode"]
-- !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "numberOfLines"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
@@ -444,7 +438,6 @@ depends-member:
 - ["Ps9Equatable", "scrollViewWillEndDragging"]
 - ["Ps9Equatable", "sectionIndexTitles"]
 - ["Ps9Equatable", "sectionIndexTitlesForTableView"]
-- !private ["Ps9Equatable", "setTitle"]
 - !private ["Ps9Equatable", "subscript"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
@@ -464,7 +457,6 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
-- !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
@@ -498,7 +490,7 @@ depends-member:
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "findObjectsInBackground"]
 - ["Ps8Hashable", "followButton"]
-- ["Ps8Hashable", "followButtonTapped"]
+- ["Ps8Hashable", "followTapped"]
 - !private ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "getDataInBackground"]
 - !private ["Ps8Hashable", "image"]
@@ -530,7 +522,6 @@ depends-member:
 - ["Ps8Hashable", "scrollViewWillEndDragging"]
 - ["Ps8Hashable", "sectionIndexTitles"]
 - ["Ps8Hashable", "sectionIndexTitlesForTableView"]
-- !private ["Ps8Hashable", "setTitle"]
 - !private ["Ps8Hashable", "subscript"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
@@ -615,7 +606,7 @@ depends-member:
 - ["PSo8NSCoding", "activities"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - ["PSo8NSCoding", "followButton"]
-- ["PSo8NSCoding", "followButtonTapped"]
+- ["PSo8NSCoding", "followTapped"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedView"]
@@ -644,7 +635,6 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitles"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
-- !private ["PSo8NSCoding", "setTitle"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textLabel"]
@@ -664,7 +654,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - ["PSo26NSExtensionRequestHandling", "activities"]
 - ["PSo26NSExtensionRequestHandling", "followButton"]
-- ["PSo26NSExtensionRequestHandling", "followButtonTapped"]
+- ["PSo26NSExtensionRequestHandling", "followTapped"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
@@ -709,7 +699,7 @@ depends-member:
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
 - !private ["CSo8NSObject", "String"]
-- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
@@ -723,7 +713,7 @@ depends-member:
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "findObjectsInBackground"]
 - ["CSo8NSObject", "followButton"]
-- ["CSo8NSObject", "followButtonTapped"]
+- ["CSo8NSObject", "followTapped"]
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "getDataInBackground"]
 - !private ["CSo8NSObject", "image"]
@@ -754,7 +744,6 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitles"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
-- !private ["CSo8NSObject", "setTitle"]
 - !private ["CSo8NSObject", "subscript"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
@@ -777,7 +766,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackground"]
 - ["PSo16NSObjectProtocol", "followButton"]
-- ["PSo16NSObjectProtocol", "followButtonTapped"]
+- ["PSo16NSObjectProtocol", "followTapped"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "getDataInBackground"]
 - !private ["PSo16NSObjectProtocol", "image"]
@@ -808,7 +797,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitles"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
-- !private ["PSo16NSObjectProtocol", "setTitle"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -822,7 +810,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- !private ["Ps9OptionSet", "normal"]
 - ["Sq", "deinit"]
 - ["CSo6PFFile", "deinit"]
 - !private ["CSo6PFFile", "getDataInBackground"]
@@ -853,7 +840,7 @@ depends-member:
 - !private ["C7Project21ProjectViewController", "PFQuery"]
 - !private ["C7Project21ProjectViewController", "PFUser"]
 - !private ["C7Project21ProjectViewController", "String"]
-- ["C7Project21ProjectViewController", "UIButton"]
+- ["C7Project21ProjectViewController", "UIBarButtonItem"]
 - !private ["C7Project21ProjectViewController", "UIFont"]
 - !private ["C7Project21ProjectViewController", "UIImage"]
 - ["C7Project21ProjectViewController", "UIImageView"]
@@ -864,7 +851,7 @@ depends-member:
 - ["C7Project21ProjectViewController", "activities"]
 - ["C7Project21ProjectViewController", "deinit"]
 - ["C7Project21ProjectViewController", "followButton"]
-- ["C7Project21ProjectViewController", "followButtonTapped"]
+- ["C7Project21ProjectViewController", "followTapped"]
 - ["C7Project21ProjectViewController", "indexPathForPreferredFocusedView"]
 - ["C7Project21ProjectViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C7Project21ProjectViewController", "init"]
@@ -937,7 +924,6 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "count"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "byWordWrapping"]
-- !private ["Ps16RawRepresentable", "normal"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
@@ -950,7 +936,6 @@ depends-member:
 - !private ["Ps8Sequence", "count"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "subscript"]
-- !private ["Ps10SetAlgebra", "normal"]
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
 - !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
@@ -974,17 +959,17 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "lineBreakMode"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
-- !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "title"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "lineBreakMode"]
 - !private ["PSo12UIAppearance", "numberOfLines"]
-- !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
+- !private ["PSo12UIAppearance", "title"]
 - !private ["PSo21UIAppearanceContainer", "Feed"]
 - !private ["PSo21UIAppearanceContainer", "PFObject"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
@@ -994,7 +979,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "activities"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
 - ["PSo21UIAppearanceContainer", "followButton"]
-- ["PSo21UIAppearanceContainer", "followButtonTapped"]
+- ["PSo21UIAppearanceContainer", "followTapped"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedView"]
@@ -1023,7 +1008,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitles"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
-- !private ["PSo21UIAppearanceContainer", "setTitle"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
@@ -1032,7 +1016,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo8UIButton", "setTitle"]
+- !private ["CSo15UIBarButtonItem", "title"]
+- !private ["CSo9UIBarItem", "title"]
 - !private ["PSo18UIContentContainer", "Feed"]
 - !private ["PSo18UIContentContainer", "PFObject"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
@@ -1041,7 +1026,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIImage"]
 - ["PSo18UIContentContainer", "activities"]
 - ["PSo18UIContentContainer", "followButton"]
-- ["PSo18UIContentContainer", "followButtonTapped"]
+- ["PSo18UIContentContainer", "followTapped"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIContentContainer", "init"]
@@ -1076,15 +1061,11 @@ depends-member:
 - !private ["PSo30UIContentSizeCategoryAdjusting", "lineBreakMode"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "numberOfLines"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
-- !private ["CSo9UIControl", "setTitle"]
-- ["VSC14UIControlState", "deinit"]
-- !private ["VSC14UIControlState", "normal"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "lineBreakMode"]
 - !private ["PSo17UICoordinateSpace", "numberOfLines"]
-- !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
@@ -1092,7 +1073,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "lineBreakMode"]
 - !private ["PSo13UIDynamicItem", "numberOfLines"]
-- !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "Feed"]
@@ -1104,7 +1084,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "activities"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
 - ["PSo18UIFocusEnvironment", "followButton"]
-- ["PSo18UIFocusEnvironment", "followButtonTapped"]
+- ["PSo18UIFocusEnvironment", "followTapped"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedView"]
@@ -1133,7 +1113,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitles"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
-- !private ["PSo18UIFocusEnvironment", "setTitle"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
@@ -1147,7 +1126,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "image"]
 - !private ["PSo11UIFocusItem", "lineBreakMode"]
 - !private ["PSo11UIFocusItem", "numberOfLines"]
-- !private ["PSo11UIFocusItem", "setTitle"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "textLabel"]
 - !private ["CSo6UIFont", "init"]
@@ -1171,7 +1149,7 @@ depends-member:
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
 - !private ["CSo11UIResponder", "String"]
-- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
@@ -1182,7 +1160,7 @@ depends-member:
 - ["CSo11UIResponder", "activities"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - ["CSo11UIResponder", "followButton"]
-- ["CSo11UIResponder", "followButtonTapped"]
+- ["CSo11UIResponder", "followTapped"]
 - !private ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
@@ -1211,7 +1189,6 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitles"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
-- !private ["CSo11UIResponder", "setTitle"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textLabel"]
@@ -1228,7 +1205,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "activities"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
 - ["PSo30UIResponderStandardEditActions", "followButton"]
-- ["PSo30UIResponderStandardEditActions", "followButtonTapped"]
+- ["PSo30UIResponderStandardEditActions", "followTapped"]
 - !private ["PSo30UIResponderStandardEditActions", "font"]
 - !private ["PSo30UIResponderStandardEditActions", "image"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedView"]
@@ -1257,7 +1234,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "scrollViewWillEndDragging"]
 - ["PSo30UIResponderStandardEditActions", "sectionIndexTitles"]
 - ["PSo30UIResponderStandardEditActions", "sectionIndexTitlesForTableView"]
-- !private ["PSo30UIResponderStandardEditActions", "setTitle"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textLabel"]
@@ -1311,7 +1287,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - ["PSo16UIStateRestoring", "activities"]
 - ["PSo16UIStateRestoring", "followButton"]
-- ["PSo16UIStateRestoring", "followButtonTapped"]
+- ["PSo16UIStateRestoring", "followTapped"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16UIStateRestoring", "init"]
@@ -1427,7 +1403,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "activities"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
 - ["PSo18UITraitEnvironment", "followButton"]
-- ["PSo18UITraitEnvironment", "followButtonTapped"]
+- ["PSo18UITraitEnvironment", "followTapped"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedView"]
@@ -1456,7 +1432,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitles"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
-- !private ["PSo18UITraitEnvironment", "setTitle"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
@@ -1470,7 +1445,6 @@ depends-member:
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "lineBreakMode"]
 - !private ["CSo6UIView", "numberOfLines"]
-- !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
 - ["CSo16UIViewController", "Bool"]
@@ -1484,7 +1458,7 @@ depends-member:
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
 - !private ["CSo16UIViewController", "String"]
-- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIFont"]
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImageView"]
@@ -1495,7 +1469,7 @@ depends-member:
 - ["CSo16UIViewController", "activities"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "followButton"]
-- ["CSo16UIViewController", "followButtonTapped"]
+- ["CSo16UIViewController", "followTapped"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
@@ -1545,7 +1519,6 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "lineBreakMode"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "numberOfLines"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setTitle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textLabel"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
@@ -1583,7 +1556,7 @@ depends-member:
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "findObjectsInBackground"]
 - ["Ps9_Hashable", "followButton"]
-- ["Ps9_Hashable", "followButtonTapped"]
+- ["Ps9_Hashable", "followTapped"]
 - !private ["Ps9_Hashable", "font"]
 - !private ["Ps9_Hashable", "getDataInBackground"]
 - !private ["Ps9_Hashable", "image"]
@@ -1615,7 +1588,6 @@ depends-member:
 - ["Ps9_Hashable", "scrollViewWillEndDragging"]
 - ["Ps9_Hashable", "sectionIndexTitles"]
 - ["Ps9_Hashable", "sectionIndexTitlesForTableView"]
-- !private ["Ps9_Hashable", "setTitle"]
 - !private ["Ps9_Hashable", "subscript"]
 - ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "text"]
@@ -1719,7 +1691,6 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- !private "Ps9OptionSet"
 - "Sq"
 - "CSo6PFFile"
 - "CSo8PFObject"
@@ -1735,7 +1706,6 @@ depends-nominal:
 - !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - !private "Ps8Sequence"
-- !private "Ps10SetAlgebra"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Vs5Slice"
@@ -1746,11 +1716,10 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo8UIButton"
+- !private "CSo15UIBarButtonItem"
+- !private "CSo9UIBarItem"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
-- !private "CSo9UIControl"
-- "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -1868,4 +1837,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "3fb85eb262fbac1b9e53187ec271416a"
+interface-hash: "bbaf2818674f598634d8827ddef4abe6"

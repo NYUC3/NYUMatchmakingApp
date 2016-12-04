@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C7Project23CropImageViewController", ""]
 provides-dynamic-lookup:
-- "viewWillLayoutSubviews"
 - "cropView"
 - "viewDidLoad"
+- "viewWillLayoutSubviews"
 depends-top-level:
 - "UIViewController"
-- !private "BooleanLiteralType"
 - !private "UIImage"
-- !private "CGRect"
-- !private "StringLiteralType"
-- "CropImageViewController"
-- "AssignmentPrecedence"
 - "AKImageCropperView"
+- !private "BooleanLiteralType"
+- !private "CGRect"
+- "AssignmentPrecedence"
+- "CropImageViewController"
+- !private "StringLiteralType"
 depends-member:
 - !private ["P7Project31AKImageCropperTouchViewDelegate", "init"]
 - !private ["P7Project31AKImageCropperTouchViewDelegate", "refresh"]

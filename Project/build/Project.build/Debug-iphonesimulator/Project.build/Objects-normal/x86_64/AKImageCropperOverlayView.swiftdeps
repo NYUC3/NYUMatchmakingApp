@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C7Project25AKImageCropperOverlayView", ""]
 provides-dynamic-lookup:
+- "overlayViewDrawBg"
+- "croppperView"
+- "cornerSize"
 - "cornerOffset"
 - "draw"
-- "overlayViewDrawBg"
-- "cornerSize"
-- "croppperView"
 depends-top-level:
-- !private "UIGraphicsGetCurrentContext"
-- !private "+"
-- "AKImageCropperView"
-- "CGFloat"
-- "CGSize"
-- "AKImageCropperOverlayView"
-- !private "UIBezierPath"
-- !private "-"
 - "CGRect"
-- !private "CGPoint"
 - "UIView"
+- !private "-"
+- !private "+"
+- "CGSize"
+- "CGFloat"
+- !private "UIBezierPath"
+- !private "CGPoint"
+- !private "UIGraphicsGetCurrentContext"
+- "AKImageCropperView"
+- "AKImageCropperOverlayView"
 depends-member:
 - ["C7Project25AKImageCropperOverlayView", "AKImageCropperView"]
 - ["C7Project25AKImageCropperOverlayView", "CGFloat"]

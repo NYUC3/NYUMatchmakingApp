@@ -5,16 +5,16 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- !private "floor"
-- !private "<"
-- !private ">"
 - !private "+"
-- "ceil"
-- !private "/"
+- !private "<"
 - !private "-"
-- "TernaryPrecedence"
-- "CGFloat"
+- !private "floor"
+- !private "/"
 - !private "*"
+- "ceil"
+- !private ">"
+- "CGFloat"
+- "TernaryPrecedence"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps19BinaryFloatingPoint", "Stride"]

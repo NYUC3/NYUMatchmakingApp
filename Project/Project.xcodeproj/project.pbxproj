@@ -62,6 +62,7 @@
 		C272EB7F1DEA964700402E10 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB7B1DEA964700402E10 /* UIColor.swift */; };
 		C272EB801DEA964700402E10 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB7C1DEA964700402E10 /* UIImage.swift */; };
 		C272EB831DEA977E00402E10 /* CropImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB821DEA977E00402E10 /* CropImageViewController.swift */; };
+		C2A8DE451DF20CD5009B428E /* CropTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */; };
 		C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +156,7 @@
 		C272EB7B1DEA964700402E10 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		C272EB7C1DEA964700402E10 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		C272EB821DEA977E00402E10 /* CropImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropImageViewController.swift; sourceTree = "<group>"; };
+		C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropTestViewController.swift; sourceTree = "<group>"; };
 		C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,6 +293,7 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */,
 				C236D22A1DEFBC67008A392C /* NavViewController.swift */,
 				C236D2281DEF7F91008A392C /* SingleActivityVC.swift */,
 				C272EB821DEA977E00402E10 /* CropImageViewController.swift */,
@@ -499,6 +502,7 @@
 				C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */,
 				C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */,
 				C272EB751DEA963000402E10 /* AKImageCropperOverlayView.swift in Sources */,
+				C2A8DE451DF20CD5009B428E /* CropTestViewController.swift in Sources */,
 				C272EB7E1DEA964700402E10 /* CGRect.swift in Sources */,
 				C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */,
 				C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */,
