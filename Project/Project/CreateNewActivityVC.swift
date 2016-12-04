@@ -109,5 +109,9 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         selectedProjectName = projectNames[row]
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 }
 

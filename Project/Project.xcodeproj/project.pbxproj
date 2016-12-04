@@ -63,6 +63,7 @@
 		C272EB801DEA964700402E10 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB7C1DEA964700402E10 /* UIImage.swift */; };
 		C272EB831DEA977E00402E10 /* CropImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB821DEA977E00402E10 /* CropImageViewController.swift */; };
 		C2A8DE451DF20CD5009B428E /* CropTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */; };
+		C2A8DE471DF4BE20009B428E /* TesttOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8DE461DF4BE20009B428E /* TesttOneViewController.swift */; };
 		C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -157,6 +158,7 @@
 		C272EB7C1DEA964700402E10 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		C272EB821DEA977E00402E10 /* CropImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropImageViewController.swift; sourceTree = "<group>"; };
 		C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropTestViewController.swift; sourceTree = "<group>"; };
+		C2A8DE461DF4BE20009B428E /* TesttOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesttOneViewController.swift; sourceTree = "<group>"; };
 		C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,6 +232,7 @@
 				C26DDF9B1D935DEF00429DE4 /* Model */,
 				C26DDF701D934A1800429DE4 /* Frameworks */,
 				C26DDF491D93499300429DE4 /* Assets.xcassets */,
+				C2A8DE461DF4BE20009B428E /* TesttOneViewController.swift */,
 				C26DDF4B1D93499300429DE4 /* LaunchScreen.storyboard */,
 				C26DDF4E1D93499300429DE4 /* Info.plist */,
 			);
@@ -513,6 +516,7 @@
 				C272EB771DEA963000402E10 /* AKImageCropperTouchView.swift in Sources */,
 				C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */,
 				C272EB7D1DEA964700402E10 /* CGFloat.swift in Sources */,
+				C2A8DE471DF4BE20009B428E /* TesttOneViewController.swift in Sources */,
 				C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */,
 				C26DDF9E1D935F4400429DE4 /* FeedVCTableViewCell.swift in Sources */,
 				C26DDF431D93499300429DE4 /* AppDelegate.swift in Sources */,

@@ -6,55 +6,59 @@ provides-nominal:
 provides-member:
 - ["C7Project19CreateNewActivityVC", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "numberOfComponents"
-- "projectNames"
-- "projectNamePickerView"
-- "uploadButton"
-- "pickerView"
-- "pickerView"
-- "pickerView"
 - "actvityDescription"
-- "saveButtonTapped"
-- "imagePickerController"
+- "viewDidLoad"
+- "uploadButton"
 - "imagePicker"
-- "selectedProjectName"
-- "activityLabel"
 - "feedUploadImage"
+- "saveButtonTapped"
+- "activityLabel"
+- "projectNames"
+- "touchesBegan"
+- "pickerView"
+- "pickerView"
+- "pickerView"
 - "cancelButtonTapped"
+- "numberOfComponents"
+- "selectedProjectName"
+- "imagePickerController"
+- "projectNamePickerView"
 depends-top-level:
-- !private "print"
-- !private "BooleanLiteralType"
-- "UIPickerViewDataSource"
-- "UIPickerViewDelegate"
-- "UIImageView"
-- !private "PFUser"
-- !private "UIImageJPEGRepresentation"
-- "UINavigationControllerDelegate"
-- "UIImagePickerControllerDelegate"
 - "UIButton"
+- "UIPickerView"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "=="
+- !private "PFFile"
 - "UIViewController"
+- !private "UIImage"
+- !private "Error"
+- "UIImagePickerControllerDelegate"
+- !private "Dictionary"
 - !private "PFQuery"
+- "UINavigationControllerDelegate"
+- !private "PFUser"
 - !private "PFObject"
-- "String"
-- "StringLiteralType"
+- "UIPickerViewDelegate"
+- "UIImagePickerController"
+- !private "print"
+- "UIPickerViewDataSource"
+- !private "UIImagePickerControllerOriginalImage"
+- "Int"
+- "UIBarButtonItem"
+- "Set"
+- "UITouch"
 - !private "UIFont"
+- !private "NSFontAttributeName"
+- "UIImageView"
+- "UIEvent"
+- !private "BooleanLiteralType"
+- "UITextField"
+- "StringLiteralType"
+- !private "UIImageJPEGRepresentation"
 - "CreateNewActivityVC"
 - !private "Void"
-- "UIPickerView"
-- !private "Dictionary"
-- "UIBarButtonItem"
-- "CastingPrecedence"
-- !private "Error"
-- !private "UIImagePickerControllerOriginalImage"
-- "UITextField"
-- "Int"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "NSFontAttributeName"
-- !private "PFFile"
-- !private "UIImage"
-- "UIImagePickerController"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "PFFile"]
@@ -74,6 +78,7 @@ depends-member:
 - !private ["Ps9AnyObject", "current"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "dismiss"]
+- !private ["Ps9AnyObject", "endEditing"]
 - ["Ps9AnyObject", "feedUploadImage"]
 - !private ["Ps9AnyObject", "findObjectsInBackground"]
 - !private ["Ps9AnyObject", "image"]
@@ -100,8 +105,10 @@ depends-member:
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "titleTextAttributes"]
+- ["Ps9AnyObject", "touchesBegan"]
 - ["Ps9AnyObject", "uploadButton"]
 - !private ["Ps9AnyObject", "username"]
+- !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "whereKey"]
 - ["Ps9AnyObject", ""]
@@ -148,6 +155,7 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "contentMode"]
+- !private ["PSo15CALayerDelegate", "endEditing"]
 - !private ["PSo15CALayerDelegate", "image"]
 - !private ["PSo15CALayerDelegate", "reloadAllComponents"]
 - !private ["PSo15CALayerDelegate", "text"]
@@ -183,6 +191,7 @@ depends-member:
 - !private ["Ps7CVarArg", "current"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "dismiss"]
+- !private ["Ps7CVarArg", "endEditing"]
 - ["Ps7CVarArg", "feedUploadImage"]
 - !private ["Ps7CVarArg", "findObjectsInBackground"]
 - !private ["Ps7CVarArg", "image"]
@@ -209,8 +218,10 @@ depends-member:
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "titleTextAttributes"]
+- ["Ps7CVarArg", "touchesBegan"]
 - ["Ps7CVarArg", "uploadButton"]
 - !private ["Ps7CVarArg", "username"]
+- !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - !private ["Ps7CVarArg", "whereKey"]
 - ["Ps7CVarArg", ""]
@@ -238,9 +249,11 @@ depends-member:
 - !private ["C7Project19CreateNewActivityVC", "PFObject"]
 - !private ["C7Project19CreateNewActivityVC", "PFQuery"]
 - !private ["C7Project19CreateNewActivityVC", "PFUser"]
+- ["C7Project19CreateNewActivityVC", "Set"]
 - ["C7Project19CreateNewActivityVC", "String"]
 - ["C7Project19CreateNewActivityVC", "UIBarButtonItem"]
 - ["C7Project19CreateNewActivityVC", "UIButton"]
+- ["C7Project19CreateNewActivityVC", "UIEvent"]
 - !private ["C7Project19CreateNewActivityVC", "UIFont"]
 - !private ["C7Project19CreateNewActivityVC", "UIImage"]
 - !private ["C7Project19CreateNewActivityVC", "UIImageJPEGRepresentation"]
@@ -249,6 +262,7 @@ depends-member:
 - ["C7Project19CreateNewActivityVC", "UIImageView"]
 - ["C7Project19CreateNewActivityVC", "UIPickerView"]
 - ["C7Project19CreateNewActivityVC", "UITextField"]
+- ["C7Project19CreateNewActivityVC", "UITouch"]
 - !private ["C7Project19CreateNewActivityVC", "Void"]
 - ["C7Project19CreateNewActivityVC", "activityLabel"]
 - ["C7Project19CreateNewActivityVC", "actvityDescription"]
@@ -272,7 +286,9 @@ depends-member:
 - ["C7Project19CreateNewActivityVC", "projectNames"]
 - ["C7Project19CreateNewActivityVC", "saveButtonTapped"]
 - ["C7Project19CreateNewActivityVC", "selectedProjectName"]
+- ["C7Project19CreateNewActivityVC", "touchesBegan"]
 - ["C7Project19CreateNewActivityVC", "uploadButton"]
+- !private ["C7Project19CreateNewActivityVC", "view"]
 - ["C7Project19CreateNewActivityVC", "viewDidLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
@@ -301,6 +317,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
+- !private ["Ps28CustomDebugStringConvertible", "endEditing"]
 - ["Ps28CustomDebugStringConvertible", "feedUploadImage"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
@@ -327,8 +344,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
+- ["Ps28CustomDebugStringConvertible", "touchesBegan"]
 - ["Ps28CustomDebugStringConvertible", "uploadButton"]
 - !private ["Ps28CustomDebugStringConvertible", "username"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "whereKey"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -383,6 +402,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
+- !private ["Ps23CustomStringConvertible", "endEditing"]
 - ["Ps23CustomStringConvertible", "feedUploadImage"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackground"]
 - !private ["Ps23CustomStringConvertible", "image"]
@@ -409,8 +429,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
+- ["Ps23CustomStringConvertible", "touchesBegan"]
 - ["Ps23CustomStringConvertible", "uploadButton"]
 - !private ["Ps23CustomStringConvertible", "username"]
+- !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - !private ["Ps23CustomStringConvertible", "whereKey"]
 - ["Ps23CustomStringConvertible", ""]
@@ -454,6 +476,7 @@ depends-member:
 - !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dismiss"]
+- !private ["Ps9Equatable", "endEditing"]
 - ["Ps9Equatable", "feedUploadImage"]
 - !private ["Ps9Equatable", "findObjectsInBackground"]
 - !private ["Ps9Equatable", "image"]
@@ -482,8 +505,10 @@ depends-member:
 - !private ["Ps9Equatable", "subscript"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "titleTextAttributes"]
+- ["Ps9Equatable", "touchesBegan"]
 - ["Ps9Equatable", "uploadButton"]
 - !private ["Ps9Equatable", "username"]
+- !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "whereKey"]
 - ["Ps9Equatable", ""]
@@ -533,6 +558,7 @@ depends-member:
 - !private ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dismiss"]
+- !private ["Ps8Hashable", "endEditing"]
 - ["Ps8Hashable", "feedUploadImage"]
 - !private ["Ps8Hashable", "findObjectsInBackground"]
 - !private ["Ps8Hashable", "image"]
@@ -561,8 +587,10 @@ depends-member:
 - !private ["Ps8Hashable", "subscript"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "titleTextAttributes"]
+- ["Ps8Hashable", "touchesBegan"]
 - ["Ps8Hashable", "uploadButton"]
 - !private ["Ps8Hashable", "username"]
+- !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "whereKey"]
 - ["Ps8Hashable", ""]
@@ -649,6 +677,7 @@ depends-member:
 - !private ["PSo8NSCoding", "contentMode"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dismiss"]
+- !private ["PSo8NSCoding", "endEditing"]
 - ["PSo8NSCoding", "feedUploadImage"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imagePicker"]
@@ -672,7 +701,9 @@ depends-member:
 - !private ["PSo8NSCoding", "sourceType"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
+- ["PSo8NSCoding", "touchesBegan"]
 - ["PSo8NSCoding", "uploadButton"]
+- !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "findObjectsInBackground"]
@@ -713,7 +744,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "saveButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "selectedProjectName"]
 - !private ["PSo26NSExtensionRequestHandling", "sourceType"]
+- ["PSo26NSExtensionRequestHandling", "touchesBegan"]
 - ["PSo26NSExtensionRequestHandling", "uploadButton"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["PSo16NSMutableCopying", "init"]
@@ -724,9 +757,11 @@ depends-member:
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
+- ["CSo8NSObject", "Set"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIEvent"]
 - !private ["CSo8NSObject", "UIFont"]
 - !private ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIImageJPEGRepresentation"]
@@ -735,6 +770,7 @@ depends-member:
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UIPickerView"]
 - ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "UITouch"]
 - !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "activityLabel"]
 - ["CSo8NSObject", "actvityDescription"]
@@ -744,6 +780,7 @@ depends-member:
 - !private ["CSo8NSObject", "current"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dismiss"]
+- !private ["CSo8NSObject", "endEditing"]
 - ["CSo8NSObject", "feedUploadImage"]
 - !private ["CSo8NSObject", "findObjectsInBackground"]
 - !private ["CSo8NSObject", "image"]
@@ -770,8 +807,10 @@ depends-member:
 - !private ["CSo8NSObject", "subscript"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
+- ["CSo8NSObject", "touchesBegan"]
 - ["CSo8NSObject", "uploadButton"]
 - !private ["CSo8NSObject", "username"]
+- !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["CSo8NSObject", "whereKey"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
@@ -792,6 +831,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "current"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
+- !private ["PSo16NSObjectProtocol", "endEditing"]
 - ["PSo16NSObjectProtocol", "feedUploadImage"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackground"]
 - !private ["PSo16NSObjectProtocol", "image"]
@@ -818,8 +858,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "subscript"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
+- ["PSo16NSObjectProtocol", "touchesBegan"]
 - ["PSo16NSObjectProtocol", "uploadButton"]
 - !private ["PSo16NSObjectProtocol", "username"]
+- !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "whereKey"]
 - ["PSo16NSObjectProtocol", ""]
@@ -919,11 +961,13 @@ depends-member:
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
+- !private ["PSo29UIAccessibilityIdentification", "endEditing"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadAllComponents"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo12UIAppearance", "contentMode"]
+- !private ["PSo12UIAppearance", "endEditing"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "reloadAllComponents"]
 - !private ["PSo12UIAppearance", "text"]
@@ -945,6 +989,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "contentMode"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dismiss"]
+- !private ["PSo21UIAppearanceContainer", "endEditing"]
 - ["PSo21UIAppearanceContainer", "feedUploadImage"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imagePicker"]
@@ -968,7 +1013,9 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "sourceType"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- ["PSo21UIAppearanceContainer", "touchesBegan"]
 - ["PSo21UIAppearanceContainer", "uploadButton"]
+- !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo16UIBarPositioning", "titleTextAttributes"]
@@ -1007,17 +1054,21 @@ depends-member:
 - ["PSo18UIContentContainer", "saveButtonTapped"]
 - ["PSo18UIContentContainer", "selectedProjectName"]
 - !private ["PSo18UIContentContainer", "sourceType"]
+- ["PSo18UIContentContainer", "touchesBegan"]
 - ["PSo18UIContentContainer", "uploadButton"]
+- !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["CSo9UIControl", "text"]
 - !private ["PSo17UICoordinateSpace", "contentMode"]
+- !private ["PSo17UICoordinateSpace", "endEditing"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "reloadAllComponents"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "contentMode"]
+- !private ["PSo13UIDynamicItem", "endEditing"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "reloadAllComponents"]
 - !private ["PSo13UIDynamicItem", "text"]
@@ -1039,6 +1090,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "contentMode"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dismiss"]
+- !private ["PSo18UIFocusEnvironment", "endEditing"]
 - ["PSo18UIFocusEnvironment", "feedUploadImage"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imagePicker"]
@@ -1062,10 +1114,13 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "sourceType"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- ["PSo18UIFocusEnvironment", "touchesBegan"]
 - ["PSo18UIFocusEnvironment", "uploadButton"]
+- !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "contentMode"]
+- !private ["PSo11UIFocusItem", "endEditing"]
 - !private ["PSo11UIFocusItem", "image"]
 - !private ["PSo11UIFocusItem", "reloadAllComponents"]
 - !private ["PSo11UIFocusItem", "text"]
@@ -1106,6 +1161,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "projectNamePickerView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "projectNames"]
 - !private ["PSo31UIImagePickerControllerDelegate", "selectedProjectName"]
+- !private ["PSo31UIImagePickerControllerDelegate", "view"]
 - ["PSo31UIImagePickerControllerDelegate", ""]
 - ["OSC33UIImagePickerControllerSourceType", "deinit"]
 - !private ["OSC33UIImagePickerControllerSourceType", "photoLibrary"]
@@ -1148,6 +1204,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "projectNamePickerView"]
 - !private ["PSo30UINavigationControllerDelegate", "projectNames"]
 - !private ["PSo30UINavigationControllerDelegate", "selectedProjectName"]
+- !private ["PSo30UINavigationControllerDelegate", "view"]
 - ["PSo30UINavigationControllerDelegate", ""]
 - !private ["CSo12UIPickerView", "reloadAllComponents"]
 - !private ["PSo22UIPickerViewDataSource", "NSFontAttributeName"]
@@ -1178,6 +1235,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "projectNamePickerView"]
 - !private ["PSo22UIPickerViewDataSource", "projectNames"]
 - !private ["PSo22UIPickerViewDataSource", "selectedProjectName"]
+- !private ["PSo22UIPickerViewDataSource", "view"]
 - ["PSo22UIPickerViewDataSource", ""]
 - !private ["PSo20UIPickerViewDelegate", "NSFontAttributeName"]
 - !private ["PSo20UIPickerViewDelegate", "PFFile"]
@@ -1207,6 +1265,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "projectNamePickerView"]
 - !private ["PSo20UIPickerViewDelegate", "projectNames"]
 - !private ["PSo20UIPickerViewDelegate", "selectedProjectName"]
+- !private ["PSo20UIPickerViewDelegate", "view"]
 - ["PSo20UIPickerViewDelegate", ""]
 - !private ["CSo11UIResponder", "Error"]
 - ["CSo11UIResponder", "Int"]
@@ -1215,9 +1274,11 @@ depends-member:
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
+- ["CSo11UIResponder", "Set"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIEvent"]
 - !private ["CSo11UIResponder", "UIFont"]
 - !private ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UIImageJPEGRepresentation"]
@@ -1226,6 +1287,7 @@ depends-member:
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UIPickerView"]
 - ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "UITouch"]
 - !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "activityLabel"]
 - ["CSo11UIResponder", "actvityDescription"]
@@ -1234,6 +1296,7 @@ depends-member:
 - !private ["CSo11UIResponder", "contentMode"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dismiss"]
+- !private ["CSo11UIResponder", "endEditing"]
 - ["CSo11UIResponder", "feedUploadImage"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imagePicker"]
@@ -1257,7 +1320,9 @@ depends-member:
 - !private ["CSo11UIResponder", "sourceType"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
+- ["CSo11UIResponder", "touchesBegan"]
 - ["CSo11UIResponder", "uploadButton"]
+- !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "NSFontAttributeName"]
 - !private ["PSo30UIResponderStandardEditActions", "PFFile"]
@@ -1276,6 +1341,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "contentMode"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "dismiss"]
+- !private ["PSo30UIResponderStandardEditActions", "endEditing"]
 - ["PSo30UIResponderStandardEditActions", "feedUploadImage"]
 - !private ["PSo30UIResponderStandardEditActions", "image"]
 - ["PSo30UIResponderStandardEditActions", "imagePicker"]
@@ -1299,7 +1365,9 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "sourceType"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "titleTextAttributes"]
+- ["PSo30UIResponderStandardEditActions", "touchesBegan"]
 - ["PSo30UIResponderStandardEditActions", "uploadButton"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
@@ -1337,7 +1405,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "saveButtonTapped"]
 - ["PSo16UIStateRestoring", "selectedProjectName"]
 - !private ["PSo16UIStateRestoring", "sourceType"]
+- ["PSo16UIStateRestoring", "touchesBegan"]
 - ["PSo16UIStateRestoring", "uploadButton"]
+- !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITextField", "text"]
@@ -1360,6 +1430,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "contentMode"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dismiss"]
+- !private ["PSo18UITraitEnvironment", "endEditing"]
 - ["PSo18UITraitEnvironment", "feedUploadImage"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imagePicker"]
@@ -1383,10 +1454,13 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "sourceType"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- ["PSo18UITraitEnvironment", "touchesBegan"]
 - ["PSo18UITraitEnvironment", "uploadButton"]
+- !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "contentMode"]
+- !private ["CSo6UIView", "endEditing"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "reloadAllComponents"]
 - !private ["CSo6UIView", "text"]
@@ -1400,9 +1474,11 @@ depends-member:
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
+- ["CSo16UIViewController", "Set"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UIEvent"]
 - !private ["CSo16UIViewController", "UIFont"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIImageJPEGRepresentation"]
@@ -1411,6 +1487,7 @@ depends-member:
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UIPickerView"]
 - ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "UITouch"]
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "activityLabel"]
 - ["CSo16UIViewController", "actvityDescription"]
@@ -1438,7 +1515,9 @@ depends-member:
 - ["CSo16UIViewController", "saveButtonTapped"]
 - ["CSo16UIViewController", "selectedProjectName"]
 - !private ["CSo16UIViewController", "sourceType"]
+- ["CSo16UIViewController", "touchesBegan"]
 - ["CSo16UIViewController", "uploadButton"]
+- !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "deinit"]
@@ -1457,6 +1536,7 @@ depends-member:
 - ["Ps14_ArrayProtocol", "init"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentMode"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endEditing"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadAllComponents"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
@@ -1501,6 +1581,7 @@ depends-member:
 - !private ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "dismiss"]
+- !private ["Ps9_Hashable", "endEditing"]
 - ["Ps9_Hashable", "feedUploadImage"]
 - !private ["Ps9_Hashable", "findObjectsInBackground"]
 - !private ["Ps9_Hashable", "image"]
@@ -1529,8 +1610,10 @@ depends-member:
 - !private ["Ps9_Hashable", "subscript"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "titleTextAttributes"]
+- ["Ps9_Hashable", "touchesBegan"]
 - ["Ps9_Hashable", "uploadButton"]
 - !private ["Ps9_Hashable", "username"]
+- !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - !private ["Ps9_Hashable", "whereKey"]
 - ["Ps9_Hashable", ""]
@@ -1776,4 +1859,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "94382bca402846dbe9e6571ab9b8ae68"
+interface-hash: "e7102f9d70ddb8612b529c107bf12010"

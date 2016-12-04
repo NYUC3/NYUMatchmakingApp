@@ -241,13 +241,13 @@ SWIFT_CLASS("_TtC7Project18AKImageCropperView")
 @end
 
 
-@interface AKImageCropperView (SWIFT_EXTENSION(Project)) <AKImageCropperTouchViewDelegate>
-- (void)cropRectChanged:(CGRect)rect;
+@interface AKImageCropperView (SWIFT_EXTENSION(Project)) <UIScrollViewDelegate>
+- (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView;
 @end
 
 
-@interface AKImageCropperView (SWIFT_EXTENSION(Project)) <UIScrollViewDelegate>
-- (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView;
+@interface AKImageCropperView (SWIFT_EXTENSION(Project)) <AKImageCropperTouchViewDelegate>
+- (void)cropRectChanged:(CGRect)rect;
 @end
 
 
@@ -328,6 +328,7 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -552,6 +553,17 @@ SWIFT_CLASS("_TtC7Project16SingleActivityVC")
 - (void)viewDidAppear:(BOOL)animated;
 - (IBAction)likeButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)backButtonTapped:(UIBarButtonItem * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project22TesttOneViewController")
+@interface TesttOneViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull list;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -20,7 +20,6 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
     }
     
@@ -28,95 +27,71 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func queryActivities( name : String ){
         
         let qry = PFQuery(className:"MyActivities")
-
-            qry.whereKey("projectName", equalTo: name)
-        
-        overlay = UIView(frame: view.frame)
-        overlay!.backgroundColor = UIColor.black
-        overlay!.alpha = 0.8
-        //self.view.addSubview(self.overlay!)
-        
-        
-            qry.findObjectsInBackground {
-                (objects: [PFObject]?, error: Error?) -> Void in
+        qry.whereKey("projectName", equalTo: name)
+        qry.findObjectsInBackground {
+            (objects: [PFObject]?, error: Error?) -> Void in
+            if error == nil {
+                // The find succeeded.
+                print("Successfully \(objects!.count) scores.")
                 
-                if error == nil {
-                    // The find succeeded.
-                    print("Successfully \(objects!.count) scores.")
-                    // Do something with the found objects
-                    if let objects = objects {
-                        for object in objects {
-                            print(object["image"])
+                // Do something with the found objects
+                if let objects = objects {
+                    for object in objects {
+                        print(object["image"])
                             
-                            var name = ""
-                            var title = ""
-                            var description = ""
+                        var name = ""
+                        var title = ""
+                        var description = ""
                             
-                            if(object["projectName"] != nil){
-                                name = object["projectName"] as! String
-                            }
-                            if(object["activityName"] != nil){
-                                title = object["activityName"] as! String
-
-                            }
-                            if(object["activityDescription"] != nil){
-                                description = object["activityDescription"] as! String
-                            }
-                            if(object["image"] != nil){
-                                var feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile, likes: 0)
+                        if(object["projectName"] != nil){
+                            name = object["projectName"] as! String
+                        }
+                        if(object["activityName"] != nil){
+                            title = object["activityName"] as! String
+                        }
+                        if(object["activityDescription"] != nil){
+                            description = object["activityDescription"] as! String
+                        }
+                        if(object["image"] != nil){
+                            var feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile, likes: 0)
                                 
-                                feed.timestamp = String(describing: self.processTimestamp(str: String(describing: object.createdAt!)))
+                            feed.timestamp = String(describing: self.processTimestamp(str: String(describing: object.createdAt!)))
 
-                                // idk how to pass by reference in swift so I'm gonna add the next function here (I know this is really crappy code fyi)
+                            // idk how to pass by reference in swift so I'm gonna add the next function here (I know this is really crappy code fyi)
  
-                                let q = PFQuery(className:"likes")
-                                //q.whereKey("username", equalTo: (PFUser.current()?.username)!)
-                                q.whereKey("title", equalTo: title)
-                                q.findObjectsInBackground {
-                                    (objects: [PFObject]?, error: Error?) -> Void in
+                            // create a new query to get the number of likes
+                            let q = PFQuery(className:"likes")
+                            q.whereKey("title", equalTo: title)
+                            q.findObjectsInBackground {
+                                (objects: [PFObject]?, error: Error?) -> Void in
                                     
-                                    if error == nil {
-                                        // The find succeeded.
-                                        if let objects = objects {
+                                if error == nil {
+                                    // The find succeeded.
+                                    if let objects = objects {
                                             
-                                            feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile, likes: objects.count)
-                                            
-                                            for obj in objects{
-                                            
-                                                if(obj["username"] as! String == PFUser.current()?.username){
+                                        feed = Feed(name: name, title: title, desc: description, image: object["image"] as! PFFile, likes: objects.count)
+                                        for obj in objects{
+                                            if(obj["username"] as! String == PFUser.current()?.username){
                                                     feed.isLiked = true
-                                                }
-                                            
                                             }
-                                            
-                                            self.feedList.append(feed)
-                                            self.daTableView.reloadData()
                                         }
-                                        
-                                    } else {
-                                        // Log details of the failure
-                                        print("Error: \(error!)")
+                                        self.feedList.append(feed)
+                                        self.daTableView.reloadData()
                                     }
                                 }
-                                
-                                
-                                
-                                
-                                
+                                else {
+                                        // Log details of the failure
+                                        print("Error: \(error!)")
+                                }
                             }
-                            
                         }
-                        
                     }
-                    
-                    
-                } else {
-                    // Log details of the failure
-                    print("Error: \(error!)")
                 }
             }
-        
-
+            else {
+                print("Error: \(error!)")
+            }
+        }
     }
     
   
@@ -134,15 +109,13 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         feedList = []
         projectsFollowing = []
         
-        self.daTableView.reloadData()
-        
         let user = PFUser.current()?.username
         let query = PFQuery(className: "Follow")
         query.whereKey("username", equalTo: user!)
         query.order(byDescending: "createdAt")
         query.findObjectsInBackground {
             (objects: [PFObject]?, error: Error?) -> Void in
-            
+                
             if error == nil {
                 // The find succeeded.
                 print("Successfully retrieved \(objects!.count) scores.")
@@ -153,9 +126,13 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                         self.projectsFollowing.append(object["project"] as! String)
                         self.queryActivities(name: object["project"] as! String)
                     }
-                    self.daTableView.reloadData()
+                    if(!self.projectsFollowing.isEmpty){
+                        self.daTableView.reloadData()
+                        self.daTableView.isHidden = false
+                    }
                 }
-            } else {
+            }
+            else {
                 // Log details of the failure
                 print("Error: \(error!)")
             }
@@ -163,7 +140,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     
-    // Tableview data source 
+    // Tableview data source methods
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return feedList.count
@@ -249,10 +226,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                         }
                                         
                                     }
-                                    
-                                    
-                                    
-                                    
+                   
                                 }
                             }
                         }
@@ -328,11 +302,9 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "view-activity"){
-            
             let destinationNavigationController = segue.destination as! UINavigationController
             let targetController = destinationNavigationController.topViewController as! SingleActivityVC
             targetController.activityObject = feedList[(daTableView.indexPathForSelectedRow?.row)!]
-        
         }
     }
 
