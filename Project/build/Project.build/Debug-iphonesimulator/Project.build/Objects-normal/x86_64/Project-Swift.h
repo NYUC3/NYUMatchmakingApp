@@ -546,6 +546,8 @@ SWIFT_CLASS("_TtC7Project16SingleActivityVC")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified activityDescriptionLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified activityImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified likesLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backButton;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (IBAction)likeButtonTapped:(UIButton * _Nonnull)sender;
