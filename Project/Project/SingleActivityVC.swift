@@ -27,8 +27,6 @@ class SingleActivityVC: UIViewController {
         
         UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName : UIFont(name: "Avenir", size: 20)!], for: UIControlState.normal)
 
-        
-
        //self.navigationController?.navigationBar.backItem?.backBarButtonItem. = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
     }
     

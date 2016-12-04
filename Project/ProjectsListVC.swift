@@ -20,7 +20,7 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
 
         self.emailLabel.text = PFUser.current()?.email
-        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         
         let query = PFQuery(className:"Projects")
         query.whereKey("username", equalTo:PFUser.current()?.email)

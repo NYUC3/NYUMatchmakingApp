@@ -16,6 +16,9 @@ class NavViewController: UINavigationController {
         // Do any additional setup after loading the view.
         
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 30)!]
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName : UIFont(name: "Avenir", size: 20)!], for: UIControlState.normal)
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+
     }
 
     override func didReceiveMemoryWarning() {
