@@ -6,62 +6,62 @@ provides-nominal:
 provides-member:
 - ["C7Project6FeedVC", ""]
 provides-dynamic-lookup:
-- "queryActivities"
-- "projectsFollowing"
-- "tableView"
-- "tableView"
-- "buttonClicked"
-- "processTimestamp"
-- "prepare"
-- "daTableView"
 - "overlay"
-- "viewDidAppear"
+- "prepare"
+- "processTimestamp"
+- "buttonClicked"
 - "viewDidLoad"
+- "projectsFollowing"
+- "queryActivities"
+- "viewDidAppear"
+- "tableView"
+- "tableView"
+- "daTableView"
 depends-top-level:
-- !private "PFFile"
-- "BooleanLiteralType"
-- !private "SingleActivityVC"
-- "UIStoryboardSegue"
-- !private "UnicodeScalarType"
-- !private "Dictionary"
-- !private "-="
-- !private "UIImage"
-- "UIView"
-- "UITableViewCell"
-- "UITableView"
-- "Int"
-- !private "UIFont"
-- "UIViewController"
-- "FeedVC"
 - !private "NSFontAttributeName"
+- !private "Array"
+- !private "UIColor"
 - !private "StringLiteralType"
 - !private "UINavigationController"
-- "UIButton"
-- !private "PFObject"
-- !private "PFQuery"
+- !private "Data"
+- "UITableView"
+- "UIStoryboardSegue"
+- !private "UIFont"
+- !private "UIControlEvents"
+- "Feed"
+- "UIView"
+- "IndexPath"
+- "Bool"
+- "UITableViewCell"
+- "ExtendedGraphemeClusterType"
+- "Int"
+- !private "PFFile"
+- !private "UIImage"
+- !private "Error"
+- !private "Void"
+- "UITableViewDataSource"
 - !private "!="
-- !private "UIColor"
+- "BooleanLiteralType"
 - "UITableViewDelegate"
 - !private "print"
-- !private "-"
-- "UITableViewDataSource"
-- "CastingPrecedence"
-- "IndexPath"
-- !private "Array"
-- "Bool"
-- "String"
-- "AssignmentPrecedence"
+- !private "-="
+- "FeedVC"
 - !private "+="
-- "Feed"
-- !private "Void"
-- !private "=="
-- !private "+"
-- !private "Error"
-- "ExtendedGraphemeClusterType"
-- !private "FeedVCTableViewCell"
 - !private "PFUser"
-- !private "UIControlEvents"
-- !private "Data"
+- !private "UnicodeScalarType"
+- !private "+"
+- !private "FeedVCTableViewCell"
+- !private "-"
+- "AssignmentPrecedence"
+- !private "=="
+- "CastingPrecedence"
+- "UIButton"
+- !private "PFQuery"
+- "UIViewController"
+- !private "Dictionary"
+- !private "PFObject"
+- "String"
+- !private "SingleActivityVC"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - ["Ps9AnyObject", "Feed"]
@@ -111,6 +111,7 @@ depends-member:
 - !private ["Ps9AnyObject", "numberOfLines"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- !private ["Ps9AnyObject", "order"]
 - ["Ps9AnyObject", "overlay"]
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
@@ -288,6 +289,7 @@ depends-member:
 - !private ["Ps7CVarArg", "numberOfLines"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- !private ["Ps7CVarArg", "order"]
 - ["Ps7CVarArg", "overlay"]
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
@@ -414,6 +416,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "order"]
 - ["Ps28CustomDebugStringConvertible", "overlay"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -541,6 +544,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "numberOfLines"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps23CustomStringConvertible", "order"]
 - ["Ps23CustomStringConvertible", "overlay"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -650,6 +654,7 @@ depends-member:
 - !private ["Ps9Equatable", "numberOfLines"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- !private ["Ps9Equatable", "order"]
 - ["Ps9Equatable", "overlay"]
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
@@ -853,6 +858,7 @@ depends-member:
 - !private ["Ps8Hashable", "numberOfLines"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps8Hashable", "order"]
 - ["Ps8Hashable", "overlay"]
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
@@ -1055,6 +1061,7 @@ depends-member:
 - !private ["PSo9NSCopying", "characters"]
 - !private ["PSo9NSCopying", "findObjectsInBackground"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "order"]
 - !private ["PSo9NSCopying", "whereKey"]
 - ["PSo26NSExtensionRequestHandling", "Feed"]
 - !private ["PSo26NSExtensionRequestHandling", "FeedVC"]
@@ -1172,6 +1179,7 @@ depends-member:
 - !private ["CSo8NSObject", "numberOfLines"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "order"]
 - ["CSo8NSObject", "overlay"]
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
@@ -1257,6 +1265,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "order"]
 - ["PSo16NSObjectProtocol", "overlay"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -1318,6 +1327,7 @@ depends-member:
 - ["CSo7PFQuery", "deinit"]
 - !private ["CSo7PFQuery", "findObjectsInBackground"]
 - !private ["CSo7PFQuery", "init"]
+- !private ["CSo7PFQuery", "order"]
 - !private ["CSo7PFQuery", "whereKey"]
 - !private ["PSo13PFSubclassing", "current"]
 - !private ["PSo13PFSubclassing", "username"]
@@ -2404,6 +2414,7 @@ depends-member:
 - !private ["Ps9_Hashable", "numberOfLines"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps9_Hashable", "order"]
 - ["Ps9_Hashable", "overlay"]
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]

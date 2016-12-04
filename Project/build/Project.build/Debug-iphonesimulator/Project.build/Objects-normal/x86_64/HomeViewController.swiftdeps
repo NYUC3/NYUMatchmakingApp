@@ -6,55 +6,55 @@ provides-nominal:
 provides-member:
 - ["C7Project18HomeViewController", ""]
 provides-dynamic-lookup:
-- "overlay"
-- "viewDidAppear"
-- "unwindToProjectsList"
-- "tableView"
-- "tableView"
-- "prepare"
 - "projectTableView"
+- "prepare"
+- "viewDidAppear"
+- "tableView"
+- "tableView"
+- "unwindToProjectsList"
+- "overlay"
 - "viewDidLoad"
 depends-top-level:
-- !private "!="
-- !private "StringLiteralType"
-- "UITableViewDelegate"
-- !private "NSError"
-- "UITableViewDataSource"
+- !private "BooleanLiteralType"
 - !private "PFUser"
-- "IndexPath"
-- !private "LoginVC"
-- "UITableView"
+- !private "PFFile"
+- "UITableViewCell"
+- !private "ProjectViewController"
+- !private "UIImage"
+- !private "Dictionary"
+- !private "+"
 - "Bool"
+- !private "PFObject"
+- "Int"
+- !private "UIFont"
 - "UIStoryboardSegue"
-- "UnicodeScalarType"
-- !private "UINavigationController"
+- !private "NSFontAttributeName"
+- !private "print"
+- "UITableView"
+- !private "StringLiteralType"
+- !private "Data"
 - "UIViewController"
 - "Feed"
-- !private "UIImage"
-- !private "BooleanLiteralType"
-- !private "Data"
-- "UIView"
-- "HomeViewController"
-- !private "print"
-- "UITableViewCell"
 - !private "PFQuery"
-- !private "Dictionary"
-- !private "PFObject"
-- !private "NSFontAttributeName"
+- !private "LoginVC"
 - !private "String"
-- !private "ProjectViewController"
-- !private "UIFont"
-- "Int"
-- !private "HomeVCTableViewCell"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "UIStoryboard"
+- !private "UINavigationController"
 - "CastingPrecedence"
-- !private "PFFile"
-- !private "UIColor"
+- !private "HomeVCTableViewCell"
+- !private "UIStoryboard"
+- "AssignmentPrecedence"
+- "UITableViewDelegate"
 - !private "Void"
-- !private "+"
+- "UIView"
+- "UnicodeScalarType"
+- "UITableViewDataSource"
 - !private "Error"
+- !private "!="
+- "IndexPath"
+- !private "UIColor"
+- !private "NSError"
+- !private "=="
+- "HomeViewController"
 depends-member:
 - ["Ps9AnyObject", "Feed"]
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
@@ -91,6 +91,7 @@ depends-member:
 - !private ["Ps9AnyObject", "numberOfLines"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- !private ["Ps9AnyObject", "order"]
 - ["Ps9AnyObject", "overlay"]
 - ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "present"]
@@ -238,6 +239,7 @@ depends-member:
 - !private ["Ps7CVarArg", "numberOfLines"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- !private ["Ps7CVarArg", "order"]
 - ["Ps7CVarArg", "overlay"]
 - ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "present"]
@@ -339,6 +341,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "order"]
 - ["Ps28CustomDebugStringConvertible", "overlay"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
@@ -447,6 +450,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "numberOfLines"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps23CustomStringConvertible", "order"]
 - ["Ps23CustomStringConvertible", "overlay"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "present"]
@@ -541,6 +545,7 @@ depends-member:
 - !private ["Ps9Equatable", "numberOfLines"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- !private ["Ps9Equatable", "order"]
 - ["Ps9Equatable", "overlay"]
 - ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "present"]
@@ -648,6 +653,7 @@ depends-member:
 - !private ["Ps8Hashable", "numberOfLines"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps8Hashable", "order"]
 - ["Ps8Hashable", "overlay"]
 - ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "present"]
@@ -893,6 +899,7 @@ depends-member:
 - !private ["PSo9NSCopying", "black"]
 - !private ["PSo9NSCopying", "findObjectsInBackground"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "order"]
 - !private ["PSo9NSCopying", "whereKey"]
 - !private ["CSo7NSError", "deinit"]
 - ["PSo26NSExtensionRequestHandling", "Feed"]
@@ -996,6 +1003,7 @@ depends-member:
 - !private ["CSo8NSObject", "numberOfLines"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "order"]
 - ["CSo8NSObject", "overlay"]
 - ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "present"]
@@ -1068,6 +1076,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "order"]
 - ["PSo16NSObjectProtocol", "overlay"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "present"]
@@ -1118,6 +1127,7 @@ depends-member:
 - ["CSo7PFQuery", "deinit"]
 - !private ["CSo7PFQuery", "findObjectsInBackground"]
 - !private ["CSo7PFQuery", "init"]
+- !private ["CSo7PFQuery", "order"]
 - !private ["CSo7PFQuery", "whereKey"]
 - !private ["PSo13PFSubclassing", "current"]
 - !private ["CSo6PFUser", "current"]
@@ -2058,6 +2068,7 @@ depends-member:
 - !private ["Ps9_Hashable", "numberOfLines"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps9_Hashable", "order"]
 - ["Ps9_Hashable", "overlay"]
 - ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "present"]

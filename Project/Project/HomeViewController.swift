@@ -19,7 +19,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 30)!]
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
         
         if(PFUser.current() == nil){
             
@@ -39,8 +39,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             view.addSubview(overlay!)
             // END OF LOADING SCREEN SETUP
             
-             let query = PFQuery(className:"Projects")
-             query.findObjectsInBackground {
+            let query = PFQuery(className:"Projects")
+
+            query.order(byDescending: "createdAt")
+            query.findObjectsInBackground {
              (objects: [PFObject]?, error: Error?) -> Void in
              
              if error == nil {
@@ -69,6 +71,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                                             let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg, likes: objects.count)
                                             self.projectsList.append(project)
                                         }
+                                        self.projectTableView.reloadData()
                                         
                                     } else {
                                         // Log details of the failure

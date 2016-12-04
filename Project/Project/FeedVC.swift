@@ -139,6 +139,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let user = PFUser.current()?.username
         let query = PFQuery(className: "Follow")
         query.whereKey("username", equalTo: user!)
+        query.order(byDescending: "createdAt")
         query.findObjectsInBackground {
             (objects: [PFObject]?, error: Error?) -> Void in
             

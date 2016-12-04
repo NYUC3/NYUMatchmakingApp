@@ -167,9 +167,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="404"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-hx-7j1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="404"/>
-                                                </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="878-Zj-HDl">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
                                                     <subviews>
@@ -254,6 +251,9 @@
                                                         <constraint firstItem="ILt-cu-mWH" firstAttribute="top" secondItem="upu-9j-uQ4" secondAttribute="bottom" constant="8" symbolic="YES" id="zgU-6l-ei9"/>
                                                     </constraints>
                                                 </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-hx-7j1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="404"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="EJx-hx-7j1" secondAttribute="trailing" id="1sH-gG-hJI"/>

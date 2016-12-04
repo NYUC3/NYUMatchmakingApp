@@ -28,7 +28,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         //selectedProjectName = projectNames[0]
         imagePicker.delegate = self
         
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 30)!]
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
 
         
         let query = PFQuery(className:"Projects")
