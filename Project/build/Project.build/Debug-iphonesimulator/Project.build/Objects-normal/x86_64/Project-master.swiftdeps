@@ -1,11 +1,11 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "c52fcf1ae78db39de548293789135c62"
-build_time: [534270733, 504512000]
+build_time: [534270889, 371587000]
 inputs:
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateNewActivityVC.swift": [534194571, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/MyFeedVC.swift": [531424272, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/AKImageCropperView.swift": [533535761, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/LoginVC.swift": [529086922, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/LoginVC.swift": [534270866, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/NavViewController.swift": [534192639, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/HomeVCTableViewCell.swift": [534010474, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/FeedVC.swift": [534203186, 0]
@@ -13,7 +13,7 @@ inputs:
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CropTestViewController.swift": [534024946, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CGRect.swift": [533535097, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/FeedObject.swift": [534010029, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/SignupVC.swift": [534270732, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/SignupVC.swift": [534270887, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/SettingsViewController.swift": [530236982, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/UIImage.swift": [533535097, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/ProjectViewController.swift": [534270499, 0]

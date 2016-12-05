@@ -20,29 +20,36 @@ class LoginVC: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
     @IBAction func LoginTapped(_ sender: UIButton) {
         
-        PFUser.logInWithUsername(inBackground: email.text!, password:password.text!) {
-            (user: PFUser?, error: Error?) -> Void in
-            if user != nil {
-                // Do stuff after successful login.
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar") as! UITabBarController
-                self.present(vc, animated: true, completion: nil)
-            } else {
-                // The login failed. Check error to see why.
-                let alertController = UIAlertController(title: "Something went wrong!", message:
-                    error.debugDescription , preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
-                self.present(alertController, animated: true, completion: nil)
+        if(email.text != "" && password.text != ""){
+            
+            PFUser.logInWithUsername(inBackground: email.text!, password:password.text!) {
+                (user: PFUser?, error: Error?) -> Void in
+                if user != nil {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar") as! UITabBarController
+                    self.present(vc, animated: true, completion: nil)
+                }
+                    
+                else {
+                    // The login failed. Check error to see why.
+                    let alertController = UIAlertController(title: "Something went wrong!", message:
+                        error.debugDescription , preferredStyle: UIAlertControllerStyle.alert)
+                    alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+                    self.present(alertController, animated: true, completion: nil)
+                }
             }
         }
+        else{
+        
+            let alert = UIAlertController(title: "Fields Empty", message: "One of the fields are empty. Please make sure all the fields are full.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        
+        }
+        
+
 
     }
     
@@ -51,15 +58,5 @@ class LoginVC: UIViewController {
     @IBAction func unwindToLogin(segue: UIStoryboardSegue) {
         // some code to execute
     } // unwindToPrevious
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
