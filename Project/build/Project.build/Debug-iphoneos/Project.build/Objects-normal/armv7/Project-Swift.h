@@ -328,6 +328,7 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -344,6 +345,7 @@ SWIFT_CLASS("_TtC7Project15CreateProjectVC")
 - (IBAction)cancelButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)uploadButtonTapped:(UIButton * _Nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -351,6 +353,16 @@ SWIFT_CLASS("_TtC7Project15CreateProjectVC")
 
 SWIFT_CLASS("_TtC7Project23CropImageViewController")
 @interface CropImageViewController : UIViewController
+@property (nonatomic, strong) AKImageCropperView * _Null_unspecified cropView;
+- (void)viewDidLoad;
+- (void)viewWillLayoutSubviews;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project22CropTestViewController")
+@interface CropTestViewController : UIViewController
 @property (nonatomic, strong) AKImageCropperView * _Null_unspecified cropView;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
@@ -367,10 +379,12 @@ SWIFT_CLASS("_TtC7Project14CustomTabbarVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Project6FeedVC")
 @interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull projectsFollowing;
+@property (nonatomic, strong) UIView * _Nullable overlay;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified daTableView;
 - (void)viewDidLoad;
 - (void)queryActivitiesWithName:(NSString * _Nonnull)name;
@@ -379,6 +393,7 @@ SWIFT_CLASS("_TtC7Project6FeedVC")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)buttonClickedWithSender:(UIButton * _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -406,16 +421,17 @@ SWIFT_CLASS("_TtC7Project19HomeVCTableViewCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified followersLabel;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Project18HomeViewController")
 @interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) UIView * _Nullable overlay;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified projectTableView;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
@@ -462,19 +478,28 @@ SWIFT_CLASS("_TtC7Project8MyFeedVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UICollectionView;
-@class UICollectionViewCell;
+
+SWIFT_CLASS("_TtC7Project17NavViewController")
+@interface NavViewController : UINavigationController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC7Project21ProjectViewController")
-@interface ProjectViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ProjectViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified projectDescription;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified followButton;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified followButton;
 @property (nonatomic) BOOL isFollowing;
 - (void)viewDidLoad;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (IBAction)followButtonTapped:(UIButton * _Nonnull)sender;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)followTapped:(UIBarButtonItem * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -512,6 +537,34 @@ SWIFT_CLASS("_TtC7Project8SignupVC")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)SignupTappd:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project16SingleActivityVC")
+@interface SingleActivityVC : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified activityTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified activityDescriptionLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeButton;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified activityImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified likesLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backButton;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (IBAction)likeButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)backButtonTapped:(UIBarButtonItem * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Project22TesttOneViewController")
+@interface TesttOneViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull list;
+- (void)viewDidLoad;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

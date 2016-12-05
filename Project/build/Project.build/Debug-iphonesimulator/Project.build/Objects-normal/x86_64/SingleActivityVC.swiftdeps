@@ -6,46 +6,48 @@ provides-nominal:
 provides-member:
 - ["C7Project16SingleActivityVC", ""]
 provides-dynamic-lookup:
-- "backButtonTapped"
-- "activityImage"
-- "likesLabel"
-- "activityDescriptionLabel"
 - "viewDidAppear"
+- "activityTitleLabel"
+- "backButtonTapped"
+- "likeButtonTapped"
+- "likesLabel"
+- "activityImage"
 - "likeButton"
 - "viewDidLoad"
-- "likeButtonTapped"
+- "activityDescriptionLabel"
 - "backButton"
-- "activityTitleLabel"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UIImageView"
-- !private "+"
-- !private "UIFont"
-- !private "Data"
-- !private "PFObject"
-- !private "NSFontAttributeName"
 - !private "print"
-- !private "UIImage"
-- !private "Error"
-- "Feed"
-- !private "Dictionary"
-- !private "String"
-- "UIButton"
-- !private "StringLiteralType"
-- "UIViewController"
-- !private "Void"
+- "UILabel"
+- !private "NSFontAttributeName"
+- "UIBarButtonItem"
+- !private "Data"
+- !private "UIFont"
 - "Bool"
 - !private "CastingPrecedence"
-- "UILabel"
-- "UIBarButtonItem"
 - "AssignmentPrecedence"
-- !private "UIControlState"
 - !private "=="
-- !private "PFQuery"
-- !private "PFUser"
+- !private "Void"
+- !private "Dictionary"
+- "UIViewController"
+- !private "StringLiteralType"
+- !private "Error"
 - "SingleActivityVC"
+- !private "UIImage"
+- !private "String"
+- !private "PFUser"
+- !private "!"
+- !private "UIControlState"
+- "Feed"
+- !private "+"
+- !private "PFQuery"
+- !private "BooleanLiteralType"
+- !private "PFObject"
+- "UIButton"
+- "UIImageView"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
+- !private ["Ps9AnyObject", "PFObject"]
 - !private ["Ps9AnyObject", "PFQuery"]
 - !private ["Ps9AnyObject", "PFUser"]
 - !private ["Ps9AnyObject", "String"]
@@ -61,6 +63,7 @@ depends-member:
 - ["Ps9AnyObject", "backButton"]
 - ["Ps9AnyObject", "backButtonTapped"]
 - !private ["Ps9AnyObject", "current"]
+- !private ["Ps9AnyObject", "deleteInBackground"]
 - !private ["Ps9AnyObject", "dismiss"]
 - !private ["Ps9AnyObject", "findObjectsInBackground"]
 - !private ["Ps9AnyObject", "getDataInBackground"]
@@ -72,6 +75,7 @@ depends-member:
 - !private ["Ps9AnyObject", "navigationBar"]
 - !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "saveInBackground"]
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "setTitleTextAttributes"]
 - !private ["Ps9AnyObject", "subscript"]
@@ -85,6 +89,7 @@ depends-member:
 - !private ["Sa", "Iterator"]
 - !private ["Sa", "_Element"]
 - !private ["Sa", "deinit"]
+- !private ["CSo6BFTask", "deinit"]
 - !private ["Ps23BidirectionalCollection", "Iterator"]
 - !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps22BidirectionalIndexable", "Iterator"]
@@ -99,6 +104,7 @@ depends-member:
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "NSFontAttributeName"]
+- !private ["Ps7CVarArg", "PFObject"]
 - !private ["Ps7CVarArg", "PFQuery"]
 - !private ["Ps7CVarArg", "PFUser"]
 - !private ["Ps7CVarArg", "String"]
@@ -116,6 +122,7 @@ depends-member:
 - ["Ps7CVarArg", "backButton"]
 - ["Ps7CVarArg", "backButtonTapped"]
 - !private ["Ps7CVarArg", "current"]
+- !private ["Ps7CVarArg", "deleteInBackground"]
 - !private ["Ps7CVarArg", "dismiss"]
 - !private ["Ps7CVarArg", "findObjectsInBackground"]
 - !private ["Ps7CVarArg", "getDataInBackground"]
@@ -127,6 +134,7 @@ depends-member:
 - !private ["Ps7CVarArg", "navigationBar"]
 - !private ["Ps7CVarArg", "navigationController"]
 - !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "saveInBackground"]
 - !private ["Ps7CVarArg", "setImage"]
 - !private ["Ps7CVarArg", "setTitleTextAttributes"]
 - !private ["Ps7CVarArg", "subscript"]
@@ -146,6 +154,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "PFObject"]
 - !private ["Ps28CustomDebugStringConvertible", "PFQuery"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
@@ -163,6 +172,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "backButton"]
 - ["Ps28CustomDebugStringConvertible", "backButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
+- !private ["Ps28CustomDebugStringConvertible", "deleteInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "getDataInBackground"]
@@ -174,6 +184,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -195,6 +206,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
+- !private ["Ps23CustomStringConvertible", "PFObject"]
 - !private ["Ps23CustomStringConvertible", "PFQuery"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
 - !private ["Ps23CustomStringConvertible", "String"]
@@ -213,6 +225,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "backButton"]
 - ["Ps23CustomStringConvertible", "backButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "current"]
+- !private ["Ps23CustomStringConvertible", "deleteInBackground"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackground"]
 - !private ["Ps23CustomStringConvertible", "getDataInBackground"]
@@ -224,6 +237,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "navigationBar"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "saveInBackground"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -240,6 +254,7 @@ depends-member:
 - ["Vs10Dictionary", "deinit"]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "NSFontAttributeName"]
+- !private ["Ps9Equatable", "PFObject"]
 - !private ["Ps9Equatable", "PFQuery"]
 - !private ["Ps9Equatable", "PFUser"]
 - !private ["Ps9Equatable", "String"]
@@ -256,6 +271,7 @@ depends-member:
 - ["Ps9Equatable", "backButton"]
 - ["Ps9Equatable", "backButtonTapped"]
 - !private ["Ps9Equatable", "current"]
+- !private ["Ps9Equatable", "deleteInBackground"]
 - !private ["Ps9Equatable", "dismiss"]
 - !private ["Ps9Equatable", "findObjectsInBackground"]
 - !private ["Ps9Equatable", "getDataInBackground"]
@@ -268,6 +284,7 @@ depends-member:
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "saveInBackground"]
 - !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "setTitleTextAttributes"]
 - !private ["Ps9Equatable", "subscript"]
@@ -291,10 +308,13 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["V7Project4Feed", "description"]
 - !private ["V7Project4Feed", "image"]
+- !private ["V7Project4Feed", "isLiked"]
+- !private ["V7Project4Feed", "name"]
 - !private ["V7Project4Feed", "noOfLikes"]
 - !private ["V7Project4Feed", "title"]
 - !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "NSFontAttributeName"]
+- !private ["Ps8Hashable", "PFObject"]
 - !private ["Ps8Hashable", "PFQuery"]
 - !private ["Ps8Hashable", "PFUser"]
 - !private ["Ps8Hashable", "String"]
@@ -311,6 +331,7 @@ depends-member:
 - ["Ps8Hashable", "backButton"]
 - ["Ps8Hashable", "backButtonTapped"]
 - !private ["Ps8Hashable", "current"]
+- !private ["Ps8Hashable", "deleteInBackground"]
 - !private ["Ps8Hashable", "dismiss"]
 - !private ["Ps8Hashable", "findObjectsInBackground"]
 - !private ["Ps8Hashable", "getDataInBackground"]
@@ -322,6 +343,7 @@ depends-member:
 - !private ["Ps8Hashable", "navigationBar"]
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "saveInBackground"]
 - !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "setTitleTextAttributes"]
 - !private ["Ps8Hashable", "subscript"]
@@ -357,6 +379,7 @@ depends-member:
 - !private ["Ps16MutableIndexable", "_Element"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
+- !private ["PSo8NSCoding", "PFObject"]
 - !private ["PSo8NSCoding", "PFQuery"]
 - !private ["PSo8NSCoding", "PFUser"]
 - !private ["PSo8NSCoding", "String"]
@@ -391,6 +414,7 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "whereKey"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "PFObject"]
 - !private ["PSo26NSExtensionRequestHandling", "PFQuery"]
 - !private ["PSo26NSExtensionRequestHandling", "PFUser"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
@@ -441,6 +465,7 @@ depends-member:
 - ["CSo8NSObject", "backButton"]
 - ["CSo8NSObject", "backButtonTapped"]
 - !private ["CSo8NSObject", "current"]
+- !private ["CSo8NSObject", "deleteInBackground"]
 - !private ["CSo8NSObject", "dismiss"]
 - !private ["CSo8NSObject", "findObjectsInBackground"]
 - !private ["CSo8NSObject", "getDataInBackground"]
@@ -452,6 +477,7 @@ depends-member:
 - !private ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "saveInBackground"]
 - !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "setTitleTextAttributes"]
 - !private ["CSo8NSObject", "subscript"]
@@ -462,6 +488,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["CSo8NSObject", "whereKey"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
+- !private ["PSo16NSObjectProtocol", "PFObject"]
 - !private ["PSo16NSObjectProtocol", "PFQuery"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "String"]
@@ -477,6 +504,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "backButton"]
 - ["PSo16NSObjectProtocol", "backButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "current"]
+- !private ["PSo16NSObjectProtocol", "deleteInBackground"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackground"]
 - !private ["PSo16NSObjectProtocol", "getDataInBackground"]
@@ -488,6 +516,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "saveInBackground"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
@@ -505,7 +534,10 @@ depends-member:
 - ["CSo6PFFile", "deinit"]
 - !private ["CSo6PFFile", "getDataInBackground"]
 - !private ["CSo8PFObject", "current"]
-- !private ["CSo8PFObject", "deinit"]
+- ["CSo8PFObject", "deinit"]
+- !private ["CSo8PFObject", "deleteInBackground"]
+- !private ["CSo8PFObject", "init"]
+- !private ["CSo8PFObject", "saveInBackground"]
 - !private ["CSo8PFObject", "subscript"]
 - !private ["CSo8PFObject", "username"]
 - ["CSo7PFQuery", "deinit"]
@@ -583,6 +615,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "PFObject"]
 - !private ["PSo21UIAppearanceContainer", "PFQuery"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - !private ["PSo21UIAppearanceContainer", "String"]
@@ -619,6 +652,7 @@ depends-member:
 - !private ["PSo16UIBarPositioning", "titleTextAttributes"]
 - !private ["CSo8UIButton", "setImage"]
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
+- !private ["PSo18UIContentContainer", "PFObject"]
 - !private ["PSo18UIContentContainer", "PFQuery"]
 - !private ["PSo18UIContentContainer", "PFUser"]
 - !private ["PSo18UIContentContainer", "String"]
@@ -656,6 +690,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "PFObject"]
 - !private ["PSo18UIFocusEnvironment", "PFQuery"]
 - !private ["PSo18UIFocusEnvironment", "PFUser"]
 - !private ["PSo18UIFocusEnvironment", "String"]
@@ -736,6 +771,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "NSFontAttributeName"]
+- !private ["PSo30UIResponderStandardEditActions", "PFObject"]
 - !private ["PSo30UIResponderStandardEditActions", "PFQuery"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
@@ -765,6 +801,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
+- !private ["PSo16UIStateRestoring", "PFObject"]
 - !private ["PSo16UIStateRestoring", "PFQuery"]
 - !private ["PSo16UIStateRestoring", "PFUser"]
 - !private ["PSo16UIStateRestoring", "String"]
@@ -790,6 +827,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UITraitEnvironment", "PFObject"]
 - !private ["PSo18UITraitEnvironment", "PFQuery"]
 - !private ["PSo18UITraitEnvironment", "PFUser"]
 - !private ["PSo18UITraitEnvironment", "String"]
@@ -879,6 +917,7 @@ depends-member:
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "NSFontAttributeName"]
+- !private ["Ps9_Hashable", "PFObject"]
 - !private ["Ps9_Hashable", "PFQuery"]
 - !private ["Ps9_Hashable", "PFUser"]
 - !private ["Ps9_Hashable", "String"]
@@ -895,6 +934,7 @@ depends-member:
 - ["Ps9_Hashable", "backButton"]
 - ["Ps9_Hashable", "backButtonTapped"]
 - !private ["Ps9_Hashable", "current"]
+- !private ["Ps9_Hashable", "deleteInBackground"]
 - !private ["Ps9_Hashable", "dismiss"]
 - !private ["Ps9_Hashable", "findObjectsInBackground"]
 - !private ["Ps9_Hashable", "getDataInBackground"]
@@ -906,6 +946,7 @@ depends-member:
 - !private ["Ps9_Hashable", "navigationBar"]
 - !private ["Ps9_Hashable", "navigationController"]
 - !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "saveInBackground"]
 - !private ["Ps9_Hashable", "setImage"]
 - !private ["Ps9_Hashable", "setTitleTextAttributes"]
 - !private ["Ps9_Hashable", "subscript"]
@@ -926,6 +967,7 @@ depends-member:
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Sa"
+- !private "CSo6BFTask"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps22BidirectionalIndexable"
 - "Sb"
@@ -980,7 +1022,7 @@ depends-nominal:
 - !private "Ps9OptionSet"
 - "Sq"
 - "CSo6PFFile"
-- !private "CSo8PFObject"
+- "CSo8PFObject"
 - "CSo7PFQuery"
 - !private "PSo13PFSubclassing"
 - "CSo6PFUser"

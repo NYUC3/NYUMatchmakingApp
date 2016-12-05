@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,23 +25,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="TTJ-KW-ie4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="ViJ-En-ct2">
-                                <rect key="frame" x="103" y="291" width="169" height="84"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ViJ-En-ct2" secondAttribute="height" multiplier="169:84" id="JQ1-Pz-gE9"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portfolio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-2j-Dgr">
+                                <rect key="frame" x="16" y="296" width="343" height="75"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="TTJ-KW-ie4" secondAttribute="trailing" id="2kf-mN-Foq"/>
-                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="centerY" secondItem="ViJ-En-ct2" secondAttribute="centerY" id="PpK-Za-waC"/>
-                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="YKQ-lk-RSs"/>
-                            <constraint firstItem="ViJ-En-ct2" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="271" id="e1a-Un-QCq"/>
-                            <constraint firstItem="ViJ-En-ct2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="87" id="eeb-4W-nhp"/>
-                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lLj-cj-qZG"/>
-                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="oBA-Y7-LFY"/>
-                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="centerX" secondItem="ViJ-En-ct2" secondAttribute="centerX" id="odB-5p-tdh"/>
+                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="centerX" secondItem="nUh-2j-Dgr" secondAttribute="centerX" id="7Jg-Z9-yGt"/>
+                            <constraint firstAttribute="trailing" secondItem="TTJ-KW-ie4" secondAttribute="trailing" id="GWS-wZ-t6Y"/>
+                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Jpo-S4-Tab"/>
+                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="XKe-91-Wk4"/>
+                            <constraint firstItem="nUh-2j-Dgr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="ZwQ-zX-fo5"/>
+                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="ae2-aQ-KjW"/>
+                            <constraint firstItem="TTJ-KW-ie4" firstAttribute="centerY" secondItem="nUh-2j-Dgr" secondAttribute="centerY" id="jPZ-8l-erf"/>
+                            <constraint firstItem="nUh-2j-Dgr" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="276" id="l0C-Qf-8ph"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -53,6 +52,5 @@
     </scenes>
     <resources>
         <image name="background.png" width="414" height="736"/>
-        <image name="title.png" width="179" height="126"/>
     </resources>
 </document>

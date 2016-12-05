@@ -72,8 +72,6 @@ class AddActivityVC: UIViewController, UITableViewDataSource, UITableViewDelegat
                     cell.myFeedImageView.image = image
 
                 }
-            
-        
             }
             
         })

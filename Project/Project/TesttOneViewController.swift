@@ -26,8 +26,7 @@ class TesttOneViewController: UIViewController, UITableViewDelegate, UITableView
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
     
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell1234", for: indexPath) as! MyFeedCell
-        cell.myTitleLabel.text = list[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell1234", for: indexPath) 
         return cell
         
     }
