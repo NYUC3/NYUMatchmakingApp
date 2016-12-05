@@ -23,6 +23,13 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // UI stuff
+        
+        self.projectDescription.numberOfLines = 0
+        self.projectDescription.lineBreakMode = .byWordWrapping
+        
+        // download the image from parse
+        
         let imageFromParse = projectOject?.image
         imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
             let image: UIImage! = UIImage(data: imageData!)!
@@ -31,9 +38,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
             self.projectDescription.text = self.projectOject?.description
         })
         
-        
-        self.projectDescription.numberOfLines = 0
-        self.projectDescription.lineBreakMode = .byWordWrapping
+        // Query Followers
         
         let query = PFQuery(className:"Follow")
         query.whereKey("username", equalTo: (PFUser.current()?.username)!)
@@ -59,6 +64,11 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
         }
         
         
+        // Query Activities
+        /*
+        
+        ADD THIS FEATURE IN THE NEXT ITERATION
+         
         let queryActivities = PFQuery(className:"MyActivities")
         queryActivities.whereKey("projectName", equalTo: self.projectOject?.name)
         queryActivities.findObjectsInBackground {
@@ -91,7 +101,7 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
                 // Log details of the failure
                 print("Error: \(error!)")
             }
-        }
+        }*/
         
         
     }
@@ -117,7 +127,6 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
     }
 
     
-
 
     @IBAction func followTapped(_ sender: UIBarButtonItem) {
         

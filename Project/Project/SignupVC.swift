@@ -21,38 +21,56 @@ class SignupVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func SignupTappd(_ sender: UIButton) {
         
-        let user = PFUser()
-        user.username = email.text
-        user.password = password.text
-        user.email = email.text
-
         
-        user.signUpInBackground {
-            (succeeded: Bool, error: Error?) -> Void in
-            if let error = error {
+        if(email.text != "" && password.text != "" && confirmpassword.text != "" ){
+            
+            if(password.text == confirmpassword.text){
                 
-                let alertController = UIAlertController(title: "Something went wrong!", message:
-                    error.localizedDescription , preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
-                self.present(alertController, animated: true, completion: nil)
-
-            } else {
-                // Hooray! Let them use the app now.
-                print("logged in successfully")
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar") as! CustomTabbarVC
-                self.present(vc, animated: true, completion: nil)
+                let user = PFUser()
+                user.username = email.text
+                user.password = password.text
+                user.email = email.text
+                
+                
+                user.signUpInBackground {
+                    (succeeded: Bool, error: Error?) -> Void in
+                    if let error = error {
+                        let alertController = UIAlertController(title: "Something went wrong!", message:
+                            error.localizedDescription , preferredStyle: UIAlertControllerStyle.alert)
+                        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+                        self.present(alertController, animated: true, completion: nil)
+                        
+                    } else {
+                        // Hooray! Let them use the app now.
+                        print("logged in successfully")
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar") as! CustomTabbarVC
+                        self.present(vc, animated: true, completion: nil)
+                    }
+                }
+                
+            
             }
+                
+            else{
+                
+                let alert = UIAlertController(title: "Passwords Don't Match", message: "Please make sure your passwords match!", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            
+            }
+
         }
-        
+            
+        else{
+            let alert = UIAlertController(title: "Fields Empty", message: "One of the fields are empty. Please make sure all the fields are full.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+
     }
     
 

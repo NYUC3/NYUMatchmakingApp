@@ -6,32 +6,34 @@ provides-nominal:
 provides-member:
 - ["C7Project8SignupVC", ""]
 provides-dynamic-lookup:
-- "password"
-- "didReceiveMemoryWarning"
 - "SignupTappd"
 - "email"
-- "confirmpassword"
 - "viewDidLoad"
+- "confirmpassword"
+- "password"
 depends-top-level:
-- !private "UIAlertAction"
-- "UITextField"
-- !private "Bool"
-- !private "UIAlertController"
-- !private "Void"
-- !private "UIAlertActionStyle"
-- "AssignmentPrecedence"
-- !private "CastingPrecedence"
+- !private "!="
 - !private "UIStoryboard"
+- !private "CustomTabbarVC"
+- !private "print"
+- !private "CastingPrecedence"
+- !private "=="
+- "AssignmentPrecedence"
 - !private "PFUser"
 - !private "UIAlertControllerStyle"
-- "StringLiteralType"
-- !private "CustomTabbarVC"
-- "SignupVC"
-- "BooleanLiteralType"
-- !private "print"
-- !private "Error"
+- "UITextField"
+- !private "StringLiteralType"
 - "UIButton"
 - "UIViewController"
+- !private "Void"
+- !private "UIAlertActionStyle"
+- !private "Error"
+- !private "Bool"
+- !private "UIAlertController"
+- "SignupVC"
+- "BooleanLiteralType"
+- !private "UIAlertAction"
+- !private "&&"
 depends-member:
 - !private ["Ps9AnyObject", "PFUser"]
 - ["Ps9AnyObject", "SignupTappd"]
@@ -42,7 +44,6 @@ depends-member:
 - !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "addAction"]
 - ["Ps9AnyObject", "confirmpassword"]
-- ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "email"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
@@ -54,7 +55,8 @@ depends-member:
 - !private ["Ps9AnyObject", "username"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
-- !private ["Sb", "deinit"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "text"]
 - !private ["Ps7CVarArg", "PFUser"]
 - ["Ps7CVarArg", "SignupTappd"]
@@ -65,7 +67,6 @@ depends-member:
 - !private ["Ps7CVarArg", "UIStoryboard"]
 - !private ["Ps7CVarArg", "addAction"]
 - ["Ps7CVarArg", "confirmpassword"]
-- ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - ["Ps7CVarArg", "email"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
@@ -87,7 +88,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - ["Ps28CustomDebugStringConvertible", "confirmpassword"]
-- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "email"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
@@ -99,7 +99,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "username"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
 - ["Ps23CustomStringConvertible", "SignupTappd"]
@@ -108,9 +110,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
 - !private ["Ps23CustomStringConvertible", "UIAlertControllerStyle"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - ["Ps23CustomStringConvertible", "confirmpassword"]
-- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "email"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
@@ -130,11 +132,11 @@ depends-member:
 - !private ["Ps9Equatable", "UIAlertController"]
 - !private ["Ps9Equatable", "UIAlertControllerStyle"]
 - !private ["Ps9Equatable", "UIStoryboard"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
 - !private ["Ps9Equatable", "alert"]
 - ["Ps9Equatable", "confirmpassword"]
 - !private ["Ps9Equatable", "default"]
-- ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "email"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
@@ -148,6 +150,7 @@ depends-member:
 - ["Ps9Equatable", ""]
 - !private ["Ps5Error", "deinit"]
 - !private ["Ps5Error", "localizedDescription"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
@@ -159,11 +162,11 @@ depends-member:
 - !private ["Ps8Hashable", "UIAlertController"]
 - !private ["Ps8Hashable", "UIAlertControllerStyle"]
 - !private ["Ps8Hashable", "UIStoryboard"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
 - !private ["Ps8Hashable", "alert"]
 - ["Ps8Hashable", "confirmpassword"]
 - !private ["Ps8Hashable", "default"]
-- ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "email"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
@@ -176,6 +179,7 @@ depends-member:
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
@@ -188,7 +192,6 @@ depends-member:
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "addAction"]
 - ["PSo8NSCoding", "confirmpassword"]
-- ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "email"]
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "password"]
@@ -207,7 +210,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "confirmpassword"]
-- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "email"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "password"]
@@ -231,7 +233,6 @@ depends-member:
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addAction"]
 - ["CSo8NSObject", "confirmpassword"]
-- ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "email"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
@@ -251,7 +252,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - ["PSo16NSObjectProtocol", "confirmpassword"]
-- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "email"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
@@ -299,27 +299,26 @@ depends-member:
 - !private ["C7Project8SignupVC", "Void"]
 - ["C7Project8SignupVC", "confirmpassword"]
 - ["C7Project8SignupVC", "deinit"]
-- ["C7Project8SignupVC", "didReceiveMemoryWarning"]
 - ["C7Project8SignupVC", "email"]
 - ["C7Project8SignupVC", "init"]
 - ["C7Project8SignupVC", "password"]
 - !private ["C7Project8SignupVC", "present"]
 - !private ["C7Project8SignupVC", "print"]
 - ["C7Project8SignupVC", "viewDidLoad"]
-- !private ["SS", "deinit"]
+- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
-- !private ["CSo13UIAlertAction", "deinit"]
+- ["CSo13UIAlertAction", "deinit"]
 - !private ["CSo13UIAlertAction", "init"]
 - !private ["OSC18UIAlertActionStyle", "default"]
-- !private ["OSC18UIAlertActionStyle", "deinit"]
+- ["OSC18UIAlertActionStyle", "deinit"]
 - !private ["CSo17UIAlertController", "addAction"]
-- !private ["CSo17UIAlertController", "deinit"]
+- ["CSo17UIAlertController", "deinit"]
 - !private ["CSo17UIAlertController", "init"]
 - !private ["OSC22UIAlertControllerStyle", "alert"]
-- !private ["OSC22UIAlertControllerStyle", "deinit"]
+- ["OSC22UIAlertControllerStyle", "deinit"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "PFUser"]
 - ["PSo21UIAppearanceContainer", "SignupTappd"]
@@ -330,7 +329,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "confirmpassword"]
-- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "email"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "password"]
@@ -348,7 +346,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "confirmpassword"]
-- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "email"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "password"]
@@ -369,7 +366,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "confirmpassword"]
-- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "email"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "password"]
@@ -395,7 +391,6 @@ depends-member:
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "confirmpassword"]
-- ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "email"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "password"]
@@ -412,7 +407,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
 - !private ["PSo30UIResponderStandardEditActions", "addAction"]
 - ["PSo30UIResponderStandardEditActions", "confirmpassword"]
-- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - ["PSo30UIResponderStandardEditActions", "email"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "password"]
@@ -430,7 +424,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "confirmpassword"]
-- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "email"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "password"]
@@ -453,7 +446,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "confirmpassword"]
-- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "email"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "password"]
@@ -479,7 +471,6 @@ depends-member:
 - !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "confirmpassword"]
 - ["CSo16UIViewController", "deinit"]
-- ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "email"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "password"]
@@ -488,6 +479,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
@@ -500,11 +492,11 @@ depends-member:
 - !private ["Ps9_Hashable", "UIAlertController"]
 - !private ["Ps9_Hashable", "UIAlertControllerStyle"]
 - !private ["Ps9_Hashable", "UIStoryboard"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addAction"]
 - !private ["Ps9_Hashable", "alert"]
 - ["Ps9_Hashable", "confirmpassword"]
 - !private ["Ps9_Hashable", "default"]
-- ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - ["Ps9_Hashable", "email"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
@@ -516,10 +508,12 @@ depends-member:
 - !private ["Ps9_Hashable", "username"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
-- !private "Sb"
+- "Sb"
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
 - !private "Ps10Comparable"
@@ -530,6 +524,7 @@ depends-nominal:
 - !private "C7Project14CustomTabbarVC"
 - "Ps9Equatable"
 - !private "Ps5Error"
+- !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
@@ -553,14 +548,14 @@ depends-nominal:
 - "CSo6PFUser"
 - !private "Ps16RawRepresentable"
 - "C7Project8SignupVC"
-- !private "SS"
+- "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
-- !private "CSo13UIAlertAction"
-- !private "OSC18UIAlertActionStyle"
-- !private "CSo17UIAlertController"
-- !private "OSC22UIAlertControllerStyle"
+- "CSo13UIAlertAction"
+- "OSC18UIAlertActionStyle"
+- "CSo17UIAlertController"
+- "OSC22UIAlertControllerStyle"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
@@ -582,6 +577,7 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
@@ -589,6 +585,7 @@ depends-nominal:
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -660,4 +657,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "a3b96aaa963ee0974545b90082b037cd"
+interface-hash: "1b4ecaf351e953e3ee211248a58133b1"
