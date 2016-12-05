@@ -87,6 +87,9 @@ class SingleActivityVC: UIViewController {
             let filledImage = UIImage(named: "heart-black-filled")
             self.likeButton.setImage(filledImage, for: .normal)
             
+            activityObject?.noOfLikes += 1
+            self.likesLabel.text = String(describing: (activityObject?.noOfLikes)!) + " likes"
+            
             let followClass = PFObject(className:"likes")
             followClass["title"] = activityObject?.title
             followClass["username"] = PFUser.current()?.username
@@ -108,6 +111,9 @@ class SingleActivityVC: UIViewController {
             
             let filledImage = UIImage(named: "heard-black")
             self.likeButton.setImage(filledImage, for: .normal)
+            
+            activityObject?.noOfLikes -= 1
+            self.likesLabel.text = String(describing: (activityObject?.noOfLikes)!)  + " likes"
             
             // delete the follow object from
             

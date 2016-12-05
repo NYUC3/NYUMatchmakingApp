@@ -34,8 +34,8 @@ class LoginVC: UIViewController {
                     
                 else {
                     // The login failed. Check error to see why.
-                    let alertController = UIAlertController(title: "Something went wrong!", message:
-                        error.debugDescription , preferredStyle: UIAlertControllerStyle.alert)
+                    let alertController = UIAlertController(title: "Could not login!", message:
+                        error?.localizedDescription , preferredStyle: UIAlertControllerStyle.alert)
                     alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
                     self.present(alertController, animated: true, completion: nil)
                 }

@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C7Project7LoginVC", ""]
 provides-dynamic-lookup:
+- "password"
 - "LoginTapped"
 - "unwindToLogin"
-- "password"
 - "email"
 - "viewDidLoad"
 depends-top-level:
-- !private "UIAlertActionStyle"
-- !private "!="
 - !private "UIAlertController"
-- "LoginVC"
-- "UIViewController"
-- !private "UIAlertAction"
-- !private "UIStoryboard"
-- "UIButton"
-- !private "&&"
-- "UITextField"
-- "BooleanLiteralType"
-- !private "Void"
-- !private "CastingPrecedence"
-- "UIStoryboardSegue"
-- !private "UITabBarController"
-- !private "Error"
 - !private "UIAlertControllerStyle"
+- !private "&&"
 - !private "PFUser"
+- "UIStoryboardSegue"
+- "LoginVC"
+- !private "UITabBarController"
+- "UIViewController"
+- !private "Error"
+- "UIButton"
+- "BooleanLiteralType"
+- !private "!="
+- !private "UIStoryboard"
+- !private "UIAlertAction"
+- "UITextField"
+- !private "CastingPrecedence"
+- !private "UIAlertActionStyle"
+- !private "Void"
 - !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "LoginTapped"]
@@ -80,7 +80,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertControllerStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
-- !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
 - ["Ps28CustomDebugStringConvertible", "email"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
@@ -94,7 +93,6 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
-- !private ["Ps17CustomReflectable", "debugDescription"]
 - !private ["Ps17CustomReflectable", "init"]
 - ["Ps23CustomStringConvertible", "LoginTapped"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
@@ -136,9 +134,10 @@ depends-member:
 - ["Ps9Equatable", "unwindToLogin"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["Ps5Error", "deinit"]
+- !private ["Ps5Error", "localizedDescription"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps23ExpressibleByNilLiteral", "debugDescription"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -264,7 +263,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- !private ["Sq", "debugDescription"]
 - ["Sq", "deinit"]
 - !private ["CSo8PFObject", "logInWithUsername"]
 - !private ["PSo13PFSubclassing", "logInWithUsername"]
@@ -466,7 +464,6 @@ depends-member:
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "debugDescription"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
@@ -480,9 +477,9 @@ depends-nominal:
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps5Error"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
