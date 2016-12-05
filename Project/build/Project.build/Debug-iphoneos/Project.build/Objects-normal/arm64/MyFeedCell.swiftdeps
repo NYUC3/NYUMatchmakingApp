@@ -7,16 +7,16 @@ provides-member:
 - ["C7Project10MyFeedCell", ""]
 provides-dynamic-lookup:
 - "setSelected"
+- "myProjectLabel"
 - "awakeFromNib"
+- "myFeedImageView"
 - "myActivityDiscription"
 - "myTitleLabel"
-- "myFeedImageView"
-- "myProjectLabel"
 depends-top-level:
-- "UILabel"
-- "UIImageView"
-- "Bool"
 - "MyFeedCell"
+- "UILabel"
+- "Bool"
+- "UIImageView"
 - "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]

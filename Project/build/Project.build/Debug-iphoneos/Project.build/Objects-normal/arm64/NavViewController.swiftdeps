@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C7Project17NavViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "NSFontAttributeName"
 - !private "UIControlState"
-- !private "UIBarButtonItem"
-- !private "UIFont"
 - "NavViewController"
 - !private "UIColor"
-- !private "Dictionary"
-- "UINavigationController"
-- "AssignmentPrecedence"
 - !private "StringLiteralType"
+- "UINavigationController"
+- !private "UIBarButtonItem"
+- !private "Dictionary"
+- !private "NSFontAttributeName"
+- "AssignmentPrecedence"
+- !private "UIFont"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
