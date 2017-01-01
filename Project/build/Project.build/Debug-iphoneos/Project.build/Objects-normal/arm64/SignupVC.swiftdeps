@@ -6,34 +6,34 @@ provides-nominal:
 provides-member:
 - ["C7Project8SignupVC", ""]
 provides-dynamic-lookup:
-- "SignupTappd"
 - "viewDidLoad"
-- "password"
-- "confirmpassword"
 - "email"
+- "SignupTappd"
+- "confirmpassword"
+- "password"
 depends-top-level:
-- "BooleanLiteralType"
-- !private "Error"
-- "UITextField"
-- !private "Bool"
-- !private "&&"
-- !private "UIAlertAction"
-- !private "StringLiteralType"
-- !private "UIStoryboard"
-- !private "Void"
-- !private "!="
-- !private "PFUser"
-- "SignupVC"
-- !private "CustomTabbarVC"
 - !private "CastingPrecedence"
+- !private "&&"
+- !private "UIStoryboard"
+- !private "StringLiteralType"
+- !private "UIAlertControllerStyle"
+- "BooleanLiteralType"
+- !private "PFUser"
+- !private "UIAlertActionStyle"
+- "UITextField"
+- "UIButton"
+- !private "UIAlertController"
+- "UIViewController"
+- !private "Void"
+- "SignupVC"
+- !private "Error"
+- !private "UIAlertAction"
+- !private "print"
+- !private "CustomTabbarVC"
 - !private "=="
 - "AssignmentPrecedence"
-- !private "UIAlertActionStyle"
-- "UIViewController"
-- "UIButton"
-- !private "print"
-- !private "UIAlertController"
-- !private "UIAlertControllerStyle"
+- !private "!="
+- !private "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "PFUser"]
 - ["Ps9AnyObject", "SignupTappd"]
@@ -80,6 +80,7 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
+- !private ["Ps28CustomDebugStringConvertible", "RawValue"]
 - ["Ps28CustomDebugStringConvertible", "SignupTappd"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
@@ -101,6 +102,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "RawValue"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "PFUser"]
@@ -152,6 +154,7 @@ depends-member:
 - !private ["Ps5Error", "localizedDescription"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "RawValue"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -265,6 +268,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
+- !private ["Sq", "RawValue"]
 - ["Sq", "deinit"]
 - !private ["CSo8PFObject", "email"]
 - !private ["CSo8PFObject", "init"]
@@ -508,6 +512,7 @@ depends-member:
 - !private ["Ps9_Hashable", "username"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "RawValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
@@ -526,6 +531,7 @@ depends-nominal:
 - !private "Ps5Error"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"

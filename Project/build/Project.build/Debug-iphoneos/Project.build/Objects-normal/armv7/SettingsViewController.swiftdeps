@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C7Project22SettingsViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
 - "logoutTapped"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIButton"
-- "UIViewController"
-- "SettingsViewController"
 - !private "PFUser"
+- "UIButton"
+- "SettingsViewController"
+- "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "PFUser"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]

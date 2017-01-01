@@ -9,11 +9,11 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- !private "UIColor"
-- "AssignmentPrecedence"
 - !private "UITabBar"
-- "CustomTabbarVC"
 - "UITabBarController"
+- "AssignmentPrecedence"
+- !private "UIColor"
+- "CustomTabbarVC"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UITabBar"]

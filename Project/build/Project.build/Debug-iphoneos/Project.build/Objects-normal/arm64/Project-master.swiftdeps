@@ -1,6 +1,6 @@
-version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
-options: "8f79a75501af0700a94c97b1158ef39e"
-build_time: [534273408, 162448000]
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "98580721827f353cec0672bc90fbc22a"
+build_time: [536522885, 129648000]
 inputs:
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateNewActivityVC.swift": [534194571, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/MyFeedVC.swift": [531424272, 0]

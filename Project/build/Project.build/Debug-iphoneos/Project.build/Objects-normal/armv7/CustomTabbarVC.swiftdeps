@@ -12,8 +12,8 @@ depends-top-level:
 - !private "UITabBar"
 - !private "UIColor"
 - "CustomTabbarVC"
-- "UITabBarController"
 - "AssignmentPrecedence"
+- "UITabBarController"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UITabBar"]

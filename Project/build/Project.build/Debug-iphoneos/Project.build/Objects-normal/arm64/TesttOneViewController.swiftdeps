@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["C7Project22TesttOneViewController", ""]
 provides-dynamic-lookup:
+- "list"
 - "viewDidLoad"
 - "tableView"
 - "tableView"
-- "list"
 depends-top-level:
 - "IndexPath"
-- "UITableView"
-- "TesttOneViewController"
+- "Int"
 - "UITableViewDelegate"
 - "UITableViewDataSource"
-- "StringLiteralType"
+- "UITableView"
 - "Array"
+- "StringLiteralType"
+- "TesttOneViewController"
 - "UITableViewCell"
-- "Int"
 - "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "dequeueReusableCell"]

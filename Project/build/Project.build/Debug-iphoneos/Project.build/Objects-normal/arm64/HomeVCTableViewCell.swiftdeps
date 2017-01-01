@@ -13,9 +13,9 @@ provides-dynamic-lookup:
 - "descriptionLabel"
 - "awakeFromNib"
 depends-top-level:
+- "UIImageView"
 - "UILabel"
 - "HomeVCTableViewCell"
-- "UIImageView"
 - "Bool"
 - "UITableViewCell"
 depends-member:

@@ -9,16 +9,16 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- !private "UIControlState"
-- "NavViewController"
-- !private "UIColor"
-- !private "StringLiteralType"
 - "UINavigationController"
-- !private "UIBarButtonItem"
-- !private "Dictionary"
+- !private "UIControlState"
 - !private "NSFontAttributeName"
-- "AssignmentPrecedence"
 - !private "UIFont"
+- "AssignmentPrecedence"
+- !private "Dictionary"
+- "NavViewController"
+- !private "StringLiteralType"
+- !private "UIColor"
+- !private "UIBarButtonItem"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]

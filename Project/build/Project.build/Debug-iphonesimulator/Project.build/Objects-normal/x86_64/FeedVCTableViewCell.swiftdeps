@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C7Project19FeedVCTableViewCell", ""]
 provides-dynamic-lookup:
-- "projectNameLabel"
-- "noOfLikes"
-- "setSelected"
 - "likeButton"
 - "timeStampLabel"
-- "awakeFromNib"
-- "feedImage"
+- "setSelected"
 - "feedTitleLabel"
 - "feedDescriptionLabel"
+- "awakeFromNib"
+- "feedImage"
+- "noOfLikes"
+- "projectNameLabel"
 depends-top-level:
-- "Bool"
-- "UILabel"
-- "UIImageView"
 - "UITableViewCell"
 - "FeedVCTableViewCell"
+- "Bool"
+- "UIImageView"
+- "UILabel"
 - "UIButton"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]

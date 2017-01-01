@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C7Project19HomeVCTableViewCell", ""]
 provides-dynamic-lookup:
-- "descriptionLabel"
+- "projectName"
 - "setSelected"
 - "awakeFromNib"
-- "followersLabel"
-- "projectName"
+- "descriptionLabel"
 - "projectImage"
+- "followersLabel"
 depends-top-level:
-- "UITableViewCell"
 - "HomeVCTableViewCell"
+- "UIImageView"
+- "UITableViewCell"
 - "Bool"
 - "UILabel"
-- "UIImageView"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "descriptionLabel"]

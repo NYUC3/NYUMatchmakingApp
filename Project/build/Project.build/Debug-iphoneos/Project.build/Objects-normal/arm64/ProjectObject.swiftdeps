@@ -7,10 +7,10 @@ provides-member:
 - ["V7Project7Project", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "PFFile"
 - "Project"
+- "PFFile"
 - "AssignmentPrecedence"
+- "String"
 depends-member:
 - ["Sq", "deinit"]
 - ["CSo6PFFile", "deinit"]

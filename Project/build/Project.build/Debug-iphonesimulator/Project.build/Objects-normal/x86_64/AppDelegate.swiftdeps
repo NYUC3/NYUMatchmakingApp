@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C7Project11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillTerminate"
+- "applicationDidEnterBackground"
 - "application"
+- "applicationWillTerminate"
+- "window"
 - "applicationWillResignActive"
 - "applicationDidBecomeActive"
-- "window"
 - "applicationWillEnterForeground"
-- "applicationDidEnterBackground"
 depends-top-level:
-- "StringLiteralType"
-- "UIWindow"
 - !private "BooleanLiteralType"
-- !private "ParseClientConfiguration"
-- "Bool"
-- !private "Parse"
-- "UIApplicationDelegate"
-- !private "AssignmentPrecedence"
 - "UIResponder"
-- "UIApplicationLaunchOptionsKey"
+- "Bool"
+- "StringLiteralType"
 - "UIApplication"
+- "UIApplicationDelegate"
+- "UIWindow"
 - "AppDelegate"
+- "UIApplicationLaunchOptionsKey"
+- !private "AssignmentPrecedence"
+- !private "Parse"
+- !private "ParseClientConfiguration"
 depends-member:
 - !private ["Ps9AnyObject", "Parse"]
 - !private ["Ps9AnyObject", "ParseClientConfiguration"]

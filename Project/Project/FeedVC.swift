@@ -130,6 +130,9 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                         self.daTableView.reloadData()
                         self.daTableView.isHidden = false
                     }
+                    else{
+                        self.daTableView.isHidden = true
+                    }
                 }
             }
             else {

@@ -6,62 +6,62 @@ provides-nominal:
 provides-member:
 - ["C7Project6FeedVC", ""]
 provides-dynamic-lookup:
+- "processTimestamp"
+- "overlay"
+- "queryActivities"
 - "tableView"
 - "tableView"
 - "daTableView"
 - "buttonClicked"
 - "viewDidLoad"
-- "projectsFollowing"
 - "viewDidAppear"
-- "overlay"
-- "processTimestamp"
+- "projectsFollowing"
 - "prepare"
-- "queryActivities"
 depends-top-level:
-- "AssignmentPrecedence"
-- !private "Dictionary"
-- "CastingPrecedence"
-- "String"
+- "BooleanLiteralType"
+- !private "-"
+- !private "!"
+- "UITableViewDataSource"
+- "Int"
+- "UITableViewDelegate"
 - "UITableViewCell"
-- !private "PFObject"
-- !private "Error"
-- !private "PFFile"
-- !private "=="
-- !private "PFQuery"
-- "ExtendedGraphemeClusterType"
+- "UIButton"
 - !private "+="
+- "UIViewController"
+- !private "Error"
 - !private "Void"
-- !private "PFUser"
-- "IndexPath"
-- "Feed"
+- !private "PFFile"
+- !private "+"
+- "AssignmentPrecedence"
+- "FeedVC"
+- !private "FeedVCTableViewCell"
+- !private "=="
+- !private "NSFontAttributeName"
+- "CastingPrecedence"
+- !private "UIControlEvents"
 - "UIView"
+- !private "UIFont"
+- !private "UIImage"
+- !private "Data"
+- !private "UnicodeScalarType"
+- !private "Dictionary"
+- !private "PFObject"
+- !private "-="
+- !private "SingleActivityVC"
+- !private "StringLiteralType"
+- "UITableView"
+- !private "print"
+- !private "PFQuery"
+- "UIStoryboardSegue"
+- !private "PFUser"
+- "String"
+- !private "UINavigationController"
+- "Feed"
+- "Bool"
+- "ExtendedGraphemeClusterType"
+- "IndexPath"
 - !private "Array"
 - !private "!="
-- !private "!"
-- "Bool"
-- "UIButton"
-- !private "UIImage"
-- !private "-"
-- !private "-="
-- "UITableViewDataSource"
-- "UITableView"
-- !private "UnicodeScalarType"
-- "UITableViewDelegate"
-- "UIStoryboardSegue"
-- "BooleanLiteralType"
-- !private "+"
-- "FeedVC"
-- !private "print"
-- "Int"
-- "UIViewController"
-- !private "FeedVCTableViewCell"
-- !private "UIControlEvents"
-- !private "NSFontAttributeName"
-- !private "StringLiteralType"
-- !private "UINavigationController"
-- !private "UIFont"
-- !private "Data"
-- !private "SingleActivityVC"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - ["Ps9AnyObject", "Feed"]
@@ -359,6 +359,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "PFObject"]
 - !private ["Ps28CustomDebugStringConvertible", "PFQuery"]
 - !private ["Ps28CustomDebugStringConvertible", "PFUser"]
+- !private ["Ps28CustomDebugStringConvertible", "RawValue"]
 - ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIControlEvents"]
@@ -454,6 +455,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
 - !private ["Ps17CustomReflectable", "Iterator"]
 - !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "RawValue"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "Value"]
@@ -695,6 +697,7 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps23ExpressibleByNilLiteral", "RawValue"]
 - !private ["Ps32ExpressibleByStringInterpolation", "characters"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "characters"]
@@ -1262,6 +1265,7 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - !private ["Ps9OptionSet", "normal"]
 - !private ["Ps9OptionSet", "touchUpInside"]
+- !private ["Sq", "RawValue"]
 - ["Sq", "deinit"]
 - ["CSo6PFFile", "deinit"]
 - !private ["CSo6PFFile", "getDataInBackground"]
@@ -2355,6 +2359,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "RawValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
@@ -2411,6 +2416,7 @@ depends-nominal:
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"

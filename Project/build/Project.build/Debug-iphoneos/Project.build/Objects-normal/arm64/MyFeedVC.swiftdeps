@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C7Project8MyFeedVC", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - "UIViewController"
 - "MyFeedVC"

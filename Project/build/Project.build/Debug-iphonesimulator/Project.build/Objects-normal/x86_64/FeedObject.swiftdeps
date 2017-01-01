@@ -7,14 +7,16 @@ provides-member:
 - ["V7Project4Feed", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
-- "BooleanLiteralType"
-- "Bool"
-- "Feed"
 - "PFFile"
+- "Bool"
+- "AssignmentPrecedence"
+- "FloatLiteralType"
+- "Feed"
+- "IntegerLiteralType"
 - "Int"
 - "String"
-- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Sb", "deinit"]
