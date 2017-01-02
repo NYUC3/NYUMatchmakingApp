@@ -19,6 +19,7 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
         self.emailLabel.text = PFUser.current()?.email
         self.navigationController?.navigationBar.tintColor = UIColor.white
         
