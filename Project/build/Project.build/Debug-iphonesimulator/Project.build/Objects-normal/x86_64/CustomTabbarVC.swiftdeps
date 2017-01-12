@@ -9,10 +9,10 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- "UITabBarController"
-- !private "UITabBar"
-- "CustomTabbarVC"
 - !private "UIColor"
+- !private "UITabBar"
+- "UITabBarController"
+- "CustomTabbarVC"
 - "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
@@ -21,7 +21,6 @@ depends-member:
 - !private ["Ps9AnyObject", "backgroundColor"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "red"]
 - !private ["Ps9AnyObject", "tintColor"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "white"]
@@ -35,7 +34,6 @@ depends-member:
 - !private ["Ps7CVarArg", "backgroundColor"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "red"]
 - !private ["Ps7CVarArg", "tintColor"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - !private ["Ps7CVarArg", "white"]
@@ -46,7 +44,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "red"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "white"]
@@ -57,7 +54,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "red"]
 - !private ["Ps23CustomStringConvertible", "tintColor"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - !private ["Ps23CustomStringConvertible", "white"]
@@ -74,7 +70,6 @@ depends-member:
 - !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "red"]
 - !private ["Ps9Equatable", "tintColor"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "white"]
@@ -85,7 +80,6 @@ depends-member:
 - !private ["Ps8Hashable", "backgroundColor"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "red"]
 - !private ["Ps8Hashable", "tintColor"]
 - ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "white"]
@@ -97,12 +91,10 @@ depends-member:
 - !private ["PSo8NSCoding", "backgroundColor"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "red"]
 - !private ["PSo8NSCoding", "tintColor"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - !private ["PSo8NSCoding", "white"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "red"]
 - !private ["PSo9NSCopying", "white"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UITabBar"]
@@ -116,7 +108,6 @@ depends-member:
 - !private ["CSo8NSObject", "backgroundColor"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "red"]
 - !private ["CSo8NSObject", "tintColor"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["CSo8NSObject", "white"]
@@ -126,12 +117,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "red"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "red"]
 - !private ["PSo14NSSecureCoding", "white"]
 - ["Sq", "deinit"]
 - !private ["PSo29UIAccessibilityIdentification", "appearance"]
@@ -150,7 +139,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo7UIColor", "deinit"]
-- !private ["CSo7UIColor", "red"]
 - !private ["CSo7UIColor", "white"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UITabBar"]
@@ -236,7 +224,6 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "appearance"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tintColor"]
-- !private ["Ps26_ExpressibleByColorLiteral", "red"]
 - !private ["Ps26_ExpressibleByColorLiteral", "white"]
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UITabBar"]
@@ -244,7 +231,6 @@ depends-member:
 - !private ["Ps9_Hashable", "backgroundColor"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "red"]
 - !private ["Ps9_Hashable", "tintColor"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - !private ["Ps9_Hashable", "white"]

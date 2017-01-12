@@ -15,7 +15,7 @@ class CustomTabbarVC: UITabBarController {
 
         // Do any additional setup after loading the view.
         
-        UITabBar.appearance().tintColor = UIColor.red
+        UITabBar.appearance().tintColor = UIColor.white
         UITabBar.appearance().backgroundColor = UIColor.white
     }
 
