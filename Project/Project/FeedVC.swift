@@ -13,7 +13,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var feedList = [Feed]()
     var projectsFollowing = [String]()
-    
+    var project : Project?
      var overlay : UIView?
 
     @IBOutlet weak var daTableView: UITableView! // This is a bad name
@@ -109,6 +109,8 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         feedList = []
         projectsFollowing = []
         
+        
+      
         let user = PFUser.current()?.username
         let query = PFQuery(className: "Follow")
         query.whereKey("username", equalTo: user!)
@@ -311,5 +313,8 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
 
+    @IBAction func backTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }

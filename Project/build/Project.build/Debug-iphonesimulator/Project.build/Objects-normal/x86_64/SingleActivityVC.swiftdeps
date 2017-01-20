@@ -6,47 +6,48 @@ provides-nominal:
 provides-member:
 - ["C7Project16SingleActivityVC", ""]
 provides-dynamic-lookup:
-- "likesLabel"
-- "likeButtonTapped"
+- "activityDescriptionLabel"
 - "viewDidAppear"
+- "likeButton"
+- "likeButtonTapped"
+- "activityImage"
+- "viewDidLoad"
 - "activityTitleLabel"
 - "backButton"
-- "activityImage"
+- "likesLabel"
 - "backButtonTapped"
-- "viewDidLoad"
-- "activityDescriptionLabel"
-- "likeButton"
 depends-top-level:
-- !private "UIFont"
-- !private "Dictionary"
-- !private "Void"
-- "Feed"
-- "SingleActivityVC"
-- "UIViewController"
-- "UIButton"
-- !private "NSFontAttributeName"
-- "UIBarButtonItem"
-- !private "-="
+- "UIImageView"
+- "Project"
+- !private "String"
+- !private "PFQuery"
+- !private "PFObject"
+- !private "BooleanLiteralType"
 - !private "!"
+- !private "print"
+- !private "StringLiteralType"
+- !private "UIControlState"
+- "UIBarButtonItem"
+- "Bool"
+- !private "PFUser"
+- "SingleActivityVC"
+- !private "Dictionary"
+- !private "+"
+- "UIButton"
+- "UIViewController"
+- !private "UIImage"
+- !private "Void"
+- !private "-="
+- "UILabel"
+- !private "CastingPrecedence"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "CastingPrecedence"
-- "Bool"
-- !private "UIImage"
-- !private "+"
-- !private "PFObject"
-- !private "StringLiteralType"
-- "UILabel"
+- "Feed"
+- !private "NSFontAttributeName"
 - !private "Error"
-- !private "UIControlState"
-- !private "print"
-- !private "+="
-- !private "PFUser"
-- "UIImageView"
 - !private "Data"
-- !private "PFQuery"
-- !private "String"
-- !private "BooleanLiteralType"
+- !private "+="
+- !private "UIFont"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "PFObject"]
@@ -77,6 +78,7 @@ depends-member:
 - !private ["Ps9AnyObject", "navigationBar"]
 - !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "projectObject"]
 - !private ["Ps9AnyObject", "saveInBackground"]
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "setTitleTextAttributes"]
@@ -136,6 +138,7 @@ depends-member:
 - !private ["Ps7CVarArg", "navigationBar"]
 - !private ["Ps7CVarArg", "navigationController"]
 - !private ["Ps7CVarArg", "print"]
+- ["Ps7CVarArg", "projectObject"]
 - !private ["Ps7CVarArg", "saveInBackground"]
 - !private ["Ps7CVarArg", "setImage"]
 - !private ["Ps7CVarArg", "setTitleTextAttributes"]
@@ -186,6 +189,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "projectObject"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
@@ -239,6 +243,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "navigationBar"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "projectObject"]
 - !private ["Ps23CustomStringConvertible", "saveInBackground"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
@@ -286,6 +291,7 @@ depends-member:
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "normal"]
 - !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "projectObject"]
 - !private ["Ps9Equatable", "saveInBackground"]
 - !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "setTitleTextAttributes"]
@@ -345,6 +351,7 @@ depends-member:
 - !private ["Ps8Hashable", "navigationBar"]
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "projectObject"]
 - !private ["Ps8Hashable", "saveInBackground"]
 - !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "setTitleTextAttributes"]
@@ -405,6 +412,7 @@ depends-member:
 - !private ["PSo8NSCoding", "navigationBar"]
 - !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "projectObject"]
 - !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setTitleTextAttributes"]
 - !private ["PSo8NSCoding", "text"]
@@ -438,6 +446,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "projectObject"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -450,6 +459,7 @@ depends-member:
 - !private ["CSo8NSObject", "PFObject"]
 - !private ["CSo8NSObject", "PFQuery"]
 - !private ["CSo8NSObject", "PFUser"]
+- ["CSo8NSObject", "Project"]
 - !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - ["CSo8NSObject", "UIButton"]
@@ -479,6 +489,7 @@ depends-member:
 - !private ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "projectObject"]
 - !private ["CSo8NSObject", "saveInBackground"]
 - !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "setTitleTextAttributes"]
@@ -518,6 +529,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "projectObject"]
 - !private ["PSo16NSObjectProtocol", "saveInBackground"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
@@ -551,6 +563,7 @@ depends-member:
 - !private ["CSo6PFUser", "current"]
 - ["CSo6PFUser", "deinit"]
 - !private ["CSo6PFUser", "username"]
+- !private ["V7Project7Project", "name"]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps21RandomAccessIndexable", "Iterator"]
@@ -574,6 +587,7 @@ depends-member:
 - !private ["C7Project16SingleActivityVC", "PFObject"]
 - !private ["C7Project16SingleActivityVC", "PFQuery"]
 - !private ["C7Project16SingleActivityVC", "PFUser"]
+- ["C7Project16SingleActivityVC", "Project"]
 - !private ["C7Project16SingleActivityVC", "String"]
 - ["C7Project16SingleActivityVC", "UIBarButtonItem"]
 - ["C7Project16SingleActivityVC", "UIButton"]
@@ -597,6 +611,7 @@ depends-member:
 - ["C7Project16SingleActivityVC", "likesLabel"]
 - !private ["C7Project16SingleActivityVC", "navigationController"]
 - !private ["C7Project16SingleActivityVC", "print"]
+- ["C7Project16SingleActivityVC", "projectObject"]
 - ["C7Project16SingleActivityVC", "viewDidAppear"]
 - ["C7Project16SingleActivityVC", "viewDidLoad"]
 - ["SS", "deinit"]
@@ -640,6 +655,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "projectObject"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
@@ -676,6 +692,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navigationBar"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "projectObject"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
@@ -715,6 +732,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "projectObject"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
@@ -743,6 +761,7 @@ depends-member:
 - !private ["CSo11UIResponder", "PFObject"]
 - !private ["CSo11UIResponder", "PFQuery"]
 - !private ["CSo11UIResponder", "PFUser"]
+- ["CSo11UIResponder", "Project"]
 - !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - ["CSo11UIResponder", "UIButton"]
@@ -767,6 +786,7 @@ depends-member:
 - !private ["CSo11UIResponder", "navigationBar"]
 - !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "projectObject"]
 - !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
@@ -796,6 +816,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "navigationBar"]
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
+- ["PSo30UIResponderStandardEditActions", "projectObject"]
 - !private ["PSo30UIResponderStandardEditActions", "setImage"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "titleTextAttributes"]
@@ -825,6 +846,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navigationBar"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "projectObject"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
@@ -852,6 +874,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "navigationBar"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "projectObject"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
@@ -870,6 +893,7 @@ depends-member:
 - !private ["CSo16UIViewController", "PFObject"]
 - !private ["CSo16UIViewController", "PFQuery"]
 - !private ["CSo16UIViewController", "PFUser"]
+- ["CSo16UIViewController", "Project"]
 - !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - ["CSo16UIViewController", "UIButton"]
@@ -894,6 +918,7 @@ depends-member:
 - !private ["CSo16UIViewController", "navigationBar"]
 - !private ["CSo16UIViewController", "navigationController"]
 - !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "projectObject"]
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
@@ -948,6 +973,7 @@ depends-member:
 - !private ["Ps9_Hashable", "navigationBar"]
 - !private ["Ps9_Hashable", "navigationController"]
 - !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "projectObject"]
 - !private ["Ps9_Hashable", "saveInBackground"]
 - !private ["Ps9_Hashable", "setImage"]
 - !private ["Ps9_Hashable", "setTitleTextAttributes"]
@@ -1028,6 +1054,7 @@ depends-nominal:
 - "CSo7PFQuery"
 - !private "PSo13PFSubclassing"
 - "CSo6PFUser"
+- !private "V7Project7Project"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
 - !private "Ps26RangeReplaceableCollection"
@@ -1156,4 +1183,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "58e92a43d0e64f9030a0cdf252461ddb"
+interface-hash: "f76f4175f00ae88cc1f10f049a515fae"

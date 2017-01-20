@@ -15,6 +15,7 @@
 		C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A29AF1DB8403800275843 /* SettingsViewController.swift */; };
 		C23BBF331DA6AE7800202169 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF321DA6AE7800202169 /* LoginVC.swift */; };
 		C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23BBF341DA6B21100202169 /* SignupVC.swift */; };
+		C245EFDF1E31A73000A99B58 /* ProjectFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C245EFDE1E31A73000A99B58 /* ProjectFeedViewController.swift */; };
 		C26DDF431D93499300429DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF421D93499300429DE4 /* AppDelegate.swift */; };
 		C26DDF481D93499300429DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26DDF461D93499300429DE4 /* Main.storyboard */; };
 		C26DDF4A1D93499300429DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C26DDF491D93499300429DE4 /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 		C23A29AF1DB8403800275843 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C23BBF321DA6AE7800202169 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C23BBF341DA6B21100202169 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		C245EFDE1E31A73000A99B58 /* ProjectFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectFeedViewController.swift; sourceTree = "<group>"; };
 		C26DDF3F1D93499300429DE4 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26DDF421D93499300429DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C26DDF471D93499300429DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */,
 				C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */,
 				C26DDF931D935A4A00429DE4 /* FeedVC.swift */,
+				C245EFDE1E31A73000A99B58 /* ProjectFeedViewController.swift */,
 				C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */,
 				C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */,
 				C26DDF951D935B8500429DE4 /* AddActivityVC.swift */,
@@ -445,6 +448,7 @@
 				C26DDF901D93595A00429DE4 /* HomeViewController.swift in Sources */,
 				C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */,
 				C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */,
+				C245EFDF1E31A73000A99B58 /* ProjectFeedViewController.swift in Sources */,
 				C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */,
 				C236D2291DEF7F91008A392C /* SingleActivityVC.swift in Sources */,
 				C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */,

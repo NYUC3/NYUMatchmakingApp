@@ -12,7 +12,7 @@ import Parse
 class SingleActivityVC: UIViewController {
     
     var activityObject : Feed? // get the feedObject from tha tableview
-    
+    var projectObject : Project?
     @IBOutlet weak var activityTitleLabel: UILabel! //
     @IBOutlet weak var activityDescriptionLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
@@ -54,7 +54,7 @@ class SingleActivityVC: UIViewController {
         
         let query = PFQuery(className:"likes")
         query.whereKey("username", equalTo: (PFUser.current()?.username)!)
-        //query.whereKey("project", equalTo: projectOject?.name)
+        query.whereKey("project", equalTo: projectObject?.name)
         query.findObjectsInBackground {
             (objects: [PFObject]?, error: Error?) -> Void in
             
@@ -140,7 +140,7 @@ class SingleActivityVC: UIViewController {
             
         }
         
-        
+    
         
     }
     

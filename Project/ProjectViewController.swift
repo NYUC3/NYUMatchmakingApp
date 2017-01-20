@@ -178,5 +178,13 @@ class ProjectViewController: UIViewController, UITableViewDataSource, UITableVie
         
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "project-feed"){
+            let destinationNavigationController = segue.destination as! UINavigationController
+            let targetController = destinationNavigationController.topViewController as! ProjectFeedViewController
+            targetController.project = projectOject
+        }
 
+    }
+    
 }

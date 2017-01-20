@@ -229,7 +229,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="HGq-Lc-OSA"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                                             <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -995,7 +995,7 @@
                                 <rect key="frame" x="26" y="516" width="323" height="30"/>
                                 <state key="normal" title="View Activity"/>
                                 <connections>
-                                    <segue destination="EeK-G7-ejc" kind="show" id="R86-mM-FAb"/>
+                                    <segue destination="EeK-G7-ejc" kind="show" identifier="project-feed" id="R86-mM-FAb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1657,7 +1657,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkE-Vk-ptL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="2465"/>
+            <point key="canvasLocation" x="1812" y="4775"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hJs-PR-90x">
@@ -1681,7 +1681,7 @@
         <!--Activity-->
         <scene sceneID="pY6-Oc-pwb">
             <objects>
-                <viewController title="Activity" id="XvT-aV-QT7" customClass="FeedVC" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Activity" id="XvT-aV-QT7" customClass="ProjectFeedViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uw3-2c-6yl"/>
                         <viewControllerLayoutGuide type="bottom" id="X4s-K6-BbF"/>
@@ -1694,7 +1694,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="feed-cell" rowHeight="405" id="Jh0-Iu-6Sg" customClass="FeedVCTableViewCell" customModule="Project" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="feed-cell-2" rowHeight="405" id="Jh0-Iu-6Sg" customClass="FeedVCTableViewCell" customModule="Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="405"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jh0-Iu-6Sg" id="3tp-Yg-ndf">
@@ -1826,9 +1826,16 @@
                             <constraint firstAttribute="trailing" secondItem="68M-G1-DYH" secondAttribute="trailing" id="ykw-li-WY3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ACTIVITES" id="sui-wd-Hd8"/>
+                    <navigationItem key="navigationItem" title="ACTIVITES" id="sui-wd-Hd8">
+                        <barButtonItem key="leftBarButtonItem" title="back" id="aHG-Jo-GUZ">
+                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <connections>
+                                <action selector="backTapped:" destination="XvT-aV-QT7" id="AWJ-y5-nuX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="daTableView" destination="68M-G1-DYH" id="WPw-1z-d8H"/>
+                        <outlet property="theTableView" destination="68M-G1-DYH" id="2aM-Md-eYa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JP5-Gf-Tbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1840,7 +1847,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EeK-G7-ejc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uMA-dt-VZs">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="uMA-dt-VZs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
