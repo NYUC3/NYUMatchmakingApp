@@ -6,75 +6,46 @@ provides-nominal:
 provides-member:
 - ["C7Project19HomeVCTableViewCell", ""]
 provides-dynamic-lookup:
-- "projectName"
-- "setSelected"
 - "awakeFromNib"
 - "descriptionLabel"
-- "projectImage"
 - "followersLabel"
+- "projectImage"
+- "projectName"
+- "setSelected"
 depends-top-level:
+- "Bool"
 - "HomeVCTableViewCell"
 - "UIImageView"
-- "UITableViewCell"
-- "Bool"
 - "UILabel"
+- "UITableViewCell"
 depends-member:
-- ["Ps9AnyObject", "awakeFromNib"]
-- ["Ps9AnyObject", "descriptionLabel"]
-- ["Ps9AnyObject", "followersLabel"]
+- !private ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "projectImage"]
-- ["Ps9AnyObject", "projectName"]
-- ["Ps9AnyObject", "setSelected"]
+- !private ["Ps9AnyObject", "setSelected"]
 - ["Ps9AnyObject", ""]
-- ["Sb", "deinit"]
-- ["PSo15CALayerDelegate", "awakeFromNib"]
-- ["PSo15CALayerDelegate", "descriptionLabel"]
-- ["PSo15CALayerDelegate", "followersLabel"]
+- !private ["PSo15CALayerDelegate", "awakeFromNib"]
 - !private ["PSo15CALayerDelegate", "init"]
-- ["PSo15CALayerDelegate", "projectImage"]
-- ["PSo15CALayerDelegate", "projectName"]
-- ["PSo15CALayerDelegate", "setSelected"]
+- !private ["PSo15CALayerDelegate", "setSelected"]
 - ["PSo15CALayerDelegate", ""]
-- ["Ps7CVarArg", "awakeFromNib"]
-- ["Ps7CVarArg", "descriptionLabel"]
-- ["Ps7CVarArg", "followersLabel"]
+- !private ["Ps7CVarArg", "awakeFromNib"]
 - !private ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "projectImage"]
-- ["Ps7CVarArg", "projectName"]
-- ["Ps7CVarArg", "setSelected"]
+- !private ["Ps7CVarArg", "setSelected"]
 - ["Ps7CVarArg", ""]
-- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
-- ["Ps28CustomDebugStringConvertible", "descriptionLabel"]
-- ["Ps28CustomDebugStringConvertible", "followersLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "projectImage"]
-- ["Ps28CustomDebugStringConvertible", "projectName"]
-- ["Ps28CustomDebugStringConvertible", "setSelected"]
+- !private ["Ps28CustomDebugStringConvertible", "setSelected"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- ["Ps23CustomStringConvertible", "awakeFromNib"]
-- ["Ps23CustomStringConvertible", "descriptionLabel"]
-- ["Ps23CustomStringConvertible", "followersLabel"]
+- !private ["Ps23CustomStringConvertible", "awakeFromNib"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "projectImage"]
-- ["Ps23CustomStringConvertible", "projectName"]
-- ["Ps23CustomStringConvertible", "setSelected"]
+- !private ["Ps23CustomStringConvertible", "setSelected"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Ps9Equatable", "awakeFromNib"]
-- ["Ps9Equatable", "descriptionLabel"]
-- ["Ps9Equatable", "followersLabel"]
+- !private ["Ps9Equatable", "awakeFromNib"]
 - !private ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "projectImage"]
-- ["Ps9Equatable", "projectName"]
-- ["Ps9Equatable", "setSelected"]
+- !private ["Ps9Equatable", "setSelected"]
 - ["Ps9Equatable", ""]
-- ["Ps8Hashable", "awakeFromNib"]
-- ["Ps8Hashable", "descriptionLabel"]
-- ["Ps8Hashable", "followersLabel"]
+- !private ["Ps8Hashable", "awakeFromNib"]
 - !private ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "projectImage"]
-- ["Ps8Hashable", "projectName"]
-- ["Ps8Hashable", "setSelected"]
+- !private ["Ps8Hashable", "setSelected"]
 - ["Ps8Hashable", ""]
 - ["C7Project19HomeVCTableViewCell", "Bool"]
 - ["C7Project19HomeVCTableViewCell", "UIImageView"]
@@ -87,15 +58,9 @@ depends-member:
 - ["C7Project19HomeVCTableViewCell", "projectImage"]
 - ["C7Project19HomeVCTableViewCell", "projectName"]
 - ["C7Project19HomeVCTableViewCell", "setSelected"]
-- ["SQ", "deinit"]
-- ["CSo7NSCoder", "deinit"]
-- ["PSo8NSCoding", "awakeFromNib"]
-- ["PSo8NSCoding", "descriptionLabel"]
-- ["PSo8NSCoding", "followersLabel"]
+- !private ["PSo8NSCoding", "awakeFromNib"]
 - !private ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "projectImage"]
-- ["PSo8NSCoding", "projectName"]
-- ["PSo8NSCoding", "setSelected"]
+- !private ["PSo8NSCoding", "setSelected"]
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "UIImageView"]
@@ -107,78 +72,41 @@ depends-member:
 - ["CSo8NSObject", "projectImage"]
 - ["CSo8NSObject", "projectName"]
 - ["CSo8NSObject", "setSelected"]
-- ["PSo16NSObjectProtocol", "awakeFromNib"]
-- ["PSo16NSObjectProtocol", "descriptionLabel"]
-- ["PSo16NSObjectProtocol", "followersLabel"]
+- !private ["PSo16NSObjectProtocol", "awakeFromNib"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "projectImage"]
-- ["PSo16NSObjectProtocol", "projectName"]
-- ["PSo16NSObjectProtocol", "setSelected"]
+- !private ["PSo16NSObjectProtocol", "setSelected"]
 - ["PSo16NSObjectProtocol", ""]
-- ["Sq", "deinit"]
-- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
-- ["PSo29UIAccessibilityIdentification", "descriptionLabel"]
-- ["PSo29UIAccessibilityIdentification", "followersLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
-- ["PSo29UIAccessibilityIdentification", "projectImage"]
-- ["PSo29UIAccessibilityIdentification", "projectName"]
-- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- !private ["PSo29UIAccessibilityIdentification", "setSelected"]
 - ["PSo29UIAccessibilityIdentification", ""]
-- ["PSo12UIAppearance", "awakeFromNib"]
-- ["PSo12UIAppearance", "descriptionLabel"]
-- ["PSo12UIAppearance", "followersLabel"]
+- !private ["PSo12UIAppearance", "awakeFromNib"]
 - !private ["PSo12UIAppearance", "init"]
-- ["PSo12UIAppearance", "projectImage"]
-- ["PSo12UIAppearance", "projectName"]
-- ["PSo12UIAppearance", "setSelected"]
+- !private ["PSo12UIAppearance", "setSelected"]
 - ["PSo12UIAppearance", ""]
-- ["PSo21UIAppearanceContainer", "awakeFromNib"]
-- ["PSo21UIAppearanceContainer", "descriptionLabel"]
-- ["PSo21UIAppearanceContainer", "followersLabel"]
+- !private ["PSo21UIAppearanceContainer", "awakeFromNib"]
 - !private ["PSo21UIAppearanceContainer", "init"]
-- ["PSo21UIAppearanceContainer", "projectImage"]
-- ["PSo21UIAppearanceContainer", "projectName"]
-- ["PSo21UIAppearanceContainer", "setSelected"]
+- !private ["PSo21UIAppearanceContainer", "setSelected"]
 - ["PSo21UIAppearanceContainer", ""]
-- ["PSo17UICoordinateSpace", "awakeFromNib"]
-- ["PSo17UICoordinateSpace", "descriptionLabel"]
-- ["PSo17UICoordinateSpace", "followersLabel"]
+- !private ["PSo17UICoordinateSpace", "awakeFromNib"]
 - !private ["PSo17UICoordinateSpace", "init"]
-- ["PSo17UICoordinateSpace", "projectImage"]
-- ["PSo17UICoordinateSpace", "projectName"]
-- ["PSo17UICoordinateSpace", "setSelected"]
+- !private ["PSo17UICoordinateSpace", "setSelected"]
 - ["PSo17UICoordinateSpace", ""]
-- ["PSo13UIDynamicItem", "awakeFromNib"]
-- ["PSo13UIDynamicItem", "descriptionLabel"]
-- ["PSo13UIDynamicItem", "followersLabel"]
+- !private ["PSo13UIDynamicItem", "awakeFromNib"]
 - !private ["PSo13UIDynamicItem", "init"]
-- ["PSo13UIDynamicItem", "projectImage"]
-- ["PSo13UIDynamicItem", "projectName"]
-- ["PSo13UIDynamicItem", "setSelected"]
+- !private ["PSo13UIDynamicItem", "setSelected"]
 - ["PSo13UIDynamicItem", ""]
-- ["PSo18UIFocusEnvironment", "awakeFromNib"]
-- ["PSo18UIFocusEnvironment", "descriptionLabel"]
-- ["PSo18UIFocusEnvironment", "followersLabel"]
+- !private ["PSo18UIFocusEnvironment", "awakeFromNib"]
 - !private ["PSo18UIFocusEnvironment", "init"]
-- ["PSo18UIFocusEnvironment", "projectImage"]
-- ["PSo18UIFocusEnvironment", "projectName"]
-- ["PSo18UIFocusEnvironment", "setSelected"]
+- !private ["PSo18UIFocusEnvironment", "setSelected"]
 - ["PSo18UIFocusEnvironment", ""]
-- ["PSo11UIFocusItem", "awakeFromNib"]
-- ["PSo11UIFocusItem", "descriptionLabel"]
-- ["PSo11UIFocusItem", "followersLabel"]
+- !private ["PSo11UIFocusItem", "awakeFromNib"]
 - !private ["PSo11UIFocusItem", "init"]
-- ["PSo11UIFocusItem", "projectImage"]
-- ["PSo11UIFocusItem", "projectName"]
-- ["PSo11UIFocusItem", "setSelected"]
+- !private ["PSo11UIFocusItem", "setSelected"]
 - ["PSo11UIFocusItem", ""]
-- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
-- ["PSo27UIGestureRecognizerDelegate", "descriptionLabel"]
-- ["PSo27UIGestureRecognizerDelegate", "followersLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
 - !private ["PSo27UIGestureRecognizerDelegate", "init"]
-- ["PSo27UIGestureRecognizerDelegate", "projectImage"]
-- ["PSo27UIGestureRecognizerDelegate", "projectName"]
-- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- !private ["PSo27UIGestureRecognizerDelegate", "setSelected"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "UIImageView"]
@@ -190,19 +118,14 @@ depends-member:
 - ["CSo11UIResponder", "projectImage"]
 - ["CSo11UIResponder", "projectName"]
 - ["CSo11UIResponder", "setSelected"]
-- ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
-- ["PSo30UIResponderStandardEditActions", "descriptionLabel"]
-- ["PSo30UIResponderStandardEditActions", "followersLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
-- ["PSo30UIResponderStandardEditActions", "projectImage"]
-- ["PSo30UIResponderStandardEditActions", "projectName"]
-- ["PSo30UIResponderStandardEditActions", "setSelected"]
+- !private ["PSo30UIResponderStandardEditActions", "setSelected"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["CSo15UITableViewCell", "Bool"]
 - ["CSo15UITableViewCell", "UIImageView"]
 - ["CSo15UITableViewCell", "UILabel"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
-- ["CSo15UITableViewCell", "deinit"]
 - ["CSo15UITableViewCell", "descriptionLabel"]
 - ["CSo15UITableViewCell", "followersLabel"]
 - ["CSo15UITableViewCell", "init"]
@@ -210,14 +133,9 @@ depends-member:
 - ["CSo15UITableViewCell", "projectName"]
 - ["CSo15UITableViewCell", "setSelected"]
 - ["CSo15UITableViewCell", ""]
-- ["OSC20UITableViewCellStyle", "deinit"]
-- ["PSo18UITraitEnvironment", "awakeFromNib"]
-- ["PSo18UITraitEnvironment", "descriptionLabel"]
-- ["PSo18UITraitEnvironment", "followersLabel"]
+- !private ["PSo18UITraitEnvironment", "awakeFromNib"]
 - !private ["PSo18UITraitEnvironment", "init"]
-- ["PSo18UITraitEnvironment", "projectImage"]
-- ["PSo18UITraitEnvironment", "projectName"]
-- ["PSo18UITraitEnvironment", "setSelected"]
+- !private ["PSo18UITraitEnvironment", "setSelected"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "UIImageView"]
@@ -229,25 +147,16 @@ depends-member:
 - ["CSo6UIView", "projectImage"]
 - ["CSo6UIView", "projectName"]
 - ["CSo6UIView", "setSelected"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "descriptionLabel"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "followersLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "projectImage"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "projectName"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSelected"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
-- ["Ps9_Hashable", "awakeFromNib"]
-- ["Ps9_Hashable", "descriptionLabel"]
-- ["Ps9_Hashable", "followersLabel"]
+- !private ["Ps9_Hashable", "awakeFromNib"]
 - !private ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "projectImage"]
-- ["Ps9_Hashable", "projectName"]
-- ["Ps9_Hashable", "setSelected"]
+- !private ["Ps9_Hashable", "setSelected"]
 - ["Ps9_Hashable", ""]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sb"
 - "PSo15CALayerDelegate"
 - "Ps7CVarArg"
 - "Ps28CustomDebugStringConvertible"
@@ -255,12 +164,9 @@ depends-nominal:
 - "Ps9Equatable"
 - "Ps8Hashable"
 - "C7Project19HomeVCTableViewCell"
-- "SQ"
-- "CSo7NSCoder"
 - "PSo8NSCoding"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "Sq"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -272,7 +178,6 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "CSo15UITableViewCell"
-- "OSC20UITableViewCellStyle"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
@@ -283,10 +188,16 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
@@ -308,6 +219,8 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/BoltsVersion.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Headers/Bolts.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Bolts.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/StoreKit.apinotesc"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPurchase.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFProduct.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/PFPush+Deprecated.h"

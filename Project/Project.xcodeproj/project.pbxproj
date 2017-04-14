@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */; };
 		C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */; };
-		C224B9561DB9328B007265E7 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224B9551DB9328B007265E7 /* ProjectViewController.swift */; };
 		C236D2291DEF7F91008A392C /* SingleActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236D2281DEF7F91008A392C /* SingleActivityVC.swift */; };
 		C236D22B1DEFBC67008A392C /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236D22A1DEFBC67008A392C /* NavViewController.swift */; };
 		C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A29AF1DB8403800275843 /* SettingsViewController.swift */; };
@@ -34,6 +33,16 @@
 		C26DDFA01D938A8500429DE4 /* MyFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */; };
 		C26DDFA21D938ADC00429DE4 /* CreateNewActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */; };
 		C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */; };
+		C26F59CE1E9C2C0600E25F6F /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59C41E9C2BEE00E25F6F /* OpenSans-Bold.ttf */; };
+		C26F59CF1E9C2C0600E25F6F /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59C51E9C2BEE00E25F6F /* OpenSans-BoldItalic.ttf */; };
+		C26F59D01E9C2C0600E25F6F /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59C61E9C2BEE00E25F6F /* OpenSans-ExtraBold.ttf */; };
+		C26F59D11E9C2C0600E25F6F /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59C71E9C2BEE00E25F6F /* OpenSans-ExtraBoldItalic.ttf */; };
+		C26F59D21E9C2C0600E25F6F /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59C81E9C2BEE00E25F6F /* OpenSans-Italic.ttf */; };
+		C26F59D31E9C2C0600E25F6F /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59C91E9C2BEE00E25F6F /* OpenSans-Light.ttf */; };
+		C26F59D41E9C2C0600E25F6F /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59CA1E9C2BEE00E25F6F /* OpenSans-LightItalic.ttf */; };
+		C26F59D51E9C2C0600E25F6F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59CB1E9C2BEE00E25F6F /* OpenSans-Regular.ttf */; };
+		C26F59D61E9C2C0600E25F6F /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59CC1E9C2BEE00E25F6F /* OpenSans-Semibold.ttf */; };
+		C26F59D71E9C2C0600E25F6F /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C26F59CD1E9C2BEE00E25F6F /* OpenSans-SemiboldItalic.ttf */; };
 		C272EB831DEA977E00402E10 /* CropImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272EB821DEA977E00402E10 /* CropImageViewController.swift */; };
 		C2A8DE451DF20CD5009B428E /* CropTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */; };
 		C2A8DE471DF4BE20009B428E /* TesttOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8DE461DF4BE20009B428E /* TesttOneViewController.swift */; };
@@ -47,6 +56,7 @@
 		C2A8DE5F1DF5DA36009B428E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26DDF841D934A6500429DE4 /* SystemConfiguration.framework */; };
 		C2A8DE601DF5DA3B009B428E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C26DDF861D934A6A00429DE4 /* libz.tbd */; };
 		C2A8DE611DF5DA40009B428E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C26DDF881D934A6F00429DE4 /* libsqlite3.tbd */; };
+		C2E9EE3C1EA0392F002BF42A /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E9EE3B1EA0392F002BF42A /* ProjectViewController.swift */; };
 		C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,7 +93,6 @@
 /* Begin PBXFileReference section */
 		C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListVC.swift; sourceTree = SOURCE_ROOT; };
 		C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectVC.swift; sourceTree = "<group>"; };
-		C224B9551DB9328B007265E7 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = SOURCE_ROOT; };
 		C236D2281DEF7F91008A392C /* SingleActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleActivityVC.swift; sourceTree = "<group>"; };
 		C236D22A1DEFBC67008A392C /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavViewController.swift; path = ../NavViewController.swift; sourceTree = "<group>"; };
 		C23A29AF1DB8403800275843 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -124,9 +133,20 @@
 		C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedVC.swift; sourceTree = "<group>"; };
 		C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewActivityVC.swift; sourceTree = "<group>"; };
 		C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFeedCell.swift; sourceTree = "<group>"; };
+		C26F59C41E9C2BEE00E25F6F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		C26F59C51E9C2BEE00E25F6F /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C26F59C61E9C2BEE00E25F6F /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C26F59C71E9C2BEE00E25F6F /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		C26F59C81E9C2BEE00E25F6F /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		C26F59C91E9C2BEE00E25F6F /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		C26F59CA1E9C2BEE00E25F6F /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		C26F59CB1E9C2BEE00E25F6F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		C26F59CC1E9C2BEE00E25F6F /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		C26F59CD1E9C2BEE00E25F6F /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		C272EB821DEA977E00402E10 /* CropImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropImageViewController.swift; sourceTree = "<group>"; };
 		C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropTestViewController.swift; sourceTree = "<group>"; };
 		C2A8DE461DF4BE20009B428E /* TesttOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesttOneViewController.swift; sourceTree = "<group>"; };
+		C2E9EE3B1EA0392F002BF42A /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +211,7 @@
 		C26DDF411D93499300429DE4 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				C26F59C31E9C2BE100E25F6F /* Fonts */,
 				C26DDF461D93499300429DE4 /* Main.storyboard */,
 				C26DDF421D93499300429DE4 /* AppDelegate.swift */,
 				C2EF21411DE96622007FE43D /* temp files */,
@@ -261,13 +282,13 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2E9EE3B1EA0392F002BF42A /* ProjectViewController.swift */,
 				C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */,
 				C236D22A1DEFBC67008A392C /* NavViewController.swift */,
 				C236D2281DEF7F91008A392C /* SingleActivityVC.swift */,
 				C272EB821DEA977E00402E10 /* CropImageViewController.swift */,
 				C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */,
 				C23A29AF1DB8403800275843 /* SettingsViewController.swift */,
-				C224B9551DB9328B007265E7 /* ProjectViewController.swift */,
 				C23BBF341DA6B21100202169 /* SignupVC.swift */,
 				C23BBF321DA6AE7800202169 /* LoginVC.swift */,
 				C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */,
@@ -283,6 +304,23 @@
 				C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C26F59C31E9C2BE100E25F6F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C26F59C41E9C2BEE00E25F6F /* OpenSans-Bold.ttf */,
+				C26F59C51E9C2BEE00E25F6F /* OpenSans-BoldItalic.ttf */,
+				C26F59C61E9C2BEE00E25F6F /* OpenSans-ExtraBold.ttf */,
+				C26F59C71E9C2BEE00E25F6F /* OpenSans-ExtraBoldItalic.ttf */,
+				C26F59C81E9C2BEE00E25F6F /* OpenSans-Italic.ttf */,
+				C26F59C91E9C2BEE00E25F6F /* OpenSans-Light.ttf */,
+				C26F59CA1E9C2BEE00E25F6F /* OpenSans-LightItalic.ttf */,
+				C26F59CB1E9C2BEE00E25F6F /* OpenSans-Regular.ttf */,
+				C26F59CC1E9C2BEE00E25F6F /* OpenSans-Semibold.ttf */,
+				C26F59CD1E9C2BEE00E25F6F /* OpenSans-SemiboldItalic.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		C2EF21411DE96622007FE43D /* temp files */ = {
@@ -401,6 +439,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26F59CE1E9C2C0600E25F6F /* OpenSans-Bold.ttf in Resources */,
+				C26F59CF1E9C2C0600E25F6F /* OpenSans-BoldItalic.ttf in Resources */,
+				C26F59D01E9C2C0600E25F6F /* OpenSans-ExtraBold.ttf in Resources */,
+				C26F59D11E9C2C0600E25F6F /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				C26F59D21E9C2C0600E25F6F /* OpenSans-Italic.ttf in Resources */,
+				C26F59D31E9C2C0600E25F6F /* OpenSans-Light.ttf in Resources */,
+				C26F59D41E9C2C0600E25F6F /* OpenSans-LightItalic.ttf in Resources */,
+				C26F59D51E9C2C0600E25F6F /* OpenSans-Regular.ttf in Resources */,
+				C26F59D61E9C2C0600E25F6F /* OpenSans-Semibold.ttf in Resources */,
+				C26F59D71E9C2C0600E25F6F /* OpenSans-SemiboldItalic.ttf in Resources */,
 				C26DDF4D1D93499300429DE4 /* LaunchScreen.storyboard in Resources */,
 				C26DDF4A1D93499300429DE4 /* Assets.xcassets in Resources */,
 				C26DDF481D93499300429DE4 /* Main.storyboard in Resources */,
@@ -438,7 +486,6 @@
 				C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */,
 				C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */,
 				C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */,
-				C224B9561DB9328B007265E7 /* ProjectViewController.swift in Sources */,
 				C272EB831DEA977E00402E10 /* CropImageViewController.swift in Sources */,
 				C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */,
 				C2A8DE471DF4BE20009B428E /* TesttOneViewController.swift in Sources */,
@@ -449,6 +496,7 @@
 				C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */,
 				C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */,
 				C245EFDF1E31A73000A99B58 /* ProjectFeedViewController.swift in Sources */,
+				C2E9EE3C1EA0392F002BF42A /* ProjectViewController.swift in Sources */,
 				C26DDFA41D9394BD00429DE4 /* MyFeedCell.swift in Sources */,
 				C236D2291DEF7F91008A392C /* SingleActivityVC.swift in Sources */,
 				C2EF21431DEA16DD007FE43D /* CustomTabbarVC.swift in Sources */,

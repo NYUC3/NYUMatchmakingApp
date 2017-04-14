@@ -19,7 +19,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+        
+        let logo = UIImage(named: "main-logo")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
         
         if(PFUser.current() == nil){
             
@@ -111,27 +114,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "home-cell", for: indexPath) as! HomeVCTableViewCell
         cell.projectName.text = projectsList[indexPath.row].name
-        cell.descriptionLabel.text = projectsList[indexPath.row].description
-        if(projectsList[indexPath.row].noOfLikes == 1){
-            
-            cell.followersLabel.text = String(projectsList[indexPath.row].noOfLikes) + " follower"
-            
-        }
-        else{
-            
-            cell.followersLabel.text = String(projectsList[indexPath.row].noOfLikes) + " followers"
-        
-        }
-        
-        cell.descriptionLabel.numberOfLines = 0
-        cell.descriptionLabel.lineBreakMode = .byWordWrapping
+
         
         let imageFromParse = projectsList[indexPath.row].image
         imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
             
             if(imageData != nil){
                 let image: UIImage! = UIImage(data: imageData!)!
-                cell.projectImage.image = image
+                cell.projectImage.image = cropToBounds(image: image, width: 375.0, height: 222.0)
             }
         })
         
@@ -144,9 +134,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "project-view"){
             
-            let destinationNavigationController = segue.destination as! UINavigationController
-            let targetController = destinationNavigationController.topViewController as! ProjectViewController
-            targetController.projectOject = projectsList[(projectTableView.indexPathForSelectedRow?.row)!]
+            let targetController = segue.destination as! ProjectViewController
+            //let targetController = destinationNavigationController.topViewController as! ProjectViewController
+            targetController.projectObject = projectsList[(projectTableView.indexPathForSelectedRow?.row)!]
             
         }
     }
@@ -154,6 +144,44 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func unwindToProjectsList(segue: UIStoryboardSegue) {
         // some code to execute
     } // unwindToPrevious
-    
 
+}
+
+
+func cropToBounds(image: UIImage, width: Double, height: Double) -> UIImage {
+    
+    let contextImage : UIImage = UIImage(cgImage: image.cgImage!)
+    //let contextImage: UIImage = UIImage(CGImage: image.CGImage!)!
+    
+    let contextSize: CGSize = contextImage.size
+    
+    var posX: CGFloat = 0.0
+    var posY: CGFloat = 0.0
+    var cgwidth: CGFloat = CGFloat(width)
+    var cgheight: CGFloat = CGFloat(height)
+    
+    // See what size is longer and create the center off of that
+    if contextSize.width > contextSize.height {
+        posX = ((contextSize.width - contextSize.height) / 2)
+        posY = 0
+        cgwidth = contextSize.height
+        cgheight = contextSize.height
+    } else {
+        posX = 0
+        posY = ((contextSize.height - contextSize.width) / 2)
+        cgwidth = contextSize.width
+        cgheight = contextSize.width
+    }
+    
+    let rect : CGRect = CGRect(x: posX, y: posY, width: cgwidth, height: cgheight)
+    //let rect: CGRect = CGRectMake(posX, posY, cgwidth, cgheight)
+    
+    // Create bitmap image from context using the rect
+    let imageRef: CGImage = contextImage.cgImage!.cropping(to: rect)!
+    
+    // Create a new image based on the imageRef and rotate back to the original orientation
+    
+    let image : UIImage = UIImage(cgImage: imageRef, scale: image.scale, orientation: image.imageOrientation)
+    
+    return image
 }
