@@ -13,7 +13,8 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     
     @IBOutlet weak var projectImageView: UIImageView!
     @IBOutlet weak var projectNameTextField: UITextField!
-    @IBOutlet weak var projectDescriptionTextfield: UITextField!
+    @IBOutlet weak var projectDescriptionTextfield: UITextView!
+ 
     
     let imagePicker = UIImagePickerController()
     
@@ -25,15 +26,29 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     }
 
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
         
-        let activity = PFObject(className:"Projects")
-        activity["Name"] = projectNameTextField.text
-        activity["Description"] = projectDescriptionTextfield.text
-        activity["username"] = (PFUser.current()?.username)!
         
-        activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.projectImageView.image!, 0.1)!)
-        activity.saveInBackground()
+        
+        if(projectNameTextField.text != "" && projectDescriptionTextfield.text != "" && self.projectImageView.image != nil){
+            
+            dismiss(animated: true, completion: nil)
+            
+            let activity = PFObject(className:"Projects")
+            activity["Name"] = projectNameTextField.text
+            activity["Description"] = projectDescriptionTextfield.text
+            activity["username"] = (PFUser.current()?.username)!
+            
+            activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.projectImageView.image!, 0.1)!)
+            activity.saveInBackground()
+            
+        }
+        else{
+            
+            let alert = UIAlertController(title: "Oops!", message: "Please make sure you've filled in name, description and have uploaded an image.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+
     }
 
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {

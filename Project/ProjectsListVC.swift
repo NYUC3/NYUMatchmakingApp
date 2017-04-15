@@ -67,17 +67,21 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "select-project", for: indexPath) as! HomeVCTableViewCell
+        
+        
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "select-project", for: indexPath) as! HomeVCTableViewCell
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "my-project", for: indexPath) as! UITableViewCell
         cell.textLabel?.text = projects[indexPath.row].name
         cell.textLabel?.font = UIFont(name: "Avenir", size: 20)
         
         
-        let gradient = CAGradientLayer()
-        gradient.frame = view.bounds
-        gradient.colors = [UIColor.black.cgColor, UIColor.clear.cgColor]
-        cell.projectImage.layer.insertSublayer(gradient, at: 0)
+        //let gradient = CAGradientLayer()
+        //gradient.frame = view.bounds
+        //gradient.colors = [UIColor.black.cgColor, UIColor.clear.cgColor]
+        //cell.projectImage.layer.insertSublayer(gradient, at: 0)
         //cell.pr.layer.insertSublayer(gradient, at: 0)
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 25)!]
+        //self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 25)!]
         
         
         

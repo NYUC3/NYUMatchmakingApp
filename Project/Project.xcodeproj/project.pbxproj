@@ -202,6 +202,7 @@
 		C20A84E91EA2B9C300823E43 /* CreateProject */ = {
 			isa = PBXGroup;
 			children = (
+				C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */,
 			);
 			name = CreateProject;
 			sourceTree = "<group>";
@@ -209,6 +210,8 @@
 		C20A84EA1EA2B9CC00823E43 /* CreateActivity */ = {
 			isa = PBXGroup;
 			children = (
+				C26DDF951D935B8500429DE4 /* AddActivityVC.swift */,
+				C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */,
 			);
 			name = CreateActivity;
 			sourceTree = "<group>";
@@ -216,6 +219,8 @@
 		C20A84EB1EA2B9D200823E43 /* ProjectFeed */ = {
 			isa = PBXGroup;
 			children = (
+				C245EFDE1E31A73000A99B58 /* ProjectFeedViewController.swift */,
+				C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */,
 				C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */,
 			);
 			name = ProjectFeed;
@@ -224,8 +229,36 @@
 		C20A84EC1EA2B9DA00823E43 /* ActivityFeed */ = {
 			isa = PBXGroup;
 			children = (
+				C26DDF9D1D935F4400429DE4 /* FeedVCTableViewCell.swift */,
+				C26DDF931D935A4A00429DE4 /* FeedVC.swift */,
 			);
 			name = ActivityFeed;
+			sourceTree = "<group>";
+		};
+		C20A84ED1EA2BB9E00823E43 /* ProjectView */ = {
+			isa = PBXGroup;
+			children = (
+				C2E9EE3B1EA0392F002BF42A /* ProjectViewController.swift */,
+			);
+			name = ProjectView;
+			sourceTree = "<group>";
+		};
+		C20A84EE1EA2BBA400823E43 /* ActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				C236D2281DEF7F91008A392C /* SingleActivityVC.swift */,
+			);
+			name = ActivityView;
+			sourceTree = "<group>";
+		};
+		C20A84EF1EA2BBFA00823E43 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */,
+				C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */,
+				C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 		C26DDF361D93499300429DE4 = {
@@ -323,28 +356,18 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C20A84EC1EA2B9DA00823E43 /* ActivityFeed */,
-				C20A84EB1EA2B9D200823E43 /* ProjectFeed */,
-				C20A84EA1EA2B9CC00823E43 /* CreateActivity */,
-				C20A84E91EA2B9C300823E43 /* CreateProject */,
-				C20A84E61EA2AE8700823E43 /* Login/Signup */,
-				C2E9EE3B1EA0392F002BF42A /* ProjectViewController.swift */,
-				C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */,
-				C236D22A1DEFBC67008A392C /* NavViewController.swift */,
-				C236D2281DEF7F91008A392C /* SingleActivityVC.swift */,
+				C23A29AF1DB8403800275843 /* SettingsViewController.swift */,
 				C272EB821DEA977E00402E10 /* CropImageViewController.swift */,
 				C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */,
-				C23A29AF1DB8403800275843 /* SettingsViewController.swift */,
-				C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */,
-				C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */,
-				C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */,
-				C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */,
-				C26DDF931D935A4A00429DE4 /* FeedVC.swift */,
-				C245EFDE1E31A73000A99B58 /* ProjectFeedViewController.swift */,
-				C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */,
-				C26DDF951D935B8500429DE4 /* AddActivityVC.swift */,
-				C26DDF9D1D935F4400429DE4 /* FeedVCTableViewCell.swift */,
-				C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */,
+				C236D22A1DEFBC67008A392C /* NavViewController.swift */,
+				C20A84EE1EA2BBA400823E43 /* ActivityView */,
+				C20A84ED1EA2BB9E00823E43 /* ProjectView */,
+				C20A84E61EA2AE8700823E43 /* Login/Signup */,
+				C20A84E91EA2B9C300823E43 /* CreateProject */,
+				C20A84EA1EA2B9CC00823E43 /* CreateActivity */,
+				C20A84EC1EA2B9DA00823E43 /* ActivityFeed */,
+				C20A84EB1EA2B9D200823E43 /* ProjectFeed */,
+				C20A84EF1EA2BBFA00823E43 /* User */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -369,6 +392,7 @@
 		C2EF21411DE96622007FE43D /* temp files */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */,
 			);
 			name = "temp files";
 			sourceTree = "<group>";

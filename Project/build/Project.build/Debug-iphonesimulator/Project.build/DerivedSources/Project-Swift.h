@@ -201,12 +201,13 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextView;
 
 SWIFT_CLASS("_TtC7Project15CreateProjectVC")
 @interface CreateProjectVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified projectImageView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectNameTextField;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectDescriptionTextfield;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified projectDescriptionTextfield;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker;
 - (void)viewDidLoad;
 - (IBAction)saveButtonTapped:(UIBarButtonItem * _Nonnull)sender;
@@ -381,7 +382,6 @@ SWIFT_CLASS("_TtC7Project25ProjectFeedViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextView;
 
 SWIFT_CLASS("_TtC7Project21ProjectViewController")
 @interface ProjectViewController : UIViewController
