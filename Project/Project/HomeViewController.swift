@@ -24,6 +24,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
         
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+
         if(PFUser.current() == nil){
             
             // present login screen
@@ -42,69 +47,68 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             view.addSubview(overlay!)
             // END OF LOADING SCREEN SETUP
             
+            self.projectsList = []
+            
             let query = PFQuery(className:"Projects")
-
+            
             query.order(byDescending: "createdAt")
             query.findObjectsInBackground {
-             (objects: [PFObject]?, error: Error?) -> Void in
-             
-             if error == nil {
-                // The find succeeded.
-                print("Successfully retrieved \(objects!.count) scores.")
-                // Do something with the found objects
-             
-                if let objects = objects {
+                (objects: [PFObject]?, error: Error?) -> Void in
                 
-                    for object in objects {
-                
-                        if(object["image"] != nil){
-                        let theImg = object["image"] as! PFFile
-                        
-                            if(theImg != nil){
-                                
-                                let q = PFQuery(className:"Follow")
-                                //q.whereKey("username", equalTo: (PFUser.current()?.username)!)
-                                q.whereKey("project", equalTo: object["Name"] as! String)
-                                q.findObjectsInBackground {
-                                    (objects: [PFObject]?, error: Error?) -> Void in
-                                    
-                                    if error == nil {
-                                        // The find succeeded.
-                                        if let objects = objects {
-                                            let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg, likes: objects.count)
-                                            self.projectsList.append(project)
-                                        }
-                                        self.projectTableView.reloadData()
-                                        
-                                    } else {
-                                        // Log details of the failure
-                                        print("Error: \(error!)")
-                                    }
-                                }
-
-                            } // if
+                if error == nil {
+                    // The find succeeded.
+                    print("Successfully retrieved \(objects!.count) scores.")
+                    // Do something with the found objects
                     
-                        } // if
+                    if let objects = objects {
+                        
+                        for object in objects {
+                            
+                            if(object["image"] != nil){
+                                let theImg = object["image"] as! PFFile
+                                
+                                if(theImg != nil){
+                                    
+                                    let q = PFQuery(className:"Follow")
+                                    //q.whereKey("username", equalTo: (PFUser.current()?.username)!)
+                                    q.whereKey("project", equalTo: object["Name"] as! String)
+                                    q.findObjectsInBackground {
+                                        (objects: [PFObject]?, error: Error?) -> Void in
+                                        
+                                        if error == nil {
+                                            // The find succeeded.
+                                            if let objects = objects {
+                                                let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg, likes: objects.count)
+                                                self.projectsList.append(project)
+                                            }
+                                            self.projectTableView.reloadData()
+                                            
+                                        } else {
+                                            // Log details of the failure
+                                            print("Error: \(error!)")
+                                        }
+                                    }
+                                    
+                                } // if
+                                
+                            } // if
+                        }
+                        
+                        self.projectTableView.reloadData()
+                        self.overlay?.removeFromSuperview()
                     }
-                
+                    
                     self.projectTableView.reloadData()
-                    self.overlay?.removeFromSuperview()
+                    
                 }
-             
-                self.projectTableView.reloadData()
-             
-             }
-             else {
-                // Log details of the failure
-                print("Error: \(error!) \(error! as NSError)")
+                else {
+                    // Log details of the failure
+                    print("Error: \(error!) \(error! as NSError)")
                 }
-             }
+            }
         }
-    }
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        projectTableView.reloadData()
+
+        
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -113,7 +117,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "home-cell", for: indexPath) as! HomeVCTableViewCell
-        cell.projectName.text = projectsList[indexPath.row].name
+        
+        
+        let myString = " " + projectsList[indexPath.row].name! + " " 
+        let myAttribute = [NSBackgroundColorAttributeName: UIColor.black, NSForegroundColorAttributeName: UIColor.white]
+        let myAttrString = NSAttributedString(string: myString, attributes: myAttribute)
+        
+        cell.projectName.attributedText =  myAttrString
 
         
         let imageFromParse = projectsList[indexPath.row].image

@@ -112,7 +112,6 @@ class ProjectFeedViewController: UIViewController, UITableViewDelegate, UITableV
         
         feedList = []
         projectsFollowing = []
-        print(project?.name)
         self.queryActivities(name: (project?.name)!)
 
     }
