@@ -79,7 +79,6 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                         }
                                         self.feedList.append(feed)
                                         self.loadingView.isHidden = true
-                                        self.infoLabel.text = "Loading..."
                                         self.daTableView.reloadData()
                                         
                                         if(self.feedList.count == 0){
@@ -165,24 +164,32 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "feed-cell", for: indexPath) as! FeedVCTableViewCell
-        cell.projectNameLabel.text = feedList[indexPath.row].name
+       // cell.projectNameLabel.text = feedList[indexPath.row].name
         cell.feedTitleLabel.text  = feedList[indexPath.row].title
-        cell.feedDescriptionLabel.text = feedList[indexPath.row].description
-        cell.noOfLikes.text = String(feedList[indexPath.row].noOfLikes) + " likes"
-        cell.timeStampLabel.text = feedList[indexPath.row].timestamp
-        if(feedList[indexPath.row].isLiked){
-            print("isLiked")
-            let filledImage = UIImage(named: "filled-shape")
-            cell.likeButton.setImage(filledImage, for: .normal)
-        }
-        else{
-            let filledImage = UIImage(named: "Shape")
-            cell.likeButton.setImage(filledImage, for: .normal)
-        }
-        cell.likeButton.tag = indexPath.row
-        cell.likeButton.addTarget(self, action: #selector(FeedVC.buttonClicked(sender:)), for: UIControlEvents.touchUpInside)
-        cell.feedDescriptionLabel.lineBreakMode = .byWordWrapping
-        cell.feedDescriptionLabel.numberOfLines = 0
+        
+        
+        let myString = " " + feedList[indexPath.row].name! + " "
+        let myAttribute = [NSBackgroundColorAttributeName: UIColor.black, NSForegroundColorAttributeName: UIColor.white]
+        let myAttrString = NSAttributedString(string: myString, attributes: myAttribute)
+        cell.projectNameLabel.attributedText =  myAttrString
+        
+        
+        //cell.feedDescriptionLabel.text = feedList[indexPath.row].description
+        //cell.noOfLikes.text = String(feedList[indexPath.row].noOfLikes) + " likes"
+        //cell.timeStampLabel.text = feedList[indexPath.row].timestamp
+        //if(feedList[indexPath.row].isLiked){
+        //    print("isLiked")
+        //    let filledImage = UIImage(named: "filled-shape")
+        //    cell.likeButton.setImage(filledImage, for: .normal)
+        //}
+        //else{
+        //    let filledImage = UIImage(named: "Shape")
+        //    cell.likeButton.setImage(filledImage, for: .normal)
+        //}
+        //cell.likeButton.tag = indexPath.row
+        //cell.likeButton.addTarget(self, action: #selector(FeedVC.buttonClicked(sender:)), for: UIControlEvents.touchUpInside)
+        //cell.feedDescriptionLabel.lineBreakMode = .byWordWrapping
+        //cell.feedDescriptionLabel.numberOfLines = 0
         let imageFromParse = feedList[indexPath.row].image
         imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
             let image: UIImage! = UIImage(data: imageData!)!
