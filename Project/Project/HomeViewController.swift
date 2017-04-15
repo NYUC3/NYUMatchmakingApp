@@ -29,7 +29,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             // present login screen
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "loginvc") as! LoginVC
+            let vc = storyboard.instantiateViewController(withIdentifier: "landingvc") as! LandingPageViewController
             self.present(vc, animated: true, completion: nil)
             
         }

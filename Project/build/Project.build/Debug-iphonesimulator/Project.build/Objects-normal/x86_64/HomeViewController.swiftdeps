@@ -36,7 +36,7 @@ depends-top-level:
 - "HomeViewController"
 - "IndexPath"
 - "Int"
-- !private "LoginVC"
+- !private "LandingPageViewController"
 - !private "NSError"
 - !private "PFFile"
 - !private "PFObject"
@@ -560,7 +560,7 @@ depends-member:
 - !private ["C7Project18HomeViewController", "HomeVCTableViewCell"]
 - ["C7Project18HomeViewController", "IndexPath"]
 - ["C7Project18HomeViewController", "Int"]
-- !private ["C7Project18HomeViewController", "LoginVC"]
+- !private ["C7Project18HomeViewController", "LandingPageViewController"]
 - !private ["C7Project18HomeViewController", "NSError"]
 - !private ["C7Project18HomeViewController", "PFFile"]
 - !private ["C7Project18HomeViewController", "PFObject"]
@@ -734,7 +734,7 @@ depends-member:
 - !private ["CSo8NSObject", "HomeVCTableViewCell"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
-- !private ["CSo8NSObject", "LoginVC"]
+- !private ["CSo8NSObject", "LandingPageViewController"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "PFFile"]
 - !private ["CSo8NSObject", "PFObject"]
@@ -1154,7 +1154,7 @@ depends-member:
 - !private ["CSo11UIResponder", "HomeVCTableViewCell"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
-- !private ["CSo11UIResponder", "LoginVC"]
+- !private ["CSo11UIResponder", "LandingPageViewController"]
 - !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "PFFile"]
 - !private ["CSo11UIResponder", "PFObject"]
@@ -1511,7 +1511,7 @@ depends-member:
 - !private ["CSo16UIViewController", "HomeVCTableViewCell"]
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
-- !private ["CSo16UIViewController", "LoginVC"]
+- !private ["CSo16UIViewController", "LandingPageViewController"]
 - !private ["CSo16UIViewController", "NSError"]
 - !private ["CSo16UIViewController", "PFFile"]
 - !private ["CSo16UIViewController", "PFObject"]

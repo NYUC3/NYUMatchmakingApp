@@ -1,22 +1,17 @@
 //
-//  MyFeedVC.swift
+//  LandingPageViewController.swift
 //  Project
 //
-//  Created by Vidyadhar V. Thatte on 9/21/16.
-//  Copyright © 2016 Vidyadhar Thatte. All rights reserved.
+//  Created by Vidyadhar V. Thatte on 4/15/17.
+//  Copyright © 2017 Vidyadhar Thatte. All rights reserved.
 //
 
 import UIKit
 
-class MyFeedVC: UIViewController {
-    
+class LandingPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let logo = UIImage(named: "main-logo")
-        let imageView = UIImageView(image:logo)
-        self.navigationItem.titleView = imageView
 
         // Do any additional setup after loading the view.
     }
@@ -26,4 +21,10 @@ class MyFeedVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
+    
+    @IBAction func unwindToLanding(segue: UIStoryboardSegue) {
+        // some code to execute
+    } // unwindToPrevious
+
 }

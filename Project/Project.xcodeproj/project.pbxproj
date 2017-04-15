@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20A84E81EA2B83100823E43 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A84E71EA2B83100823E43 /* LandingPageViewController.swift */; };
 		C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */; };
 		C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */; };
 		C236D2291DEF7F91008A392C /* SingleActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236D2281DEF7F91008A392C /* SingleActivityVC.swift */; };
@@ -91,6 +92,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C20A84E71EA2B83100823E43 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListVC.swift; sourceTree = SOURCE_ROOT; };
 		C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectVC.swift; sourceTree = "<group>"; };
 		C236D2281DEF7F91008A392C /* SingleActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleActivityVC.swift; sourceTree = "<group>"; };
@@ -187,6 +189,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C20A84E61EA2AE8700823E43 /* Login/Signup */ = {
+			isa = PBXGroup;
+			children = (
+				C20A84E71EA2B83100823E43 /* LandingPageViewController.swift */,
+				C23BBF341DA6B21100202169 /* SignupVC.swift */,
+				C23BBF321DA6AE7800202169 /* LoginVC.swift */,
+			);
+			name = Login/Signup;
+			sourceTree = "<group>";
+		};
+		C20A84E91EA2B9C300823E43 /* CreateProject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CreateProject;
+			sourceTree = "<group>";
+		};
+		C20A84EA1EA2B9CC00823E43 /* CreateActivity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CreateActivity;
+			sourceTree = "<group>";
+		};
+		C20A84EB1EA2B9D200823E43 /* ProjectFeed */ = {
+			isa = PBXGroup;
+			children = (
+				C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */,
+			);
+			name = ProjectFeed;
+			sourceTree = "<group>";
+		};
+		C20A84EC1EA2B9DA00823E43 /* ActivityFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ActivityFeed;
+			sourceTree = "<group>";
+		};
 		C26DDF361D93499300429DE4 = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +323,11 @@
 		C26DDF9C1D935E0800429DE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C20A84EC1EA2B9DA00823E43 /* ActivityFeed */,
+				C20A84EB1EA2B9D200823E43 /* ProjectFeed */,
+				C20A84EA1EA2B9CC00823E43 /* CreateActivity */,
+				C20A84E91EA2B9C300823E43 /* CreateProject */,
+				C20A84E61EA2AE8700823E43 /* Login/Signup */,
 				C2E9EE3B1EA0392F002BF42A /* ProjectViewController.swift */,
 				C2A8DE441DF20CD5009B428E /* CropTestViewController.swift */,
 				C236D22A1DEFBC67008A392C /* NavViewController.swift */,
@@ -289,8 +335,6 @@
 				C272EB821DEA977E00402E10 /* CropImageViewController.swift */,
 				C2EF21421DEA16DD007FE43D /* CustomTabbarVC.swift */,
 				C23A29AF1DB8403800275843 /* SettingsViewController.swift */,
-				C23BBF341DA6B21100202169 /* SignupVC.swift */,
-				C23BBF321DA6AE7800202169 /* LoginVC.swift */,
 				C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */,
 				C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */,
 				C26DDFA11D938ADC00429DE4 /* CreateNewActivityVC.swift */,
@@ -298,7 +342,6 @@
 				C26DDF931D935A4A00429DE4 /* FeedVC.swift */,
 				C245EFDE1E31A73000A99B58 /* ProjectFeedViewController.swift */,
 				C26DDF911D9359A600429DE4 /* HomeVCTableViewCell.swift */,
-				C26DDF8F1D93595A00429DE4 /* HomeViewController.swift */,
 				C26DDF951D935B8500429DE4 /* AddActivityVC.swift */,
 				C26DDF9D1D935F4400429DE4 /* FeedVCTableViewCell.swift */,
 				C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */,
@@ -486,6 +529,7 @@
 				C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */,
 				C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */,
 				C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */,
+				C20A84E81EA2B83100823E43 /* LandingPageViewController.swift in Sources */,
 				C272EB831DEA977E00402E10 /* CropImageViewController.swift in Sources */,
 				C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */,
 				C2A8DE471DF4BE20009B428E /* TesttOneViewController.swift in Sources */,

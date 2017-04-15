@@ -7,9 +7,9 @@ provides-member:
 - ["C7Project7LoginVC", ""]
 provides-dynamic-lookup:
 - "LoginTapped"
+- "cancelTapped"
 - "email"
 - "password"
-- "unwindToLogin"
 - "viewDidLoad"
 depends-top-level:
 - !private "!="
@@ -26,7 +26,6 @@ depends-top-level:
 - !private "UIAlertControllerStyle"
 - "UIButton"
 - !private "UIStoryboard"
-- "UIStoryboardSegue"
 - !private "UITabBarController"
 - "UITextField"
 - "UIViewController"
@@ -156,16 +155,15 @@ depends-member:
 - !private ["C7Project7LoginVC", "UIAlertControllerStyle"]
 - ["C7Project7LoginVC", "UIButton"]
 - !private ["C7Project7LoginVC", "UIStoryboard"]
-- ["C7Project7LoginVC", "UIStoryboardSegue"]
 - !private ["C7Project7LoginVC", "UITabBarController"]
 - ["C7Project7LoginVC", "UITextField"]
 - !private ["C7Project7LoginVC", "Void"]
+- ["C7Project7LoginVC", "cancelTapped"]
 - ["C7Project7LoginVC", "deinit"]
 - ["C7Project7LoginVC", "email"]
 - ["C7Project7LoginVC", "init"]
 - ["C7Project7LoginVC", "password"]
 - !private ["C7Project7LoginVC", "present"]
-- ["C7Project7LoginVC", "unwindToLogin"]
 - ["C7Project7LoginVC", "viewDidLoad"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
@@ -208,11 +206,11 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertControllerStyle"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIStoryboard"]
-- ["CSo8NSObject", "UIStoryboardSegue"]
 - !private ["CSo8NSObject", "UITabBarController"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addAction"]
+- ["CSo8NSObject", "cancelTapped"]
 - ["CSo8NSObject", "email"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
@@ -220,7 +218,6 @@ depends-member:
 - ["CSo8NSObject", "password"]
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "text"]
-- ["CSo8NSObject", "unwindToLogin"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "PFUser"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
@@ -311,17 +308,16 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertControllerStyle"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
-- ["CSo11UIResponder", "UIStoryboardSegue"]
 - !private ["CSo11UIResponder", "UITabBarController"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addAction"]
+- ["CSo11UIResponder", "cancelTapped"]
 - ["CSo11UIResponder", "email"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "password"]
 - !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "text"]
-- ["CSo11UIResponder", "unwindToLogin"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "PFUser"]
 - !private ["PSo30UIResponderStandardEditActions", "UIAlertAction"]
@@ -379,16 +375,15 @@ depends-member:
 - !private ["CSo16UIViewController", "UIAlertControllerStyle"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
-- ["CSo16UIViewController", "UIStoryboardSegue"]
 - !private ["CSo16UIViewController", "UITabBarController"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "Void"]
 - !private ["CSo16UIViewController", "addAction"]
+- ["CSo16UIViewController", "cancelTapped"]
 - ["CSo16UIViewController", "email"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "password"]
 - !private ["CSo16UIViewController", "present"]
-- ["CSo16UIViewController", "unwindToLogin"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
@@ -569,4 +564,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "6ee49d229c6a2d471d79522a245f731f"
+interface-hash: "e8f998dba43c1d48fb62d48c8daf32a7"

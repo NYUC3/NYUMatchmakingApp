@@ -7,6 +7,7 @@ provides-member:
 - ["C7Project8SignupVC", ""]
 provides-dynamic-lookup:
 - "SignupTappd"
+- "cancelTapped"
 - "confirmpassword"
 - "email"
 - "password"
@@ -19,7 +20,6 @@ depends-top-level:
 - !private "Bool"
 - "BooleanLiteralType"
 - !private "CastingPrecedence"
-- !private "CustomTabbarVC"
 - !private "Error"
 - !private "PFUser"
 - "SignupVC"
@@ -30,6 +30,7 @@ depends-top-level:
 - !private "UIAlertControllerStyle"
 - "UIButton"
 - !private "UIStoryboard"
+- !private "UITabBarController"
 - "UITextField"
 - "UIViewController"
 - !private "Void"
@@ -205,7 +206,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "CustomTabbarVC"]
 - !private ["CSo8NSObject", "Error"]
 - !private ["CSo8NSObject", "PFUser"]
 - ["CSo8NSObject", "SignupTappd"]
@@ -215,9 +215,11 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertControllerStyle"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIStoryboard"]
+- !private ["CSo8NSObject", "UITabBarController"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addAction"]
+- ["CSo8NSObject", "cancelTapped"]
 - ["CSo8NSObject", "confirmpassword"]
 - ["CSo8NSObject", "email"]
 - ["CSo8NSObject", "init"]
@@ -268,7 +270,6 @@ depends-member:
 - !private ["Ps16RawRepresentable", "alert"]
 - !private ["Ps16RawRepresentable", "default"]
 - !private ["C7Project8SignupVC", "Bool"]
-- !private ["C7Project8SignupVC", "CustomTabbarVC"]
 - !private ["C7Project8SignupVC", "Error"]
 - !private ["C7Project8SignupVC", "PFUser"]
 - ["C7Project8SignupVC", "SignupTappd"]
@@ -278,8 +279,10 @@ depends-member:
 - !private ["C7Project8SignupVC", "UIAlertControllerStyle"]
 - ["C7Project8SignupVC", "UIButton"]
 - !private ["C7Project8SignupVC", "UIStoryboard"]
+- !private ["C7Project8SignupVC", "UITabBarController"]
 - ["C7Project8SignupVC", "UITextField"]
 - !private ["C7Project8SignupVC", "Void"]
+- ["C7Project8SignupVC", "cancelTapped"]
 - ["C7Project8SignupVC", "confirmpassword"]
 - ["C7Project8SignupVC", "deinit"]
 - ["C7Project8SignupVC", "email"]
@@ -352,7 +355,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "CustomTabbarVC"]
 - !private ["CSo11UIResponder", "Error"]
 - !private ["CSo11UIResponder", "PFUser"]
 - ["CSo11UIResponder", "SignupTappd"]
@@ -362,9 +364,11 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertControllerStyle"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
+- !private ["CSo11UIResponder", "UITabBarController"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addAction"]
+- ["CSo11UIResponder", "cancelTapped"]
 - ["CSo11UIResponder", "confirmpassword"]
 - ["CSo11UIResponder", "email"]
 - ["CSo11UIResponder", "init"]
@@ -427,7 +431,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo16UIViewController", "Bool"]
-- !private ["CSo16UIViewController", "CustomTabbarVC"]
 - !private ["CSo16UIViewController", "Error"]
 - !private ["CSo16UIViewController", "PFUser"]
 - ["CSo16UIViewController", "SignupTappd"]
@@ -437,9 +440,11 @@ depends-member:
 - !private ["CSo16UIViewController", "UIAlertControllerStyle"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
+- !private ["CSo16UIViewController", "UITabBarController"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "Void"]
 - !private ["CSo16UIViewController", "addAction"]
+- ["CSo16UIViewController", "cancelTapped"]
 - ["CSo16UIViewController", "confirmpassword"]
 - ["CSo16UIViewController", "email"]
 - ["CSo16UIViewController", "init"]
@@ -629,4 +634,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "1b4ecaf351e953e3ee211248a58133b1"
+interface-hash: "bfc30650842032e1527271fcd3955947"

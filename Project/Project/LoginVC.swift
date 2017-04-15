@@ -28,7 +28,7 @@ class LoginVC: UIViewController {
                 (user: PFUser?, error: Error?) -> Void in
                 if user != nil {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar") as! UITabBarController
+                    let vc = storyboard.instantiateViewController(withIdentifier: "root-tab") as! UITabBarController
                     self.present(vc, animated: true, completion: nil)
                 }
                     
@@ -54,9 +54,10 @@ class LoginVC: UIViewController {
     }
     
     
+    @IBAction func cancelTapped(_ sender: UIButton) {
+        //self.dismiss(animated: true, completion: nil)
+    }
     
-    @IBAction func unwindToLogin(segue: UIStoryboardSegue) {
-        // some code to execute
-    } // unwindToPrevious
+
 
 }

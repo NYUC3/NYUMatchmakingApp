@@ -47,7 +47,7 @@ class SignupVC: UIViewController {
                         // Hooray! Let them use the app now.
                         print("logged in successfully")
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                        let vc = storyboard.instantiateViewController(withIdentifier: "mainTabBar") as! CustomTabbarVC
+                        let vc = storyboard.instantiateViewController(withIdentifier: "root-tab") as! UITabBarController
                         self.present(vc, animated: true, completion: nil)
                     }
                 }
@@ -73,5 +73,8 @@ class SignupVC: UIViewController {
 
     }
     
+    @IBAction func cancelTapped(_ sender: UIButton) {
+        //self.dismiss(animated: true, completion: nil)
+    }
 
 }

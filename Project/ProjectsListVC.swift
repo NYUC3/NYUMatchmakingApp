@@ -11,7 +11,7 @@ import Parse
 
 class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var emailLabel: UILabel!
+
     @IBOutlet weak var projectsTable: UITableView!
 
     var projects = [Feed]()
@@ -20,8 +20,8 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
-        self.emailLabel.text = PFUser.current()?.email
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+
+        //self.navigationController?.navigationBar.tintColor = UIColor.white
         
         let query = PFQuery(className:"Projects")
         query.whereKey("username", equalTo:PFUser.current()?.email)
@@ -94,6 +94,13 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
 
+    @IBAction func logoutTapped(_ sender: UIBarButtonItem) {
+        PFUser.logOut()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "landingvc") as! LandingPageViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 
 
 }
