@@ -170,6 +170,7 @@ SWIFT_CLASS("_TtC7Project11AppDelegate")
 @end
 
 @class UITextField;
+@class UITextView;
 @class UIImageView;
 @class UIPickerView;
 @class UIImagePickerController;
@@ -181,7 +182,7 @@ SWIFT_CLASS("_TtC7Project11AppDelegate")
 SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 @interface CreateNewActivityVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified activityLabel;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified actvityDescription;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified activityDescription;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified feedUploadImage;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified projectNamePickerView;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker;
@@ -201,7 +202,6 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextView;
 
 SWIFT_CLASS("_TtC7Project15CreateProjectVC")
 @interface CreateProjectVC : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -243,13 +243,15 @@ SWIFT_CLASS("_TtC7Project14CustomTabbarVC")
 @end
 
 @class UIView;
+@class UILabel;
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Project6FeedVC")
 @interface FeedVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull projectsFollowing;
-@property (nonatomic, strong) UIView * _Nullable overlay;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified daTableView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified loadingView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified infoLabel;
 - (void)viewDidLoad;
 - (void)queryActivitiesWithName:(NSString * _Nonnull)name;
 - (NSString * _Nonnull)processTimestampWithStr:(NSString * _Nonnull)str SWIFT_WARN_UNUSED_RESULT;
@@ -263,7 +265,6 @@ SWIFT_CLASS("_TtC7Project6FeedVC")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 
 SWIFT_CLASS("_TtC7Project19FeedVCTableViewCell")
 @interface FeedVCTableViewCell : UITableViewCell
@@ -296,8 +297,8 @@ SWIFT_CLASS("_TtC7Project19HomeVCTableViewCell")
 
 SWIFT_CLASS("_TtC7Project18HomeViewController")
 @interface HomeViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, strong) UIView * _Nullable overlay;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified projectTableView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified loadingView;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

@@ -13,7 +13,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
     
 
     @IBOutlet weak var activityLabel: UITextField!
-    @IBOutlet weak var actvityDescription: UITextField!
+    @IBOutlet weak var activityDescription: UITextView!
     @IBOutlet weak var feedUploadImage: UIImageView!
     @IBOutlet weak var projectNamePickerView: UIPickerView!
     
@@ -67,7 +67,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         let activity = PFObject(className:"MyActivities")
         activity["projectName"] = selectedProjectName
         activity["activityName"] = activityLabel.text
-        activity["activityDescription"] = actvityDescription.text
+        activity["activityDescription"] = activityDescription.text
         activity["username"] = (PFUser.current()?.username)!
         
         activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.feedUploadImage.image!, 0.1)!)

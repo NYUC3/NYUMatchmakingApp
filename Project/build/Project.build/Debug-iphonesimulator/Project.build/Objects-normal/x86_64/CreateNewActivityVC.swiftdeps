@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C7Project19CreateNewActivityVC", ""]
 provides-dynamic-lookup:
+- "activityDescription"
 - "activityLabel"
-- "actvityDescription"
 - "cancelButtonTapped"
 - "feedUploadImage"
 - "imagePicker"
@@ -53,6 +53,7 @@ depends-top-level:
 - "UIPickerViewDataSource"
 - "UIPickerViewDelegate"
 - "UITextField"
+- "UITextView"
 - "UITouch"
 - "UIViewController"
 - !private "Void"
@@ -68,8 +69,8 @@ depends-member:
 - !private ["Ps9AnyObject", "UIImageJPEGRepresentation"]
 - ["Ps9AnyObject", "UIImagePickerController"]
 - !private ["Ps9AnyObject", "UIImagePickerControllerOriginalImage"]
+- !private ["Ps9AnyObject", "activityDescription"]
 - !private ["Ps9AnyObject", "activityLabel"]
-- !private ["Ps9AnyObject", "actvityDescription"]
 - !private ["Ps9AnyObject", "allowsEditing"]
 - !private ["Ps9AnyObject", "contentMode"]
 - !private ["Ps9AnyObject", "current"]
@@ -131,8 +132,8 @@ depends-member:
 - !private ["Ps7CVarArg", "UIImageJPEGRepresentation"]
 - ["Ps7CVarArg", "UIImagePickerController"]
 - !private ["Ps7CVarArg", "UIImagePickerControllerOriginalImage"]
+- !private ["Ps7CVarArg", "activityDescription"]
 - !private ["Ps7CVarArg", "activityLabel"]
-- !private ["Ps7CVarArg", "actvityDescription"]
 - !private ["Ps7CVarArg", "allowsEditing"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "contentMode"]
@@ -196,10 +197,11 @@ depends-member:
 - ["C7Project19CreateNewActivityVC", "UIImageView"]
 - ["C7Project19CreateNewActivityVC", "UIPickerView"]
 - ["C7Project19CreateNewActivityVC", "UITextField"]
+- ["C7Project19CreateNewActivityVC", "UITextView"]
 - ["C7Project19CreateNewActivityVC", "UITouch"]
 - !private ["C7Project19CreateNewActivityVC", "Void"]
+- ["C7Project19CreateNewActivityVC", "activityDescription"]
 - ["C7Project19CreateNewActivityVC", "activityLabel"]
-- ["C7Project19CreateNewActivityVC", "actvityDescription"]
 - ["C7Project19CreateNewActivityVC", "cancelButtonTapped"]
 - ["C7Project19CreateNewActivityVC", "deinit"]
 - !private ["C7Project19CreateNewActivityVC", "dismiss"]
@@ -234,8 +236,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIImageJPEGRepresentation"]
 - ["Ps28CustomDebugStringConvertible", "UIImagePickerController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImagePickerControllerOriginalImage"]
+- !private ["Ps28CustomDebugStringConvertible", "activityDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "activityLabel"]
-- !private ["Ps28CustomDebugStringConvertible", "actvityDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "allowsEditing"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
@@ -292,8 +294,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "UIImagePickerController"]
 - !private ["Ps23CustomStringConvertible", "UIImagePickerControllerOriginalImage"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "activityDescription"]
 - !private ["Ps23CustomStringConvertible", "activityLabel"]
-- !private ["Ps23CustomStringConvertible", "actvityDescription"]
 - !private ["Ps23CustomStringConvertible", "allowsEditing"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "contentMode"]
@@ -344,8 +346,8 @@ depends-member:
 - ["Ps9Equatable", "UIImagePickerController"]
 - !private ["Ps9Equatable", "UIImagePickerControllerOriginalImage"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "activityDescription"]
 - !private ["Ps9Equatable", "activityLabel"]
-- !private ["Ps9Equatable", "actvityDescription"]
 - !private ["Ps9Equatable", "allowsEditing"]
 - !private ["Ps9Equatable", "contentMode"]
 - !private ["Ps9Equatable", "current"]
@@ -404,8 +406,8 @@ depends-member:
 - ["Ps8Hashable", "UIImagePickerController"]
 - !private ["Ps8Hashable", "UIImagePickerControllerOriginalImage"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "activityDescription"]
 - !private ["Ps8Hashable", "activityLabel"]
-- !private ["Ps8Hashable", "actvityDescription"]
 - !private ["Ps8Hashable", "allowsEditing"]
 - !private ["Ps8Hashable", "contentMode"]
 - !private ["Ps8Hashable", "current"]
@@ -461,8 +463,8 @@ depends-member:
 - !private ["PSo8NSCoding", "UIImageJPEGRepresentation"]
 - ["PSo8NSCoding", "UIImagePickerController"]
 - !private ["PSo8NSCoding", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo8NSCoding", "activityDescription"]
 - !private ["PSo8NSCoding", "activityLabel"]
-- !private ["PSo8NSCoding", "actvityDescription"]
 - !private ["PSo8NSCoding", "allowsEditing"]
 - !private ["PSo8NSCoding", "contentMode"]
 - !private ["PSo8NSCoding", "delegate"]
@@ -506,8 +508,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIImageJPEGRepresentation"]
 - ["PSo26NSExtensionRequestHandling", "UIImagePickerController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo26NSExtensionRequestHandling", "activityDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "activityLabel"]
-- !private ["PSo26NSExtensionRequestHandling", "actvityDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "allowsEditing"]
 - !private ["PSo26NSExtensionRequestHandling", "delegate"]
 - !private ["PSo26NSExtensionRequestHandling", "dismiss"]
@@ -553,10 +555,11 @@ depends-member:
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UIPickerView"]
 - ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "UITextView"]
 - ["CSo8NSObject", "UITouch"]
 - !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "activityDescription"]
 - ["CSo8NSObject", "activityLabel"]
-- ["CSo8NSObject", "actvityDescription"]
 - !private ["CSo8NSObject", "allowsEditing"]
 - ["CSo8NSObject", "cancelButtonTapped"]
 - !private ["CSo8NSObject", "contentMode"]
@@ -606,8 +609,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIImageJPEGRepresentation"]
 - ["PSo16NSObjectProtocol", "UIImagePickerController"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo16NSObjectProtocol", "activityDescription"]
 - !private ["PSo16NSObjectProtocol", "activityLabel"]
-- !private ["PSo16NSObjectProtocol", "actvityDescription"]
 - !private ["PSo16NSObjectProtocol", "allowsEditing"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
 - !private ["PSo16NSObjectProtocol", "current"]
@@ -698,8 +701,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIImageJPEGRepresentation"]
 - ["PSo21UIAppearanceContainer", "UIImagePickerController"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo21UIAppearanceContainer", "activityDescription"]
 - !private ["PSo21UIAppearanceContainer", "activityLabel"]
-- !private ["PSo21UIAppearanceContainer", "actvityDescription"]
 - !private ["PSo21UIAppearanceContainer", "allowsEditing"]
 - !private ["PSo21UIAppearanceContainer", "contentMode"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
@@ -741,8 +744,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIImageJPEGRepresentation"]
 - ["PSo18UIContentContainer", "UIImagePickerController"]
 - !private ["PSo18UIContentContainer", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo18UIContentContainer", "activityDescription"]
 - !private ["PSo18UIContentContainer", "activityLabel"]
-- !private ["PSo18UIContentContainer", "actvityDescription"]
 - !private ["PSo18UIContentContainer", "allowsEditing"]
 - !private ["PSo18UIContentContainer", "delegate"]
 - !private ["PSo18UIContentContainer", "dismiss"]
@@ -791,8 +794,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIImageJPEGRepresentation"]
 - ["PSo18UIFocusEnvironment", "UIImagePickerController"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo18UIFocusEnvironment", "activityDescription"]
 - !private ["PSo18UIFocusEnvironment", "activityLabel"]
-- !private ["PSo18UIFocusEnvironment", "actvityDescription"]
 - !private ["PSo18UIFocusEnvironment", "allowsEditing"]
 - !private ["PSo18UIFocusEnvironment", "contentMode"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
@@ -844,8 +847,8 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImageJPEGRepresentation"]
 - ["PSo31UIImagePickerControllerDelegate", "UIImagePickerController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo31UIImagePickerControllerDelegate", "activityDescription"]
 - !private ["PSo31UIImagePickerControllerDelegate", "activityLabel"]
-- !private ["PSo31UIImagePickerControllerDelegate", "actvityDescription"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dismiss"]
 - !private ["PSo31UIImagePickerControllerDelegate", "feedUploadImage"]
 - !private ["PSo31UIImagePickerControllerDelegate", "imagePicker"]
@@ -884,8 +887,8 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "UIImageJPEGRepresentation"]
 - ["PSo30UINavigationControllerDelegate", "UIImagePickerController"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo30UINavigationControllerDelegate", "activityDescription"]
 - !private ["PSo30UINavigationControllerDelegate", "activityLabel"]
-- !private ["PSo30UINavigationControllerDelegate", "actvityDescription"]
 - !private ["PSo30UINavigationControllerDelegate", "dismiss"]
 - !private ["PSo30UINavigationControllerDelegate", "feedUploadImage"]
 - !private ["PSo30UINavigationControllerDelegate", "imagePicker"]
@@ -915,8 +918,8 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "UIImageJPEGRepresentation"]
 - ["PSo22UIPickerViewDataSource", "UIImagePickerController"]
 - !private ["PSo22UIPickerViewDataSource", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo22UIPickerViewDataSource", "activityDescription"]
 - !private ["PSo22UIPickerViewDataSource", "activityLabel"]
-- !private ["PSo22UIPickerViewDataSource", "actvityDescription"]
 - !private ["PSo22UIPickerViewDataSource", "dismiss"]
 - !private ["PSo22UIPickerViewDataSource", "feedUploadImage"]
 - !private ["PSo22UIPickerViewDataSource", "imagePicker"]
@@ -945,8 +948,8 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "UIImageJPEGRepresentation"]
 - ["PSo20UIPickerViewDelegate", "UIImagePickerController"]
 - !private ["PSo20UIPickerViewDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo20UIPickerViewDelegate", "activityDescription"]
 - !private ["PSo20UIPickerViewDelegate", "activityLabel"]
-- !private ["PSo20UIPickerViewDelegate", "actvityDescription"]
 - !private ["PSo20UIPickerViewDelegate", "dismiss"]
 - !private ["PSo20UIPickerViewDelegate", "feedUploadImage"]
 - !private ["PSo20UIPickerViewDelegate", "imagePicker"]
@@ -985,10 +988,11 @@ depends-member:
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UIPickerView"]
 - ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "UITextView"]
 - ["CSo11UIResponder", "UITouch"]
 - !private ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "activityDescription"]
 - ["CSo11UIResponder", "activityLabel"]
-- ["CSo11UIResponder", "actvityDescription"]
 - !private ["CSo11UIResponder", "allowsEditing"]
 - ["CSo11UIResponder", "cancelButtonTapped"]
 - !private ["CSo11UIResponder", "contentMode"]
@@ -1032,8 +1036,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "UIImageJPEGRepresentation"]
 - ["PSo30UIResponderStandardEditActions", "UIImagePickerController"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo30UIResponderStandardEditActions", "activityDescription"]
 - !private ["PSo30UIResponderStandardEditActions", "activityLabel"]
-- !private ["PSo30UIResponderStandardEditActions", "actvityDescription"]
 - !private ["PSo30UIResponderStandardEditActions", "allowsEditing"]
 - !private ["PSo30UIResponderStandardEditActions", "contentMode"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
@@ -1064,6 +1068,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIScrollView", "text"]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
 - !private ["PSo16UIStateRestoring", "PFFile"]
 - !private ["PSo16UIStateRestoring", "PFObject"]
@@ -1074,8 +1079,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIImageJPEGRepresentation"]
 - ["PSo16UIStateRestoring", "UIImagePickerController"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo16UIStateRestoring", "activityDescription"]
 - !private ["PSo16UIStateRestoring", "activityLabel"]
-- !private ["PSo16UIStateRestoring", "actvityDescription"]
 - !private ["PSo16UIStateRestoring", "allowsEditing"]
 - !private ["PSo16UIStateRestoring", "delegate"]
 - !private ["PSo16UIStateRestoring", "dismiss"]
@@ -1103,6 +1108,7 @@ depends-member:
 - !private ["CSo11UITextField", "text"]
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "text"]
+- !private ["CSo10UITextView", "text"]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UITraitEnvironment", "PFFile"]
 - !private ["PSo18UITraitEnvironment", "PFObject"]
@@ -1113,8 +1119,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIImageJPEGRepresentation"]
 - ["PSo18UITraitEnvironment", "UIImagePickerController"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo18UITraitEnvironment", "activityDescription"]
 - !private ["PSo18UITraitEnvironment", "activityLabel"]
-- !private ["PSo18UITraitEnvironment", "actvityDescription"]
 - !private ["PSo18UITraitEnvironment", "allowsEditing"]
 - !private ["PSo18UITraitEnvironment", "contentMode"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
@@ -1172,10 +1178,11 @@ depends-member:
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UIPickerView"]
 - ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "UITextView"]
 - ["CSo16UIViewController", "UITouch"]
 - !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "activityDescription"]
 - ["CSo16UIViewController", "activityLabel"]
-- ["CSo16UIViewController", "actvityDescription"]
 - !private ["CSo16UIViewController", "allowsEditing"]
 - ["CSo16UIViewController", "cancelButtonTapped"]
 - !private ["CSo16UIViewController", "delegate"]
@@ -1240,8 +1247,8 @@ depends-member:
 - ["Ps9_Hashable", "UIImagePickerController"]
 - !private ["Ps9_Hashable", "UIImagePickerControllerOriginalImage"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "activityDescription"]
 - !private ["Ps9_Hashable", "activityLabel"]
-- !private ["Ps9_Hashable", "actvityDescription"]
 - !private ["Ps9_Hashable", "allowsEditing"]
 - !private ["Ps9_Hashable", "contentMode"]
 - !private ["Ps9_Hashable", "current"]
@@ -1376,10 +1383,12 @@ depends-nominal:
 - "PSo20UIPickerViewDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
 - "PSo16UIStateRestoring"
 - !private "CSo11UITextField"
 - !private "PSo11UITextInput"
 - !private "PSo17UITextInputTraits"
+- !private "CSo10UITextView"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - !private "OSC17UIViewContentMode"
@@ -1481,4 +1490,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "e7102f9d70ddb8612b529c107bf12010"
+interface-hash: "92e43c0074856cef39177423ce12e55d"

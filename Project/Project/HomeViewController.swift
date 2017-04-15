@@ -12,14 +12,14 @@ import Parse
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var projectsList = [Feed]()
-    var overlay : UIView? // loading screen
     
     @IBOutlet weak var projectTableView: UITableView!
+    @IBOutlet weak var loadingView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.loadingView.isHidden = false
         let logo = UIImage(named: "main-logo")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
@@ -39,13 +39,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }
         else{
-            
-            // SETUP LOADING SCREEN
-            overlay = UIView(frame: view.frame)
-            overlay!.backgroundColor = UIColor.black
-            overlay!.alpha = 0.8
-            view.addSubview(overlay!)
-            // END OF LOADING SCREEN SETUP
             
             self.projectsList = []
             
@@ -94,8 +87,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                             } // if
                         }
                         
+                        self.loadingView.isHidden = true
                         self.projectTableView.reloadData()
-                        self.overlay?.removeFromSuperview()
                     }
                     
                     self.projectTableView.reloadData()

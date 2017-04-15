@@ -14,13 +14,15 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var feedList = [Feed]()
     var projectsFollowing = [String]()
     var project : Project?
-     var overlay : UIView?
 
     @IBOutlet weak var daTableView: UITableView! // This is a bad name
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var infoLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+        self.loadingView.isHidden = false
+        self.infoLabel.text = "Loading..."
     }
     
     
@@ -76,7 +78,18 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                             }
                                         }
                                         self.feedList.append(feed)
+                                        self.loadingView.isHidden = true
+                                        self.infoLabel.text = "Loading..."
                                         self.daTableView.reloadData()
+                                        
+                                        if(self.feedList.count == 0){
+                                            self.loadingView.isHidden = false
+                                            self.infoLabel.text = "No activity to show."
+                                        }
+                                        else{
+                                            self.loadingView.isHidden = true
+                                        }
+                                        
                                     }
                                 }
                                 else {
@@ -109,8 +122,6 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         feedList = []
         projectsFollowing = []
         
-        
-      
         let user = PFUser.current()?.username
         let query = PFQuery(className: "Follow")
         query.whereKey("username", equalTo: user!)
