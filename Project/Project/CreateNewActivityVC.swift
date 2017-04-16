@@ -19,6 +19,10 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
     
     let imagePicker = UIImagePickerController()
     
+    var activity : Feed?
+    var isEdit : Bool?
+    var objId : String?
+    
     var projectNames = [String]()
     
     var selectedProjectName = ""
@@ -30,6 +34,22 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
 
+        
+        if isEdit!{
+            self.activityLabel.text = activity?.title
+            self.activityDescription.text = activity?.description
+            
+            let imageFromParse = activity?.image
+            imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
+                
+                if(imageData != nil){
+                    let image: UIImage! = UIImage(data: imageData!)!
+                    self.feedUploadImage.image = cropToBounds(image: image, width: 375.0, height: 222.0)
+                }
+            })
+        }
+        
+        
         
         let query = PFQuery(className:"Projects")
         query.whereKey("username", equalTo: (PFUser.current()?.username)!)

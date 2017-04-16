@@ -174,18 +174,19 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
             return 283
         }
     }
-
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "view-project"){
-            
+        if(segue.identifier == "edit-activity"){
             let destinationNavigationController = segue.destination as! UINavigationController
-            let targetController = destinationNavigationController.topViewController as! ProjectViewController
-            targetController.projectObject = projects[(projectsTable.indexPathForSelectedRow?.row)!]
-            
+            let targetController = destinationNavigationController.topViewController as! CreateNewActivityVC
+            targetController.isEdit = true
+            targetController.activity = feed[(projectsTable.indexPathForSelectedRow?.row)!]
         }
-        else if(segue.identifier == "view-activity"){
-            
+        else if(segue.identifier == "edit-project"){
+            let destinationNavigationController = segue.destination as! UINavigationController
+            let targetController = destinationNavigationController.topViewController as! CreateProjectVC
+            targetController.isEdit = true
+            targetController.project = projects[(projectsTable.indexPathForSelectedRow?.row)!]
         }
     }
 

@@ -18,9 +18,27 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     
     let imagePicker = UIImagePickerController()
     
+    var project : Feed?
+    var isEdit : Bool?
+    var objId : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        
+        if isEdit!{
+            self.projectNameTextField.text = project?.name
+            self.projectDescriptionTextfield.text = project?.description
+            
+            let imageFromParse = project?.image
+            imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
+                
+                if(imageData != nil){
+                    let image: UIImage! = UIImage(data: imageData!)!
+                    self.projectImageView.image = cropToBounds(image: image, width: 375.0, height: 222.0)
+                }
+            })
+        }
 
         // Do any additional setup after loading the view.
     }

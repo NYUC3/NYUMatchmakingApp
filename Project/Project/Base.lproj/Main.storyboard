@@ -898,6 +898,7 @@
                                         <connections>
                                             <outlet property="projectImage" destination="jNF-MK-fcZ" id="rey-gn-8Ed"/>
                                             <outlet property="projectName" destination="2Tt-gi-OBf" id="Fvr-vG-ZHA"/>
+                                            <segue destination="qvB-LY-50I" kind="show" identifier="edit-project" id="y8C-S0-NaY"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="my-activity" rowHeight="283" id="0vZ-XY-aiD" customClass="UserActivityTableViewCell" customModule="Project" customModuleProvider="target">
@@ -943,6 +944,7 @@
                                             <outlet property="activityTitle" destination="euZ-An-UaV" id="egQ-K3-OKl"/>
                                             <outlet property="projectImage" destination="fAE-sl-zw9" id="vxC-IC-Cyc"/>
                                             <outlet property="projectName" destination="eH9-xl-7Pp" id="NiO-g5-VXk"/>
+                                            <segue destination="c6v-1t-JzG" kind="show" identifier="edit-activity" id="4Fr-pq-VAM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1027,7 +1029,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpg-R0-oC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1106.4000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-1162" y="134"/>
         </scene>
         <!--Feed-->
         <scene sceneID="Xe8-27-7O3">
@@ -1580,4 +1582,8 @@
         <image name="tab-rectangle" width="26" height="26"/>
         <image name="tab-triangle" width="34" height="29"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="y8C-S0-NaY"/>
+        <segue reference="YNa-a0-ZSg"/>
+    </inferredMetricsTieBreakers>
 </document>

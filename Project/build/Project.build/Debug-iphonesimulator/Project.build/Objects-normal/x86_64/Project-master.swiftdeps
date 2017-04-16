@@ -1,8 +1,8 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
 options: "f9a4cc60ab03b75b4440730f41f7638c"
-build_time: [545635283, 560031000]
+build_time: [545636449, 946214000]
 inputs:
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateNewActivityVC.swift": [545606915, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateNewActivityVC.swift": [545636431, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/MyFeedVC.swift": [545603584, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/LoginVC.swift": [545603662, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/NavViewController.swift": [534192639, 0]
@@ -16,14 +16,14 @@ inputs:
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/LandingPageViewController.swift": [545602878, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/UserProjectTableViewCell.swift": [545634574, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CropImageViewController.swift": [534273397, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateProjectVC.swift": [545604662, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/CreateProjectVC.swift": [545636448, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/TesttOneViewController.swift": [534203862, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/AddActivityVC.swift": [534270160, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/FeedVCTableViewCell.swift": [545606088, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/AppDelegate.swift": [531504780, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/HomeViewController.swift": [545606441, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/ProjectObject.swift": [528587542, 0]
-  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/ProjectsListVC.swift": [545635282, 0]
+  "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/ProjectsListVC.swift": [545636087, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/ProjectFeedViewController.swift": [545605691, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/ProjectViewController.swift": [545446124, 0]
   "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/MyFeedCell.swift": [527833928, 0]
