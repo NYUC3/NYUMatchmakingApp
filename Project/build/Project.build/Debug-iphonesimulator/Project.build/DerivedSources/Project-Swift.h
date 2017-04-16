@@ -397,16 +397,23 @@ SWIFT_CLASS("_TtC7Project21ProjectViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC7Project14ProjectsListVC")
 @interface ProjectsListVC : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified infoLabel;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified projectsTable;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentControl;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createActivityButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createProjectButton;
 - (void)viewDidLoad;
+- (void)queryActivity;
 - (IBAction)unwindToProjectsWithSegue:(UIStoryboardSegue * _Nonnull)segue;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (IBAction)logoutTapped:(UIBarButtonItem * _Nonnull)sender;
+- (IBAction)segmentControlTapped:(UISegmentedControl * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

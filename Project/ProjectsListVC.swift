@@ -12,9 +12,14 @@ import Parse
 class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 
+    @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var projectsTable: UITableView!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBOutlet weak var createActivityButton: UIButton!
+    @IBOutlet weak var createProjectButton: UIButton!
 
     var projects = [Feed]()
+    var feed = [Feed]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,18 +45,62 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
                             if(theImg != nil){
                                 
                                 let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg, likes: 0)
-                                //let project = Project(name: object["Name"] as! String, desc: object["Description"] as! String, image: theImg)
+
                                 self.projects.append(project)
                             }
-                            
                         }
                     }
-                   self.projectsTable.reloadData()
+                    
+                    if(self.projects.count == 0){
+                        self.projectsTable.isHidden = true
+                        self.createActivityButton.isEnabled = false
+                        self.infoLabel.text = "Create a New Project!"
+                        
+                    }
+                    else{
+                        self.createActivityButton.isEnabled = true
+                        self.projectsTable.isHidden = false
+                    }
+                    
+                    self.queryActivity()
+                    self.projectsTable.reloadData()
                 }
             }
         }
     }
 
+    
+    func queryActivity(){
+    
+        let query = PFQuery(className:"MyActivities")
+        query.whereKey("username", equalTo:PFUser.current()?.email)
+        query.findObjectsInBackground {
+            (objects: [PFObject]?, error: Error?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) scores.")
+                // Do something with the found objects
+                if let objects = objects {
+                    for object in objects {
+                        
+                        if(object["image"] != nil){
+                            let theImg = object["image"] as! PFFile
+                            if(theImg != nil){
+                                
+                                let project = Feed(name: object["activityName"] as! String, title: "", desc: object["activityDescription"] as! String, image: theImg, likes: 0)
+                                
+                                self.feed.append(project)
+                            }
+                            
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    
 
     @IBAction func unwindToProjects(segue: UIStoryboardSegue) {
         // some code to execute
@@ -60,32 +109,28 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     // Tableview delegate functions
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-    
-        return projects.count
         
+        if(self.segmentControl.selectedSegmentIndex == 0){
+             return projects.count
+        }
+        else{
+            return feed.count
+        }
     }
     
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
-        
         //let cell = tableView.dequeueReusableCell(withIdentifier: "select-project", for: indexPath) as! HomeVCTableViewCell
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "my-project", for: indexPath) as! UITableViewCell
-        cell.textLabel?.text = projects[indexPath.row].name
-        cell.textLabel?.font = UIFont(name: "Avenir", size: 20)
-        
-        
-        //let gradient = CAGradientLayer()
-        //gradient.frame = view.bounds
-        //gradient.colors = [UIColor.black.cgColor, UIColor.clear.cgColor]
-        //cell.projectImage.layer.insertSublayer(gradient, at: 0)
-        //cell.pr.layer.insertSublayer(gradient, at: 0)
-        //self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 25)!]
-        
-        
-        
-        return cell
+        if(self.segmentControl.selectedSegmentIndex == 0){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "my-project", for: indexPath) as UITableViewCell
+            cell.textLabel?.text = projects[indexPath.row].name
+            return cell
+        }
+        else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "my-project", for: indexPath) as UITableViewCell
+            cell.textLabel?.text = feed[indexPath.row].name
+            return cell
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -94,6 +139,9 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
             let destinationNavigationController = segue.destination as! UINavigationController
             let targetController = destinationNavigationController.topViewController as! ProjectViewController
             targetController.projectObject = projects[(projectsTable.indexPathForSelectedRow?.row)!]
+            
+        }
+        else if(segue.identifier == "view-activity"){
             
         }
     }
@@ -105,6 +153,9 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
         self.present(vc, animated: true, completion: nil)
     }
     
+    @IBAction func segmentControlTapped(_ sender: UISegmentedControl) {
+        self.projectsTable.reloadData()
+    }
 
 
 }
