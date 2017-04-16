@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 - "cancelButtonTapped"
 - "imagePicker"
 - "imagePickerController"
+- "isEdit"
 - "projectDescriptionTextfield"
 - "projectImageView"
 - "projectNameTextField"
@@ -22,8 +23,7 @@ depends-top-level:
 - !private "&&"
 - !private "=="
 - "AssignmentPrecedence"
-- "Bool"
-- !private "BooleanLiteralType"
+- "BooleanLiteralType"
 - "CastingPrecedence"
 - "CreateProjectVC"
 - !private "Data"
@@ -157,7 +157,6 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "init"]
-- ["C7Project15CreateProjectVC", "Bool"]
 - !private ["C7Project15CreateProjectVC", "Data"]
 - !private ["C7Project15CreateProjectVC", "Error"]
 - ["C7Project15CreateProjectVC", "Feed"]
@@ -502,7 +501,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
-- ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "Data"]
 - !private ["CSo8NSObject", "Error"]
 - ["CSo8NSObject", "Feed"]
@@ -852,7 +850,6 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "saveEdit"]
 - !private ["PSo30UINavigationControllerDelegate", "view"]
 - ["PSo30UINavigationControllerDelegate", ""]
-- ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "Data"]
 - !private ["CSo11UIResponder", "Error"]
 - ["CSo11UIResponder", "Feed"]
@@ -1035,7 +1032,6 @@ depends-member:
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "text"]
 - !private ["OSC17UIViewContentMode", "scaleAspectFit"]
-- ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "Data"]
 - !private ["CSo16UIViewController", "Error"]
 - ["CSo16UIViewController", "Feed"]
@@ -1327,4 +1323,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "6380e02b5abed8dfc4385e0609d964bc"
+interface-hash: "49856182bdc35872b7eef70755e28387"

@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -747,10 +748,16 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portfolio is a directory of all the projects that people are working on at NYU. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBU-iH-PFi">
+                                <rect key="frame" x="51" y="20" width="273" height="368"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odt-cs-xZ3">
-                                <rect key="frame" x="16" y="565" width="343" height="30"/>
+                                <rect key="frame" x="16" y="516" width="343" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dbj-bL-Y3h"/>
+                                    <constraint firstAttribute="height" constant="30" id="qNx-fS-8am"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="LOGOUT">
@@ -761,9 +768,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjM-NY-cuX">
-                                <rect key="frame" x="16" y="527" width="343" height="30"/>
+                                <rect key="frame" x="16" y="478" width="343" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Q0k-PR-3uA"/>
+                                    <constraint firstAttribute="height" constant="30" id="NCI-yn-cm7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Privacy Policy">
@@ -771,9 +778,9 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZd-23-lPo">
-                                <rect key="frame" x="16" y="489" width="343" height="30"/>
+                                <rect key="frame" x="16" y="440" width="343" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Fds-zx-aGZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="T5b-ti-1fI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Terms of Service">
@@ -781,40 +788,34 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSF-lR-di2">
-                                <rect key="frame" x="16" y="445" width="343" height="36"/>
+                                <rect key="frame" x="16" y="396" width="343" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="7yM-y9-Nry"/>
+                                    <constraint firstAttribute="height" constant="36" id="ewo-EP-X6f"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="About">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portfolio is a directory of all the projects that people are working on at NYU. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBU-iH-PFi">
-                                <rect key="frame" x="51" y="20" width="273" height="417"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4d5-xl-8Gq" firstAttribute="top" secondItem="Odt-cs-xZ3" secondAttribute="bottom" constant="8" symbolic="YES" id="AwU-x0-aer"/>
-                            <constraint firstItem="qSF-lR-di2" firstAttribute="trailing" secondItem="WZd-23-lPo" secondAttribute="trailing" id="BEe-fi-JCv"/>
-                            <constraint firstItem="WZd-23-lPo" firstAttribute="top" secondItem="qSF-lR-di2" secondAttribute="bottom" constant="8" symbolic="YES" id="HWo-gH-fpz"/>
-                            <constraint firstItem="XjM-NY-cuX" firstAttribute="top" secondItem="WZd-23-lPo" secondAttribute="bottom" constant="8" symbolic="YES" id="JFC-RY-kdU"/>
-                            <constraint firstItem="qSF-lR-di2" firstAttribute="leading" secondItem="WZd-23-lPo" secondAttribute="leading" id="NcX-sf-12C"/>
-                            <constraint firstItem="VBU-iH-PFi" firstAttribute="centerX" secondItem="qSF-lR-di2" secondAttribute="centerX" id="PvI-l2-88o"/>
-                            <constraint firstItem="qSF-lR-di2" firstAttribute="leading" secondItem="Y7L-DR-ibm" secondAttribute="leadingMargin" id="Rb1-bI-tOV"/>
-                            <constraint firstItem="WZd-23-lPo" firstAttribute="leading" secondItem="XjM-NY-cuX" secondAttribute="leading" id="TMt-fu-uGS"/>
-                            <constraint firstItem="VBU-iH-PFi" firstAttribute="leading" secondItem="Y7L-DR-ibm" secondAttribute="leadingMargin" constant="35" id="Xk5-25-ulg"/>
-                            <constraint firstItem="WZd-23-lPo" firstAttribute="trailing" secondItem="XjM-NY-cuX" secondAttribute="trailing" id="YoM-bh-HeQ"/>
-                            <constraint firstItem="qSF-lR-di2" firstAttribute="top" secondItem="VBU-iH-PFi" secondAttribute="bottom" constant="8" symbolic="YES" id="dQK-cI-Mhb"/>
-                            <constraint firstItem="XjM-NY-cuX" firstAttribute="leading" secondItem="Odt-cs-xZ3" secondAttribute="leading" id="db1-Na-hOO"/>
-                            <constraint firstItem="XjM-NY-cuX" firstAttribute="trailing" secondItem="Odt-cs-xZ3" secondAttribute="trailing" id="ge7-Wu-J7v"/>
-                            <constraint firstItem="Odt-cs-xZ3" firstAttribute="top" secondItem="XjM-NY-cuX" secondAttribute="bottom" constant="8" symbolic="YES" id="iue-kH-83F"/>
-                            <constraint firstItem="qSF-lR-di2" firstAttribute="trailing" secondItem="Y7L-DR-ibm" secondAttribute="trailingMargin" id="p34-ha-FH3"/>
-                            <constraint firstItem="VBU-iH-PFi" firstAttribute="top" secondItem="Y7L-DR-ibm" secondAttribute="top" constant="20" symbolic="YES" id="uuo-9U-2vt"/>
+                            <constraint firstItem="4d5-xl-8Gq" firstAttribute="top" secondItem="Odt-cs-xZ3" secondAttribute="bottom" constant="8" symbolic="YES" id="41Q-NU-hwc"/>
+                            <constraint firstItem="Odt-cs-xZ3" firstAttribute="top" secondItem="XjM-NY-cuX" secondAttribute="bottom" constant="8" symbolic="YES" id="8Cc-e6-6Vo"/>
+                            <constraint firstItem="qSF-lR-di2" firstAttribute="leading" secondItem="WZd-23-lPo" secondAttribute="leading" id="EK8-Uc-goe"/>
+                            <constraint firstItem="qSF-lR-di2" firstAttribute="leading" secondItem="Y7L-DR-ibm" secondAttribute="leadingMargin" id="JC2-WX-mOZ"/>
+                            <constraint firstItem="WZd-23-lPo" firstAttribute="top" secondItem="qSF-lR-di2" secondAttribute="bottom" constant="8" symbolic="YES" id="WMQ-Vn-LMr"/>
+                            <constraint firstItem="VBU-iH-PFi" firstAttribute="centerX" secondItem="qSF-lR-di2" secondAttribute="centerX" id="Xuh-Ec-iWw"/>
+                            <constraint firstItem="XjM-NY-cuX" firstAttribute="leading" secondItem="Odt-cs-xZ3" secondAttribute="leading" id="Z7c-DG-TX8"/>
+                            <constraint firstItem="qSF-lR-di2" firstAttribute="top" secondItem="VBU-iH-PFi" secondAttribute="bottom" constant="8" symbolic="YES" id="bMp-QO-8rk"/>
+                            <constraint firstItem="qSF-lR-di2" firstAttribute="trailing" secondItem="Y7L-DR-ibm" secondAttribute="trailingMargin" id="bf7-f4-x6A"/>
+                            <constraint firstItem="VBU-iH-PFi" firstAttribute="top" secondItem="Y7L-DR-ibm" secondAttribute="top" constant="20" symbolic="YES" id="kwb-wH-zbf"/>
+                            <constraint firstItem="VBU-iH-PFi" firstAttribute="leading" secondItem="Y7L-DR-ibm" secondAttribute="leadingMargin" constant="35" id="mrG-T3-b2X"/>
+                            <constraint firstItem="WZd-23-lPo" firstAttribute="leading" secondItem="XjM-NY-cuX" secondAttribute="leading" id="qHY-GI-fNI"/>
+                            <constraint firstItem="WZd-23-lPo" firstAttribute="trailing" secondItem="XjM-NY-cuX" secondAttribute="trailing" id="qnZ-eI-r5y"/>
+                            <constraint firstItem="qSF-lR-di2" firstAttribute="trailing" secondItem="WZd-23-lPo" secondAttribute="trailing" id="sxX-y0-RMn"/>
+                            <constraint firstItem="XjM-NY-cuX" firstAttribute="trailing" secondItem="Odt-cs-xZ3" secondAttribute="trailing" id="u1S-Eq-cn4"/>
+                            <constraint firstItem="XjM-NY-cuX" firstAttribute="top" secondItem="WZd-23-lPo" secondAttribute="bottom" constant="8" symbolic="YES" id="wrv-xJ-PDV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="kho-H9-r4R">
@@ -830,7 +831,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fc4-Vq-bEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Bap-BP-E6w" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1692" y="-743"/>
+            <point key="canvasLocation" x="-1692" y="-743.47826086956525"/>
         </scene>
         <!--My Projects-->
         <scene sceneID="brn-W0-HD5">
@@ -1009,14 +1010,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rgG-yK-Ece">
-                        <barButtonItem key="leftBarButtonItem" title="logout" id="2jm-5q-I5j">
-                            <connections>
-                                <action selector="logoutTapped:" destination="q66-FF-pG3" id="PCa-HZ-qkm"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RQh-ha-6C3">
-                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="settings" id="AG9-zb-Gyh">
+                                <connections>
+                                    <segue destination="0yf-zC-jvN" kind="show" id="2Xy-bt-sVH"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="RQh-ha-6C3">
+                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>

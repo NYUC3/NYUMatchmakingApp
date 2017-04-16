@@ -187,6 +187,7 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified feedUploadImage;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified projectNamePickerView;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker;
+@property (nonatomic) BOOL isEdit;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull projectNames;
 @property (nonatomic, copy) NSString * _Nonnull selectedProjectName;
 - (void)viewDidLoad;
@@ -211,6 +212,7 @@ SWIFT_CLASS("_TtC7Project15CreateProjectVC")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectNameTextField;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified projectDescriptionTextfield;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker;
+@property (nonatomic) BOOL isEdit;
 - (void)viewDidLoad;
 - (IBAction)saveButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)cancelButtonTapped:(UIBarButtonItem * _Nonnull)sender;

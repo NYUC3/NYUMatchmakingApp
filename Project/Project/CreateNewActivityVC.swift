@@ -20,7 +20,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
     let imagePicker = UIImagePickerController()
     
     var activity : Feed?
-    var isEdit : Bool?
+    var isEdit = false
 
     var projectNames = [String]()
     
@@ -34,7 +34,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
 
         
-        if isEdit!{
+        if isEdit{
             self.activityLabel.text = activity?.title
             self.activityDescription.text = activity?.description
             
@@ -82,7 +82,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
 
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
-        if(self.isEdit)!{
+        if(self.isEdit){
             self.saveEdit()
         }
         else{

@@ -18,13 +18,13 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     let imagePicker = UIImagePickerController()
     
     var project : Feed?
-    var isEdit : Bool?
+    var isEdit = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
         
-        if isEdit!{
+        if isEdit{
             self.projectNameTextField.text = project?.name
             self.projectDescriptionTextfield.text = project?.description
             
@@ -48,7 +48,7 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
             
             
             
-            if(self.isEdit)!{
+            if(self.isEdit){
                 
                 self.saveEdit()
             

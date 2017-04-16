@@ -24,6 +24,9 @@ class SettingsViewController: UIViewController {
     
     @IBAction func logoutTapped(_ sender: UIButton) {
         PFUser.logOut()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "landingvc") as! LandingPageViewController
+        self.present(vc, animated: true, completion: nil)
         //self.dismiss(animated: true, completion: nil)
     }
 
