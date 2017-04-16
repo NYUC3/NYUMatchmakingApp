@@ -88,7 +88,7 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
                             let theImg = object["image"] as! PFFile
                             if(theImg != nil){
                                 
-                                let project = Feed(name: object["activityName"] as! String, title: "", desc: object["activityDescription"] as! String, image: theImg, likes: 0)
+                                let project = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: theImg, likes: 0)
                                 
                                 self.feed.append(project)
                             }
@@ -122,16 +122,59 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //let cell = tableView.dequeueReusableCell(withIdentifier: "select-project", for: indexPath) as! HomeVCTableViewCell
         if(self.segmentControl.selectedSegmentIndex == 0){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "my-project", for: indexPath) as UITableViewCell
-            cell.textLabel?.text = projects[indexPath.row].name
+            let cell = tableView.dequeueReusableCell(withIdentifier: "my-project", for: indexPath) as! UserProjectTableViewCell
+            
+            let myString = " " + projects[indexPath.row].name! + " "
+            let myAttribute = [NSBackgroundColorAttributeName: UIColor.black, NSForegroundColorAttributeName: UIColor.white]
+            let myAttrString = NSAttributedString(string: myString, attributes: myAttribute)
+            
+            cell.projectName.attributedText =  myAttrString
+            
+            let imageFromParse = projects[indexPath.row].image
+            imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
+                
+                if(imageData != nil){
+                    let image: UIImage! = UIImage(data: imageData!)!
+                    cell.projectImage.image = cropToBounds(image: image, width: 375.0, height: 222.0)
+                }
+            })
+            
             return cell
         }
         else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "my-project", for: indexPath) as UITableViewCell
-            cell.textLabel?.text = feed[indexPath.row].name
+            let cell = tableView.dequeueReusableCell(withIdentifier: "my-activity", for: indexPath) as! UserActivityTableViewCell
+            
+            cell.activityTitle.text = feed[indexPath.row].title
+            
+            let myString = " " + feed[indexPath.row].name! + " "
+            let myAttribute = [NSBackgroundColorAttributeName: UIColor.black, NSForegroundColorAttributeName: UIColor.white]
+            let myAttrString = NSAttributedString(string: myString, attributes: myAttribute)
+            
+            cell.projectName.attributedText =  myAttrString
+            
+            let imageFromParse = feed[indexPath.row].image
+            imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
+                
+                if(imageData != nil){
+                    let image: UIImage! = UIImage(data: imageData!)!
+                    cell.projectImage.image = cropToBounds(image: image, width: 375.0, height: 222.0)
+                }
+            })
+            
+            
             return cell
         }
     }
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+        if(self.segmentControl.selectedSegmentIndex == 0){
+            return 222
+        }
+        else{
+            return 283
+        }
+    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "view-project"){

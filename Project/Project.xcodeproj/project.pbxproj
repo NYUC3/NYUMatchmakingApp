@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C20A84E81EA2B83100823E43 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A84E71EA2B83100823E43 /* LandingPageViewController.swift */; };
+		C20A84F11EA3339C00823E43 /* UserActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A84F01EA3339C00823E43 /* UserActivityTableViewCell.swift */; };
+		C20A84F31EA333AB00823E43 /* UserProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A84F21EA333AB00823E43 /* UserProjectTableViewCell.swift */; };
 		C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */; };
 		C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */; };
 		C236D2291DEF7F91008A392C /* SingleActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236D2281DEF7F91008A392C /* SingleActivityVC.swift */; };
@@ -93,6 +95,8 @@
 
 /* Begin PBXFileReference section */
 		C20A84E71EA2B83100823E43 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		C20A84F01EA3339C00823E43 /* UserActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserActivityTableViewCell.swift; sourceTree = "<group>"; };
+		C20A84F21EA333AB00823E43 /* UserProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProjectTableViewCell.swift; path = ../UserProjectTableViewCell.swift; sourceTree = "<group>"; };
 		C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListVC.swift; sourceTree = SOURCE_ROOT; };
 		C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectVC.swift; sourceTree = "<group>"; };
 		C236D2281DEF7F91008A392C /* SingleActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleActivityVC.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 		C20A84ED1EA2BB9E00823E43 /* ProjectView */ = {
 			isa = PBXGroup;
 			children = (
+				C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */,
 				C2E9EE3B1EA0392F002BF42A /* ProjectViewController.swift */,
 			);
 			name = ProjectView;
@@ -246,6 +251,7 @@
 		C20A84EE1EA2BBA400823E43 /* ActivityView */ = {
 			isa = PBXGroup;
 			children = (
+				C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */,
 				C236D2281DEF7F91008A392C /* SingleActivityVC.swift */,
 			);
 			name = ActivityView;
@@ -254,8 +260,8 @@
 		C20A84EF1EA2BBFA00823E43 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				C26DDFA31D9394BD00429DE4 /* MyFeedCell.swift */,
-				C26DDF9F1D938A8500429DE4 /* MyFeedVC.swift */,
+				C20A84F21EA333AB00823E43 /* UserProjectTableViewCell.swift */,
+				C20A84F01EA3339C00823E43 /* UserActivityTableViewCell.swift */,
 				C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */,
 			);
 			name = User;
@@ -548,12 +554,14 @@
 				C23BBF331DA6AE7800202169 /* LoginVC.swift in Sources */,
 				C236D22B1DEFBC67008A392C /* NavViewController.swift in Sources */,
 				C26DDF921D9359A600429DE4 /* HomeVCTableViewCell.swift in Sources */,
+				C20A84F11EA3339C00823E43 /* UserActivityTableViewCell.swift in Sources */,
 				C26DDF941D935A4A00429DE4 /* FeedVC.swift in Sources */,
 				C2A8DE451DF20CD5009B428E /* CropTestViewController.swift in Sources */,
 				C26DDF981D935CC000429DE4 /* FeedObject.swift in Sources */,
 				C23BBF351DA6B21100202169 /* SignupVC.swift in Sources */,
 				C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */,
 				C20A84E81EA2B83100823E43 /* LandingPageViewController.swift in Sources */,
+				C20A84F31EA333AB00823E43 /* UserProjectTableViewCell.swift in Sources */,
 				C272EB831DEA977E00402E10 /* CropImageViewController.swift in Sources */,
 				C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */,
 				C2A8DE471DF4BE20009B428E /* TesttOneViewController.swift in Sources */,
