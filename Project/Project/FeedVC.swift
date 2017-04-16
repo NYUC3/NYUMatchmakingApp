@@ -21,8 +21,11 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadingView.isHidden = false
+        //self.loadingView.isHidden = false
         self.infoLabel.text = "Loading..."
+        let logo = UIImage(named: "main-logo")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
     }
     
     
@@ -39,8 +42,6 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 // Do something with the found objects
                 if let objects = objects {
                     for object in objects {
-                        print(object["image"])
-                            
                         var name = ""
                         var title = ""
                         var description = ""
@@ -80,16 +81,8 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                                         self.feedList.append(feed)
                                         self.loadingView.isHidden = true
                                         self.daTableView.reloadData()
-                                        
-                                        if(self.feedList.count == 0){
-                                            self.loadingView.isHidden = false
-                                            self.infoLabel.text = "No activity to show."
-                                        }
-                                        else{
-                                            self.loadingView.isHidden = true
-                                        }
-                                        
                                     }
+                                    
                                 }
                                 else {
                                         // Log details of the failure
@@ -99,6 +92,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                         }
                     }
                 }
+
             }
             else {
                 print("Error: \(error!)")
@@ -134,16 +128,19 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                 // Do something with the found objects
                 if let objects = objects {
                     for object in objects {
-                        print(object["project"])
+
                         self.projectsFollowing.append(object["project"] as! String)
                         self.queryActivities(name: object["project"] as! String)
                     }
                     if(!self.projectsFollowing.isEmpty){
                         self.daTableView.reloadData()
                         self.daTableView.isHidden = false
+                        self.loadingView.isHidden = true
                     }
                     else{
                         self.daTableView.isHidden = true
+                        self.loadingView.isHidden = false
+                        self.infoLabel.text = "Not following any projects."
                     }
                 }
             }
@@ -190,6 +187,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         //cell.likeButton.addTarget(self, action: #selector(FeedVC.buttonClicked(sender:)), for: UIControlEvents.touchUpInside)
         //cell.feedDescriptionLabel.lineBreakMode = .byWordWrapping
         //cell.feedDescriptionLabel.numberOfLines = 0
+        
         let imageFromParse = feedList[indexPath.row].image
         imageFromParse!.getDataInBackground(block: { (imageData: Data?, error: Error?) -> Void in
             let image: UIImage! = UIImage(data: imageData!)!
