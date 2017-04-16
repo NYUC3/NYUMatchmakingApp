@@ -13,17 +13,18 @@ provides-dynamic-lookup:
 - "imagePicker"
 - "imagePickerController"
 - "numberOfComponents"
-- "objId"
 - "pickerView"
 - "projectNamePickerView"
 - "projectNames"
 - "saveButtonTapped"
+- "saveEdit"
 - "selectedProjectName"
 - "touchesBegan"
 - "uploadButton"
 - "viewDidLoad"
 depends-top-level:
 - !private "!="
+- !private "&&"
 - !private "=="
 - "AssignmentPrecedence"
 - "Bool"
@@ -89,6 +90,7 @@ depends-member:
 - !private ["Ps9AnyObject", "feedUploadImage"]
 - !private ["Ps9AnyObject", "findObjectsInBackground"]
 - !private ["Ps9AnyObject", "getDataInBackground"]
+- !private ["Ps9AnyObject", "getObjectInBackground"]
 - !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "imagePicker"]
 - ["Ps9AnyObject", "imagePickerController"]
@@ -107,6 +109,7 @@ depends-member:
 - !private ["Ps9AnyObject", "projectNamePickerView"]
 - !private ["Ps9AnyObject", "projectNames"]
 - !private ["Ps9AnyObject", "reloadAllComponents"]
+- !private ["Ps9AnyObject", "saveEdit"]
 - !private ["Ps9AnyObject", "saveInBackground"]
 - !private ["Ps9AnyObject", "selectedProjectName"]
 - !private ["Ps9AnyObject", "sourceType"]
@@ -159,6 +162,7 @@ depends-member:
 - !private ["Ps7CVarArg", "feedUploadImage"]
 - !private ["Ps7CVarArg", "findObjectsInBackground"]
 - !private ["Ps7CVarArg", "getDataInBackground"]
+- !private ["Ps7CVarArg", "getObjectInBackground"]
 - !private ["Ps7CVarArg", "image"]
 - !private ["Ps7CVarArg", "imagePicker"]
 - ["Ps7CVarArg", "imagePickerController"]
@@ -177,6 +181,7 @@ depends-member:
 - !private ["Ps7CVarArg", "projectNamePickerView"]
 - !private ["Ps7CVarArg", "projectNames"]
 - !private ["Ps7CVarArg", "reloadAllComponents"]
+- !private ["Ps7CVarArg", "saveEdit"]
 - !private ["Ps7CVarArg", "saveInBackground"]
 - !private ["Ps7CVarArg", "selectedProjectName"]
 - !private ["Ps7CVarArg", "sourceType"]
@@ -237,13 +242,13 @@ depends-member:
 - ["C7Project19CreateNewActivityVC", "navigationControllerSupportedInterfaceOrientations"]
 - ["C7Project19CreateNewActivityVC", "numberOfComponents"]
 - ["C7Project19CreateNewActivityVC", "numberOfComponentsInPickerView"]
-- ["C7Project19CreateNewActivityVC", "objId"]
 - ["C7Project19CreateNewActivityVC", "pickerView"]
 - !private ["C7Project19CreateNewActivityVC", "present"]
 - !private ["C7Project19CreateNewActivityVC", "print"]
 - ["C7Project19CreateNewActivityVC", "projectNamePickerView"]
 - ["C7Project19CreateNewActivityVC", "projectNames"]
 - ["C7Project19CreateNewActivityVC", "saveButtonTapped"]
+- ["C7Project19CreateNewActivityVC", "saveEdit"]
 - ["C7Project19CreateNewActivityVC", "selectedProjectName"]
 - ["C7Project19CreateNewActivityVC", "touchesBegan"]
 - ["C7Project19CreateNewActivityVC", "uploadButton"]
@@ -269,12 +274,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "cropToBounds"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
+- !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
 - !private ["Ps28CustomDebugStringConvertible", "feedUploadImage"]
 - !private ["Ps28CustomDebugStringConvertible", "findObjectsInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "getDataInBackground"]
+- !private ["Ps28CustomDebugStringConvertible", "getObjectInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "imagePicker"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerController"]
@@ -293,6 +300,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "projectNamePickerView"]
 - !private ["Ps28CustomDebugStringConvertible", "projectNames"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadAllComponents"]
+- !private ["Ps28CustomDebugStringConvertible", "saveEdit"]
 - !private ["Ps28CustomDebugStringConvertible", "saveInBackground"]
 - !private ["Ps28CustomDebugStringConvertible", "selectedProjectName"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceType"]
@@ -309,6 +317,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "debugDescription"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
@@ -338,6 +347,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "feedUploadImage"]
 - !private ["Ps23CustomStringConvertible", "findObjectsInBackground"]
 - !private ["Ps23CustomStringConvertible", "getDataInBackground"]
+- !private ["Ps23CustomStringConvertible", "getObjectInBackground"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "imagePicker"]
 - ["Ps23CustomStringConvertible", "imagePickerController"]
@@ -356,6 +366,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "projectNamePickerView"]
 - !private ["Ps23CustomStringConvertible", "projectNames"]
 - !private ["Ps23CustomStringConvertible", "reloadAllComponents"]
+- !private ["Ps23CustomStringConvertible", "saveEdit"]
 - !private ["Ps23CustomStringConvertible", "saveInBackground"]
 - !private ["Ps23CustomStringConvertible", "selectedProjectName"]
 - !private ["Ps23CustomStringConvertible", "sourceType"]
@@ -393,6 +404,7 @@ depends-member:
 - !private ["Ps9Equatable", "feedUploadImage"]
 - !private ["Ps9Equatable", "findObjectsInBackground"]
 - !private ["Ps9Equatable", "getDataInBackground"]
+- !private ["Ps9Equatable", "getObjectInBackground"]
 - !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "imagePicker"]
 - ["Ps9Equatable", "imagePickerController"]
@@ -412,6 +424,7 @@ depends-member:
 - !private ["Ps9Equatable", "projectNamePickerView"]
 - !private ["Ps9Equatable", "projectNames"]
 - !private ["Ps9Equatable", "reloadAllComponents"]
+- !private ["Ps9Equatable", "saveEdit"]
 - !private ["Ps9Equatable", "saveInBackground"]
 - !private ["Ps9Equatable", "scaleAspectFit"]
 - !private ["Ps9Equatable", "selectedProjectName"]
@@ -431,10 +444,12 @@ depends-member:
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "debugDescription"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["V7Project4Feed", "description"]
 - !private ["V7Project4Feed", "image"]
+- !private ["V7Project4Feed", "objectId"]
 - !private ["V7Project4Feed", "title"]
 - !private ["Ps8Hashable", "NSFontAttributeName"]
 - !private ["Ps8Hashable", "PFFile"]
@@ -461,6 +476,7 @@ depends-member:
 - !private ["Ps8Hashable", "feedUploadImage"]
 - !private ["Ps8Hashable", "findObjectsInBackground"]
 - !private ["Ps8Hashable", "getDataInBackground"]
+- !private ["Ps8Hashable", "getObjectInBackground"]
 - !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "imagePicker"]
 - ["Ps8Hashable", "imagePickerController"]
@@ -480,6 +496,7 @@ depends-member:
 - !private ["Ps8Hashable", "projectNamePickerView"]
 - !private ["Ps8Hashable", "projectNames"]
 - !private ["Ps8Hashable", "reloadAllComponents"]
+- !private ["Ps8Hashable", "saveEdit"]
 - !private ["Ps8Hashable", "saveInBackground"]
 - !private ["Ps8Hashable", "scaleAspectFit"]
 - !private ["Ps8Hashable", "selectedProjectName"]
@@ -538,6 +555,7 @@ depends-member:
 - !private ["PSo8NSCoding", "projectNamePickerView"]
 - !private ["PSo8NSCoding", "projectNames"]
 - !private ["PSo8NSCoding", "reloadAllComponents"]
+- !private ["PSo8NSCoding", "saveEdit"]
 - !private ["PSo8NSCoding", "selectedProjectName"]
 - !private ["PSo8NSCoding", "sourceType"]
 - !private ["PSo8NSCoding", "text"]
@@ -546,6 +564,7 @@ depends-member:
 - !private ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "findObjectsInBackground"]
+- !private ["PSo9NSCopying", "getObjectInBackground"]
 - ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "whereKey"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
@@ -583,6 +602,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "projectNamePickerView"]
 - !private ["PSo26NSExtensionRequestHandling", "projectNames"]
+- !private ["PSo26NSExtensionRequestHandling", "saveEdit"]
 - !private ["PSo26NSExtensionRequestHandling", "selectedProjectName"]
 - !private ["PSo26NSExtensionRequestHandling", "sourceType"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -629,6 +649,7 @@ depends-member:
 - ["CSo8NSObject", "feedUploadImage"]
 - !private ["CSo8NSObject", "findObjectsInBackground"]
 - !private ["CSo8NSObject", "getDataInBackground"]
+- !private ["CSo8NSObject", "getObjectInBackground"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imagePicker"]
 - ["CSo8NSObject", "imagePickerController"]
@@ -641,7 +662,6 @@ depends-member:
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo8NSObject", "numberOfComponents"]
 - ["CSo8NSObject", "numberOfComponentsInPickerView"]
-- ["CSo8NSObject", "objId"]
 - ["CSo8NSObject", "pickerView"]
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "print"]
@@ -649,6 +669,7 @@ depends-member:
 - ["CSo8NSObject", "projectNames"]
 - !private ["CSo8NSObject", "reloadAllComponents"]
 - ["CSo8NSObject", "saveButtonTapped"]
+- ["CSo8NSObject", "saveEdit"]
 - !private ["CSo8NSObject", "saveInBackground"]
 - ["CSo8NSObject", "selectedProjectName"]
 - !private ["CSo8NSObject", "sourceType"]
@@ -685,6 +706,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "feedUploadImage"]
 - !private ["PSo16NSObjectProtocol", "findObjectsInBackground"]
 - !private ["PSo16NSObjectProtocol", "getDataInBackground"]
+- !private ["PSo16NSObjectProtocol", "getObjectInBackground"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "imagePicker"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
@@ -703,6 +725,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "projectNamePickerView"]
 - !private ["PSo16NSObjectProtocol", "projectNames"]
 - !private ["PSo16NSObjectProtocol", "reloadAllComponents"]
+- !private ["PSo16NSObjectProtocol", "saveEdit"]
 - !private ["PSo16NSObjectProtocol", "saveInBackground"]
 - !private ["PSo16NSObjectProtocol", "selectedProjectName"]
 - !private ["PSo16NSObjectProtocol", "sourceType"]
@@ -716,6 +739,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
+- !private ["Sq", "debugDescription"]
 - !private ["CSo6PFFile", "getDataInBackground"]
 - !private ["CSo6PFFile", "init"]
 - !private ["CSo8PFObject", "current"]
@@ -724,6 +748,7 @@ depends-member:
 - !private ["CSo8PFObject", "subscript"]
 - !private ["CSo8PFObject", "username"]
 - !private ["CSo7PFQuery", "findObjectsInBackground"]
+- !private ["CSo7PFQuery", "getObjectInBackground"]
 - !private ["CSo7PFQuery", "init"]
 - !private ["CSo7PFQuery", "whereKey"]
 - !private ["PSo13PFSubclassing", "current"]
@@ -799,6 +824,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "projectNamePickerView"]
 - !private ["PSo21UIAppearanceContainer", "projectNames"]
 - !private ["PSo21UIAppearanceContainer", "reloadAllComponents"]
+- !private ["PSo21UIAppearanceContainer", "saveEdit"]
 - !private ["PSo21UIAppearanceContainer", "selectedProjectName"]
 - !private ["PSo21UIAppearanceContainer", "sourceType"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -842,6 +868,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "projectNamePickerView"]
 - !private ["PSo18UIContentContainer", "projectNames"]
+- !private ["PSo18UIContentContainer", "saveEdit"]
 - !private ["PSo18UIContentContainer", "selectedProjectName"]
 - !private ["PSo18UIContentContainer", "sourceType"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -900,6 +927,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "projectNamePickerView"]
 - !private ["PSo18UIFocusEnvironment", "projectNames"]
 - !private ["PSo18UIFocusEnvironment", "reloadAllComponents"]
+- !private ["PSo18UIFocusEnvironment", "saveEdit"]
 - !private ["PSo18UIFocusEnvironment", "selectedProjectName"]
 - !private ["PSo18UIFocusEnvironment", "sourceType"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -950,6 +978,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "print"]
 - !private ["PSo31UIImagePickerControllerDelegate", "projectNamePickerView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "projectNames"]
+- !private ["PSo31UIImagePickerControllerDelegate", "saveEdit"]
 - !private ["PSo31UIImagePickerControllerDelegate", "selectedProjectName"]
 - !private ["PSo31UIImagePickerControllerDelegate", "view"]
 - ["PSo31UIImagePickerControllerDelegate", ""]
@@ -994,6 +1023,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "print"]
 - !private ["PSo30UINavigationControllerDelegate", "projectNamePickerView"]
 - !private ["PSo30UINavigationControllerDelegate", "projectNames"]
+- !private ["PSo30UINavigationControllerDelegate", "saveEdit"]
 - !private ["PSo30UINavigationControllerDelegate", "selectedProjectName"]
 - !private ["PSo30UINavigationControllerDelegate", "view"]
 - ["PSo30UINavigationControllerDelegate", ""]
@@ -1029,6 +1059,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "print"]
 - !private ["PSo22UIPickerViewDataSource", "projectNamePickerView"]
 - !private ["PSo22UIPickerViewDataSource", "projectNames"]
+- !private ["PSo22UIPickerViewDataSource", "saveEdit"]
 - !private ["PSo22UIPickerViewDataSource", "selectedProjectName"]
 - !private ["PSo22UIPickerViewDataSource", "view"]
 - ["PSo22UIPickerViewDataSource", ""]
@@ -1063,6 +1094,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "print"]
 - !private ["PSo20UIPickerViewDelegate", "projectNamePickerView"]
 - !private ["PSo20UIPickerViewDelegate", "projectNames"]
+- !private ["PSo20UIPickerViewDelegate", "saveEdit"]
 - !private ["PSo20UIPickerViewDelegate", "selectedProjectName"]
 - !private ["PSo20UIPickerViewDelegate", "view"]
 - ["PSo20UIPickerViewDelegate", ""]
@@ -1115,7 +1147,6 @@ depends-member:
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo11UIResponder", "numberOfComponents"]
 - ["CSo11UIResponder", "numberOfComponentsInPickerView"]
-- ["CSo11UIResponder", "objId"]
 - ["CSo11UIResponder", "pickerView"]
 - !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "print"]
@@ -1123,6 +1154,7 @@ depends-member:
 - ["CSo11UIResponder", "projectNames"]
 - !private ["CSo11UIResponder", "reloadAllComponents"]
 - ["CSo11UIResponder", "saveButtonTapped"]
+- ["CSo11UIResponder", "saveEdit"]
 - ["CSo11UIResponder", "selectedProjectName"]
 - !private ["CSo11UIResponder", "sourceType"]
 - !private ["CSo11UIResponder", "text"]
@@ -1170,6 +1202,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "projectNamePickerView"]
 - !private ["PSo30UIResponderStandardEditActions", "projectNames"]
 - !private ["PSo30UIResponderStandardEditActions", "reloadAllComponents"]
+- !private ["PSo30UIResponderStandardEditActions", "saveEdit"]
 - !private ["PSo30UIResponderStandardEditActions", "selectedProjectName"]
 - !private ["PSo30UIResponderStandardEditActions", "sourceType"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
@@ -1213,6 +1246,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "projectNamePickerView"]
 - !private ["PSo16UIStateRestoring", "projectNames"]
+- !private ["PSo16UIStateRestoring", "saveEdit"]
 - !private ["PSo16UIStateRestoring", "selectedProjectName"]
 - !private ["PSo16UIStateRestoring", "sourceType"]
 - !private ["PSo16UIStateRestoring", "view"]
@@ -1261,6 +1295,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "projectNamePickerView"]
 - !private ["PSo18UITraitEnvironment", "projectNames"]
 - !private ["PSo18UITraitEnvironment", "reloadAllComponents"]
+- !private ["PSo18UITraitEnvironment", "saveEdit"]
 - !private ["PSo18UITraitEnvironment", "selectedProjectName"]
 - !private ["PSo18UITraitEnvironment", "sourceType"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -1321,13 +1356,13 @@ depends-member:
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo16UIViewController", "numberOfComponents"]
 - ["CSo16UIViewController", "numberOfComponentsInPickerView"]
-- ["CSo16UIViewController", "objId"]
 - ["CSo16UIViewController", "pickerView"]
 - !private ["CSo16UIViewController", "present"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "projectNamePickerView"]
 - ["CSo16UIViewController", "projectNames"]
 - ["CSo16UIViewController", "saveButtonTapped"]
+- ["CSo16UIViewController", "saveEdit"]
 - ["CSo16UIViewController", "selectedProjectName"]
 - !private ["CSo16UIViewController", "sourceType"]
 - ["CSo16UIViewController", "touchesBegan"]
@@ -1386,6 +1421,7 @@ depends-member:
 - !private ["Ps9_Hashable", "feedUploadImage"]
 - !private ["Ps9_Hashable", "findObjectsInBackground"]
 - !private ["Ps9_Hashable", "getDataInBackground"]
+- !private ["Ps9_Hashable", "getObjectInBackground"]
 - !private ["Ps9_Hashable", "image"]
 - !private ["Ps9_Hashable", "imagePicker"]
 - ["Ps9_Hashable", "imagePickerController"]
@@ -1405,6 +1441,7 @@ depends-member:
 - !private ["Ps9_Hashable", "projectNamePickerView"]
 - !private ["Ps9_Hashable", "projectNames"]
 - !private ["Ps9_Hashable", "reloadAllComponents"]
+- !private ["Ps9_Hashable", "saveEdit"]
 - !private ["Ps9_Hashable", "saveInBackground"]
 - !private ["Ps9_Hashable", "scaleAspectFit"]
 - !private ["Ps9_Hashable", "selectedProjectName"]
@@ -1432,6 +1469,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "debugDescription"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps22_RandomAccessIndexable", "append"]
@@ -1462,6 +1500,7 @@ depends-nominal:
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "V7Project4Feed"
@@ -1477,6 +1516,7 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
+- !private "Sq"
 - !private "CSo6PFFile"
 - !private "CSo8PFObject"
 - !private "CSo7PFQuery"
@@ -1623,4 +1663,4 @@ depends-external:
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Headers/Parse.h"
 - "/Users/Vidyadhar/Desktop/Github/NYUMatchmakingApp/Project/Project/Parse.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "637835c4853999f740a80a8e1aa2a7cd"
+interface-hash: "4d318d65d69c06f594fb6ee487babd25"

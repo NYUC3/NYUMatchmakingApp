@@ -15,12 +15,10 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     @IBOutlet weak var projectNameTextField: UITextField!
     @IBOutlet weak var projectDescriptionTextfield: UITextView!
  
-    
     let imagePicker = UIImagePickerController()
     
     var project : Feed?
     var isEdit : Bool?
-    var objId : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,20 +43,25 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
 
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
         
-        
-        
         if(projectNameTextField.text != "" && projectDescriptionTextfield.text != "" && self.projectImageView.image != nil){
             
+            
+            
+            
+            if(self.isEdit)!{
+                
+                self.saveEdit()
+            
+            }
+            else{
+                let activity = PFObject(className:"Projects")
+                activity["Name"] = projectNameTextField.text
+                activity["Description"] = projectDescriptionTextfield.text
+                activity["username"] = (PFUser.current()?.username)!
+                activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.projectImageView.image!, 0.1)!)
+                activity.saveInBackground()
+            }
             dismiss(animated: true, completion: nil)
-            
-            let activity = PFObject(className:"Projects")
-            activity["Name"] = projectNameTextField.text
-            activity["Description"] = projectDescriptionTextfield.text
-            activity["username"] = (PFUser.current()?.username)!
-            
-            activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.projectImageView.image!, 0.1)!)
-            activity.saveInBackground()
-            
         }
         else{
             
@@ -66,7 +69,7 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
-
+        
     }
 
     @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
@@ -86,6 +89,30 @@ class CreateProjectVC: UIViewController, UIImagePickerControllerDelegate, UINavi
         }
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    
+    func saveEdit(){
+        
+        let query = PFQuery(className:"Projects")
+        query.getObjectInBackground(withId: (project?.objectId)!) {
+            (object: PFObject?, error: Error?) -> Void in
+            if error == nil && object != nil {
+
+                object?["Name"] = self.projectNameTextField.text
+                object?["Description"] = self.projectDescriptionTextfield.text
+                object?["image"] = PFFile(data: UIImageJPEGRepresentation(self.projectImageView.image!, 0.1)!)
+                object?.saveInBackground()
+                
+            }
+
+            else {
+                
+                print(error.debugDescription)
+
+            }
+        }
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

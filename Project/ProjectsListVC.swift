@@ -44,8 +44,8 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
                             let theImg = object["image"] as! PFFile
                             if(theImg != nil){
                                 
-                                let project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg, likes: 0)
-
+                                var project = Feed(name: object["Name"] as! String, title: "", desc: object["Description"] as! String, image: theImg, likes: 0)
+                                project.objectId = object.objectId!
                                 self.projects.append(project)
                             }
                         }
@@ -88,9 +88,9 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
                             let theImg = object["image"] as! PFFile
                             if(theImg != nil){
                                 
-                                let project = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: theImg, likes: 0)
-                                
-                                self.feed.append(project)
+                                var feed = Feed(name: object["projectName"] as! String, title: object["activityName"] as! String, desc: object["activityDescription"] as! String, image: theImg, likes: 0)
+                                feed.objectId = object.objectId!
+                                self.feed.append(feed)
                             }
                             
                         }

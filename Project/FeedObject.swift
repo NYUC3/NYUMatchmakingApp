@@ -27,5 +27,6 @@ struct Feed {
     var noOfLikes : Int = 0
     var timestamp : String = ""
     var isLiked : Bool = false
+    var objectId : String = ""
     
 }

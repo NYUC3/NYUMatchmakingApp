@@ -187,7 +187,6 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified feedUploadImage;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified projectNamePickerView;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker;
-@property (nonatomic, copy) NSString * _Nullable objId;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull projectNames;
 @property (nonatomic, copy) NSString * _Nonnull selectedProjectName;
 - (void)viewDidLoad;
@@ -200,6 +199,7 @@ SWIFT_CLASS("_TtC7Project19CreateNewActivityVC")
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component SWIFT_WARN_UNUSED_RESULT;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)saveEdit;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -211,12 +211,12 @@ SWIFT_CLASS("_TtC7Project15CreateProjectVC")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified projectNameTextField;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified projectDescriptionTextfield;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull imagePicker;
-@property (nonatomic, copy) NSString * _Nullable objId;
 - (void)viewDidLoad;
 - (IBAction)saveButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)cancelButtonTapped:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)uploadButtonTapped:(UIButton * _Nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (void)saveEdit;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

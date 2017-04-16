@@ -21,8 +21,7 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
     
     var activity : Feed?
     var isEdit : Bool?
-    var objId : String?
-    
+
     var projectNames = [String]()
     
     var selectedProjectName = ""
@@ -83,15 +82,20 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
 
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
+        if(self.isEdit)!{
+            self.saveEdit()
+        }
+        else{
+            let activity = PFObject(className:"MyActivities")
+            activity["projectName"] = selectedProjectName
+            activity["activityName"] = activityLabel.text
+            activity["activityDescription"] = activityDescription.text
+            activity["username"] = (PFUser.current()?.username)!
+            
+            activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.feedUploadImage.image!, 0.1)!)
+            activity.saveInBackground()
+        }
 
-        let activity = PFObject(className:"MyActivities")
-        activity["projectName"] = selectedProjectName
-        activity["activityName"] = activityLabel.text
-        activity["activityDescription"] = activityDescription.text
-        activity["username"] = (PFUser.current()?.username)!
-        
-        activity["image"] = PFFile(data: UIImageJPEGRepresentation(self.feedUploadImage.image!, 0.1)!)
-        activity.saveInBackground()
         dismiss(animated: true, completion: nil)
     }
 
@@ -131,6 +135,32 @@ class CreateNewActivityVC: UIViewController, UIImagePickerControllerDelegate, UI
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func saveEdit(){
+        
+        let query = PFQuery(className:"MyActivities")
+        query.getObjectInBackground(withId: (activity?.objectId)!) {
+            (object: PFObject?, error: Error?) -> Void in
+            if error == nil && object != nil {
+                
+                object?["projectName"] = self.selectedProjectName
+                object?["activityName"] = self.activityLabel.text
+                object?["activityDescription"] = self.activityDescription.text
+                object?["image"] = PFFile(data: UIImageJPEGRepresentation(self.feedUploadImage.image!, 0.1)!)
+                object?.saveInBackground()
+                
+            }
+                
+            else {
+                
+                print(error.debugDescription)
+                
+            }
+        }
+        
+        
+    
     }
     
 }
