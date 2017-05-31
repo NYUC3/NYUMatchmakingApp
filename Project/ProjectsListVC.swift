@@ -21,12 +21,11 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     var projects = [Feed]()
     var feed = [Feed]()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
-
-        //self.navigationController?.navigationBar.tintColor = UIColor.white
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        self.projects = []
+        self.feed = []
         
         let query = PFQuery(className:"Projects")
         query.whereKey("username", equalTo:PFUser.current()?.email)
@@ -67,6 +66,20 @@ class ProjectsListVC: UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }
         }
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir", size: 20)!]
+        
+        let logo = UIImage(named: "main-logo")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+
+        //self.navigationController?.navigationBar.tintColor = UIColor.white
+    
     }
 
     

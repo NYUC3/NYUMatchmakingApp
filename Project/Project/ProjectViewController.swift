@@ -38,28 +38,83 @@ class ProjectViewController: UIViewController {
     }
     
     
+    
+    
     @IBAction func followTapped(_ sender: UIButton) {
         
-        
-        let follow = PFObject(className:"Follow")
-        follow["username"] = PFUser.current()?.username
-        follow["project"] = self.projectObject?.name
-        follow.saveInBackground {
-            (success: Bool, error: Error?) -> Void in
-            if (success) {
-                // The object has been saved.
-                print("Follow object saved successfully")
-            } else {
-                // There was a problem, check error.description
-                print("Follow object save error : \(error.debugDescription)")
+        if(self.followButton.titleLabel?.text == "follow"){
+            
+            self.followButton.setTitle("unfollow", for: .normal)
+            
+            let follow = PFObject(className:"Follow")
+            follow["username"] = PFUser.current()?.username
+            follow["project"] = self.projectObject?.name
+            follow["projectId"] = self.projectObject?.objectId
+            follow.saveInBackground {
+                (success: Bool, error: Error?) -> Void in
+                if (success) {
+                    // The object has been saved.
+                    print("Follow object saved successfully")
+                } else {
+                    // There was a problem, check error.description
+                    print("Follow object save error : \(error.debugDescription)")
+                }
             }
         }
-        
+        else{
+            
+            self.followButton.setTitle("follow", for: .normal)
+            
+            
+            let query = PFQuery(className:"Follow")
+            query.whereKey("projectId", equalTo: projectObject?.objectId)
+            query.findObjectsInBackground(block: {
+                (objects: [PFObject]?, error: Error?) -> Void in
+                
+                if error == nil {
+                    // The find succeeded.
+                    print("Successfully retrieved \(objects!.count) scores.")
+                    // Do something with the found objects
+                    if let objects = objects {
+                        for object in objects {
+                            object.deleteInBackground()
+                        }
+                    }
+                } else {
+                    // Log details of the failure
+                    print("Error: \(error!)")
+                }
+            })
+            
+            
+        }
+    
     }
 
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        
+        let query = PFQuery(className:"Follow")
+        query.whereKey("projectId", equalTo: projectObject?.objectId)
+        query.findObjectsInBackground(block: {
+            (objects: [PFObject]?, error: Error?) -> Void in
+            
+            if error == nil {
+
+                if let objects = objects {
+                    for object in objects{
+                        if(object["username"] as? String == PFUser.current()?.username){
+                            self.followButton.setTitle("unfollow", for: .normal)
+                        }
+                    }
+                }
+                
+            }
+            else {
+                print("Error: \(error!.localizedDescription)")
+            }
+        })
     }
     
 }

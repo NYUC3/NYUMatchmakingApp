@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kDi-PA-3Ua">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kDi-PA-3Ua">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -369,10 +369,10 @@
             </objects>
             <point key="canvasLocation" x="7105" y="859"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar View Controller-->
         <scene sceneID="SZe-L9-h8C">
             <objects>
-                <tabBarController storyboardIdentifier="root-tab" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kDi-PA-3Ua" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="root-tab" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kDi-PA-3Ua" customClass="CustomTabBarViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="kjf-pR-aqm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -610,13 +610,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Create Activity" id="TA2-lK-Ozu">
                         <barButtonItem key="leftBarButtonItem" title="cancel" id="qY0-zp-XfV">
-                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="cancelButtonTapped:" destination="ILV-kd-8T8" id="Itp-gv-Zgh"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="save" id="TdE-xY-oJz">
-                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="saveButtonTapped:" destination="ILV-kd-8T8" id="WEk-sL-8Zk"/>
                             </connections>
@@ -714,13 +714,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Dsi-Om-T1Z">
                         <barButtonItem key="leftBarButtonItem" title="cancel" id="MXD-oU-3bB">
-                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="cancelButtonTapped:" destination="cWb-0Z-8G3" id="0JN-3H-JXJ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="save" id="SHR-UT-e6r">
-                            <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="saveButtonTapped:" destination="cWb-0Z-8G3" id="lrG-px-0Fw"/>
                             </connections>
@@ -798,7 +798,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4d5-xl-8Gq" firstAttribute="top" secondItem="Odt-cs-xZ3" secondAttribute="bottom" constant="8" symbolic="YES" id="41Q-NU-hwc"/>
                             <constraint firstItem="Odt-cs-xZ3" firstAttribute="top" secondItem="XjM-NY-cuX" secondAttribute="bottom" constant="8" symbolic="YES" id="8Cc-e6-6Vo"/>
@@ -820,7 +820,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="kho-H9-r4R">
                         <barButtonItem key="leftBarButtonItem" title="back" id="HSB-Cu-U3b">
-                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="Bap-BP-E6w" kind="unwind" unwindAction="unwindToProjectsWithSegue:" id="UZe-vQ-Jbq"/>
                             </connections>
@@ -1011,7 +1011,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="rgG-yK-Ece">
                         <rightBarButtonItems>
-                            <barButtonItem title="settings" id="AG9-zb-Gyh">
+                            <barButtonItem image="settings" id="AG9-zb-Gyh">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="0yf-zC-jvN" kind="show" id="2Xy-bt-sVH"/>
                                 </connections>
@@ -1032,7 +1033,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpg-R0-oC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1162" y="134"/>
+            <point key="canvasLocation" x="-1162" y="107"/>
         </scene>
         <!--Feed-->
         <scene sceneID="Xe8-27-7O3">
@@ -1069,21 +1070,25 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zu-eW-x7B">
                                 <rect key="frame" x="16" y="28" width="57" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="YPk-zZ-oRe"/>
-                                    <constraint firstAttribute="width" constant="57" id="qZ4-cn-hdb"/>
+                                    <constraint firstAttribute="width" constant="57" id="8qw-eg-VIa"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="cancel">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="cancelTapped:" destination="cHU-zE-cGw" eventType="touchUpInside" id="NNB-gf-azP"/>
                                     <segue destination="ZzY-Mh-Nqj" kind="unwind" unwindAction="unwindToLandingWithSegue:" id="1b8-NK-Kgp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnW-yf-Wpp">
-                                <rect key="frame" x="304" y="28" width="55" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnW-yf-Wpp">
+                                <rect key="frame" x="296" y="28" width="63" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="CYD-4P-dwi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="SignupTappd:" destination="cHU-zE-cGw" eventType="touchUpInside" id="u8b-uN-cqm"/>
@@ -1093,9 +1098,6 @@
                                 <rect key="frame" x="16" y="72" width="343" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20176174496644295" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hkL-bm-vNi"/>
-                                </constraints>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1103,29 +1105,20 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QTQ-N6-Pwp">
                                 <rect key="frame" x="16" y="110" width="343" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20176174496644295" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ab0-Vh-SRi"/>
-                                </constraints>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N1O-5t-aRZ">
                                 <rect key="frame" x="16" y="148" width="343" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20176174496644295" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="NFr-nR-XY7"/>
-                                </constraints>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vf-YY-gj1">
                                 <rect key="frame" x="16" y="186" width="343" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20176174496644295" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="zGH-Nw-Sxe"/>
-                                </constraints>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1140,25 +1133,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QTQ-N6-Pwp" firstAttribute="leading" secondItem="N1O-5t-aRZ" secondAttribute="leading" id="29E-4e-mf7"/>
-                            <constraint firstItem="N1O-5t-aRZ" firstAttribute="top" secondItem="QTQ-N6-Pwp" secondAttribute="bottom" constant="8" symbolic="YES" id="5uH-qK-aMa"/>
-                            <constraint firstItem="4vf-YY-gj1" firstAttribute="trailing" secondItem="ckJ-Xp-SdE" secondAttribute="trailing" id="73F-pH-c9R"/>
-                            <constraint firstItem="QTQ-N6-Pwp" firstAttribute="trailing" secondItem="N1O-5t-aRZ" secondAttribute="trailing" id="9Vk-Gf-fsG"/>
-                            <constraint firstItem="8Zu-eW-x7B" firstAttribute="baseline" secondItem="LnW-yf-Wpp" secondAttribute="baseline" id="Bdm-7s-WXJ"/>
-                            <constraint firstItem="4vf-YY-gj1" firstAttribute="top" secondItem="N1O-5t-aRZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Jcc-BQ-c53"/>
-                            <constraint firstItem="LnW-yf-Wpp" firstAttribute="trailing" secondItem="arv-6Z-M1Y" secondAttribute="trailing" id="Q4f-Ye-DXc"/>
-                            <constraint firstItem="arv-6Z-M1Y" firstAttribute="leading" secondItem="QTQ-N6-Pwp" secondAttribute="leading" id="SOT-Fo-277"/>
-                            <constraint firstItem="N1O-5t-aRZ" firstAttribute="leading" secondItem="4vf-YY-gj1" secondAttribute="leading" id="Tmg-I9-Qxl"/>
-                            <constraint firstItem="8Zu-eW-x7B" firstAttribute="leading" secondItem="f7K-V2-Ofn" secondAttribute="leadingMargin" id="VXk-ac-7nv"/>
-                            <constraint firstItem="arv-6Z-M1Y" firstAttribute="top" secondItem="8Zu-eW-x7B" secondAttribute="bottom" constant="8" symbolic="YES" id="WHI-W9-NDs"/>
-                            <constraint firstItem="ckJ-Xp-SdE" firstAttribute="top" secondItem="4vf-YY-gj1" secondAttribute="bottom" constant="8" symbolic="YES" id="bGj-ZJ-syh"/>
-                            <constraint firstItem="LnW-yf-Wpp" firstAttribute="trailing" secondItem="f7K-V2-Ofn" secondAttribute="trailingMargin" id="c32-9P-na0"/>
-                            <constraint firstItem="QTQ-N6-Pwp" firstAttribute="top" secondItem="arv-6Z-M1Y" secondAttribute="bottom" constant="8" symbolic="YES" id="dPr-9K-Odk"/>
-                            <constraint firstItem="arv-6Z-M1Y" firstAttribute="trailing" secondItem="QTQ-N6-Pwp" secondAttribute="trailing" id="foG-Ln-iMM"/>
-                            <constraint firstItem="4vf-YY-gj1" firstAttribute="leading" secondItem="ckJ-Xp-SdE" secondAttribute="leading" id="hgx-Ic-7yM"/>
-                            <constraint firstItem="N1O-5t-aRZ" firstAttribute="trailing" secondItem="4vf-YY-gj1" secondAttribute="trailing" id="tTj-Sh-Kpu"/>
-                            <constraint firstItem="arv-6Z-M1Y" firstAttribute="leading" secondItem="8Zu-eW-x7B" secondAttribute="leading" id="tjf-ad-awZ"/>
-                            <constraint firstItem="8Zu-eW-x7B" firstAttribute="top" secondItem="O7q-Mh-kFu" secondAttribute="bottom" constant="8" id="xlH-oz-Y7x"/>
+                            <constraint firstItem="4vf-YY-gj1" firstAttribute="trailing" secondItem="ckJ-Xp-SdE" secondAttribute="trailing" id="0GA-3f-E8b"/>
+                            <constraint firstItem="8Zu-eW-x7B" firstAttribute="baseline" secondItem="LnW-yf-Wpp" secondAttribute="baseline" id="D5n-ca-Ig9"/>
+                            <constraint firstItem="LnW-yf-Wpp" firstAttribute="trailing" secondItem="arv-6Z-M1Y" secondAttribute="trailing" id="Fs1-UC-9yI"/>
+                            <constraint firstItem="arv-6Z-M1Y" firstAttribute="trailing" secondItem="QTQ-N6-Pwp" secondAttribute="trailing" id="Jd3-UH-mkh"/>
+                            <constraint firstItem="N1O-5t-aRZ" firstAttribute="top" secondItem="QTQ-N6-Pwp" secondAttribute="bottom" constant="8" symbolic="YES" id="L9q-Hi-akV"/>
+                            <constraint firstItem="LnW-yf-Wpp" firstAttribute="trailing" secondItem="f7K-V2-Ofn" secondAttribute="trailingMargin" id="LVP-dO-6O4"/>
+                            <constraint firstItem="QTQ-N6-Pwp" firstAttribute="top" secondItem="arv-6Z-M1Y" secondAttribute="bottom" constant="8" symbolic="YES" id="QZo-Kx-po1"/>
+                            <constraint firstItem="N1O-5t-aRZ" firstAttribute="trailing" secondItem="4vf-YY-gj1" secondAttribute="trailing" id="UnV-eN-Ara"/>
+                            <constraint firstItem="arv-6Z-M1Y" firstAttribute="leading" secondItem="QTQ-N6-Pwp" secondAttribute="leading" id="WeR-fY-QrY"/>
+                            <constraint firstItem="QTQ-N6-Pwp" firstAttribute="trailing" secondItem="N1O-5t-aRZ" secondAttribute="trailing" id="YDL-jC-RzJ"/>
+                            <constraint firstItem="8Zu-eW-x7B" firstAttribute="leading" secondItem="f7K-V2-Ofn" secondAttribute="leadingMargin" id="daO-Sg-2ba"/>
+                            <constraint firstItem="8Zu-eW-x7B" firstAttribute="leading" secondItem="arv-6Z-M1Y" secondAttribute="leading" id="l7X-90-Q4I"/>
+                            <constraint firstItem="4vf-YY-gj1" firstAttribute="top" secondItem="N1O-5t-aRZ" secondAttribute="bottom" constant="8" symbolic="YES" id="lAc-dt-ejt"/>
+                            <constraint firstItem="arv-6Z-M1Y" firstAttribute="top" secondItem="8Zu-eW-x7B" secondAttribute="bottom" constant="8" symbolic="YES" id="nlB-Ha-6gC"/>
+                            <constraint firstItem="QTQ-N6-Pwp" firstAttribute="leading" secondItem="N1O-5t-aRZ" secondAttribute="leading" id="qYT-gt-TXC"/>
+                            <constraint firstItem="8Zu-eW-x7B" firstAttribute="top" secondItem="O7q-Mh-kFu" secondAttribute="bottom" constant="8" symbolic="YES" id="vho-kB-IrX"/>
+                            <constraint firstItem="N1O-5t-aRZ" firstAttribute="leading" secondItem="4vf-YY-gj1" secondAttribute="leading" id="w0U-iR-780"/>
+                            <constraint firstItem="4vf-YY-gj1" firstAttribute="leading" secondItem="ckJ-Xp-SdE" secondAttribute="leading" id="xcS-9r-pxA"/>
+                            <constraint firstItem="ckJ-Xp-SdE" firstAttribute="top" secondItem="4vf-YY-gj1" secondAttribute="bottom" constant="8" symbolic="YES" id="yl8-7w-3Bz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1192,7 +1185,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="login">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="LoginTapped:" destination="hyU-dB-s3b" eventType="touchUpInside" id="Pru-1C-Vkl"/>
@@ -1205,7 +1198,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="cancel">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="cancelTapped:" destination="hyU-dB-s3b" eventType="touchUpInside" id="Het-jM-sSD"/>
@@ -1297,7 +1290,7 @@
                                     <constraint firstAttribute="height" constant="52" id="cak-Tx-Bzs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="32"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZLw-sb-9si">
@@ -1387,7 +1380,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="g4x-sM-g5D"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1404,7 +1397,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNx-8R-oD1">
                                 <rect key="frame" x="16" y="383" width="287" height="69"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1413,7 +1406,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="13" id="0yf-il-Lja"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1440,7 +1433,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cg9-t7-iOp">
                         <barButtonItem key="leftBarButtonItem" title="back" id="EUn-P5-XtO">
-                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="backButtonTapped:" destination="sYN-nm-zJm" id="iZf-wo-CcV"/>
                             </connections>
@@ -1581,6 +1574,7 @@
         <image name="heard-black" width="33" height="31"/>
         <image name="main-logo" width="33" height="33"/>
         <image name="project-placeholder-1" width="3008" height="2000"/>
+        <image name="settings" width="27" height="28"/>
         <image name="tab-oval" width="29" height="29"/>
         <image name="tab-rectangle" width="26" height="26"/>
         <image name="tab-triangle" width="34" height="29"/>

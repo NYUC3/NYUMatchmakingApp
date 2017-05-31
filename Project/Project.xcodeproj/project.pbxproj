@@ -12,6 +12,7 @@
 		C20A84F31EA333AB00823E43 /* UserProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A84F21EA333AB00823E43 /* UserProjectTableViewCell.swift */; };
 		C21C9DC91D9F093600CBD7EF /* ProjectsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */; };
 		C21C9DCB1D9F0C0500CBD7EF /* CreateProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */; };
+		C22655701EDF1F7800A94BD2 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C226556F1EDF1F7800A94BD2 /* CustomTabBarViewController.swift */; };
 		C236D2291DEF7F91008A392C /* SingleActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236D2281DEF7F91008A392C /* SingleActivityVC.swift */; };
 		C236D22B1DEFBC67008A392C /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236D22A1DEFBC67008A392C /* NavViewController.swift */; };
 		C23A29B01DB8403800275843 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23A29AF1DB8403800275843 /* SettingsViewController.swift */; };
@@ -99,6 +100,7 @@
 		C20A84F21EA333AB00823E43 /* UserProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProjectTableViewCell.swift; path = ../UserProjectTableViewCell.swift; sourceTree = "<group>"; };
 		C21C9DC81D9F093600CBD7EF /* ProjectsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListVC.swift; sourceTree = SOURCE_ROOT; };
 		C21C9DCA1D9F0C0500CBD7EF /* CreateProjectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectVC.swift; sourceTree = "<group>"; };
+		C226556F1EDF1F7800A94BD2 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		C236D2281DEF7F91008A392C /* SingleActivityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleActivityVC.swift; sourceTree = "<group>"; };
 		C236D22A1DEFBC67008A392C /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavViewController.swift; path = ../NavViewController.swift; sourceTree = "<group>"; };
 		C23A29AF1DB8403800275843 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				C26F59C31E9C2BE100E25F6F /* Fonts */,
 				C26DDF461D93499300429DE4 /* Main.storyboard */,
 				C26DDF421D93499300429DE4 /* AppDelegate.swift */,
+				C226556F1EDF1F7800A94BD2 /* CustomTabBarViewController.swift */,
 				C2EF21411DE96622007FE43D /* temp files */,
 				C26DDF9C1D935E0800429DE4 /* View */,
 				C26DDF9B1D935DEF00429DE4 /* Model */,
@@ -567,6 +570,7 @@
 				C2A8DE471DF4BE20009B428E /* TesttOneViewController.swift in Sources */,
 				C26DDF961D935B8500429DE4 /* AddActivityVC.swift in Sources */,
 				C26DDF9E1D935F4400429DE4 /* FeedVCTableViewCell.swift in Sources */,
+				C22655701EDF1F7800A94BD2 /* CustomTabBarViewController.swift in Sources */,
 				C26DDF431D93499300429DE4 /* AppDelegate.swift in Sources */,
 				C26DDF901D93595A00429DE4 /* HomeViewController.swift in Sources */,
 				C26DDF9A1D935D1600429DE4 /* ProjectObject.swift in Sources */,
